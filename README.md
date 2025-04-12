@@ -1,4 +1,11 @@
 ## 2025 0411
+### 2025 0412 0102
+I finally have a place to put all my daft drafts without chopping them into little tweet size pieces.
+Why has it taken me so long to return to this long form method of writing?
+It's mostly that strange feeling I get that this is like a message in a bottle sent out into an enormous sea of nothing.
+
+Once I figured out that it wasn't sending the message that mattered most, I warmed up to the practice of writing from my little island on the internet.
+
 ### 2025 0411 2248
 I'm implementing a little LISP.
 Like the LISPs of yore, there are two basic items: pairs and atoms.
@@ -123,6 +130,7 @@ Sadly neither of these principles is used in LISPs.
 Again, this is because there is that silent assumption working in the background of most explanations: the programming language runs on machines in our shared material world.
 
 This is enough thinking on this for now.
+
 
 ### 2025 0411 2217
 I can not guarentee that there will be no spelling errors in what I write.
