@@ -1,4 +1,68 @@
-## 2025 0411
+This is a cumulative record of what I have to say.
+
+Some of it may help you and some of it may hurt you.
+
+I regret not yet knowing which is which.
+
+## 2025 0412
+
+### 2025 0412 1349
+I have found that it is easier to be wrong than it is to be right and that it is easier to be right after having been wrong.
+If there was a way to avoid being wrong then I would only act in that way.
+Logic helps but is slow.
+Sorting through the wrong bits takes more than what logic has to offer.
+
+I see logic as part of science and see science as picking up what logic fumbles and drops.
+Logic works on the theoretical side of science and laboratories work on the experimental side.
+As I have said many times before "Libraries select theoretical practices and laboratories select experimental practices".
+Science is compounded of theoretical and experimental practices.
+
+One of the reasons I've allowed myself to write in this longer form is to make it easier for other people to see that I am often wrong, and that it is only from first being wrong that I get anywhere near being right.
+The definitions, the natures, or the essences of what is right and what is wrong are not easy to suss out.
+
+Many people have spent their whole lives trying and failing to establish what is right and what is wrong.
+As much as I have a sort of optimism that if I work hard enough then I may one day uncover some piece of a complete theory of right and wrong, I am not so foolish to think that I shall do anything like what the best already have.
+
+With that in mind, I offer these writings that are most certainly mistaken for no other reason than that they occurred to me.
+
+1. 
+I talk about behavior a lot.
+Does that imply that my behavior is under my careful control?
+No.
+It is one thign to know a science and another thing to have a technology in hand.
+The things of technology are the consequences of science, more or less.
+But, the knowledge of science lacks the concrete dimensions of levers, pullies, medicines, and computers.
+All that goes into scinece is often ephemeral: here for but a moment and gone forever, lost to our remote contact with the past through fragmentary records that soon fall apart.
+
+Those who manufacture products, be they assemblies of machines, or chemicals, or organisms, or programs, or etc., work in ways often mistaken as scientific.
+They manufacture with the controls offered by technologies i.e. with the descendants of scientific practices.
+
+The difference between science and such manufactureres is the difference between sensitivity and insensitivity.
+The manufacturer is deliberately insensitive to the strange variations responsible for science.
+This is not what most people think or say: they say that business is as much a science and an art as physics or biology.
+They insist that it is so in large part because the best businesses are almost always the result of some new technological consequence from science.
+
+This does not always seem to be the case.
+Some businesses appear to survive despite science.
+Much taht is "made for TV" objects to being called pseudoscience.
+It sells, and there is a science to sales!
+
+These are all problems of control: can you make a person buy your product?
+Some say you can't, others say you can.
+Some say that people only buy what is an intrinsically good product: you can't trick your way into becoming a good business when your product is technologically sophistocated.
+
+2. 
+What's with people who make a living as oracles?
+They make predictions, often asserted with the authority of a proclamation, and profit, one way or another, from betting that they're right and ultimately being right.
+But, are they betting on what they think they are?
+Are they right when their bet pays off?
+There seems to be some difference between constructing bets that are verly likely to pay off and making predictions like those people assume come from our best sciences.
+
+How do we know the future?
+When we speak of the future, as in predictions, what is it that we are speaking of?
+Can speach actually be said to be about anything?
+Certainly the speaking occurrs, but what good reasons do we have for saying that such speach is about this, that, or the future?
+
 ### 2025 0412 0119
 [Matios Berhe](https://www.twitter.com/MatiosTV) suggests I read
 - Kant's Critique of Pure Reason, chapter 2, section 12
@@ -20,10 +84,10 @@ There is something special though about reading things that you do not yet under
 The more I read the more I don't at first understand, and yet, at the same time, the more I learn about the world as a whole.
 There is something about reading which makes the world bigger and smaller than it once seemed.
 When I'm not in such a metaphorical mood, I am quick to say the world is no bigger nor no smaller than it is: to say otherwise is to plunge such a theory into contradiction from which no logic prevents each and every imaginable conclusion.
+
 People are usually scared by contradiction for the wrong reasons: this is somewhat corrected by phrases like "law of explosion".
 The problem with contradiction is not really a problem: when you have a contradiction you find yourself without the benefits of a consistent theory.
 Some people are ok with that.
-
 
 ### 2025 0412 0102
 I finally have a place to put all my daft drafts without chopping them into little tweet size pieces.
@@ -31,6 +95,8 @@ Why has it taken me so long to return to this long form method of writing?
 It's mostly that strange feeling I get that this is like a message in a bottle sent out into an enormous sea of nothing.
 
 Once I figured out that it wasn't sending the message that mattered most, I warmed up to the practice of writing from my little island on the internet.
+
+## 2025 0411
 
 ### 2025 0411 2248
 I'm implementing a little LISP.
@@ -156,7 +222,6 @@ Sadly neither of these principles is used in LISPs.
 Again, this is because there is that silent assumption working in the background of most explanations: the programming language runs on machines in our shared material world.
 
 This is enough thinking on this for now.
-
 
 ### 2025 0411 2217
 I can not guarentee that there will be no spelling errors in what I write.
