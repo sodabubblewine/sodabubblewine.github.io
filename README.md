@@ -1,4 +1,30 @@
 ## 2025 0411
+### 2025 0412 0119
+[Matios Berhe](https://www.twitter.com/MatiosTV) suggests I read
+- Kant's Critique of Pure Reason, chapter 2, section 12
+- Kant's Critique of Pure Judgement, Critique of the Teleological Judgement
+- Locke's Essay Concerning Human Understanding
+
+I have now added these to my long list of "stuff to read".
+Some day, sooner rather than later, I shall provide a complete list of texts in my library and the schedule on which I read them.
+There are two main reasons to do so:
+1. to point up the origins of what I have to say (so that others do not suspect me of originating, initiating, or creating my verbal behavior)
+2. to better scheduling my reading and writing.
+
+I already have a copy of Kant's Critique of Pure Reason that I read first when I was in high school.
+There are a few texts from that time which have survived long enough to find themselves on my shelves.
+One of the treasures from that time is Russell's "Problems of Philosophy".
+In no way did I learn all that Russell and Kant had to teach in their books when I first read them so very long ago.
+There is something special though about reading things that you do not yet understand.
+
+The more I read the more I don't at first understand, and yet, at the same time, the more I learn about the world as a whole.
+There is something about reading which makes the world bigger and smaller than it once seemed.
+When I'm not in such a metaphorical mood, I am quick to say the world is no bigger nor no smaller than it is: to say otherwise is to plunge such a theory into contradiction from which no logic prevents each and every imaginable conclusion.
+People are usually scared by contradiction for the wrong reasons: this is somewhat corrected by phrases like "law of explosion".
+The problem with contradiction is not really a problem: when you have a contradiction you find yourself without the benefits of a consistent theory.
+Some people are ok with that.
+
+
 ### 2025 0412 0102
 I finally have a place to put all my daft drafts without chopping them into little tweet size pieces.
 Why has it taken me so long to return to this long form method of writing?
