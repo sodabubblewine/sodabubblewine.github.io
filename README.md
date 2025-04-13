@@ -1,8 +1,4 @@
-This is a cumulative record of what I have to say.
-
-Some of it may help you and some of it may hurt you.
-
-I regret not yet knowing which is which.
+Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
 ## 2025 0412
 
@@ -211,7 +207,7 @@ Compounds are (functionally)
 ##### Example Validities and (Non)consistencies: Laws of Excluded Middle, Contradiction, Self Implication, and Self Equivalence
 
 Alternations of compounds with their negations are valid (they denote waow the compound does or its negation does, i.e. waow it does or does not, so, each functional substitution denotes).
-Conjunctions of compound with their negations are nonconsistent (they denote waow their compound does and its negation does i.e. waow it does and does not, so, each functional substitution does not denote).
+Conjunctions of compounds with their negations are nonconsistent (they denote waow their compound does and its negation does i.e. waow it does and does not, so, each functional substitution does not denote).
 Compounds are implied by and equivalent to their self.
 
 ##### Functional Substitutions Keep Validity, Nonconsistency, Implication and Equivalence
@@ -234,13 +230,13 @@ Interchanges of equivalents in
 * equivalents are equivalents (interchange of mutual implications are mutual implications),
 * nonvalidities are nonvalidities (a compound is nonvalid waow some functional substitution does not denote, i.e. some functional substitution of its negation denotes, i.e. its negation is consistent, and since the negation of the interchange is identical tot he interchange of the negation which is consistent and consistency is kept by interchange then the negation is consistent i.e. it is nonvalid)
 * consistencies are consistencies (the negation of the interchange is identical to the interchange of the negation which is nonvalid hence it is nonvalid),
-* nonimplications are nonimplications (noimplication is consistency of the conjunction ...)
+* nonimplications are nonimplications (nonimplication is consistency of the conjunction ...)
 * nonequivalences are nonequivalences (one is a nonimplication ...).
 
 ##### Equivalents of Identity
 Compounds are equivalent to
 * their double negation (which denotes waow the negation of the compound does not, i.e. waow it does, so, each functional substituion of it denotes waow the same of its double negation does),
-* their self alternation/conjunction (which denotes waow some/each of its components does i.e. wawo the compound does), and 
+* their self alternation/conjunction (which denotes waow some/each of its components does i.e. waow the compound does), and 
 * their alternation/conjunction with nonconsistencies/validities.
 
 ##### Equivalents of Distributivity of Conjunctions and Alternations
