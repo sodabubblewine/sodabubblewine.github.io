@@ -6,6 +6,25 @@ I regret not yet knowing which is which.
 
 ## 2025 0412
 
+### 2025 0412 2335
+
+It is late and it feels like there is a fat tire tightening around skull.
+My temples throb and my eyes hurt.
+Nothing comes from closing my eyes but the feeling of pains marching across my face.
+If I don't tell myself to relax then I'll soon be clenching my teeth until my ears start to ring.
+A few deep breaths may loosen my neck and shoulders, but my forehead remains scrunched.
+
+Despite these unfavorable conditions, I have added some more to the [2025 0412 1422 Paper on Logic](#2025-0412-1422-paper-on-logic).
+
+### 2025 0412 1619
+I'm making a note here because I am so happy to have a single text document that I can easily copy and paste onto a single monolithic website.
+This is the closest I have come to explaining myself to others in a way that is mostly accurate and mostly accessible.
+
+For now there are only a list of timestamped entries to show you.
+Soon these shall evolve into more substantial blocks of templates, contemplations, and conclusions.
+As what I have to say reaches a critical mass, it bubbles up into a more solid and long standing brick in the foundation of my principles and practices.
+I am glad to share these steps in the evolution fo my behavior.
+
 ### 2025 0412 1422
 It has been a while since I've worked directly on my paper on logic.
 In the past I have had to shove what little I can into a thin thread of tweets.
@@ -86,7 +105,7 @@ In "From Stimulus to Science" Quine does a better job of showing how quotation i
 
 [pg. 90 of From Stimulus to Science].
 For most people familiar with Quine, semantic ascent is intertwined with his theory of propositional attitudes (as the examples amply indicate).
-But, there is nothing so grand in the method: it is a technical solution to a technical complication.
+But, there is nothing so grand in the method: it is a technical solution to a technical complication:
 
 > We can generalize on 'Tom is mortal', 'Dick is mortal', and so on, without talking of truth or of sentences; we can say 'All men are mortal'.
 > We can generalize similarly on 'Tom is tom.', 'Dick is Dick', '0 is 0', and so on, saying 'Everything is itself'.
@@ -195,11 +214,37 @@ Alternations of compounds with their negations are valid (they denote waow the c
 Conjunctions of compound with their negations are nonconsistent (they denote waow their compound does and its negation does i.e. waow it does and does not, so, each functional substitution does not denote).
 Compounds are implied by and equivalent to their self.
 
-##### Functional Substitutions Keep Validity and Nonconsistency
+##### Functional Substitutions Keep Validity, Nonconsistency, Implication and Equivalence
 
 Functional substitutions in
 * validities are validities (each functional substitution of the functional substitution of the validity is a functional substitution of the validity and hence denotes),
-* nonconsistencies are nonconsistencies (each function substitution of the negation of the functional substitution of the nonconsistency is a functional substitution of the negation of the nonconsistency i .e. is a functional substitution of a validity and hence the negation of the functional substitution of the nonconsistency is valid so that the function substitution of the nonconsistency is nonconsistent).
+* nonconsistencies are nonconsistencies (each function substitution of the negation of the functional substitution of the nonconsistency is a functional substitution of the negation of the nonconsistency i .e. is a functional substitution of a validity and hence the negation of the functional substitution of the nonconsistency is valid so that the function substitution of the nonconsistency is nonconsistent),
+* implications are implications (the conjunction of the conclusion with the negation of the premise is nonconsistant and hence its functional substitution is nonconsistent and identical to the conjunction of the function substitution of teh conclusion with the negation of the functional substutituion of the premise), and
+* equivalences are equivalences (functional substitutions of mutual implications are mutual implications).
+
+##### Interchanges of Equivalents are Equivalent
+Interchanges of equivalents in a compound are equivalent to that compound (each functional substitution of a compound matches the same of its interchange, except perhaps for the same of the equivalents which otherwise denote in tandem, so each denotes waow the other does i.e. they are equivalent).
+
+##### Interchnage of Equivalents Keeps Validity, Nonconsistency, Implication, Equivalence, Nonvalidity, Consistency, Nonimplication, and Nonequivalence
+
+Interchanges of equivalents in
+* validities are validities (each functional substitution of the interchange denotes waow the same of the validity does),
+* nonconsistencies are nonconsistent (their negation is a validity and so the interchange in the negation is a validity),
+* implications are implications (interchange into the nonconsistency is a nonconsistency),
+* equivalents are equivalents (interchange of mutual implications are mutual implications),
+* nonvalidities are nonvalidities (a compound is nonvalid waow some functional substitution does not denote, i.e. some functional substitution of its negation denotes, i.e. its negation is consistent, and since the negation of the interchange is identical tot he interchange of the negation which is consistent and consistency is kept by interchange then the negation is consistent i.e. it is nonvalid)
+* consistencies are consistencies (the negation of the interchange is identical to the interchange of the negation which is nonvalid hence it is nonvalid),
+* nonimplications are nonimplications (noimplication is consistency of the conjunction ...)
+* nonequivalences are nonequivalences (one is a nonimplication ...).
+
+##### Equivalents of Identity
+Compounds are equivalent to
+* their double negation (which denotes waow the negation of the compound does not, i.e. waow it does, so, each functional substituion of it denotes waow the same of its double negation does),
+* their self alternation/conjunction (which denotes waow some/each of its components does i.e. wawo the compound does), and 
+* their alternation/conjunction with nonconsistencies/validities.
+
+##### Equivalents of Distributivity of Conjunctions and Alternations
+
 
 
 ### 2025 0412 1349
@@ -226,7 +271,7 @@ With that in mind, I offer these writings that are most certainly mistaken for n
 I talk about behavior a lot.
 Does that imply that my behavior is under my careful control?
 No.
-It is one thign to know a science and another thing to have a technology in hand.
+It is one thing to know a science and another thing to have a technology in hand.
 The things of technology are the consequences of science, more or less.
 But, the knowledge of science lacks the concrete dimensions of levers, pullies, medicines, and computers.
 All that goes into scinece is often ephemeral: here for but a moment and gone forever, lost to our remote contact with the past through fragmentary records that soon fall apart.
@@ -335,7 +380,7 @@ The function named 'car' takes one argument and returns the item at index zero o
 > Thankfully, if you do not already know how javascript arrays work, you get the joy of learning that first before coming back here.
 >
 > I have not yet found a faster way to introduce programming than to present it after teaching logic up to and including Quine's main method (of proof for predicate logic).
-> Since more people are familiar with javascript than they are with Quine's main method-- or with the methods of logic-- I shall continue to avoid what might otherwise appear as an entirely roundabout way of teaching programming from scratch.
+> Since more people are familiar with javascript than they are with Quine's main method--- or with the methods of logic--- I shall continue to avoid what might otherwise appear as an entirely roundabout way of teaching programming from scratch.
 
 The function named 'cdr' takes one argument and returns the item at index one of it.
 
@@ -408,7 +453,7 @@ Most people avoid making convenient use of alarming degeneracies: they're really
 
 Atomic items and empty items have a long and sordid history.
 Atoms are not supposed to have parts, and yet we are often forced to say that they do.
-Empty items always end up behaving like atoms in many respects-- e.g. they are empty and presumably "don't have parts"-- but they almost always tend to be unique where as there tend to be many many atoms in any given theory.
+Empty items always end up behaving like atoms in many respects--- e.g. they are empty and presumably "don't have parts"--- but they almost always tend to be unique where as there tend to be many many atoms in any given theory.
 
 The only place I have found clarity on these boundary problems is, you guessed it, logic.
 In a theory of ordered pairs, it is enough to provide for the existence of an ordered pair that neither has a left part nor has a right part.
@@ -416,11 +461,10 @@ It is then unique since any two purportedly distinct empty pairs have identical 
 Atoms are then accomodated by one of a few methods, each of which match up with Quine's atomic methods in "Set Theory and its Logic".
 An item of a theory of ordered pairs is atomic when it is identical to its components (or, just one of its components, in which case the other components allows us to distinguish between atoms with, e.g., identical left components: are these even atoms?).
 
-Sadly neither of these principles is used in LISPs.
+Sadly neither of these principles are used in LISPs.
 Again, this is because there is that silent assumption working in the background of most explanations: the programming language runs on machines in our shared material world.
 
 This is enough thinking on this for now.
-
 
 ### 2025 0411 2217
 I can not guarentee that there will be no spelling errors in what I write.
