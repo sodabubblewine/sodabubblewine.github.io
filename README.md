@@ -2,6 +2,33 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0413
 
+### 2025 0413 2323
+I got a copy of Will Durant's "The Story of Philosophy" some months ago from a book fair.
+Though I read some of it back then, I do not recall any of it now.
+One of the joys of reading SO MANY *fundamentally interesting* things (sometimes over and over again) is that you can actually forget some of them!
+
+Most of what I read is nonfiction, but I've started reading fiction recently e.g. Agatha Christe, Chaucer, and Dante.
+Most of the fiction I've read in my life is from when I was less than fifteen years old e.g. Asimov, Pullman, Tolkein, Salinger, Wells, Orwell, and Shelly.
+Since I haven't reread those books I'm uncertain whether I have forgotten them or not.
+
+Anyway, I finished reading the introduction to Will Durant's "The Story of Philosohpy" and had some things to say (apparently).
+
+---
+
+The success of Will's book "The Story of Philosophy" allowed him and his wife to write "The Story of Civilization" which I have yet to finish reading (in fact, I still have yet to finish the first book in the series!).
+I am drawn to the Durants because they wished to see the world as a whole: to put Humpty Dumpty back together again.
+
+Mine is the second edition and teh eighth printing: copyrighted last in 1933 and published no later than 1953 by Simon and Schuster.
+
+The introduction to this second edition echos my own outlook on our modern world: although we are technically more interconnected now than ever before, there is less wisdom among us than ever there has been.
+Much of our world was designed and built by a few of us.
+They have drained knowledge of all that makes it rich.
+
+To be wise is to threaten the prevailing world order.
+The wise see beyond the shades of political esotericism through to the fundamental conflict between controllers and countercontrollers.
+Hope has not died, and it is still expected by a few of us that beyond the bounds of individualism and collectivism there is something like a peaceful culture: one that does the controlling and countercontrolling through us in only the most conspicuous of ways.
+
+
 ### 2025 0413 2249
 I finally finished my entry on [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees)!
 It took longer than I expected, but I also uncovered some unexpected things along the way e.g. a quick and easy way to find shorter bit strings for a given binary tree.
