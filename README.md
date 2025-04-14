@@ -8,6 +8,8 @@ It took longer than I expected, but I also uncovered some unexpected things alon
 
 Something I also learned: there is no faster way to catch bad writing than to publish it.
 
+Something else I learned: if you don't end a markdown list with two returns, it thinks the trailing line of text is part of the last entry in the list.
+
 ### 2025 0413 1754
 A friend just introduced me to two great bits of music:
 * [Alberto Ginastera](https://en.wikipedia.org/wiki/Alberto_Ginastera) - Harp Concerto (1956)
@@ -135,6 +137,7 @@ If it isn't nil then we have already made the assumption (quite a strong one rea
 So, all we need to know to write out the decoded tree is to
 1. decode the left part of the tree and
 2. decode the right part of the tree.
+
 Once we have those two things we just write out the code for the left tree, followed by the code for the right tree, and cap it all off at the end with a one.
 
 It will be shown that the decoded strings are almost always longer than they need to be: any initial zeros can be trimmed from the front of the decoded string without any loss to subsequent encoding.
