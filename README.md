@@ -189,7 +189,7 @@ let error = message => console.log(message)
 
 Most people teach and prefer the implementation that includes error messages.
 They want the machine to tell them when something is wrong by anticipating how it could go wrong.
-My preference is for a crash based method of design: rather than go looking or errors leave as much of the design as possible out on the rim of "don't cares".
+My preference is for a crash based method of design: rather than go looking for errors leave as much of the design as possible out on the rim of "don't cares".
 Not only does this make your code a lot shorter (which makes it so there are fewer places where things could ever possibly go wrong), it also releases you from the anxiety of trying to catch your mistakes before you make them.
 
 There are some standard techniques that we pick up over time for avoiding problems that have already happened again and again in the past.
@@ -198,10 +198,10 @@ The latter almost always teaches better than the former, but that is not the end
 
 There is no universal way to detect logical errors in programs.
 No one is there to look over your shoulder and tell you "Hey, this isn't actually what you wanted to make in the first place."
-Though we have new machines that speak to us in such conversational tones--- after having been forcefed some scrap of code--- there is no part of such machines that prepare them for anything more than a world like the selecting past (but that goes a much longer way than most people once supposed, e.g., half a decade ago).
+Though we have new machines that speak to us in such conversational tones--- after having been forcefed some scrap of code--- there is no part of such machines that prepares them for anything more than a world like the selecting past (but that goes a much longer way than most people once supposed, e.g., half a decade ago).
 
 But, there is a way to entirely avoid logical errors: that is what logic itself is for!
-Thus, rather than make trouble for ourselves by starting with the logic of pure binary trees (where, e.g., the definition of 'properPop' deals clumsily with degenerate cases), we begin with a theory that admits no such road bumps even if in degenerate cases it gives us unfamiliar results (e.g. the definition of 'pop' I have adopted here gives nil when you pop nil as the simulation of the empty stack).
+Thus, rather than make trouble for ourselves by starting with the logic of pure binary trees (where, e.g., the definition of 'properPop' deals clumsily with degenerate cases), we begin with a theory that admits no such road bumps even if, in degenerate cases, it gives us unfamiliar results (e.g. the definition of 'pop' I have adopted here gives nil when you pop nil as the simulation of the empty stack).
 
 Back to encoding bit strings to trees!
 I already gave away the key to solving this problem: the bit string is a program that tells a tiny stack machine how to build the encoded tree.
@@ -252,7 +252,7 @@ let emptyStack = nil
 , pop2 = stack => pop(pop(stack))
 , pairUp=stack=>push(pop2(stack),pair(secondOf(stack),topOf(stack)));
 ```
-> For those familiar with stack operations in other circumstances, it may be strange to take a functional view of stacks: popping a stack returns a stack without its top, it doesn't change the state of some stack accessible outside of a the scope of the current executing function.
+> For those familiar with stack operations in other circumstances, it may be strange to take a functional view of stacks: popping a stack returns a stack without its top, it doesn't change the state of some stack accessible outside of the scope of the current executing function.
 
 Now all that is left is to break the encoder into a function that gets the ball rolling with an empty stack and one that takes a string and a stack and gets to work:
 
@@ -264,13 +264,14 @@ let encodeHelperBeta = (string, stack) =>
   : encodeHelperBeta(restOf(string),stack)
 , encodeBeta = string => encodeHelperBeta(string,emptyStack)
 ```
-Lo, this is not the last version of encode and that is why it is called 'encodeBeta'.
+Lo, this is not the last version of 'encode' and that is why it is called 'encodeBeta'.
 There are three things of note in the beta definition given:
-1) it asks if the string is empty and when it is it returns the top of the stack,
-2) it checks if the first item of the string is zero or one and executes the corresponding operation on the stack (pushing a nil on top of the stack or pairing up the top two items on the stack), and
-3) if it runs into an item of the string that we haven't talked about yet it does nothing and goes on its merry way.
 
-Here are some examples, but because we have no way of seeing the encoded tree I have to put it through the decoder: this ends up being helpful because it should decode into a string that we could put back into the encoder to make the tree all over again.
+1. it asks if the string is empty and when it is it returns the top of the stack,
+2. it checks if the first item of the string is zero or one and executes the corresponding operation on the stack (pushing a nil on top of the stack or pairing up the top two items on the stack), and
+3. if it runs into an item of the string that we haven't talked about yet it does nothing and goes on its merry way.
+
+Here are some examples, but because we have no way of seeing the encoded tree I have to put it through the decoder--- this ends up being helpful because it should decode into a string that we could put back into the encoder to make the tree all over again.
 ```
 decode(encodeBeta(concatenate(zero,zero,one)))
   '..,'
@@ -284,9 +285,9 @@ decode(encodeBeta(concatenate(one,one)))
 > Alternatively, we could have built up the parenthetical notation familiar to most people for ordered pairs e.g. where '(x,y)' is short for "the pair whose left part is x and whose right part is y".
 > It would also be helpful to know when two trees are equal so that we might be able to write out the construction of a tree and compare it to the encoding of its abbreviation as a bit string.
 > While javascript comes with its own built in string functions, it doesn't give us built in pairs or functions for working with pairs.
-> Given what is know from Solomon Fefferman's work on Finitary Inductively Presented Logics, it is probably a bad idea to design a language that doesn't work with ordered pairs (and for those less theoretically minded, there's always the conveniences of LISP to look at).
+> Given what is known from Solomon Fefferman's work on [Finitary Inductively Presented Logics](http://virtualmath1.stanford.edu/~feferman/papers/presentedlogics.pdf), it is probably a bad idea to design a language that doesn't work with ordered pairs (and for those less theoretically minded, there's always the conveniences of LISP to look at).
 
-That last example is well worth looking more closely at: it took the concatenation of one with one (which is not a string that will ever come out of the decoder) and it encoded just fine and when we sent that tree through the decoder it returned the concatenation of zero, zero, zero, one, and one!
+That last example is well worth looking at more closely: it took the concatenation of one with one (which is not a string that will ever come out of the decoder) and it encoded just fine and when we sent that tree through the decoder it returned the concatenation of zero, zero, zero, one, and one!
 So we have a much shorter way of decoding this particular tree: we can write it as ',,' instead of '...,,' when we have said how 'encoderBeta' works!
 
 The following example shows why it is still called 'encoderBeta':
@@ -296,12 +297,13 @@ decode(encodeBeta(concatenate(zero,zero,zero,zero)))
 ```
 Where did all those other zeros go that we concatenated together?
 How is it that we only got a single zero when we decoded the encoded tree?
+
 After the encoder checks that the string is empty it peeks at the top of the stack and returns it as the result.
 Since there are no ones in that concatenation, there are no pairs made out of the nil trees on the stack (of which there are four before it shows us the top nil).
 
 There's nothing wrong with the beta encoder except that we can make a new one that doesn't leave anything on the stack.
 Presumably, doing so will give us some new ways of abbreviating binary trees as bit strings!
-The simplest change is pair up everything that's left on the stack and then return that.
+The simplest change is to pair up everything that's left on the stack and then return that.
 ```
 let pairUpEverything = stack =>
   isEmptyStack(pop(stack)) ? topOf(stack)
@@ -327,10 +329,12 @@ decode(encode(concatenate(one,zero,one,zero,zero,zero)))
 decode(encode(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one)))
   '..,.,...,,,'
 ```
-The last two examples suggest a simple way of getting the shorter decoded string from teh longer decoded string of an encoded tree without having to guess and check encoding and decoding:
+The last two examples suggest a simple way of getting the shorter decoded string from the longer decoded string of an encoded tree without having to guess and check encoding and decoding:
+
 1. if the long code is a concatenation of all zeros or all ones then you already have the shorter bit string you're looking for, but
 2. if at least one zero and one one both occur in the long code then trim off any zeros on the left and any ones on the right.
 There are some more complicated javascript functions being used to define the operations of trimming and checking for occurrences of ones and zeros, but no more than what you can figure out for yourself from context clues or a quick search:
+
 ```
 let occursIn = (string, item) => string.includes(item)
 , trimLeftZeros = string => string.slice(string.indexOf(one))
@@ -341,7 +345,9 @@ let occursIn = (string, item) => string.includes(item)
   : occursIn(string,zero) && occursIn(string,one) ? trim(string)
   : string;
 ```
+
 And, here are some examples:
+
 ```
 shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one))
   ',.,...'
