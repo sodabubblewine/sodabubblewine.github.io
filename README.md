@@ -3,6 +3,57 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0414
 
+### A Stack Notation for Predicate (Functor) Logic 2025 0414 1626
+A way of eliminating variables from predicate logic which combines the methods of Quine's predicate functors with the practices of programming in J and FORTH permits predicate letters which, initially, generalize the familiar two place predicate notation--- e.g. 'x is identical to y', 'x belongs to y', and 'x is the father of y'--- by schema such as 'xyzFstuvw' so that each predicate has a number of left places--- three in the example schema--- and a number of right places--- five in the example.
+Thus, the predicate 'x pairs y with z' is rendered perspicuously as 'xPyz'.
+The left places are referred to as the pile of the predicate and the right places are the list of the predicate.
+
+The predicate functors of recombination (which generalize the stack notation of FORTH to predicate logic) are 
+
+1. '...xy(DROP F)...z' for '...xF...z'
+2. '...wxy(HEM F)...z' for '...wxyFx...z'
+3. '...x(PUSH F)y...z' for '...xyF...z'
+
+from which all others are defined e.g.
+
+4. 'OVER F' for 'HEM PUSH F'
+5. 'OVER2 F' for 'OVER OVER F'
+6. 'OEM F' for 'OVER HEM F'
+7. 'DSH F' for 'DROP PUSH F'
+8. 'DUP F' for 'OEM DSH F'
+9. 'DROP2 F' for 'DROP DROP F'
+10. 'POP F' for 'OEM DROP2 F'
+11. 'NIP F' for 'POP DSH F'
+12. 'HIP F' for 'HEM NIP F'
+13. 'HIP2 F' for 'HIP HIP F'
+14. 'SWAP F' for 'HIP PUSH F'
+15. 'PUSH2 F' for 'PUSH PUSH F'
+16. 'TOR F' for 'HIP2 PUSH2 F'
+17. 'ROT F' for 'TOR TOR F'
+
+and so on.
+The remaining predicate functors (which generalize the tacit notation of the J programming langauge to predicate logic) are defined from
+
+18. '...x(NOT F)...y' for 'not ...xF...y'
+19. '...x(F AND G)...y' for '...xF...y and ...xG...y'
+20. '...x(SOME F)...y' for 'some item is (z such that ...xzF...y)'.
+
+For more on predicate functors and the method of homogenization which permits translation back and forth between predicate functor logic and 'predication' logic see Quine's "Methods of Logic 4th edition".
+
+> Predication logic is the most appropriate name for what is unhappily called 'first-order logic' or otherwise called 'predicate logic'.
+> As I see it, with predicate functors elimination of variables, the only items in the lexicon of a logical theory are the predicates and hence 'predicate logic' is what might otherwise be called 'predicate functor logic'.
+
+There are two things forthcoming:
+1. an implimentation of the algorithms that transform a pure predicate functor term into a sentence (perhaps open or perhaps closed) of predicate logic, and vice versa; and
+2. a further generalization of the above notation which incorporates all four of the following:
+  a. FORTH's stack notation,
+  b. J's tacit notation, and
+  c. LISPS list notation.
+There are additional changes which permit a full generalization of APL and J's functional operators that generalize e.g. matrix multiplication.
+These correspond to predicate functor functors: you can continue to go up and up the grammatical hierarchy and even contemplate predicate functor functor functors if you desire.
+
+Though, it appears as if there is a limit to how high you can go and still get something helpful out of it: it seems to me that predicate functor functors are as far as you can go since after that everything else looks exactly like the first three levels of operations on the grammatical hierarchy of a logical language.
+
 ### 2025 0414 1605
 Today is a Nat King Cole day.
 His voice, his piano, and his trio have brought me hours of delight.
