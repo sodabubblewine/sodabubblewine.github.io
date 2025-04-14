@@ -1,5 +1,446 @@
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0413
+
+### 2025 0413 2249
+I finally finished my entry on [Bit Strings and Binary Trees](#2025-0413-1513-Bit-Strings-and-Binary-Trees)!
+It took longer than I expected, but I also uncovered some unexpected things along the way e.g. a quick and easy way to find shorter bit strings for a given binary tree.
+
+Something I also learned: there is no faster way to catch bad writing than to publish it.
+
+### 2025 0413 1754
+A friend just introduced me to two great bits of music:
+* [Alberto Ginastera](https://en.wikipedia.org/wiki/Alberto_Ginastera) - Harp Concerto (1956)
+* [Seru Giran](https://en.wikipedia.org/wiki/Ser%C3%BA_Gir%C3%A1n_(album)).
+I was able to guess that Ginastera had learned from Copland.
+I described Ginastera as a "faster Copland".
+
+Seru Giran was too short: I wanted more after listening to it.
+It is a very comforting album that seemed to combine popular styles from both America and Britian.
+
+### 2025 0413 1644
+If I could just finish one thing before finishing another thing then I would be able to finish more things that people care about now than things they'll care about later.
+This is a roundabout explanation of why I work the way that I do.
+
+### 2025 0413 1634 Buffett's Jet and Apple's Three Jets Full of iPhones
+
+Warren Buffett wrote about selling and buying a jet in his [letter to Berkshire sharehodlers in 1989](https://www.berkshirehathaway.com/letters/1989.html).
+On more than one occasion I have had to explain to people that it is more than a luxury, though that is mostly what the shareholder letters show off as the big problem.
+
+There is almost no limit to the potential value of being able to go from point A to point B around the world with tangable objects in tow.
+Apple's three jets full of iPhones should help people to more easily grasp why Warren went from naming his jet the 'indefensible' to the 'indispensable'.
+
+### 2025 0413 1513 Bit Strings and Binary Trees
+Bytes of memory stored in a computer can be treated as strings of binary digits or as little binary trees.
+Let me explain what I mean while I give you a javascript program that decodes a binary tree into a bit string and encodes a bit string into a binary tree.
+(Most people would swap 'encode' and 'decode' in that sentence.)
+
+Computers tend to use bits, bytes, and sometimes other more exotic words to do either place value arithmetic (binary in almost all cases, ternary in some rare cases) or to address other words of memory.
+
+> Technically they do place value arithemetic of remainders (sometimes with respect to the word size, and othertimes in less obvious ways that are otherwise more familiar as "logical operations").
+
+Storing addresses is an easy way to avoid having to copy words to new locations: go to where the relevant data is rather than waste the time and space to replicate it somewhere else.
+
+Words also have another vital role to play in computers: they store commands that end up telling the computer what to do with all those addresses and numbers.
+
+There is an alternative way of looking at words as lists of ones and zeros: each string of bits corresponds to a binary tree and each binary tree corresponds to a string of bits.
+It is easier to decode a binary tree into its binary string than it is to encode a binary string into its tree.
+
+Since the binary trees contemplated here are all dirty--- they are all built from pairs whose subcomponents are pairs or the nil pair--- there is only one terminal conditions which must be checked in any recursive definition: is this the nil tree?
+Before that, here is the code for building pairs from their left and right parts and for getting the left and right parts from a pair.
+
+```
+let pair=(leftPart,rightPart)=>({leftPart,rightPart})
+, leftPartOf=pair=>pair.leftPart
+, rightPartOf=pair=>pair.rightPart;
+```
+
+The nil pair is not to be confused with the empty pair: the empty pair has no parts, but the nil pair is a special pair (or what some might call an atom) that is identical to its left and right parts (see (2025 0411 2248)[#2025-0411-2248] for more on the logic of atomic and empty items).
+The way we make an object like that in javascript is a bit esoteric:
+
+```
+let nil={get leftPart(){return this},get rightPart(){return this}};
+```
+
+Setting up getters (and setters) with javascript objects is just weird and I really only read the documentation for such things when I already really know what I want.
+Otherwise, you will get lost trying to make sense of the design choices that brought us the programming langauge of the internet.
+There is an alternate world where LISP was the language of the internet: that world would have been better than this one.
+An even better world is one where it was FORTH, but I digress.
+
+The above definition of 'nil' makes it so that 
+
+```
+nil == leftPartOf(nil) && nil == rightPartOf(nil)
+  true
+```
+
+which happens to be the defining feature of atoms in a more general setting:
+
+```
+let atom=x=> x==leftPartOf(x) && x==rightPartOf(x);
+```
+
+Sadly, we won't be needing to talk any more about atoms.
+We just need to know whether a given tree is nil or not:
+
+```
+let isNil=x=> x==nil;
+```
+
+Oh, I should explain the difference between 'dirty trees' and 'pure trees' because most people are familiar enough with 'pure trees' and few people use the phrase 'dirty trees'.
+Dirty trees are ones that include something other than pairs or the empty pair among their subcomponents.
+They are pure in more ways than one: they do not admit of talk of atoms, and if you go down one branch or another you eventually hit the empty tree (but it may take infintely long to get there in some cases, those also being cases that I would say are inappropriate).
+
+So now we have all we need in order to talk about binary trees.
+Onto what we need to talk about bit strings:
+
+```
+let zero='.'
+, one=','
+, concatenate=(...strings)=> strings.length ? strings[0]+concatenate(...strings.slice(1)) : '';
+```
+
+There are two building blocks to bit strings: zero and one.
+They are to be distinct:
+
+```
+zero != one
+  true
+```
+
+and they can be combined by concatenation.
+The principles governing concatenation, like the principles governing binary trees, are actually a lot more elusive than it first seems: thankfully, if we just go with what javascript gives us there is no reason to get stuck in the theories of strings and trees, even though those can be fun places to be stuck.
+
+The function designated by 'concatenation' takes any number of arguments that are strings and puts them together in the order they are taken (from left to right).
+
+```
+concatonate(zero,one,zero,one,one)
+  .,.,,
+```
+
+Why use '.'s for zeros and ','s for ones?
+Because then the binary decoding of a tree is also the program for the stack machine that actually constructs the binary tree it decodes!
+But first, lets decode some trees:
+
+```
+let decode= tree => isNil(tree) ? zero 
+: concatenate(decode(leftPartOf(tree)), decode(rightPartOf(tree)), one);
+```
+
+In English, decode takes a tree and first checks if it is identical to nil.
+If it is then we already know how to decode that: it's just a zero.
+If it isn't nil then we have already made the assumption (quite a strong one really) that it must be a pair with a left part and a right part.
+So, all we need to know to write out the decoded tree is to
+1. decode the left part of the tree and
+2. decode the right part of the tree.
+Once we have those two things we just write out the code for the left tree, followed by the code for the right tree, and cap it all off at the end with a one.
+
+It will be shown that the decoded strings are almost always longer than they need to be: any initial zeros can be trimmed from the front of the decoded string without any loss to subsequent encoding.
+
+Some examples
+
+```
+decode(nil) 
+   .
+decode(pair(nil,nil)) 
+   ..,
+decode(pair(nil,pair(pair(nil,nil),nil))) 
+   ...,.,,
+```
+
+The decode function is one-to-one (injective i.e. each string that comes out of it is only the result of decoding one and only one tree).
+There are some bit strings that will never be the result of such decoding e.g. ',' and '.,'.
+Thus the method of decoding is not a one-to-one correspondence (bijection i.e. each tree matches to one and only one string and each string matches to one and only one tree).
+In general, there is a philosophic simplicity to establishing one-to-one correspondences from one universe of items to another.
+For more on the fruits of such labors see Quine's 1946 "Concatenation as a Basis for Arithmetic".
+
+When treated as postfix notation (as in reverse [Łukasiewicz notation](https://en.wikipedia.org/wiki/Polish_notation)) the ',' comes to work as the function 'pairUp' of a [stack machine](https://en.wikipedia.org/wiki/Stack_machine).
+So many of the practices of programming are described by tiny stack machines that there is great value to being familiar with them perhaps without ever programming a real stack machine.
+
+From the method of decoding it can be seen that the last ',' pairs together the left and right parts of the tree.
+This is how the encoder works!
+It simulates a little stack machine and uses the bit string as the list of commands necessary to construct the decoded tree.
+
+First, we can  use a tree to simulate a stack.
+All we need is a way to push, pop, and maybe peek at the top of the stack.
+When I implement stacks with trees, I always take the top item to be the right part of the tree simulating the stack.
+Some people prefer to take the left part of the simulating tree as the top, and there's nothing mathematically wrong with that (perhaps not even something logically wrong with that), but the programming language LISP has long since forced us to interpret such a setup as a list and not a stack i.e. the left part of a tree is the first item in a tree simulating a list.
+
+```
+let push= (stack,item) =>pair(stack,item)
+, pop= stack => leftPartOf(stack)
+, peek = stack => rightPartOf(stack);
+```
+
+If instead of allowing nil into our universe of pairs we had stuck ourselves with a pure theory of pairs, then 'peek' and 'pop' would have to be written differently e.g.
+
+```
+let error = message => console.log(message)
+, emptyPair=[]
+, isEmpty = pair => pair.length == 0
+, purePop = stack => isEmpty(stack) ? emptyPair : leftPartOf(stack)
+, purePeek= stack => isEmpty(stack) ? error('empty stack') : rightPartOf(stack);
+```
+
+Most people teach and prefer the implementation that includes error messages.
+They want the machine to tell them when something is wrong by anticipating how it could go wrong.
+My preference is for a crash based method of design: rather than go looking or errors leave as much of the design as possible out on the rim of "don't cares".
+Not only does this make your code a lot shorter (which makes it so there are fewer places where things could ever possibly go wrong), it also releases you from the anxiety of trying to catch your mistakes before you make them.
+
+There are some standard techniques that we pick up over time for avoiding problems that have already happened again and again in the past.
+Some people are taught by others to avoid them and some are taught by the immediate consequences of having made such mistakes.
+The latter almost always teaches better than the former, but that is not the end of this general problem as to how to practice programming.
+
+There is no universal way to detect logical errors in programs.
+No one is there to look over your shoulder and tell you "Hey, this isn't actually what you wanted to make in the first place."
+Though we have new machines that speak to us in such conversational tones--- after having been forcefed some scrap of code--- there is no part of such machines that prepare them for anything more than a world like the selecting past (but that goes a much longer way than most people once supposed, e.g., half a decade ago).
+
+But, there is a way to entirely avoid logical errors: that is what logic itself is for!
+Thus, rather than make trouble for ourselves by starting with the logic of pure binary trees (where, e.g., the definition of 'properPop' deals clumsily with degenerate cases), we begin with a theory that admits no such road bumps even if in degenerate cases it gives us unfamiliar results (e.g. the definition of 'pop' I have adopted here gives nil when you pop nil as the simulation of the empty stack).
+
+Back to encoding bit strings to trees!
+I already gave away the key to solving this problem: the bit string is a program that tells a tiny stack machine how to build the encoded tree.
+Thus, we go along the bits, from left to right, and when we hit a zero we push a nil onto the stack, and when we hit a one we pop the top two trees on the stack and pair them into a new one that we push back on the stack.
+
+Unlike pairs, there are no standard ways of getting at the anatomy of a string (there is much more to say about that and about Quine's protosyntax in general).
+Thus, we go with some traditional methods:
+
+```
+let emptyString=''
+, isEmptyString = string => string==emptyString
+, isZero = string => string == zero
+, isOne = string => string == one
+, firstOf = string => isEmptyString(string) ? emptyString: string[0]
+, restOf = string => isEmptyString(string) ? emptyString : string.slice(1);
+```
+Some examples:
+```
+isEmptyString(emptyString) 
+  true
+
+isEmpty(concatenate(zero,emptyString,one,one)) 
+ false
+
+isZero(firstOf(concatenate(zero,one,one,emptyString)))
+  true
+
+isOne(firstOf(restOf(concatenate(zero,one,one,emptyString))))
+  true
+
+concatenate(zero,one,zero)==restOf(concatenate(one,zero,one,zero))
+  true
+```
+
+Not all of those string functions are really needed in the encoder, but there's nothing wrong with covering familiar ground when it doesn't take you far from your path.
+There are two operations that our little simulation of a stack machine has to accommodate: push a nil and push a pair made from popping the top two items from the stack.
+The first is simple enough:
+```
+let pushNil=stack=>push(stack,nil);
+```
+It is the second that poses a few problems (but not anything too troublesome).
+Rather than explain it, I'll just show the code and go from there:
+```
+let emptyStack = nil
+, isEmptyStack = stack => stack==emptyStack
+, topOf = stack => peek(stack)
+, secondOf= stack => peek(pop(stack))
+, pop2 = stack => pop(pop(stack))
+, pairUp=stack=>push(pop2(stack),pair(secondOf(stack),topOf(stack)));
+```
+> For those familiar with stack operations in other circumstances, it may be strange to take a functional view of stacks: popping a stack returns a stack without its top, it doesn't change the state of some stack accessible outside of a the scope of the current executing function.
+
+Now all that is left is to break the encoder into a function that gets the ball rolling with an empty stack and one that takes a string and a stack and gets to work:
+
+```
+let encodeHelperBeta = (string, stack) =>
+  isEmptyString(string) ? topOf(stack)
+  : isZero(firstOf(string)) ? encodeHelperBeta(restOf(string), pushNil(stack))
+  : isOne(firstOf(string)) ? encodeHelperBeta(restOf(string), pairUp(stack))
+  : encodeHelperBeta(restOf(string),stack)
+, encodeBeta = string => encodeHelperBeta(string,emptyStack)
+```
+Lo, this is not the last version of encode and that is why it is called 'encodeBeta'.
+There are three things of note in the beta definition given:
+1) it asks if the string is empty and when it is it returns the top of the stack,
+2) it checks if the first item of the string is zero or one and executes the corresponding operation on the stack (pushing a nil on top of the stack or pairing up the top two items on the stack), and
+3) if it runs into an item of the string that we haven't talked about yet it does nothing and goes on its merry way.
+
+Here are some examples, but because we have no way of seeing the encoded tree I have to put it through the decoder: this ends up being helpful because it should decode into a string that we could put back into the encoder to make the tree all over again.
+```
+decode(encodeBeta(concatenate(zero,zero,one)))
+  '..,'
+decode(encodeBeta(decode(encodeBeta(concatenate(zero,zero,one)))))
+  '..,'
+decode(encodeBeta(concatenate(zero,zero,one,zero,one)))
+  '..,.,'
+decode(encodeBeta(concatenate(one,one)))
+  '...,,'
+```
+> Alternatively, we could have built up the parenthetical notation familiar to most people for ordered pairs e.g. where '(x,y)' is short for "the pair whose left part is x and whose right part is y".
+> It would also be helpful to know when two trees are equal so that we might be able to write out the construction of a tree and compare it to the encoding of its abbreviation as a bit string.
+> While javascript comes with its own built in string functions, it doesn't give us built in pairs or functions for working with pairs.
+> Given what is know from Solomon Fefferman's work on Finitary Inductively Presented Logics, it is probably a bad idea to design a language that doesn't work with ordered pairs (and for those less theoretically minded, there's always the conveniences of LISP to look at).
+
+That last example is well worth looking more closely at: it took the concatenation of one with one (which is not a string that will ever come out of the decoder) and it encoded just fine and when we sent that tree through the decoder it returned the concatenation of zero, zero, zero, one, and one!
+So we have a much shorter way of decoding this particular tree: we can write it as ',,' instead of '...,,' when we have said how 'encoderBeta' works!
+
+The following example shows why it is still called 'encoderBeta':
+```
+decode(encodeBeta(concatenate(zero,zero,zero,zero)))
+  '.'
+```
+Where did all those other zeros go that we concatenated together?
+How is it that we only got a single zero when we decoded the encoded tree?
+After the encoder checks that the string is empty it peeks at the top of the stack and returns it as the result.
+Since there are no ones in that concatenation, there are no pairs made out of the nil trees on the stack (of which there are four before it shows us the top nil).
+
+There's nothing wrong with the beta encoder except that we can make a new one that doesn't leave anything on the stack.
+Presumably, doing so will give us some new ways of abbreviating binary trees as bit strings!
+The simplest change is pair up everything that's left on the stack and then return that.
+```
+let pairUpEverything = stack =>
+  isEmptyStack(pop(stack)) ? topOf(stack)
+  : pairUpEverything(pairUp(stack))
+
+, encoderHelper = (string, stack) =>
+  isEmptyString(string) ? pairUpEverything(stack)
+  : isZero(firstOf(string)) ? encodeHelper(restOf(string), pushNil(stack))
+  : isOne(firstOf(string)) ? encodeHelper(restOf(string), pairUp(stack))
+  : encodeHelper(restOf(string),stack)
+, encode = string => encodeHelper(string,emptyStack);
+```
+
+Everything on the stack gets paired up by repeatedly applying 'pairUp' to the stack until there is only one item left on it (this is checked by seeing if popping the stack leaves only the empty stack behind).
+Some examples:
+```
+decode(encode(concatenate(zero,zero,one)))
+  '..,'
+decode(encode(concatenate(zero,zero,zero,zero)))
+  '....,,,'
+decode(encode(concatenate(one,zero,one,zero,zero,zero)))
+  '..,.,...,,,'
+decode(encode(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one)))
+  '..,.,...,,,'
+```
+The last two examples suggest a simple way of getting the shorter decoded string from teh longer decoded string of an encoded tree without having to guess and check encoding and decoding:
+1. if the long code is a concatenation of all zeros or all ones then you already have the shorter bit string you're looking for, but
+2. if at least one zero and one one both occur in the long code then trim off any zeros on the left and any ones on the right.
+There are some more complicated javascript functions being used to define the operations of trimming and checking for occurrences of ones and zeros, but no more than what you can figure out for yourself from context clues or a quick search:
+```
+let occursIn = (string, item) => string.includes(item)
+, trimLeftZeros = string => string.slice(string.indexOf(one))
+, trimRightOnes = string => string.slice(0,1+string.lastIndexOf(zero))
+, trim = string => trimLeftZeros(trimRightOnes(string))
+, shorten = string =>
+  isEmptyString(string) ? '.'
+  : occursIn(string,zero) && occursIn(string,one) ? trim(string)
+  : string;
+```
+And, here are some examples:
+```
+shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one))
+  ',.,...'
+decode(encode(shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one))))
+  '..,.,...,,,'
+```
+
+There are a few ways that these shorter decoded bit strings help out e.g. they let us fit more trees within a single word of memory and, if we are silly enough to do so, fit multiple tiny trees within a single word of memory.
+
+Next I'll come up with a way to showcase how each bit string or binary tree locates chuncks, down to words, of memory.
+After that it will probably be time for some bit string and binary tree arithmetic.
+No promises!
+
+Here's all the code I used to write this whole note:
+```
+let pair=(leftPart,rightPart)=>({leftPart,rightPart})
+, leftPartOf=pair=>pair.leftPart
+, rightPartOf=pair=>pair.rightPart;
+let nil={get leftPart(){return this},get rightPart(){return this}};
+let run=code=>{console.log(code,'\n  ',eval(code));}
+run('nil == leftPartOf(nil) && nil == rightPartOf(nil)');
+
+let atom=x=> x==leftPartOf(x) && x==rightPartOf(x);
+run('atom(nil)');
+
+let isNil=x=> x==nil;
+let zero='.'
+, one=','
+, concatenate=(...strings)=> strings.length ? strings[0]+concatenate(...strings.slice(1)) : '';
+run('zero != one');
+run('concatenate(zero,one,zero,one,one)');
+
+let decode= tree => isNil(tree) ? zero 
+: concatenate(decode(leftPartOf(tree)), decode(rightPartOf(tree)), one);
+run('decode(nil)');
+run('decode(pair(nil,nil))');
+run('decode(pair(nil,pair(pair(nil,nil),nil)))');
+
+let push= (stack,item) =>pair(stack,item)
+, pop= stack => leftPartOf(stack)
+, peek = stack => rightPartOf(stack);
+
+let error = message => console.log(message)
+, emptyPair=[]
+, isEmpty = pair => pair.length == 0
+, purePop = stack => isEmpty(stack) ? emptyPair : leftPartOf(stack)
+, purePeek= stack => isEmpty(stack) ? error('empty stack') : rightPartOf(stack);
+
+let emptyString=''
+, isEmptyString = string => string==emptyString
+, isZero = string => string == zero
+, isOne = string => string == one
+, firstOf = string => isEmptyString(string) ? emptyString: string[0]
+, restOf = string => isEmptyString(string) ? emptyString : string.slice(1);
+run("isEmptyString(emptyString)");
+run("isEmpty(concatenate(zero,emptyString,one,one))");
+run("isZero(firstOf(concatenate(zero,one,one,emptyString)))");
+run("isOne(firstOf(restOf(concatenate(zero,one,one,emptyString))))")
+run("concatenate(zero,one,zero)==restOf(concatenate(one,zero,one,zero))");
+
+let pushNil=stack=>push(stack,nil);
+let emptyStack = nil
+, isEmptyStack = stack => stack==emptyStack
+, topOf = stack => peek(stack)
+, secondOf= stack => peek(pop(stack))
+, pop2 = stack => pop(pop(stack))
+, pairUp=stack=>push(pop2(stack),pair(secondOf(stack),topOf(stack)));
+let encodeHelperBeta = (string, stack) =>
+  isEmptyString(string) ? topOf(stack)
+  : isZero(firstOf(string)) ? encodeHelperBeta(restOf(string), pushNil(stack))
+  : isOne(firstOf(string)) ? encodeHelperBeta(restOf(string), pairUp(stack))
+  : encodeHelperBeta(restOf(string),stack)
+, encodeBeta = string => encodeHelperBeta(string,emptyStack);
+run("decode(encodeBeta(concatenate(zero,zero,one)))");
+run("decode(encodeBeta(decode(encodeBeta(concatenate(zero,zero,one)))))")
+run("decode(encodeBeta(concatenate(one,one)))")
+run("decode(encodeBeta(concatenate(zero,zero,zero,zero)))");
+
+let pairUpEverything = stack =>
+  isEmptyStack(pop(stack)) ? topOf(stack)
+  : pairUpEverything(pairUp(stack))
+, encodeHelper = (string, stack) =>
+  isEmptyString(string) ? pairUpEverything(stack)
+  : isZero(firstOf(string)) ? encodeHelper(restOf(string), pushNil(stack))
+  : isOne(firstOf(string)) ? encodeHelper(restOf(string), pairUp(stack))
+  : encodeHelper(restOf(string),stack)
+, encode = string => encodeHelper(string,emptyStack);
+run("decode(encode(concatenate(zero,zero,one)))")
+run("decode(encode(concatenate(zero,zero,zero,zero)))")
+run("decode(encode(concatenate(one,zero,one,zero,zero,zero)))");
+run("decode(encode(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one)))");
+
+let occursIn = (string, item) => string.includes(item)
+, trimLeftZeros = string => string.slice(string.indexOf(one))
+, trimRightOnes = string => string.slice(0,1+string.lastIndexOf(zero))
+, trim = string => trimLeftZeros(trimRightOnes(string))
+, shorten = string =>
+  isEmptyString(string) ? '.'
+  : occursIn(string,zero) && occursIn(string,one) ? trim(string)
+  : string;
+run("shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one))");
+run("decode(encode(shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one))))");
+```
+
 ## 2025 0412
 
 ### 2025 0412 2335
