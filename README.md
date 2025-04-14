@@ -1,4 +1,34 @@
+# What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
+
+## 2025 0414
+
+### 2025 0414 1605
+Today is a Nat King Cole day.
+His voice, his piano, and his trio have brought me hours of delight.
+
+Some things I'd like to get done today:
+1. Finish the very short paper on "A Stack Notation for Predicate (Functor) Logic"
+2. Finish my little parenthetical space sperated langauge
+3. Read some more of "The Rise and Fall of the Third Reich" by Shirer and published October 17, 1960.
+
+I've read that Shirer's account is 'outdated' or 'narrow' or 'not historically accurate'.
+No book is historically accurate: we wouldn't know how to check for historic accuracy even if our life dependend on it.
+That is a bit of an overexaggeration: it is largely the result of the metaphorical distance between works like "Schedules of Reinforcement" by Skinner and Ferster where the challenges of keeping an accurate record of behavior are uncovered in all their ugly details.
+
+Whether Shirer's book is adequate for an understanding of the third reich is moot: no book is going to give "the whole story" as if there was some big story in the sky that would truly enlighten us if we could just reach it.
+I see what I've read of Shirer so far as a starting point: it is so well written that you would be hard pressed NOT to finish it.
+Not all history books have that same luxury.
+
+So far, I've read that Richard J. Evan's "Third Reich Trilogy":
+
+1. "The Coming of the Third Reich" published October 2003
+2. "The Third Reich in Power" published October 2005
+3. "The Third Reich at War" published October 2008
+
+is a much more accurate report on the contingencies that selected and ultimately extinguished the third reich.
+
+I have so many books to read that it is hard to see how I'll ever get to reading them all. 
 
 ## 2025 0413
 
