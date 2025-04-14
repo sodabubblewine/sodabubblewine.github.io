@@ -47,7 +47,7 @@ Words also have another vital role to play in computers: they store commands tha
 There is an alternative way of looking at words as lists of ones and zeros: each string of bits corresponds to a binary tree and each binary tree corresponds to a string of bits.
 It is easier to decode a binary tree into its binary string than it is to encode a binary string into its tree.
 
-Since the binary trees contemplated here are all dirty--- they are all built from pairs whose subcomponents are pairs or the nil pair--- there is only one terminal conditions which must be checked in any recursive definition: is this the nil tree?
+Since the binary trees contemplated here are all dirty--- they are all built from pairs whose subcomponents are pairs or the nil pair--- there is only one terminal condition which must be checked in any recursive definition: is this the nil tree?
 Before that, here is the code for building pairs from their left and right parts and for getting the left and right parts from a pair.
 
 ```
@@ -56,7 +56,7 @@ let pair=(leftPart,rightPart)=>({leftPart,rightPart})
 , rightPartOf=pair=>pair.rightPart;
 ```
 
-The nil pair is not to be confused with the empty pair: the empty pair has no parts, but the nil pair is a special pair (or what some might call an atom) that is identical to its left and right parts (see (2025 0411 2248)[#2025-0411-2248] for more on the logic of atomic and empty items).
+The nil pair is not to be confused with the empty pair: the empty pair has no parts, but the nil pair is a special pair (or what some might call an atom) that is identical to its left and right parts (see [2025 0411 2248](#2025-0411-2248) for more on the logic of atomic and empty items).
 The way we make an object like that in javascript is a bit esoteric:
 
 ```
