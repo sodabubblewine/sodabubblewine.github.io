@@ -12,6 +12,7 @@ Something I also learned: there is no faster way to catch bad writing than to pu
 A friend just introduced me to two great bits of music:
 * [Alberto Ginastera](https://en.wikipedia.org/wiki/Alberto_Ginastera) - Harp Concerto (1956)
 * [Seru Giran](https://en.wikipedia.org/wiki/Ser%C3%BA_Gir%C3%A1n_(album)).
+
 I was able to guess that Ginastera had learned from Copland.
 I described Ginastera as a "faster Copland".
 
