@@ -3,12 +3,12 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 ## 2025 0413
 
 ### 2025 0413 2249
-I finally finished my entry on [Bit Strings and Binary Trees](#2025-0413-1513-Bit-Strings-and-Binary-Trees)!
+I finally finished my entry on [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees)!
 It took longer than I expected, but I also uncovered some unexpected things along the way e.g. a quick and easy way to find shorter bit strings for a given binary tree.
 
 Something I also learned: there is no faster way to catch bad writing than to publish it.
 
-Something else I learned: if you don't end a markdown list with two returns, it thinks the trailing line of text is part of the last entry in the list.
+Something else I learned: if you don't end a markdown list with two returns it thinks the trailing line of text is part of the last entry in the list.
 
 ### 2025 0413 1754
 A friend just introduced me to two great bits of music:
