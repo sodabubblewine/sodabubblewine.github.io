@@ -2,6 +2,34 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0413
 
+### 2025 0413 2353
+While skimming over John McCarthy's 1979 "History of Lisp" two things caught my attention:
+1. he mentioned that Quine had used prefix notation in some thing he or those around him had read and that this had some influence on LISP's prefix notation (pg. 7)
+2. He mentioned a paper he wrote with Carwright (1978) that "show how to represent pure LISP programs by sentences and schemata in first order logic and prove their properties"(pg. 8)
+
+He also mentioned something about LISP having no effect on those working in recursion theory, but that now seems to be a historical hiccup.
+
+My interest in (1) is much less than my interest in (2).
+I am reading the mentioned paper now: "First Order Programming Logic" by Cartwright and McCarthy in 1979.
+
+I just finished reading it (202504140019) and am both happy and sad.
+My interest was primarly the result of being consumed by the methods of logic programming.
+But, alas, "programming logic" and "logic programming" though just one swap away from each other does not bring them together as one.
+That is the sadness: this paper does not not reduce pure LISP to the methods of logic programming.
+
+What it does do though is still very important, and I will have to read this paper again before I can explain it and the many things that it brings up as they relate to logic programming: it calms the anxieties of those who continue to seek something beyond predicate logic when making proofs about programs.
+
+Cartwright shows how to set up a theory (kind of like the traces in what Hoare first introduced as [1978 "Communicating Sequential Processes"](https://dl.acm.org/doi/10.1145/359576.359585)) that transforms partial functions into total functions allowing for the introduction of an equivalence axiom that permits convenient proofs of properties of the original partial function e.g. an interpreter.
+
+McCarthy's contribution is a minimization schema for each partial function (this is very likely akin to the schematic method I devised for setting up a schematic theory of transitive closures of an unspecified predicate of the lexicon of the theory) that ends up being equivalent to Cartwright's method.
+
+Together these methods indicate clearly and exactly that no more than predicate logic is needed to reason about recursive programs, even those once as unfamiliar as interpreters/compilers.
+
+These are happy things to know because it strengthens the general significance of my proposal that the practices of programmign are simply a subcollection of the practices of predicate logic.
+
+The significance to this specific paper, and any others like it, is that such formalisms are no more a surprise than a formalism of predicate logic itself.
+
+
 ### 2025 0413 2323
 I got a copy of Will Durant's "The Story of Philosophy" some months ago from a book fair.
 Though I read some of it back then, I do not recall any of it now.
@@ -18,7 +46,7 @@ Anyway, I finished reading the introduction to Will Durant's "The Story of Philo
 The success of Will's book "The Story of Philosophy" allowed him and his wife to write "The Story of Civilization" which I have yet to finish reading (in fact, I still have yet to finish the first book in the series!).
 I am drawn to the Durants because they wished to see the world as a whole: to put Humpty Dumpty back together again.
 
-Mine is the second edition and teh eighth printing: copyrighted last in 1933 and published no later than 1953 by Simon and Schuster.
+Mine is the second edition and the eighth printing: copyrighted last in 1933 and published no later than 1953 by Simon and Schuster.
 
 The introduction to this second edition echos my own outlook on our modern world: although we are technically more interconnected now than ever before, there is less wisdom among us than ever there has been.
 Much of our world was designed and built by a few of us.
@@ -46,7 +74,7 @@ I was able to guess that Ginastera had learned from Copland.
 I described Ginastera as a "faster Copland".
 
 Seru Giran was too short: I wanted more after listening to it.
-It is a very comforting album that seemed to combine popular styles from both America and Britian.
+It is a very comforting album that seemed to combine popular styles from both North America and England.
 
 ### 2025 0413 1644
 If I could just finish one thing before finishing another thing then I would be able to finish more things that people care about now than things they'll care about later.
