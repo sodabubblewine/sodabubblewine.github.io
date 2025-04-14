@@ -90,6 +90,7 @@ let isNil=x=> x==nil;
 
 Oh, I should explain the difference between 'dirty trees' and 'pure trees' because most people are familiar enough with 'pure trees' and few people use the phrase 'dirty trees'.
 Dirty trees are ones that include something other than pairs or the empty pair among their subcomponents.
+Pure trees are ones that don't include anything other than pairs or the empty pair among their components.
 They are pure in more ways than one: they do not admit of talk of atoms, and if you go down one branch or another you eventually hit the empty tree (but it may take infintely long to get there in some cases, those also being cases that I would say are inappropriate).
 
 So now we have all we need in order to talk about binary trees.
