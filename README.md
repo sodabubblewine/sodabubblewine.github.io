@@ -3,14 +3,14 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 ## 2025 0413
 
 ### 2025 0413 2353
-While skimming over John McCarthy's 1979 "History of Lisp" two things caught my attention:
+While skimming over [John McCarthy's 1979 "History of Lisp"](https://justine.lol/sectorlisp/lisp-history.pdf) two things caught my attention:
 1. he mentioned that Quine had used prefix notation in some thing he or those around him had read and that this had some influence on LISP's prefix notation (pg. 7)
 2. He mentioned a paper he wrote with Carwright (1978) that "show how to represent pure LISP programs by sentences and schemata in first order logic and prove their properties"(pg. 8)
 
 He also mentioned something about LISP having no effect on those working in recursion theory, but that now seems to be a historical hiccup.
 
 My interest in (1) is much less than my interest in (2).
-I am reading the mentioned paper now: "First Order Programming Logic" by Cartwright and McCarthy in 1979.
+I am reading the mentioned paper now: ["First Order Programming Logic" by Cartwright and McCarthy in 1979](https://dl.acm.org/doi/10.1145/567752.567759).
 
 I just finished reading it (202504140019) and am both happy and sad.
 My interest was primarly the result of being consumed by the methods of logic programming.
