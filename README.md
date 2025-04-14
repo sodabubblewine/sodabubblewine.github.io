@@ -14,7 +14,7 @@ Some things I'd like to get done today:
 
 I've read that Shirer's account is 'outdated' or 'narrow' or 'not historically accurate'.
 No book is historically accurate: we wouldn't know how to check for historic accuracy even if our life dependend on it.
-That is a bit of an overexaggeration: it is largely the result of the metaphorical distance between works like "Schedules of Reinforcement" by Skinner and Ferster where the challenges of keeping an accurate record of behavior are uncovered in all their ugly details.
+That is a bit of an overexaggeration: it is largely the result of the metaphorical distance between our records of day to day life and works like "Schedules of Reinforcement" by Skinner and Ferster where the challenges of keeping an accurate record of behavior are uncovered in all their ugly details.
 
 Whether Shirer's book is adequate for an understanding of the third reich is moot: no book is going to give "the whole story" as if there was some big story in the sky that would truly enlighten us if we could just reach it.
 I see what I've read of Shirer so far as a starting point: it is so well written that you would be hard pressed NOT to finish it.
