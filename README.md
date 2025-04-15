@@ -1,7 +1,65 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0415
+
+### 2025 0415 1557
+
+It seems that people who were a part of history wish they had written down more of the history of which they were a part.
+
+There is less to learn from what was forgotten than from what was remembered.
+
+Time tramples all.
+
+> This occurred to me while reading [John McCarthy's 1979 "History of Lisp"](https://justine.lol/sectorlisp/lisp-history.pdf).
+
+### 2025 0415 1548
+
+First a summary of the work done on my little LISP from [202504112248](#2025-0411-2248)
+
+```
+let consOf = (car,cdr) => [car,cdr]
+, carOf = cons => cons[0]
+, cdrOf = cons => cons[1]
+, nil = []
+, isIdentical = (x,y) => x==y
+, isNil = x => isIdentical(x,nil)
+, isPair = x => Array.isArray(x)
+, isAtom = x => !isPair(x);
+```
+
+In English (that carefully distinguishes between quotations and their purported designations for reasons that shall be explained later),
+* the function designated by 'consOf' takes two arguments and gives back a javascript array with the first argument indexed by zero and the second argument indexed by one;
+* the function designated by 'carOf' takes one argument, which it expects is the result of an application of 'consOf', and returns the item of teh argument indexed by zero;
+* the function designated by 'cdrOf' is like the one designated by 'carOf' but it returns the item of the argument indexed by one;
+* the item designated by 'nil' is a javascript array of length zero;
+* the function designated by 'isIdentical' takes two arguments and returns the javascript item designated by 'true' where the first argument is `==` to the second (in the langauge of javascript) and returns the javascript item designated by 'false' elsewhere;
+* the function deisgnated by 'isNil' takes oen argument and returns the js item deisgnated by 'true' where it is `==` to the js item designated by 'nil', and returns the js item designated by 'false' elsewhere;
+* the function designated by 'isPair' takes one argument and returns the js item designated by the application of 'Array.isArray' to it; and
+* the function designated by 'isAtom' takes one argument and returns the js item designated by 'false' if the js item designated by the application of the function designated by 'isPair' is designated by 'true', and the js item designated by 'true' otherwise.  
+
+From my work on [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees), the practice of designating a function by ending it in 'Of' and designating the functional representation of a predicate by beginning it with 'is' helps a lot when working out the logic of the programs under construction.
+This is also a partial explanation for all the 'designated by's and quotations that spell out the letters of what most people would call the names of the designated functions or objects.
+
+As much as there is the temptation to write phrases like 'the function consOf' or, better, 'the function `consOf`' which resorts to a different typeface in order to weakly emphasize that there is something different about the purported designatum of the so rendered phrase, there has only been decades and centuries of mistakes and wasted efforts promulgated by untaught writers and readers.
+
+This is especially the case when writing and reading programs e.g. the problems that so many people have with so called 'pointer arithmetic' is no such simple thing as a 'bad design decision of a particular programming language'.
+The problems of meaning and reference, the life blood of semantics, crop up wherever langauges are planted (which includes some of our most powerful social technologies).
+They are fundamental problems that can not be swept under the rug before the guests arrive.
+
+When a writer leaves it to the reader to figure out what is supposed to be a quotation and what purports to be designated by such a quotation, there is only hell to pay.
+Even if the writer commands the readerto take on the responsibility of "keeping conventions in mind" this only works if there are other reasons for them to do so.
+
+This problem is not as unfamiliar nor as fussy as it seems e.g. classic problems of scoping in logic and in programming are fundamentally about not having resolved a concrete method of reference or meaning which deals well with the fundamental problems of syntax.
+
 ## 2025 0414
+
+### 2025 0414 2055
+This entry continues my read of Will Durant's "The Story of Philosophy" from [202504132323](#2025-0413-2323).
+
+The introduction hovers around a familiar analogy: science is to knowledge as philosophy is to wisdom.
+He says that science analyzes and philosophy synthesizes; that science takes apart what philosophy must put back together; that science gives us the power to do only what philosophy can tell us is worth doing; that science without philosophy has no value in that science without philosophy is like a fact without a feeling; that we must not forget that science is a descendant of philosophy; and that philosophy brought science into this world and can just as easily take it out of this world.
+
 
 ### 2025 0414 2041
 Yesterday, I stumbled on <https://www.game-cities.com/> by Konstantinos Dimopoulos who shared a link to [Ultima and Worldbuilding in the Computer Role-Playing Game
@@ -130,7 +188,7 @@ I got a copy of Will Durant's "The Story of Philosophy" some months ago from a b
 Though I read some of it back then, I do not recall any of it now.
 One of the joys of reading SO MANY *fundamentally interesting* things (sometimes over and over again) is that you can actually forget some of them!
 
-Most of what I read is nonfiction, but I've started reading fiction recently e.g. Agatha Christe, Chaucer, and Dante.
+Most of what I read is nonfiction, but I've started reading fiction recently e.g. Agatha Christe, le Carre, Chaucer, and Dante.
 Most of the fiction I've read in my life is from when I was less than fifteen years old e.g. Asimov, Pullman, Tolkein, Salinger, Wells, Orwell, and Shelly.
 Since I haven't reread those books I'm uncertain whether I have forgotten them or not.
 
@@ -984,7 +1042,7 @@ The function named 'car' takes one argument and returns the item at index zero o
 The function named 'cdr' takes one argument and returns the item at index one of it.
 
 Both 'car' and 'cdr' are names inherited from working with programmable machines (aka "computers") during the late 1950s and early 1960s.
-If you want to learn more about where 'car' and 'cdr' come from, and perahsp even how to pronounce 'cdr' (which I say as "could-er"), then track down McCarthy's history of LISP and give it a compassionate read.
+If you want to learn more about where 'car' and 'cdr' come from, and perahsp even how to pronounce 'cdr' (which I say as "could-er"), then track down [John McCarthy's 1979 "History of Lisp"](https://justine.lol/sectorlisp/lisp-history.pdf) and give it a compassionate read.
 
 With 'cons', 'car', and 'cdr' we can make pairs, get their left part, and their right part respectively.
 There are algebraic or equational ways of introducing these basic functions e.g.
