@@ -3,6 +3,18 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0414
 
+### 2025 0414 2041
+Yesterday, I stumbled on <https://www.game-cities.com/> by Konstantinos Dimopoulos who shared a link to [Ultima and Worldbuilding in the Computer Role-Playing Game
+Carly A. Kocurek and Matthew Thomas Payne](https://services.publishing.umich.edu/Books/U/Ultima-and-Worldbuilding-in-the-Computer-Role-Playing-Game) that can be read online for free.
+
+It's a short and quick read.
+I'm always left wanting more from the books I read on the history or philosohpy of various video games.
+In the end, the books that I want on my favorite games are basically literate programs that give an elaborate history of each design decision.
+That is not yet the kind of book that is easy to get your hands on.
+
+I hope to come back to Dimopoulos' site and read some of his [articles](https://www.game-cities.com/articles-talks) on urban design in video games.
+
+
 ### A Stack Notation for Predicate (Functor) Logic 2025 0414 1626
 A way of eliminating variables from predicate logic which combines the methods of Quine's predicate functors with the practices of programming in J and FORTH permits predicate letters which, initially, generalize the familiar two place predicate notation--- e.g. 'x is identical to y', 'x belongs to y', and 'x is the father of y'--- by schema such as 'xyzFstuvw' so that each predicate has a number of left places--- three in the example schema--- and a number of right places--- five in the example.
 Thus, the predicate 'x pairs y with z' is rendered perspicuously as 'xPyz'.
@@ -46,9 +58,11 @@ For more on predicate functors and the method of homogenization which permits tr
 There are two things forthcoming:
 1. an implimentation of the algorithms that transform a pure predicate functor term into a sentence (perhaps open or perhaps closed) of predicate logic, and vice versa; and
 2. a further generalization of the above notation which incorporates all four of the following:
-  a. FORTH's stack notation,
-  b. J's tacit notation, and
-  c. LISPS list notation.
+    * Quine's predicate functor notation,
+    * FORTH's stack notation,
+    * J's tacit notation, and
+    * LISP's list notation.
+
 There are additional changes which permit a full generalization of APL and J's functional operators that generalize e.g. matrix multiplication.
 These correspond to predicate functor functors: you can continue to go up and up the grammatical hierarchy and even contemplate predicate functor functor functors if you desire.
 
@@ -86,7 +100,7 @@ I have so many books to read that it is hard to see how I'll ever get to reading
 ### 2025 0413 2353
 While skimming over [John McCarthy's 1979 "History of Lisp"](https://justine.lol/sectorlisp/lisp-history.pdf) two things caught my attention:
 1. he mentioned that Quine had used prefix notation in some thing he or those around him had read and that this had some influence on LISP's prefix notation (pg. 7)
-2. He mentioned a paper he wrote with Carwright (1978) that "show how to represent pure LISP programs by sentences and schemata in first order logic and prove their properties"(pg. 8)
+2. He mentioned a paper he wrote with Cartwright (1978) that "show how to represent pure LISP programs by sentences and schemata in first order logic and prove their properties"(pg. 8)
 
 He also mentioned something about LISP having no effect on those working in recursion theory, but that now seems to be a historical hiccup.
 
@@ -469,6 +483,7 @@ The last two examples suggest a simple way of getting the shorter decoded string
 
 1. if the long code is a concatenation of all zeros or all ones then you already have the shorter bit string you're looking for, but
 2. if at least one zero and one one both occur in the long code then trim off any zeros on the left and any ones on the right.
+
 There are some more complicated javascript functions being used to define the operations of trimming and checking for occurrences of ones and zeros, but no more than what you can figure out for yourself from context clues or a quick search:
 
 ```
