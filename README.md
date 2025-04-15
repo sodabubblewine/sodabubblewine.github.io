@@ -48,7 +48,7 @@ The problems of meaning and reference, the life blood of semantics, crop up wher
 They are fundamental problems that can not be swept under the rug before the guests arrive.
 
 When a writer leaves it to the reader to figure out what is supposed to be a quotation and what purports to be designated by such a quotation, there is only hell to pay.
-Even if the writer commands the readerto take on the responsibility of "keeping conventions in mind" this only works if there are other reasons for them to do so.
+Even if the writer commands the reader to take on the responsibility of "keeping conventions in mind" this only works if there are other reasons for them to do so.
 
 This problem is not as unfamiliar nor as fussy as it seems e.g. classic problems of scoping in logic and in programming are fundamentally about not having resolved a concrete method of reference or meaning which deals well with the fundamental problems of syntax.
 
@@ -59,6 +59,31 @@ This entry continues my read of Will Durant's "The Story of Philosophy" from [20
 
 The introduction hovers around a familiar analogy: science is to knowledge as philosophy is to wisdom.
 He says that science analyzes and philosophy synthesizes; that science takes apart what philosophy must put back together; that science gives us the power to do only what philosophy can tell us is worth doing; that science without philosophy has no value in that science without philosophy is like a fact without a feeling; that we must not forget that science is a descendant of philosophy; and that philosophy brought science into this world and can just as easily take it out of this world.
+
+Next, he breaks apart philosophy in the traditional way, only to follow his own advice and focus on "the great men of philosophy" rather than the great fields of philosophy:
+* Logic "is the study of the ideal method in thought and research: observation and introspection, deduction and induction, hypothesis and experiment, analysis and synthesis" [pg. 3]
+* Esthetics (or Aesthetics) "is the study of ideal form, or beauty; it is the philosophy of art" [pg. 3]
+* Ethics "is the study of ideal conduct; the highest knowledge, said Socrates, is the knowledge of good and evil, the knowledge of the wisdom of life" [pg. 3]
+* Politics "is teh study of ideal social organization (it is not,a s one might suppose the art and science of capturing and keeping office); monarchy, aristocracy, democracy, socialism, anarchism, feminism--- these are the *dramatis personae* of political philosophy." [pg. 3]
+* Metaphysics (which he disdains as you will see) "And lastly, *metaphysics* (which gets into so much trouble because it is not, like the other forms of philosophy, an attempt to coordinate the real in the light of the ideal) is the study of the "ultimate reality" of all things: of the real and final nature of "matter" (ontology), of "mind" (philosophic psychology), and of the interrelation fo "mind" and "amtter" in the process of perception and knowledge (epistomology)."
+
+The chapters outline the path Will takes through the story of philosophy:
+
+1. Plato
+2. Aristotle and Greek Science
+3. Francis Bacon
+4. Spinoza
+5. Voltaire and the French Enlightenment
+6. Immanuel Kant and German Idealism
+7. Schopenhauer
+8. Herbert Spencer
+9. Friedrich Nietzsche
+10. Contemporary European Philosophers
+11. Contemporary American Philosophers
+
+In the introduction to the second edition Will makes repeated apologies for what he has already apologized for in the main text: it is riddled with sentences that would have experts on the relevant topics fuming and it leaves out Eastern philosophers entirely (which he tried to correct in the first volume of "The Story of Civilization").
+
+There is no book on philosophy as a whole which has not failed to present that whole without holes.
 
 
 ### 2025 0414 2041
