@@ -3,6 +3,20 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0415
 
+### 2025 0415 1915
+As is often the case, I have added some other books to read in parallel with Druant's "The Story of Philosophy". They are
+* Russell's "The History fo Western Philosophy", and
+* Grayling's "The History of Philosophy".
+
+I'm pretty sure those are the only books in my library that are directly aimed at giving a sorta story or a sorta story of philosophy as a whole.
+There is also the classic
+
+*"Introduction to Philosophy: Classical and Contemporary Readings, 4th edition" edited by Perry, Bratman, Fischer
+
+that may come up in what is building up to be a larger piece of the reading puzzle I have to solve in order to do all that I must before I die.
+As much as I recommend people go directly to primary texts, there is no good way to get started on the whole of a thing than by reading how someone else did it.
+We're all human, in the end, and that alone binds us into the most startling of enterprises. 
+
 ### 2025 0415 1557
 
 It seems that people who were a part of history wish they had written down more of the history of which they were a part.
@@ -41,6 +55,12 @@ In English (that carefully distinguishes between quotations and their purported 
 From my work on [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees), the practice of designating a function by ending it in 'Of' and designating the functional representation of a predicate by beginning it with 'is' helps a lot when working out the logic of the programs under construction.
 This is also a partial explanation for all the 'designated by's and quotations that spell out the letters of what most people would call the names of the designated functions or objects.
 
+I'm writing here now after having written the following section to say that it goes a little too far from talk about programming a LISP in javascript and if that's all that you care about then you can just skip past this break to the next one.
+What you're missing is a more detailed explanation of the general plan for dealing with syntax and semantics.
+It doesn't get too deep, but does go even further out of bounds than even I can presumably tolerate.
+
+---
+
 As much as there is the temptation to write phrases like 'the function consOf' or, better, 'the function `consOf`' which resorts to a different typeface in order to weakly emphasize that there is something different about the purported designatum of the so rendered phrase, there has only been decades and centuries of mistakes and wasted efforts promulgated by untaught writers and readers.
 
 This is especially the case when writing and reading programs e.g. the problems that so many people have with so called 'pointer arithmetic' is no such simple thing as a 'bad design decision of a particular programming language'.
@@ -50,7 +70,60 @@ They are fundamental problems that can not be swept under the rug before the gue
 When a writer leaves it to the reader to figure out what is supposed to be a quotation and what purports to be designated by such a quotation, there is only hell to pay.
 Even if the writer commands the reader to take on the responsibility of "keeping conventions in mind" this only works if there are other reasons for them to do so.
 
-This problem is not as unfamiliar nor as fussy as it seems e.g. classic problems of scoping in logic and in programming are fundamentally about not having resolved a concrete method of reference or meaning which deals well with the fundamental problems of syntax.
+This problem is not as unfamiliar nor as fussy as it seems e.g. classic problems of scoping in logic and in programming are fundamentally about not having resolved a concrete method of reference or meaning which deals well with syntactic and semantic agreement.
+
+Rather than ignore the fundamental problems I'll pick the strongest, perhaps tentative, methods that are already within my reach and take it from there: nothing is as final as finality claims to be.
+
+I have already mentioned Quine multiple times thorughout these notes and to anyone who is so unfortunate to have followed me on twitter.
+As much as people detest Quine's obstinate rigor (a term that I only just discovered is already stated poetically as "Ostinato Rigore"), the articulation of his uncertainty is beyond anything else that I seen.
+
+The plan is simple: semantics breaks into reference and meaning, reference breaks into designation and denotation, and denotation 
+
+> "is where the action is. It takes designation in stride, for a singular term can be recast as a predicate that happens to denote just one thing if any.
+> The singular term 'Boston' *designating* Boston, can be reconstrued as a predicate 'is Boston', *denoting* only Boston.
+> Anything said about Boston can be paraphrased using 'is Boston'."[pg. 59 of Quine's "From Stimulus to Science"]
+
+Quine shows just how denotation comes to be defined in consistent theories by first generalizing Tarski's method of defining truth to denotation and then admitting a hierarchy of predicates of denotation, finite in number for a given theory of denotation.
+This settles, once and for all, the work of denotation in a theory which is rich enough to admit a method of semantic ascent e.g. by way of quotations.
+
+While such a hierarchy of predicates of denotation are less than what most expect, e.g., from a comprehensive theory of truth ("Truth, one might risk being quoted as saying, is just a degenerate case of denotation."[pg. 65 Quine's "From Stimulus to Science"]) it is all that can be got without plunging any such theory into the classic antimonies.
+
+Now, among the practices of programming there are those called "denotational semantics".
+This is but one way of explaining what so many people speak of as the meaning of a given program.
+It is much easier to see how all such talk paraphrases into Quine's methods by beginning with a programming language which drops variables from the beginning and hence eases the complexity of any subsequent definition of programmatic denotation as a projection from a logically consistent theory of denotation.
+
+Sadly, now is not the time or place for me to complete such a project.
+As almost always seems to happen when working on interesting things, other interesting things come up, they are temporarily entertained for the sake of maintaining momentum, and then when they start to take over and drive at a new direction, there's nothing left to do but drop it and return to where the enthusiasm last let off on the path you had original planned.
+
+I won't leave the other part of semantics hanging though: meaning.
+The simplest explanation of how I deal with it is to point again to Quine.
+This is not because I accept Quine without criticism or correction, but because there is no one who has yet combined the philosophies of Quine with the philosophy of Skinner's radical behaviorism in the way that seems to be characteristic of my outlook and actions in regards to these matters.
+
+In the classical story, sentences have meaning.
+It is what a sentence means that matters most when we speak with each other.
+If you don't know what a sentence means, then the sentence is effectively worthless to you.
+Sentences are merely the aftereffects of meaning.
+In the metaphor of traditional signals processing, it is sentences that send the message but it is the meaning that is encoded or decoded from the sentence.
+
+Skinner's analysis of verbal behavior ends all speculation as to what potential philosophic value there can be to disputing the existence or nonexistence of meanings (or information, in the modern parlence, or propositions in more sacred realms).
+But, meanings die hard, and it is harder still for most to imagine a world without meanings much less to get along in one.
+While Skinner drops meanings outright and simply begins without them until he comes around to the verbal behavior that we otherwise said would not occur without the existence of meanings, Quine gives traditionalists a good shake.
+
+He starts with "sameness of meaning" rather than with meaning.
+At least we can say when two sentences "have the same meaning" if we can not say what the meaning is, or if we might somehow get along without purporting anything more than a predicate "means the same as".
+Just as in the case of denotation, I can not go through how "sameness of meaning" goes broke.
+The concluding outlook is this:
+
+* reification through joint reference in that weaker form of universal closures of conditionals that Quine calls "focal observation categoricals" and which burgeon into micro spatiotemporal theories of the world cover their own ground, i.e. we are justified in speaking of "sameness of reference" between the pronouns of focal observation categoricals,
+* these very grounds give us the power of intersubjective sameness of reference with repsect to gross bodies (this being little more than the classic "by ostention"), and
+* abstract items, such as orderd pairs, receive only the most conservative of treatments
+   > "I submit that intersubjective sameness of reference makes no sense, as applied to abstract objects, beyond what is reflected in successful dialogue." [pg. 70 Quine's "From Stimulus to Science"].
+
+For more detail on any of these things I can point to the text quoted, oh so many times in this entry, Quine's 1995 refinement of his 1990 talk "From Stimulus to Science".
+It is a hard read, something which I have said many times before, but the value of each of its words and sentences is second only to the value of his "Methods of Logic 4th edition".
+
+---
+
 
 ## 2025 0414
 
@@ -65,7 +138,7 @@ Next, he breaks apart philosophy in the traditional way, only to follow his own 
 * Esthetics (or Aesthetics) "is the study of ideal form, or beauty; it is the philosophy of art" [pg. 3]
 * Ethics "is the study of ideal conduct; the highest knowledge, said Socrates, is the knowledge of good and evil, the knowledge of the wisdom of life" [pg. 3]
 * Politics "is teh study of ideal social organization (it is not,a s one might suppose the art and science of capturing and keeping office); monarchy, aristocracy, democracy, socialism, anarchism, feminism--- these are the *dramatis personae* of political philosophy." [pg. 3]
-* Metaphysics (which he disdains as you will see) "And lastly, *metaphysics* (which gets into so much trouble because it is not, like the other forms of philosophy, an attempt to coordinate the real in the light of the ideal) is the study of the "ultimate reality" of all things: of the real and final nature of "matter" (ontology), of "mind" (philosophic psychology), and of the interrelation fo "mind" and "amtter" in the process of perception and knowledge (epistomology)."
+* Metaphysics (which he disdains as you will see) "And lastly, *metaphysics* (which gets into so much trouble because it is not, like the other forms of philosophy, an attempt to coordinate the real in the light of the ideal) is the study of the "ultimate reality" of all things: of the real and final nature of "matter" (ontology), of "mind" (philosophic psychology), and of the interrelation fo "mind" and "amtter" in the process of perception and knowledge (epistomology)." [pg. 3]
 
 The chapters outline the path Will takes through the story of philosophy:
 
