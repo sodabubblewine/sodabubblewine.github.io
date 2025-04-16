@@ -13,8 +13,8 @@ There is also the classic
 
 *"Introduction to Philosophy: Classical and Contemporary Readings, 4th edition" edited by Perry, Bratman, Fischer
 
-that may come up in what is building up to be a larger piece of the reading puzzle I have to solve in order to do all that I must before I die.
-As much as I recommend people go directly to primary texts, there is no good way to get started on the whole of a thing than by reading how someone else did it.
+that may come up in what may be a larger piece of the reading puzzle I have to solve in order to do all that I must before I die.
+As much as I recommend people go directly to primary texts, there is no good way to get started on the whole of a thing than by reading how someone else did it: there are some writers who can explain what they did as if it was done by an other and they are to be cherished.
 We're all human, in the end, and that alone binds us into the most startling of enterprises. 
 
 ### 2025 0415 1557
@@ -53,7 +53,7 @@ In English (that carefully distinguishes between quotations and their purported 
 * the function designated by 'isAtom' takes one argument and returns the js item designated by 'false' if the js item designated by the application of the function designated by 'isPair' is designated by 'true', and the js item designated by 'true' otherwise.  
 
 From my work on [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees), the practice of designating a function by ending it in 'Of' and designating the functional representation of a predicate by beginning it with 'is' helps a lot when working out the logic of the programs under construction.
-This is also a partial explanation for all the 'designated by's and quotations that spell out the letters of what most people would call the names of the designated functions or objects.
+This is also a partial explanation for all the 'designated by's and quotations that spell out the letters of what most people would call the *names* of the designated functions or objects.
 
 I'm writing here now after having written the following section to say that it goes a little too far from talk about programming a LISP in javascript and if that's all that you care about then you can just skip past this break to the next one.
 What you're missing is a more detailed explanation of the general plan for dealing with syntax and semantics.
@@ -75,7 +75,7 @@ This problem is not as unfamiliar nor as fussy as it seems e.g. classic problems
 Rather than ignore the fundamental problems I'll pick the strongest, perhaps tentative, methods that are already within my reach and take it from there: nothing is as final as finality claims to be.
 
 I have already mentioned Quine multiple times thorughout these notes and to anyone who is so unfortunate to have followed me on twitter.
-As much as people detest Quine's obstinate rigor (a term that I only just discovered is already stated poetically as "Ostinato Rigore"), the articulation of his uncertainty is beyond anything else that I seen.
+As much as people detest Quine's obstinate rigor (a term that I only just discovered is already stated poetically as "Ostinato Rigore"), the articulation of his uncertainty is beyond anything else that I've seen.
 
 The plan is simple: semantics breaks into reference and meaning, reference breaks into designation and denotation, and denotation 
 
@@ -122,8 +122,48 @@ The concluding outlook is this:
 For more detail on any of these things I can point to the text quoted, oh so many times in this entry, Quine's 1995 refinement of his 1990 talk "From Stimulus to Science".
 It is a hard read, something which I have said many times before, but the value of each of its words and sentences is second only to the value of his "Methods of Logic 4th edition".
 
+That all being said...
+
 ---
 
+Thankfully I wrote up all that thinking because, for some reason which is not clear to me, it let me see that 'nil' is to designate a symbol/atom and that should help me with the design of this little LISP!
+
+Here is the code from above revised 
+
+```
+let consOf = (car,cdr) => [car,cdr]
+, carOf = cons => cons[0]
+, cdrOf = cons => cons[1]
+, nil = 'nil'
+, isIdentical = (x,y) => x==y
+, isNil = x => isIdentical(x,nil)
+, isPair = x => Array.isArray(x)
+, isAtom = x => !isPair(x);
+```
+
+This entirely avoids the problems that come with 'nil' designating a javascript array.
+So the key examples that show the critical change are:
+
+```
+isPair(nil) 
+ false
+isAtom(nil) 
+ true
+```
+
+The 'LISt' in 'LISt Processing' is defined inductively as
+
+1. the item designated by 'nil' plays the part of the empty list
+2. a list whose first item is x and the rest of whose items are listed as y is encoded as the result of consOf(x,y).
+
+Recursively we define proper lists as 
+```
+let isProperList = x=> isNil(x) || (isPair(cdrOf(x)) && isProperList(cdr(x)))
+, isDottedList = x => !isProperList(x);
+```
+
+As the second definition suggests, a list which is not proper is called dotted because of the historic practice of writing a pair whose left part is x and whose right part is y as '(x . y)'.
+This matters because when printing atoms and pairs there will be times when a dotted list must be constructed so that the person looking at the printed result can tell the difference between '(^a ^b)' and '(^a . ^b)'.
 
 ## 2025 0414
 
@@ -137,7 +177,7 @@ Next, he breaks apart philosophy in the traditional way, only to follow his own 
 * Logic "is the study of the ideal method in thought and research: observation and introspection, deduction and induction, hypothesis and experiment, analysis and synthesis" [pg. 3]
 * Esthetics (or Aesthetics) "is the study of ideal form, or beauty; it is the philosophy of art" [pg. 3]
 * Ethics "is the study of ideal conduct; the highest knowledge, said Socrates, is the knowledge of good and evil, the knowledge of the wisdom of life" [pg. 3]
-* Politics "is teh study of ideal social organization (it is not,a s one might suppose the art and science of capturing and keeping office); monarchy, aristocracy, democracy, socialism, anarchism, feminism--- these are the *dramatis personae* of political philosophy." [pg. 3]
+* Politics "is the study of ideal social organization (it is not,a s one might suppose the art and science of capturing and keeping office); monarchy, aristocracy, democracy, socialism, anarchism, feminism--- these are the *dramatis personae* of political philosophy." [pg. 3]
 * Metaphysics (which he disdains as you will see) "And lastly, *metaphysics* (which gets into so much trouble because it is not, like the other forms of philosophy, an attempt to coordinate the real in the light of the ideal) is the study of the "ultimate reality" of all things: of the real and final nature of "matter" (ontology), of "mind" (philosophic psychology), and of the interrelation fo "mind" and "amtter" in the process of perception and knowledge (epistomology)." [pg. 3]
 
 The chapters outline the path Will takes through the story of philosophy:
