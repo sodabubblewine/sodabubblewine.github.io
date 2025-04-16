@@ -8,7 +8,7 @@ As is often the case, I have added some other books to read in parallel with Dru
 * Russell's "The History fo Western Philosophy", and
 * Grayling's "The History of Philosophy".
 
-I'm pretty sure those are the only books in my library that are directly aimed at giving a sorta story or a sorta story of philosophy as a whole.
+I'm pretty sure those are the only books in my library that are directly aimed at giving a sorta story or a sorta history of philosophy as a whole.
 There is also the classic
 
 *"Introduction to Philosophy: Classical and Contemporary Readings, 4th edition" edited by Perry, Bratman, Fischer
