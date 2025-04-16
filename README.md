@@ -154,7 +154,7 @@ isAtom(nil)
 The 'LISt' in 'LISt Processing' is defined inductively as
 
 1. the item designated by 'nil' plays the part of the empty list
-2. a list whose first item is x and the rest of whose items are listed as y is encoded as the result of consOf(x,y).
+2. a list whose first item is designated by 'x' and the rest of whose items are listed by the item designated by 'y' is encoded as the result of 'consOf(x,y)'.
 
 Recursively we define proper lists as 
 ```
