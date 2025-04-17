@@ -1,17 +1,52 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0416
+
+### 2025 0416 2234 O Russell! My Russell!
+
+When I was young, and still very much under the control of Russell's *Principles* and *Principia*, I found my way to Egner and Denonn's "The Basic Writings of Bertrand Russell" and clung to it as an other might the primary text of their religion.
+Everywhere I found the methods of Principia applied to Russell's world.
+That world was one I hoped to glimpse within my own.
+
+It is only now, some fifteen years later, that I see less of Russell and more of logic in his memorabilia.
+It was always the logic of his works, and not their well written projections, that caught and kept me reading.
+The error of Russell's ways were somewhat corrected by him.
+Clarity and exactness were logic disguised and upon confronting this perversion (he excised logic overtly in "An Inquiry into Meaning and Truth") he left the fruits of philosophy for something more attractive to modern minds.
+
+Logic looms throughout his works, but the mind left him open to mystical influence.
+He rested in a way somewhat more obscure than Descartes "I think therefore I am."
+It is, for me, the difference between singular terms and Quine's elimination of them by Russell's own singular descriptions.
+
+Expedience was never sufficient for Russell, there was always more to it than just that.
+Thus, even though he is so often worshipped as a controversial figure, it has gone unnoticed that public comprehension is a halmark of convention (whether such conventions are in vogue is another matter e.g. nothing sells quite like good versus good).
+
+Russell was no real threat to the world.
+For all that was hoisted upon him through his personal affairs, he made a cuckold of Frege and logic got lost in the shuffle.
+Quine remediated what Russell ruffled.
+Carnap did too, but never got far enough from Russell's outlook e.g. his philosophy of physics is limp.
+
+What once of logic had exhausted Russell was energized by Quine: sprawling theories and unspooled speculations were cut off from their metaphysical wellsprings and reality pierced the veils of clarity and exactness.
+Rather than complexify the world, Quine made due with the complications of a worldclass watchmaker.
+But whither the warmth of love and the sensations of the soul amongst such machinations? 
+Those who clutched for them betrayed their own insecurities.
+
+Principia Mathematica was a report from the frontlines of the final war which we wage on to this day.
+It tormented him for the rest of his life: had he done more to help the world or to hurt it by having so vividly revealed the brutality of the battlefront?
+There seemed to be no peace nor no hope in the trenches.
+This would not keep the homefires burning: what else was he to do?
+
 ## 2025 0415
 
 ### 2025 0415 1915
 As is often the case, I have added some other books to read in parallel with Druant's "The Story of Philosophy". They are
-* Russell's "The History fo Western Philosophy", and
+* Russell's "The History of Western Philosophy", and
 * Grayling's "The History of Philosophy".
 
 I'm pretty sure those are the only books in my library that are directly aimed at giving a sorta story or a sorta history of philosophy as a whole.
 There is also the classic
 
-*"Introduction to Philosophy: Classical and Contemporary Readings, 4th edition" edited by Perry, Bratman, Fischer
+* "Introduction to Philosophy: Classical and Contemporary Readings, 4th edition" edited by Perry, Bratman, Fischer
 
 that may come up in what may be a larger piece of the reading puzzle I have to solve in order to do all that I must before I die.
 As much as I recommend people go directly to primary texts, there is no good way to get started on the whole of a thing than by reading how someone else did it: there are some writers who can explain what they did as if it was done by an other and they are to be cherished.
