@@ -1,6 +1,25 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0417
+
+### 2025 0417 1525
+
+Some writing projects that I may never get around to:
+
+* [Metamath](https://us.metamath.org/) isn't like Quine's schematic methods (even though they go into a lot of detail about how they extend Quine's schematic methods)?
+    * The theory upon which metamath is based: [Megill, “A Finitely Axiomatized Formalization of Predicate Calculus with Equality,” Notre Dame Journal of Formal Logic, 36:435-453, 1995](https://us.metamath.org/downloads/finiteaxiom.pdf)
+    * Some explanation of how that theory works in practice: [Metamath is a metalanguage that describes first-order logic](https://us.metamath.org/mpeuni/mmset.html#mmname)
+* FORTH and the final sentence of McCarthy's [history] of LISP.
+   > Who am I kidding, I'm definitely going to write about that.
+* [The Kitten Programming Language](https://kittenlang.org/) and its relation to FORTH.
+* [Big History](https://en.wikipedia.org/wiki/Big_History) and ages old cosmological methods.
+* more to come...
+
+> Side note. the markdown convention of using square brakets around the display text for a link which is given in curved brackets does not work: I constantly put square brackets where curved brackets go and vice versa.
+> This seems like something that would have been quickly uncovered with a little "beta testing".
+> Dare I say that a solution may be found in some method of slashes? 
+
 ## 2025 0416
 
 ### 2025 0416 2358
