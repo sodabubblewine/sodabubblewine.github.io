@@ -116,11 +116,11 @@ let consOf = (car,cdr) => [car,cdr]
 
 In English (that carefully distinguishes between quotations and their purported designations for reasons that shall be explained later),
 * the function designated by 'consOf' takes two arguments and gives back a javascript array with the first argument indexed by zero and the second argument indexed by one;
-* the function designated by 'carOf' takes one argument, which it expects is the result of an application of 'consOf', and returns the item of teh argument indexed by zero;
+* the function designated by 'carOf' takes one argument, which it expects is the result of an application of 'consOf', and returns the item of the argument indexed by zero;
 * the function designated by 'cdrOf' is like the one designated by 'carOf' but it returns the item of the argument indexed by one;
 * the item designated by 'nil' is a javascript array of length zero;
 * the function designated by 'isIdentical' takes two arguments and returns the javascript item designated by 'true' where the first argument is `==` to the second (in the langauge of javascript) and returns the javascript item designated by 'false' elsewhere;
-* the function deisgnated by 'isNil' takes oen argument and returns the js item deisgnated by 'true' where it is `==` to the js item designated by 'nil', and returns the js item designated by 'false' elsewhere;
+* the function designated by 'isNil' takes one argument and returns the js item deisgnated by 'true' where it is `==` to the js item designated by 'nil', and returns the js item designated by 'false' elsewhere;
 * the function designated by 'isPair' takes one argument and returns the js item designated by the application of 'Array.isArray' to it; and
 * the function designated by 'isAtom' takes one argument and returns the js item designated by 'false' if the js item designated by the application of the function designated by 'isPair' is designated by 'true', and the js item designated by 'true' otherwise.  
 
@@ -129,24 +129,24 @@ This is also a partial explanation for all the 'designated by's and quotations t
 
 I'm writing here now after having written the following section to say that it goes a little too far from talk about programming a LISP in javascript and if that's all that you care about then you can just skip past this break to the next one.
 What you're missing is a more detailed explanation of the general plan for dealing with syntax and semantics.
-It doesn't get too deep, but does go even further out of bounds than even I can presumably tolerate.
+It doesn't get too deep, but does go even further out of bounds than I can presumably tolerate.
 
 ---
 
-As much as there is the temptation to write phrases like 'the function consOf' or, better, 'the function `consOf`' which resorts to a different typeface in order to weakly emphasize that there is something different about the purported designatum of the so rendered phrase, there has only been decades and centuries of mistakes and wasted efforts promulgated by untaught writers and readers.
+As much as there is the temptation to write phrases like 'the function consOf' or, better, 'the function `consOf`' which resorts to a different typeface in order to weakly emphasize that there is something different about the purported designatum of the so rendered phrase, this has only led to decades and centuries of mistakes and wasted efforts promulgated by untaught writers and readers.
 
 This is especially the case when writing and reading programs e.g. the problems that so many people have with so called 'pointer arithmetic' is no such simple thing as a 'bad design decision of a particular programming language'.
 The problems of meaning and reference, the life blood of semantics, crop up wherever langauges are planted (which includes some of our most powerful social technologies).
 They are fundamental problems that can not be swept under the rug before the guests arrive.
 
 When a writer leaves it to the reader to figure out what is supposed to be a quotation and what purports to be designated by such a quotation, there is only hell to pay.
-Even if the writer commands the reader to take on the responsibility of "keeping conventions in mind" this only works if there are other reasons for them to do so.
+Even if the writer commands the reader to take on the responsibility of "keeping conventions in mind" this only works if there are other reasons for them to do so (I think of Kleene's 1952 "Introduction to Metamathematics").
 
 This problem is not as unfamiliar nor as fussy as it seems e.g. classic problems of scoping in logic and in programming are fundamentally about not having resolved a concrete method of reference or meaning which deals well with syntactic and semantic agreement.
 
 Rather than ignore the fundamental problems I'll pick the strongest, perhaps tentative, methods that are already within my reach and take it from there: nothing is as final as finality claims to be.
 
-I have already mentioned Quine multiple times thorughout these notes and to anyone who is so unfortunate to have followed me on twitter.
+I have already mentioned Quine multiple times throughout these notes and to anyone who is so unfortunate to have followed me on twitter.
 As much as people detest Quine's obstinate rigor (a term that I only just discovered is already stated poetically as "Ostinato Rigore"), the articulation of his uncertainty is beyond anything else that I've seen.
 
 The plan is simple: semantics breaks into reference and meaning, reference breaks into designation and denotation, and denotation 
@@ -226,7 +226,7 @@ isAtom(nil)
 The 'LISt' in 'LISt Processing' is defined inductively as
 
 1. the item designated by 'nil' plays the part of the empty list
-2. a list whose first item is designated by 'x' and the rest of whose items are listed by the item designated by 'y' is encoded as the result of 'consOf(x,y)'.
+2. a list whose first item is designated by 'x' and the rest of whose items are listed by the item designated by 'y' is designated by 'consOf(x,y)'.
 
 Recursively we define proper lists as 
 ```
@@ -1153,7 +1153,7 @@ They insist that it is so in large part because the best businesses are almost a
 
 This does not always seem to be the case.
 Some businesses appear to survive despite science.
-Much taht is "made for TV" objects to being called pseudoscience.
+Much that is "made for TV" objects to being called pseudoscience.
 It sells, and there is a science to sales!
 
 These are all problems of control: can you make a person buy your product?
