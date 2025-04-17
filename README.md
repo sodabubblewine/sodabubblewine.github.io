@@ -3,6 +3,17 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0416
 
+### 2025 0416 2358
+Today is the first day that a problem I've had for some time was clearly revealed to me: I'm having trouble keeping up with my self.
+Hopefully tomorrow I can get out some more work that I did yesterday and today:
+
+* Paths in binary trees and bit strings (still haven't found a beautiful bijection between bits and trees)
+* I never finished the [latest entry on my little lisp](#2025-0415-1548) (even though I worked a lot more on it that day)
+* I never got around to writing out what I meant by "we live in a stack based world".
+* Read more of Durant's "story of philosophy" and failed to write down any of what I had to say (just because I have something to say does not imply it is even remotely important, but it is easier to make that judgement once I've said it on a page than to my self).
+* Haven't even started writing about working out through setbacks: I want to capture the pain of that dip and better understand why it always seems like a bigger deal than it ever really is.
+Something about that old saying "You're stronger than you think." e.g. there is greater strength which your culture has yet to release.
+
 ### 2025 0416 2313
 I left a note for my self on twitter.
 This is me making the note I'd made a note for my self to note.
