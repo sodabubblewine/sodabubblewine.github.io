@@ -3,6 +3,27 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0416
 
+### 2025 0416 2313
+I left a note for my self on twitter.
+This is me makign the note I'd made a note for my self to note.
+
+The account @ResonantPyre, a friend, wrote a few paragraphs on Wittgenstein's 1935 'Lectures on Personal Experience".
+Nonsense is under the microscope.
+"Sound and Sense" was the title of a book on poetry that I was forced to buy to finish some requirement of my undergraduate education (little did I know what a wonderful friend I would find in that professor even though I was a fish out of water).
+
+Meaning, sense, semantic agreement, and all other spooks of sentences are cast out, reluctantly, with the full thrust of Ramsey's proxy functions encapsulated by Quine's "cosmic complement".
+Indeterminancy of reference alone does not preclude propositions (the poltergeists of sentences).
+On occasions we fix our meaning of a sentence to outright intersubjective agreement: *unus pro omnibus, omnes pro uno*.
+
+The problem with propositions--- meanings made eternal--- is their purported transcendence: everwhere forever, forever everywhere.
+A well paraphrased verbal response stands for now and does well enough without proposing propositions.
+We lose nothing by leaving those who are lost without them: they come back around eventually.
+
+We go to dictionaries as we say "to get the meaning of the word" and when we open to the right page we get on with where we left off reading or listening.
+
+There's obviously much more to this all than anything like the flob above.
+It's okay to have some fun when you fill it out with fuller explanations sooner rather than later.
+
 ### 2025 0416 2234 O Russell! My Russell!
 
 When I was young, and still very much under the control of Russell's *Principles* and *Principia*, I found my way to Egner and Denonn's "The Basic Writings of Bertrand Russell" and clung to it as an other might the primary text of their religion.
