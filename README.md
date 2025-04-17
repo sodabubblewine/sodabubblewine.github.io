@@ -14,6 +14,10 @@ Hopefully tomorrow I can get out some more work that I did yesterday and today:
 * Haven't even started writing about working out through setbacks: I want to capture the pain of that dip and better understand why it always seems like a bigger deal than it ever really is.
 Something about that old saying "You're stronger than you think." e.g. there is greater strength which your culture has yet to release.
 
+Oh! And the Durant reading was on Greece, Socrates, and Plato.
+To my great surprise, I just discovered that Whitman's 1865 "O Captain! My Captain!" is specifically described as a "Ship of State" metaphor which is most famously mentioned in Plato's "Republic" Book 6.
+This is something like an example of what I mean when I say, metaphorically, reading always makes the world seem larger and smaller than it once was.
+
 ### 2025 0416 2313
 I left a note for my self on twitter.
 This is me making the note I'd made a note for my self to note.
