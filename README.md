@@ -3,6 +3,37 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0417
 
+### 2025 0417 2026
+
+All the links across the internet are rotting.
+Searches are no longer helpful: one system often says that there is nothing relevant while another quickly brings what you're looking for to the top only to bury it later.
+My saddness knows no bounds.
+There are a few people that could break out of the environments which control them (and the world) in unhelpful ways, but they have no good reasons for doing so.
+
+If your shit isn't in plain text documents then it is more likely to rot than anything else.
+There are no easy ways to accept or deal with this: it is a kind of culture war both foreign and yet somehow familiar.
+
+### 2025 0417 2020
+
+Some links to papers and presentations on concatenative programming languages and related things:
+
+* ["Stanford Seminar - Concatenative Programming: From Ivory to Metal" by John Purdy, November 15, 2017](https://www.youtube.com/watch?v=_IgqJr8jG8M)
+* ["The Theory of Concatenative Combinators" by Brent Kerby 2002](http://tunes.org/~iepos/joy.html)
+    > This is unlikely to be around for long: it will be too hard to find it.
+* ["Linear logic and permutation stacks—the Forth shall be first" by Henry Baker 1994](https://dl.acm.org/doi/10.1145/181993.181999)
+* ["Iota and Jot" by Chris Baker 2001](https://en.wikipedia.org/wiki/Iota_and_Jot)
+   > There is a lot more to this one than can be got at right now.
+   > I really do hope that someone is out there (besides just the way back machine) keeping track of things like this before all is lost.
+* [Chris Barker's current homepage](https://cb125.github.io/) (who knows how long it will be up?)
+* [The Joy Programming Language](https://hypercubed.github.io/joy/joy.html)
+* [Functional Bits: Lambda Calculus based Algorithmic Information Theory John Tromp April 23, 2023](http://tromp.github.io/cl/LC.pdf)
+* [Tree Calculus by Barry Jay ](https://treecalcul.us/)
+* [John Earnest](http://beyondloom.com/)
+* [no stinking loops](http://www.nsl.com/)
+
+It is in large part because of the difficulty in assembling this list of links (and finding the sources mentioned by the documents pointed to from these linked sites) that I have largely committed to monolithic methods of writing.
+It is not what I would prefer, but it is also not so inconvenient when what I'm ultimately going for is an accurate record of the evolution of my verbal behavior.
+
 ### 2025 0417 1613
 This continues work on my little lisp from [2025 0415 1548](#2025-0415-1548).
 
