@@ -7,6 +7,9 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 A major conclusion from the substance of (#2025-0417-2020)[accumulating the links] to papers on what is called "concatenative programming languages" is that modern writers do not know the difference between a theory and its logic.
 The inability to notice that the predicate functors of Quine are not combinators as in the more familiar combinatory calculi is a great sadness: both to our sciences and to our teachers.
 
+Finally done accumulating the links that I wrote down.
+Now on to my little lisp.
+
 ## 2025 0417
 
 ### 2025 0417 2026
@@ -34,9 +37,12 @@ Some links to papers and presentations on concatenative programming languages an
 * [The Joy Programming Language](https://hypercubed.github.io/joy/joy.html)
 * ["Concatenative programming and stack-based languages" by Douglas Creager](https://www.youtube.com/watch?v=umSuLpjFUf8)
 * [the online space of Douglas Creager.](https://dcreager.net/)
+* [Douglas Creager links to concatenative programming stuff](https://dcreager.net/concatenative/)
 * [“Factor: A Dynamic Stack-based Programming Language” 2010 by Slava Pestov, Daniel Ehrenberg, Joe Groff] (https://dcreager.net/papers/Pestov2010/)
 * ["A denotational semantics of a concatenative/compositional programming language" Jurij Mihelič, William Steingartner, Valerie Novitzká. 2021](https://dcreager.net/papers/Mihelic2021/)
-* ["Foundations of Dawn: The Untyped Concatenative Calculus" by Maddox]()
+* [Robert Kleffner. “A foundation for typed concatenative languages”. Master's thesis, Northeastern University. April 2017](https://dcreager.net/papers/Kleffner2017/)
+* ["Foundations of Dawn: The Untyped Concatenative Calculus" by Maddox](https://www.dawn-lang.org/posts/foundations-ucc/)
+* ["Continuation-Passing Style, Defunctionalization, Accumulations, and Associativity" by Jeremy Gibbons 2021](https://arxiv.org/abs/2111.10413)
 * [Functional Bits: Lambda Calculus based Algorithmic Information Theory John Tromp April 23, 2023](http://tromp.github.io/cl/LC.pdf)
 * [Tree Calculus by Barry Jay ](https://treecalcul.us/)
 * [John Earnest](http://beyondloom.com/)
