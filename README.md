@@ -20,7 +20,7 @@ let runeMark = '^'
 , isRune = x => ('string'== typeof x ) && runeMark == x[0];
 ```
 
-Examples
+Examples:
 ```
 isRune('^test') 
  true
@@ -30,7 +30,7 @@ isRune('test')
 
 A list is runic if it is proper and each of its left parts is a rune:
 ```
-let isRunic = list => isNil(list) || (isRune(carOf(x)) && isRunic(cdrOf(x)));
+let isRunic = list => isNil(list) || (isRune(carOf(list)) && isRunic(cdrOf(list)));
 ```
 Runic lists shall paly the part of strings in my little lisp (for now because I dont' know what consequences may come to select a new design).
 This follows the convention of [Paul Graham's Bel](https://www.paulgraham.com/bel.html) where he spoke of chars I speak of runes: for this project chars are always native javascript.
@@ -75,8 +75,10 @@ let runeOf = char => concatenationOf(runeMark,char)
   : concatenationOf(charOf(carOf(runicList)), stringify(cdrOf(runicList)));
 ```
 
-Example
+Examples:
 ```
+isRunic(runify('this is a test')) 
+ true
 stringify(runify('this is a test')) 
  this is a test
 ```
