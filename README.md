@@ -3,6 +3,20 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0418
 
+### 2025 0418 1456
+This continues the work on my little lisp from 
+
+### 2025 0418 1453
+The notation used to [explain The Popr Programming Language](https://www.hackerfoo.com/posts/popr-tutorial-0-dot-machines.html) is very much like the notation I devised for my own language, and is a clear indication that there is a convergence of notational practices that lend themselves to visualization near these concatenative methods.
+
+It is sad that they are spoken of as "concatenative" when, as far as I can tell, this is just one way of elaborating on any principles of programming stack machines.
+Without the concrete contingencies of stack machines there is no concatenative programming and concatenative methods may not even end up being the most appropriate for stack machines.
+Again, as far as I can tell, the key to a specific method of programming is how you would write an interpreter for that programming langauge in that programming language.
+
+This is not just some honorary show to LISP: it is the most accessible way to bring up the logic of the theory upon which a given method of programming is built.
+It forces the programmer to confront the difference between use and mention, logic and theory, and often reveals the langauges place on among models of computability.
+
+
 ### 2025 0418 1439
 A major conclusion from the substance of (#2025-0417-2020)[accumulating the links] to papers on what is called "concatenative programming languages" is that modern writers do not know the difference between a theory and its logic.
 The inability to notice that the predicate functors of Quine are not combinators as in the more familiar combinatory calculi is a great sadness: both to our sciences and to our teachers.
