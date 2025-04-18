@@ -6,7 +6,7 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 ### 2025 0418 1456
 This continues the work on my little lisp from [202504171613](#2025-0417-1613).
 
-I apologize for these fragments of progress on this particular project: I've decided to just get things done as they occurr to me rather than go out of my way to first make them more easily explainable up front.
+I apologize for these fragments of progress on this particular project: I've decided to just get things done as they occur to me rather than go out of my way to first make them more easily explainable up front.
 Everything will still be completely explained, but I am certain there are better ways of writing this all out than what I have done thus far.
 
 Runes are special atoms that are designated by javascript strings that start with the "runeMark":
@@ -29,6 +29,9 @@ A list is runic if it is proper and each of its left parts is a rune:
 let isRunic = list => isNil(list) || (isRune(carOf(x)) && isRunic(cdrOf(x)));
 ```
 Runic lists shall paly the part of strings in my little lisp (for now because I dont' know what consequences may come to select a new design).
+This follows the convention of [Paul Graham's Bel]() where he spoke of chars I speak of runes: for this project chars are always native javascript.
+The strange distinction must be made to preserve the distinction between symbols in lisp, runic lists, and javascript strings: this is something that has already tricked me and may very likely trick you as well!
+
 I'll write some examples for the function designated by 'isRunic' after I introduce some slightly edited string functions from [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees):
 
 ```
@@ -54,6 +57,24 @@ isRune(concatenationOf(runeMark,'test'))
  true
 isRune('test') 
  false
+```
+
+Next, the two functions that go from strings to runic lists and back again:
+```
+let runeOf = char => concatenationOf(runeMark,char) 
+, runify = string => 
+  isEmptyString(string) ? nil 
+  : consOf(runeOf(firstCharOf(string)), runify(restCharsOf(string)))
+, charOf = rune => restCharsOf(rune)
+, stringify = runicList => 
+  isNil(runicList) ? emptyString
+  : concatenationOf(charOf(carOf(runicList)), stringify(cdrOf(runicList)));
+```
+
+Example
+```
+stringify(runify('this is a test')) 
+ this is a test
 ```
 
 ### 2025 0418 1453
