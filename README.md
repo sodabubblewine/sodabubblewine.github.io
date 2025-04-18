@@ -4,7 +4,57 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 ## 2025 0418
 
 ### 2025 0418 1456
-This continues the work on my little lisp from 
+This continues the work on my little lisp from [202504171613](#2025-0417-1613).
+
+I apologize for these fragments of progress on this particular project: I've decided to just get things done as they occurr to me rather than go out of my way to first make them more easily explainable up front.
+Everything will still be completely explained, but I am certain there are better ways of writing this all out than what I have done thus far.
+
+Runes are special atoms that are designated by javascript strings that start with the "runeMark":
+
+```
+let runeMark = '^'
+, isRune = x => ('string'== typeof x ) && runeMark == x[0];
+```
+
+Examples
+```
+isRune('^test') 
+ true
+isRune('test') 
+ false
+```
+
+A list is runic if it is proper and each of its left parts is a rune:
+```
+let isRunic = list => isNil(list) || (isRune(carOf(x)) && isRunic(cdrOf(x)));
+```
+Runic lists shall paly the part of strings in my little lisp (for now because I dont' know what consequences may come to select a new design).
+I'll write some examples for the function designated by 'isRunic' after I introduce some slightly edited string functions from [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees):
+
+```
+let emptyString=''
+, isIdenticalString = (x,y) => x==y
+, isEmptyString = string => isIdenticalString(string,emptyString)
+, firstCharOf = string => isEmptyString(string) ? emptyString : string[0]
+, restCharsOf = string => isEmptyString(string) ? emptyString : string.slice(1)
+, concatenationOf = (...strings) => 
+   strings.length ? strings.shift() + concatenationOf(...strings) : emptyString
+, isString = x => 'string' == typeof x
+, isRuneMark = x => isIdenticalString(x,runeMark);
+
+isRune = x => isString(x) && isRuneMark(firstCharOf(x));
+```
+
+This is also the first example of redefining a variable in javascript: 'isRune' comes to denote a function specified in language more like the idioms I've adopted so far with their 'of's and 'is's.
+The names are much longer than I'd write if I was writing just for my self, but I'm not doing that am I?
+Examples (I do not yet have a comprehensive method of testing, but have tested out a few different methods of testing and so far examples are good enough):
+
+```
+isRune(concatenationOf(runeMark,'test')) 
+ true
+isRune('test') 
+ false
+```
 
 ### 2025 0418 1453
 The notation used to [explain The Popr Programming Language](https://www.hackerfoo.com/posts/popr-tutorial-0-dot-machines.html) is very much like the notation I devised for my own language, and is a clear indication that there is a convergence of notational practices that lend themselves to visualization near these concatenative methods.
@@ -52,7 +102,7 @@ Some links to papers and presentations on concatenative programming languages an
 * ["Concatenative programming and stack-based languages" by Douglas Creager](https://www.youtube.com/watch?v=umSuLpjFUf8)
 * [the online space of Douglas Creager.](https://dcreager.net/)
 * [Douglas Creager links to concatenative programming stuff](https://dcreager.net/concatenative/)
-* [“Factor: A Dynamic Stack-based Programming Language” 2010 by Slava Pestov, Daniel Ehrenberg, Joe Groff] (https://dcreager.net/papers/Pestov2010/)
+* [“Factor: A Dynamic Stack-based Programming Language” 2010 by Slava Pestov, Daniel Ehrenberg, Joe Groff](https://dcreager.net/papers/Pestov2010/)
 * ["A denotational semantics of a concatenative/compositional programming language" Jurij Mihelič, William Steingartner, Valerie Novitzká. 2021](https://dcreager.net/papers/Mihelic2021/)
 * [Robert Kleffner. “A foundation for typed concatenative languages”. Master's thesis, Northeastern University. April 2017](https://dcreager.net/papers/Kleffner2017/)
 * ["Foundations of Dawn: The Untyped Concatenative Calculus" by Maddox](https://www.dawn-lang.org/posts/foundations-ucc/)
