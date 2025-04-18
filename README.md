@@ -3,6 +3,10 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0418
 
+### 2025 0418 1601
+A new mistake I make with markdown to add to the first I identified in [202504171525](#2025-0417-1525):
+> I put the link inside parenthesis and then put the display text inside square brackets AFTER the parenthesis! 
+
 ### 2025 0418 1456
 This continues the work on my little lisp from [202504171613](#2025-0417-1613).
 
@@ -89,7 +93,7 @@ It forces the programmer to confront the difference between use and mention, log
 
 
 ### 2025 0418 1439
-A major conclusion from the substance of (#2025-0417-2020)[accumulating the links] to papers on what is called "concatenative programming languages" is that modern writers do not know the difference between a theory and its logic.
+A major conclusion from the substance of [accumulating the links](#2025-0417-2020) to papers on what is called "concatenative programming languages" is that modern writers do not know the difference between a theory and its logic.
 The inability to notice that the predicate functors of Quine are not combinators as in the more familiar combinatory calculi is a great sadness: both to our sciences and to our teachers.
 
 Finally done accumulating the links that I wrote down.
