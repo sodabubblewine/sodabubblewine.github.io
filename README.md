@@ -61,10 +61,10 @@ The notation used to [explain The Popr Programming Language](https://www.hackerf
 
 It is sad that they are spoken of as "concatenative" when, as far as I can tell, this is just one way of elaborating on any principles of programming stack machines.
 Without the concrete contingencies of stack machines there is no concatenative programming and concatenative methods may not even end up being the most appropriate for stack machines.
-Again, as far as I can tell, the key to a specific method of programming is how you would write an interpreter for that programming langauge in that programming language.
+Again, as far as I can tell, the key to a specific method of programming is how you would write an interpreter for that programming language in that programming language.
 
 This is not just some honorary show to LISP: it is the most accessible way to bring up the logic of the theory upon which a given method of programming is built.
-It forces the programmer to confront the difference between use and mention, logic and theory, and often reveals the langauges place on among models of computability.
+It forces the programmer to confront the difference between use and mention, logic and theory, and often reveals the language's place on among models of computability.
 
 
 ### 2025 0418 1439
@@ -267,7 +267,7 @@ In English (that carefully distinguishes between quotations and their purported 
 * the function designated by 'carOf' takes one argument, which it expects is the result of an application of 'consOf', and returns the item of the argument indexed by zero;
 * the function designated by 'cdrOf' is like the one designated by 'carOf' but it returns the item of the argument indexed by one;
 * the item designated by 'nil' is a javascript array of length zero;
-* the function designated by 'isIdentical' takes two arguments and returns the javascript item designated by 'true' where the first argument is `==` to the second (in the langauge of javascript) and returns the javascript item designated by 'false' elsewhere;
+* the function designated by 'isIdentical' takes two arguments and returns the javascript item designated by 'true' where the first argument is `==` to the second (in the language of javascript) and returns the javascript item designated by 'false' elsewhere;
 * the function designated by 'isNil' takes one argument and returns the js item deisgnated by 'true' where it is `==` to the js item designated by 'nil', and returns the js item designated by 'false' elsewhere;
 * the function designated by 'isPair' takes one argument and returns the js item designated by the application of 'Array.isArray' to it; and
 * the function designated by 'isAtom' takes one argument and returns the js item designated by 'false' if the js item designated by the application of the function designated by 'isPair' is designated by 'true', and the js item designated by 'true' otherwise.  
@@ -284,7 +284,7 @@ It doesn't get too deep, but does go even further out of bounds than I can presu
 As much as there is the temptation to write phrases like 'the function consOf' or, better, 'the function `consOf`' which resorts to a different typeface in order to weakly emphasize that there is something different about the purported designatum of the so rendered phrase, this has only led to decades and centuries of mistakes and wasted efforts promulgated by untaught writers and readers.
 
 This is especially the case when writing and reading programs e.g. the problems that so many people have with so called 'pointer arithmetic' is no such simple thing as a 'bad design decision of a particular programming language'.
-The problems of meaning and reference, the life blood of semantics, crop up wherever langauges are planted (which includes some of our most powerful social technologies).
+The problems of meaning and reference, the life blood of semantics, crop up wherever languages are planted (which includes some of our most powerful social technologies).
 They are fundamental problems that can not be swept under the rug before the guests arrive.
 
 When a writer leaves it to the reader to figure out what is supposed to be a quotation and what purports to be designated by such a quotation, there is only hell to pay.
@@ -460,7 +460,7 @@ from which all others are defined e.g.
 17. 'ROT F' for 'TOR TOR F'
 
 and so on.
-The remaining predicate functors (which generalize the tacit notation of the J programming langauge to predicate logic) are defined from
+The remaining predicate functors (which generalize the tacit notation of the J programming l to predicate logic) are defined from
 
 18. '...x(NOT F)...y' for 'not ...xF...y'
 19. '...x(F AND G)...y' for '...xF...y and ...xG...y'
@@ -490,7 +490,7 @@ His voice, his piano, and his trio have brought me hours of delight.
 
 Some things I'd like to get done today:
 1. Finish the very short paper on "A Stack Notation for Predicate (Functor) Logic"
-2. Finish my little parenthetical space sperated langauge
+2. Finish my little parenthetical space sperated language
 3. Read some more of "The Rise and Fall of the Third Reich" by Shirer and published October 17, 1960.
 
 I've read that Shirer's account is 'outdated' or 'narrow' or 'not historically accurate'.
@@ -632,7 +632,7 @@ let nil={get leftPart(){return this},get rightPart(){return this}};
 ```
 
 Setting up getters (and setters) with javascript objects is just weird and I really only read the documentation for such things when I already really know what I want.
-Otherwise, you will get lost trying to make sense of the design choices that brought us the programming langauge of the internet.
+Otherwise, you will get lost trying to make sense of the design choices that brought us the programming language of the internet.
 There is an alternate world where LISP was the language of the internet: that world would have been better than this one.
 An even better world is one where it was FORTH, but I digress.
 
