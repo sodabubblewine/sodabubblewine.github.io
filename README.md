@@ -43,6 +43,8 @@ Some links to papers and presentations on concatenative programming languages an
 * [Robert Kleffner. “A foundation for typed concatenative languages”. Master's thesis, Northeastern University. April 2017](https://dcreager.net/papers/Kleffner2017/)
 * ["Foundations of Dawn: The Untyped Concatenative Calculus" by Maddox](https://www.dawn-lang.org/posts/foundations-ucc/)
 * ["Continuation-Passing Style, Defunctionalization, Accumulations, and Associativity" by Jeremy Gibbons 2021](https://arxiv.org/abs/2111.10413)
+* [The Popr Programming Language by Dusty DeWeese](https://www.hackerfoo.com/posts/popr-tutorial-0-dot-machines.html)
+    * [on github](https://github.com/HackerFoo/poprc/?tab=readme-ov-file)
 * [Functional Bits: Lambda Calculus based Algorithmic Information Theory John Tromp April 23, 2023](http://tromp.github.io/cl/LC.pdf)
 * [Tree Calculus by Barry Jay ](https://treecalcul.us/)
 * [John Earnest](http://beyondloom.com/)
