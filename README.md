@@ -1,6 +1,12 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0418
+
+### 2025 0418 1439
+A major conclusion from the substance of (#2025-0417-2020)[accumulating the links] to papers on what is called "concatenative programming languages" is that modern writers do not know the difference between a theory and its logic.
+The inability to notice that the predicate functors of Quine are not combinators as in the more familiar combinatory calculi is a great sadness: both to our sciences and to our teachers.
+
 ## 2025 0417
 
 ### 2025 0417 2026
@@ -26,6 +32,11 @@ Some links to papers and presentations on concatenative programming languages an
    > I really do hope that someone is out there (besides just the way back machine) keeping track of things like this before all is lost.
 * [Chris Barker's current homepage](https://cb125.github.io/) (who knows how long it will be up?)
 * [The Joy Programming Language](https://hypercubed.github.io/joy/joy.html)
+* ["Concatenative programming and stack-based languages" by Douglas Creager](https://www.youtube.com/watch?v=umSuLpjFUf8)
+* [the online space of Douglas Creager.](https://dcreager.net/)
+* [“Factor: A Dynamic Stack-based Programming Language” 2010 by Slava Pestov, Daniel Ehrenberg, Joe Groff] (https://dcreager.net/papers/Pestov2010/)
+* ["A denotational semantics of a concatenative/compositional programming language" Jurij Mihelič, William Steingartner, Valerie Novitzká. 2021](https://dcreager.net/papers/Mihelic2021/)
+* ["Foundations of Dawn: The Untyped Concatenative Calculus" by Maddox]()
 * [Functional Bits: Lambda Calculus based Algorithmic Information Theory John Tromp April 23, 2023](http://tromp.github.io/cl/LC.pdf)
 * [Tree Calculus by Barry Jay ](https://treecalcul.us/)
 * [John Earnest](http://beyondloom.com/)
