@@ -3,6 +3,21 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0417
 
+### 2025 0417 1613
+This continues work on my little lisp from [2025 0415 1548](#2025-0415-1548).
+
+Nil is a proper list and any pair whose right part is a pair whose right part is itself a proper list is a proper list; and a nonproper list is called a dotted list.
+
+```
+let isProperList = x => isNil(x) || (isPair(cdrOf(x)) && isProperList(cdrOf(x)))
+, isDottedList = x => !isProperList = x;
+```
+
+Historically, a pair whose left part is designated by 'x' and whose right part is designated 'y' was designated by '(x . y)' and '(x y)' was short for '(x . (y . nil))' so that, in general, '(x y ...z)' is schematically short for '(x . (y . (...z . nil)...))'.
+Thus, the only abbreviations which contained a dot were those whose right parts were nonnil atoms e.g. '(^a ^b . ^c)' is short for '(^a . (^b . ^c))' and '((^a ^b) . ^c)' is short for '((^a . (^b . nil)) . ^c)' where all atoms beginning with '^' designate their self.
+
+
+
 ### 2025 0417 1525
 
 Some writing projects that I may never get around to:
