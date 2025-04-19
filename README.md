@@ -111,11 +111,11 @@ Next, the two functions that go from strings to runic lists and back again:
 let runeOf = char => concatenationOf(runeMark,char) 
 , runicListOf = string => 
   isEmptyString(string) ? nil 
-  : consOf(runeOf(firstCharOf(string)), runify(restCharsOf(string)))
+  : consOf(runeOf(firstCharOf(string)), runicListOf(restCharsOf(string)))
 , charOf = rune => restCharsOf(rune)
 , stringOf = runicList => 
   isNil(runicList) ? emptyString
-  : concatenationOf(charOf(carOf(runicList)), stringify(cdrOf(runicList)));
+  : concatenationOf(charOf(carOf(runicList)), stringOf(cdrOf(runicList)));
 ```
 
 Examples:
@@ -138,6 +138,55 @@ For my little lisp there is only going to be one kind of atom: symbols.
 Runes are then special symbols: those that start with the rune mark as above.
 What was spoken of as 'strings starting with the rune mark' shall now be spoken of as 'symbols starting with the rune mark'.
 While I'd rather not use the word 'symbol' because it leads to questions like "What does this symbol symbolize?" there is a long history of its use in lisp and I am not yet prepared to break that chain of consequences.
+
+Here is all the code from this entry in one place:
+
+```
+let run=code=>{console.log(code,'\n',eval(code));}
+
+let consOf = (car,cdr) => [car,cdr]
+, carOf = cons => cons[0]
+, cdrOf = cons => cons[1]
+, nil = 'nil'
+, isIdentical = (x,y) => x==y
+, isNil = x => isIdentical(x,nil)
+, isPair = x => Array.isArray(x)
+, isAtom = x => !isPair(x);
+run('isPair(nil)');
+run('isAtom(nil)');
+
+let runeMark = '^'
+, isRune = x => ('string'== typeof x ) && runeMark == x[0];
+run("isRune('^test')")
+run("isRune('test')")
+
+let isRunic = list => isNil(list) || (isRune(carOf(list)) && isRunic(cdrOf(list)));
+
+let emptyString=''
+, isIdenticalString = (x,y) => x==y
+, isEmptyString = string => isIdenticalString(string,emptyString)
+, firstCharOf = string => isEmptyString(string) ? emptyString : string[0]
+, restCharsOf = string => isEmptyString(string) ? emptyString : string.slice(1)
+, concatenationOf = (...strings) => 
+   strings.length ? strings.shift() + concatenationOf(...strings) : emptyString
+, isString = x => 'string' == typeof x
+, isRuneMark = x => isIdenticalString(x,runeMark);
+isRune = x => isString(x) && isRuneMark(firstCharOf(x));
+run("isRune(concatenationOf(runeMark,'test'))");
+run("isRune('test')");
+
+let runeOf = char => concatenationOf(runeMark,char) 
+, runicListOf = string => 
+  isEmptyString(string) ? nil 
+  : consOf(runeOf(firstCharOf(string)), runicListOf(restCharsOf(string)))
+, charOf = rune => restCharsOf(rune)
+, stringOf = runicList => 
+  isNil(runicList) ? emptyString
+  : concatenationOf(charOf(carOf(runicList)), stringOf(cdrOf(runicList)));
+run("isRunic(runicListOf('this is a test'))");
+run("stringOf(runicListOf('this is a test'))");
+
+```
 
 
 ### 2025 0418 1453
