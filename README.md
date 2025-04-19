@@ -88,12 +88,12 @@ Runic lists are the foreign companion to javascript's native strings and they sh
 
 The first main part of my little lisp that must be made is the printer.
 It has to take a pair or an atom and transform it into a runic list that can then be read by our human eyes.
-Perhaps if we could see into the computer like superman with x-ray vision, tehn we wouldn't need to worry about making a printer.
+Perhaps if we could see into the computer like superman with x-ray vision, then we wouldn't need to worry about making a printer.
 But, making a printer also helps when making a reader which transforms key presses into foreign code.
 
 For my little lisp there is only going to be one kind of atom: symbols.
 Runes are then special symbols: those that start with the rune mark as above.
-What was spoken of as 'strings starting witht eh rune mark' shall now be spoken of as 'symbols starting with teh rune mark'.
+What was spoken of as 'strings starting with the rune mark' shall now be spoken of as 'symbols starting with the rune mark'.
 While I'd rather not use the word 'symbol' because it leads to questions like "What does this symbol symbolize?" there is a long history of its use in lisp and I am not yet prepared to break that chain of consequences.
 
 
