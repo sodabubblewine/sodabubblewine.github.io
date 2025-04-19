@@ -3,7 +3,7 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0419
 
-### 2025 0419 1349 The Parts of "The Introduction to Philosophy" and My Outlook
+### 2025 0419 1349 The Parts of "Introduction to Philosophy" and My Outlook
 The readings in the fourth edition of Perry, Bratman, and Fischer's "Introduction to Philosophy" are divided into six parts:
 
 1. Philosophy and the Meaning of Life
