@@ -1,6 +1,48 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0419
+
+### 2025 0419 1349 The Parts of "The Introduction to Philosophy" and My Outlook
+The readings in the fourth edition of Perry, Bratman, and Fischer's "Introduction to Philosophy" are divided into six parts:
+
+1. Philosophy and the Meaning of Life
+2. God and Evil
+3. Knowledge and Reality
+4. Minds, Bodies, and Reasons
+5. Ethics and Society, and
+6. Puzzles and Paradoxes.
+
+Each part is filled with selections from primary sources.
+One of my aims is to cover the breadth of these sources and to supplement that breadth with the depth of the texts from which these selections were made.
+
+There must be no doubt as to where I am coming from when looking over the data of philosophy: they are records of responses whose origins are in through reinforcing practices of verbal communities whose cultures evolved by selection from variations on cultures past.
+Such reinforcing practices were and are mediated by bits of behaving biology: organizations mediated by organisms mediated by organelles and so on.
+
+There are doubts as to what specific chains of contingencies selected these organisms, these behaviors, and these cultures.
+The boundary between what is known and what is unknown is often, and perhaps unavoidably, blurry.
+Science and logic have done better than the rest of human's practices to uncover the shape of our strongest doubts.
+There appears to be no better reason for them than that.
+
+What ohters have to say about the world, or the worlds, enters into a mix.
+The soup of social behaviors is seasoned by each of us.
+Our favorite flavors are contingent upon the ingredients with which we are endowed.
+
+Philosophy is a part of science.
+The behavior of the philosopher is behavior and is, hence, part of the science of behavior.
+Psychology as somethign other than the science of behavior is part of the speculations of philosophers: it too is a part of science as much as any pseudoscience is part of what is to be explained by a complete account of human behavior.
+
+Just as the molecular biologist can spend their life po9uring over the peculiairites of abberant corners of the ocean, so too can teh experimental analyst probe the behaviors and practices of prescientific practitioners.
+They are, after all, the progenitors of modern science, which, if human practices are to be taken as a going concern, is the porgenitor of future sciences largely unknown or perhaps even the progenitors of some more effective or, goodness forbid, less effective practices beyond science itself.
+
+To read philosophy is to triangulate: where iswhat you have to say located with respect to what others have to say?
+How far can speaking and listening take each of us when dealing with our shared world?
+These are among the questions I ask, and which others have asked and answered well before me.
+What can be learned from listening to my self as I do those others?
+As an other to my self, what can be said of my speech and its relation to the speech of others better spoken than mine?
+
+With that I turn to the texts, and I shall return here to tease out more questions, and, if I am so lucky, to find the threads of wisdom that often pose as our best tentative answers to them.
+
 ## 2025 0418
 
 ### 2025 0418 1601
@@ -139,7 +181,7 @@ Some links to papers and presentations on concatenative programming languages an
    > There is a lot more to this one than can be got at right now.
    > I really do hope that someone is out there (besides just the way back machine) keeping track of things like this before all is lost.
 * ['Chris Barker's Iota-Jot-Zot family of esolangs' 2020 by Ilia Chtcherbakov](http://cleare.st/code/iota-jot-zot)
-        * Ilia shares my unhappiness with broken links directly to Chris Barker in this one!
+   >Ilia shares my unhappiness with broken links directly to Chris Barker in this one!
 * [Chris Barker's current homepage](https://cb125.github.io/) (who knows how long it will be up?)
 * [The Joy Programming Language](https://hypercubed.github.io/joy/joy.html)
 * ["Concatenative programming and stack-based languages" by Douglas Creager](https://www.youtube.com/watch?v=umSuLpjFUf8)
