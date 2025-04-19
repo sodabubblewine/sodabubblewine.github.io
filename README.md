@@ -66,22 +66,36 @@ isRune('test')
 Next, the two functions that go from strings to runic lists and back again:
 ```
 let runeOf = char => concatenationOf(runeMark,char) 
-, runify = string => 
+, runicListOf = string => 
   isEmptyString(string) ? nil 
   : consOf(runeOf(firstCharOf(string)), runify(restCharsOf(string)))
 , charOf = rune => restCharsOf(rune)
-, stringify = runicList => 
+, stringOf = runicList => 
   isNil(runicList) ? emptyString
   : concatenationOf(charOf(carOf(runicList)), stringify(cdrOf(runicList)));
 ```
 
 Examples:
 ```
-isRunic(runify('this is a test')) 
+isRunic(runicListOf('this is a test')) 
  true
-stringify(runify('this is a test')) 
+stringOf(runicListOf('this is a test')) 
  this is a test
 ```
+
+Why start with strings and runic lists?
+Runic lists are the foreign companion to javascript's native strings and they shall be the porthole through which the foreign items of my little lisp are displayed in our native tongue.
+
+The first main part of my little lisp that must be made is the printer.
+It has to take a pair or an atom and transform it into a runic list that can then be read by our human eyes.
+Perhaps if we could see into the computer like superman with x-ray vision, tehn we wouldn't need to worry about making a printer.
+But, making a printer also helps when making a reader which transforms key presses into foreign code.
+
+For my little lisp there is only going to be one kind of atom: symbols.
+Runes are then special symbols: those that start with the rune mark as above.
+What was spoken of as 'strings starting witht eh rune mark' shall now be spoken of as 'symbols starting with teh rune mark'.
+While I'd rather not use the word 'symbol' because it leads to questions like "What does this symbol symbolize?" there is a long history of its use in lisp and I am not yet prepared to break that chain of consequences.
+
 
 ### 2025 0418 1453
 The notation used to [explain The Popr Programming Language](https://www.hackerfoo.com/posts/popr-tutorial-0-dot-machines.html) is very much like the notation I devised for my own language, and is a clear indication that there is a convergence of notational practices that lend themselves to visualization near these concatenative methods.
