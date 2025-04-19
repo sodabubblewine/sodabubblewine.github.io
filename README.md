@@ -16,7 +16,7 @@ The readings in the fourth edition of Perry, Bratman, and Fischer's "Introductio
 Each part is filled with selections from primary sources.
 One of my aims is to cover the breadth of these sources and to supplement that breadth with the depth of the texts from which these selections were made.
 
-There must be no doubt as to where I am coming from when looking over the data of philosophy: they are records of responses whose origins are in through reinforcing practices of verbal communities whose cultures evolved by selection from variations on cultures past.
+There must be no doubt as to where I am coming from when looking over the data of philosophy: they are records of responses whose origins are through reinforcing practices of verbal communities whose cultures evolved by selection from variations on cultures past.
 Such reinforcing practices were and are mediated by bits of behaving biology: organizations mediated by organisms mediated by organelles and so on.
 
 There are doubts as to what specific chains of contingencies selected these organisms, these behaviors, and these cultures.
@@ -24,18 +24,19 @@ The boundary between what is known and what is unknown is often, and perhaps una
 Science and logic have done better than the rest of human's practices to uncover the shape of our strongest doubts.
 There appears to be no better reason for them than that.
 
-What ohters have to say about the world, or the worlds, enters into a mix.
+What others have to say about the world, or the worlds, enters into a mix.
 The soup of social behaviors is seasoned by each of us.
 Our favorite flavors are contingent upon the ingredients with which we are endowed.
 
 Philosophy is a part of science.
 The behavior of the philosopher is behavior and is, hence, part of the science of behavior.
-Psychology as somethign other than the science of behavior is part of the speculations of philosophers: it too is a part of science as much as any pseudoscience is part of what is to be explained by a complete account of human behavior.
+Psychology as something other than the science of behavior is part of the speculation of philosophers.
+Such psychologies are a part of science as much as any pseudoscience is part of what is to be explained by a complete account of human behavior.
 
-Just as the molecular biologist can spend their life po9uring over the peculiairites of abberant corners of the ocean, so too can teh experimental analyst probe the behaviors and practices of prescientific practitioners.
-They are, after all, the progenitors of modern science, which, if human practices are to be taken as a going concern, is the porgenitor of future sciences largely unknown or perhaps even the progenitors of some more effective or, goodness forbid, less effective practices beyond science itself.
+Just as the molecular biologist can spend their life pouring over the peculiairites of abberant corners of the ocean, so too can the experimental analyst probe the behaviors and practices of prescientific practitioners.
+They are, after all, the progenitors of modern science, which, if human practices are to be taken as a going concern, is the progenitor of future sciences largely unknown or, perhaps, even the progenitors of some more effective or, goodness forbid, less effective practices beyond science itself.
 
-To read philosophy is to triangulate: where iswhat you have to say located with respect to what others have to say?
+To read philosophy is to triangulate: where is what you have to say located with respect to what others have to say?
 How far can speaking and listening take each of us when dealing with our shared world?
 These are among the questions I ask, and which others have asked and answered well before me.
 What can be learned from listening to my self as I do those others?
@@ -1319,7 +1320,7 @@ Compounds are implied by and equivalent to their self.
 Functional substitutions in
 * validities are validities (each functional substitution of the functional substitution of the validity is a functional substitution of the validity and hence denotes),
 * nonconsistencies are nonconsistencies (each function substitution of the negation of the functional substitution of the nonconsistency is a functional substitution of the negation of the nonconsistency i .e. is a functional substitution of a validity and hence the negation of the functional substitution of the nonconsistency is valid so that the function substitution of the nonconsistency is nonconsistent),
-* implications are implications (the conjunction of the conclusion with the negation of the premise is nonconsistant and hence its functional substitution is nonconsistent and identical to the conjunction of the function substitution of teh conclusion with the negation of the functional substutituion of the premise), and
+* implications are implications (the conjunction of the conclusion with the negation of the premise is nonconsistant and hence its functional substitution is nonconsistent and identical to the conjunction of the function substitution of the conclusion with the negation of the functional substutituion of the premise), and
 * equivalences are equivalences (functional substitutions of mutual implications are mutual implications).
 
 ##### Interchanges of Equivalents are Equivalent
