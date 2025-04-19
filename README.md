@@ -135,9 +135,11 @@ Some links to papers and presentations on concatenative programming languages an
 * ["The Theory of Concatenative Combinators" by Brent Kerby 2002](http://tunes.org/~iepos/joy.html)
     > This is unlikely to be around for long: it will be too hard to find it.
 * ["Linear logic and permutation stacks—the Forth shall be first" by Henry Baker 1994](https://dl.acm.org/doi/10.1145/181993.181999)
-* ["Iota and Jot" by Chris Baker 2001](https://en.wikipedia.org/wiki/Iota_and_Jot)
+* ["Iota and Jot" by Chris Barker 2001](https://en.wikipedia.org/wiki/Iota_and_Jot)
    > There is a lot more to this one than can be got at right now.
    > I really do hope that someone is out there (besides just the way back machine) keeping track of things like this before all is lost.
+* ['Chris Barker's Iota-Jot-Zot family of esolangs' 2020 by Ilia Chtcherbakov](http://cleare.st/code/iota-jot-zot)
+        * Ilia shares my unhappiness with broken links directly to Chris Barker in this one!
 * [Chris Barker's current homepage](https://cb125.github.io/) (who knows how long it will be up?)
 * [The Joy Programming Language](https://hypercubed.github.io/joy/joy.html)
 * ["Concatenative programming and stack-based languages" by Douglas Creager](https://www.youtube.com/watch?v=umSuLpjFUf8)
