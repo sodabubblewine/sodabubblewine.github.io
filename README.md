@@ -1,6 +1,61 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0420
+
+### 2025 0420 1615
+This continues the work on my little lisp from [202504181456](#2025-0418-1456).
+
+Runic lists are the foreign companion to javascript's native strings.
+Just as strings can be concatenated together, so too can proper lists.
+
+One proper list is prepended to an other by an appropriate sequence of pairings by teh function designated by 'consOf'
+
+```
+let prependedProperListOf = (properList1, properList2) =>
+  isNil(properList1) ? properList2
+  : consOf(carOf(properList1)
+    ,prependedProperListOf(cdrOf(properList1), properList2));
+```
+An example:
+```
+isIdenticalString(concatenationOf('this is ','a test')
+ ,stringOf(prependedProperListOf(runicListOf('this is ')
+   ,runicListOf('a test'))))
+ true
+```
+
+A method of prepending proper lists, dotted lists, and atoms follows from transforming a dotted list into its associated proper list (which then also takes care of the atomic case):
+
+```
+let singletonListOf = x => consOf(x,nil)
+, properListOf = x => 
+  isNil(x) ? nil
+  : isAtom(x) ? singletonListOf(x)
+  : consOf(carOf(x), properListOf(cdrOf(x)))
+, prependedListOf = (x,y) => 
+  prependedProperListOf(properListOf(x),properListOf(y));
+```
+
+A note on speed and efficiency: they are the result of shortcuts which do not mutilate the logical consequences of the definitions given.
+Before such definitions are given, there are no comparisons to be made, and hence no speed or efficiency of which to speak.
+
+Appending mirrors prepending.
+```
+let appendedListOf = (x,y) => prependedListOf(y,x);
+```
+
+Finally, the printer prints a list or an atom as a runic list that can be sent to the native language of javascript as a string which is then displayed.
+There is first the problem of transforming a symbol (which is just a native javascript string in my little lisp) into a runic list; but, surprise, we already implemented that as the function designated by 'runicListOf'.
+There is only one catch, if the atom being printed is designated by 'nil' then print a runic list that gets displayed as '()' so as not to forget what part it now plays:
+```
+let isSymbol = x => isString(x)
+, atomicPrintOf = atom =>
+  isNil(atom) ? atomicPrintOf('()')
+  : isSymbol(atom) ? runicListOf(atom)
+  : atomicPrintOf('!?');
+```
+
 ## 2025 0419
 
 ### 2025 0419 1349 The Parts of "Introduction to Philosophy" and My Outlook
