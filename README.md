@@ -3,12 +3,35 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0420
 
+### 2025 0420 2201
+Here are some notes that I told my self to make:
+
+* Jonathan Gorard (@getjonwithit) made a use-mention mistake when invoking a theory of concepts to explain his ontological stance.
+  > "Even the concepts of "places", "paths", "action", "distance" (and for that matter, "two") are ultimately just mathematical abstractions.
+  >
+  > The fact that we privilege some abstractions as more "real" than others is a byproduct of familiarity, not fundamentality."
+  > 3:27 PM - 4/19/25 @getjonwithit
+  *  This was in response to Sabine Hossenfelder (@skdh) explaining her ontological stance: "I think having a mathematical description is what it means to understand something"[11:38 - 4/18/25].
+I get that most people may not see this clearly as a problem of ontology.
+* Jonathan Gorard gave a definition of mathematics that does not address the key problem with respect to ontology (mentioned by Quine as "Every critically massive set of truths has some nonmathematical members."[pg. 52 Quine "From Stimulus to Science"]
+  >"My personal definition of mathematics (i.e. "the set of all things about which one can reasonably prove theorems") is pretty broad. If an abstraction can be made precise, then it's mathematical."
+  > 5:21 PM - 4/19/25 @getjonwithit
+  * My response to this was to mention the limitations of a definition of mathematics with respect to, e.g., Quine's theory of protosyntax which is a descendent of Tarski's *formalized languages*.
+If I was forced to give a clear cut definition of mathematics then it would be the theory of protosyntax, but if I was allowed to do as I want it would be to given no clear cut definition: "Mathematicity is perhaps a matter of degree." [pg.55 Quine "From Stimulus to Science"]
+  * Abi Daker (@abidaker) responded to my explanation of abstraction by way of predicate abstracts, concretion, and predicational compelteness.
+She provided me with some brilliant examples from her work on early art:
+  > "early use of abstraction was paeolithic people creating different sets of symbols for different animal/bird species which were based around the creatures footprints. It comes up a lot in cave paintings" [1:11 AM - 4/20/25]
+  > "other nice bit of symbolism is that arches in churches exist because early churches were tree glades and when they started to build dedicated spaces for ceremony/worship, they wanted to mimic the tree arches.
+  >
+  > the domes are symbolic of teh sun, as well"[1:49 AM - 4/20/25]
+
+* @ResonantPyre mentioned an interesting sounding book "Culture adn Society" by Raymond Williams.[2:15 PM - 4/13/25]
+
 ### 2025 0420 1615
 This continues the work on my little lisp from [202504181456](#2025-0418-1456).
 
 Runic lists are the foreign companion to javascript's native strings.
 Just as strings can be concatenated together, so too can proper lists.
-
 One proper list is prepended to an other by an appropriate sequence of pairings by teh function designated by 'consOf'
 
 ```
