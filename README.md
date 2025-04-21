@@ -3,6 +3,56 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0420
 
+### 2025 0420 2247
+This continues my read of Will Durant's "The Story of Philosophy" from [202504142055](#2025-0414-2055).
+
+The first chapter on Plato is divided into ten sections:
+1. The Context of Plato
+2. Socrates
+3. The Preparation of Plato
+4. The Ethical Problem
+5. The Political Problem
+6. The Psychological Problem
+7. The Psychological Solution
+8. The Political Solution
+9. The Ethical Solution
+10. Criticism
+
+The first section "The Context of Plato" begins with a geological description:
+> "If you look at a map of europe you will observe that Greece is a skeletonlike hand stretching its crooked fingers out into the Mediterranean Sea." [pg. 5 Durant "The Story of Philosophy"]
+Geology selects geography which plays a large part in the survival of species, be they human or not.
+Durant begins with a geological description that has not changed much since the time of ancient Greece from 1100 BCE to 146 BCE.
+We are connected to the shape of greece on which Socrates and Plato lived out their entire lives.
+
+He then describes the surrounding geographies and narrows his view quickly upon the "city-states":
+> "Greece was broken into isolated fragments by these natural barriers of sea and soil; travel and communication were far more difficult and dangerous then than now; every valley therefore developed its own self-sufficient economic life, its own sovereign government, its own institutions and dialect and religion and culture.
+In each case one or two cities, and around them, stretching up the mountainslopes, an agricultural hinterland: such were the "city-states" of Euboea, and Locris, and Aetolia, and Phocis, and Boeotia, and Achaea, and Argolis, and Elis, and Arcadia, and Messenia, and Laconia--- with its Sparta, and Attica--- with its Athens."[pg. 5 Durant "The Story of Philosophy"]
+
+Having arrived at Sparta and Athens, the Greco-Persian Wars enter the scene: "Sparta provided the army and Athens the navy."[pg.6]
+Athen's navy became a merchant fleet and new cultural practices flowed through the city's ports.
+Finally, Durant has made his way to philosophy:
+
+* "Democritus (460-360 BCE)--- 'in reality there is nothing but atoms and space.'"
+* Epicurus (342-270 BCE)
+* Lucretius (98-55 BCE)
+* The Sophists
+  * Gorgias
+  * Hippias
+  * Protagoras
+  * Prodicus
+
+The Sophists were
+> "traveling teachers of wisdom, who looked within upon their own thought and nature, rather than out upon the world of things."
+>
+> "They asked questions about anything; they stood unafraid in teh presence of religious or political taboos"
+>
+> "In politics they divided into two schools. One, like Rousseau, agrued that nature is good, and civilization bad; that by nature all men are equal, becoming unequal only by class-made institutions: and the law is an invention of the strong to chain and rule the weak.
+> Another school, like Nietzsche, claimed that nature is beyond good and evil; that by nature all men are unequal; that morality is an invention of the weak to limit and deter the strong; that power is the supreme virtue and the supreme desire of man; and that of all forms of government the wisest and most natural is aristocracy."[pg. 6-7]
+
+Next, the Peloponnesian war (430-400 BCE) begot the oligarichal control of Athens by Critias and his "Thirty Tyrants".
+So it is that Critias "was a pupil of Socrates, and an uncle of Plato"[pg. 7]
+
+
 ### 2025 0420 2201
 Here are some notes that I told my self to make:
 
@@ -21,18 +71,19 @@ If I was forced to give a clear cut definition of mathematics then it would be t
 * Abi Daker (@abidaker) responded to my explanation of abstraction by way of predicate abstracts, concretion, and predicational compelteness.
 She provided me with some brilliant examples from her work on early art:
   > "early use of abstraction was paeolithic people creating different sets of symbols for different animal/bird species which were based around the creatures footprints. It comes up a lot in cave paintings" [1:11 AM - 4/20/25]
+ 
   > "other nice bit of symbolism is that arches in churches exist because early churches were tree glades and when they started to build dedicated spaces for ceremony/worship, they wanted to mimic the tree arches.
   >
-  > the domes are symbolic of teh sun, as well"[1:49 AM - 4/20/25]
+  > the domes are symbolic of the sun, as well"[1:49 AM - 4/20/25]
 
-* @ResonantPyre mentioned an interesting sounding book "Culture adn Society" by Raymond Williams.[2:15 PM - 4/13/25]
+* @ResonantPyre mentioned an interesting sounding book "Culture and Society" by Raymond Williams.[2:15 PM - 4/13/25]
 
 ### 2025 0420 1615
 This continues the work on my little lisp from [202504181456](#2025-0418-1456).
 
 Runic lists are the foreign companion to javascript's native strings.
 Just as strings can be concatenated together, so too can proper lists.
-One proper list is prepended to an other by an appropriate sequence of pairings by teh function designated by 'consOf'
+One proper list is prepended to an other by an appropriate sequence of pairings by the function designated by 'consOf'
 
 ```
 let prependedProperListOf = (properList1, properList2) =>
