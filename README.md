@@ -18,7 +18,7 @@ I get that most people may not see this clearly as a problem of ontology.
   > 5:21 PM - 4/19/25 @getjonwithit
   * My response to this was to mention the limitations of a definition of mathematics with respect to, e.g., Quine's theory of protosyntax which is a descendent of Tarski's *formalized languages*.
 If I was forced to give a clear cut definition of mathematics then it would be the theory of protosyntax, but if I was allowed to do as I want it would be to given no clear cut definition: "Mathematicity is perhaps a matter of degree." [pg.55 Quine "From Stimulus to Science"]
-  * Abi Daker (@abidaker) responded to my explanation of abstraction by way of predicate abstracts, concretion, and predicational compelteness.
+* Abi Daker (@abidaker) responded to my explanation of abstraction by way of predicate abstracts, concretion, and predicational compelteness.
 She provided me with some brilliant examples from her work on early art:
   > "early use of abstraction was paeolithic people creating different sets of symbols for different animal/bird species which were based around the creatures footprints. It comes up a lot in cave paintings" [1:11 AM - 4/20/25]
   > "other nice bit of symbolism is that arches in churches exist because early churches were tree glades and when they started to build dedicated spaces for ceremony/worship, they wanted to mimic the tree arches.
