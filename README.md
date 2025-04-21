@@ -19,12 +19,15 @@ The first chapter on Plato is divided into ten sections:
 10. Criticism
 
 The first section "The Context of Plato" begins with a geological description:
+
 > "If you look at a map of europe you will observe that Greece is a skeletonlike hand stretching its crooked fingers out into the Mediterranean Sea." [pg. 5 Durant "The Story of Philosophy"]
+
 Geology selects geography which plays a large part in the survival of species, be they human or not.
 Durant begins with a geological description that has not changed much since the time of ancient Greece from 1100 BCE to 146 BCE.
 We are connected to the shape of greece on which Socrates and Plato lived out their entire lives.
 
 He then describes the surrounding geographies and narrows his view quickly upon the "city-states":
+
 > "Greece was broken into isolated fragments by these natural barriers of sea and soil; travel and communication were far more difficult and dangerous then than now; every valley therefore developed its own self-sufficient economic life, its own sovereign government, its own institutions and dialect and religion and culture.
 In each case one or two cities, and around them, stretching up the mountainslopes, an agricultural hinterland: such were the "city-states" of Euboea, and Locris, and Aetolia, and Phocis, and Boeotia, and Achaea, and Argolis, and Elis, and Arcadia, and Messenia, and Laconia--- with its Sparta, and Attica--- with its Athens."[pg. 5 Durant "The Story of Philosophy"]
 
