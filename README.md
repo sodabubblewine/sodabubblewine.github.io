@@ -1,6 +1,155 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0421
+
+### 2025 0421 1928
+
+Today was a hammond b3 organ jazzy kinda day.
+
+### 2025 0421 1546
+This continues my work on my little lisp from [202504201615](#2025-0420-1615).
+
+> and this is a reminder that my aim is to release a method of logic programming from Quine's main method by implementing each step to it he makes in "Methods of Logic 4th Edition".
+
+In the last entry I did not give any examples of the functions defined running because I have not yet checked if they even work in such example cases.
+First, a complete summary of the code that I'm working with (eventually each of the suprisingly disparate entries will come together under a unified collection of verbal practices which, ideally, approach something like Leibniz calculus ratiocinator and characteristica universalis, but I'll have more to say on that later).
+
+```
+let run=code=>console.log(code,'\n',eval(code)) // for examples
+
+// some basic lisp functions
+, consOf = (car,cdr) => [car,cdr]
+, carOf = cons => cons[0]
+, cdrOf = cons => cons[1]
+, nil = 'nil'
+, isIdentical = (x,y) => x==y
+, isNil = x => isIdentical(x,nil)
+, isPair = x => Array.isArray(x)
+, isAtom = x => !isPair(x)
+
+// proper and dotted lists
+, isProperList = x => isNil(x) || (isPair(cdrOf(x)) && isProperList(cdrOf(x)))
+, isDottedList = x => !isProperList(x)
+
+// some basic javascript string functions
+, emptyString=''
+, isIdenticalString = (x,y) => x==y
+, isEmptyString = string => isIdenticalString(string,emptyString)
+, concatenationOf = (...strings) => 
+   strings.length ? strings.shift() + concatenationOf(...strings) : emptyString
+, firstCharOf = string => isEmptyString(string) ? emptyString : string[0]
+, restCharsOf = string => isEmptyString(string) ? emptyString : string.slice(1)
+, isString = x => 'string' == typeof x
+
+// basic rune functions
+, runeMark = '^'
+, isRuneMark = x => isIdenticalString(x,runeMark)
+, isRune = x => isString(x) && isRuneMark(firstCharOf(x))
+, isRunic = list => isNil(list) || (isRune(carOf(list)) && isRunic(cdrOf(list)))
+
+// from strings to runic lists and back again
+, runeOf = char => concatenationOf(runeMark,char) 
+, runicListOf = string => 
+   isEmptyString(string) ? nil 
+   : consOf(runeOf(firstCharOf(string)), runicListOf(restCharsOf(string)))
+, charOf = rune => restCharsOf(rune)
+, stringOf = runicList => 
+   isNil(runicList) ? emptyString
+   : concatenationOf(charOf(carOf(runicList)), stringOf(cdrOf(runicList)))
+
+// prepending proper lists clears the way for buliding 
+// runic lists from runic lists
+, prependedProperListOf = (properList1, properList2) =>
+   isNil(properList1) ? properList2
+   : consOf(carOf(properList1)
+     ,prependedProperListOf(cdrOf(properList1), properList2))
+
+// how to make atoms and dotted lists proper lists
+, singletonListOf = x => consOf(x,nil)
+, properListOf = x => 
+   isNil(x) ? nil
+   : isAtom(x) ? singletonListOf(x)
+   : consOf(carOf(x), properListOf(cdrOf(x)))
+
+// generlization of prepepending proper lists to atoms and lists
+, prependedListOf = (x,y) => 
+   prependedProperListOf(properListOf(x),properListOf(y))
+, appendedListOf = (x,y) => prependedListOf(y,x)
+
+// printing atoms i.e. symbols
+, isSymbol = x => isString(x)
+, atomicPrintOf = atom =>
+   isNil(atom) ? atomicPrintOf('()')
+   : isSymbol(atom) ? runicListOf(atom)
+   : atomicPrintOf('!?');
+```
+Now, examples for the latest functions defined in the latest entry
+```
+isRunic(prependedListOf(runicListOf('this is a test'),runeOf('!'))) 
+ true
+stringOf(prependedListOf(runicListOf('this is a test'),runeOf('!'))) 
+ this is a test!
+stringOf(atomicPrintOf(nil)) 
+ ()
+stringOf(atomicPrintOf('x')) 
+ x
+stringOf(atomicPrintOf(3)) 
+ !?
+```
+That solves the problem of printing atoms where atoms in my little lisp are each symbols (notice that the last example gave '!?' as a default when the atom printer doesn't know how to print the item which purports to be an atom: in a different design I have no symbols, but that is closer to the little uhdForth-like language I'll show off after I get this little lisp done).
+
+Next is the problem of printing proper lists and dotted lists.
+First I'll work on proper lists because that seems simpler.
+When a proper list gets printed it starts with '(' and ends with ')'.
+Everything between those parenthesis has to be printed by the main printer that dispatches the appropriate kind of printer on the argument given i.e.
+```
+let printOf = x =>
+   isAtom(x) ? atomicPrintOf(x)
+   : isProperList(x) ? properListPrintOf(x)
+   : isDottedList(x) ? dottedListPrintOf(x)
+   : atomicPrintOf('!?')
+, properListPrintOf = properList =>
+   prependedListOf(runeOf('(')
+   , prependedListOf(printEachOf(properList), runeOf(')')))
+```
+Dotted lists can wait.
+The problem is reduced to printing each of the items in the proper list.
+```
+let properListPrintEachOf = properList =>
+   isNil(properList) ? nil
+   : prependedListOf(runeOf(' ')
+     , prependedListOf(printOf(carOf(properList))
+       , properListPrintEachOf(cdrOf(properList))));
+```
+As much as I do not like these long and camel case names, it is all I have for now.
+With these definitions we should be able to test out printing everything but dotted lists.
+
+Oh! But, it just occurred to me that there is a special case of proper list that must be handled: runic lists!
+There is also another special case that just occurred to me: the runes of '(' and ')' must be distinguishable from the parenthesis printed around the printings from the list!
+
+```
+let openParenthesis = runeOf('(')
+, closeParenthesis = runeOf(')')
+, isParenthesis = x => isIdentical(x,openParenthesis) || isIdentical(closeParenthesis);
+atomicPrintOf = atom =>
+   isNil(atom) ? atomicPrintOf('()')
+   : isParenthesis(atom) ? prependedListOf(runeOf('^'),runicListOf(atom))
+   : isSymbol(atom) ? runicListOf(atom)
+   : atomicPrintOf('!?');
+
+let runicListPrintOf = runicList =>
+   prependedListOf(runeOf("'")
+   , prependedListOf(runicList,runeOf("'")));
+printOf = x =>
+   isAtom(x) ? atomicPrintOf(x)
+   : isRunic(x) ? runicListPrintOf(x)
+   : isProperList(x) ? properListPrintOf(x)
+   : isDottedList(x) ? dottedListPrintOf(x)
+   : atomicPrintOf('!?');
+```
+Now for some much needed examples:
+
 ## 2025 0420
 
 ### 2025 0420 2247
