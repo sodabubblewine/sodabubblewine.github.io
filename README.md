@@ -204,7 +204,22 @@ stringOf(printOf(listOf(nil,'thisIsABigAtom'
 
 ( () thisIsABigAtom ( ^) x ^() 'this is a ) runic ( list')
 ```
-which is very satisfying!
+which is very satisfying, but there is a space missing before a closing parenthesis:
+```
+let spaceRune = runeOf(' ');
+properListPrintOf = properList =>
+   prependedListOf(openParenthesis
+   , prependedListOf(properListPrintEachOf(properList)
+     ,prependedListOf(spaceRune,closeParenthesis)));
+```
+The big example is then
+```
+stringOf(printOf(listOf(nil,'thisIsABigAtom'
+ ,listOf(closeParenthesis, 'x', openParenthesis)
+ , runicListOf('this is a ) runic ( list'))))
+
+ ( () thisIsABigAtom ( ^) x ^( ) 'this is a ) runic ( list' )
+```
 
 ## 2025 0420
 
