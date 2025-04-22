@@ -252,7 +252,7 @@ stringOf(printOf(consOf(closeParenthesis,openParenthesis)))
  ( ^) . ^(,nil )
 ```
 Oh, wow, what an interesting mistake.
-Everything works tight up to the space after the dot, but then something goes wrong.
+Everything works right up to the space after the dot, but then something goes wrong.
 That thing is also something that often goes wrong when working with lists: prepending is not the same as listing out.
 Prepending gets rid of trailing empty lists when putting each of its arguments together.
 This should correct things.
