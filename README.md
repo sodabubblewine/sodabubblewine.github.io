@@ -248,8 +248,161 @@ let  dottedListPrintOf = dottedList =>
 ```
 Now for the simplest example to check for (hopefully) easy to fix bugs:
 ```
-
+stringOf(printOf(consOf(closeParenthesis,openParenthesis))) 
+ ( ^) . ^(,nil )
 ```
+Oh, wow, what an interesting mistake.
+Everything works tight up to the space after the dot, but then something goes wrong.
+That thing is also something that often goes wrong when working with lists: prepending is not the same as listing out.
+Prepending gets rid of trailing empty lists when putting each of its arguments together.
+This should correct things.
+```
+dottedListPrintEachOf = dottedList =>
+   isAtom(dottedList) ? prependedListOf(
+     listOf(spaceRune,dotRune,spaceRune),atomicPrintOf(dottedList))
+   : prependedListOf(spaceRune
+     , prependedListOf(printOf(carOf(dottedList))
+       , dottedListPrintEachOf(cdrOf(dottedList))));
+```
+The example:
+```
+stringOf(printOf(consOf(closeParenthesis,openParenthesis))) 
+ ( ^) . ^( )
+```
+Great!
+Now to put everything together into one really big example:
+```
+stringOf(printOf(consOf(listOf(nil,'thisIsABigAtom'
+ ,listOf(closeParenthesis, 'x', openParenthesis)
+ ,runicListOf('this is a ) runic ( list')))),'x')))
+
+ ( ( () thisIsABigAtom ( ^) x ( ^) . ^( ) ^( ) 'this is a ) runic ( list' ) . x )
+```
+Wonderful.
+That's a big problem solved.
+The next problem to solve is the reader: it must take strings like the ones displayed from the printer and build the appropriate lists and atoms.
+
+Since there was a lot of editing along the way, here are all the function definitions that were finally accepted.
+I changed some names in order to avoid collisions e.g. 'listOf' by 'properListOf' and 'properListOf' by 'properOf' and now 'listOf' designates a function that can be used to produce both dotted and proper lists depending on whether the last argument is the empty proper list or some other atom.
+Everything below was checked on the latest big example.
+```
+let run=code=>console.log(code,'\n',eval(code)) // for examples
+
+// some basic lisp functions
+, consOf = (car,cdr) => [car,cdr]
+, carOf = cons => cons[0]
+, cdrOf = cons => cons[1]
+, nil = 'nil'
+, isIdentical = (x,y) => x==y
+, isNil = x => isIdentical(x,nil)
+, isPair = x => Array.isArray(x)
+, isAtom = x => !isPair(x)
+
+// proper and dotted lists
+, isProperList = x => isNil(x) || isNil(cdrOf(x)) || (isPair(cdrOf(x)) && isProperList(cdrOf(x)))
+, isDottedList = x => !isProperList(x)
+
+// some basic javascript string functions
+, emptyString=''
+, isIdenticalString = (x,y) => x==y
+, isEmptyString = string => isIdenticalString(string,emptyString)
+, concatenationOf = (...strings) => 
+   strings.length ? strings.shift() + concatenationOf(...strings) : emptyString
+, firstCharOf = string => isEmptyString(string) ? emptyString : string[0]
+, restCharsOf = string => isEmptyString(string) ? emptyString : string.slice(1)
+, isString = x => 'string' == typeof x
+
+// basic rune functions
+, runeMark = '^'
+, isRuneMark = x => isIdenticalString(x,runeMark)
+, isRune = x => isString(x) && isRuneMark(firstCharOf(x))
+, isRunic = list => isNil(list) || (isRune(carOf(list)) && isRunic(cdrOf(list)))
+
+// from strings to runic lists and back again
+, runeOf = char => concatenationOf(runeMark,char) 
+, runicListOf = string => 
+   isEmptyString(string) ? nil 
+   : consOf(runeOf(firstCharOf(string)), runicListOf(restCharsOf(string)))
+, charOf = rune => restCharsOf(rune)
+, stringOf = runicList => 
+   isNil(runicList) ? emptyString
+   : concatenationOf(charOf(carOf(runicList)), stringOf(cdrOf(runicList)))
+
+// how to make lists of lists and atoms
+, listOf = (...x) => x.length > 1 ? consOf(x.shift(),listOf(...x)) : x.shift()
+
+// how to make proper lists of lists and atoms
+, properListOf = (...x) => x.length ? consOf(x.shift(),properListOf(...x)) : nil
+
+// prepending proper lists clears the way for buliding 
+// runic lists from runic lists
+, prependedProperListOf = (properList1, properList2) =>
+   isNil(properList1) ? properList2
+   : consOf(carOf(properList1)
+     ,prependedProperListOf(cdrOf(properList1), properList2))
+
+// how to make atoms and dotted lists proper lists
+, singletonListOf = x => consOf(x,nil)
+, properOf = x => 
+   isNil(x) ? nil
+   : isAtom(x) ? singletonListOf(x)
+   : consOf(carOf(x), properOf(cdrOf(x)))
+
+// generlization of prepepending proper lists to atoms and lists
+, prependedListOf = (x,y) => 
+   prependedProperListOf(properOf(x),properOf(y))
+, appendedListOf = (x,y) => prependedListOf(y,x)
+
+// printer dispatch
+, printOf = x =>
+   isAtom(x) ? atomicPrintOf(x)
+   : isRunic(x) ? runicListPrintOf(x)
+   : isProperList(x) ? properListPrintOf(x)
+   : isDottedList(x) ? dottedListPrintOf(x)
+   : atomicPrintOf('!?')
+
+// how to print atoms i.e. symbols
+, isSymbol = x => isString(x)
+, atomicPrintOf = atom =>
+   isNil(atom) ? atomicPrintOf('()')
+   : isSymbol(atom) ? runicListOf(atom)
+   : atomicPrintOf('!?')
+
+// how to print runic lists
+, quotationMark = runeOf("'")
+, runicListPrintOf = runicList =>
+   prependedListOf(quotationMark
+   , prependedListOf(runicList,quotationMark))
+
+// how to print proper lists
+, openParenthesis = runeOf('(')
+, spaceRune = runeOf(' ')
+, closeParenthesis = runeOf(')')
+, isParenthesis = x => isIdentical(x,openParenthesis) || isIdentical(x,closeParenthesis)
+, properListPrintOf = properList =>
+   prependedListOf(openParenthesis
+   , prependedListOf(properListPrintEachOf(properList)
+     ,prependedListOf(spaceRune,closeParenthesis)))
+, properListPrintEachOf = properList =>
+   isNil(properList) ? nil
+   : prependedListOf(runeOf(' ')
+     , prependedListOf(printOf(carOf(properList))
+       , properListPrintEachOf(cdrOf(properList))))
+
+// how to print dotted lists
+, dottedListPrintOf = dottedList =>
+   prependedListOf(openParenthesis
+   , prependedListOf(dottedListPrintEachOf(dottedList)
+     ,prependedListOf(spaceRune,closeParenthesis)))
+, dotRune = runeOf('.')
+, dottedListPrintEachOf = dottedList =>
+   isAtom(dottedList) ? prependedListOf(
+     listOf(spaceRune,dotRune,spaceRune,nil),atomicPrintOf(dottedList))
+   : prependedListOf(spaceRune
+     , prependedListOf(printOf(carOf(dottedList))
+       , dottedListPrintEachOf(cdrOf(dottedList))));
+```
+
 
 ## 2025 0420
 
