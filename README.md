@@ -3,6 +3,16 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0421
 
+### 2025 0421 2110
+I had to stop my work on the latest little lisp entry in order to make note of a profoundly interesting interview that was just shared with me.
+Australian identical twins Bridgette Powers and Paula Powers were recorded after they witnessed a car crash that turned into something more.
+What is interesting is that they speak in a way that presumably makes it easy to hear when each of their verbal responses is strong or weak.
+
+When they are speaking "in sync" they are emitting, what I can only guess is, the same operant, the same unit of response.
+When they speak "out of sync" you get to listen to the verbal behavior that is presumably equally strong but which, if equally strong within the same skin, could not be emitted at the same time.
+
+I do not have time now to do more research on them, but I submit that they have been interviewed prior to this most recent event.
+
 ### 2025 0421 1928
 
 Today was a hammond b3 organ jazzy kinda day.
@@ -223,6 +233,20 @@ stringOf(printOf(listOf(nil,'thisIsABigAtom'
 
 All that is left is to deal with dotted lists.
 They seem to be just like proper lists but instead of checking whether the relevant item is the item designated by 'nil' check if the relevant item is an atom:
+```
+let  dottedListPrintOf = dottedList =>
+   prependedListOf(openParenthesis
+   , prependedListOf(dottedListPrintEachOf(dottedList)
+     ,prependedListOf(spaceRune,closeParenthesis)))
+, dotRune = runeOf('.')
+, dottedListPrintEachOf = dottedList =>
+   isAtom(dottedList) ?
+     listOf(spaceRune,dotRune,spaceRune,atomicPrintOf(dottedList))
+   : prependedListOf(spaceRune
+     , prependedListOf(printOf(carOf(dottedList))
+       , dottedListPrintEachOf(cdrOf(dottedList))));
+```
+Now for the simplest example to check for (hopefully) easy to fix bugs:
 ```
 
 ```
