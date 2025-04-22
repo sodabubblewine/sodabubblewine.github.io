@@ -111,7 +111,7 @@ let printOf = x =>
    : atomicPrintOf('!?')
 , properListPrintOf = properList =>
    prependedListOf(runeOf('(')
-   , prependedListOf(printEachOf(properList), runeOf(')')))
+   , prependedListOf(properListPrintEachOf(properList), runeOf(')')));
 ```
 Dotted lists can wait.
 The problem is reduced to printing each of the items in the proper list.
@@ -149,6 +149,62 @@ printOf = x =>
    : atomicPrintOf('!?');
 ```
 Now for some much needed examples:
+```
+stringOf(printOf(nil)) 
+ ()
+stringOf(printOf('thisIsABigAtom')) 
+ thisIsABigAtom
+stringOf(printOf(runicListOf('this is a runic list'))) 
+ 'this is a runic list'
+```
+So far so good.
+Next to test printing proper lists.
+A much needed function for making lists is added to the mix.
+```
+let listOf = (...x) => x.length ? consOf(x.shift(), listOf(...x)) : nil
+```
+The function designated by 'listOf' takes any number of arguments and returns a proper list each item of which is the appropriate argument.
+Thankfully, I ran into an error when I tried to run
+```
+stringOf(printOf(listOf(nil,'thisIsABigAtom',runicListOf('this is a runic list'))))
+```
+It said that 'dottedList' was not defined.
+My definition of proper list was missing a clause!
+Here is the corrected version: 
+```
+isProperList = x => isNil(x) || isNil(cdrOf(x)) || (isPair(cdrOf(x)) && isProperList(cdrOf(x)));
+```
+Another crash and another correction!
+The code for detecting parenthesis was missing an argument:
+```
+isParenthesis = x => isIdentical(x,openParenthesis) || isIdentical(x,closeParenthesis);
+```
+Now for a big example that almost works exactly as expected:
+```
+stringOf(printOf(listOf(nil,'thisIsABigAtom'
+ ,listOf(closeParenthesis, 'x', openParenthesis)
+ , runicListOf('this is a ) runic ( list'))))
+
+ ( () thisIsABigAtom ( ^^) x ^^() 'this is a ) runic ( list')
+```
+Everything in there was expected except for the double '^^' in front of the parentheses.
+Because I handled runic lists by wrapping them in single quotes I avoided the problem of having to prepend an extra escape character to atoms that begin with them: the function designated by 'runicListOf' escapes the escape character as expected!
+So a quick correction:
+```
+atomicPrintOf = atom =>
+   isNil(atom) ? atomicPrintOf('()')
+   : isSymbol(atom) ? runicListOf(atom)
+   : atomicPrintOf('!?');
+```
+and the big example becomes
+```
+stringOf(printOf(listOf(nil,'thisIsABigAtom'
+ ,listOf(closeParenthesis, 'x', openParenthesis)
+ , runicListOf('this is a ) runic ( list'))))
+
+( () thisIsABigAtom ( ^) x ^() 'this is a ) runic ( list')
+```
+which is very satisfying!
 
 ## 2025 0420
 
