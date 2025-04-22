@@ -221,6 +221,12 @@ stringOf(printOf(listOf(nil,'thisIsABigAtom'
  ( () thisIsABigAtom ( ^) x ^( ) 'this is a ) runic ( list' )
 ```
 
+All that is left is to deal with dotted lists.
+They seem to be just like proper lists but instead of checking whether the relevant item is the item designated by 'nil' check if the relevant item is an atom:
+```
+
+```
+
 ## 2025 0420
 
 ### 2025 0420 2247
@@ -947,7 +953,7 @@ from which all others are defined e.g.
 17. 'ROT F' for 'TOR TOR F'
 
 and so on.
-The remaining predicate functors (which generalize the tacit notation of the J programming l to predicate logic) are defined from
+The remaining predicate functors (which generalize the tacit notation of the J programming language to predicate logic) are defined from
 
 18. '...x(NOT F)...y' for 'not ...xF...y'
 19. '...x(F AND G)...y' for '...xF...y and ...xG...y'
