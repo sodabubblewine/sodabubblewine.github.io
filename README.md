@@ -1,6 +1,183 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0422
+
+### 2025 0422 2322 An Incomplete Sketch of My Philosophy of Logic
+The signifcance of Quine's predicate functors can not be understated by me. He showed, by way of predicate functors, that variables are not a neccessary part of predicate logic, and hence, baring the embrace of some weaker practices purporting to undermine predicate logic, no logical theory involves variables neccessarily.
+
+Thus, given a theory and its predicate logic, the predicate functors of Quine give a way, once and for all, to rid ourselves of the lgoical import of pronomial cross reference. This eliminates, then, all problems which turn up from such cross referencing e.g. all problems of scope and bondage.
+
+It also turns our focus back tot he probelms to solve: what is the logic of the theory under investigation? In predicate (functor) logic this means settling what predicates belong to the lexicon of the theory. The requirement that the lexicon be mentioned by *listing* the predicates is preformally stated as "the lexicon is finite", though the emphasis here is on teh preformality of that statement otherwise the invocation of the predicate 'is finite' quickly demands its own logical theory.
+
+Now, with the lexicon given, the paucity of premises is among the next steps. I say "among the next steps" because it is often through a sequence of steps that the predicates and premises of a given theory evolve from the conclusions of their implication.
+
+It is here, at implication, where the supremacy of predicate logic is without question except for those who are wedded to deviant methods that always liven the outer realms of any inquiry.
+
+But, let me linger here lest I be seen as some immoral logical supremacist! Thanks to Quine's main method, implication can be explained entierly by two short sentences "for those abreast of the jargon, it is as follows. To prove that a given set of premises implies a contemplated conclusion, prove that the premises are inconsistent with the negation of that colclusion. Do so by putting the premises and the negated conclusion into prenex form and then accumulating a truth functional inconsistency by persistent instantiation of the universal and existential quantifiers, taking care to use a new variable for each existential instantiation."[pg. 51 Quine "From Stimulus to Science"].
+
+Whatever else anyone says they *actually mean* by implication can only be grasped natively by foreign import i.e. paraphrase into a logical theory as above.
+
+This is staunch. It is also repulsive to many. I accept all such responses to such declarations as relevant to a fully theory of logical and scientific behavior. What can not be accepted are methods which, e.g., break extensionality of a theory by recourse to some deviant logic: "A context is *extensional* if its truth value cannot be changed by supplanting a component sentence by another of the same truth value, nor by supplanting a component predicate by another with all the same denotata, nor by supplementing a singular term by another with the same designatum. SUccinctly, the three requireemnts are substitutivity of covalence, of coextensiveness, and of identity, salva veritate. A context is *intensional* if it is not extensional."[pg. 90 Quine "From Stimulus to Science"].
+
+Without extensionality, intersubjective agreement by qualified witnesses is verbally bankrupt. It is already hard enough to grasp a theory with its necessary (but not sufficient) predicate logic. But, to do so without predicate logic is to plunge the world into the caprice of uncontemplated cooperation. There can be no verbal coordination without extensionality.
+
+Note, none of this says that a theory is its predicate logic. Whatever more a theory may be is hard to say, in the same way that it is hard to say when a given definition of verbal behavior is appropriate.
+
+With all of that wawa by the way, let me give you a quick path from familiar and traditional quantificational logic through Quine's predicate abstracts (and their principle of concretion), to predicate functors so that you might more firmly grasp where I am coming from.
+
+First, take '{x:Fx}y' as short for 'some item is (u such that u=y and some item is (x such that u=x and Fx))'. Elsewhere I may come back and explain how it comes that the two place predicate of identity, written as '=' short for 'is identical to', is indiscernability in that they are coextensive and indiscernability is in hand from any lexicon like those here contemplated e.g. in a lexicon with one one place prediate 'F' and one two place predicate 'G' (these are not to be taken as schematic predicate letters as are used in the remainder) 'x is indiscernable from y' is short for 'Fx if and only if Fy, and each item is {u such that Gux if and only if Guy, and Gxu if and only if Gyu}'.
+
+The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}' which *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:' so that the *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick': whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
+
+Predicate abstracts as the logical import of the relative clause are the import of pronomial reference and respective problems of freedom and bondage. Barker appears to be unfamiliar with this as much of his philosophy focuses on precisely these problems without first trying Quine's methods and somehow showing where they come up short (most people fail the first task of paraphrasing, and if paraphrasing is forbidden then again we are back to more fundamental problems of smooth discourse).
+
+The principle of concretion comes along for free as follows (assuming either that the lexicon of the language is finite or there is a predicate of identity provided subject to the following familiar constraints in either case).
+Godel's premises of identity are 1) identity is reflexive, i.e. 'x=x', and 2) identity is substatutive, i.e. each instance of the schema of substitutivity 'x=y and Fx, only if Fy'. They are equivalent to Wang's premises, i.e. each instance of Wang's schema 'Fx iff some item is {y such that x=y and Fy}'. By two instances of Wang's schema, 'some item is {u such that u=y and Fu} iff some item is {u such that u=y and some item is {x such that u=x and Fx}}' and 'some item is {u such that u=y and Fu} iff Fy', '{x:Fx}y iff Fy' is true.
+
+In a truth functional and quantificational logic of predicates without a predicate of identity '{x:Fx}y' is introduced by the schema of concretion '{x:Fx}y iff Fy'. Concretion ties relative clauses as predicate abstracts into a truth functional and quantificational logic of predicates.
+
+Predicate abstracts of many places are defined with the help of 
+'..x' for 'x.0 x.1 .. x.length(x)-1' where 'x' is a list of variables and 'x..y=u..v' for 'x=u and ..y=..v' (the case where 'y' and 'v' are of different lengths is handled by '..x=..y' for 'x.0..x.min(len(x),len(y)) = y.0..y.min(len(x),len(y))' so that
+'{..x:F..x}..y' for 'some item is {..u such that ..u = ..y and some item is {..x such that ..u = ..x and F..x}}'
+with the schema of generalized concretion following as
+'{..x:F..x}..y iff F..y'.
+
+Predicate abstracts like '{xy:Fxy}' are predicates just like 'father (of)' or 'older than'. They are not items like sets or relations. It so happens that extensionality along with a few meager assumptions on the existence of sets-- e.g. that they yield a serviceable theory of ordered pairs-- often permits predicate abstracts to moonlight as designators of abstract items like sets. Nothing like that is found here, but shall eventually be found elsewhere when I eventually get to that.
+
+(Note that the present methods do not incorporate the stack based notation that I've recently uncovered. I have yet to carry that efficiency through this sequence of arguments.)
+
+The basic recombic predicate functors can now be introduced as abbreviations for the appropriate predicate abstract:
+
+* Major Padding) 'Pad F' or 'drop F' for '{x..y:F..y}'
+* Minor Padding) 'pad F' for '{..xy:F..x}'
+* Reflection) 'refl F' or 'dup F' for '{x..y:Fxx..y}'
+special cases e.g. the relfection of a one or no place predicate is that predicate
+* Permutation [needs a better name]) 'Perm F' for '{xy..z:Fx..zy}'
+* Major Inversion) 'Inv F' for '{x..y:F..yx}'
+* Minor Inversion) 'inv F' for '{xy..z:Fyx..z}'
+* Retrojection) 'Ret.k F' for '{x..y..z:F..yx..z}' when length(y)=k
+
+The basic logical predicate functors are then
+
+* Alternative Denial) 'F nand G' for '{..x: not(F..x and G..x)}'
+* Complement) 'comp F' or 'not F' or '-F' for 'F nand F'
+* Alternation) 'F or G' for '(not F) nand (not G)'
+* Joint Denial) 'F nor G' for 'not(F or G)'
+* Complementary Conditional) 'F not only if G' for 'F nor not G'
+* Conditional) 'F only if G' for 'not (F not only if G)'
+* Converse Conditional) 'F if G' for 'G only if F'
+* Complementary Converse Conditional) 'F not if G' for 'not(F if G)'
+* Conjunction) 'F and G' for 'F not if (not G)'
+* Biconditional) 'F iff G' for '(F only if G) and (F if G)'
+* Exclusive Alternation) 'F xor G' for 'not(F iff G)'
+* Minor Existential) 'some F' for '{..x:some item is y such that Fy..x}'
+* Major Existential) 'Some F' for 'some^n F' where 'F' is an n place predicate and for a predicate funtor 'f' the iterates are 'f^1' for 'f' and 'f^(n+1)' for 'f^n f'
+* Minor Universal) 'each F' for 'not some not F'
+* Major Universal) 'Each F' for 'not Some not F'
+* Inclusion) 'F => G' for 'Each(F only if G)'
+* Converse Inclusion) 'F <= G' for 'G => F'
+* Proper Inclusion) 'F > G' for '(F => G) and not (F <= G)'
+* Converse Proper Inclusion) 'F < G' for 'G > F'
+* Coextension) 'F <=> G' for '(F <= G) and (F => G)'.
+
+Now for the predicate functors that are usually introduced as part of set theories:
+* k Place Composition) 'F^m .k G^n' or 'F^m of^k G^n' for 'some^k ((Inv^(m-k) drop^(n-k) F) and (Inv^k drop^(m-k) Inv^(n-k) G))'
+* Image) 'F^m " G^n' or 'F on G' for 'F of^n G'
+* item) 'item' or 'U' (or sometimes '1' or 'the universe of discourse') for 'dup =' or 'refl ='
+* void) 'nonitem' 'void' or sometimes '0' for 'not item' or '-U'
+
+Some of the predicate functors from the theory of relations
+* Symmetric) 'Sym F' for 'F <=> (swap F)'
+* Asymmetric) 'Asym F' for 'F <= (not swap F)'
+* Transitive) 'Trans F' for 'F => (F of F)'
+* Intransitive) 'Intrans F' for '(not F) => (F of F)'
+* reflexive) 'reflexive F' for 'each dup F'
+* equivalence) 'equiv F' for '(reflexive F) and (trans F) and (symm F)'
+
+therefore 'equiv =' is true. The next functors bridge something like the gap between "the relational part of a set" and their origins in predicate logic:
+
+* two place part) 'F`' for 'some^(m-2) Inv^2 F'
+* k place part) 'F`k' for 'some^(m-k) Inv^k F'
+Further generalizations include slices of length k, and noncontiguous parts
+
+Unlike relations, the complement '-F' of a two place predicate 'F' is a two place predicate, and '-F' is equivalent to '(-F)`', but where predicates come to do doulbe duty as names of their extension, the complement of a relation need not be the two place part of its complement. This is a tiny example of the way in which theories like the calculus of relations obscure their (stronger) logic. With the generalization of the k place part comes the generalization of composition. Is it possible to introduce the k place part from kplace composition cross products and confinements?
+
+* cross product) 'F cross G' for (pad^n F) and (Pad^m G)'
+* iterated cross) 'F^1' for 'F' and 'F^(k+1) for 'F cross F^k'
+* right confinement) 'F]G' for 'F and (U^(m-n) cross G)'
+* left confinement) 'F[G' for 'F and (G cross U^(m-n))'
+
+component confinement follows from iterated left and right confinements. Together a left and right confinement is a sliced confinement
+
+The following definitions introduce functional predicates and all that is often said to follow from theories of functions. Here, generalized composition is avoided, and, hence, the predicates operated on by the predicate functors are now two-place predicates.
+
+* Functional) 'Func F' for '= => (F of (swap F))'
+* Left Field) 'Lfied F' for 'F on U'
+* Right Field) 'Rfield F' for '(swap F) on U'
+* Field) 'field F' for '(Lfied F) or (Rfield F)'
+
+The various theorems about functions then turn out to be applications of schema of functional predicates e.g. 'Func void', 'Func =', '(Func F) and (Func G), only if (Func (F of G))', and '(Func F) only if (Func (F and G))'
+Talk of correlations comes up often adn is an application fo the logic of correlative predicates:
+
+* correlation) 'Corr F' for '(Func F) and (Func swap F)'
+
+Then similarities are relative to a corraltive predicate
+
+* similarity) 'F <=G=> H' for '(Corr G) and (F <=> Lfield G) and (H <=> Rfield G)'
+
+Somewhere around this point in my exploration of predicate functor logic it became clear that what goes by the name 'naive set theory' is neither naive nor set theory: it is just logic, pure predicate logic. The notational abbreviations afforded by predicate functors reveal this This part of my exploration is where I saw the damage done by Tarski's success e.g. with set theoretic simjulations of logic and with comingling predicate logic and the calculus of relations. The entire affair is summed up by the difference between 'denotes' and 'designates'.
+
+I've still avoided introducing the singleton of a predicate. It placys the part of singular terms in a pur predicate (functor) logic. It's just russell's theory of descriptions adapted to these variableless methods.
+
+Singular predicates play the part once played by singular terms.
+
+* Singular) 'Sing F' for 'not some^2 ((nip F) and (drop F) and (not =))' or 'each^2((nip F) or (drop F) or =)'
+
+But, it is not a singular predicate which exactly plays the part once played by singular terms, it is another predicate which, for now, I call 'the singleton'
+
+* singleton) '{F}' for 'each(= iff (nip F))'
+* itemization) '{F,..,G}' for '{F} or {..,G}'
+
+these carry over a lot of what went as finite set theory
+
+Now the components of a predicate come through the image of the singleton (this is then an operation that generalizes 'application and the 'collective relate')
+
+* components) 'F at G' or 'F{G}' for 'F"{G}'
+
+The arguments of a two place predicate are those items of its second component which are true of that predicate with respect to only one first component. The definition is beautiful
+
+* arguments) 'arg F' for 'some{F}'
+
+Just as there is a serviceable theory of identity embedded in any logic with only finitely many predicates-- the universal closure of the conjunction of each biconditional of each parallel permutation of primitive predicates-- so to is there a serviceable theory of denotation.
+
+Much earlier, i defined the left and right confinement from a predicate of equality. That was unnecessary. Those definitions become logically equivalent to the following when a predicate of equality is present.
+
+* left confinement) 'F[G' for 'F and drop G'
+* right confinement) 'F]G' for 'F and nip G'
+
+Descending from the beautiful definition of argument of a predicate is the notorious method of function abstraction (aka lambda abstraction)
+
+* lambda) 'lambda F' for 'F](arg F)'
+
+note 'lambda lambda F' is equivalent to 'lambda F'. At first this seemed like an error: we can function (lambda) abstract again and again can't we? Then it dawned on me: this theorem covers degenerate lambda abstractions in the classical case. An example of a degenerate lambda abstraction in the classical case is 'lambda x lambda x f'. A carefully designed grammar eliminates any such degenerate 'expression'. The equivalence of 'lambda^2 F' to 'lambda F' suggests a collapse to 'lambda x f' i.e. a rule of evaluation.
+
+Happily, 'func lambda F' is true i.e. the function abstraction of a predicate is a functional predicate.
+
+From function (lambda) abstraction, the problem is posed as to what definition of 'function application' fits. I'm torn between two alternatives. The one assumes function application is always going to occur on a functional predicate:
+
+* appliatoin) "F'G" for '(lambda F){G}'
+
+The traditional definition of function application (with "F'x" as 'the y such that Fyx') dissolves into my prior definition of 'component' which generalizes function application and the collective relate.
+
+All this being said, there is a lot of work to be done to bring these things together. But that is somewhat secondary to the larger problem to solve.
+
+My methods of logic are to be pure predicate logic: predicates and predicate functors. The challenge is to make a story of logic which is autonomous from quantificational logic. Another part of the challenge is to free the world from the confines of Tarski's theory fo models which too strongly weds logic to mathematical logic and mathematical logic to theories of sets.
+
+The prevailing solution has been to abandon predicate logic for deviant logics and deviant foundations which purport to be unbeholden to the constraints of, e.g., smooth discourse, e.g., fascilitated by extensionality. In such methods I simply see theories from theoraticians who have yet to present their predicates and premises.
+
+Category theorists and type theorists are the most familiar of the gang as far as I know. Some computational theorists enter upon this territory, but, e.g., automata have yet to present themselves as foundational instruments in the same way as categories and types have. The closest is calculi, but there is not yet a general flag underwhich they fly (I'd propose Fefermann's Finitary Inductively Presented Logics if pressed).
+
 ## 2025 0421
 
 ### 2025 0421 2110
