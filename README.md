@@ -178,6 +178,8 @@ The prevailing solution has been to abandon predicate logic for deviant logics a
 
 Category theorists and type theorists are the most familiar of the gang as far as I know. Some computational theorists enter upon this territory, but, e.g., automata have yet to present themselves as foundational instruments in the same way as categories and types have. The closest is calculi, but there is not yet a general flag underwhich they fly (I'd propose Fefermann's Finitary Inductively Presented Logics if pressed).
 
+I'm not settled on the notations nor am I settled on the development displayed above. There is still so very much that I do not know. Thankfully, it appears as if Quine's main method transfers over perfectly well to give an autonomous presentation of predicate functor logic which breaks free from tarski's model theory by way of hilbert and bernay's completeness (most famously covered at the end of Kleene's "Introduction to Metamathematics"). 
+
 ## 2025 0421
 
 ### 2025 0421 2110
