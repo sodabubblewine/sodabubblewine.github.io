@@ -23,7 +23,7 @@ Our world is now one with much more than just sewing and washing machines.
 We now have verbal machines that do for verbal behavior what sewing and washing machines do for sewing and washing.
 Fewer people are required than ever before to respond verbally in ways which once prevailed.
 
-Computers have long since provided remote listeners with control over the behavior of computer programmers.
+Computers have long since provided remote listeners (called electrical/computer engineers) with control over the behavior of computer programmers.
 Circuits, once elaborate networks of relays, mediate the consequences of a listerner's response to the speech of programmers: the programmer sets up bits as a consequence of the verbal responses we call "computer programming" and the computer mediates the consequences of having exposed teh circuit designer to those bits without the circuit designer having any direct contact with the programmer as a contemporaneous listener.
 
 This may all seem needlessly detailed or obtuse to anyone unfamiliar with the science of behavior and, specifically, the experimental analysis of behavior in laboratory environments.
