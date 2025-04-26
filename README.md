@@ -3,6 +3,37 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0425
 
+### 2025 0425 2005
+My interest in the history of the world is largely teh result of my interest in the history of science and technology.
+Technologies are concrete artifacts of cultural practices.
+They mediate conspicuous behaviors and are an easy access point to the study of social/cultural selection and variation.
+
+The sewing machine is my goto example.
+The mechanization of the behaviors which once dominated the practices of sewing make it so taht the consequences of sewing appear far more often without the direct participation of individaul sewers.
+Repertoires of sewing are almost extinguished as the remote control of sewing machines eliminates the contingencies that once taught the people of the world to sew.
+
+Washing machines are perhaps better known for the labors they are said to save.
+While it may come easy to us to say that labors are saved by washign machines, especially when the push of a button has the same consequence which once was the result of a long chain of responses, it is more accurate to say that a change in the environment changed prevailing behaviors and to seperate such changes from teh value judgements that are so quickly provided by a majority of our ethical practices.
+
+The primary reason to stick with an accurate report of behavior rather than amending it with a value judgement is that the ethical practices which bring such judgements to the judge are not neccessarily themselves the result of a conclusion from contemplation on accurate templates of the world.
+More than that, they are very rarely so: the science of behavior is new and has had little to no effect on prevailing ethical practices in any of the cultures of the world.
+It is to history that I look to see the changes in cultural practices that shaped modern ethical practices specifically and human practices generally.
+
+Our world is now one with much more than just sewing and washing machines.
+We now have verbal machines that do for verbal behavior what sewing and washing machines do for sewing and washing.
+Fewer people are required than ever before to respond verbally in ways which once prevailed.
+Computers have long since provided remote listeners with control over the behavior of computer programmers.
+
+Circuits, once elaborate networks of relays, mediate the consequences of a listerner's response to the speech of programmers: the programmer sets up bits as a consequence of the verbal responses we call "computer programming" and the computer mediates the consequences of having exposed teh circuit designer to those bits without the circuit designer having any direct contact with the programmer as a contemporaneous listener.
+
+This may all seem needlessly detailed or obtuse to anyone unfamiliar with the science of behavior and, specifically, the experimental analysis of behavior in laboratory environments.
+It is said by most that all which I wrote is already part of the vernacular and goes without saying.
+But, it can not be so, especially in light of human history, where we so often find similarly authoritative proclimations about this or that kind of control over the world and our ethical responses to it.
+The science of behavior has had little to no effect on the practices of programming, much less on our ethical practices in response to them.
+
+So it is that my interest in history is the systematic reevaluation of reports in light of the science of behavior and the experimental analysis of the same.
+
+
 ### 2025 0425 1943
 
 R.P. (@ResonantPyre) has given me a few great book recommendations over the past few months:
