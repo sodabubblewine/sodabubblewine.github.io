@@ -1,6 +1,26 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0425
+
+### 2025 0425 1925
+While I had hoped to write every day without breaking my streak, it has been two days since I last wrote something here.
+My only excuse, if there is even a need for one (which I think there is not), is that I had some wonderful conversations with people about things I will soon be writing on (I aim to summarize two of the conversations I've had), but also I have been recovering from a workout injury.
+
+For most of my life I did little more than math, physics, piano, and clarinet.
+As I have grown older I have made more friends than I ever imagined.
+Some of them are so kind and so generous with their time that they teach me new things.
+A few months ago I was lucky enough that a family friend had found a new way to spend his retirement by being my weightlifting coach.
+He spent most of his life weightlifting and competing in Highland games and he had a gym in his basement.
+
+All of these things came together and because of what he has learned through his life I have been slowly strengthening my body in ways similar to how I have strengthend my mind.
+Sadly, I swung a kettlebell the wrong way and was given an a cute pain in my back which I am still recovering from.
+Thankfully, it has gotten better by the day and I have found it easier and easier to get into and out of chairs.
+
+I let myself indulge in a sorta lavish relaxation all in the name of "letting my back heal".
+Though I did not stop writing and reading, I did stop working here at the computer keyboard.
+It will be interesting to see what other gaps occur in my writings as the blizzard of life envelops me anew each day.
+
 ## 2025 0422
 
 ### 2025 0422 2322 An Incomplete Sketch of My Philosophy of Logic
@@ -177,8 +197,6 @@ My methods of logic are to be pure predicate logic: predicates and predicate fun
 The prevailing solution has been to abandon predicate logic for deviant logics and deviant foundations which purport to be unbeholden to the constraints of, e.g., smooth discourse, e.g., fascilitated by extensionality. In such methods I simply see theories from theoraticians who have yet to present their predicates and premises.
 
 Category theorists and type theorists are the most familiar of the gang as far as I know. Some computational theorists enter upon this territory, but, e.g., automata have yet to present themselves as foundational instruments in the same way as categories and types have. The closest is calculi, but there is not yet a general flag underwhich they fly (I'd propose Fefermann's Finitary Inductively Presented Logics if pressed).
-
-I'm not settled on the notations nor am I settled on the development displayed above. There is still so very much that I do not know. Thankfully, it appears as if Quine's main method transfers over perfectly well to give an autonomous presentation of predicate functor logic which breaks free from tarski's model theory by way of hilbert and bernay's completeness (most famously covered at the end of Kleene's "Introduction to Metamathematics"). 
 
 ## 2025 0421
 
