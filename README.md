@@ -3,8 +3,8 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0425
 
-### 2025 0425 2005
-My interest in the history of the world is largely teh result of my interest in the history of science and technology.
+### 2025 0425 2005 Some Origins of My Interst in the History of the World
+My interest in the history of the world is largely the result of my interest in the history of science and technology.
 Technologies are concrete artifacts of cultural practices.
 They mediate conspicuous behaviors and are an easy access point to the study of social/cultural selection and variation.
 
