@@ -3,6 +3,142 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0425
 
+### 2025 0425 2042 Reading the Frege Reader
+This is a record of my reading of "The Frege Reader" edited by Michael Beany.
+It was recommended to me by R.P. (@ResonantPyre).
+Since this is my first public reading of a primary text (I do not read secondary texts--- like I [have](#2025-0420-2247) Durant's "Story of Philosophy"--- as I might Plato's dialogues) I shall say a bit on what I do when I read.
+
+First, this is a record of my verbal responses to my exposure to the text.
+To read is to do more than listen with my eyes.
+It is built upon gazing at the page and the marks upon it.
+The narrower repertoire of looking, upon which the complex repertoire of seeing is built and upon which reading is built, bring the marks into focus and I can begin to see words, perhaps letters, sentences, and, the key feature of seeing, all that I see to myself which is not to be found on the page or in its marks.
+
+To read is to go beyond seeing as listening with my eyes.
+It is speaking in response to sights of, sounds of, feelings of, etc.
+By uncovering what I have to say I am more likely to discover what I am thinking and feeling.
+There is still much I have to learn about how best to grasp my thinking, my feeling, and what of past and present environments may be controlling it now.
+
+Without further ado!
+
+I opened to the page with all the publishing informatin on it.
+It was first published in 1997.
+Immediately, the first name of the dedication caught my eye "Peter Geach".
+It occurred to me that he is mentioned by Quine, perhaps in "From stimulus to Science" where Quine discusses pronouns of laziness.
+After checking the page (I can see to myself where in the book Quine would have written about that), it is found that yes, Geach is where Quine got the phrase "pronouns of laziness" (they are, for Quine, a focal point of reification).
+
+Now I turn to the contents of "the Frege reader", and, as I very often do, I write them down:
+
+1. Begriffsschrift (1879): Selections (preface and Part I)
+2. 'Letter to Marty, 29.8.1882'
+3. The Foundations of Arithmetic (1884): Selections (introduction and $$1-4, 45-69, 87-91, 104-9; with summaries of the remaining sections)
+4. 'Function and Concept' (1891)
+5. 'Letter to Husserl, 24.5.1891': Extract
+6. 'On Sinn and Bedeutung' (1892)
+7. '[Comments on Sinn and Bedeutung]' (1892)
+8. 'On Concept and Object" (1892)
+9. Grundgesetze der Arithmetik, Volumen I (1893): Selections (Preface, introduction, $$1-7, 26-29, 32-33)
+10. 'Review of E. G. Husserl, Philosophie der Arithmetik I' (1894): Extract
+11. 'Logic' (1897): Extract
+12. 'On Euclidean Geometry' (c. 1900)
+13. 'Letter to Russell, 22.6.1902': Extract
+14. 'Letter to Russell, 28.12.1902': Extract
+15. Grundgesetze Der Arithmetik, Volumen II (1903): Selections ($$55-67, 138-47, Appendix)
+16. 'Letter to Russell 13.11.1904': Extract
+17. 'Introduction to Logic' (1906): Extract
+18. 'A brief Survey of my Logical Doctrines' (1906): Extract
+19. 'Letters to Husserl, 1906'
+20. 'Logic in Mathematics' (1914): Extract
+21. 'Letter to Jourdain, Jan. 1914': Extract
+22. 'My Basic Logical Insights' (c. 1915)
+23. 'Thought' (1918)
+24. 'Negation' (1918)
+25. '[Notes for Ludwig Darmstaedter]' (1919)
+26. 'Sources of Knowledge of Mathematics and the Mathematical Natural Sciences' (1924/5): Extract
+27. 'Numbers and Arithmetic' (1924/5)
+
+It contains selections from his larger works which I shall get at a later time (though I do wish there was a single complete volume with all his texts and relevant major correspondances).
+They are presented in chronological order and are mostly extracts: I do not yet know what the difference is between an extract and a selection.
+
+Next, the preface, though I turned to appendix 2 on Frege's logical notation to take a look at its layout.
+I take Frege's notation as one of the greatest accomplishments in human history and was likely drawn to it from how often I ahve been reinforced by it in the past.
+
+The preface says that Frege's works can not be allowed to "speak for themselves" to a student for there are subtleties that may easily go unnoticed but which are key to firmly grasping Frege's collective works.
+
+I am impatient and shall skip any further introductory matters and go straight to Frege's first work "Begriffsschrift: a formal language of pure thought modeled on that of arithmetic".
+Again, I am met with more commentary that I simply skip to get to Frege's "preface":
+
+> "The recognition of a scientific truth generally passes through several stages of certainty."[pg. 48]
+
+Already, the developmentalistic metaphors which plague psychology and the other nonbiological sciences appears: "passes through several stages" just as a child is said to pass through grades from kindergarten onwards and upwards.
+For those interested in precise and accurate reports on changes in human behavior--- which 'recognition' purports to be--- it is not the passage of time between stages that matters (or, the metaphorical extension of the same to "certainty"), but rather what happens as time passes.
+
+In the end, any developmentalist, when pressed, can give some description of purportedly characteristic features of any performance to be found within a deliniated stage.
+Whether such characteristic descriptions are maintained or whether a given sequence of corresponding stages seperated by changes in characteristic performances are maintained is a problem of statistical aggregation.
+For one aimed at something more foundational than flexable predictions relative to the overlap of an individual's behavior among differing performances in differing stages of development there is little of consequence to be kept besides the vague gesturings to unexamined environments.
+
+It is the 'recognition' that "generally passes through stages of certainty", not the "scientific truth" itself.
+Might "recognition" just as well be replaced by "cognitition"?
+Are there nonscientific truths?
+Is this law of recognition itself subject to a staged development?
+If so, what stage is it in?
+What stages are there?
+Is it a spectrum from uncertainty to certainty as the word "certainty" suggests?
+Is the generality here scientific or logical?
+
+Following Skinner's principle "Etymology is the archeology of thought." from his paper "The Origin of Cognitive Thought" I shall show the etymology of "recognition" back to its proto-indo-european roots and say a bit more about why this is relevant: (each of the following selections are from <https://www.etymonline.com/> !)
+
+1. recognition(n.)--- mid-15c., recognicion, "knowledge (of an event or incident); understanding," from Old French recognition (15c.) and directly from Latin recognitionem (nominative recognitio) "a reviewing, investigation, examination," noun of action from past-participle stem of recognoscere "to acknowledge, know again; examine" (see recognize).
+
+   Sense of "acknowledgment of a service or kindness done" is from 1560s. Sense of "formal avowal of knowledge and approval" (as between governments or sovereigns) is from 1590s; especially acknowledgement of the independence of a country by a state formerly exercising sovereignty (1824). The meaning "a knowing again, consciousness that a given object is identical with an object previously recognized" is by 1798 (Wordsworth). The literary (especially stage) recognition scene "scene in which a principal character suddenly learns or realizes the true identity of another character" is by 1837 (in a translation from German).
+
+2. recognize(v.)--- early 15c., recognisen, "resume possession of land," a back-formation from recognizance, or else from Old French reconoiss-, present-participle stem of reconoistre "to know again, identify, recognize," from Latin recognoscere "acknowledge, recall to mind, know again; examine; certify," from re- "again" (see re-) + cognoscere "to get to know, recognize" (see cognizance).
+
+   With ending assimilated to verbs in -ise, -ize. The meaning "know (the object) again, recall or recover the knowledge of, perceive an identity with something formerly known or felt" is recorded from 1530s.
+
+3. cognizance(n.)--- mid-14c., conisance, "device or mark by which something or someone is known," from Anglo-French conysance "recognition," later, "knowledge," from Old French conoissance "acquaintance, recognition; knowledge, wisdom" (Modern French connaissance), from past participle of conoistre "to know," from Latin cognoscere "to get to know, recognize," from assimilated form of com "together" (see co-) + gnoscere "to know" (from PIE root *gno- "to know").
+
+   Meaning "knowledge by observation or notice, understanding, information" is from c. 1400. In law, "the exercise of jurisdiction, the right to try a case" (mid-15c.). Meaning "acknowledgment, admission" is from 1560s. The -g- was restored in English spelling 15c. and has gradually affected the pronunciation, which was always "con-." The old pronunciation lingered longest in legal use.
+
+4. *gno-, Proto-Indo-European root meaning "to know." It might form all or part of: acknowledge; acquaint; agnostic; anagnorisis; astrognosy; can (v.1) "have power to, be able;" cognition; cognizance; con (n.2) "study;" connoisseur; could; couth; cunning; diagnosis; ennoble; gnome; (n.2) "short, pithy statement of general truth;" gnomic; gnomon; gnosis; gnostic; Gnostic; ignoble; ignorant; ignore; incognito; ken (n.1) "cognizance, intellectual view;" kenning; kith; know; knowledge; narrate; narration; nobility; noble; notice; notify; notion; notorious; physiognomy; prognosis; quaint; recognize; reconnaissance; reconnoiter; uncouth; Zend.
+
+    It might also be the source of: Sanskrit jna- "know;" Avestan zainti- "knowledge," Old Persian xšnasatiy "he shall know;" Old Church Slavonic znati "recognizes," Russian znat "to know;" Latin gnoscere "get to know," nobilis "known, famous, noble;" Greek gignōskein "to know," gnōtos "known," gnōsis "knowledge, inquiry;" Old Irish gnath "known;" German kennen "to know," Gothic kannjan "to make known."
+
+Most people are stuck on linguistics and philosophy when trying to figure out what something means.
+The science of behavior skips over them and goes straight to the contingencies (a contingency is a consequence from response on occasion e.g. a door opens from a push on a lever) of which we now only remotely speak.
+It is through "The Diversions of Purely" by John Horne Tooke that Skinner and so many others have come to better appreciate the role of etymology in the analysis of verbal behavior.
+
+The control that each part of a text has over the responses of a reader are almost entirely the result of etymology as the history of the characteristic consequences of verbal responses of given form on characteristic occasions.
+We now know that the wheel, horses, and most language descend from the bronze-age peoples of the eurasian steppes (see "The Horse, the Wheel and Language" by David W. Anthony 2007).
+Most cultures of the world remain under the control of circumstances which are not very different from those of the bronze age people, and each word of a modern language which purports to mention or refer to a mentalistic object such as an idea or thought can be traced through to its PIE root which reveals the concrete contingencies from which we speak though we are oh so remote from such ancient speakers.
+
+Thus, going from "recognize" to "*gno-" and back again through "can" and "could" as "have power to", "be able to", or through "acquaint" as "to be near to" or "to bring near" or "intimate with", we reach out to the concrete contingencies which control the verbal behavior that is a consequence of them.
+B. F. Skinner has the following to say as an introduction to "knowing":
+
+> "We say that a newborn baby knows how to cry, suckle, and sneeze. We say that a child knows how to walk and how to ride a tricycle. The evidence is simply that the baby and child exhibit the behavior specified. Moving from the verb to the noun, we say that they possess knowledge, and the evidence is that they possess behavior. It is in this sense that we say that people thirst for, pursue, and acquire knowledge.
+> 
+> But this brings us at once to the question of what it means to possess behavior. ... to say that a response is emitted does not imply that it has been inside the organism. Behavior exists only when it is being executed. Its execution requires a physiological system, including effectors and receptors, nerves, adn a brain. The system was changed when the behavior was acquired, and it is the changed system which is "possessed." The behavior it mediates may or may not be visible at any given moment. There are parallels in other parts of biology. An organism "possesses" a system of immune reactions in the sense that it responds to invading organisms in a special way, but its responses are not in existence until it is being invaded. It is often useful to speak of a repertoire of behavior which, like the repertoire of a musician or a company of players, is what a person or company is capable of doing, given the right circumstances. Knowledge is possesed as a repertoire in this sense."[pg. 152 Skinner "About Behaviorism"]
+
+And then, jumping ahead to Skinner's section "Knowledge as Power and as Contemplation"
+
+> Much of what is called contemplative knowledge is associated with verbal behavior and with the fact that it is the listener rather than the speaker who takes action. We may speak of the power of words in affecting a listener, but the behavior of a speaker in identifying or describing something suggests a kind of knowledge divorced from practical action.
+Verbal behavior plays a principal role in contemplative knowledge, however, because it is well adapted for automatic reinforcement: the speaker may be his own listener.
+There are nonverbal behaviors having the same effect.
+Perceptual responses which clarify stimuli and resolve puzzlement may be automatically reinforcing.
+"Getting the meaning" of a difficult passage is similar.
+... Contemplation of this kind would be impossible, however, without a previous exposure to contingencies in which action is taken and differentially reinforced."[pg. 155-156 Skinner "About Behaviorism"]
+
+So it is that I return to the first sentence from Frege
+
+> "The recognition of a scientific truth generally passes through several stages of certainty."[pg. 48]
+
+The word "recognition" is replaced with "*gno-" and the rest comes through a careful analysis of what people do when they are said "to know".
+It is not passing through "several stages of certainty" that strengthens the possession of a scientific truth as a kind of knowledge or cognitition or even a conception (of which I expect there to be much talk later), but rather the concrete contingencies to which the knowing organism is exposed and which result in the contemplative knowing which purportedly reaffirms itself as in automatic reinforcement of a trained "knower of scientific truths".
+
+I shall not take so long with each sentence as I submit that most of them cluster around a few threads of etymology that bring us back to the science of behavior and then follow from there.
+There is much more to go yet I shall leave this here for now.
+
+Tomorrow I may even get to the second sentence :)  
+
 ### 2025 0425 2005 Some Origins of My Interst in the History of the World
 My interest in the history of the world is largely the result of my interest in the history of science and technology.
 Technologies are concrete artifacts of cultural practices.
@@ -13,7 +149,7 @@ The mechanization of the behaviors which once dominated the practices of sewing 
 Repertoires of sewing are almost extinguished as the remote control of sewing machines eliminates the contingencies that once taught the people of the world to sew.
 
 Washing machines are perhaps better known for the labors they are said to save.
-While it may come easy to us to say that labors are saevd by washing machines, especially when the push of a button has the same consequence which were once the result of a long chain of responses, it is more accurate to say that a change in the environment changed prevailing behaviors and to seperate such changes from teh value judgements that are so quickly provided by a majority of our ethical practices.
+While it may come easy to us to say that labors are saevd by washing machines, especially when the push of a button has the same consequences which were once the result of a long chain of responses, it is more accurate to say that a change in the environment changed prevailing behaviors and to seperate such changes from teh value judgements that are so quickly provided by a majority of our ethical practices.
 
 The primary reason to stick with an accurate report of behavior rather than amending it with a value judgement is that the ethical practices which bring such judgements to the judge are not yet themselves the result of a conclusion from contemplation on accurate templates of the world.
 More than that, they are very rarely so: the science of behavior is new and has had little to no effect on prevailing ethical practices in any of the cultures of the world.
