@@ -3,6 +3,41 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0425
 
+### 2025 0425 1943
+
+R.P. (@ResonantPyre) has given me a few great book recommendations over the past few months:
+
+* "The English and their History" by Robert Tombs
+* "Wandering Significance" by Mark Wilson
+* "A History of Philosophy without any gaps" by Peter Adamson (of which there are seven, for now)
+* "The Frege Reader" edited by Michael Beaney
+
+I have not yet bought "The English adn their History".
+Wilson's "Wandering Significance" was the fist that I bought up on R.P.'s recommendation.
+It was recommended as a result of some conversations we had on Quine and physics.
+Wilson is not the kind of writer that I'm used to: he takes a winding path around every single point rather than sticking it in your face.
+One of the reasons I so love B. F. Skinner's writings is that he goes out of his way to stick your nose in everything he has to say.
+
+"Wandering Significance" is presented as a very long essay on the origins and operations of meaningful language (though it is often much much more than that).
+There was very little of it that I read and am likely to repeat: specific examples in physics didn't line up with what I had repeatedly witnessed physicists do (inside the lab and outside it).
+May sections felt like the long delays you see in a movie where a person is rushing to finish a homecooked meal before the jig is up.
+Though I may come back to it later, what little it has to say about Quine and Skinner combined with its strange outlook on the practices and behaviors of phycisists left me uninterested in reading more.
+That has not stopped me in the past though, so the future of this book is open.
+
+I just got the first volume of "A history of philosophy with gaps" on "classical philosophy" by Adamson.
+I've flipped through some pages, read an introduction, and was excited to see that there were many references to primary texts that were prominently placed and mentioned.
+This made me very happy: I am looking for a more comlpete and comprehensive yet singularly organized outline of major philosophers and their texts and this may just be it.
+
+As much as I enjoy clicking through a few Wikipedia articles to jog my memory when I've fogotten some detail I once knew, I can not recommend it for anything much more than that.
+This seems to especially be the case when it comes to philosophy.
+There's just too much that people have said, and too little cohesion between entries.
+As I get through Durant's "Story of Civilization" I'll have much more to say about monolithic efforts that have a kind of grand unification without presumming cosmic authority (this problem was already brought up from my reading of Bourbaki which is a series built by committee but governed by logical and mathematical practices which do much of the heavy lifting when it comes to cosmic unifications and simplifications).
+
+My readings of Frege are limited to "The Foundations of Arithmetic" and what can be found in "From Frege to Godel" (a text that any student of logic must have: it is truly indispensible).
+"The Frege Reader" says it covers his major writings: I still must buy his other books to read them in full.
+
+Books are some of my favorite things.
+
 ### 2025 0425 1925
 While I had hoped to write every day without breaking my streak, it has been two days since I last wrote something here.
 My only excuse, if there is even a need for one (which I think there is not), is that I had some wonderful conversations with people about things I will soon be writing on (I aim to summarize two of the conversations I've had), but also I have been recovering from a workout injury.
