@@ -1,6 +1,91 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0426
+
+### 2025 0426 1845 To and From Predicate Functor Logic
+This uses notation from [A Stack Notation for Predicate Functor Logic](#a-stack-notation-for-predicate-functor-logic-2025-0414-1626).
+
+Here I give a few quick examples of how to translate a sentence of quantificational logic to one of predicate functor logic.
+As I finish up my little lisp I'll write out mechanical algorithms for accomplishing each of these steps and look for a few shortcuts.
+
+As an aside, it is possible to reduce all of predicate logic to just three predicate functors:
+
+1. '..xy(drop F)..z' for '..xF..z'
+2. '..xyz(hem F)..a' for '..xyzFy..a'
+3. '..x(F huh G)a..b' for 'some item is {y such that not (..xayF..b and ..xayG..b)}'
+
+I'll save that reduction for another time maybe.
+
+The basic predicate functors in this presentation of homogenization will be then
+
+1. '...xy(drop F)...z' for '...xF...z'
+2. '...wxy(hem F)...z' for '...wxyFx...z'
+3. '...x(push F)y...z' for '...xyF...z'
+4. '...x(not F)...y' for 'not ...xF...y'
+5. '...x(F and G)...y' for '...xF...y and ...xG...y'
+6. '...x(some F)...y' for 'some item is (z such that ...xzF...y)'.
+
+In the linked note I show how to get 
+
+7. '..xy(dup F)..a' for '..xyyF..z'
+8. '..xy(pop F)..a' for '..xFy..a'
+9. '..xyz(swap F)..a' for '..xzyF..a'
+
+from those basic six starting functors.
+With the appropriate combination of swaps, pops, and pushes, it is possible to move the variables of any predicate into any position:
+
+10. '..xyz(swop F)..a' for '..xyz(swap pop F)..a' i.e. '..xzFy..a'
+11. '..x..yz(ret^n F)..a' for '..x..yz(swop^n push^n F)..a' i.e. '..xz..yF..a' where '..y' is a list of n variables.
+
+Note, for a predicate functor designated by 'f' the notation 'f^0' designates the same as 'f' and 'f^(n+1)' designates the same as 'f^n f' so that each predicate functor issues in its iterates in the expected way.
+
+The pidgin 'ret' is short for 'retrojection' which I take from Quine's explanation of the permutational part of homoginization.
+
+Now  predicates in quantificational logic are said to be of degree n when they have n variables attached to them (most often on the right hand side) e.g. 'Fxyxxzu' is of degree six and 'Gyxyxy' is of degree five.
+
+The first step in translating a closed sentence of quantificational logic into a predicate functor is to attach the degree of each predicate in the sentence to its name as a numeral (this does not actually involve arithmetic in the notation any more than counting the number of variables attached to a predicate of quantificational logic does)e.g. 'Fxyxxzu' becomes 'F6xyxxzu' and 'Gyxyxy' becomes 'G5yxyxy'. This must be done for each predicate in the sentence being transformed. Sentence letters (e.g., often 'p', 'q', 'r') get carried over to degree zero predicates.
+
+Next, to simplify matters, before or after attaching these numerals, the sentence is to be put into one of its equivalents which is compounded of only existential quantifiers, conjunctions, and negations.
+
+Now, negations get taken over simply enough by bringing it into predicate functor form e.g. 'not Fxyz' becomes '(not F3)xyz' and 'some item is {x such that (not Fxyz) and (not Gux)}' becomes 'some item is {x such that (not F3)xyz and (not G2)ux}'.
+
+Where ever there are duplicate occurrences of a variable they can be eliminated by retrojections, pops, pushes, and dups. A mechanical way of doing this to alphabatize the variables attached to a predicate and to put it in stack form (which favors the left hand side of a predicate) e.g. 'Fxyxzyz' becomes 'F6xyxzyz' then 'xxy(swap pop push^3 F6)zyz' to 'xxyyzz(pop swap pop^2 swap push^3 F6)' then to 
+
+'(push dup push dup push dup pop swap pop^2 swap push3 F6)xyz'
+
+which avoids retrojections and is adhoc really.
+
+Now assuming this is done then it is only homogenization that is left and it only occurs when confronted by conjunctions e.g. given 
+
+'Faxy and Gbz'
+
+missing letters can be brought in by 'drop' e.g.
+
+'bz(drop^2 F3)axy and ax(drop^2 G2)bz'
+
+and alphabetized
+
+'(..f drop^2 F3)abxyz and (..g drop^2 G2)abxyz'
+
+by some appropriate sequence of functors designated by '..f' and '..g' respectively: the functors '(..f drop^2)' and '(..g drop^2)' are said to homogenize 'F' and 'G' respectively. This can obviously be generalized to connectives of more components than the two of primitive conjunction. Finally then, the 'and' is brought in so that
+
+'((..f drop^2 F3) and (..g drop^2 G2))abxyz'.
+
+Last, but not least, the variable of an existential quantifier is brought to the top of the left stack by appropriate pops, then 'some' is brought in e.g.
+
+'some item is {z such that Fxyz}'
+
+becomes 
+
+'some item is {z such that xyz(pop^3 F3)}'
+
+and then
+
+'xy(some pop^3 F3)'.
+
+Together these complete the translation to and from predicate functor logic.
+
 ## 2025 0425
 
 ### 2025 0425 2042 Reading the Frege Reader: The First Sentence
