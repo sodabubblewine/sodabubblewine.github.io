@@ -3,7 +3,7 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0425
 
-### 2025 0425 2042 Reading the Frege Reader
+### 2025 0425 2042 Reading the Frege Reader: The First Sentence
 This is a record of my reading of "The Frege Reader" edited by Michael Beany.
 It was recommended to me by R.P. (@ResonantPyre).
 Since this is my first public reading of a primary text (I do not read secondary texts--- like I [have](#2025-0420-2247) Durant's "Story of Philosophy"--- as I might Plato's dialogues) I shall say a bit on what I do when I read.
