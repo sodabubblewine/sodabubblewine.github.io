@@ -3,6 +3,176 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0426
 
+### 2025 0426 1851
+This continues my work on my little lisp from [202504211546](#2025-0421-1546).
+If you haven't been following along then this is a good place to start, but, like the rest of the notes I've made thus far, it assumes that you know basic javascript and how to define functions by recursion.
+
+Simplification does not defer design decisions: it pushes them out of the problem space entirely.
+Upon approaching the design of my little lisp's reader, such simplifications occurred to me and, hence, solved major problems by disolving them rather than resolving them into simpler problems with simpler solutions.
+This is a halmark of factoring as a problem elimination process rather than a problem solving process.
+A problem can very often be factored out of existence faster than a solution can be found to it.
+
+A pure lisp is one without any atoms.
+The empty pair takes over the part played by the item previously designated by 'nil'.
+The empty pair shall here be designated by 'theEmptyPair'.
+Though I have a theory of ordered pairs in the works, I am committed here to javascript as the lingua franca of the internet.
+
+```
+let theEmptyPair={}
+, isEmpty = x => x == theEmptyPair
+, consOf = (x,y) => [x,y]
+, carOf = x => isEmpty(x) ? x : x[0]
+, cdrOf = x => isEmpty(x) ? x : x[1]; 
+```
+Identity is no longer a primitive:
+```
+let id = (x,y) =>
+  (isEmpty(x) && isEmpty(y))
+  || (!(isEmpty(x) || isEmpty(y))
+     && id(carOf(x),carOf(y))
+     && id(cdrOf(x),cdrOf(y)));
+```
+There is no longer the troublesome distinction between proper and dotted lists, between symbols or runes, and we are free to build such distinctions, if we so desire, from this simpler starting point.
+
+Note, I was reluctant to start with a pure LISP because I am already familiar with the theory of ordered pairs upon which it may be based and had hoped to learn something new from the purported simplicity of more familiar implementations of LISP.
+The design of the reader made it clear that there is nothing to be gained from mixing the construction of native and foreign items (the items of javascript and lisp respectively).
+
+This switch to a simpler design also brings my little pure lisp into closer contact with my little concatenative language designed from simplifying Charles H. Moore's uhdForth (it is sad that so far there is no one who has written on uhdForth but me: the reason for this is that almost everything about uhdForth has to be deduced from short yet logically complete presentations in garbled youtube videos).
+
+Under this simplification every item is a rune, a runic list, a proper list, and a number of dotted lists (no greater than the length of the proper list).
+Thus, there is no longer a printer, but rather a collection of printers to be used depending on the context of the program as written.
+This simplification also switches the emphasis from the printer to the reader: why?
+
+There are no strings that cross the boarder from javascript to the pure lisp: strings are left behind!
+Rather than wrestling with problems of peculiar implementations, we are left to establish whatever expedient conventions work for now.
+They may be changed later, but such conventions do not change the lisp: they change how we set it up.
+It shall later become clear that these conveniences are not about lisp at all, but rather the theory of ordered pairs.
+An example of one such theory is [Finitary inductively presented logics](https://math.stanford.edu/~feferman/papers/presentedlogics.pdf) by Solomon Feferman.
+
+There is one kind of item which crosses the boarder between javascript and my lisp which I have not mentioned all this time: the boolean values designated by 'true' and 'false' in javascript.
+I've mentioned them in descriptions of past functions, but not as naturalized citizens of my lisp.
+The traditional line is to take the empty pair as either the mark of truth or the mark of falsehood.
+This can not be done with javascript without digging into late manglings of the language (though it is hard to tell when something that is already mangled is mangled more).
+The reason is one which I have also not mentioned overtly, but which I shall mention now: I've been using the javascript ternary conditional notations 'p ? t : f' and hidden versions of the same in 'p && q' and 'p || q'.
+
+In javascript, such expressions control the execution of their subparts e.g. if 'p' designates the same as 'true' then 't' is executed in 'p ? t : f' and 'f' is executed otherwise.
+Mixing 'executed' and 'designated' and all such things here has gone against my better principles, but these are not the things I aimed at addressing here so I'm moving on without further comment.
+
+The recursive definition of the function designated by 'id' above is not simple, but the following functions are and they establish a key convention:
+```
+let singletonListOf = x => consOf(x,theEmptyPair)
+, singletonStackOf = x => consOf(theEmptyPair,x);
+```
+Almost all of the conventions that I shall adopt here are from my concatenative language that I have yet to present here.
+
+The singleton functions provide a simple way of tallying, and hence transforming a native javascript number into a foreign tally:
+
+```
+let tallyOf = n => 
+  n>0 ? singletonListOf(tallyOf(n-1)) : theEmptyPair;
+```
+
+Then, to read an external character is to find its index in some alphabet and take the tally of that:
+
+```
+let abc =[...'0123456789abcdefghijklmnopqrstuvwxyz ()']
+, alphabeticalIndexOf = letter => abc.indexOf(letter)
+, alphabeticalLetterOf = index => abc[index];
+```
+
+There is an even more devilish way of going back and forth acrosst he boarder between javascript and my little lisp.
+Rather than use tallies, a bit based method can be introduced e.g. only a bit at a time crosses the boarder one way or the other.
+I leave that for a few code fragements later.
+
+The old names for functions can now be used anew (after introducing the familiar string functions under slightly different names):
+
+```
+let theEmptyLetter=''
+, isEmptyLetter = x => x == theEmptyLetter
+, concatenationOf = (...strings) => 
+   strings.length ? strings.shift() + concatenationOf(...strings) : theEmptyLetter
+, firstLetterOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters[0]
+, restLettersOf = letters => isEmptyLetter(letters) ? theEmptyLetter : string.slice(1);
+```
+Oops! Forgot the inverse function to the one that makes tallies:
+```
+let countOf = x => isEmpty(x) ? 0 : 1 + countOf(cdrOf(x));
+```
+Now old names can be used anew!
+```
+let runeOf = letter => tallyOf(alphabeticalIndexOf(letter))
+, runicListOf = letters => 
+   letters.length ? consOf(runeOf(firstLetterOf(letters))
+    , runicListOf(restLettersOf(letters)))
+   : theEmptyPair
+, letterOf = x => letterAtIndexOf(countOf(x))
+, stringOf = x =>
+   isEmpty(x) ? theEmptyString
+   : concatenationOf(letterOf(carOf(x)),stringOf(cdrOf(x)));
+```
+Some much needed examples:
+```
+countOf(tallyOf(3)) 
+ 3
+letterOf(runeOf('a')) 
+ a
+lettersOf(runesOf('this is a test')) 
+ this is a test
+```
+Now for some strange examples that more closely reveal what I hinted at long ago about the joys of letting degenerate cases flourish:
+```
+letterOf(tallyOf(3)) 
+ 3
+lettersOf(runeOf('a')) 
+ 0000000000
+countOf(runesOf('this is a test'))
+ 14
+```
+For those who may have been put off by the definitions of the functions designated by 'tallyOf' and 'countOf' since they seemed to favor singleton stacks over singleton lists, I hope the last example calms your nerves: these conventions are selected by their native logic in javascript (and in any other language which purports to cover arithmetic and concatenation for that matter).
+Said poetically: economize on externalities.
+
+A further consequence of these simplifications is that I can bring together the work done from [2025 0413 1513 Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees) and explain how to cross the boarder between langauges bit by bit without leaving our native language:
+
+```
+let theEmptyStack = theEmptyPair 
+, isEmptyStack = isEmpty
+, pushOf= (stack,item) => consOf(stack,item)
+, popOf = carOf
+, peekOf = cdrOf
+, topOf = stack => peekOf(stack)
+, secondOf= stack => peekOf(popOf(stack))
+, pop2Of = stack => popOf(popOf(stack))
+, pairUpOf = stack => pushOf(pop2Of(stack),consOf(secondOf(stack),topOf(stack)))
+, pairUpEachOf = stack =>
+  isEmpty(popOf(stack)) ? topOf(stack)
+  : pairUpEachOf(pairUpOf(stack))
+, encodeHelper = (digits, stack) =>
+  isEmptyLetter(digits) ? pairUpEachOf(stack)
+  : isZeroDigit(firstLetterOf(digits)) ?
+     encodeHelper(restLettersOf(digits), pushOf(stack,theEmptyPair))
+  : isOneDigit(firstLetterOf(digits)) ?
+     encodeHelper(restLettersOf(digits), pairUpOf(stack))
+  : encodeHelper(restLettersOf(digits),stack)
+, encode = digits => encodeHelper(digits,theEmptyStack);
+```
+with some examples (notice the last one)
+```
+decode(encode('001')) 
+ 001
+decode(encode('0000')) 
+ 0000111
+decode(encode('10100')) 
+ 001010011
+decode(encode('00101011')) 
+ 000101011
+decode(runeOf('a')) 
+ 000000000001111111111
+lettersOf(encode(decode(runesOf('this is a test')))) 
+ this is a test
+```
+
+That's enough for today.
+
 ### 2025 0426 1845 To and From Predicate Functor Logic
 This uses notation from [A Stack Notation for Predicate Functor Logic](#a-stack-notation-for-predicate-functor-logic-2025-0414-1626).
 
