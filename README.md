@@ -30,7 +30,7 @@ This saves time and extends the reach of extensioanl contexts which are among ou
 
 ---
 For those who may not be familiar with the distinction between extensional and nonextensional contexts here is Quine's definition:
->“A context is extensional if its truth value cannot be changed by supplanting a component sentence by another of the same truth value, nor by supplanting a component predicate by another with all the same denotata, nor by supplementing a singular term by another with the same designatum. Succinctly, the three requireemnts are substitutivity of covalence, of coextensiveness, and of identity, salva veritate. A context is intensional if it is not extensional.”[pg. 90 Quine “From Stimulus to Science”].
+>“A context is extensional if its truth value cannot be changed by supplanting a component sentence by another of the same truth value, nor by supplanting a component predicate by another with all the same denotata, nor by supplementing a singular term by another with the same designatum. Succinctly, the three requirements are substitutivity of covalence, of coextensiveness, and of identity, salva veritate. A context is intensional if it is not extensional.”[pg. 90 Quine “From Stimulus to Science”].
 
 ## 2025 0426
 
@@ -526,7 +526,7 @@ But, let me linger here lest I be seen as some immoral logical supremacist! Than
 
 Whatever else anyone says they *actually mean* by implication can only be grasped natively by foreign import i.e. paraphrase into a logical theory as above.
 
-This is staunch. It is also repulsive to many. I accept all such responses to such declarations as relevant to a full theory of logical and scientific behavior. What can not be accepted are methods which, e.g., break extensionality of a theory by recourse to some deviant logic: "A context is *extensional* if its truth value cannot be changed by supplanting a component sentence by another of the same truth value, nor by supplanting a component predicate by another with all the same denotata, nor by supplementing a singular term by another with the same designatum. Succinctly, the three requireemnts are substitutivity of covalence, of coextensiveness, and of identity, salva veritate. A context is *intensional* if it is not extensional."[pg. 90 Quine "From Stimulus to Science"].
+This is staunch. It is also repulsive to many. I accept all such responses to such declarations as relevant to a full theory of logical and scientific behavior. What can not be accepted are methods which, e.g., break extensionality of a theory by recourse to some deviant logic: "A context is *extensional* if its truth value cannot be changed by supplanting a component sentence by another of the same truth value, nor by supplanting a component predicate by another with all the same denotata, nor by supplementing a singular term by another with the same designatum. Succinctly, the three requirements are substitutivity of covalence, of coextensiveness, and of identity, salva veritate. A context is *intensional* if it is not extensional."[pg. 90 Quine "From Stimulus to Science"].
 
 Without extensionality, intersubjective agreement by qualified witnesses is verbally bankrupt. It is already hard enough to grasp a theory with its necessary (but not sufficient) predicate logic. But, to do so without predicate logic is to plunge the world into the caprice of uncontemplated cooperation. There can be no verbal coordination without extensionality.
 
