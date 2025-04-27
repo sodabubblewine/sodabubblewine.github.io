@@ -3,7 +3,7 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0427
 
-### 2025 0427 1304 My Conrete Outlook on Frege
+### 2025 0427 1304 My Concrete Outlook on Frege
 I am forgoing my traditional methods of reading Frege for the following reasons.
 
 I can state my outlook on Frege concretely: it is the interpretation of Frege by Quine in "On Frege's Way Out" of 1955 in light of all that Quine later worked out in, e.g., "From Stimulus to Science" of 1996.
