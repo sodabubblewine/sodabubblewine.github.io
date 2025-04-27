@@ -28,6 +28,9 @@ There is one last reason for the urgency of this all: as verbal machines become 
 Furthermore, those who dispense with them sooner rather than later, as prescribed by Skinner, are more likely to survive: they can skip intermediate ruminations on attributes.
 This saves time and extends the reach of extensioanl contexts which are among our greatest verbal technologies.
 
+---
+For those who may not be familiar with the distinction between extensional and nonextensional contexts here is Quine's definition:
+>“A context is extensional if its truth value cannot be changed by supplanting a component sentence by another of the same truth value, nor by supplanting a component predicate by another with all the same denotata, nor by supplementing a singular term by another with the same designatum. Succinctly, the three requireemnts are substitutivity of covalence, of coextensiveness, and of identity, salva veritate. A context is intensional if it is not extensional.”[pg. 90 Quine “From Stimulus to Science”].
 
 ## 2025 0426
 
