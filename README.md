@@ -3,6 +3,9 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0427
 
+### 2025 0427 1326
+The word 'sadness' contains 'adn' which is also one of my common mispellings of 'and'.
+
 ### 2025 0427 1304 My Concrete Outlook on Frege
 I am forgoing my traditional methods of reading Frege for the following reasons.
 
@@ -13,9 +16,9 @@ I will do my best to write that up and read from Frege.
 
 The key to this transition was provided by B. F. Skinner's theoretical analysis in "Verbal Behavior" of 1957 which ends with chapters on logic, science, and thinking.
 Whereas Quine indulges the attitudinists with their properties, propositions, concepts, information, attributes, and other nonextensional contexts long enough to dismiss them, he does not explain them away (as many have subsequently griped).
-Skinner provides the details of such an explanation and there is some path frmo Quine's method of semantic ascent and Skinner's analysis of autoclitic verbal behavior which covers past efforts by Frege, Russell, Whitehead, and the moderns like Per Martin-Löf primed by their ill fated allegiance to their fellow attitudenists.
+Skinner provides the details of such an explanation and there is some path from Quine's method of semantic ascent and Skinner's analysis of autoclitic verbal behavior which covers past efforts by Frege, Russell, Whitehead, and the moderns like Per Martin-Löf primed by their ill fated allegiance to their fellow attitudenists.
 
-Quine's paper "On Frege's Way Out" points up Frege's position as one where attributes/concepts/propositions/information/essences/properties (and whatever new nonextensional contexts have been cooked up while I was writing this sentence) are secondary to extensional contexts: it is Russell adn whitehead who based their theory of extensional contexts of classes on the nonextensional contexts of attributes.
+Quine's paper "On Frege's Way Out" points up Frege's position as one where attributes/concepts/propositions/information/essences/properties (and whatever new nonextensional contexts have been cooked up while I was writing this sentence) are secondary to extensional contexts: it is Russell and whitehead who based their theory of extensional contexts of classes on the nonextensional contexts of attributes.
 
 The transition is one from sense to schematics.
 It is the one Quine promoted and which, I submit, is also promoted by Frege, though I accept that it is perhaps only through Quine's later work that the paraphrase can be judged as satisfactory and read as perfectly parallel to Frege in Begriffsschrift.
@@ -396,7 +399,7 @@ B. F. Skinner has the following to say as an introduction to "knowing":
 
 > "We say that a newborn baby knows how to cry, suckle, and sneeze. We say that a child knows how to walk and how to ride a tricycle. The evidence is simply that the baby and child exhibit the behavior specified. Moving from the verb to the noun, we say that they possess knowledge, and the evidence is that they possess behavior. It is in this sense that we say that people thirst for, pursue, and acquire knowledge.
 > 
-> But this brings us at once to the question of what it means to possess behavior. ... to say that a response is emitted does not imply that it has been inside the organism. Behavior exists only when it is being executed. Its execution requires a physiological system, including effectors and receptors, nerves, adn a brain. The system was changed when the behavior was acquired, and it is the changed system which is "possessed." The behavior it mediates may or may not be visible at any given moment. There are parallels in other parts of biology. An organism "possesses" a system of immune reactions in the sense that it responds to invading organisms in a special way, but its responses are not in existence until it is being invaded. It is often useful to speak of a repertoire of behavior which, like the repertoire of a musician or a company of players, is what a person or company is capable of doing, given the right circumstances. Knowledge is possesed as a repertoire in this sense."[pg. 152 Skinner "About Behaviorism"]
+> But this brings us at once to the question of what it means to possess behavior. ... to say that a response is emitted does not imply that it has been inside the organism. Behavior exists only when it is being executed. Its execution requires a physiological system, including effectors and receptors, nerves, and a brain. The system was changed when the behavior was acquired, and it is the changed system which is "possessed." The behavior it mediates may or may not be visible at any given moment. There are parallels in other parts of biology. An organism "possesses" a system of immune reactions in the sense that it responds to invading organisms in a special way, but its responses are not in existence until it is being invaded. It is often useful to speak of a repertoire of behavior which, like the repertoire of a musician or a company of players, is what a person or company is capable of doing, given the right circumstances. Knowledge is possesed as a repertoire in this sense."[pg. 152 Skinner "About Behaviorism"]
 
 And then, jumping ahead to Skinner's section "Knowledge as Power and as Contemplation"
 
@@ -459,7 +462,7 @@ R.P. (@ResonantPyre) has given me a few great book recommendations over the past
 * "A History of Philosophy without any gaps" by Peter Adamson (of which there are seven, for now)
 * "The Frege Reader" edited by Michael Beaney
 
-I have not yet bought "The English adn their History".
+I have not yet bought "The English and their History".
 Wilson's "Wandering Significance" was the fist that I bought up on R.P.'s recommendation.
 It was recommended as a result of some conversations we had on Quine and physics.
 Wilson is not the kind of writer that I'm used to: he takes a winding path around every single point rather than sticking it in your face.
@@ -620,7 +623,7 @@ The following definitions introduce functional predicates and all that is often 
 * Field) 'field F' for '(Lfied F) or (Rfield F)'
 
 The various theorems about functions then turn out to be applications of schema of functional predicates e.g. 'Func void', 'Func =', '(Func F) and (Func G), only if (Func (F of G))', and '(Func F) only if (Func (F and G))'
-Talk of correlations comes up often adn is an application fo the logic of correlative predicates:
+Talk of correlations comes up often and is an application fo the logic of correlative predicates:
 
 * correlation) 'Corr F' for '(Func F) and (Func swap F)'
 
