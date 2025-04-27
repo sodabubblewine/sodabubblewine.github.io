@@ -3,7 +3,7 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0426
 
-### 2025 0426 1851
+### 2025 0426 1851 Purifying My Little Lisp
 This continues my work on my little lisp from [202504211546](#2025-0421-1546).
 If you haven't been following along then this is a good place to start, but, like the rest of the notes I've made thus far, it assumes that you know basic javascript and how to define functions by recursion.
 
