@@ -1,6 +1,31 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0427
+
+### 2025 0427 1304 My Conrete Outlook on Frege
+I am forgoing my traditional methods of reading Frege for the following reasons.
+
+I can state my outlook on Frege concretely: it is the interpretation of Frege by Quine in "On Frege's Way Out" of 1955 in light of all that Quine later worked out in, e.g., "From Stimulus to Science" of 1996.
+What I can do is paraphrase all that can be brought through Frege without breaking our best logical practices.
+I have already noted such latter day methods on Twitter when I wrote of schematic theories of predicates of extensionality.
+I will do my best to write that up and read from Frege.
+
+The key to this transition was provided by B. F. Skinner's theoretical analysis in "Verbal Behavior" of 1957 which ends with chapters on logic, science, and thinking.
+Whereas Quine indulges the attitudinists with their properties, propositions, concepts, information, attributes, and other nonextensional contexts long enough to dismiss them, he does not explain them away (as many have subsequently griped).
+Skinner provides the details of such an explanation and there is some path frmo Quine's method of semantic ascent and Skinner's analysis of autoclitic verbal behavior which covers past efforts by Frege, Russell, Whitehead, and the moderns like Per Martin-Löf primed by their ill fated allegiance to their fellow attitudenists.
+
+Quine's paper "On Frege's Way Out" points up Frege's position as one where attributes/concepts/propositions/information/essences/properties (and whatever new nonextensional contexts have been cooked up while I was writing this sentence) are secondary to extensional contexts: it is Russell adn whitehead who based their theory of extensional contexts of classes on the nonextensional contexts of attributes.
+
+The transition is one from sense to schematics.
+It is the one Quine promoted and which, I submit, is also promoted by Frege, though I accept that it is perhaps only through Quine's later work that the paraphrase can be judged as satisfactory and read as perfectly parallel to Frege in Begriffsschrift.
+Frege is to be judged solely on Begriffsschrift: the rest of his work is commentary and is like barnacles that must be cleaned from the hull of humanity's greatest achievement.
+
+There is one last reason for the urgency of this all: as verbal machines become more articulate they shall make it hard for most people to cling to nonextensional contexts.
+Furthermore, those who dispense with them sooner rather than later, as prescribed by Skinner, are more likely to survive: they can skip intermediate ruminations on attributes.
+This saves time and extends the reach of extensioanl contexts which are among our greatest verbal technologies.
+
+
 ## 2025 0426
 
 ### 2025 0426 1851 Purifying My Little Lisp
@@ -485,7 +510,7 @@ The signifcance of Quine's predicate functors can not be understated by me. He s
 
 Thus, given a theory and its predicate logic, the predicate functors of Quine give a way, once and for all, to rid ourselves of the lgoical import of pronomial cross reference. This eliminates, then, all problems which turn up from such cross referencing e.g. all problems of scope and bondage.
 
-It also turns our focus back tot he probelms to solve: what is the logic of the theory under investigation? In predicate (functor) logic this means settling what predicates belong to the lexicon of the theory. The requirement that the lexicon be mentioned by *listing* the predicates is preformally stated as "the lexicon is finite", though the emphasis here is on the preformality of that statement otherwise the invocation of the predicate 'is finite' quickly demands its own logical theory.
+It also turns our focus back to the probelms to solve: what is the logic of the theory under investigation? In predicate (functor) logic this means settling what predicates belong to the lexicon of the theory. The requirement that the lexicon be mentioned by *listing* the predicates is preformally stated as "the lexicon is finite", though the emphasis here is on the preformality of that statement otherwise the invocation of the predicate 'is finite' quickly demands its own logical theory.
 
 Now, with the lexicon given, the paucity of premises is among the next steps. I say "among the next steps" because it is often through a sequence of steps that the predicates and premises of a given theory evolve from the conclusions of their implication.
 
