@@ -2,6 +2,7 @@
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
 ## 2025 0427
+
 ### 2025 0427 2230 A Quick Response to Frege's "Thought"
 I skimmed Frege's paper on thought.
 Almost everything he says is covered by B. F. Skinner's theoretical analysis in "Verbal Behavior" 1957.
@@ -12,10 +13,10 @@ That is, the ordered pair exists whether the components do nor not.
 
 You can do all of this and bring Skinner's analysis of verbal behavior into the abstract realm of orderd pairs to get something beyond 'x from y on z' with descriptive premises for 'x', 'y', and 'z' (as in Quine's "Free Logic and Virtual Classes" of 1994).
 I set this up to shift from propositions to ordered pairs where the theory of ordered pairs is clear: they are identical when their components are.
-What both Quine and Skinner do is to maek all these excursions to simulate some abstract object tempated on a mental or physical analysis moot.
-You can skip them entirely and nothing scared disappears.
+What both Quine and Skinner do is to make all these excursions to simulate some abstract object tempated on a mental or physical analysis moot.
+You can skip them entirely and nothing sacred disappears.
 
-It may continue to feel as if the sacred has been paraphrased away, but, whether you go with Skinner or Frege, that would be letting psycholgoy intrude upon philosophy.
+It may continue to feel as if the sacred has been paraphrased away, but if you stick with Frege then that would be letting psycholgoy intrude upon philosophy.
 
 ### 2025 0427 1326
 The word 'sadness' contains 'adn' which is also one of my common mispellings of 'and'.
