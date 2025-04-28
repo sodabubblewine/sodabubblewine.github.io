@@ -14,13 +14,35 @@ The evolution of this technique through Bentham's (1748–1832) contextual ficti
 
 > 'G the {x such that Fx}' for 'some item is {y such that Gy and each item is {x such that x is identical to y if and only if Fx}}'.
 
-Frege, Peirce (1839-1914), Peano (1858-1932), Dedekind (1831-1916), and Cantor (1845-1918) are in the frimament from which Russell's theory of descriptions appeared (I am simply using it here as a concrete checkpoint).
+Frege, Peirce (1839-1914), Peano (1858-1932), Dedekind (1831-1916), and Cantor (1845-1918) are in the firmament from which Russell's theory of descriptions appeared (I am simply using it here as a concrete checkpoint).
 
 Russell and Frege dreamed of deducing mathematical truth from logical truth where their logic contained set membership and is what we would today call a mathematical logic: it was Gödel (1906-1978) in 1931 who finally severed the methods of mathematics from the methods of logic (Quine submits that Russell's paradox of 1902 is an earlier component of the full severence).
+It is the analysis of the ancestral of a relation and its confusion with the transitive closure of a predicate that prompted Frege and Russell to easily mix mathematics and logic: they mixed the copuli of predication with the predicate of membership. 
 
->It is the analysis of the ancestral of a relation and its confusion with the transitive closure of a predicate that prompted Frege and Russell to easily mix mathematics and logic: they mixed the copuli of predication with the predicate of membership. 
+The confusion between mathematical logic and (predicate) logic can be forgiven when carrying Frege through Quine because it is a confusion which almost all mathematicians and logicians continue to make either out of laziness or ignorance: the lazy maintain the ignorant.
 
-Quine continues this tradition through his method of semantic ascent.
+Quine continues this tradition through his method of semantic ascent, and it is with such methods that the bulk of Frege can be happily translated.
+It is not effective to go straight to semantic ascent first though because there are a number of distinctions which Frege makes which are interdependent with each other in ways that are factored out by Quine in different ways that only sometimes depend on semantic ascent.
+
+First I shall collect the relevant selections from Quine and then I shall collect and collate the relevant sections from Frege.
+But, it is impossible not to allude to Frege for there is so much which he already noticed and which is only slightly obscure relative to Quine's distinctions.
+In fact, I shall already break my plan here at the beginning because there is a beautiful distinction which Frege makes and which is otherwise obscure to me but in light of the following key distinction by Quine:
+
+>“A context is extensional if its truth value cannot be changed by supplanting a component sentence by another of the same truth value, nor by supplanting a component predicate by another with all the same denotata, nor by supplementing a singular term by another with the same designatum. Succinctly, the three requirements are substitutivity of covalence, of coextensiveness, and of identity, salva veritate. A context is intensional if it is not extensional.”[pg. 90 Quine “From Stimulus to Science”].
+
+The division between extensional and intentsional context is given by Frege in the third section of the first part of Begriffsschrift.
+Since I know of no way of seperating Frege's overlapping concerns I must present the section in its whole each time I explain one dimension of distinction that Quine makes which is relevant to it.
+I also have access to two different translations of Begriffsschrift and must put both of them right after each other because of my etymological principles.
+
+>"A distinction between *subject* and *predicate* finds *no place* in my representation of a judgement. To justify this, I note that the contents of two judgements can differn in two ways: either the conclusions that can be drawn from one when combined with certain others also always follow from the second when combined with the same judgements, or else this is not the case. The two propositions 'At Plataea the Persians were defeated by the Greeks' and 'At Plataea the Persians were defaeted by the Greeks' differ in the first way. Even if a slight difference in sense can be discerned, the agreement predominates. Now I call that part of the content that is the *same in both, the *conceptual content*. Since *only this* has significance for teh Begriffsschrift, no distinction is needed between propositions that have the same conceptual content. If it is said, 'The subject is the concept with which the judgement is concerned', then this applies also to the object. It can therefore only be said: "The subject is the concept with which the judgement is primarily concerned'. The linguistic significance of the position of the subject in the word-order lies in its *marking* the place where what one particularly wants to draw the attention of the listener to is put. (See also $9.) This can have teh purpose, for example, of indicating a relation between this judgement and others, thereby fascilitating the listener's grasp fo all the interconnections. NOw all those features of langauge that result only from the interaction of speaker and listener--- where the speaker, for example, takes the listener's expectations into account and seeks to put them on the right track even before a sentence is finished--- have no counterpart in my formula language, since here the only thing that is relevant in a judgement is that which influences its *possible consequences*. Everything that is necessary for a valid inference is fully expressed; but what is not necessary is mostly not even indicated; *nothing is left go guessing*. In this I closely follow the example of the formula language of matheamtics, in which subject and predicate can also be distinguished only by violating it. Imagine a language in which teh proposition 'Archimedes was killed at the capture of Syracuse' is expressed in the following way: 'The violent death of Archimedes at the capture of Syracuse is a fact'. Even here, if one wants, subject and predicate can be distinguished, but the subject contains the whole content, and the predicate serves only to present it as a judgement. *Such a language would have only a single predicate for all judgements, namely 'is a fact'*. It can be seen that there is no question here of subject and predicate in teh usual sense. *OUr Begriffsschrift is such a language and the symbol |-- is its common predicate for all judgements.*
+> In my first draft of a formula language I was misled by the example of ordinary language into constructing judgements out of subject and predicate. But I soon convinced myself that this was an obstacle to my particular goal and only led to useless proxlixity."[pg. 54 Frege 'The Frege Reader' edited by Michael Beaney]
+
+I have read this section multiple times, and have written it out twice now: it is probably one of the most important paragraphs in human history.
+It combines practically every major distinction which separates the practices of logic from all other human practices.
+Here is the same selection from a different translation:
+
+> 
+
 
 
 ## 2025 0427
