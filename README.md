@@ -9,7 +9,7 @@ Almost everything he says is covered by B. F. Skinner's theoretical analysis in 
 
 A theory of behavior may admit abstract items designated by a description of a contingency of reinforcement e.g. "a door opens from a push on a lever" can be made to designate an abstract ordered pair whose first component is a concrete chunk of doorish spacetime and whose second component is an ordered pair whose first component is a slice of spacetime which intersects the doorish chunk and the lever chunk through the chunk of behaving organism (perhaps narrowed by setting up a mechanical device called a detector or cumulative recorder) and whose second component is the leverish chunk.
 This ordered pair is abstract in that its existence does not depend on a mental or physical theory: the components are singular descriptions and not singular terms.
-That is, the ordered pair exists whether the components do nor not.
+That is, the ordered pair exists whether the components do or not.
 
 You can do all of this and bring Skinner's analysis of verbal behavior into the abstract realm of orderd pairs to get something beyond 'x from y on z' with descriptive premises for 'x', 'y', and 'z' (as in Quine's "Free Logic and Virtual Classes" of 1994).
 I set this up to shift from propositions to ordered pairs where the theory of ordered pairs is clear: they are identical when their components are.
