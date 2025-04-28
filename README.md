@@ -1,6 +1,28 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0428
+
+### 2025 0428 1517
+The translation of Frege (1848–1925) through Quine (1908-2000) begins with John Horne Tooke's (1736-1812) suggestion that
+
+> "you substitute the composition, &c, of *terms* wherever he has supposed a composition of ideas"[pg.6 Quine "From Stimulus to Science"].
+
+(Note, Tooke's "The Diversions of Purely" played a part of mention in Skinner's (1904 –1990) theoretical analysis of verbal behavior.)
+
+The evolution of this technique through Bentham's (1748–1832) contextual fictions, then Boole's (1815–1864) concrete differential notation, and directly on through Russell's (1872–1970) triumphant contextual definition of singular description where 'the {x such that Fx}' is elimianted (with major restrictions like those in Quine's "Free Logic and Virtual Classes" of 1994 and their projection back and forth through Quine's "Methods of Logic 4th edition" of 1982) as follows:
+
+> 'G the {x such that Fx}' for 'some item is {y such that Gy and each item is {x such that x is identical to y if and only if Fx}}'.
+
+Frege, Peirce (1839-1914), Peano (1858-1932), Dedekind (1831-1916), and Cantor (1845-1918) are in the frimament from which Russell's theory of descriptions appeared (I am simply using it here as a concrete checkpoint).
+
+Russell and Frege dreamed of deducing mathematical truth from logical truth where their logic contained set membership and is what we would today call a mathematical logic: it was Gödel (1906-1978) in 1931 who finally severed the methods of mathematics from the methods of logic (Quine submits that Russell's paradox of 1902 is an earlier component of the full severence).
+
+>It is the analysis of the ancestral of a relation and its confusion with the transitive closure of a predicate that prompted Frege and Russell to easily mix mathematics and logic: they mixed the copuli of predication with the predicate of membership. 
+
+Quine continues this tradition through his method of semantic ascent.
+
+
 ## 2025 0427
 
 ### 2025 0427 2333
