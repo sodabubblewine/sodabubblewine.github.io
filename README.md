@@ -3,6 +3,9 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0427
 
+### 2025 0427 2333
+First editorial comment added to an older note: the shortener at the end of [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees) does not work in a degenerate case that is now described there!
+
 ### 2025 0427 2230 A Quick Response to Frege's "Thought"
 I skimmed Frege's paper on thought.
 Almost everything he says is covered by B. F. Skinner's theoretical analysis in "Verbal Behavior" 1957.
@@ -2293,6 +2296,9 @@ decode(encode(shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,
 ```
 
 There are a few ways that these shorter decoded bit strings help out e.g. they let us fit more trees within a single word of memory and, if we are silly enough to do so, fit multiple tiny trees within a single word of memory.
+
+> Future John here (from 202504272330): the shortener doesn't work in the case where there is a one, a zero, and the first occurrence of a one is the last occurrence of a zero e.g. '00000111111'.
+> You can fix this by checking for this exact degeneracy and then keep whichever block of identical digits is shorter.
 
 Next I'll come up with a way to showcase how each bit string or binary tree locates chuncks, down to words, of memory.
 After that it will probably be time for some bit string and binary tree arithmetic.
