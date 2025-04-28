@@ -13,7 +13,7 @@ That is, the ordered pair exists whether the components do or not.
 
 You can do all of this and bring Skinner's analysis of verbal behavior into the abstract realm of orderd pairs to get something beyond 'x from y on z' with descriptive premises for 'x', 'y', and 'z' (as in Quine's "Free Logic and Virtual Classes" of 1994).
 I set this up to shift from propositions to ordered pairs where the theory of ordered pairs is clear: they are identical when their components are.
-What both Quine and Skinner do is to make all these excursions to simulate some abstract object tempated on a mental or physical analysis moot.
+What both Quine and Skinner do is to make all these excursions to simulate some abstract object templated on a mental or physical analysis moot.
 You can skip them entirely and nothing sacred disappears.
 
 It may continue to feel as if the sacred has been paraphrased away, but if you stick with Frege then that would be letting psycholgoy intrude upon philosophy.
