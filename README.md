@@ -17,7 +17,7 @@ The evolution of this technique through Bentham's (1748–1832) contextual ficti
 Frege, Peirce (1839-1914), Peano (1858-1932), Dedekind (1831-1916), and Cantor (1845-1918) are in the firmament from which Russell's theory of descriptions appeared (I am simply using it here as a concrete checkpoint).
 
 Russell and Frege dreamed of deducing mathematical truth from logical truth where their logic contained set membership and is what we would today call a mathematical logic: it was Gödel (1906-1978) in 1931 who finally severed the methods of mathematics from the methods of logic (Quine submits that Russell's paradox of 1902 is an earlier component of the full severence).
-It is the analysis of the ancestral of a relation and its confusion with the transitive closure of a predicate that prompted Frege and Russell to easily mix mathematics and logic: they mixed the copuli of predication with the predicate of membership. 
+It is the analysis of the ancestral of a relation and its confusion with the transitive closure of a predicate that prompted Frege and Russell to easily mix mathematics and logic: they mixed copuli of predication with predicates of membership. 
 
 The confusion between mathematical logic and (predicate) logic can be forgiven when carrying Frege through Quine because it is a confusion which almost all mathematicians and logicians continue to make either out of laziness or ignorance: the lazy maintain the ignorant.
 
