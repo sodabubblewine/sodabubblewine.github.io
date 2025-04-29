@@ -58,7 +58,7 @@ At a probably much later time I shall give the algorithm for converting to and f
 3. 'x loves Dick' is not a sentence nor a predicate nor an unmarked universal closure but rather a kind of sentence under construction. For example, the place marked by 'x' in 'x loves Dick' is waiting to be replaced by a proper singular term e.g. replace 'x' by 'Tom' in 'x loves Dick' to get 'Tom loves Dick' which is a complete sentence.
 This is my least favorite method.
 
-I've taken so much time to describe these different ways of taking 'x loves Dick' because it is the multitude of incompatible methods that were presented to Frege and which he had to navigate in order to arrive at his Begriffsschrift as at something coherent, systematic, and, above all, extensional.
+I've taken so much time to describe these different ways of taking 'x loves Dick' because it is the multitude of incompatible methods that were presented to Frege and which he had to navigate in order to arrive at his Begriffsschrift as something coherent, systematic, and, above all, extensional.
 His inspiration was arithmetic, and in that way he went with the second method whenever he said that a sentence like 'x loves Dick' is used to express a generality like that expressed from arithmetic in 'x(y+z) = xy + xz', and it is in Quine's functional normal form that there are the most similarities between Frege's methods and those of arithmetic e.g. as when he says
 
 > "The first are the *letters*, and these should serve primarily to express *generality*. For all their indeterminancy, it must be insisted that a letter *retain* in teh same context, the meaning once given to it."[pg. 52 Frege 'The Frege Reader' edited by Michael Beaney]
@@ -152,7 +152,7 @@ The example Frege gives for the different contents of two judgements that differ
 
 > "The two propositions "The Greeks defeated the Persians at Plataea" and "The Persians were defeated by the Greeks at Plataea" differ in the first way."[pg.12 Frege 'From Frege to Godel' Third Printing edited by van Heijenoor]
 
-This example, as given, does not emphasize that the contents are to be of a judgement: this is because Frege has said he shall only contemplate contents which are judgeable (I shall come back to this in a moment!).
+This example, as given, does not emphasize that the contents are to be of a judgement: this is because Frege has said he shall only contemplate contents which are judgeable.
 Following through the example in detail: 1) the two quotations are spelled differently i.e. they are not identical as concatenations of letters, 2) thus they differ in at least one way (as contents) and the question is how they differ with respect to the distinction Frege has made between conceptual and nonconceptual content, 3) Frege claims that there is no conclusion that can be got from the one that can not be got from the other with respect to the same supplementary judgements, 4) therefore they have the same conceptual content and differ only in their non-conceptual content, one part of which is, presumably, their spelling as quotations.
 
 Now note that Frege, in this example, goes far beyond the difference in content that I have mentioned as a difference in the spelling of their quotations: he wishes to go beyond propositions as sentences that may differ in spelling or, that complex difference in spelling called a difference in phrasing.
