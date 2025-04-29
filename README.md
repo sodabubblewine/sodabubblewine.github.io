@@ -165,7 +165,7 @@ This is seen in the sentence following the sentence with the examples:
 Here was also see our first divergence between translations with "sense" in about the same place as "meaning" is in the other.
 I do not own the German editions (yet), but a bit of etymology obviates any problems of translation from there (I can not get into this in greater detail without become derailed entirely in Skinner's analysis of verbal behavior).
 
-When I worked through Frege's example I neither mentioned the sense nor the meaning of a sentence: I stuck with the difference in phrasing and took that to be slight in that, following Frege, there is not a conclusion from the one phrasing that can not be gotten from the other phrasing under identical supplementation of auxiliary judgements.
+When I worked through Frege's example I neither mentioned the sense nor the meaning of a sentence: I stuck with the difference in phrasing and took that to be slight in that, following Frege, there is not a conclusion from the one phrasing that can not be got from the other phrasing under identical supplementation of auxiliary judgements.
 
 This radical translation is the hallmark of my presentation here.
 Though I may not land on any singular method of radical translation from Frege's words and sentences, I shall demonstrate how, through Quine and Skinner, nothing like what Frege or most philosophers expect, as in senses and meanings, is actually at work throughout Frege's writings: so much so that nothing need be edited within his texts besides the already well known slips and such.
