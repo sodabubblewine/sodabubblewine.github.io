@@ -1,6 +1,13 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0429
+
+## 2025 0429 1403
+Rules of inference are the manufactured products of logical methods: they mark the end of logical heavy lifting and the beginning of logical economy for all.
+Those obsessing over the by products of this or that collection of rules of inference are only indirectly engaged in logical methods.
+Inference rules are the mechanical proxies of logical work.
+
 ## 2025 0428
 
 ### 2025 0428 1517
@@ -103,7 +110,7 @@ While Carnap is known for his principle of extensionality (later demoted to the 
 
 It is because the contexts of Frege's propositional conceptual contents are extensional that I can present the following elaboration of transition from sense/meaning to schematics.
 
-An aside on Subject, Predicate, and Object as preformal or vernacular grammar of elementary school children.
+An aside on [Subject, Predicate, and Object](https://www.yourdictionary.com/articles/subjects-predicates-objects) as preformal or vernacular grammar of elementary school children.
 
 
 ## 2025 0427
