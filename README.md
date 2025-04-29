@@ -3,12 +3,16 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0429
 
-### 2025 0429 1407
+### 2025 0429 1407 An Analysis of "At Plataea the Persians were defeated by the Greeks"
 The subject of "At Plataea the Persians were defeated by the Greeks" is "the Persians".
 The predicate is "{x: At Plataea x were defeated by the Greeks}" via Quine's predicate abstract notation.
-The object is "the Greeks".
+> Here is my single sentence summary of Quine's predicate abstract notation (for more on its definition in a quantificational logic see [2025 0422 2322 An Incomplete Sketch of My Philosophy of Logic](#2025-0422-2322-an-incomplete-sketch-of-my-philosophy-of-logic)):
+>
+>The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}' which *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:' so that the *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick': whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
+
+The object of "At Plataea the Persians were defeated by the Greeks" is "the Greeks".
 The most general predicate is "{x,y,z: At x y were defeated by z}" from which the sentence can be factored conspiucously into its predicate, subject, and objects as "{x,y,z: At x y were defeated by z} Plataea, the Persians, the Greeks".
-This analysis is of major consequence to explaining Frege's main paragraph in Begriffsschrift which I first mentioned [here](
+This analysis is of major consequence to explaining Frege's main paragraph in Begriffsschrift which I first mentioned [here](#2025-0428-1517-frege-thru-quine).
 
 ### 2025 0429 1403
 Rules of inference are the manufactured products of logical methods: they mark the end of logical heavy lifting and the beginning of logical economy for all.
