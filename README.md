@@ -3,14 +3,21 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0429
 
-## 2025 0429 1403
+### 2025 0429 1407
+The subject of "At Plataea the Persians were defeated by the Greeks" is "the Persians".
+The predicate is "{x: At Plataea x were defeated by the Greeks}" via Quine's predicate abstract notation.
+The object is "the Greeks".
+The most general predicate is "{x,y,z: At x y were defeated by z}" from which the sentence can be factored conspiucously into its predicate, subject, and objects as "{x,y,z: At x y were defeated by z} Plataea, the Persians, the Greeks".
+This analysis is of major consequence to explaining Frege's main paragraph in Begriffsschrift which I first mentioned [here](
+
+### 2025 0429 1403
 Rules of inference are the manufactured products of logical methods: they mark the end of logical heavy lifting and the beginning of logical economy for all.
 Those obsessing over the by products of this or that collection of rules of inference are only indirectly engaged in logical methods.
 Inference rules are the mechanical proxies of logical work.
 
 ## 2025 0428
 
-### 2025 0428 1517
+### 2025 0428 1517 Frege Thru Quine
 The translation of Frege (1848–1925) through Quine (1908-2000) begins with John Horne Tooke's (1736-1812) suggestion that
 
 > "you substitute the composition, &c, of *terms* wherever he has supposed a composition of ideas"[pg.6 Quine "From Stimulus to Science"].
