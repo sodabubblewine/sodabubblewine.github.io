@@ -3,6 +3,72 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0429
 
+### 2025 0429 1424 A Preliminary Outline of The Method of Brining Frege Through Quine
+The first concrete hint of the transition from sense to schematism is in the first section (again I keep my etymological principles by presenting both translations of this selection from the books which I have in hand):
+> "*I adopt this fundamental idea of distinguishing two kinds of symbols*, which unfortunately is not strictly carried through in the theory of magnitude, [consider 1, log, sin, Lim], *in order to make it generally applicable in the wider domain of pure thought*.
+>I therefore divide all the symbols I use into *those by means of which one can represent different things* and *those that have a quite determinate sense*.
+> The first are the *letters*, and these should serve primarily to express *generality*.
+> For all their indeterminancy, it must be insisted that a letter *retain* in the same context, the meaning once given to it."[pg. 52 Frege 'The Frege Reader' edited by Michael Beaney]
+
+> "*I adopt this basic idea of distinguishing two kinds of signs*, which unfortunately is not strictly observed in the theory of magnitudes [consider 1, log, sin, lim], *in order to apply it in the more comprehensive domain of pure thought in general*. I therefore divide all signs that I use into *those by which we may understand different objects* and *those that have a completely determinate meaning*. The former are *letters* and they will serve chiefly to express *generality*. But, no matter how indeterminate the meaning of a letter, we must insist that throughout a given context the letter *retain* the meaning once given to it."[pg. 10-11 Frege 'From Frege to Godel' Third Printing edited by van Heijenoor]
+
+The former come immediately over to the variable letters as a grammatical category perhaps constructed from a single lowecase letter to which further members are added by iterated accentuation e.g. "x'" and "x''''".
+
+Although it is somewhat out of place here, I shall mention overtly that there are many details to the problems of grammatical analysis which are better explaiend in Quine's "Philosophy of Logic 2nd Edition" than in any explanation I may give.
+In general, the methods of the grammarian can be applied to the methods of the logician and have been so with great effect.
+The result is that the methods of logic can then be applied to the methods of the grammarian and so on with ever greater effect (although there is presumably some kind of diminishing return).
+Thus it is that the grammar of logic can be spoken of logically.
+This is what is out of place here, but it is not so far out of place as to block me from further comment.
+
+Talk of "the grammatical category of variables" can be dropped with all of its commitments of a theory of grammatical categories by giving a logical theory one predicate of which is 'is a variable'.
+Here a warning is given about reading "predicate" which I repeat from Quine:
+
+>"A word of caution is in order regarding 'predicate' too. Some logicians taek a predicate as a *way* of building a sentence aroudn a singular term or, more concretely, as what Peirce called a *rheme* [Volume 2, paragraph 95], a sentence with blanks in it, these being distinctively marked in the case of a many-place predicate. This version covers, implicitly, the potential output of predicate abstraction or predicate functors. But a predicate in my sense is always an integral word, phrase, or claus, grammatically a noun, adjective, or verb. Some are generated from others by grammatical constructions, notably the relative clause or, formally, predicate abstraction and predicate functors."[pg. 61 Quine "From Stimulus to Science"]
+
+This is given in the chapter "Denotation and Truth".
+Note, for later reference, this restriction includes the results of predicate abstraction and predicate functors e.g. '{x : x loves Dick}' and 'Refl love' (which goes into 'love oneself') are predicates.
+A reminder that an explanation of predicate abstraction from quantificational logic and predicate functors from predicate abstraction is to be found in my [2025 0422 2322 An Incomplete Sketch of My Philosophy of Logic](#2025-0422-2322-an-incomplete-sketch-of-my-philosophy-of-logic).
+
+Under the control of this convention the predicate 'loves Dick' is coextensive with the predicate abstract '{x : x loves Dick}' which is to be distinguished from 'x loves Dick' which may be taken in one of three ways:
+
+1. 'x loves Dick' is like the sentence 'He loves Dick' were 'He' is a pronoun which purports to designate one and only one item.
+It is then for the rest of the sentences in a given theory to establish the existence (or non-existence) of the item purportedly designated by 'x' or 'he'.
+
+    This is what has been called a Free Logic, but under the methods imposed by Quine in his paper "Free Logic and Virtual Classes" of 1994 and more carefully integrated into the methods of logic in his 1982 "Methods of Logic 4th edition".
+Leblanc and Schock had different methods for dealing with what they called free logics which are clumsy compared to Quine's e.g. rather than simply alter the definition of 'traditional logic' to demand first contemplating a nonempty universe of discourse and only as a special case going through and marking existentials as false and universals as true in the degenerate case of an empty universe, they would demand traditional logic distinguish between those where an instance of a schematic premise such as "each item is {x : Fx only if Fx}" be introduced at every turn lest the theory fall to the degenerate case.
+
+    The thrust of Quine's arguement for his method is two fold: 1) the rules of passage do not hold in the empty case but are part and parcel of traditional logic, 2) admiting singular terms which merely purport to designate one and only one item clears the way for a careful analysis of the descriptional premises which are so often invisible to those who invoke singular terms as if they could not even be so invoked without designating some unspecified item.
+
+    This is my favorite method and it is also a delightful way of noticing how smoothly singular terms disolve into singular descriptions: a more detailed explanation of this dissolution and its combination with predicate abstracts as purported designations of their extensions shall not be found in this note.
+
+2. 'x loves Dick' is short for its universal closure 'each item is {x such that x loves Dick}' with predicate functors and predicate abstracts or, in crusty quantificational languages, '(each item is x such that)(x loves Dick)'.
+It is this way of taking 'x loves Dick' that is most familiar from the practices of arithmetic where an equation with variables such as 'x+x = 2x' is said to be "an identity" in that "each item is {x : x +x = 2x}" is true.
+
+    It is also this method which is commonly used in logic programming where question marks are prepended to the variable letters that are under universal quantification e.g. '?x loves Dick' or '?x loves ?y'.
+This is because of the way that some logic programming langauges take such sentences as querries upon which they generate substitutions that satisfy the sentence based on the contents of the database being querried.
+
+    In general, this is the beginning of the method of Skolemization or its notational variation as Quine's functional normal form (which does away with Skolem functions while retaining their logical import).
+Quine's functional normal form introduces compound variable-like letters which are either a classic variable letter or are a classical varible letter subscripted with a list of compound variable-like letters.
+Then the variable letters which have no subscript are implicitely universal quantified and those with subscripts are implicitely existentially quantified and the order of these quantifications can be constructed from the structure of the subscripting.
+At a probably much later time I shall give the algorithm for converting to and from functional normal form since it greatly simplifies logic programming with Quine's main method.
+
+3. 'x loves Dick' is not a sentence nor a predicate nor an unmarked universal closure but rather a kind of sentence under construction. For example, the place marked by 'x' in 'x loves Dick' is waiting to be replaced by a proper singular term e.g. replace 'x' by 'Tom' in 'x loves Dick' to get 'Tom loves Dick' which is a complete sentence.
+This is my least favorite method.
+
+I've taken so much time to describe these different ways of taking 'x loves Dick' because it is the multitude of incompatible methods that were presented to Frege and which he had to navigate in order to arrive at his Begriffsschrift as at something coherent, systematic, and, above all, extensional.
+His inspiration was arithmetic, and in that way he went with the second method whenever he said that a sentence like 'x loves Dick' is used to express a generality like that expressed from arithmetic in 'x(y+z) = xy + xz', and it is in Quine's functional normal form that there are the most similarities between Frege's methods and those of arithmetic e.g. as when he says
+
+> "The first are the *letters*, and these should serve primarily to express *generality*. For all their indeterminancy, it must be insisted that a letter *retain* in teh same context, the meaning once given to it."[pg. 52 Frege 'The Frege Reader' edited by Michael Beaney]
+
+>"The former are *letters* and they will serve chiefly to express *generality*. But, no matter how indeterminate the meaning of a letter, we must insist that throughout a given context the letter *retain* the meaning once given to it."[pg. 10-11 Frege 'From Frege to Godel' Third Printing edited by van Heijenoor]
+
+But, alas, none of these three methods actually coincide with Frege's usage or his own explanations of his own usage which is consistent throughout Begriffsschrift and wherever Begriffsschrift is directly invoked.
+
+The methods of Frege are schematic and it is the way in which they are schematic which leads to sentences in Frege's texts that, if read carelessly or in isolation, can lead to a great deal of confusion at many different times e.g. at some times the schematism is part of a theory of schematisms and at other times there is no such theory under investigation and the schematic methods are purely logical (as in talk of 'valid schema' through which validities are got by substitution but with which no items or objects are concerned).
+
+
+
+
 ### 2025 0429 1407 An Analysis of "At Plataea the Persians were defeated by the Greeks"
 The subject of "At Plataea the Persians were defeated by the Greeks" is "the Persians".
 The predicate is "{x: At Plataea x were defeated by the Greeks}" via Quine's predicate abstract notation.
