@@ -3,6 +3,9 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0429
 
+### 2025 0429 1731 On Subjects, Predicates, and Objects
+An aside on [Subject, Predicate, and Object](https://www.yourdictionary.com/articles/subjects-predicates-objects) as preformal or vernacular grammar of elementary school children.
+
 ### 2025 0429 1424 A Preliminary Outline of The Method of Brining Frege Through Quine
 The first concrete hint of the transition from sense to schematism is in the first section (again I keep my etymological principles by presenting both translations of this selection from the books which I have in hand):
 > "*I adopt this fundamental idea of distinguishing two kinds of symbols*, which unfortunately is not strictly carried through in the theory of magnitude, [consider 1, log, sin, Lim], *in order to make it generally applicable in the wider domain of pure thought*.
@@ -23,7 +26,7 @@ This is what is out of place here, but it is not so far out of place as to block
 Talk of "the grammatical category of variables" can be dropped with all of its commitments of a theory of grammatical categories by giving a logical theory one predicate of which is 'is a variable'.
 Here a warning is given about reading "predicate" which I repeat from Quine:
 
->"A word of caution is in order regarding 'predicate' too. Some logicians taek a predicate as a *way* of building a sentence aroudn a singular term or, more concretely, as what Peirce called a *rheme* [Volume 2, paragraph 95], a sentence with blanks in it, these being distinctively marked in the case of a many-place predicate. This version covers, implicitly, the potential output of predicate abstraction or predicate functors. But a predicate in my sense is always an integral word, phrase, or claus, grammatically a noun, adjective, or verb. Some are generated from others by grammatical constructions, notably the relative clause or, formally, predicate abstraction and predicate functors."[pg. 61 Quine "From Stimulus to Science"]
+>"A word of caution is in order regarding 'predicate' too. Some logicians take a predicate as a *way* of building a sentence aroudn a singular term or, more concretely, as what Peirce called a *rheme* [Volume 2, paragraph 95], a sentence with blanks in it, these being distinctively marked in the case of a many-place predicate. This version covers, implicitly, the potential output of predicate abstraction or predicate functors. But a predicate in my sense is always an integral word, phrase, or claus, grammatically a noun, adjective, or verb. Some are generated from others by grammatical constructions, notably the relative clause or, formally, predicate abstraction and predicate functors."[pg. 61 Quine "From Stimulus to Science"]
 
 This is given in the chapter "Denotation and Truth".
 Note, for later reference, this restriction includes the results of predicate abstraction and predicate functors e.g. '{x : x loves Dick}' and 'Refl love' (which goes into 'love oneself') are predicates.
@@ -187,7 +190,9 @@ While Carnap is known for his principle of extensionality (later demoted to the 
 
 It is because the contexts of Frege's propositional conceptual contents are extensional that I can present the following elaboration of transition from sense/meaning to schematics.
 
-An aside on [Subject, Predicate, and Object](https://www.yourdictionary.com/articles/subjects-predicates-objects) as preformal or vernacular grammar of elementary school children.
+The next fragmentary step of my view of Frege is here where the examples are further analyzed [An Analysis of “At Plataea the Persians were defeated by the Greeks”](#2025-0429-1407-an-analysis-of-at-plataea-the-persians-were-defeated-by-the-greeks)
+
+Or you can jump over that and just go here: [2025 0429 1424 A Preliminary Outline of The Method of Brining Frege Through Quine](#2025-0429-1424-a-preliminary-outline-of-the-method-of-brining-frege-through-quine).
 
 
 ## 2025 0427
