@@ -1,12 +1,37 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+
+## 2025 0430
+
+### 2025 0430 1830
+I am once again drawn to entry [2025 0416 2358](#2025-0416-2358) in which I finally made a public record of being unable to keep up with my self.
+There is more I have written than I have been able to write out here.
+Thankfully, I am less likely to lose what it is I wrote than I ever was thanks to a social experiment I did some four or so years ago.
+
+Together with two friends I designed a tiny culture around a collection of strict contingencies set up with the help of a somewhat elaborate sequence of index cards and index card holders.
+The strict method was evolved until it was eventually dropped, but it had done its work on my friends and my self in ways which were mostly within the reach of my designs e.g. the often complex contingencies linking time, reading, and writing into a social environment where collective action was a major conclusion to any such work were revealed more clearly than any of us had ever seen before.
+
+Whatever was dropped of the evolved practices of reading and writing continued to control all our subsequent interactions.
+We had all come to keep a notebook in our pockets and to bring them out whenever we sat down to work with an other (especially when the other was one of the members of our tight knit group.
+
+Somewhere along the way we landed on "The Pocket Notebook" by the Portage company as they appeared to, at the time, have the right price point.
+Previously I had been working mostly with the beautiful "Field Notes" by the company of the same name: John Gruber had mentioned them more than once and they were sturdy and simple in those ways that I cherish.
+
+There are still many of those pocket notebooks around and I occasionally buy replacements when I run out of them.
+Spiral bound is important when you're really "on the go" but it is not effective when you're building cumulative records.
+The choice between one or the other is largely a matter of "where am I?"
+Pages can be torn from a spiral notebook and displayed as was once a major part of the tiny culture run via index cards.
+They can also be kept in place.
+When it comes to long form bound notes that are written as in a cumulative record in an experimental environment, I go with hardback books bound for artists.
+
+Recently I've experimented with binding my own books as a further way of simplifying.
+There is still promise in such methods if not just because I haven't tried them out in detail.
+
+
 ## 2025 0429
 
-### 2025 0429 1731 On Subjects, Predicates, and Objects
-An aside on [Subject, Predicate, and Object](https://www.yourdictionary.com/articles/subjects-predicates-objects) as preformal or vernacular grammar of elementary school children.
-
-### 2025 0429 1424 A Preliminary Outline of The Method of Brining Frege Through Quine
+### 2025 0429 1424 A Preliminary Outline of The Method of Bringing Frege Through Quine
 The first concrete hint of the transition from sense to schematism is in the first section (again I keep my etymological principles by presenting both translations of this selection from the books which I have in hand):
 > "*I adopt this fundamental idea of distinguishing two kinds of symbols*, which unfortunately is not strictly carried through in the theory of magnitude, [consider 1, log, sin, Lim], *in order to make it generally applicable in the wider domain of pure thought*.
 >I therefore divide all the symbols I use into *those by means of which one can represent different things* and *those that have a quite determinate sense*.
@@ -192,7 +217,7 @@ It is because the contexts of Frege's propositional conceptual contents are exte
 
 The next fragmentary step of my view of Frege is here where the examples are further analyzed [An Analysis of “At Plataea the Persians were defeated by the Greeks”](#2025-0429-1407-an-analysis-of-at-plataea-the-persians-were-defeated-by-the-greeks)
 
-Or you can jump over that and just go here: [2025 0429 1424 A Preliminary Outline of The Method of Brining Frege Through Quine](#2025-0429-1424-a-preliminary-outline-of-the-method-of-brining-frege-through-quine).
+Or you can jump over that and just go here: [2025 0429 1424 A Preliminary Outline of The Method of Bringing Frege Through Quine](#2025-0429-1424-a-preliminary-outline-of-the-method-of-bringing-frege-through-quine).
 
 
 ## 2025 0427
