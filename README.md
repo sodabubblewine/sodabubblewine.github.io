@@ -4,6 +4,55 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0430
 
+### 2025 0430 1905 Frege Metaphorically Taken
+My first reading of Begriffsschrift was a while ago when I first got the invaluable text "From Frege To Godel" Third Printing edited by van Heijenoor.
+At that time I was mainly interested in von Neumann's outlook on set theory and logic.
+But, it was already clear that Frege had made his Begriffsschrift and all else was commentary upon it.
+
+I have had a few disagreements on thsi matter with R.P.
+Last Friday I received my copy of "The Frege Reader" edited by Michael Beaney and began a close and careful analysis of Frege's writings without them being of secondary interest as they were when I was studying Quine's "Set Theory and its Logic" and was led to von Neumann's 1925 "An axiomatization of set theory".
+
+Not only do I have a new respect for Frege.
+I am more certain than ever that he shared my own outlook on his commentaries.
+Today, I finally started reading Frege's 1891 "Function and Concept" and was delighted to see that he had this to say
+
+> "There can be no question question of setting forth my *Begriffsschrift* in its entirety, but only of elucidating some fundamental ideas."[pg. 131 Frege "The Frege Reader" edited by Michael Beaney]
+
+So that the result of his comments upon Begriffsschrift can be taken merely as elucidation and nothing more.
+The etymology of the root is here from <https://www.etymonline.com/word/*leuk->
+> "*leuk-. Proto-Indo-European root meaning "light, brightness."
+>
+>It might form all or part of: allumette; elucidate; illumination; illustration; lea; leukemia; leuko-; light (n.) "brightness, radiant energy;" lightning; limn; link (n.2) "torch of pitch, tow, etc.;" lucent; lucid; Lucifer; luciferase; luciferous; lucifugous; lucubrate; lucubration; luculent; lumen; Luminal; luminary; luminate; luminescence; luminous; luna; lunacy; lunar; Lunarian; lunate; lunation; lunatic; lune; lunette; luni-; luster; lustrum; lux; pellucid; sublunary; translucent.
+>
+>It might also be the source of: Sanskrit rocate "shines;" Armenian lois "light," lusin "moon;" Greek leukos "bright, shining, white;" Latin lucere "to shine," lux "light," lucidus "clear;" Old Church Slavonic luci "light;" Lithuanian laukas "pale;" Welsh llug "gleam, glimmer;" Old Irish loche "lightning," luchair "brightness;" Hittite lukezi "is bright;" Old English leht, leoht "light, daylight; spiritual illumination," German Licht, Gothic liuhaþ "light."
+
+We can see this is consistent with Frege's prior sentence:
+
+>"Today I should like to throw light upon the subject from another side, and tell you about some supplementations and new conceptions, whose necessity has occurred to me since then."[pg. 130-131 Frege "The Frege Reader" edited by Michael Beaney]
+
+This sentence appears, to some, to say that there are some necessary changes that must be made to Begriffsschrift in light of his work on the forthcoming "Grundgesetze der Arithmetik, Volume I" published in 1893.
+But, a careful reading of Begriffsschrift or a careful reading of the introduction or a careful reading of the rest of the paper reveals this can not be the case and that Frege is simply doing as he says e.g. supplementing and newly conceptualizing.
+
+>"It is my intention, in the near future, as I have indicated elsewhere, to explain how I express the fundamental definitions of arithmetic in my Begriffsschrift, and how I construct proofs from these solely by means of my symbols. For this purpose it will be useful here to be able to refer to this lecture so as not to be drawn then into discussions which many might condemn as not directly relevant, but which others might welcome."[pg.130 Frege "The Frege Reader" edited by Michael Beaney]
+
+His supplements and conceptualizations do not alter the Begriffsschrift.
+It is besides the point if they are largely mistaken when they are taken literally.
+
+Thus, where his elucidations are incompatible with his Begriffsschrift we can, by his own admission, take his elucidations in jest, error, or, what is perhaps most valuable, as metaphor.
+
+But there is more!
+Frege has already in the introduction of Begriffsschrift explained his metaphorical methods and their contribution to his designs!
+He repeats the same in "Function and Concept".
+We are, from the very introduction of Begriffsschrift, told of its arithematical origins and of the exact metaphorical extensions which smooth the steps from the arithmetic of numbers to that of thought or concept.
+
+For those who have not yet undertaken an endevor like Frege's it may seem strange to treat his latter writings with such apparent disregard.
+But, the disregard is only apparent, as it is otherwise familiar to those of us who have come to understand (or, as the case may be, to misunderstand) our younger self.
+
+So it is that Frege can be taken as metaphor where he is incompatible with the strictures of Begriffsschrift, and all his elucidations remain as elucidating as ever, but now as metaphor.
+Said another way, if later commentaries were to be given as foundational alternatives to Begriffsschrift then the entirety of the new foundation would be required as part of subsequent publications: this si known from teh fact that Frege did not present Begriffsschrift as an alteration of his earlier attempts at such notation which are merely mentioned at the end of section three of Begriffsschrift. 
+
+
+
 ### 2025 0430 1830
 I am once again drawn to entry [2025 0416 2358](#2025-0416-2358) in which I finally made a public record of being unable to keep up with my self.
 There is more I have written than I have been able to write out here.
