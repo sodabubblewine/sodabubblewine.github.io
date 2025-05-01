@@ -8,7 +8,7 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 This continues my read of Durant's "Story of Philosophy" from [2025 0420 2247](#2025-0420-2247).
 
 Last time I cracked open the spine of this old book I had just read that "Critias was a pupil of Socrates, and an uncle of Plato".
-Critias is worth of his own story from what little I read of his history outside of what less Durant mentioned.
+Critias is worthy of his own story from what little I read of his history outside of what less Durant mentioned.
 He is also surprisingly relevant to the world we are presently faced with: the Sophists were selling aristocracy by bashing democracy and Critias ended up the very brief head of Athen's Oligarchical Party.
 There is not enough written by Durant or that I have already read as part of my work on the history of the world to deduce to what extent "democracy" was anything that existed strongly enough to even be denounced e.g. what written records we have are not even enough to make too many commitments to the stories that happen to have survived to our day.
 
@@ -23,21 +23,35 @@ That is for a different time.
 
 The second section of the first part is titled "Socrates".
 His bust bursts onto the scene as if a wart on his philosophic reputation: bald, round,
+
 >"it was rather the head of a porter than that of the most famous of philosophers."[pg. 7]
+
 There are various sculptures of Socrates purported from his time and their accuracy is probably more asperational than scientific e.g.
+
 * <https://digital.library.cornell.edu/catalog/ss:172717>
 * <https://www.ancientworldmagazine.com/articles/a-portrait-of-socrates/>
 * <https://www.mfa.org/article/2021/portrait-head-of-socrates>
 * <https://www.worldhistory.org/image/4425/socrates-bust-palazzo-massimo/>
+
 and, last but not least, a collection of them as part of an article on the big question "Who was Socrates?"
+
 * <https://guides.library.duq.edu/c.php?g=605283&p=4214778>
 
 One bust or the other is a concrete connection with the ever ephemeral Socrates.
+
 He spoke and listened in ways that differend remarkably from those of his time, and, presumably, of our time as well.
 Just as the young and curious of our day are apt to ask "why? why? why?", whether as inquiries or objections, Socrates queried his fellow Athenians in search of something beyond question.
 
 Perhaps this is all that was different about Socrates' verbal behavior and perhaps this was all that was required to bring a cross section of young and old back to his arena of discourse.
+What is known of Socrates is second hand: no writing of his survives if ever it was made.
+We shall never have the records we might need to recreate what made his verbal behavior so remarkable that descriptions of it have made their way to us as something beyond myth and history.
 
+The stories of Socrates are, for me, folklore.
+Most of what is called history is folklore in my measure.
+There's little beyond the dutiful work of archeologists that allows me to speak with any certainty on the intersection of history and folklore.
+When taken as folklore it becomes easier to see that there are certain stories that are told with a character called Socrates and, just as knowing the stories of Shakespeare can alert you to fitting surprises, knowing the stories of Socrates can strengthen otherwise remote cultural connections.
+
+I for one cherish Shakespeare far more than the stories of Socrates, but can not doubt the effect that Plato's tales of Socrates have had on European philosophy, just as there is even less doubt of the effect Shakespeare has had on European literature.
 
 ### 2025 0430 2309
 Two delightful links (from a friend) on a ternary stack machine:
