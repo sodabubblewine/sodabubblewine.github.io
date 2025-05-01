@@ -4,6 +4,46 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0430
 
+### 2025 0430 2324
+This continues my read of Durant's "Story of Philosophy" from [2025 0420 2247](#2025-0420-2247).
+
+Last time I cracked open the spine of this old book I had just read that "Critias was a pupil of Socrates, and an uncle of Plato".
+Critias is worth of his own story from what little I read of his history outside of what less Durant mentioned.
+He is also surprisingly relevant to the world we are presently faced with: the Sophists were selling aristocracy by bashing democracy and Critias ended up the very brief head of Athen's Oligarchical Party.
+There is not enough written by Durant or that I have already read as part of my work on the history of the world to deduce to what extent "democracy" was anything that existed strongly enough to even be denounced e.g. what written records we have are not even enough to make too many commitments to the stories that happen to have survived to our day.
+
+Archeology is a countercontrol to the division of the past into history and prehistory where prehistory is simply a weak stand in for "unrecorded" or "having no surviving records written in a language as the reinforcing practices of a verbal community".
+It is quite clear that there is more to be got from simulating past environmental conditions and watching how humans navigate such contrived worlds in many cases than to take the word of a textual record that just so happens to have found its way to our modern world.
+The validity of such methods depends on the difference between the primary reinforcers of the past and those now.
+As far as I can tell they are still the same old same old: sex, food, water, violence.
+There may be a few others, but these are the primary reinforcers from which most of the organisms are likely to evolve or condition the much larger collection of secondary reinforcres that come to be called social because they involve an other organism (perhaps of the same species) in some way key to the conditioning contingency.
+
+Alas, archeology is not what I am reading, though I would love to know more about the archeological work that has been done on Athens during the times of Socrates and Plato.
+That is for a different time.
+
+The second section of the first part is titled "Socrates".
+His bust bursts onto the scene as if a wart on his philosophic reputation: bald, round,
+>"it was rather the head of a porter than that of the most famous of philosophers."[pg. 7]
+There are various sculptures of Socrates purported from his time and their accuracy is probably more asperational than scientific e.g.
+* <https://digital.library.cornell.edu/catalog/ss:172717>
+* <https://www.ancientworldmagazine.com/articles/a-portrait-of-socrates/>
+* <https://www.mfa.org/article/2021/portrait-head-of-socrates>
+* <https://www.worldhistory.org/image/4425/socrates-bust-palazzo-massimo/>
+and, last but not least, a collection of them as part of an article on the big question "Who was Socrates?"
+* <https://guides.library.duq.edu/c.php?g=605283&p=4214778>
+
+One bust or the other is a concrete connection with the ever ephemeral Socrates.
+He spoke and listened in ways that differend remarkably from those of his time, and, presumably, of our time as well.
+Just as the young and curious of our day are apt to ask "why? why? why?", whether as inquiries or objections, Socrates queried his fellow Athenians in search of something beyond question.
+
+Perhaps this is all that was different about Socrates' verbal behavior and perhaps this was all that was required to bring a cross section of young and old back to his arena of discourse.
+
+
+### 2025 0430 2309
+Two delightful links (from a friend) on a ternary stack machine:
+ * <https://concatenative.org/wiki/view/DSSP>
+ * <https://web.archive.org/web/20230405010717/http://brokestream.com/daf.txt>
+
 ### 2025 0430 1905 Frege Metaphorically Taken
 My first reading of Begriffsschrift was a while ago when I first got the invaluable text "From Frege To Godel" Third Printing edited by van Heijenoor.
 At that time I was mainly interested in von Neumann's outlook on set theory and logic.
