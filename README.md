@@ -39,7 +39,7 @@ and, last but not least, a collection of them as part of an article on the big q
 
 One bust or the other is a concrete connection with the ever ephemeral Socrates.
 
-He spoke and listened in ways that differend remarkably from those of his time, and, presumably, of our time as well.
+He spoke and listened in ways that differed remarkably from those of his time, and, presumably, of our time as well.
 Just as the young and curious of our day are apt to ask "why? why? why?", whether as inquiries or objections, Socrates queried his fellow Athenians in search of something beyond question.
 
 Perhaps this is all that was different about Socrates' verbal behavior and perhaps this was all that was required to bring a cross section of young and old back to his arena of discourse.
