@@ -1,6 +1,186 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0501
+
+### 2025 0501 1754
+This continues the work on my little lisp from [2025 0426 1851](#2025-0426-1851-purifying-my-little-lisp).
+
+The basic definitions are now
+
+```
+let run=code=>console.log(code,'\n',eval(code)) // for examples
+// basic operations on pairs
+let theEmptyPair={}
+, isEmpty = x => x == theEmptyPair
+, consOf = (x,y) => [x,y]
+, carOf = x => isEmpty(x) ? x : x[0]
+, cdrOf = x => isEmpty(x) ? x : x[1]
+// recursive definition of identity
+, id = (x,y) =>
+  (isEmpty(x) && isEmpty(y))
+  || (!(isEmpty(x) || isEmpty(y))
+     && id(carOf(x),carOf(y))
+     && id(cdrOf(x),cdrOf(y)))
+// left and right singletons
+, singletonListOf = x => consOf(x,theEmptyPair)
+, singletonStackOf = x => consOf(theEmptyPair,x)
+// to and from tallies
+, tallyOf = n => 
+  n>0 ? singletonStackOf(tallyOf(n-1)) : theEmptyPair
+, countOf = x => isEmpty(x) ? 0 : 1 + countOf(cdrOf(x))
+// the alphabet
+, abc =[...'0123456789abcdefghijklmnopqrstuvwxyz ()']
+, alphabeticalIndexOf = letter => abc.indexOf(letter)
+, alphabeticalLetterOf = index => abc[index]
+// basic string operations
+, theEmptyLetter=''
+, isEmptyLetter = x => x == theEmptyLetter
+, concatenationOf = (...strings) => 
+   strings.length ? strings.shift() + concatenationOf(...strings) : theEmptyLetter
+, firstLetterOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters[0]
+, restLettersOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters.slice(1)
+// to and from rune
+, runeOf = letter => tallyOf(alphabeticalIndexOf(letter))
+, letterOf = x => alphabeticalLetterOf(countOf(x))
+// to and from runes
+, runesOf = letters => 
+   letters.length ? consOf(runeOf(firstLetterOf(letters))
+    , runesOf(restLettersOf(letters)))
+   : theEmptyPair
+, lettersOf = x =>
+   isEmpty(x) ? theEmptyLetter
+   : concatenationOf(letterOf(carOf(x)),lettersOf(cdrOf(x)))
+// prepending and appending pairs as lists
+, prependedListOf = (x,y) =>
+  isEmpty(x) ? y : consOf(carOf(x), prependedListOf(cdrOf(x),y))
+, appendedListOf = (x,y) => prependedListOf(y,x);
+```
+
+Symbols, which I once took as native javascript strings, are now to be pairs whose left part is the empty pair:
+```
+let isSymbol = x => isEmpty(carOf(x));
+```
+Then, as a matter merely of convention, the right part of a symbol is taken as runes which spell out the name of the symbol.
+Recall, way back in the first entry on this line of work, I mentioned that a candidate way of defining atoms was by making them identical to their left part.
+After that I asked what of the right part?
+To which I answered: this might help us to more easily, as humans, differentiate between symbols.
+But, note, here, symbols are not atoms in this sense, they are just a special case of ordered pair.
+
+This method of distinguishing symbols from nonsymbols is itself a convention imposed upon the particular designs of my pure little lisp: an other may come along and devise a method which behaves nothing like the symbols of LISPs past.
+Such an eample is not as far off as it might seem to those wedded to LISP e.g. I've already mentioned in [my list of links on concatenative languages](#2025-0417-2020) that there is a calculus of trees which purports to do more with less from a foundation of ordered pairs as that contemplated here by me.
+That, like so many other things that I mention among these notes, is for another time.
+
+The introduction of symbols as special pairs interferes in one place with the broader convention of taking pairs as lists.
+What of the difference between a pair playing the part of a list whose first item (its left part) is itself the empty list?
+It is by answering this question that we find the first use of symbols: the symbol symbol.
+```
+let theSymbolSymbol = consOf(theEmptyPair, theEmptyPair);
+```
+But, "the symbol symbol" is a mouthfull and there is a name I am more fond of which is short and which came to me originally through my study of the J programming language:
+```
+let ace = theSymbolSymbol;
+```
+A more incremental presentation of the above and one that rids the design of its commitment to a particular pair as the symbol pair is as follows.
+
+First, add a letter for the symbol pair to the alphabet.
+Here I pick '$' as that letter because it resembles the letter 'S' in 'Symbol':
+```
+abc =[...'0123456789abcdefghijklmnopqrstuvwxyz ($)'];
+```
+Then the symbol rune *is* the symbol pair
+```
+let theSymbolRune = runeOf('$');
+```
+or just
+```
+let $ = theSymbolRune;
+```
+so that the symbol symbol, 'ace' for short, is
+```
+ace = consOf($,$); 
+```
+But, this too breaks the convention that the right part of a symbol is to be taken as spelling out the name of a particular occurrence of the symbol.
+This can be remedied directly with
+```
+ace = consOf($,singletonListOf($));
+```
+This is unsatisfactory for many reasons, the least of which is that it makes it hard to see the convention being enforced (i.e. that 'ace' designates the symbol symbol and that the name of the symbol symbol is designated by "runesOf('$')".
+So it is that there is one last alternation that can be made now and which not only satisfies this convention but eases reading and printing: it is taking the symbol pair as the runes of the item designated by "'$'" (and yes the double quotes enclosing the single quoted occurrence of '$' is needed).
+```
+let theSymbolPair = runesOf('$');
+isSymbol = pair => id(pair, theSymbolPair);
+theSymbolSymbol = consOf(theSymbolPair, theSymbolPair);
+$ = theSymbolPair;
+ace = theSymbolSymbol;
+```
+There is some temptation to designate the symbol symbol by '$$' but I'll avoid that for now.
+
+Surprisingly, the way in which this convention aids in reading and printing imposes its own convention on the grammar of programs in this little lisp of mine.
+It also happens to be the grammar that helps to bring LISP and FORTH closer together: they are already extremely close because LISP is a FORTH that is ashamed of its stacks.
+
+The convention is this: programs are space seperated spellings of symbols.
+Said another way: the names of the symbols of a program are spelled out by whatever is seperated by spaces.
+There is more, because we have said that the symbol symbol is marked as a symbol by having the symbol pair as its left part, we have introduced the convention of marking the part of speech played by a list with its left part.
+It shall be shown that the distinctino between symbols and lists is enough to mark out any grammatical distinctions that may later be used to the benefit of the programmer.
+
+But, this is not quite right either because it is the job of the reader to build lists and symbols.
+Thus, the program grammar is actually the result of further contemplation on what the reader must do and how it must do it.
+
+Since this is a LISP and not a FORTH, parenthesis play a special part in the reader from the beginning.
+The reader can be taken as a tiny interpreter/compiler (there is no distinction really between these things other than how we speak of them when we speak of them asperationally).
+It reads a list of runes and builds a symbol or a list of symbols or a list each item of which is either a symbol or a list of symbols, and so on, from it.
+
+The commands that go to the reader are the ones that build the pairs upon which the lisp works, whether it directly evaluates them or alters them by way of some grammatical rule of transformation (commonly known as a macro).
+As said before, the commands are seperated by spaces, so there is actually another even tinier interpreter/compiler that sits between a list of runes and the reader (that is when you discard the native javascript transformation from a javascript string into a list of runes!)
+
+This tinier interpreter/compiler is called a tokenizer or a lexer.
+But, this is only appropriate when it is spoken of in relation to some other language.
+Otherwise, it is just another programming language that takes a pair as a list of runes and builds a list of lists of runes from it!
+The name "lexer" is the most suggestive of what is to be done: it is to break a complex compound into its lexical atoms.
+The lexicon of a language is what you get if you grab that language by its grammatical trees and shake it until all its words fall out.
+
+The alphabet of a language is what you get when you grab its lexemes, i.e. items of its lexicon, and shake them until its letters fall out.
+It is from thes letters, or runes, that the lexer builds lexemes.
+So, to recap, the lexer builds lexemes, and the rest of the reader builds symbols, lists of symbols, and so on from the list of lexemes made by the lexer.
+
+So, on to the lexer!
+Our convention of spelling lexemes by seperating their spellings with spaces divides the lexer into two operations: skipping spaces and making words from their spellings.
+First, a method of detecting spaces:
+```
+let theSpaceRune = runeOf(' ')
+, isSpace = x => id(x, theSpaceRune);
+```
+Next a way of taking a list of runes and trimming off any spaces from the front.
+```
+let trimSpacesOf = x => isEmpty(x) ? x : isSpace(carOf(x)) ? trimSpacesOf(cdrOf(x)) : x;
+```
+This is the easy step.
+The hard step is making words from their spellings and putting them all together as a list of runes.
+There are two paths that are before us: one where stacks are formally introduced or one where continuations are formally introduced.
+The simpler path is stacks, but they are both the same thing (continuations are stacks in disguise, and this part of the "lisp is a forth ashamed of its stacks" thing I said earlier).
+Also, stacks are the best, better even than lists (which are just the mirror of stacks, or stacks in reverse, which is itself foreshadowing).
+
+The empty pair is taken as the empty stack, pushing an item onto a stack is making an ordered pair whose left part is the old stack and whose right part is the new top of stack, popping the empty stack gives the empty stack and popping a nonempty stack gives its left part, and, finally, peeking, or looking at the top of a stack returns its right part or the empty pair if you peek the empty pair.
+```
+let theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, pushOf = consOf
+, popOf = carOf
+, topOf = cdfOf;
+```
+Notice, these stack operations are all just different names for the same old operations on pairs that were introduced in the beginning.
+Stacks are simply a different perspective on pairs, lists are another, and there are others still.
+Ordered pairs are probably the most important abstract objets that humans have introduced into the world.
+
+The plan for the lexer is to make a function that takes three arguments:
+
+1. a stack of lexemes accumulated thus far
+2. the lexeme currently being constructed
+3. the list of runes being lexed.
+
+
+
 
 ## 2025 0430
 
