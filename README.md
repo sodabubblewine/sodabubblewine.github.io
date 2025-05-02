@@ -314,7 +314,27 @@ parseHelperOf = (stack, list, lexemes) =>
 ```
 By simply dropping the step that parses symbols something important has been revealed: this is almost the same form of program as the primtiive encoder and decoder cooked up in [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees).
 
+The following supplementary functions make it clearer:
+```
+let secondOf = stack => topOf(popOf(stack))
+, drop2 = stack => popOf(popOf(stack)) 
+, appendOf = stack => pushOf(drop2(stack)
+  , prependedListOf(secondOf(stack), topOf(stack)));
+parseHelperOf = (stack, lexemes) =>
+ isEmpty(lexemes) ? topOf(stack)
+ : isOpenParen(carOf(lexemes)) ? parseHelperOf(pushOf(stack,theEmptyPair), cdrOf(lexemes))
+ : isCloseParen(carOf(lexemes)) ? parseHelperOf(appendOf(stack), cdrOf(lexemes))
+ : parseHelperOf(appendOf(pushOf(stack,carOf(lexemes))), cdrOf(lexemes));
+parseOf = lexemes => parseHelperOf(theEmptyPair, lexemes);
+```
+Here, the open parenthesis plays the part of the zero of the encoder, the close parenthesis plays the part of the one of the encoder, and the default case appends the first of the lexemes onto the list at the top of the stack.
 
+This suggests a certain ordering to the alphabet in order to make the similarities stronger along with a complete overhall of method.
+It seems like it is worth it and that it also brings the similarities between lisp and forth even closer together while simplifying going between one and the other (and without eliminating lisp as a language).
+It also suggests a pretty obvious alphabetization.
+
+I was unable to see through the rest of what I had seen to my self.
+Meditation and sleep are the most likely solutions to this problem.
 
 ## 2025 0430
 
