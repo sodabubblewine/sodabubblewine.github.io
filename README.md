@@ -242,8 +242,77 @@ The conventions established so far make it so that the any pair whose left part 
 This can be made overt rather than covert by introducing a general convention that the way of dealing with the right part of a pair is to be determined from its left part.
 
 This is a general method e.g. FORTH's dictionaries are designed precisely in this way so that native code on the left tells the machine how to deal with the stuff on the right.
+Since it appears as if symbols can be used to defer the introduction of this general method (so that the programmer of my little lisp can set such grammatical concerns up as they see fit), I shall keep with the implicit way of taking pairs as lists.
 
+So, there are two things the parser must do: build symbols and build lists.
+Parsing a symbol is easy: just make a pair whose left part is the symbol pair and whose right part is the lexeme which names the symbol being parsed.
+```
+let parseSymbolOf = lexeme => consOf($,lexeme);
+```
+Note that this automatically produces the symbol symbol when the lexeme is the symbol pair.
+This is an example of one of the conveniences which follows from the conventions evolved here.
 
+Parsing a list is only slightly harder.
+Now, all that stuff about stacks can be unforgotten.
+When the first lexeme of the list of lexemes to be parsed is an open parenthesis then whatever we were parsing up to that point goes on the stack of things we have to go back to parsing.
+
+It's slightly easier to grasp this when you start parsing with an open parenthesis.
+This tells you to start with an empty list, i.e. the empty pair, and build up the rest of the list based on the remaining lexemes.
+Next suppose there is neither a closed parenthesis or an open parenthesis as the next lexeme.
+Then it must be a symbol.
+So you parse that symbol and then append it to the list under construction.
+This is all fine and good until you run into another open parenthesis.
+You need to start making a new list, but, when you're done making it, you have to append what you've made onto the end of the last list you were working on and continue parsing with whatever lexemes are left over.
+
+If you're lucky, you have a helper that has an argument for the list you're going to get back to constructing, an argument for the list currently under construction, and the rest of the lexemes you have to go through to finish everything up.
+But, since you can run into an unknown number of open parenthesis before reaching your first closed one, you can't just keep hopping you have helpers for helpers.
+For me, stacks are the obvious answer.
+They occur to me so readily because I deal with the world all the time with stacks.
+There are stacks and stacks of things that I'm going to come back to after I finish working with the thing that is at the top of the stack.
+
+Now, when you run into an open parenthesis you push whatever list is under construction onto the stack of lists under construction, and start with the empty list.
+If the next lexeme is neither an open or closed parenthesis you append its parsed symbol to the list under construction.
+If it's a closed parenthesis then you are done constructing the current list and append it to the list atop the stack of lists under construction.
+```
+let isOpenParen = x => id(runesOf('('),x)
+, isCloseParen = x => id(runesOf(')'),x)
+, parseHelperOf = (stack, list, lexemes) =>
+ isEmpty(lexemes) ? list
+ : isOpenParen(carOf(lexemes)) ? 
+  parseHelperOf(pushOf(stack,list),theEmptyPair,cdrOf(lexemes))
+ : isCloseParen(carOf(lexemes)) ?
+  parseHelperOf(popOf(stack)
+  , prependedListOf(topOf(stack),singletonListOf(list))
+  , cdrOf(lexemes))
+ : parseHelperOf(stack
+   , prependedListOf(list
+    , singletonListOf(parseSymbolOf(carOf(lexemes))))
+   , cdrOf(lexemes))
+, parseOf = lexemes => parseHelperOf(theEmptyPair, theEmptyPair, lexemes);
+```
+There are a few things that seem as if they are not going to work out well based on the above design:
+
+* if the lexeme is just a list of symbols then what happens?
+* does there really need to be a helper function for "parsing Symbols"?
+* is there a simpler parser that just works with parenthesis, spaces, and everything else?
+
+To answer that last question is to get to the heart of the matter I submit.
+So, rather than parsing symbols and such I'll just take every lexeme that is not a parenthesis directly over to the list under construction:
+```
+parseHelperOf = (stack, list, lexemes) =>
+ isEmpty(lexemes) ? list
+ : isOpenParen(carOf(lexemes)) ? 
+  parseHelperOf(pushOf(stack,list),theEmptyPair,cdrOf(lexemes))
+ : isCloseParen(carOf(lexemes)) ?
+  parseHelperOf(popOf(stack)
+  , prependedListOf(topOf(stack),singletonListOf(list))
+  , cdrOf(lexemes))
+ : parseHelperOf(stack
+   , prependedListOf(list
+    , singletonListOf(carOf(lexemes)))
+   , cdrOf(lexemes));
+```
+By simply dropping the step that parses symbols something important has been revealed: this is almost the same form of program as the primtiive encoder and decoder cooked up in [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees).
 
 
 
