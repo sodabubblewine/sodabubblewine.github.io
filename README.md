@@ -3,6 +3,30 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0501
 
+### 2025 0501 2151
+For reasons that escape me I've had a few different youtube playlists queued up in the background the past few days.
+The first, and perhaps the most important is Groucho Marx's "You Bet Your Life".
+There is nothing like Groucho.
+He is certinaly one of my idols in that I mention him as often to those near me as I do Skinner and Quine to everyone else.
+
+* [You Bet Your Life: Complete Episodes by Air Date](https://youtube.com/playlist?list=PLHaioNpr_GDbvsTj_taM-jO6C1658N1PC&si=gvhBN2wJP49ioY4W)
+
+I don't know how accurate the title is.
+Next, of all things, Marathon lore:
+
+* [Marathon - Reviews, History & Lore (Bungie)](https://youtube.com/playlist?list=PLT1yGPRy2oPrXlQ730iOZ32eMI_-FhXS3&si=Tv62twCdgZVX8Mi4)
+
+Last, and most certainly least, a playthrough of an old game I recall from my childhood:
+
+* [Let's Play Lands of Lore Guardians of Destiny](https://youtube.com/playlist?list=PL2sIyFzFMWstwPV2XKG_uwoNolVaOSX0s&si=9pRtEwUv2As8rzuO)
+
+Such things are part of modern folklore, though they very often lack the warmth that I associate with well worn folklore.
+Perhaps such stories from games are nothing more than the folklore of *my* life.
+
+Sometimes I need silence in order to solve problems.
+Other times I need there to be something going on in the background.
+I need to at least see that someone else at some other time was making progress on something they set out to do even if I might not be at this exact moment.
+
 ### 2025 0501 1754
 This continues the work on my little lisp from [2025 0426 1851](#2025-0426-1851-purifying-my-little-lisp).
 
@@ -167,7 +191,7 @@ let theEmptyStack = theEmptyPair
 , isEmptyStack = isEmpty
 , pushOf = consOf
 , popOf = carOf
-, topOf = cdfOf;
+, topOf = cdrOf;
 ```
 Notice, these stack operations are all just different names for the same old operations on pairs that were introduced in the beginning.
 Stacks are simply a different perspective on pairs, lists are another, and there are others still.
@@ -178,6 +202,47 @@ The plan for the lexer is to make a function that takes three arguments:
 1. a stack of lexemes accumulated thus far
 2. the lexeme currently being constructed
 3. the list of runes being lexed.
+
+Thus the lexer will just be a way of setting up the helper function with an empty stack, an empty list, and the list of runes to be lexed.
+The first step is to trim off any spaces that happen to be at the front of the list.
+So, the helper can assume that the list of runes to be lexed is already trimmed: this must now be enforced by the design of the helper itself.
+One option is to make a helper for the helper, one that does nothing more than take the same three arguments as the helper and simply trim the third and then pass them onto the helper.
+This seems excessive and can be accomplished by just making sure to trim any initial spaces from the third argument once a space is confronted.
+At the same time, confronting a space is a command that the current lexeme under construction is no longer under construction and can be pushed onto the stack of lexemes lexed thus far.
+All that remains is to take the first rune of the list to be lexed, check if it is a space or not, if it is not then append it to the lexeme under construction, and if it is then push the constructed lexeme onto the stack of lexemes lexed and trim the list of runes to be lexed before passing everything onto the helper again.
+
+Oh!
+It just occurred to me that I do not even need to worry about all that stack stuff!
+I can just append lexemes to the list of lexemes because I already gave the definitions for append and prepending.
+So, forget all that stack stuff for now.
+
+```
+let lexerHelperOf = (lexemes, lexeme, runes) =>
+ isEmpty(runes) ? (
+  isEmtpy(lexeme) ? lexemes 
+  : prependedListOf(lexemes,singletonListOf(lexeme)))
+ : isSpace(carOf(runes)) ? 
+  lexerHelperOf(prependedListOf(lexemes,singletonListOf(lexeme))
+  ,theEmptyPair,trimSpacesOf(runes))
+ : lexerHelperOf(lexemes
+  ,prependedListOf(lexeme,singletonListOf(carOf(runes))),cdrOf(runes))
+, lexOf = runes => 
+ lexerHelperOf(theEmptyPair,theEmptyPair,trimSpacesOf(runes));
+```
+
+The rest of the reader is usually called the parser for very good reason:
+
+>"parse(v.): 1550s, in grammar, "to state the part of speech of a word or the words in a sentence," a verbal use of Middle English pars (n.) "part of speech" (c. 1300), from Old French pars, plural of part "a part," from Latin pars "a part, piece" (from PIE root *pere- (2) "to grant, allot") in the school question, Quae pars orationis? "What part of speech?" Transferred (non-grammatical) use is by 1788. Pars also was a common plural of part (n.) in early Middle English. Related: Parsed; parsing." <https://www.etymonline.com/word/parse>
+
+From the list of lexemes the parser deduces the part of speach to which each lexeme belongs and, from doing so, constructs the grammatical tree from which they fell.
+There are only two parts of speech for the items of my little LISP: symbol or list.
+So the parser either builds lists or symbols based on the lexemes it is fed, one by one.
+An open parenthesis starts the construction of a list, a closing parenthesis ends the construction of a list under construction, and everything else is a symbol.
+The conventions established so far make it so that the any pair whose left part is not the symbol pair is a list.
+This can be made overt rather than covert by introducing a general convention that the way of dealing with the right part of a pair is to be determined from its left part.
+
+This is a general method e.g. FORTH's dictionaries are designed precisely in this way so that native code on the left tells the machine how to deal with the stuff on the right.
+
 
 
 
