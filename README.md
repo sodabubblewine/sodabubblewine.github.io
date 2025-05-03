@@ -1,6 +1,265 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0502
+
+### 2025 0502 2048
+This continues my work on my little lisp from [2025 0501 1754](#2025-0501-1754).
+
+I made great progress in the last entry and between the end of the last note on this project and now I was able to solve the problem of going back and forth between lisp and forth.
+I wish there was an easy way to write while sleepy or tired or whatever happened last night while I failed to put together the pieces as in the simple example that occurred to me while I was watching a show called "The Sticky".
+It is common for me to work until exhaustion.
+Sadly, the exhaustion which comes from reading, writing, and thinking does not look like it does when it is from lifting.
+You are not a sweaty mess nor are your muscles fatigued in that way that makes it hard to walk up or down steps or get out of a chair (which, even writing about them brings that feeling too me).
+
+My lingering on this problem of exhaustion is important: it is probably the biggest problem to solve when you must solve so many problems before you die.
+There is no clear indication that I shall do all that I must before I die and the bottleneck to most of what I must do is largely a matter of dealing with the pains of weak thinking.
+Perhaps the biggest part of this big problem is encapsulated in one of my most important principles: "Stop at the sign."
+
+It can be hard to notice when thinking has gone weak.
+This seems to be the result of prescientific practices around thinking, reading, and writing generally.
+Rather than seeing a schedule of reinforcement that maintains the behaviors that have led to the most profound of scientific and logically discoveries, prescientific peoples see the individual as a willing agent or some other such mentalistic haunties of the brain by the mind.
+But, if I waste more time now solving this problem then I will not get out the solutions to problems that I have already solved.
+It is difficult to say both that "here we have the biggest problem and the biggest bottleneck to solving problems" and then "but now I will leave that to work on lesser problems."
+It is precisely in being able to say both these things that schedules of reinforcement resolve what appears to be a contradiction.
+
+Here is an exact replica of what occurred to me while watching "The Sticky" earlier today and which leads to the radical simplification of any reader for any lisp like language while also explaining exactly how it is that lisp is a forth:
+
+```
+((a)(bc))
+0 | (a)(bc))
+0,0 | a)(bc))
+0,(a,0) | )(bc))
+((a,0),0) | (bc))
+((a,0),0),0 | bc))
+((a,0),0),(b,0) | c))
+((a,0),0),(b,(c,0)) | ))
+((a,0),((b,(c,0)),0)) | )
+(((a,0),((b,(c,0)),0)),0) |
+```
+
+Believe it or not, this shows that my sleepy claim that a simple alphabetization radically simplifies the reader of any language that purports to be some sort of parenthetical or tree like form, but which can be immediately interpreted as a string of stack operations.
+This exactly generalizes the methods from [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees).
+
+Recall that the reader was previously composed of steps involving lexing and parsing: this new method goes straight from a list of runes to the list they purport to designate.
+All of that complexity is eliminated by a change alphabatization (I've gone ahead and reproduced all the code for the current state of this project).
+
+Ooops!
+Once I opened the tab to bring the code over here I started coding and totally forgot about writing out what I was doing here.
+
+Here's where I'm starting from:
+```
+let run=code=>console.log(code,'\n',eval(code)) // for examples
+
+// basic operations on pairs
+let run=code=>console.log(code,'\n',eval(code)) // for examples
+
+// basic operations on pairs
+let theEmptyPair={}
+, isEmpty = x => x == theEmptyPair
+, consOf = (x,y) => [x,y]
+, carOf = x => isEmpty(x) ? x : x[0]
+, cdrOf = x => isEmpty(x) ? x : x[1]
+
+// left and right singletons
+, singletonListOf = x => consOf(x,theEmptyPair)
+, singletonStackOf = x => consOf(theEmptyPair,x)
+
+// to and from tallies
+, tallyOf = n => 
+  n>0 ? singletonStackOf(tallyOf(n-1)) : theEmptyPair
+, countOf = x => isEmpty(x) ? 0 : 1 + countOf(cdrOf(x))
+
+// the alphabet
+, abc =[...'()0123456789abcdefghijklmnopqrstuvwxyz ']
+, alphabeticalIndexOf = letter => abc.indexOf(letter)
+, alphabeticalLetterOf = index => abc[index]
+
+// to and from rune
+, runeOf = letter => tallyOf(alphabeticalIndexOf(letter))
+, letterOf = x => alphabeticalLetterOf(countOf(x))
+
+// basic string operations
+, theEmptyLetter=''
+, isEmptyLetter = x => x == theEmptyLetter
+, concatenationOf = (...strings) => 
+   strings.length ? strings.shift() + concatenationOf(...strings) : theEmptyLetter
+, firstLetterOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters[0]
+, restLettersOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters.slice(1)
+
+// to and from runes
+, runesOf = letters => 
+   letters.length ? consOf(runeOf(firstLetterOf(letters))
+    , runesOf(restLettersOf(letters)))
+   : theEmptyPair
+, lettersOf = x =>
+   isEmpty(x) ? theEmptyLetter
+   : concatenationOf(letterOf(carOf(x)),lettersOf(cdrOf(x)))
+
+// prepending pairs as lists
+, prependedListOf = (x,y) =>
+  isEmpty(x) ? y : consOf(carOf(x), prependedListOf(cdrOf(x),y))
+
+// pairs as stacks
+, theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, pushOf = consOf
+, popOf = carOf
+, topOf = cdrOf
+, secondOf = stack => topOf(popOf(stack))
+, drop2 = stack => popOf(popOf(stack)) 
+, enpendOf = stack => 
+   pushOf(drop2(stack)
+   ,prependedListOf(secondOf(stack)
+    ,singletonListOf(topOf(stack))))
+
+// recursive definition of identity
+, id = (x,y) =>
+  (isEmpty(x) && isEmpty(y))
+  || (!(isEmpty(x) || isEmpty(y))
+     && id(carOf(x),carOf(y))
+     && id(cdrOf(x),cdrOf(y)))
+
+// reader
+, isOpenParen = x => id(runeOf('('),x)
+, isCloseParen = x => id(runeOf(')'),x)
+, isSpace = x => id(runeOf(' '),x)
+, readHelperOf = (stack,runes) =>
+  isEmpty(runes) ? carOf(topOf(stack))
+  : isCloseParen(carOf(runes)) ? readHelperOf(enpendOf(stack), cdrOf(runes))
+  : isOpenParen(carOf(runes)) ? readHelperOf(pushOf(stack,theEmptyPair), cdrOf(runes))
+  : isSpace(carOf(runes)) ? readHelperOf(stack,cdrOf(runes))
+  : readHelperOf(enpendOf(pushOf(stack,carOf(runes))), cdrOf(runes))
+, readOf = letters => readHelperOf(theEmptyStack, runesOf(letters))
+
+// printer
+, parentheticalOf = x => isEmpty(x) ? runesOf('()') : prependedListOf(runesOf('('),prependedListOf(x,runesOf(')')))
+, printListOf = list =>
+ isEmpty(list) ? theEmptyPair
+ : prependedListOf(printHelperOf(carOf(list)),printListOf(cdrOf(list)))
+, printHelperOf = item =>
+ isEmpty(item) ? runesOf('()')
+ : isEmpty(carOf(item))? parentheticalOf(prependedListOf(runesOf('()'),cdrOf(item)))
+ : parentheticalOf(printListOf(item))
+, printOf = item => lettersOf(printHelperOf(item));
+```
+
+Everything is simpler than ever, but it is no longer clear that the specific alphabetization is as important as I thought, but there is still some opportunity.
+
+I did so much that it is hard to go back and write through it.
+Since there is still more that I must do I'm going to just start writing from here and hopefully get back to where I started.
+
+It looks like the reader and the printer are still more complex than they need to be and that they can be simplified if I can figure out the appropriate stack operations.
+As it stands the reader interprets each rune as a stack operation:
+
+* if the first rune is an open parenthesis it pushes an empty pair onto the stack and reads the rest of the runes with that stack
+* if the first rune is a close parenthesis it "enpends" the top two items on the stack and then goes on
+* if the first rune is a space then it does nothing and goes on
+* otherwise it pushes the first rune onto the stack and "enpends" it.
+
+Enpending is something that happens often but which doesn't often get its own name: it's when you enlist an item, i.e. put it into a singleton list, and then append it to some other list of items.
+There are distinctions for operations like this in the J programming language, but that is for another time.
+
+Well this is one heck of a fragmentary note.
+
+Surprisingly, I was able to entirely defer the introduction of the identity function and finally push off all the work that goes into external reading and printing so that everything comes together quickly.
+Here it does end up being helpful to have a specific alphabetization: it is key to the simplicity of the internal reader and printer.
+This is all quite exciting and there is so much more to come.
+```
+// basic operations on pairs
+let theEmptyPair={}
+, isEmpty = x => x == theEmptyPair
+, consOf = (x,y) => [x,y]
+, carOf = x => isEmpty(x) ? x : x[0]
+, cdrOf = x => isEmpty(x) ? x : x[1]
+
+// left and right singletons
+, singletonListOf = x => consOf(x,theEmptyPair)
+, singletonStackOf = x => consOf(theEmptyPair,x)
+
+// prepending pairs as lists
+, prependOf = (x,y) =>
+  isEmpty(x) ? y : consOf(carOf(x), prependOf(cdrOf(x),y))
+
+// pairs as stacks
+, theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, pushOf = consOf
+, popOf = carOf
+, topOf = cdrOf
+, secondOf = stack => topOf(popOf(stack))
+, drop2 = stack => popOf(popOf(stack)) 
+, enpendOf = stack => 
+   pushOf(drop2(stack)
+   ,prependOf(secondOf(stack)
+    ,singletonListOf(topOf(stack))))
+
+// reader
+, isOpenParen = isEmpty
+, isCloseParen = x => !isEmpty(x)&&isEmpty(carOf(x))&&isEmpty(cdrOf(x))
+, isSpace = x => !isEmpty(x)&&isEmpty(carOf(x))&&isCloseParen(cdrOf(x))
+, readHelperOf = (stack,runes) => isEmpty(runes) ? carOf(topOf(stack))
+  : isSpace(carOf(runes)) ? readHelperOf(stack,cdrOf(runes))
+  : isCloseParen(carOf(runes)) ? readHelperOf(enpendOf(stack), cdrOf(runes))
+  : isOpenParen(carOf(runes)) ? readHelperOf(pushOf(stack,theEmptyPair), cdrOf(runes))
+  : readHelperOf(enpendOf(pushOf(stack,carOf(runes))), cdrOf(runes))
+, readOf = runes => readHelperOf(theEmptyStack, runes)
+
+// printer
+, theOpenParen = theEmptyPair
+, theCloseParen = consOf(theEmptyPair,theEmptyPair)
+, isSymbol = item => !isEmpty(item)&&isEmpty(carOf(item))
+, theSymbolPair = theEmptyPair
+, parenOf = runes => consOf(theOpenParen,prependOf(runes,singletonListOf(theCloseParen)))
+, printListOf = list => isEmpty(list) ? theEmptyPair
+ : prependOf(printOf(carOf(list)),printListOf(cdrOf(list)))
+, printOf = item => isSymbol(item)? parenOf(prependOf(printOf(theSymbolPair),cdrOf(item)))
+ : parenOf(printListOf(item))
+
+// the alphabet
+, abc =[...'() 0123456789abcdefghijklmnopqrstuvwxyz']
+, alphabeticalIndexOf = letter => abc.indexOf(letter)
+, alphabeticalLetterOf = index => abc[index]
+
+// to and from tallies
+, tallyOf = n => 
+  n>0 ? singletonStackOf(tallyOf(n-1)) : theEmptyPair
+, countOf = x => isEmpty(x) ? 0 : 1 + countOf(cdrOf(x))
+
+// to and from rune
+, runeOf = letter => tallyOf(alphabeticalIndexOf(letter))
+, letterOf = x => alphabeticalLetterOf(countOf(x))
+
+// basic javascript string operations
+, theEmptyLetter=''
+, isEmptyLetter = x => x == theEmptyLetter
+, concatenationOf = (...strings) => 
+   strings.length ? strings.shift() + concatenationOf(...strings) : theEmptyLetter
+, firstLetterOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters[0]
+, restLettersOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters.slice(1)
+
+// to and from runes
+, runesOf = letters => 
+   letters.length ? consOf(runeOf(firstLetterOf(letters))
+    , runesOf(restLettersOf(letters)))
+   : theEmptyPair
+, lettersOf = x =>
+   isEmpty(x) ? theEmptyLetter
+   : concatenationOf(letterOf(carOf(x)),lettersOf(cdrOf(x)))
+
+// external read and print
+, read = letters => readOf(runesOf(letters))
+, print = item => lettersOf(printOf(item))
+
+// recursive definition of identity
+, id = (x,y) =>
+  (isEmpty(x) && isEmpty(y))
+  || (!(isEmpty(x) || isEmpty(y))
+     && id(carOf(x),carOf(y))
+     && id(cdrOf(x),cdrOf(y)));
+```
+
+
 ## 2025 0501
 
 ### 2025 0501 2151
