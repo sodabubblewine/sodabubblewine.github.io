@@ -1,6 +1,72 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0504 
+
+### 2025 0504 0140
+This continues my work on my little lisp from [2025 0502 2048](#2025-0502-2048).
+
+An alternate design decision occurred to me: the only implicit distinction betwen teh part played by ordered pairs in a lisp is that between list and nonlist.
+Thus, rather than checking if a pair is a symbol or not, it is more general to check if it is a list or not.
+Then the rest of the distinctions can be made however the programmer desires.
+
+This also has the benefit of, in the simple case where an item is either a list or a symbol, of identifying a symbol by its first rune which can never be empty because of the alphabetization adopted.
+This also allows space to serve its traditional function without adding greatly to the complexity of the definition of the reader.
+It also allows for a more uniform presentation of pairs as lists followed by pairs as stacks.
+
+```
+// basic operations on pairs
+let theEmptyPair={}
+, isEmpty = x => x == theEmptyPair
+, consOf = (x,y) => [x,y]
+, carOf = x => isEmpty(x) ? x : x[0]
+, cdrOf = x => isEmpty(x) ? x : x[1]
+
+// left and right singletons
+, enlistOf = x => consOf(x,theEmptyPair)
+, enstackOf = x => consOf(theEmptyPair,x)
+
+// pairs as lists
+, isList = item => !isEmpty(item) && isEmpty(carOf(item))
+, singletonListOf = item => consOf(theEmptyPair, item)
+, theEmptyList = singletonListOf(the)
+, prependHelpOf = (x,y) => isEmpty(x) ? (isList(y) ? cdrOf(y) : y)
+ : consOf(carOf(x), prependHelpOf(cdrOf(x),y))
+, prependOf = (x,y) => isList(x) ? prependHelpOf(x,y)
+ : prependHelpOf(singletonListOf(x),y)
+
+// pairs as stacks
+, theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, pushOf = consOf
+, popOf = carOf
+, topOf = cdrOf
+, secondOf = stack => topOf(popOf(stack))
+, drop2 = stack => popOf(popOf(stack)) 
+, enpendOf = stack => 
+   pushOf(drop2(stack)
+   ,prependOf(secondOf(stack)
+    ,enlistOf(topOf(stack))))
+
+// reader
+, isOpenParen = isEmpty
+, isCloseParen = x => !isEmpty(x)&&isEmpty(carOf(x))&&isEmpty(cdrOf(x))
+, isSpace = x => !isEmpty(x)&&isEmpty(carOf(x))&&isCloseParen(cdrOf(x))
+, readHelperOf = (stack,runes) => isEmpty(runes) ? carOf(topOf(stack))
+  : isSpace(carOf(runes)) ?
+   ( isEmpty(topOf(stack)) ? readHelperOf(stack,cdrOf(runes)) 
+     : readHelperOf(pushOf(enpendOf(stack),theEmptyPair), cdrOf(runes)))
+  : isCloseParen(carOf(runes)) ? readHelperOf(enpendOf(stack), cdrOf(runes))
+  : isOpenParen(carOf(runes)) ? readHelperOf(pushOf(stack,theEmptyList), cdrOf(runes))
+  : readHelperOf(enpendOf(pushOf(stack,carOf(runes))), cdrOf(runes))
+, readOf = runes => readHelperOf(theEmptyStack, runes)
+```
+
+I'll test this code and figure out the printer next time.
+
+### 2025 0504 0139
+Failure of cross reference does not require a referent.
+
 ## 2025 0503
 
 ### 2025 0503 1757
