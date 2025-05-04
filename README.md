@@ -16,7 +16,7 @@ It is better to have gone out of the way to note the source of a quote than to g
 This continues the work on [my paper on logic](#2025-0412-1422).
 It also contains more on my philosophy of logic as well as a careful analysis of Quine's proof that no logical theory of the world is beyond supplementation (which itself contains an alternate presentation of Quine's analysis of denotation as a generalization of Tarski's analysis of truth).
 
-My methods of logic are unique in that they present Quinen's predicate functor methods independently of quantificational logic.
+My methods of logic are unique in that they present Quine's predicate functor methods independently of quantificational logic.
 Quantificational logic is then constructed from predicate functor logic by way of Quine's predicate abstracts.
 The difference between predicate functor logic and quantificational logic is the difference between 'is true' and 'is true of'.
 
