@@ -98,7 +98,7 @@ It falls well within Quine's principles of paraphrasing.
 This argument puzzled me at first, and as a result of the following analysis I was able to produce an even more surprising argument that directly reveals the immediate limitations on any consistent theory of denotation.
 It also brings together the principles of prediate abstraction, predicate concretion, disquotation and (to my surprise) the deduction theorem while also just giving the exact predicate that is missing.
 
-Under the assumption that among the items of the theory are the predicates themselves it is possible, following Quine's generalization of Tarski's analysis of truth to denotation (which I shall state), to define a predicate which, in anticipation of the definition to follow, shall be written out as 'denotes'.
+Under the assumption that among the items of the theory are the predicates themselves it is possible, following Quine's generalization of Tarski's analysis of truth to denotation (which I shall state), to define a predicate which, in anticipation of the definition to follow, shall be written out as 'degree 0 denotes'.
 It is defined just as Quine specifies on pg.63 of "From Stimulus to Science" but with predicate functors as predicate abstracts in a quantificational logic as described in [An Incomplete Sketch of My Philosophy of Logic](#2025-0422-2322-an-incomplete-sketch-of-my-philosophy-of-logic)):
 
 1. Where 'F' designates an n place primitive predicate define "{..x : 'F' degree 0 denotes ..x}" for 'F',
