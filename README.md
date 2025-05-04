@@ -1,6 +1,150 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0503
+
+### 2025 0503 1757
+Today is a Bob Ross and Bosch day.
+While I do not seem to enjoy reading Michael Connelly, I do enjoy watching his stories on screen.
+They are that perfect drip of mid.
+Law & Order is another.
+
+### 2025 0503 1750
+It is better to have gone out of the way to note the source of a quote than to go out of your way to find where you sourced it.
+
+### 2025 0503 1531
+This continues the work on [my paper on logic](#2025-0412-1422).
+It also contains more on my philosophy of logic as well as a careful analysis of Quine's proof that no logical theory of the world is beyond supplementation (which itself contains an alternate presentation of Quine's analysis of denotation as a generalization of Tarski's analysis of truth).
+
+My methods of logic are unique in that they present Quinen's predicate functor methods independently of quantificational logic.
+Quantificational logic is then constructed from predicate functor logic by way of Quine's predicate abstracts.
+The difference between predicate functor logic and quantificational logic is the difference between 'is true' and 'is true of'.
+
+A word on the words 'denote' and 'predicate' from Quine's "From Stimulus to Science":
+>"For what follows we must come squarely to terms with 'denote'. Since it is often used interchangeably with 'designate', and a singular term normally designates one and only one object, readers are apt to think of denotation as relating a predicate likewise to a single object, namely the class of all thoe things it is true of, or a property shared by them. In my use of 'denote', as in John Stuart Mill's [Mill, ChapterII $5], a predicate denotes rather each separate thing of which it is true. The class or property is not involved.
+>
+>For years, to obviate confusion, I avoided 'denote' altogether in favor of 'true of'; but that evasion woudl be impracticable in these pages where denotation is becoming the center of action. Unlike Mill, I still withhold the word from singular terms; they are well served by 'designation'.
+>
+>A word of caution is in order regarding 'predicate' too. Some logicians take a predicate as a *way* of building a sentence aroudn a singular term or, more concretely, as what Peirce called a *rheme* [Volume 2, paragraph 95], a sentence with blanks in it, these being distinctively marked in the case of a many-place predicate. This version covers, implicitly, the potential output of predicate abstraction or predicate functors. But a predicate in my sense is always an integral word, phrase, or claus, grammatically a noun, adjective, or verb. Some are generated from others by grammatical constructions, notably the relative clause or, formally, predicate abstraction and predicate functors."[pg. 60-61 Quine "From Stimulus to Science"]
+
+One of the virtues of this method is that less is spoken of than ever before.
+This has the benefit of eliminating explanations that are ultimately offshoots of predicate logic itself.
+In the past, and perhaps even in these passages, there are parts of the world which intruded upon logic and muddied its methods.
+The most famous of which is mathematics.
+There is much to be recommended from mathematical methods in matheamtical logic, but there is less to say about its ultimate contributions to logic itself.
+For example, formalism continues to confuse those unable to seperate logic from mathematical logic as if the formalisms were the subject of logic itself.
+One wonders by what methods such formalists make conclusiosn about their formalisms.
+
+Logic no more has formalisms as its subject matter than it has anything in particular as its items of interest.
+Some, like Frege, have mistaken the schematics which fascilitate the articulation of logical principles and practices as part of logic itself rather than as a technical tool for fascilitating an exacting analysis of the same.
+
+> Specifically, Frege mistakes the mathematical metaphor of functions for functional predicates (and he never actually deals with the functional predicates relevant to his analysis of logic e.g. the predicate '{xy: some item is {uv: x is the truth value of u, y is the truth value of v, and u negates v}}' is confused with its purported extension).
+
+Other times, like Frege, logic was so far removed from schematic methods that it bled into thoughts, judgements, senses, meanings, and other possessions of the minds which haunt human bodies and perhaps even that amazing organ we call the brain.
+
+I submit that all these mistakes are not mistakes: they are each a piece in a larger puzzle which has yet to be pictured as a complete whole.
+That practice which has done the most to put together all these pieces as if they fit into a larger whole is science.
+It is only recently that the science of philosophy was so far divorced from the other sciences.
+The philosophical revolt against psychology as a science of mind is justified in that it was easy to critique and its conclusions were in stark contrast with those of our stronger sciences.
+Cognative scientists continued to pluck what they could from philosophy and any failures they were confronted with were attributed to weaknesses not in their own science but in some philosophical or logical method: the philosophers were punished for the past transgressions against psychology as the science of mind.
+
+The science of behavior and the philosophy of radical behaviorism mends many such mistakes by revealing not only a sharper picture of what science has assembled but also an inclusive explanation of how such mistakes were so easy to make:
+
+>"Mentalism kept attention away from the external antecedent events which might have explained behavior, by seeming to supply an alternative explanation. Methodological behaviorism did just the reverse: by dealing exclusively with external antecedent events it turned attention away from self-observation and self-knowledge. Radical behaviorism restores some kind of balance. It does not insist upon truth by agreement and can therefore consider events taking place in the private world within the skin. It does not call these events unobservable, and it does not dismiss them as subjective. It simply questions the nature of the object observed and the reliability of those observations.
+>
+>The position can be stated as follows: what is felt or introspectively observed is not some nonphysical world of consciousness, mind, or mental life but the observer's own body. This does not mean, as I shall show later, that introspection is a kind of physiological research, nor does it mean (and this is the heart of the argument) that what are felt or introspectively observed are the causes of behavior. An organism behaves as it does because of its current structure, but most of this is out of reach of introspection. At the moment we must content ourselves, as the methodological behaviorist insists, with a person's genetic and environmental histories. What are introspectively observed are certain collateral products of those histories."[pg. 18-19 Skinner "About Behaviorism"]
+
+Under this rubric truth quickly distinguishes itself from validity:
+
+>"*Truth*. The truth of a statement of fact is limited by the sources of the behavior of the speaker, the control exerted by the current setting, the effects of similar settings in the past, the effects upon the listener leading to precision or to exaggeration or falsification, adn so on. There is no way in which a verbal description of a setting can be absolutely true. A scientific law is derived from possibly many episodes of this sort, but it is similarly limitied by the repertoires of the scientists involved, The verbal community of the scientist maintains special sanctions in an effort to guarentee validity adn objectivity, but again, there can be no absolute. No deduction from a rule or law can therefore be absolutely true. Absolute truth can be found, if at all, only in rules derived from rules and here it is mere tautology."[pg.150 Skinner "About Behaviorism"]
+
+The word "tautology" descends through Wittgenstein's failed attempt to reduced quantificational logic to a kind of never ending truth-functional logic (sometimes unhappily called "sentence logic").
+The popularity of the word is unfortunate because it reinforces defective distinctions between clear cut definitions of validity which are very rarely mentioned and yet when mastered frequently simplify the methods of logic.
+They are described by Quine as follows
+
+>"It was remarked at the end of Chapter 7 that validity may be ascribed not only to truth-functional schemata but also, by extension, to the sentences whose forms those schemata depict; but that it is well then to add the qualifier 'truth-functional'. COrrespondingly a sentence obtainable by substitution in a valid quantificational schema is *quantificationally* valid. Such a sentence is true, or true for all values of its free variables. But it may or may not be truth-functionally valid; its truth may depend solely on its truth functional structure, or it may depend partially on how the quantifiers are arranged.
+>
+>We may also note an intermediate grade, monadic validity. A sentence is quantificationally valid if it can be got by substitution in a valid quantificational schema; it is monadically valid, more particularly, if it can be got by substitution in a valid quantificational schema which is monadic; and it is truth functionally valid if it can be got by substitution in a valid truth-functional schema." [pg. 176 Quine "Methods of Logic 4th Edition"].
+
+A warning for those who are tempted, like Frege or Russell, to occasionally take schemata as the items of logic: all this talk of substition into valid schema to obtain valid sentences can be skipped by resorting directly to sentences and their grammatical structure.
+The grammatical structure with which validity is concerned is specifically designed to avoid the miscarriage of conclusions.
+
+> "Sentences have the same grammatical structure when they are interconvertible by lexical substitutions. Our definition of logical truth, then, can also be put thus: *a logical truth is a truth that cannot be turned false by substituting for lexicon. When for its lexical elements we substitute any other strings belonging to the same grammatical categories."[pg. 58 Quine "Philosophy of Logic Second Edition"]
+
+There are two things of note here:
+
+1. what Quine calls 'logicl truth', and what others have called the same, is what is called 'quantificationally valid' in Quine's "Methods of Logic 4th edition"; and 
+2. substitution no longer leads from schema to sentences but from sentences to sentences by way of the lexicon of the langauge.
+
+Whatever promise there is to this grammatical definition of quantificaitonal validity is lost when the grammatical part of variables is reflected upon as Quine does from having read Gilbert Harman's 1971 review in *Metaphilosophy*.
+Quine's corrective is to contemplate only substitution for predicates and not for variables which are otherwise part of the lexicon of logical languages (Harman suggests taking variables as belonging to atomic grammatical elements which are more like logical connectives than items of the langauges lexicon).
+
+Such restricted substitution no longer leads from one sentence to an other of the same grammatical structure: they may differ in the variables which they contain and no substitution for predicates alone can change one variable into an other.
+There are further troubles that, when confronted, lead to a stronger definition of quantificational validity by grammatical method:
+
+> "Our definition of logical truth in terms of substitution of lexicaon confronts also another and graver difficulty: it appeals only to substitution of predicates for predicates, as against substitution of sentences for simple sentences. We saw early in this chapter how the sentential approach coudl issue in a stronger, narrower concept of logical truth, screening out some cases that woudl have slipped through if only predicate substitution had been called for. IT can even be shown that the version in terms of predicate substitution will inevitably be too weak, as long as our stock of predicates is finite [This was pointed out to me by Mark L. Wilson]. The natural remedy, then is to exploit the indefiniteness of our category of predicates: to admit substitution not only of the predicates in some imagined list, but also of any predicates that might be added. Thus adjusted, then, the abstract version rusn as follows: *a logical truth is a sentence that cannot be turned false by substitution for lexicon, even under supplementation of lexical resources*."[pg. 59 Quine "Philosophy of Logic 2nd Edition"]
+
+Here then is where predicate functor logic reigns supreme and reveals the intimate relationship between validity (or what Quine and so many others speak of as "logical truth"), grammar, and truth.
+Since the only items of the lexicon of a predicate functor logic are predicates then there is no question of how substitution is to covey one sentence to an other with the same grammatical structure.
+It is also clear that supplementation of lexicon is required from contemplation of a lexicon of only one place predicates as Quine did in "Word and Object":
+
+> "But may we not still aspire to the discovery of some fundamental lexicon on the basis of which all traits and states of everything could in principle be formulated? No; we can prove that opennes is unavoidable, as long anyway as the predicates of a theory are included as items of the theory.
+> 
+>For, let S1, S2, ... be the sentences in the notation of a theory that have 'x' as their sole free variable. Each of them is, for each object of the universe as value of 'x', true or false of that object; hence each of them, being also an object of the universe, is true or false of itself. We easily show that no general term definiable in the theory is true of exactly those of S1, S2, ... that are false of themselves. (For, if 'F' were such a term, then 'Fx' would be true of itself if and only if false of itself. [This argument is in principle Cantor's. The form I have given it is reminiscent also fo Grelling's paradox, and the use made of it is reminiscent of Tarski.]) Such a term can be added, irreducibly supplementing the theory."[pg. 231-232 Quine "Word and Object"]
+
+Note, I have changed a few words in the above quote to more closely bring what Quine said to bear on terminology used here.
+It falls well within Quine's principles of paraphrasing.
+
+This argument puzzled me at first, and as a result of the following analysis I was able to produce an even more surprising argument that directly reveals the immediate limitations on any consistent theory of denotation.
+It also brings together the principles of prediate abstraction, predicate concretion, disquotation and (to my surprise) the deduction theorem while also just giving the exact predicate that is missing.
+
+Under the assumption that among the items of the theory are the predicates themselves it is possible, following Quine's generalization of Tarski's analysis of truth to denotation (which I shall state), to define a predicate which, in anticipation of the definition to follow, shall be written out as 'denotes'.
+It is defined just as Quine specifies on pg.63 of "From Stimulus to Science" but with predicate functors as predicate abstracts in a quantificational logic as described in [An Incomplete Sketch of My Philosophy of Logic](#2025-0422-2322-an-incomplete-sketch-of-my-philosophy-of-logic)):
+
+1. Where 'F' designates an n place primitive predicate define "{..x : 'F' degree 0 denotes ..x}" for 'F',
+2. Where 'F' and 'G' designate n place predicates define
+   * "{..x : 'not F' degree 0 denotes ..x}" for "{..x : not ('F' degree 0 denotes ..x)}"
+   * "{..x : 'F and G' degree 0 denotes ..x}" for "{..x : F degree 0 denotes ..x} and {..x : G degree 0 denotes ..x}"
+   * "{..y : 'some F' degree 0 denotes ..y}" for "{..y : some item is {z : 'F' degree 0 denotes ..yz}"
+   * "{..xy : 'pad F' degree 0 denotes ..xy}" for "{..xy: 'F' degree 0 denotes ..x}"
+   * "{..uv : 'refl F' degree 0 denotes ..uv}" for "{..uv: 'F' degree 0 denotes .uvv}"
+   * "{a..cb: 'perm F' degree 0 denotes a..cb}" for "{a..cb: 'F' degree 0 denotes ab..c}".
+
+> A detailed explanation of the construction of predicates which permit the manipulation of quotations as above can be found in the last chapter of Quine's "Mathematical Logic" on his theory of protosyntax.
+> Feferman's Finitary Inductively Presented Logics are perhaps a simpler alternative but the presentation does not address this construction in particular.
+
+Now, a predicate coextensive with 'degree 0 denotes' as defined above (rather than taking it as an abbreviation as has been done with the phrase 'for' these are changed to sentences of coextension) can not belong to such a theory i.e. such a predicate must be added as a primtive to "irreducibly supplement the theory" (the case where it is already among the primitives is covered after this).
+For, assume it does, then so does the predicate '{x: not (x degree 0 denotes x)}'.
+
+Suppose, '{x: not (x degree 0 denotes x)}' degree 0 denotes  '{x: not (x degree 0 denotes x)}'.
+By disquotation (which is the defining principle given above), {x: not (x degree 0 denotes x)}'{x: not (x degree 0 denotes x)}'.
+By concretion, it is not the case that '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}'.
+Hence, by the deduction theorem, '{x: not (x degree 0 denotes x)}' degree 0 denotes  '{x: not (x degree 0 denotes x)}' only if it is not the case that '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}'.
+
+Now, suppose it is not the case that '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}'.
+By disquotation, it is not the case that {x: not (x degree 0 denotes x}'{x: not (x degree 0 denotes x)}'.
+By concretion, it is not the case that it is not the case that (yes, the same phrase is repeated twice there) '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}' i.e. '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}'.
+Hence, by the deduction theorem, it is not the case that '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}' only if '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}' i.e. '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}' if it is not the case that '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}'.
+
+Therefore, '{x: not (x degree 0 denotes x)}' degree 0 denotes  '{x: not (x degree 0 denotes x)}' if and only if it is not the case that '{x : not (x degree 0 denotes x)}' degree 0 denotes '{x: not (x degree 0 denotes x)}', a contradiction.
+
+Though that mays seem like a mouthfull of nit picking steps, it gives each principle that, step by step, permits the given contradiction.
+
+The above contradiction followed by assuming that 'degree 0 denotes' was not a part of the lexicon of the theory but was coextensive with some compound constructed from the lexicon.
+What's interesting is that there is nothing wrong with supposing 'degree 0 denotes' is a basic predicate, now added to the theory, which is defined as above (that is each instance of the corresponding coextensive schema) with respect to each OTHER basic predicate except for itself!
+Read that very carefully because it is very slipery.
+
+So, in that case, the case where you have 'degree 0 denotes' as stipulated, we are left again where Quine's argument starts, but now, we contemplate a new predicate 'degree 1 denotes' which is defined from the basic predicates, one of which is 'degree 0 denotes', and which, by the same argument, can not be coextensive with any compound of the basic predicates, one of which is 'degree 0 denotes'.
+Thus, 'degree 1 denotes' can be added as a basic predicate defined from the other basic predicates by the inductive definition above.
+
+Now, for any theory, there is a finite lexicon, and thus there is some smallest 'n' for which 'degree n denotes' does not belong to the lexicon i.e. there is no end to how a theory might be supplemented.
+
+Quine's argument involving one place predicate glosses over the problem of denotation, as Quine frequently did, with the phrase "is true of", but it is precisely on the analysis of this predicate that Quine's argument (and Frege's work, for 'is true' is a degenerate case of 'is true of' i.e. 'denotes') hinges.
+
+When I started this not I had an aim of typing up the rest of my sketch of my paper on logic i.e. the concrete consequences of arguments like those above.
+That did not happen because now I'm going to switch to work on my little lisp before I forget what occurred to me with respect to it earlier today.
+
+
 ## 2025 0502
 
 ### 2025 0502 2048
