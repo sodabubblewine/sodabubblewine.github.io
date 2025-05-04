@@ -33,7 +33,7 @@ In the past, and perhaps even in these passages, there are parts of the world wh
 The most famous of which is mathematics.
 There is much to be recommended from mathematical methods in matheamtical logic, but there is less to say about its ultimate contributions to logic itself.
 For example, formalism continues to confuse those unable to seperate logic from mathematical logic as if the formalisms were the subject of logic itself.
-One wonders by what methods such formalists make conclusiosn about their formalisms.
+One wonders by what methods such formalists make conclusions about their formalisms.
 
 Logic no more has formalisms as its subject matter than it has anything in particular as its items of interest.
 Some, like Frege, have mistaken the schematics which fascilitate the articulation of logical principles and practices as part of logic itself rather than as a technical tool for fascilitating an exacting analysis of the same.
