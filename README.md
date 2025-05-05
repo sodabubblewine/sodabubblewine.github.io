@@ -3,6 +3,87 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0504 
 
+### 2025 0504 1517
+This begins my read of Peter Adamson's "Classical Philosophy: a history of philosophy without gaps" from 2014.
+
+It was recommended to me by R.P. when he noticed that I was reading some [other histories of philosophy](#2025-0415-1915) in addition to Durant's "Story of Philosophy" which I last wrote about in [2025 0430 2324](#2025-0430-2324).
+
+As the preface explains, this is one in a series of books that was written from a podcast on the history of philosophy.
+Unlike the other histories of philosophy that I have on hand, this one purports to exhaust the nooks and crannies of philosophers throughout the world, hence the "without gaps".
+More than anything, I look forward to the list of references promised: a good reading list can save a lifetime of woe.
+
+Classical philosophy is very narrow in its scope, and the book is broken into the traditional three parts:
+
+1. Early Greek Philosophy
+2. Socrates and Plato
+3. Aristotle.
+
+The 'Early Greeks' are sometimes called the "presocratics" as if Socrates was the saviour of philosophy.
+Each chapter of the part on early greek philosophy deals with a specific philosopher and, in a few places, with groups of them.
+The last two parts deal exclusively with Socrates, Plato, and Aristotle.
+
+Andamson says he links up the philosophers to their social environments and that he doesn't see a clean seperation between the concerns of the philosopher and those of the culture of which they were a part.
+His claim that philosophy does not occur without affluence or some kind of social saftey net is common enough to be somewhat beyond question, but I do question it.
+I submit that the philosophy which has survived to our day, e.g. as a corpus of literature if I am pressed to give a concrete account of philosophy as a part of our social environment, is a collateral effect of any verbal community and that what has survived is simply that.
+Said humorously: the absense of evidence is not evidence of absense.
+
+Philosophy is a consequences of the reinforcing effects of a verbal community which practices a kind of self control i.e. the deferred consequences of the reinforcing practices of the verbal community are taken into account by it.
+Any culture which comes to teach its people to care for their own survival and the survival of their culture produces philosophers in that there are those sensitive to the contribution that verbal behavior can make to that survival.
+
+When Socrates passes through Plato it is ethics that reigns supreme as " the study of ideal conduct; the highest knowledge, said Socrates, is the knowledge of good and evil, the knowledge of the wisdom of life” [pg. 3 Durant "The Story of Philosophy"].
+Here, ideal conduct is that which does more than avoid the threats and damages which doom the practices of a culture: it is that which contributes most to its survival for whatever reason no matter how consistent or inconsistent it may be with prevailing verbal practices.
+
+The history of philosophy is, to me, the history of a conspicuous kind of cultural self control.
+It is no surprise that the sciences descend from philosophy and that philosophy can be, in my measure, best taken as a kind of science.
+In the past I have suggested that it is the science of smooth discourse in as much as it eeks out where and when verbal behavior works and where and when it does not.
+
+---
+
+The first chapter is "Everything is Full of Gods: Thales".
+The Dorians invaded mainland Greece around 1100 BCE and those Athenians who escaped eastward over the Aegean Sea landed under the leadership of Ion.
+Born c. 626/623, Thales grew up in the southern Ionian colony of Miletus.
+He is seen by many as the first Greek philosopher.
+
+As when I read Durant's description of Athens in the "Context of Plato" in [2025 0420 2247](#2025-0420-2247), Miletus was a nexus of cultural practices from its eastward and westward neighbors.
+Thales may have visited Egypt, picked up some Babylonian astronomy, and used it to predict the solar eclipse of 585 BCE.
+Reports on astronomical phenomena give us ways of calculating the ordering of various events in addition to the timing of the report itself (assuming such reports are not manufactured post hoc).
+
+As with my conviction that the stories of Socrates are to be taken as I take most of history, that is as folklore, perhaps even that stronger folklore called just 'lore', so are the stories of Thales taken by me.
+This outlook is also echoed in the next few pages of Adamson's sketch.
+
+It is dawning on me that for many of these philosophers there are simply a list of basic stories that we can list and cling to without having to commit ourselves to their historic accuracy.
+But, my interest in world history (and the role of archeology in setting up and taking down the histories we have inherited) prevents me from resting easy with such foggy commitments.
+The urgency of writing on world history continues to press itself upon me.
+
+The main stories of Thales are these
+1. born c. 626/623 and died c. 548/545 BCE
+2. he predicted a solar eclipse in 595 BCE
+3. he may have visited Egypt
+4. he was one of the Seven Sages of early Greece
+5. his lobby for the unification of Ionian communities against eastern threats, failed
+6. he foresaw a large olive harvest and cornered the olive press market
+7. Plato says he fell into a hole because he was looking at the sky
+8. he broke an unpassable river into two passable rivers
+9. he wrote a book on navigation at sea
+10. he thought water was of great consequence (in ways that are lost to history). Aristotle says Thales 
+    * "beleived the world floats upon water, like a piece of wood"[pg.7 Adamson "Classical Philosophy"]
+    * "thought that water was a cosmic *principle*"[pg.7]
+    * claimed magnets and amber have a soul
+    * "all things are full of gods"
+
+Adamson contrasts Thales with 
+
+1. Homer: *Iliad* and *Odysse* and
+2. Hesoid: *Theogony*
+
+as we do scientific behavior with literary behavior.
+
+The chapter ends with a tiny argument assembled by Adamson as an example of a possible argument Thales may have made:
+
+> "everything is full of gods, and I'll show you this using the example of the magnet. It seems to be lifeless, but it must have a soul, because it can initiate motion. So, by extension, you should at least be open to the idea that everything has a soul, which is divine."[pg. 7-8]
+
+He then admits the evidence for this argument is weaker than the argument is.
+
 ### 2025 0504 0140
 This continues my work on my little lisp from [2025 0502 2048](#2025-0502-2048).
 
