@@ -1,6 +1,51 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0505
+
+### 2025 0505 1709 Bryan Magee's "Men of Ideas" and "The Great Philosophers"
+My interests in philosophy are largely historic: the literature of philosophers tells us something about what was going on from its compatibility and incompatibility with cultural practices uncovered by archeology.
+Bryan Magee (1930-2019) presented two series of television shows which gave the public a instructive look into the work of philosophers past and present:
+
+1. "Men of Ideas" 1978
+2. "The Great Philosophers" 1987
+
+The first is composed of the following speakers and topics:
+1. Isaiah Berlin: An Introduction to Philosophy
+2. Charles Taylor: Marxist Philosophy
+3. Herbert Marcuse: Marcuse and the Frankfurt School
+4. William Barrett: Martin Heidegger and Modern Existentialism
+5. Anthony Quinton: The Two Philosophies of Wittgenstein
+6. A. J. Ayer: Logical Positivism and its Legacy
+7. Bernard Williams: The Spell of Linguistic Philosophy
+8. R. M. Hare: Moral Philosophy
+9. Willard Van Orman Quine: The Ideas of Quine
+10. John Searle: The Philosophy of Language
+11. Noam Chomsky: The Ideas of Chomsky
+12. Hilary Putnam: The Philosophy of Science
+13. Ronald Dworkin: Philosophy and Politics
+14. Iris Murdoch: Philosophy and Literature
+15. Ernest Gellner: Philosophy, The Social Context
+
+The second is composed of the following speakers and philosophers:
+1. Myles Burnyeat: Plato
+2. Martha Nussbaum: Aristotle
+3. Anthony Kenny: Medieval Philosophy
+4. Bernard Williams: Descartes
+5. Anthony Quinton: Spinoza and Leibniz
+6. Michael R. Ayers: Locke and Berkeley
+7. John Passmore: Hume
+8. Geoffrey Warnock: Kant
+9. Peter Singer: Hegel and Marx
+10. Frederick Copleston: Schopenhauer
+11. J. P. Stern: Nietzsche
+12. Hubert Dreyfus: Husserl, Heidegger and Modern Existentialism
+13. Sidney Morgenbesser: The American Pragmatists
+14. A. J. Ayer: Frege, Russell and Modern Logic
+15. John Searle: Wittgenstein
+
+Both series can be easily found on YouTube and are well worth a long watch, especially when the speaker is speaking on their own work e.g. Quine.
+
 ## 2025 0504 
 
 ### 2025 0504 1517
