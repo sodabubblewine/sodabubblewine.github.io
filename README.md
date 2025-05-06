@@ -3,6 +3,102 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0505
 
+### 2025 0505 1725
+This continues my work on my little lisp from [2025 0504 0140](#2025-0504-0140).
+
+In the last entry it occurred to me that the only distinction between types of items that is implicit in LISP is that between lists and nonlists (where an example of a nonlist is a symbol).
+Consequently, I introduced the following definitions:
+
+```
+// pairs as lists
+, isList = item => !isEmpty(item) && isEmpty(carOf(item))
+, singletonListOf = item => consOf(theEmptyPair, item)
+, theEmptyList = singletonListOf(the)
+, prependHelpOf = (x,y) => isEmpty(x) ? (isList(y) ? cdrOf(y) : y)
+ : consOf(carOf(x), prependHelpOf(cdrOf(x),y))
+, prependOf = (x,y) => isList(x) ? prependHelpOf(x,y)
+ : prependHelpOf(singletonListOf(x),y)
+```
+
+The problem with this is that there is a big difference between a binary tree (as an iterated pairing of the empty pair) as a sequence and as a LISP list.
+This difference broke the beauty of the symmetry of definitions that take binary trees as stacks on the one hand and sequences on the other.
+While I was reading Feferman's "Finitary Inductively Presented Logics" it occurred to me that by distinguishing between sequences and lists I can further factor the underlying arithmetic of binary trees out from the implementation details of my little lisp.
+
+The empty sequence is identical to the empty pair and a pair is the empty sequence when it is the empty pair.
+The left part of a pair, i.e. the car of the pair, is called the head of the sequence.
+It is also called the first item of the sequence.
+The right part of a pair, i.e. the cdr of the pair, is called the rest of the sequence.
+Sequences are constructed from other sequences by concatenation.
+
+The code which corresponds to this specification is as follows.
+
+```
+// basic operations on pairs
+let theEmptyPair={}
+, isEmpty = it => it == theEmptyPair
+, pairOf = (it, that) => [it, that]
+, leftOf = it => isEmpty(it) ? it : it[0]
+, rightOf = it => isEmpty(it) ? it : it[1]
+
+// pairs as sequences
+, theEmptySequence = theEmptyPair
+, isEmptySequence = isEmpty
+, singletonSequenceOf = it => pairOf(it, theEmptySequence)
+, headOf = leftOf
+, restOf = rightOf
+, concatOf = (it, that) => isEmptySequence(it) ? that 
+  : pairOf(headOf(it), concatOf(restOf(it), that)) 
+```
+
+A sequence whose head is the empty pair is now a LISP list.
+Thus a pair is a LISP list if it is not the empty pair and if its left part is.
+Promote a sequence to a list by concatenating the singleton sequence whose sole item is the empty pair with the sequence.
+So, the empty list is the list of the empty sequence, and the singleton list of an item is the list of the singleton sequence of that item.
+The first item of a list is called its 'car' and the list of the rest of the items in the sequence of the list is called the 'cdr'.
+Lists shall be constructed by consing rather than concatenating so that nonlist items are automatically promoted to the appropriate singleton list.
+
+```
+// sequences as LISP lists
+, isList = it => !isEmpty(it) && isEmpty(leftOf(it))
+, listOf = sequence => pairOf(theEmptyPair, sequence)
+, theEmptyList = listOf(theEmptySequence)
+, isEmptyList = it => isList(it) && isEmptySequence(rightOf(it))
+, singletonListOf = it => listOf(singletonSequenceOf(it))
+, carOf = list => headOf(rightOf(list))
+, cdrOf = list => listOf(restOf(rightOf(list)))
+, consOf = (it, that) => 
+  !isList(it) ? consOf(singletonListOf(it),that) 
+  : isList(that) ? listOf(concatOf(rightOf(it),rightOf(that))
+  : consOf(it, singletonListOf(that)))
+```
+In the past, I built stacks directly from pairs, but now I shall build them from LISP lists since they are needed as part of my little lisp and not as part of the arithmetic of pairs.
+
+The empty stack is the empty list, an item is pushed onto a stack by consing it to the stack, the top of the stack is got with car, and the top is dropped from the stack with cdr.
+The second from the top of the stack is the top of the drop of that stack.
+Finally, the top two items of the stack are "enconsed" by replacing them with the cons of the second from top with the singleton list of the top: this is used mostly for implementing the reader.
+
+```
+// LISP lists as stacks
+, theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, pushOf = consOf
+, singletonStackOf = it => pushOf(theEmptyStack, it)
+, dropOf = carOf
+, topOf = cdrOf
+, secondOf = stack => topOf(dropOf(stack))
+, enconsOf = stack => pushOf(dropOf(dropOf(stack))
+  , consOf(secondOf(stack)
+   , singletonListOf(topOf(stack))))
+```
+
+Is this a good way of doing things though?
+The old way clung to the arithmetic of binary trees as iterated ordered pairs of the empty pair.
+This way goes back to the earlier method of distinguishing between runic lists as nonrunic lists and runic symbols and nonrunic symbols.
+The difference is that here, symbols are pairs rather than javascript strings.
+This doesn't eliminate the problem of dealing with javascript strings, we still need to carry them over into some sequences of symbols.
+
+Has this accomplished anything or is it like when you make a substitution into an algebra problem and end up with 'zero equals zero'.
+
 ### 2025 0505 1709 Bryan Magee's "Men of Ideas" and "The Great Philosophers"
 My interests in philosophy are largely historic: the literature of philosophers tells us something about what was going on from its compatibility and incompatibility with cultural practices uncovered by archeology.
 Bryan Magee (1930-2019) presented two series of television shows which gave the public a instructive look into the work of philosophers past and present:
