@@ -93,7 +93,7 @@ Finally, the top two items of the stack are "enconsed" by replacing them with th
 
 Is this a good way of doing things though?
 The old way clung to the arithmetic of binary trees as iterated ordered pairs of the empty pair.
-This way goes back to the earlier method of distinguishing between runic lists as nonrunic lists and runic symbols and nonrunic symbols.
+This way goes back to the earlier method of distinguishing between runic lists and nonrunic lists, or runic symbols and nonrunic symbols.
 The difference is that here, symbols are pairs rather than javascript strings.
 This doesn't eliminate the problem of dealing with javascript strings, we still need to carry them over into some sequences of symbols.
 
