@@ -25,9 +25,9 @@ This difference broke the beauty of the symmetry of definitions that take binary
 While I was reading Feferman's "Finitary Inductively Presented Logics" it occurred to me that by distinguishing between sequences and lists I can further factor the underlying arithmetic of binary trees out from the implementation details of my little lisp.
 
 The empty sequence is identical to the empty pair and a pair is the empty sequence when it is the empty pair.
-The left part of a pair, i.e. the car of the pair, is called the head of the sequence.
+The left part of a pair is called the head of the sequence.
 It is also called the first item of the sequence.
-The right part of a pair, i.e. the cdr of the pair, is called the rest of the sequence.
+The right part of a pair is called the rest of the sequence.
 Sequences are constructed from other sequences by concatenation.
 
 The code which corresponds to this specification is as follows.
