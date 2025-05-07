@@ -40,7 +40,7 @@ let theEmptyPair={}
 , leftOf = it => isEmpty(it) ? it : it[0]
 , rightOf = it => isEmpty(it) ? it : it[1]
 
-// pairs as sequences
+// sequences as pairs
 , theEmptySequence = theEmptyPair
 , isEmptySequence = isEmpty
 , singletonSequenceOf = it => pairOf(it, theEmptySequence)
@@ -58,7 +58,7 @@ The first item of a list is called its 'car' and the list of the rest of the ite
 Lists shall be constructed by consing rather than concatenating so that nonlist items are automatically promoted to the appropriate singleton list.
 
 ```
-// sequences as LISP lists
+// LISP lists as sequences
 , isList = it => !isEmpty(it) && isEmpty(leftOf(it))
 , listOf = sequence => pairOf(theEmptyPair, sequence)
 , theEmptyList = listOf(theEmptySequence)
@@ -78,17 +78,15 @@ The second from the top of the stack is the top of the drop of that stack.
 Finally, the top two items of the stack are "enconsed" by replacing them with the cons of the second from top with the singleton list of the top: this is used mostly for implementing the reader.
 
 ```
-// LISP lists as stacks
-, theEmptyStack = theEmptyPair
-, isEmptyStack = isEmpty
+// stacks as LISP lists
+, theEmptyStack = theEmptyList
+, isEmptyStack = isEmptyList
 , pushOf = consOf
-, singletonStackOf = it => pushOf(theEmptyStack, it)
-, dropOf = carOf
-, topOf = cdrOf
+, dropOf = cdrOf
+, topOf = carOf
 , secondOf = stack => topOf(dropOf(stack))
 , enconsOf = stack => pushOf(dropOf(dropOf(stack))
-  , consOf(secondOf(stack)
-   , singletonListOf(topOf(stack))))
+  , consOf(secondOf(stack), topOf(stack)))
 ```
 
 Is this a good way of doing things though?
