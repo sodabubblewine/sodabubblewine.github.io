@@ -1,6 +1,224 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0507
+
+### 2025 0507 1421
+This continues my work on my paper on logic from [2025 0412 1422](#2025-0412-1422).
+
+The following presentation of logic is unique in a number of ways.
+Primarily it is quantificational logic.
+It does away with quantifiers as in "(each item is x such that)(x is human only if x is mortal)" by skipping over the intermediate methods of Quine's predicate abstracts as in "(each item is)(x such that x is human only if x is mortal)" which clearly factors out the predicate functor 'each item is' from the predicate 'x such that x is human only if x is mortal' by doing away entirely with the classical role of variables as in 'each human only if mortal'.
+
+Predicate functor logic is a foreign language to those who speak natively with all the cross referential power of pronouns, whether they be free and taken as dummy singular terms or bound and taken as dummies of qunatification.
+Though the grammars of (the unhappily named) natural languages are burdened with only indirect analyses of cross reference, the carefully designed language of predicate functor logic eliminates all referential oddities by explaining their cross referential operations as the result of the (logical) equivalence of a predicate with one in a special grammatical category (those constructed from the so called recombic predicate functors).
+
+Although at most three predicate functors are sufficient to assemble all the compound predicates from the lexicon of a logical langauge, the predicate functor foreigner would find themselves lost in construction.
+Thus, full predicate functor logic is introduced on a schedule which is sufficiently similar to classical treatments to admit little or no alarm among those already familiar with the path to quantificational logic from truth functional logic and through the Boolean closure logics of many place predicates (this is an urgent reminder that Boolean logic is the logic of existential closures of truth functional compounds of basic predicates, and that Boolean logic is not to be confused, as it so often is, with the algebra of truth functions as functions on the set whose sole members are the true and the false).
+
+In addition to the unique methods of predicate functor logic, there is an additional and equally profound difference in this presentation of logic: it follows from the grammatical definition of validity as, broadly, substitution for lexicon.
+Just as Quine failed to provide an autonomous proof procedure for predicate functor logic (one that did not depend on translation to quantificational logic and back from the same), so too did Quine fail to bring his grammatical definition of validity as truth of substitution under supplementation of lexicon to predicate logic.
+The substitutional basis for the grammatical definition of validity is established by carefully combining the works of Hilbert and Bernay's in their proof of completeness of quantificational logic in the second book of their Grundlagen as a strengthening of Tarski's model theoretic definition of validity originally from his analysis of truth in his 1933 paper “The concept of truth in the languages of the deductive sciences” but conspicuously from his 1956 paper "Arithmetical extensions of relational systems" with Robert Vaught, and the completeness theorems of Skolem, Herbrand, and Godel.
+For more details on the delicate combination of these fundamental components of logical practice see Quine's "Philosophy of Logic second edition" section entitled "Adequacy of Substitution".
+
+So the distinguishing features of this presentation are predicate functors and substitutional validity.
+There are secondary features which are perhaps just as important, but which are not so easy to explain.
+Traditional logical methods deal with schema and functions of truth values by building up schematic sentence letters with connectives parallel to functions from truth values to truth values as in truth tables, or, much better, as truth trees.
+Following the guidence of grammatical methods, no such methods are found here.
+They are secondary in that each branch of a truth tree is an otherworldly mirror on the grammatical structure of their alternational development and reduction by equivalents of identity.
+This stricture has the benefit of eliminating confusion caused by schematic letters e.g. they are sometimes taken as more than dummies and made to refer or mean in one or another mysterious way.
+
+I am not full convinced of the utility of these self contained grammatical methods, but shall push them as far as I can without losing track of how well the schedule upon which quantificational practices are built is carried over.
+
+What follows is merely an outline.
+It charts out the path that has not yet been taken based on the best available reports that have come back from those who have survived their trip into the jungle of logic without having been too harshly damanged by its wilds.
+Russell cleared much of the way, but was left with unhappy impressions that, thankfully, do not seem to have harmed Quine into a frightful silence: Quine wrote on logic till his final days.
+
+These notes are terse and a not inconsiderable amount of effort on the part of the reader is required to effectively navigate them: many of the later conclusions lack supporting arguments.
+The key to taking each step, e.g. from your native tongue to the truth functional part of predicate functor logic or from the truth functional part to the Boolean closure part, is Quine's method of paraphrasing inwards.
+No matter what the inner components of a sentence may be we can analyze their outermost grammatical structure while leaving their inner parts as yet unanalyzed.
+But, now we must take our sentences as those of a predicate functor community i.e. as one where primitives and compounds are predicates as integral words or phrases such as "father of", "is man", or just "man".
+
+I submit that the sentences of a predicate functor community are like those we attribute to early humans, e.g. "each human only if mortal" rather than the aristotelian universal "All humans are mortal" or the quantificational "Everything is such that it is human only if it is mortal", and that this is no mere accident of expedient analysis.
+
+A final note on my methods of logic: I have tried to defer the introduction of as many distinguishing features as far as possible.
+For example, conditionals and biconditionals are introduced far after functional equivalence.
+This method of spreading out concerns is invaluable in any endevour to simplify and elucidate without adding comments of simplification adn elucidation.
+
+ 
+#### Logic, Science, and Validity
+
+Logic is the science of validity and validity is a consequence of grammar and denotation.
+
+#### Functional Compounding and Chains
+
+Compounding is (denotative) functional when, exclusively, each like compound denotes or each like compound does not denote, where and only where (waow), exclusively, each like component denotes or each like component does not denote.
+Chains are compounds compounded functionally.
+
+#### Example Chains: Joint Denials, Negations, Alternations, and Conjunctions
+
+Joint denials denote waow each of their components do not.
+Negations are self joint denials: they denote waow their component does not.
+Alternations are negations of joint denials: they denote waow some of their components do.
+Conjunctions are joint denials of negations: they denote waow each of their components do.
+
+#### Subcompounds and Functional Substitutions
+
+Subcompounds of compounds are their self or those of their components.
+Substitutions of like compounds for like nonchain subcompounds are (denotative) functional.
+Functional substitutions of functional substitutions of compounds are functional substitutions of their self.
+
+#### Functional Validity, Consistency, Implication, and Equivalence
+
+Compounds are (functionally)
+* valid waow each of their functional substitutions denote,
+* consistent waow their negation is nonvalid (i.e. soem of their functional substitutions denote),
+* implied by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) is nonconsistent (i.e. each of their functional substitutions denotes where the same of the other does), and
+* equivalent to others waow they are mutually implicative (i.e. each of their functional substitutions denotes waow the same of the other does).
+[See pg. 36 of POL]
+
+#### Example Validities and (Non)consistencies: Laws of Excluded Middle, Contradiction, Self Implication, and Self Equivalence
+
+Alternations of compounds with their negations are valid (they denote waow the compound does or its negation does, i.e. waow it does or does not, so, each functional substitution denotes).
+Conjunctions of compounds with their negations are nonconsistent (they denote waow their compound does and its negation does i.e. waow it does and does not, so, each functional substitution does not denote).
+Compounds are implied by and equivalent to their self.
+
+#### Functional Substitutions Keep Validity, Nonconsistency, Implication and Equivalence
+
+Functional substitutions in
+* validities are validities (each functional substitution of the functional substitution of the validity is a functional substitution of the validity and hence denotes),
+* nonconsistencies are nonconsistencies (each function substitution of the negation of the functional substitution of the nonconsistency is a functional substitution of the negation of the nonconsistency i .e. is a functional substitution of a validity and hence the negation of the functional substitution of the nonconsistency is valid so that the function substitution of the nonconsistency is nonconsistent),
+* implications are implications (the conjunction of the conclusion with the negation of the premise is nonconsistant and hence its functional substitution is nonconsistent and identical to the conjunction of the function substitution of the conclusion with the negation of the functional substutituion of the premise), and
+* equivalences are equivalences (functional substitutions of mutual implications are mutual implications).
+
+#### Interchanges of Equivalents are Equivalent
+Interchanges of equivalents in a compound are equivalent to that compound (each functional substitution of a compound matches the same of its interchange, except perhaps for the same of the equivalents which otherwise denote in tandem, so each denotes waow the other does i.e. they are equivalent).
+
+#### Interchnage of Equivalents Keeps Validity, Nonconsistency, Implication, Equivalence, Nonvalidity, Consistency, Nonimplication, and Nonequivalence
+
+Interchanges of equivalents in
+* validities are validities (each functional substitution of the interchange denotes waow the same of the validity does),
+* nonconsistencies are nonconsistent (their negation is a validity and so the interchange in the negation is a validity),
+* implications are implications (interchange into the nonconsistency is a nonconsistency),
+* equivalents are equivalents (interchange of mutual implications are mutual implications),
+* nonvalidities are nonvalidities (a compound is nonvalid waow some functional substitution does not denote, i.e. some functional substitution of its negation denotes, i.e. its negation is consistent, and since the negation of the interchange is identical tot he interchange of the negation which is consistent and consistency is kept by interchange then the negation is consistent i.e. it is nonvalid)
+* consistencies are consistencies (the negation of the interchange is identical to the interchange of the negation which is nonvalid hence it is nonvalid),
+* nonimplications are nonimplications (nonimplication is consistency of the conjunction ...)
+* nonequivalences are nonequivalences (one is a nonimplication ...).
+
+#### Equivalents of Identity
+Compounds are equivalent to
+* their double negation (which denotes waow the negation of the compound does not, i.e. waow it does, so, each functional substituion of it denotes waow the same of its double negation does),
+* their self alternation/conjunction (which denotes waow some/each of its components does i.e. waow the compound does), and 
+* their alternation/conjunction with nonconsistencies/validities.
+
+#### Equivalents of Distributivity of Conjunctions and Alternations
+* Alternations of a component with an alternation are equivalent to the alternation of the alternations of the component with each of the others.
+* Alternations of a component with a conjunction are equivalent to the conjunction of the alternations of the component with each of the others.
+* Conjunctions of a component with an alternation are equivalent to the alternation of the conjunctions of the component with each of the others.
+* Conjunctions of a component with a conjunction are equivalent to the conjunction of the conjunctions of the component with each of teh others.
+
+#### Equivalents of Development: Alternational and Conjunctional
+* Compounds are equivalent to their alternations with nonconsistencies (equivalents of identity), and, in particular, with conjunctions of other compounds with their negation (by the law of contradiction) which are themselves equivalent to the conjunction of their alternations with the other compound and its negation (by distributivity of alternation over conjunction) i.e. conjunctive development of the one compound with respect to the other.
+* The dual for conjunction.
+
+#### Equivalents of Associativity
+* The conjunction of the first component with the conjunction of the second and third is equivalent to the conjunction of the conjunction of the first and second with the third.
+* The alternation of the first component with the alternation of the second and third is equivalent to the alternation of the alternation of the first and second with the third.
+
+#### Iterated Alternations and Conjunctions
+The equivalents of associativity yield the many component alternations and conjunctions which are equivalent to iterated nestings of alternations or conjunctions down their left or right components.
+
+#### Equivalents of Commutativity
+* The alternation of the left component with the right component is equivalent to the alternation of the right component with the left.
+* The conjunction of the left component with the right component is equivalent to the conjunction of the right component with the left.
+
+#### Equivalents of Distributivity of Negations
+* Negations of alternations are equivalent to the conjunctions of the negations of their components.
+* Negations of conjunctions are equivalent to the alternations of the negations fo their components.
+
+#### Relays, Literals, and Clauses
+* Relays are their component or its negation.
+* Literals are relays of nonchain compounds.
+* Each component of a clausal chain is a literal.
+
+#### Disjoint, Full, and Empty Chains
+* No nonchain subcompounds of different components of *disjoint* chains match.
+* The nonchain subcomponents of each component of *full* chains are the same.
+* Empty chains have no components: often they are replaced by a relevant validity or inconsistency so as to carry an empty method into a nonempty one.
+
+#### Laws of Validity
+Chains are nonvalid waow they are not valid and, hence, not where each of their functional substitutions denotes i.e. where some of its functional substitutions do not denote.
+
+Validity is
+* inconsistency of negation (which is not consistency of negation, and, hence, not nonvalidity of negation of negation i.e. validity of negation of negation which, by equivalents of identity, is validity)
+* nonimplication of negation,
+* negational nonimplication
+* nonequivalence of negation
+* negational nonequivalence, and
+* kept by functional substitutions.
+
+#### Laws of Consistency
+* Chains are consistent when some of their functional substitutions denote.
+* Chains are nonconsistent when each of their functional substitutions does not denote.
+* Nonconsistency is validity of negation.
+* Nonconsistency implies nonvalidity.
+
+#### Laws of Implication
+* Chains are implied by others waow each functional substitution of the one denotes where the same of the other denotes.
+* One chain implies an other and the other a third only where the one implies the third.
+* Chains imply their self.
+* Chains imply validities.
+* Validities do not imply nonvalidities.
+* Validities do not imply nonconsistencies.
+* Validities only imply validities (each functional substitution of the former that denotes is one where the latter denotes)
+* Nonconsistencies imply chains.
+* Consistencies do not imply nonconsistencies.
+* Nonconsistencies only imply nonconsistencies.
+
+#### Laws of Equivalence
+* Chains are equivalent waow each of their functional substitutions denotes or not together.
+* One chain is equivalent to an other and the other a third only where the one is equivalent to the third.
+* Chains are equivalent to their self.
+* One chain is equivalent to an other waow the other is equivalent to the one.
+* Validities are equivalent to and only equivalent to validities.
+* Nonconsistencies are equivalent to and only equivalent to nonconsistencies.
+
+#### Conditionals, Biconditionals, Exclusive Alternations, and Sequents
+* Conditionals are alternations of the negation of their (antecedent) left component with their (consequent) right component.
+* Biconditionals are conjunctions of the distinct conditionals of their components.
+* Sequents are conditionals whose antecedent is the conjunction of their antecdent components and whose consequent is the alternation of their consequent components.
+* Exclusive alternations are negations of the biconditionals of their components.
+
+* Implication is validity of conditionals.
+* Equivalence is validity of biconditionals.
+* Nonequivalence is validity of exclusive alternations.
+
+#### Laws of Equivalent Grammatical Categories
+Each clause is equivalent to a disjoint or empty clause.
+Each chain is equivalent to
+* one without conditionals and biconditionals
+* one where only nonchain components are negated
+* a conjunction of negations of clausal conjunctions
+* the alternational dual of the above
+* an alternation of disjoint clausal conjunctions (alternational normal form)
+* a conjunction fo disjoint clausal alternations (conjunctive normal form)
+* a full alternation of unique disjoint clausal conjunctions
+* a full conjunction of unique disjoint clausal alternations
+
+#### Laws of Functional Completeness
+Each chain is equivalent to a compound compounded only by
+* alternative denial
+* joint denial
+* negation and conjunction
+* negation and alternation
+* negation and conditionalization
+
+-----
+
+That's all I have the strength to do for now.
+
+
 ## 2025 0505
 
 ### 2025 0505 1725
