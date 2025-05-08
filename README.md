@@ -3,6 +3,155 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0507
 
+### 2025 0507 2029
+This continues the work on my little lisp from [2025 0505 1725](#2025-0505-1725).
+
+Last note left on a question: were all these distinctions between stacks as LISP lists as sequences and sequences as pairs helpful?
+What I uncovered upon further reflection is that the answer to this question is yes and no.
+These distinctions are still of critical importance, but not in the straight line from pairs up through stacks as LISP lists.
+What occurred to me is that there are two languages that I've built upon native javascript and that I've failed to untangle them from each other.
+
+The lowest language is the programmable part of the arithmetic of ordered pairs, and the language above that is my little LISP.
+Thus there are two readers: one that constructs LISP lists and the one for my little LISP (which is more like a calculator or evaluator).
+
+Sequences and stacks are then implemented as before the last entry: atop the arithmetic of ordered pairs.
+
+```
+// pairs
+let theEmptyPair={}
+, isEmpty = it => it == theEmptyPair
+, pairOf = (it, that) => [it, that]
+, leftOf = it => isEmpty(it) ? it : it[0]
+, rightOf = it => isEmpty(it) ? it : it[1]
+
+// sequences as pairs
+, theEmptySequence = theEmptyPair
+, isEmptySequence = isEmpty
+, singletonSequenceOf = it => pairOf(it, theEmptySequence)
+, headOf = leftOf
+, restOf = rightOf
+, concatOf = (it, that) => isEmptySequence(it) ? that 
+  : pairOf(headOf(it), concatOf(restOf(it), that)) 
+
+// stacks as pairs
+, theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, singletonStackOf = it => pairOf(theEmptyStack, it)
+, pushOf = pairOf
+, dropOf = leftOf
+, topOf = rightOf
+, secondOf = stack => topOf(dropOf(stack))
+, encatOf = stack => pushOf(dropOf(dropOf(stack))
+  , concatOf(secondOf(stack), singletonSequenceOf(topOf(stack))));
+```
+
+All is back to how it was a few notes ago but with a few better names for the different operations.
+These name changes also introduce some later distinctions that will come as the result of grammatical (type) analysis.
+I've gone back to not focusing on a specific alphabetization of runes.
+The reader is now assembled from simpler functions for reading the special open, close, and space runes.
+
+There are a few other tricks of the trade that have been included e.g. javascript defaults to giving negative one when it does not find the index of an item you are looking for in an array, but it greatly simplifies a theory, in almost all cases, when it returns the length of the array.
+Another very helpful trick is to return the entire alphabet when you give it an index that is outside the range of the alphabet.
+Both of these are examples of degenerate cases that can be made to play nicely with the rest of a theory.
+
+```
+// letters
+, theEmptyLetter=''
+, isEmptyLetter = it => it == theEmptyLetter
+, stringOf = (...letters) => 
+   letters.length ? letters.shift() + stringOf(...letters) : theEmptyLetter
+, firstLetterOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters[0]
+, restLettersOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters.slice(1)
+
+// letter as number
+, abc =[...'() 0123456789abcdefghijklmnopqrstuvwxyz']
+, alphabeticalIndexOf = letter => 
+   abc.includes(letter) ? abc.indexOf(letter) : abc.length
+, alphabeticalLetterOf = index => 
+   0 <= index && index < abc.length ? abc[index] : abc
+
+// number as tally (as pair)
+, tallyOf = n => n>0 ? pairOf(theEmptyPair, tallyOf(n-1)) : theEmptyPair
+, countOf = x => isEmpty(x) ? 0 : 1 + countOf(rightOf(x))
+
+// rune as tally
+, runeOf = letter => tallyOf(alphabeticalIndexOf(letter))
+, letterOf = rune => alphabeticalLetterOf(countOf(rune))
+
+// letters as sequences of runes
+, runesOf = letters => 
+   letters.length ? concatOf(
+    singletonSequenceOf(runeOf(firstLetterOf(letters)))
+    , runesOf(restLettersOf(letters)))
+   : theEmptySequence
+, lettersOf = runes =>
+   isEmptySequence(runes) ? theEmptyLetter
+   : stringOf(letterOf(headOf(runes)), lettersOf(restOf(runes)))
+
+// recursive definition of identity of pairs
+, id = (it, that) =>
+  (isEmpty(it) && isEmpty(that))
+  || (!(isEmpty(it) || isEmpty(that))
+     && id(leftOf(it), leftOf(that))
+     && id(rightOf(it), rightOf(that)))
+
+// reader
+, theOpenRune = runeOf('(')
+, isOpenRune = it => id(it, theOpenRune)
+, readOpenRuneOf = (stack, runes) => 
+   readerOf(pushOf(stack, theEmptySequence), restOf(runes))
+
+, theCloseRune = runeOf(')')
+, isCloseRune = it => id(it, theCloseRune)
+, readCloseRuneOf = (stack, runes) => 
+   readerOf(encatOf(stack), restOf(runes))
+
+, theSpaceRune = runeOf(' ')
+, isSpaceRune = it => id(it, theSpaceRune)
+, readSpaceRuneOf = (stack, runes) => !isEmptySequence(topOf(stack))   
+  ? readerOf(pushOf(encatOf(stack), theEmptySequence), restOf(runes))
+  : isEmptySequence(secondOf(stack)) ? readerOf(stack, restOf(runes))
+  : readerOf(pushOf(stack, theEmptySequence), restOf(runes))
+
+, isRune = it => countOf(it) < abc.length
+, readRuneOf = (stack, runes) => 
+   readerOf(encatOf(pushOf(stack, headOf(runes))), restOf(runes))
+
+, readerOf = (stack, runes) =>
+  isEmptySequence(runes) ? topOf(stack)
+  : isOpenRune(headOf(runes)) ? readOpenRuneOf(stack, runes)
+  : isCloseRune(headOf(runes)) ? readCloseRuneOf(stack, runes)
+  : isSpaceRune(headOf(runes)) ? readSpaceRuneOf(stack, runes)
+  : isRune(headOf(runes)) ? readRuneOf(stack, runes)
+  : readerOf(stack, restOf(runes)) 
+
+, readOf = runes => readerOf(theEmptyStack, runes)
+```
+This reader is increadibly powerful.
+Here is a tiny printer that anticipates the method of lists as sequences which begin with the symbol "list".
+```
+// printer
+, printSequenceOf = sequence => isEmptySequence(sequence) ? theEmptySequence
+ : concatOf(printOf(headOf(sequence))
+   , concatOf(singletonSequenceOf(theSpaceRune)
+     , printSequenceOf(restOf(sequence))))
+, parenOf = runes => concatOf(singletonSequenceOf(theOpenRune)
+   , concatOf(runes, singletonSequenceOf(theCloseRune)))
+, printParenSequenceOf = sequence => parenOf(concatOf(singletonSequenceOf(theSpaceRune), printSequenceOf(sequence)))
+
+, isList = sequence => id(headOf(sequence), runesOf('list'))
+, printListOf = list => printParenSequenceOf(list)
+
+, printOf = item => isList(item)? printListOf(item) : item
+
+// external read and print
+, read = letters => readOf(runesOf(letters))
+, print = item => lettersOf(printOf(item))
+```
+
+Neither the reader or the printer seem to be working as expected e.g. reading a space rune goes wrong when there are lots of parentheses bunched up.
+
+
 ### 2025 0507 1421
 This continues my work on my paper on logic from [2025 0412 1422](#2025-0412-1422).
 
