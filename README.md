@@ -1,6 +1,110 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0509
+
+### 2025 0509 1429
+
+Here is the completed code from yesterday's work on my little lisp.
+I also put the appropriate printer code that was missing from the last note into that note.
+
+```
+let run=code=>console.log(code,'\n',eval(code)) // for examples
+
+// pairs
+let theEmptyPair={}
+, isEmpty = it => it == theEmptyPair
+, pairOf = (it, that) => [it, that]
+, leftOf = it => isEmpty(it) ? it : it[0]
+, rightOf = it => isEmpty(it) ? it : it[1];
+
+// sequences as pairs
+let theEmptySequence = theEmptyPair
+, isEmptySequence = isEmpty
+, singletonSequenceOf = it => pairOf(it, theEmptySequence)
+, headOf = leftOf
+, restOf = rightOf
+, concatOf = (it, that) => isEmptySequence(it) ? that 
+  : pairOf(headOf(it), concatOf(restOf(it), that))
+, prependSingletonOf = (it, that) =>
+   concatOf(singletonSequenceOf(it), that)
+, appendSingletonOf = (it, that) =>
+   concatOf(it,singletonSequenceOf(that));
+
+// stacks as pairs
+let theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, singletonStackOf = it => pairOf(theEmptyStack, it)
+, pushOf = pairOf
+, dropOf = leftOf
+, topOf = rightOf
+, secondOf = stack => topOf(dropOf(stack))
+, encatOf = stack => pushOf(dropOf(dropOf(stack))
+  , appendSingletonOf(secondOf(stack), topOf(stack)));
+
+// letters
+let theEmptyLetter=''
+, isEmptyLetter = it => it == theEmptyLetter
+, stringOf = (...letters) => 
+   letters.length ? letters.shift() + stringOf(...letters) : theEmptyLetter
+, firstLetterOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters[0]
+, restLettersOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters.slice(1)
+
+, theOpenParen = '('
+, isOpenParen = it => it == theOpenParen
+, theCloseParen = ')'
+, isCloseParen = it => it == theCloseParen
+
+, runesOf = letters => isEmptyLetter(letters) ? theEmptySequence
+  : isOpenParen(firstLetterOf(letters)) ? prependSingletonOf(theOpenRune, runesOf(restLettersOf(letters)))
+  : isCloseParen(firstLetterOf(letters)) ? prependSingletonOf(theCloseRune, runesOf(restLettersOf(letters)))
+  : runesOf(restLettersOf(letters))
+
+, lettersOf = runes => isEmptySequence(runes) ? theEmptyLetter
+  : isOpenRune(headOf(runes)) ? stringOf(theOpenParen, lettersOf(restOf(runes)))
+  : isCloseRune(headOf(runes)) ? stringOf(theCloseParen, lettersOf(restOf(runes)))
+  : lettersOf(restOf(runes));
+run('lettersOf(runesOf("(()())() this should be ignored"))');
+
+// read and print sequences
+let theOpenRune = theEmptyPair
+, isOpenRune = isEmpty
+, readOpenRuneOf = (stack, runes) => 
+   readSequenceOf(pushOf(stack,theEmptySequence), restOf(runes))
+
+, theCloseRune = pairOf(theEmptyPair,theEmptyPair)
+, isCloseRune = it => !isEmpty(it)&&isEmpty(leftOf(it))&&isEmpty(rightOf(it))
+, readCloseRuneOf = (stack, runes) =>
+   readSequenceOf(encatOf(stack), restOf(runes))
+
+, readSequenceOf = (stack, runes) => isEmptySequence(runes) ? headOf(topOf(stack))
+  : isOpenRune(headOf(runes)) ? readOpenRuneOf(stack,runes)
+  : isCloseRune(headOf(runes)) ? readCloseRuneOf(stack, runes)
+  : readSequenceOf(stack, restOf(runes))
+, readOf = runes => readSequenceOf(theEmptyStack, runes);
+run("isEmpty(read('()'))")
+
+let parenOf = runes => 
+  prependSingletonOf(theOpenRune, appendSingletonOf(runes, theCloseRune))
+, printSequenceOf = sequence =>
+  isEmptySequence(sequence) ? theEmptySequence
+  : concatOf(printOf(headOf(sequence))
+    , printSequenceOf(restOf(sequence)))
+, printOf = sequence =>
+ isEmptySequence(sequence) ? parenOf(theEmptySequence)
+ : parenOf(printSequenceOf(sequence))   
+
+, read = letters => readOf(runesOf(letters))
+, print = sequence => lettersOf(printOf(sequence));
+
+run("lettersOf(parenOf(runesOf('(()()())')))")
+run("print(read('()'))")
+run("print(read('(()(())())'))")
+run("print(read('(())(()(())())'))")
+run("print(read('(()(())())((()))'))")
+run("print(read('))))(('))")
+```
+
 ## 2025 0508
 
 ### 2025 0508 2207
@@ -17,9 +121,9 @@ Perhaps I am simply being optimistic.
 This entry is a response to what I have to say about what I have done that I recall without looking back over a print out of what is recorded here.
 There are three threads that are woven between my writings:
 
-1) logic
-2) programming
-3) philosophy.
+1. logic
+2. programming
+3. philosophy.
 
 For all the philosophy that is here, I have never been a big fan of it.
 The moment I was exposed to the science of behavior, as outlined in any one of B. F. Skinner's books, I left philosophy as anything more than a narrow science of a narrow kind of verbal behavior (what I have since come to call "the science of smooth dialogue").
@@ -228,6 +332,21 @@ lettersOf(parenOf(runesOf('(()()())')))
 The sequence printer assumes that the pair it is passed is to be printed as a pure sequence.
 If asked to print the empty sequence it prints an open rune followed by a closed rune.
 Otherwise it encloses the print of each item in the sequence, one after the other, in open and closed runes.
+
+```
+let parenOf = runes => 
+  prependSingletonOf(theOpenRune, appendSingletonOf(runes, theCloseRune))
+, printSequenceOf = sequence =>
+  isEmptySequence(sequence) ? theEmptySequence
+  : concatOf(printOf(headOf(sequence))
+    , printSequenceOf(restOf(sequence)))
+, printOf = sequence =>
+ isEmptySequence(sequence) ? parenOf(theEmptySequence)
+ : parenOf(printSequenceOf(sequence))   
+
+, read = letters => readOf(runesOf(letters))
+, print = sequence => lettersOf(printOf(sequence));
+```
 
 The following examples test out the reader and the printer.
 ```
