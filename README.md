@@ -1,6 +1,188 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
 
+## 2025 0508
+
+### 2025 0508 1650
+This continues my work on my little lisp from [2025 0507 2029](#2025-0507-2029).
+
+I'm hopeful that whatever logical errors in the code I produced yesterday will be solved today: I am more awake now than I was when I was working on this last night.
+It seems that I forgot about the output at the end of the reader: instead of just taking the top of the stack as the appropriately constructed sequence, I must actually take the head of the sequence atop the stack.
+This is due to how a close parenthesis (or close rune) works in the degenerate case where there are less than two items on the stack.
+In this degenerate case the last parenthesis (of a sequence of runes with balanced parenthesis, as I have not checked the unbalanced cases yet) actually encats the singleton sequence of the top of the list to what it takes as an empty sequence, but which is really the result of a degenerate case of taking the top of the empty stack: it returns the empty sequence.
+
+As I went to copy the code over here I again fell prey to coding rather than copying.
+It occurred to me that there are errors that have slipped in because I have once again not properly factored out the boundaries between languages that are under construction.
+
+Thanks to my prior work I have happily seperated the defining features of sequences from those of lists.
+Though it is not a traditional distinction, it is consistent with Feferman's Finitary Inductively Presented Logics use of sequences as special ordered pairs and lists as a sequence grammatically tagged as a sequence.
+The analysis of a LISP list as a sequence tagged grammatically as a sequence is key to general grammatical methods at work in modern programming practices and which are sadly conflated with problems of types as an abstract concern.
+
+My aim now is to simplify the reader and printer to work entirely with sequences in order to sus out any logical errors at the level of a purely parenthetical language rather than one that also induces the complexity of runes and strings.
+
+The new starting point is this code:
+
+```
+// pairs
+let theEmptyPair={}
+, isEmpty = it => it == theEmptyPair
+, pairOf = (it, that) => [it, that]
+, leftOf = it => isEmpty(it) ? it : it[0]
+, rightOf = it => isEmpty(it) ? it : it[1]
+
+// sequences as pairs
+, theEmptySequence = theEmptyPair
+, isEmptySequence = isEmpty
+, singletonSequenceOf = it => pairOf(it, theEmptySequence)
+, headOf = leftOf
+, restOf = rightOf
+, concatOf = (it, that) => isEmptySequence(it) ? that 
+  : pairOf(headOf(it), concatOf(restOf(it), that)) 
+
+// stacks as pairs
+, theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, singletonStackOf = it => pairOf(theEmptyStack, it)
+, pushOf = pairOf
+, dropOf = leftOf
+, topOf = rightOf
+, secondOf = stack => topOf(dropOf(stack))
+, encatOf = stack => pushOf(dropOf(dropOf(stack))
+  , concatOf(secondOf(stack), singletonSequenceOf(topOf(stack))));
+```
+
+The only part that still needs a bit of explanation is what the function designated by 'encatOf' actually does and why it keeps occurring in the code (or why some function like it continues to reoccur).
+My explanation for now is that it is the least intrusive way to take advantage of the power of stack based methods without bringing every defined operation on pairs and sequences to stacks.
+To do so would be to create a stack based language like FORTH, also called a concatenative language.
+That is not the aim here.
+
+What the function designated by 'encatOf' does is to help with how to interpret a closed parenthesis.
+This gets us to the new function being defined.
+For now it is designated by 'readSequenceOf'.
+It aims to take a sequence of runes, each of which is an open or close rune, and construct the corresponding iterated sequences of empty sequences.
+The open rune begins a new sequence by pushing the empty sequence onto the stack and the close rune adds the item at the top of the stack to the end of the sequence that is second from the top of the stack.
+
+Here is my first attempt based on all that I've learned so far.
+
+```
+// read sequences from a sequence of open and closed runes
+let theOpenRune = theEmptyPair
+, isOpenRune = isEmpty
+, readOpenRuneOf = (stack, runes) => 
+   readSequenceOf(pushOf(stack,theEmptySequence), restOf(runes))
+
+, theCloseRune = pairOf(theEmptyPair,theEmptyPair)
+, isCloseRune = it => !isEmpty(it)&&isEmpty(leftOf(it))&&isEmpty(rightOf(it))
+, readCloseRuneOf = (stack, runes) =>
+   readSequenceOf(encatOf(stack), restOf(runes))
+
+, readSequenceOf = (stack, runes) => isEmptySequence(runes) ? headOf(topOf(stack))
+  : isOpenRune(headOf(runes)) ? readOpenRuneOf(stack,runes)
+  : isCloseRune(headOf(runes)) ? readCloseRuneOf(stack, runes)
+  : readSequenceOf(stack, restOf(runes))
+
+, readOf = runes => readSequenceOf(theEmptyStack, runes);
+```
+
+Now only a small number of specialty operations on javascript strings appear to be needed to interface with these functions as defined.
+
+```
+// letters
+let theEmptyLetter=''
+, isEmptyLetter = it => it == theEmptyLetter
+, stringOf = (...letters) => 
+   letters.length ? letters.shift() + stringOf(...letters) : theEmptyLetter
+, firstLetterOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters[0]
+, restLettersOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters.slice(1)
+
+, theOpenParen = '('
+, isOpenParen = it => it == theOpenParen
+, theCloseParen = ')'
+, isCloseParen = it => it == theCloseParen;
+```
+
+They are the same old same old, except for the last two that single out two particular letters.
+It finally occurred to me to add the following two definitions to the end of the definitions of functions for treating ordered pairs as sequences:
+
+```
+let prependSingletonOf = (it, that) =>
+   concatOf(singletonSequenceOf(it), that)
+, appendSingletonOf = (it, that) =>
+   concatOf(it,singletonSequenceOf(that));
+```
+
+Then, the definition of the function designated by 'encatOf' becomes just as follows.
+
+```
+let encatOf = stack => pushOf(dropOf(dropOf(stack))
+ , appendSingletonOf(secondOf(stack), topOf(stack)));
+```
+
+Construction of a sequence of runes from a string of letters of which only the parenthesis are of concern proceeds as follows.
+
+```
+let runesOf = letters => isEmptyLetter(letters) ? theEmptySequence
+  : isOpenParen(firstLetterOf(letters)) ? prependSingletonOf(theOpenRune, runesOf(restLettersOf(letters)))
+  : isCloseParen(firstLetterOf(letters)) ? prependSingletonOf(theCloseRune, runesOf(restLettersOf(letters)))
+  : runesOf(restLettersOf(letters))
+```
+
+Then the function that gets us back from a sequence of runes to letters is as follows.
+
+```
+let lettersOf = runes => isEmptySequence(runes) ? theEmptyLetter
+  : isOpenRune(headOf(runes)) ? stringOf(theOpenParen, lettersOf(restOf(runes)))
+  : isCloseRune(headOf(runes)) ? stringOf(theCloseParen, lettersOf(restOf(runes)))
+  : lettersOf(restOf(runes))
+```
+
+A brief example demonstrates that the functions from letters to runes and vice versa work.
+
+```
+lettersOf(runesOf("(()())() this should be ignored")) 
+ (()())()
+```
+
+This assures us that when we send a sequence of runes to the reader it corresponds to the parentheses in the given string.
+
+Next the sequence printer.
+It should print out a sequence of runes that, when put back into the reader and printed should output an identical sequence of runes.
+The notation for sequences adopted in the reader has an open and close rune around its contents.
+
+```
+let parenOf = runes => prependSingletonOf(theOpenRune, appendSingletonOf(runes, theCloseRune))
+```
+An example:
+```
+lettersOf(parenOf(runesOf('(()()())'))) 
+ ((()()()))
+```
+
+The sequence printer assumes that the pair it is passed is to be printed as a pure sequence.
+If asked to print the empty sequence it prints an open rune followed by a closed rune.
+Otherwise it encloses the print of each item in the sequence, one after the other, in open and closed runes.
+
+The following examples test out the reader and the printer.
+```
+isEmpty(read('()')) 
+ true
+print(read('()')) 
+ ()
+print(read('(()(())())')) 
+ (()(())())
+print(read('(())(()(())())')) 
+ (())
+print(read('(()(())())((()))')) 
+ (()(())())
+```
+The last two examples indicate conspicuously that the case in the function denoted by 'readSequenceOf' where the rune sequence is empty and returns the head of the top of the stack on which the corresponding sequence was being constructed.
+
+This parenthesis notation is the infix version of the postfix notation from [Bit Strings and Binary Trees](#2025-0413-1513-bit-strings-and-binary-trees) but instead of interpreting everything as binary trees they are interpreted as pure sequences i.e. iterated sequences of the empty sequence.
+
+
+This is the basic method upon which my earlier attempts at constructing a reader and printer for past versions of my list are based.
+
+
 ## 2025 0507
 
 ### 2025 0507 2029
@@ -149,7 +331,7 @@ Here is a tiny printer that anticipates the method of lists as sequences which b
 , print = item => lettersOf(printOf(item))
 ```
 
-Neither the reader or the printer seem to be working as expected e.g. reading a space rune goes wrong when there are lots of parentheses bunched up.
+Neither the reader nor the printer seem to be working as expected e.g. reading a space rune goes wrong when there are lots of parentheses bunched up.
 
 
 ### 2025 0507 1421
