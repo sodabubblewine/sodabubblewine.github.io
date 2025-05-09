@@ -1,7 +1,74 @@
 # What I Must Do Before I Die
-Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, technology, survival).
+Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
 ## 2025 0508
+
+### 2025 0508 2207
+This entry shall be different than prior ones.
+Some time in the near future I shall look back on what I have done and select what has worked from what has not.
+The only way I know how to carry out that task effectively is to print out what I have written and go over it with a pen in my hand and some note paper near by, but this will be the first time that I attempt to do this in public.
+
+There are a lot of firsts among what is written here.
+This is another first not entirely divorced from the more detailed review of what I have done that is yet forthcoming.
+Originally I had aimed at scheduling a public review at the end of last month.
+As the days go by I shall miss the mark more and more, but I do not expect to be that far off.
+Perhaps I am simply being optimistic.
+
+This entry is a response to what I have to say about what I have done that I recall without looking back over a print out of what is recorded here.
+There are three threads that are woven between my writings:
+
+1) logic
+2) programming
+3) philosophy.
+
+For all the philosophy that is here, I have never been a big fan of it.
+The moment I was exposed to the science of behavior, as outlined in any one of B. F. Skinner's books, I left philosophy as anything more than a narrow science of a narrow kind of verbal behavior (what I have since come to call "the science of smooth dialogue").
+
+To my surprise, the science of behavior has yet to take up much space here.
+As much as I've tried to keep all my episodes of reading on the record here, I have failed to do so on many occasions.
+In particular, I have read selections from Skinner's "Cumulative Record" without noting what my responses to them were here.
+Even when I carry around a notepad and a pen in my pocket, I still read without making any record of what occurs to me while reading.
+There is an excuse looming; something about thinking without writing being faster and easier than writing without thinking.
+
+I've spent far more time working on my little lisp than I ever planned.
+This is partially becuase I am frequently reminded of the missing link between Feferman's Finitary Inductively Presented Logics and something like LISP.
+It is also because I must make sure that there is nothing I have missed about each step in the construction and conventions of LISP that might later leave me blind when I finally come to compare and contrast it with FORTH or some other concatenative language.
+
+Another reason I've spent so much time on it is because I see each obstacle at some later stage of any longer work as an opportunity to introduce a foundation whose deferred consequences entirely avoid such obstacles.
+The more obstructions I confront the more likely I am to examine the link between whatever premises I've overtly identified and how presently obstructing conclusions follow from them.
+This is rarely a matter of formal deduction, but almost always a result of methods with a strong familial similarity to logic.
+Almost always, major problems are the result of a poorly selected lexicon.
+The basic predicates with which a problem is stated and in which its solutions are proposed almost always decide my fate.
+
+In the past LISP has been saddled with lambda calculi.
+No such theories are likely to turn up here: lambda calculi are nonconsistent without some crippling and complex system of typing.
+Furthermore, the methods of lambda calculi are merely the theoretical echos of better logical methods e.g. predicate abstraction and concretion are the logical operations that permit talk of lambda abstraction and application.
+This has been known since Quine and Church traded reviews of each others works in the early half of the 20th century.
+The moment Quine revealed that application could be reinterpreted as the collective relate (an operation on relations uncovered by Russell among his short summaries of work he and Whitehead had done), it should have been clear that no result obtained from the lambda calculus should be taken as special to it.
+Little did either Quine or Church know that Quine's later methods of predicate abstraction and concretion revealed the logically universal way of dealing with the multitude of theories mathematicians may propose (be they lambda calculi, relational calculi, set theories etc.)
+
+Thus, I've spent much time fussing over tiny distinctions between various attempts at getting out something like LISP: the methods are to be closer to those of Goodstein's equation calculi than to any lambda calculus.
+But, it is more than that.
+Ordered pairs are the most modest abstract objects that may be admitted to any theory and which release most of the grammatical methods that have found greatest use in the analysis of carefully designed languages.
+This is the premise not only revealed at the end of Quine's "Word and Object" but also a turning point in Feferman's F.I.P.L.s.
+
+Up until very recently this was the path I planned on following in order to reach out from logic to the practices of programming.
+It is only upon uncovering "Logic Programming" that the entirety of programming practice can be reduced to the predicate "is valid", or, as the case often is, the kindred predicate "is inconsistent".
+Had this been shown to me earlier I may have avoided much of my work on primitive recursive functions of ordered pairs.
+But, I'm still stuck in a world of Forths and Lisps rather than a world of logic.
+
+What little I have learned of Prolog has no promise to me.
+It works on a limited slice of logical methods and Datalog doesn't appear to do much better.
+The rush to monetize logic programming and its fundamental relation to database systems generally ruined the logic.
+The modern world, one where large masses of capital are committed to the matrix methods of machine learning, is technically one where logic programming is primed to reign supreme for the following simple reason: any path which leads to inconsistency works but some paths are faster than others for no reason in particular.
+Pro- and data- log aimed to only permit constructions which admit short chains of relevant implications.
+The historic obsession with implication as in formal deduction has blinded modern computer scientists and logicians to the role of logical methods prior to any science e.g. mathematical or computational.
+It is only a matter of time before the window for logical programming closes once again for the same reason it did in the 80s.
+
+Through my little lisp I still plan on exploring the methods of logic programming.
+This shall be done in parallel with my other programming language which is much like uhdForth.
+
+The problem I'm posed with upon writing these paragraphs is this: can I juggle more while also building a new experimental culture?
 
 ### 2025 0508 1650
 This continues my work on my little lisp from [2025 0507 2029](#2025-0507-2029).
