@@ -3,9 +3,130 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0509
 
+### 2025 0509 1722
+This continues work on the little lisp from the last entry [2025 0509 1429](#2025-509-1429).
+
+I was tempted to introduce functions that took a letter and turned it into the corresponding rune as a slower introduction to the method of encoding letters by their numeric index in a given alphabetization and then encoding that number as a tally (where a tally is the proper name for a sequence of empty pairs which is equivalent to the iterated pairing of the empty pair on the left of the empty pair).
+Now that I write of that temptation I am prepared to indulge it rather than leap to the 'index of' methods.
+These grammatical methods, though they may seem trivial to someone already familiar with the breadth and depth of algorithms from a classical education in computer science, are of great consequence in the traditional methods of arithmetizing syntax.
+
+```
+let run=code=>console.log(code,'\n',eval(code)) // for examples
+
+// pairs
+let theEmptyPair={}
+, isEmpty = it => it == theEmptyPair
+, pairOf = (it, that) => [it, that]
+, leftOf = it => isEmpty(it) ? it : it[0]
+, rightOf = it => isEmpty(it) ? it : it[1];
+
+// sequences as pairs
+let theEmptySequence = theEmptyPair
+, isEmptySequence = isEmpty
+, singletonSequenceOf = it => pairOf(it, theEmptySequence)
+, headOf = leftOf
+, restOf = rightOf
+, concatOf = (it, that) => isEmptySequence(it) ? that 
+  : pairOf(headOf(it), concatOf(restOf(it), that))
+, prependSingletonOf = (it, that) =>
+   concatOf(singletonSequenceOf(it), that)
+, appendSingletonOf = (it, that) =>
+   concatOf(that,singletonSequenceOf(it));
+
+// stacks as pairs
+let theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, singletonStackOf = it => pairOf(theEmptyStack, it)
+, pushOf = pairOf
+, dropOf = leftOf
+, topOf = rightOf
+, secondOf = stack => topOf(dropOf(stack))
+, drop2Of = stack => dropOf(dropOf(stack))
+
+, prependOf = stack => pushOf(drop2Of(stack)
+  , prependSingletonOf(topOf(stack), secondOf(stack)))
+, appendOf = stack => pushOf(drop2Of(stack)
+  , appendSingletonOf(topOf(stack), secondOf(stack)));
+
+// letters and Runes
+let theEmptyRune = theEmptyPair
+, isEmptyRune = isEmpty
+, theOpenRune = pairOf(theEmptyPair, theEmptyRune)
+, isOpenRune = it => !isEmpty(it) && isEmpty(leftOf(it)) && isEmptyRune(rightOf(it))
+, theCloseRune = pairOf(theEmptyPair, theOpenRune)
+, isCloseRune = it => !isEmpty(it)&&isEmpty(leftOf(it))&&isOpenRune(rightOf(it))
+
+, theEmptyLetter=''
+, isEmptyLetter = it => it == theEmptyLetter
+, theOpenParen = '('
+, isOpenParen = it => it == theOpenParen
+, theCloseParen = ')'
+, isCloseParen = it => it == theCloseParen
+
+, stringOf = (...letters) => 
+   letters.length ? letters.shift() + stringOf(...letters) : theEmptyLetter
+, firstLetterOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters[0]
+, restLettersOf = letters => isEmptyLetter(letters) ? theEmptyLetter : letters.slice(1)
+
+, runeOf = letter => isOpenParen(letter) ? theOpenRune
+  : isCloseParen(letter) ? theCloseRune
+  : theEmptyRune
+
+, letterOf = rune => isOpenRune(rune) ? theOpenParen
+  : isCloseRune(rune) ? theCloseParen
+  : theEmptyLetter
+
+, runesOf = letters => isEmptyLetter(letters) ? theEmptySequence
+  : prependSingletonOf(runeOf(firstLetterOf(letters)), runesOf(restLettersOf(letters)))
+
+, lettersOf = runes => isEmptySequence(runes) ? theEmptyLetter
+  : stringOf(letterOf(headOf(runes)), lettersOf(restOf(runes)))
+
+run('lettersOf(runesOf("(()())() this should be ignored"))');
+
+// read and print sequences
+let readOpenRuneOf = (stack, runes) => 
+   readSequenceOf(pushOf(stack,theEmptySequence), restOf(runes))
+
+, readCloseRuneOf = (stack, runes) =>
+   readSequenceOf(appendOf(stack), restOf(runes))
+
+, readSequenceOf = (stack, runes) => 
+  isEmptySequence(runes) ? headOf(topOf(stack))
+  : isOpenRune(headOf(runes)) ? readOpenRuneOf(stack,runes)
+  : isCloseRune(headOf(runes)) ? readCloseRuneOf(stack, runes)
+  : readSequenceOf(stack, restOf(runes))
+, readOf = runes => readSequenceOf(theEmptyStack, runes);
+
+let parenOf = runes => prependSingletonOf(theOpenRune
+    , appendSingletonOf(theCloseRune, runes))
+
+, printSequenceOf = sequence =>
+  isEmptySequence(sequence) ? theEmptySequence
+  : concatOf(printOf(headOf(sequence))
+    , printSequenceOf(restOf(sequence)))
+
+, printOf = sequence =>
+  isEmptySequence(sequence) ? parenOf(theEmptySequence)
+  : parenOf(printSequenceOf(sequence))   
+
+, read = letters => readOf(runesOf(letters))
+, print = sequence => lettersOf(printOf(sequence));
+
+run("lettersOf(parenOf(runesOf('(()()())')))")
+run("print(read('()'))")
+run("print(read('(()(())())'))")
+run("print(read('(())(()(())())'))")
+run("print(read('(()(())())((()))'))")
+run("print(read('))))(('))")
+```
+
+This appears to have simplified definitions while also pointing to general methods e.g. the definitions of empty, open, and closed runes are ripe for inductive generalization as was done in past versions that gave the alphabet as a javascript array on which functions of search were invoked.
+
+
 ### 2025 0509 1429
 
-Here is the completed code from yesterday's work on my little lisp.
+Here is the completed code from yesterday's work  [2025 0508 2207](#2025-0508-2207) on my little lisp.
 I also put the appropriate printer code that was missing from the last note into that note.
 
 ```
