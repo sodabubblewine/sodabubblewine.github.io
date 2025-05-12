@@ -1,6 +1,21 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0511
+
+### 2025 0511 1844
+The work that must be done on my paper on logic can not be done here.
+It has done best when worked on with B. F. Skinner's Thinking Aid.
+The thinking aid is nothing more nor less than a way of arranging index cards onto a sturdy flap of a folder with masking tape so that each part of a paper can be flipped to so as to cover up all others and leave labels for each section visible.
+Items can be easily moved around or replaced.
+
+Right now I am doing a grand compression of those elements that have settled down and not undergone many edits e.g. definitions and examples of denotative functional compounds.
+Another change is in the method of arranging the cards.
+In my first experiment with Skinner's thinking aid, I only put the cards on the outside of a folder whose contents were loose notes which primed and prompted the cards I made.
+Now I am arranging the cards on the inside of the folder so that I can get two full pages when laid flat.
+
+Upon getting eight cards down to three I couldn't stand writing anymore.
+
 ## 2025 0510
 
 ### 2025 0510 1238
