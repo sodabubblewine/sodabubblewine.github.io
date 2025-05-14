@@ -1,6 +1,31 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0514
+
+### 2025 0514 1345
+This entry ended up contributing to the work on my paper on logic from [2025 0510 1238](#2025-0510-1238).
+
+The past two days have been filled with private conversations and wayward contemplations that were sadly ungoverned by the work done here.
+It happens, and yet, the more often it happens, the less often I stumble into a tiny success in any of my little endevours.
+
+For example, I've failed to note my responses to watching more of the series I mentioned in [Bryan Magee’s “Men of Ideas” and “The Great Philosophers”](#2025-0505-1709-bryan-magees-men-of-ideas-and-the-great-philosophers).
+I've also failed to note the arrival of Kir, Raven, and Schofield's "The Presocratic Philosophers", or the multiple rereadings of key parts of Quine's fourth edition of "Methods of Logic" (for all the times I've read the book from cover to cover there is still more than I can carry with me without referencing it).
+
+I see each of these unnoted events as failures to hit where I have aimed.
+Thankfully, a few bits of minor productivity do carry me onward if not wayward.
+
+As mentioned in my last note on the evolution of my paper on logic, I can not wait to finish the sections covering denotative functional duality prior to starting on the new grammatical category of existential closures.
+Yet, such duality is more a labor saving device (it multiplies the result of any result on functional compounding by two) than a milestone.
+The milestone, under the grammatical definition of valdity as substitution on supplementation of lexicon (by some finite list of previously unintroduced predicates), is the equivalence of each funtional compound to one in the grammatical category of alternational normal forms and conjunctive normal forms yields a decision procedure for validity as "An n component chain is valid waow its full alternational normal form is compounded of n to the power of two clauses".
+This retreives, without oblique references to items purported by the phrase "denotative values" or "truth values", the breadth and depth of methods of truth tables and, much more importantly, truth trees, though, to be clear, the law of validity just stated is the carry over of truth tables, and the grammatical import of truth three methods has yet to be described conspicuously as such (by anyone).
+
+The grammatical import of truth trees are a consequence of alternational and conjunctive development which are already presented in the parts of the paper on logic that I've produced thus far.
+Such methods are generalizations of Gentzen's sequents along the lines of Quine's method of existential conditionals which is a decision procedure for Boolean statement schemata.
+I introduce sequents as special conditionals long before reaching out from Quine's main method to those of natural deduction, which I expect to show are nothing more than the application of Quine's main method to sequents so intorduced (for me, a sequent is to be a denotative functional compound whose antecedents components are conjoined as the antecedent of a conditional whose consequent is the alternation of the consequent components of the sequent).
+The parallels between implications and conditionals are the smooth passage from Quine's main method applied to sequents and the methods of natural deduction.
+
+
 ## 2025 0512
 
 ### 2025 0512 1400
