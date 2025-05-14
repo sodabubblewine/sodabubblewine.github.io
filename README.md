@@ -3,6 +3,11 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0514
 
+### 2025 0514 1420
+
+Quine's main method corresponds, in a significant way that I have not fully grasped, to Aristotle's principle of noncontradiction: this also happens to be the crux of the methods of logical programming.
+The demonstration of the relevant inconsistency constructs, by conjunctive description that comes out to a generalization of 'the primitive recursive value of a the functional predicates of a given theory', the item whose existence is presumably implied by noncontradiction. 
+
 ### 2025 0514 1345
 This entry ended up contributing to the work on my paper on logic from [2025 0510 1238](#2025-0510-1238).
 
@@ -19,7 +24,7 @@ As mentioned in my last note on the evolution of my paper on logic, I can not wa
 Yet, such duality is more a labor saving device (it multiplies the consequences of any result on functional compounding by two) than a milestone.
 The milestone, under the grammatical definition of valdity as substitution on supplementation of lexicon (by some finite list of previously unintroduced predicates), is the equivalence of each funtional compound to one in the grammatical category of alternational normal forms and conjunctive normal forms.
 It yields a decision procedure for validity: a n component chain is valid waow its full alternational normal form is compounded of n to the power of two clauses.
-This retreives, without oblique references to items purported by the phrase "denotative values" or "truth values", the breadth and depth of methods of truth tables and, much more importantly, truth trees, though, to be clear, the law of validity just stated is the carry over of truth tables, and the grammatical import of truth three methods has yet to be described conspicuously as such (by anyone).
+This retreives, without oblique references to items purported by the phrase "denotative values" or "truth values", the breadth and depth of methods of truth tables and, much more importantly, truth trees, though, to be clear, the law of validity just stated is the carry over of truth tables, and the grammatical import of truth tree methods has yet to be described conspicuously as such (by anyone).
 
 The grammatical import of truth trees are a consequence of alternational and conjunctive development which are already presented in the parts of the paper on logic that I've produced thus far.
 Such methods are generalizations of Gentzen's sequents along the lines of Quine's method of existential conditionals which is a decision procedure for Boolean statement schemata.
