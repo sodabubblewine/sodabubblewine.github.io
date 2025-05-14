@@ -1,6 +1,56 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0512
+
+### 2025 0512 1400
+This continues work on my little lisp from [2025 0509 1722](#2025-0509-1722).
+
+It occurred to me in the shower that I can use the defined operations for manipulating concatenations of letters as javascript strings to give some interesting and important definitions of basic predicates and functions on concatenations.
+It also occurred to me that this fits perfectly into both Quine's "Concatenation as a Basis for Arithmetic" as well as my outlook on bit strings and binary trees.
+
+The first function which hit me was one that checks whether a letter is in a concatenation of letters.
+This led me to a definition that either constructs directly the appropriate rune, constructed step by step, and then to Quine's definition of tallies in a theory of concatenation with at least two distinct atoms.
+
+Since there can be, and are, many distinct atoms in the concatenations of letters as javascript strings, a basic predicate of identity of letters is unavoidable, or at least unadvisable at this moment.
+The following sketch of code appeard.
+
+```
+let isIdenticalLetter = (it, that) => it == that
+, isLetterOf = (it, that) => !isEmptyLetter(that) 
+  && (isIdenticalLetter(it,firstLetterOf(that))
+     || isLetterOf(it,restLettersOf(that)))
+, theAlphabet = '() 0123456789abcdefghijklmnopqrstuvwxyz'
+, isLetter = it => isLetterOf(it, theAlphabet)
+, isIdenticalLetters = (it, that) =>
+  (isEmptyLetter(it) && isEmptyLetter(that))
+  || (isIdenticalLetter(firstLetterOf(it), firstLetterOf(that))
+     && isIdenticalString(restLettersOf(it), restLettersOf(that)))
+```
+
+The alphabet is no longer a javascript array each item of which is a javascript string: it is now just a javascript string.
+
+There are two next steps that appeared: 1) start with the basic predicate 'x concatenates y with z' in javascript and build the rest from there so that it is closer to traditional theories of concatenation (the newer theories focus on a family of functions that prepend or appened a single atom/letter to its argument, and while something like that is easier with modern programming langauges to set up, it does not leverage the power of pure predicate logic like the older techniques which have their origins through Tarski's theories of concatenation), and 2) define the extended versions 'letterOf' and 'lettersOf' and 'tallyOf' etc.
+
+The predicate 'x concatenates y with z' is defined as
+```
+let isConcatenationOf = (x,y,z) => x == y.concat(z);
+```
+then, the empty string, or empty letter as I've been calling it, is the item denoted by the following predicate.
+```
+let isEmptyString = x => isConcatenationOf(x,x,x);
+```
+Somewhere while I was coding these things up it finally occurred to me that 'Of' is actually just a mark of a relative predicate, and not a good indicator of what is classically taken as a function value: that is done by 'the' as in singular descriptions, but these are not to be confused with functions and I am reluctant to conflate matters further.
+But I shall, just to see how it goes.
+
+```
+let theConcatenationOf = (x,y) => x.concat(y)
+, theEmptyConcatenation = '';
+```
+
+Social commitments ended this entry prior to any conclusions.
+
+
 ## 2025 0511
 
 ### 2025 0511 1844
