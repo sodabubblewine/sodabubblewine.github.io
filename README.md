@@ -68,7 +68,7 @@ let theAlphabet = '() 0123456789abcdefghijklmnopqrstuvwxyz';
 The following new definitions for making runes and letters skip over the intermediate steps of working with tallies.
 Even though such methods otherwise would be instructive, the definitions given are basic methods of "finding where a thing is at" and are more than good enough.
 ```
-, runeHelpOf = (it, abc) =>
+let runeHelpOf = (it, abc) =>
  isEmptyConcatenation(abc) || isIdenticalConcatenation(it, firstLetterOf(abc)) ? theEmptyPair
  : pairOf(theEmptyPair, runeHelpOf(it, restLettersOf(abc)))
 , runeOf = it => runeHelpOf(it, theAlphabet)
@@ -132,7 +132,7 @@ let parenOf = runes => prependSingletonOf(theOpenRune
 
 , printOf = sequence =>
   isEmptySequence(sequence) ? parenOf(theEmptySequence)
-  : parenOf(printSequenceOf(sequence))   
+  : parenOf(printSequenceOf(sequence))
 
 , read = letters => readOf(runesOf(letters))
 , print = sequence => lettersOf(printOf(sequence));
