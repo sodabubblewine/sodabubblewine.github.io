@@ -3,6 +3,174 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0514
 
+### 2025 0514 2226
+This continues my work on my little lisp from [2025 0512 1400](#2025-0512-1400).
+
+Much as you do when you are solving a problem in physics, I shall write down the basic programs that have evolved thus far.
+This note adds a layer to the onion of grammars growing out the primitive parenthetical language.
+
+```
+// pairs
+let theEmptyPair={}
+, isEmpty = it => it == theEmptyPair
+, pairOf = (it, that) => [it, that]
+, leftOf = it => isEmpty(it) ? it : it[0]
+, rightOf = it => isEmpty(it) ? it : it[1];
+
+// sequences as pairs
+let theEmptySequence = theEmptyPair
+, isEmptySequence = isEmpty
+, singletonSequenceOf = it => pairOf(it, theEmptySequence)
+, headOf = leftOf
+, restOf = rightOf
+, concatOf = (it, that) => isEmptySequence(it) ? that 
+  : pairOf(headOf(it), concatOf(restOf(it), that))
+, prependSingletonOf = (it, that) =>
+   concatOf(singletonSequenceOf(it), that)
+, appendSingletonOf = (it, that) =>
+   concatOf(that,singletonSequenceOf(it));
+
+// stacks as pairs
+let theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, singletonStackOf = it => pairOf(theEmptyStack, it)
+, pushOf = pairOf
+, dropOf = leftOf
+, topOf = rightOf
+, secondOf = stack => topOf(dropOf(stack))
+, drop2Of = stack => dropOf(dropOf(stack))
+
+, prependOf = stack => pushOf(drop2Of(stack)
+  , prependSingletonOf(topOf(stack), secondOf(stack)))
+, appendOf = stack => pushOf(drop2Of(stack)
+  , appendSingletonOf(topOf(stack), secondOf(stack)));
+```
+Eventually these basic functions will settle down and an instructive sequence of tiny steps will lead the novice through these methods of programming.
+What follows are the new basic functions on concatenations as javascript strings.
+A small change in initial defintions is given to better follow the theory of concatenations like those of Tarski.
+```
+// letters, strings, concatenations and runes
+let isConcatenationOf = (x,y,z) => x == y.concat(z)
+, isEmptyConcatenation = x => isConcatenationOf(x,x,x)
+, theEmptyConcatenation = ''
+, isIdenticalConcatenation = (x,y) => 
+   isConcatenationOf(x,y,theEmptyConcatenation)
+, theConcatenationOf = (x,y) => x.concat(y)
+
+, stringOf = (...letters) => theEmptyConcatenation.concat(...letters)
+, firstLetterOf = letters => isEmptyConcatenation(letters) ? theEmptyConcatenation : letters[0]
+, restLettersOf = letters => isEmptyConcatenation(letters) ? theEmptyConcatenation : letters.slice(1)
+```
+Now, the alphabet is introduced as a special concatenation.
+```
+let theAlphabet = '() 0123456789abcdefghijklmnopqrstuvwxyz';
+```
+The following new definitions for making runes and letters skip over the intermediate steps of working with tallies.
+Even though such methods otherwise would be instructive, the definitions given are basic methods of "finding where a thing is at" and are more than good enough.
+```
+, runeHelpOf = (it, abc) =>
+ isEmptyConcatenation(abc) || isIdenticalConcatenation(it, firstLetterOf(abc)) ? theEmptyPair
+ : pairOf(theEmptyPair, runeHelpOf(it, restLettersOf(abc)))
+, runeOf = it => runeHelpOf(it, theAlphabet)
+
+, letterHelpOf = (it, abc) => isEmptyConcatenation(abc) ? theAlphabet
+ : isEmpty(it) ? firstLetterOf(abc)
+ : letterHelpOf(rightOf(it), restLettersOf(abc))
+, letterOf = it => letterHelpOf(it,theAlphabet)
+
+, runesOf = letters => isEmptyConcatenation(letters) ? theEmptySequence
+  : prependSingletonOf(runeOf(firstLetterOf(letters))
+    , runesOf(restLettersOf(letters)))
+
+, lettersOf = runes => isEmptySequence(runes) ? theEmptyConcatenation
+  : stringOf(letterOf(headOf(runes)), lettersOf(restOf(runes)))
+```
+Then an example, which deviates from the prior example by including a 'not':
+```
+lettersOf(runesOf("(()())() this should not be ignored")) 
+ (()())() this should not be ignored
+```
+Which is a good sign (sadly, not a proof).
+
+The change in alphabet has led to a slight change in the placement and form of the prior definitions of "theOpenRune" and "theCloseRune": it is now with the definitions of reading and printing sequences.
+
+```
+// read and print sequences
+let theOpenRune = theEmptyPair
+, isOpenRune = isEmpty
+, readOpenRuneOf = (stack, runes) => 
+   readSequenceOf(pushOf(stack,theEmptySequence), restOf(runes))
+
+, theCloseRune = pairOf(theEmptyPair, theOpenRune)
+, isCloseRune = it => !isEmpty(it) && isEmpty(leftOf(it)) && isOpenRune(rightOf(it))
+, readCloseRuneOf = (stack, runes) =>
+   readSequenceOf(appendOf(stack), restOf(runes))
+```
+The default method of reading runes which were not open or close runes was to skip over them.
+Now any nonparenthetical runes are added to the end of the sequence under construction.
+This makes for minor alterations of the method of reading sequences.
+```
+let readDefaultRune = (stack, runes) =>
+   readSequenceOf(appendOf(pushOf(stack,headOf(runes))), restOf(runes))
+
+, readSequenceOf = (stack, runes) => 
+  isEmptySequence(runes) ? headOf(topOf(stack))
+  : isOpenRune(headOf(runes)) ? readOpenRuneOf(stack,runes)
+  : isCloseRune(headOf(runes)) ? readCloseRuneOf(stack, runes)
+  : readDefaultRune(stack, runes)
+, readOf = runes => readSequenceOf(theEmptyStack, runes);
+```
+The rest is as it was.
+```
+let parenOf = runes => prependSingletonOf(theOpenRune
+    , appendSingletonOf(theCloseRune, runes))
+
+, printSequenceOf = sequence =>
+  isEmptySequence(sequence) ? theEmptySequence
+  : concatOf(printOf(headOf(sequence))
+    , printSequenceOf(restOf(sequence)))
+
+, printOf = sequence =>
+  isEmptySequence(sequence) ? parenOf(theEmptySequence)
+  : parenOf(printSequenceOf(sequence))   
+
+, read = letters => readOf(runesOf(letters))
+, print = sequence => lettersOf(printOf(sequence));
+```
+The examples let it be shown that nothing has changed from when they were last run.
+```
+lettersOf(parenOf(runesOf('(()()())'))) 
+ ((()()()))
+print(read('()')) 
+ ()
+print(read('(()(())())')) 
+ (()(())())
+print(read('(())(()(())())')) 
+ (())
+print(read('(()(())())((()))')) 
+ (()(())())
+print(read('))))((')) 
+ ()
+```
+None of these include a space rune so that has yet to be treated as any special case.
+But, the next example with other than close or open runes paves the way for the next layer of the onion mentioned at the beginning of this note.
+```
+print(read('(this is a test)')) 
+ ((()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()()()()()()()()()()()()()()()()()()())(()()()()()()()()()()()()()()()()()()()()())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()())(()()()()()()()()()()()()()()()()()()()()())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()())(()()()()()()()()()()()()())(()())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()()()()()()()()()()()()()()()())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()))
+```
+The method of making runes is now revealed as a way of reinforcing the parenthetical reader and printer: nonparenthetical runes are read as sequences of of empty sequences.
+This opens up the following more sophistocated methods without entailing further alterations to the parenthetical reader and printer.
+```
+letterOf(headOf(read('(this is a test)'))) 
+ t
+letterOf(headOf(restOf(read('(this is a test)')))) 
+ h
+lettersOf(read('(this is a test)')) 
+ this is a test
+```
+This took far longer to finish than I had aimed at, but I'm happy to be this far.
+Though it is easy to go back and see that I've been near a similar target in past iterations, they relied more on peculiarities of javascript than on the basic logic of a design of a lisp like language which does not depend on its implementation.
+
 ### 2025 0514 1420
 
 Quine's main method corresponds, in a significant way that I have not fully grasped, to Aristotle's principle of noncontradiction: this also happens to be the crux of the methods of logical programming.
