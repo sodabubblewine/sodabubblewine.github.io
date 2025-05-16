@@ -1,6 +1,39 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+
+## 2025 0516
+
+### 2025 0516 1348
+
+This fragment of a note was written yesterday as I began to read the 1994 book "The Bell Curve" by Richard J. Herrnstein and Charles Murray.
+I stopped writing on it because it no longer presented itself as scientific literature.
+It became obvious that it is a part of nationlistic literature more so than anything scientific.
+Thus, a deep reading has been delayed for when I address the collection of nationalistic writers e.g. Thomas Sowell, Milton Friedman, and Francis Fukuyama.
+
+Though their writings contain copious references to what clearly purports to be scientific literature, there is nothing in the design of their documents which brings up science as the primary source of control over what they have to say.
+Much of what is written is of this sort, and even much of what is written here by me is of this sort.
+
+We, as humans, speak under the control of a wide variety of social environments, and, through them, have contact with a wide variety of contingencies of the world.
+Not all of them are scientific.
+Not all of them purport to be under scietific control.
+Some do, and among those, there are some which do so to share, by association, in the strengths of scientific practice.
+Whether they are the result of scientific practices, as in a theoretical analysis of the social consequences of a science of behavior, is important to me because of the control that scientific practices have over my own behavior as a reader and writer.
+
+A copy of Richard Herrnstein's 1973 "I.Q. in the Meritocracy" is arriving soon and it purports to be, like "The Bell Curve", under the control of scientific practices.
+Until it arrives I have stopped writing on "The Bell Curve" and have simply been reading it as time has allowed.
+
+Here is the fragment:
+
+> 2025 0515 1911 The Bell Curve
+> For much of the past year I have avoided digging into Herrnstein's work because there is so much of it which is incompatible with the science of behavior as a science of behavior rather than a science of cognition (which is nothing more than a reincarnation of a science of mind but with that ever present seasoning of "computational" or "informational" sprinkled about).
+> But, the genetic control of behavior continues to be poorly dealt with, as in Charles Murray's 2020 book "Human Diversity: The biology of gender, race, and class", and the less I read the less I'm likely to know.
+> 
+> The general problem is simple: there is no room in scientific practices for events happening in other dimensions other than those under investigation.
+> People are no more haunted by more or less intelligent minds than houses are haunted by more or less malevolent ghosts.
+To say so is to already 
+
+
 ## 2025 0514
 
 ### 2025 0514 2226
