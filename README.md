@@ -4,6 +4,38 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0516
 
+### 2025 0516 1352
+This is an incomplete and, it would appear, incoherent note that continues work on my paper on logic from [2025 0514 1345](#2025-0514-1345).
+
+Logic is the leverarm of language, and those who speak in it can lift the weight of the world with their words.
+There are multiple ways of specifying valid verbal behavior, but only two are mentioned to most modern students: the model theoretic and the proof theoretic.
+Under appropriate assumptions, these methods are shown to be equivalent.
+In most cases, both methods are presented schematically so that upon establishing one or the other validity there is a secondary step to projecting one or the other definition of validity to the verbal behavior that occurs in logical practice.
+
+It is with great sadness that the model theoretic methods are called out as semantic and the proof theoretic methods are called out as syntactic.
+Neither the word 'semantic' nor the word 'syntactic' are worthy of a place in logic except from its application e.g. in formalisms, perhaps in those special formalisms called "axiomatic systems", of model theories (set theories within which the semantic methods are derived by interpretation) or of syntactic theories (concatenation theories within which the syntactic methods are derived by calculation).
+
+Logic is linguistic like grammar.
+It tells us something about the reinforcing practices of verbal communities.
+Principles aimed at verbal communities generally are said to be transcendent, and those aimed at a single community are said to be immanent.
+
+On a given occasion the response "Red" and the response "Round" are reinforced by a listener, or punished, 
+
+To say of a denotative functional compound that it denotes somewhere or that it denotes everywhere is to do something like the implicit quantifier notation used in logic programming 
+
+* <https://www.youtube.com/watch?v=MsuaWozZowg>
+
+
+
+The definition of validity of a functional compound must be ammended to explicitly mention "denotes everywhere" where "denotes" was always short for in previous editions.
+The reason for this is that "consistency" as "some functional substitutions denote" must be altered to "some functional substitutions denote somewhere" so that problems of existential closure can be dealt with uniformly through what Quine calls "Boolean Term Schema".
+
+
+Compound Whereabouts and Quine's Functional Normal Form
+x_(y_(z)uv_(ws)) becomes ((z),u,(w,s))
+this is important to Hilbert and Bernay's completeness, especially as presented in Kleene's "Introduction to Metamathematics".
+write on quine's explanation of hilbert and bernay's completeness in "selected papers on logic"
+
 ### 2025 0516 1348
 
 This fragment of a note was written yesterday as I began to read the 1994 book "The Bell Curve" by Richard J. Herrnstein and Charles Murray.
