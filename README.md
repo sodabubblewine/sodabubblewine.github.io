@@ -2,6 +2,35 @@
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
 
+## 2025 0518
+
+### 2025 0518 1335
+Another scrapped entry from yesterday that I was unable to complete and which went unpublished.
+It continues work on my logic paper, but sadly rests as a mere record of my past about which I know so very little even this single day later.
+Recently, I have struggled to find the large chunks of time which tend to release the greatest potential from any writing that I might do.
+As much as there is a temporary moment of frustration it is so common that it almost goes without saying except in these peculiar circumstances where detailed records of responses are demanded.
+
+>2025 0517 1625
+> A lot of work on my paper on logic is occuring at once and I have not been able to complete it all.
+> I am doing my best to make a record of all the responses which appear with respect to it.
+> This continues the last entry on the paper [2025 0516 1352](#2025-0516-1352).
+>
+> Quantificational logic, as opposed to predicate (functor) logic, defines validity with respect to the truth of its sentences (relative to provisions for grammatical constructions with free variables e.g. treating them as dummy singular terms or as abbreviations of their universal closures).
+> Predicate logic defines validity with respect to the denotation of its predicates: there are no variables and hence no provisions for free variables (and, happily, no complex rules of substitution for bound variables).
+>
+> Quantificational logic seems to predicate the quotation of a sentence of the predicate 'is true' as in "'it is raining or it is not raining' is true".
+> By Tarski's analysis, this sentence is equivalent to "'it is raining' is true or 'it is not raining' is true" which is itself equivalent to, by the same analysis, "'it is raining' is true or 'it is raining' is not true" whihc, as an instance of a truth functionally valid schema, is true (we also know from Tarski's analysis that the predicate 'is true', which occurs repeatedly throughout the quoted equivalents, is not coextensive with the predicate occuring right before this parenthetical).
+> Note, the use of 'predicate' and 'sentence' picks out nothing but what is spelled out by a quotation e.g. 'is true' is a predicate and 'it is raining' is a sentence.
+>
+> The sentence "it is raining or it is not raining" is itself an instance of a truth functionally valid schema and hence it is true without recourse to the intermediate steps of the argument by equivalents in the previous paragraph.
+> On the other hand, the sentence "it is raining" is not an instance of a valid schema (either when 'it' is taken as a dummy singular term or when the whole is taken as an abbreviation for "each item is it such that it is raining") i.e. whether, exclusively, 'it is raining' is true or 'it is not raining' is true, or, directly, whether, exclusively, it is raining or it is not raining (exclusivity has nothing in particular to do with this example, whether 'or' is read exclusively or not in the previous paragraph).
+> These two examples demonstrate the difference between a triviality and the potential urgency of an umbrella.
+>
+> Predicate logic, at first, seems to predicate the quotation of a predicate and some chunk of the world of the two place predicate 'is true of', aka 'denotes', as in "'rain or not rain' denotes this" which is equivalent to "'rain' dentoes this or 'not rain' denotes this".
+> Equivalently, "'rain' denotes this or 'rain' does not denote this"
+> Now, instead of being an instance of a truth-functionally valid schema, the compound predicate "'rain' denotes this or 'rain' does not denote this"
+
+
 ## 2025 0516
 
 ### 2025 0516 1352
