@@ -4,6 +4,31 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0518
 
+### 2025 0518 1403 Scott Atran's Cognitive foundations of natural history
+Another great recommendation from R.P. arrived yesterday: Scott Atran's 1990 "Cognitive foundations of natural history: towards an anthropology of science".
+
+The introduction unveils the inspiration for the rest of the text: the theories of Chomsky and Piaget are nonconsistent.
+A nonconsistency is constructed of science from Chomsky's premise that 'each fundamental type of human-knowledge arises from a specialized cognitive aptitude" (pg. x Artran 'cognitive foundations') and Piaget's premise that "the innate and universal foundations of human thinking reduce to an undifferentiated intelligence, which is responsible in the same way for all cognitive operations" (pg. ix) from which talk of an intelligent scientist goes sour.
+
+It is already clear from teh introduction that those items of Chomsky's theory which Atran keeps upon rejecting the contrasting principle from Paiget's theory are those which root themselves in teh behaviorist tradition i.e. the contingencies of the world, and Earth in particular, are such that global uniformities are selected without any centralized coordination so that the practices of science are as much a consequence of the evolved tendancy of organisms to bring the world (of which other members of their species are a part) under their control.
+This permits a diversity among practices of presciences, and admits of evolution therein, while explaining those features across cultures that prompt those like Piaget to speak of a unifying intellect.
+
+It is the contingencies of the world which select uniformities (for reasons that may be initially capricious) and which maintain them: not some ephemeral intellect.
+The problem for Chomsky, and hence for Atran in support of him, shall be looking beyond the individual to the contingencies of natural, operant, and social selection and variation that explain how bits of behaving biology build and maintaining scientific communities.
+
+The first chapter points to the mistake which is easily corrected by the radical behaviorist: it is not some essence of common sense that haunts the brains of the masses, but rather the vernacular as the language of the household where language is nothing more, nor less, than teh reinforcing practices of a verbal community.
+When a person is said to be "using common sense" we can look at their speach and trace its origins through the listeners that selected it from its past variations.
+Correspondance between common sense as speaking in the vernacular is easily established by examining the world upon which we speak.
+It is one that is filled with other members of our species and which has been sufficiently stable so as to not only permit the survival of the species but also the survival of those verbal practices which compose cohesive cultures.
+
+The practices between cultures do not always carry over perfectly because the world is not so uniform, e.g., as to select exactly the same form of response across great distances.
+Geography is not sufficiently uniform so as to strengthen vernacular which is diverse in some places, e.g. as when it was established in 2010 in [Chapter 16 entitled "Franz Boas and Inuktitut Terminology for Ice and Snow: From the Emergence of the Field to the 'Great Eskimo Vocabulary Hoax' by Igor Krupnik and Ludger Müller-Wille](https://gwern.net/doc/psychology/linguistics/2010-krupnik.pdf) from the 2010 book ["SIKU: Knowing Our Ice Documenting Inuit Sea Ice Knowledge and Use" ](https://link.springer.com/book/10.1007/978-90-481-8587-0) that there are a larger number of root words for their world of ice and snow than in other languages of the world.
+
+Vocal musculature is a critical uniformity among organisms of a given species that permits verbal communities to acquire new members whether they are old or young.
+
+As I mentioned in my last entry, there are only tiny chunks of writing that I can do right now and though that frustrates me I am at least glad to have gotten this bit out.
+
+
 ### 2025 0518 1344 Copleston's History of Philosophy
 Last night I watched more of "The Great Philospohers" from 1987 which I mentioned in [Bryan Magee’s “Men of Ideas” and “The Great Philosophers”](#2025-0505-1709-bryan-magees-men-of-ideas-and-the-great-philosophers).
 Frederick Copleston spoke on Schopenhauer and Magee mentioned Copleston's series "A History of Philosophy" which is now eleven volumes but which was published originally as nine between 1946 and 1975.
