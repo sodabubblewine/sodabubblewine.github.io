@@ -4,6 +4,30 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0518
 
+### 2025 0518 1344 Copleston's History of Philosophy
+Last night I watched more of "The Great Philospohers" from 1987 which I mentioned in [Bryan Magee’s “Men of Ideas” and “The Great Philosophers”](#2025-0505-1709-bryan-magees-men-of-ideas-and-the-great-philosophers).
+Frederick Copleston spoke on Schopenhauer and Magee mentioned Copleston's series "A History of Philosophy" which is now eleven volumes but which was published originally as nine between 1946 and 1975.
+Here is the link to the wikipedia page: <https://en.wikipedia.org/wiki/A_History_of_Philosophy_(Copleston)>.
+
+It will take some time for me to get through it all, as it takes me so very long to read even one book in the way that I do (like a loom weaving threads from dozens of books at a time).
+In anticipation I shall do as I do and write out the volumes titles and dates of publication:
+
+1. 1946 Greece and Rome
+2. 1950 Augustine to Scotus
+3. 1953 Ockham to Suarez
+4. 1958 Descartes to Leibniz
+5. 1959 Hobbes to Hume
+6. 1960 Wolff to Kant
+7. 1963 Fichte to Nietzsche
+8. 1966 Bentham to Russell
+9. 1975 Maine de Biran to Sartre
+10. 1986 Russian Philosophy
+11. 1956 Logical Positivism and Existentialism
+
+They are sold as a series of eleven books though they were originally published as a series of nine.
+The last two were added into the series in 2003 for reasosn that I do not yet know.
+
+
 ### 2025 0518 1335
 Another scrapped entry from yesterday that I was unable to complete and which went unpublished.
 It continues work on my logic paper, but sadly rests as a mere record of my past about which I know so very little even this single day later.
