@@ -4,6 +4,102 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0518
 
+### 2025 0518 1857
+This is a little experiment where I try to get out the distinction between the two specializations of 'denotes' which are 'denotes somewhere' and 'denotes everywhere'.
+Usually when I write on something like this, the context is already available to me in that I write after having looked exactly where the problem I am solving actually occurred.
+In this case, I have not looked at my notes on my paper on logic.
+Thus, I am without context other than that which I bring to this keyboard unsupplemented by recent exposure to the problem.
+
+The way the paper is designed now, it introduces denotative functional methods of compounding components in the same way that truth functional methods of compounding components is introduced along classical lines except it avoides the most familiar appeal to truth values.
+The definition of truth functional compounding is usually given in the following way: a method of compounding components is truth functional if the truth value of the compound is a function of the truth values of the components.
+So, in a sentence like "It is red and it is round." the compound is the whole sentence and it is compounded, from a logical grammar of which 'and' is an atom, of the components 'it is red' and 'it is round' and the truth value of 'it is red and it is round' is a function of the truth values of 'it is red' and 'it is round'.
+Assigning truth values to the components is one way of interpreting them, and calculating the truth value of the compound with reference to a truth table is one way of specifying the truth function which carries the truth values of the components to the truth value of the compound.
+
+Whether 'it is red' is assigned the value of truth or falsity is often confronted as a problem of interpretation, though when the sentence is given directly and not through the indirect methods of schematisms, e.g. 'x is F' or 'it is F' or just 'Fx', then the problem of interpretation is seen in its more familiar form e.g. selecting a specific item which 'x' or 'it' designates and specifying a particular predicate which is substituted for 'F', in this case substituting 'red' for 'F' in 'it is F' gives 'it is red' and taking 'it' as designating a red thing results in the assignment of truth to 'it is red'.
+If it so happens that under this same interpretation 'it' designates a round thing then the compound 'it is red and it is round', which is an instance of the schemata 'it is F and it is G' or 'Fx and Gx' where 'F' is substituted by 'red' and 'G' is substituted by 'round', then since both the components 'it is red' and 'it is round' are assigned truth and since the connective 'and' marks the compound as receiving the value of truth where and only where each of its components are assigned the value truth, then the compound 'it is red and it is round' is interpreted as true.
+
+Under these methods, the truth functional methods that go out of their way to introduce abstract objects called truth values and functions there of, each assignement of truth values to the truth functional components of a compound fixes the truth value of the compound.
+Now, having gone out of my way to describe this method, I am left saying that this is not the path taken here.
+Nor, and this is the crux of the matter, is it the strongest path that can be taken through the methods of logic.
+In fact, taking this path has come to weaken logical and mathematical practices in ways which are largely unseen but which are of great consequence: they've all but broken the most powerful links between language and logic.
+This is unexpected for many reasons, but the most relevant reason is this: those who are most familiar with the links between language and logic are precisely the ones who are most likely to break up the links between them and least likely to point up the most powerful links.
+
+How this has come to pass is a pressing problem and one whose solution is well within my sights, but it reaches beyond the scope of language and logic and is best put aside as I have just as well put aside how it has come that different philosophers go in and out of style.
+
+So what is the alternative that I submit is so much more powerful and important?
+It is well known but is not carefully dealt with in the same systematic way that any mathematical logician would quickly demand of an introduction to model theory or proof theory (or, beyond an introduction, to the concerns of mathematical logic as a whole).
+It is the method explicated by Quine in his "Philosophy of Logic" which can be briefly and artfully stated as "Logic chases truth up the tree of grammar." and "Logic is the sum of two components: grammar and truth." 
+
+The predicates of grammar are coupled with the predicates of truth (that I must always explain myself when I say "predicates of truth" as if it was not shown almost a century, now, ago that there is no consistenty theory of a predicate of truth which satisfies the minimal requirement of disquotation, or that I have to go through the way in which disquotation is an instance of the maxim of minimal mutilation, should be alarming enough to those who know better).
+When presenting logic, i.e. when teaching it to a fresh learner, there is nothing but the verbal communities with which that learner has been in contact from which to teach them.
+Logical behavior is taught to those without any logical behavior: this is far more controversial than it looks.
+
+That logical behavior can be taught to an organism without any logical behavior often comes as a surprise to most people, especially logicians and mathematicians.
+This is largely because of the historical principles which guide both philosophers and logicians away from anything like the experimental analysis of behavior.
+Logic, and its methods, are to transcend our material world through some metaphysical mist, or so it is said.
+That we, as mere mortals, are in touch with some otherworldly essence of logic is merely an aftereffect or perhaps even an uninteresting collateral effect of some more fundamental metaphysical principles.
+
+This is something which must be explained, but which would take me too far from this path.
+To be clear, those who hold to metaphysical practices must be accounted for in an effective theory of the world, though, like most effective theories, it may not account for them in the way they might hope.
+
+I shall also not go into the methods by which a pigeon can be conditioned to behave logically without, in the case of a pigeon, clearly having any logical behavior like that so often attributed to even the most isolated human (that a pigeon can be made to "do logic" is often astounding to people who are mostly unfamiliar with what little there ultimately is to logic in itself since they are unable to seperate logic from its application, which is another one of the key problems caused by traditional methods).
+
+The grammatical part of logic can be introduced with some basic predicates, though they are not introduced as the application of logic so they can not be relied upon to bring appropriate behavior of the learner under control without being a tiny variation on some nonlogical behavior.
+The nonlogical behavior often relied upon when introducing logic is that of the vernacular.
+An example of a minimally viable repertoire is that what is written here can be read: much more work must be done to make this as precise as it is, e.g., in a text like Skinner's "verbal behavior" (for all that many have said to extinguish its control over scientific practice).
+
+Sentences are taken, tentatively, as nothing more than quotations i.e. as concatenations of letters as in the familiar strings of computer science.
+This is displeasing for many people who hold the form of a given response as sacred and who are unaware of the contributions of the consequences and the occasions upon which a response of a given form is emitted.
+I can not go out of my way to explain that here now.
+As far as the following description goes, I make no commitment to quotations and you can pick your favorite stand in items.
+
+A single grammatical predicate does the work of the truth functional part of a language: x jointly denies y with z.
+Joint denial is not the only such predicate e.g. 'x alternatively denies y with z' is another such.
+I prefer joint denial because 'nor' is a sentence connective in my native tongue i.e. those who speak in a language with 'nor' are already that much closer to behaving logically with respect to it.
+
+With this grammatical predicate a predicate of truth can be combined and a tiny example of Quine's outlook can be demonstrated in a familiar way.
+In general, it is supposed that the predicate 'is true' is an abbreviation for the highest of the truth predicates among those in the inductive hierarchy of Tarski's analysis which belongs to the lexicon of our present language.
+
+The following is what I call the synthetic categorical of joint denial (this is not quite correct, as the categoricals are to be distinguished from the universal closures of conditionals, but I have assumed that logic is being taught to a learner without a history of exposure to a community of logicians and hence if they can read this sentence at all then it will bring them under the control characteristic of categoricals):
+
+> each item is (x, y, and z such that x jointly denies y with z, y is not true, and z is not true, only if x is true)
+
+The analytic categorical is 
+
+> each item is (x, y, and z such that x jointly denies y with z and x is true, only if y is not true and z is not true)
+
+The bicategorical is
+
+> each item is (x, y, and z such that x jointly denies y with z, y is not true, and z is not true, if and only if x is true)
+
+The synthetic categorical chases truth up the tree of grammar as Quine said, and the analytic categorical chases truth down the tree, and the bicategorical chases it both ways.
+
+Looking back on the traditional way of introducing joint denial, it is seen that no method of truth values or truth functions or models or proofs have been used to explain joint denial.
+Using the method of predicate abstracts, which I've mentioned many times before and which can be quickly found with a simple text search among previous entries, it can easily be explained how it comes that Frege began talk of "truth functions".
+
+The predicate (abstract)
+
+> (x, y, and z such that x jointly denies y with z, y is not true, and z is not true, only if x is true)
+
+is *almost* functional in its first place.
+Note, schematically
+
+> 'Functional F' is short for "each item is (w,x,y, and z such that Fxyz and Fwyz, only if x is indiscernible to w)" where indiscernibility is given schematically (I'm not sure if I've explained that elsewhere or not, but I'm pretty sure I have).
+
+The predicate 'x jointly denies y with z' is where functionality goes faulty since there may be many different ways that a compound may be formed from its components into a joint denial of its components e.g. "neither Tom loves Dick nor Dick loves Tom" or perhaps "Tom loves Dick nor Dick loves Tom" or perhaps "not Tom loves Dick or Dick loves Tom".
+
+This is where the all important methods of paraphrasing are revealed as of foundational importance.
+Logical practices restrict the predicate '(x,y, and z such that x jointly denies y with z)' so that it is functional and then the predicate
+
+> (x, y, and z such that x jointly denies y with z, y is not true, and z is not true, only if x is true)
+
+is functional.
+Note, without the early constraint that the learner of logic have some language (as the reinforcing practices of a verbal community) in which they speak, there is little that can be done from simply presenting the synthetic and analytic conditionals.
+
+Also, note, that paraphrasing is linked with indiscernibility by the logicians insistence of paraphrasing so that "Functional (xyz : x jointly denies y with z)" is true.
+
+Sadly I must end here without going from 'is true' to 'is true of'.
+
 ### 2025 0518 1403 Scott Atran's Cognitive foundations of natural history
 Another great recommendation from R.P. arrived yesterday: Scott Atran's 1990 "Cognitive foundations of natural history: towards an anthropology of science".
 
