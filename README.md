@@ -1,6 +1,229 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0522
+
+### 2025 0522 2202
+Yesterday I finally got out about five sentences that open up the world of existential closures to my methods of logic.
+I also carried through the subtle shift from "denotes" in the definition of validity to "denotes everywhere".
+
+Much self reflection occurred yesterday and today, but it is not written here.
+Most of it was silent.
+
+
+## 2025 0521
+
+### 2025 0521 1232
+
+Today is the day that I make a big step with the continued work on my logic paper from [2025 0514 1345](#2025-0514-1345).
+
+Sometime last week I compressed eight cards of outline on my logic paper into three cards.
+Those new notes do not include the serious edit of adding "denotes everywhere" wherever I had written "denotes" and carrying through the rest of the paper with the corresponding predicate "denotes somewhere".
+Here I shall write out the new notes with new edits and follow through the consequences of editing the definition of denotative functional validity as "each functional substitution denotes everywhere" rather than the old version "each functional substitution denotes".
+I shall add comments on what is written or what is to be written (as a record of my thinking at the time of making the revisions) using the standard markdown notation for quotations (on most sites this is displayed as text in a box of a different color).
+
+#### Science, Logic, Functional Compounding, and Chains
+Logic is the science of validity and validity is a consequence of grammar and denotation.
+
+Compounding is (denotative) functional when, exclusively each like compound denotes or each like compound does not denote where and only where (waow), exclusively, each like component denotes or each like component does not denote.
+Chains are compounds compounded functionally e.g. joint denials denote waow each of their components do not, negations are self joint denials (they denote waow their component does not), alternations are negations of joint denials (they denote waow some of their components do), and conjunctions are joint denials of engatiosn (they denote waow each of their components do).
+
+> The phrase "where and only where" is critical here: it links up the practices of logic with talk of the rest of the world.
+> This turns on a geometric interpretation of spacetime which I do not mention except through the occurrence of 'where' and 'when'.
+> A deferred consequence of this spacetime trick is that when I change "this" from a pronoun to a predicate it is easier to navigate how individuation is bound up with logic and the rest of the world.
+> In general, I take 'it' as designating and 'this' as denoting chunks of spacetime.
+> That does not imply that I take spacetime as prior to or primitive relative to what I write on logic.
+> It is an outrider to my logical methods: it is on the periphery and only gently touches the outer rim of logical methods.
+
+#### Subcompounds, Functional Substitutions, Validity, Consistency, Implication, Equivalence, and Laws
+Subcompounds of compounds are their self or those of thier components.
+Subsitutions of like compounds for like nonchain subcompounds are (denotative) functional.
+Compounds are (functionally) valid waow each of their functional substitutions denotes everywhere, consistent waow their negation is nonvalid (some of their substitutions denotes somewhere), implied by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) is nonconsistent (each of their functional substitutions denotes where the same of the other does), and equivalent to others waow they are mutually implicative (each of their functional substitutions denotes waow the same of the other does).
+
+> This is where the big change occurs.
+> The addition of the single word "everywhere" to the definition of validity, which now reads "Compounds are (functionally) valid waow each of their functional substitutions denote everywhere", carries on into the definition of consistency as "Compounds are (functionally) consistent waow their negation is nonvalid" the fundamental consequence of which is that "Compounds are consistent waow some of their functional substitutions denote somewhere."
+> This is key to making arguments about the validity or consistency of an existential (or univeral) closure of a chain as defined.
+> I've stuck to the spatiotemporal "where"s and occasional "when"s so that there is a constant reminder that in explaining the practices of logic, there is nothing like the logic explained which is yet available.
+> This is hard to get out in a way that doesn't churn up more confusion than the verbal constructions can bear.
+>
+> I had planned to avoid this early mention of "somewhere" and "everywhere" by getting away with the connectives "where" and "only where" as well as the conspicuous "each" and "some" which carry over firmly from this language to logic.
+> The phrases "somewhere" and "everywhere" are sometimes adverbs and sometimes nouns in their native language of English.
+> Since my aim is on logic and not English and its grammar, I've not done as Quine did in "word and object" and gone out of my way to link up the elementary school grammar of English with the technical grammar of Logic.
+> But, here I am confronting the problem head on in this comment.
+>
+> The "somewhere"s and "everywhere"s as they occur in these definitions are picked to play a grammatical part in English which is between adverb and noun.
+> It is from Logic and not from English that I got this usage: the phrase "everywhere" is an implicit universal quantification and the phrase "somewhere" is an implicit existential compound.
+> The method of implicit quantification, in this form, is Dreben's: the construction of implicit existential compounds from their implicit universal components depends, with Dreben's method, upon the scope of purported quantifiers.
+> Quine's method of functional normal forms makes the simplifying assumption that all problems of scope are established by assuming prefix normal form.
+> In logic programming, the historical origin of both Quine and Dreben's method is emphasized by referring directly to either implicitly universally quantified variables or to Skolem constants, or to Skolem functions of implicitly universally quantified variables and Skolem constants, and so on.
+> 
+> In the definition of validity then "valid where and only where each of their functional substitutions denote everywhere" there are only universals, and carry over to predicate abstract notation as
+> > each {xyz : x is valid if and only if y is a functional substitution of x and y denotes z}
+> under Quine's interpretation, and as 
+> > each {x: x is valid if and only if each {y : y is a functional substitution of x and each {z : y denotes z}}}
+> under Dreben's (more or less).
+> But, in rendering this definition as a sentence in predicate abstract logic it is important to note that the letter to the right of 'denotes' does not effectively carry the complex whereabouts which ultimately come through the later development.
+> In an implicit quantifier notation of some logical programming languages, this definition carries over to the sentence
+> > ?x is valid if and only if ?y is a functional substitution of ?x and ?y denotes ?z
+> but none of these examples shows the notation for implicit existential compounds.
+>
+> The carry over of the fundamental consequence of the definition of consistency "consistent waow some functional substitutions denote somewhere" does.
+> Quine's and Dreben's interpretations are both then
+> > each {x : x is consistent waow y_(x) is a functional substitution of x and y_(x) denotes z_(y_(x))}
+> which emphasizes with the underscore that Quine gives the notation with subscripts rather than with additional notation like underscores and parentheses.
+>
+> Since neither variables nor quantifiers are part of predicate logic (they are part of quantificational logic), none of this actually concerns us here.
+
+Alternations of compounds with their negations are valid (they denote waow the compound does or its negation does, i.e. waow it does or does not, so, each functional substitution denotes everywhere).
+Conjunctions of compounds with their negations are nonconsistent (they denote waow their compound does and its negation does, and, hence, waow it does and does not, so, each functional substitution of the conjunction does not denote everywhere i.e. the negation of the conjunction is valid).
+Compounds are implied by and equivalent to their self.
+
+> I'm uncertain if I should include these supporting arguments in something more than the parenthetical.
+> That compounds are implied by and equivalent to their self is shown by the same step by step reduction to previous and accumulating results that have been built up thus far.
+> A compound implies itself when the conjunction of it with its negation is nonconsistent and that is precisely what was just shown and the same conjunction occurs twice in the case of self equivalence.
+
+#### Functional Substitutions Keep Validity, Nonconsistency, Implication and Equivalence
+Functional substitutions in
+* validities are validities (each functional substitution of the functional substitution of the validity is a functional substitution of the validity and hence denotes everywhere),
+* nonconsistencies are nonconsistencies (each functional substitution of the negation of the functional substitution of the nonconsistency is a functional substitution of the negation of the nonconsistency i.e. is a functional substitution of a validity and hence the negation of the functional substitution of the nonconsistency is valid so that the function substitution of the nonconsistency is nonconsistent),
+* implications are implications (the conjunction of the conclusion with the negation of the premise is nonconsistant and hence its functional substitution is nonconsistent and identical to the conjunction of the functional substitution of the conclusion with the negation of the functional substutituion of the premise), and
+* equivalences are equivalences (functional substitutions of mutual implications are mutual implications).
+
+#### Interchanges of Equivalents are Equivalent
+Interchanges of equivalents in a compound are equivalent to that compound (each functional substitution of a compound matches the same of its interchange, except perhaps for the same of the equivalents which otherwise denote in tandem, so each denotes waow the other does i.e. they are equivalent).
+
+#### Interchnage of Equivalents Keeps Validity, Nonconsistency, Implication, Equivalence, Nonvalidity, Consistency, Nonimplication, and Nonequivalence
+
+Interchanges of equivalents in
+* validities are validities (each functional substitution of the interchange denotes waow the same of the validity does),
+* nonconsistencies are nonconsistent (their negation is valid and so the interchange in the negation is a validity),
+* implications are implications (interchange into the nonconsistency is a nonconsistency),
+* equivalents are equivalents (interchange of mutual implications are mutual implications),
+* nonvalidities are nonvalidities (a compound is nonvalid waow some functional substitution does not denote somewhere, i.e. some functional substitution of its negation denotes somewhere; since the negation of the interchange is identical to the interchange of the negation then the interchange of the negation is equivalent to the negation, and hence the negation of the interchange denotes waow the negation does which denotes somewhere from some functional substituion i.e. the interchange is nonvalid)
+* consistencies are consistencies (the negation of the interchange is identical to the interchange of the negation which is equivalent to the negation and hence nonvalid),
+* nonimplications are nonimplications (nonimplication is consistency of the conjunction ...)
+* nonequivalences are nonequivalences (one is a nonimplication ...).
+
+> I still don't feel quite right about the argument for nonvalidities.
+> I just fixed it by distinguishing between the step of equivalence and the step of the negation denoting somewhere from some functional substitution (so that the interchange of the negation, being equivalent to the negation, denotes somewhere from the same functional substitution).
+> Why avoid notation though?
+> Notation undermines the sensitivities conditioned by carefully designed sentences.
+> There are very likely better sentences than the ones I've made thus far, but these are the ones I have and they work well enough.
+
+#### Equivalents of Identity
+Compounds are equivalent to
+* their double negation (which denotes waow the negation of the compound does not, i.e. waow it does, so, each functional substituion of it denotes waow the same of its double negation does),
+* their self alternation/conjunction (which denotes waow some/each of its components does i.e. waow the compound does), and 
+* their alternation/conjunction with nonconsistencies/validities.
+
+#### Equivalents of Distributivity of Conjunctions and Alternations
+* Alternations of a component with an alternation are equivalent to the alternation of the alternations of the component with each of the others.
+* Alternations of a component with a conjunction are equivalent to the conjunction of the alternations of the component with each of the others.
+* Conjunctions of a component with an alternation are equivalent to the alternation of the conjunctions of the component with each of the others.
+* Conjunctions of a component with a conjunction are equivalent to the conjunction of the conjunctions of the component with each of teh others.
+
+#### Equivalents of Development: Alternational and Conjunctional
+* Compounds are equivalent to their alternations with nonconsistencies (equivalents of identity), and, in particular, with conjunctions of other compounds with their negation (by the law of contradiction) which are themselves equivalent to the conjunction of their alternations with the other compound and its negation (by distributivity of alternation over conjunction) i.e. conjunctive development of the one compound with respect to the other.
+* The dual for conjunction.
+
+#### Equivalents of Associativity
+* The conjunction of the first component with the conjunction of the second and third is equivalent to the conjunction of the conjunction of the first and second with the third.
+* The alternation of the first component with the alternation of the second and third is equivalent to the alternation of the alternation of the first and second with the third.
+
+#### Iterated Alternations and Conjunctions
+The equivalents of associativity yield the many component alternations and conjunctions which are equivalent to iterated nestings of alternations or conjunctions down their left or right components.
+
+#### Equivalents of Commutativity
+* The alternation of the left component with the right component is equivalent to the alternation of the right component with the left.
+* The conjunction of the left component with the right component is equivalent to the conjunction of the right component with the left.
+
+#### Equivalents of Distributivity of Negations
+* Negations of alternations are equivalent to the conjunctions of the negations of their components.
+* Negations of conjunctions are equivalent to the alternations of the negations fo their components.
+
+
+
+#### Laws of Validity
+Validity is
+* inconsistency of negation (which is not consistency of negation, and, hence, not nonvalidity of negation of negation i.e. validity of negation of negation which, by equivalents of identity, is validity)
+* nonimplication of negation,
+* negational nonimplication
+* nonequivalence of negation
+* negational nonequivalence, and
+
+#### Laws of Consistency
+* Nonconsistency is validity of negation.
+* Nonconsistency implies nonvalidity.
+
+#### Laws of Implication
+* One chain implies an other and the other a third only where the one implies the third.
+* Chains imply their self.
+* Chains imply validities.
+* Validities do not imply nonvalidities.
+* Validities do not imply nonconsistencies.
+* Validities only imply validities (each functional substitution of the former that denotes everywhere is one where the latter denotes everywhere)
+* Nonconsistencies imply chains.
+* Consistencies do not imply nonconsistencies.
+* Nonconsistencies only imply nonconsistencies.
+
+#### Laws of Equivalence
+* One chain is equivalent to an other and the other a third only where the one is equivalent to the third.
+* Chains are equivalent to their self.
+* One chain is equivalent to an other waow the other is equivalent to the one.
+* Validities are equivalent to and only equivalent to validities.
+* Nonconsistencies are equivalent to and only equivalent to nonconsistencies.
+
+#### Conditionals, Biconditionals, Exclusive Alternations, and Sequents
+* Conditionals are alternations of the negation of their (antecedent) left component with their (consequent) right component.
+* Biconditionals are conjunctions of the distinct conditionals of their components.
+* Sequents are conditionals whose antecedent is the conjunction of their antecdent components and whose consequent is the alternation of their consequent components.
+* Exclusive alternations are negations of the biconditionals of their components.
+* Implication is validity of conditionals.
+* Equivalence is validity of biconditionals.
+* Nonequivalence is validity of exclusive alternations.
+
+#### Relays, Literals, and Clauses
+* Relays are their component or its negation.
+* Literals are relays of nonchain compounds.
+* Each component of a clausal chain is a literal.
+
+#### Disjoint, Full, and Empty Chains
+* No nonchain subcompounds of different components of *disjoint* chains match.
+* The nonchain subcomponents of each component of *full* chains are the same.
+* Empty chains have no components: often they are replaced by a relevant validity or inconsistency so as to carry an empty method into a nonempty one.
+
+#### Laws of Equivalent Grammatical Categories
+Each clause is equivalent to a disjoint or empty clause.
+Each chain is equivalent to
+* one with only joint denials
+* one with only negations and conjunctions
+* one with only negations and alternations
+* one with only negations and conditionals
+* one without conditionals and biconditionals
+* one where only nonchain components are negated
+* a conjunction of negations of clausal conjunctions
+* the alternational dual of the above
+* an alternation of disjoint clausal conjunctions (alternational normal form)
+* a conjunction fo disjoint clausal alternations (conjunctive normal form)
+* a full alternation of unique disjoint clausal conjunctions
+* a full conjunction of unique disjoint clausal alternations
+
+#### Existential Closures and Closed Chains
+(Existential) closures denote waow there is somewhere denoted by their component.
+Closed chains are closures of (open) chains.
+
+#### Boolean Chains and Triviality
+Boolean chains are closed or are chains of Boolean chains.
+Without whereabouts closures denote nowhere since there is nowhere denoted by their component i.e. they are nonconsistent.
+Only nontrivial results are contemplated here.
+Check the trivial case by interchanging each closure with a nonconsistency.
+
+The alternation of the closure of a compound with the closure of the negation of that compound is (nontrivially) valid and trivially nonconsistent.
+
+#### Closure Conditionals
+Consequences of closure conditionals are closed chains and their antecedents are conjunctions of them.
+Consequences or antecedents of degenerate closure conditionals can be empty.
+
 
 ## 2025 0518
 
