@@ -1,6 +1,79 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0523
+
+### 2025 0523 1401 What would I tell my younger self?
+I ask myself "What would I tell my younger self?" as a way of checking on how I am doing and how I might do better sooner rather than later.
+For example, would I tell my younger self to work on the practices of logic as much as I have been over these past months?
+How would I even explain logic to my younger self?
+Also, what does my younger self really have to do with my present self or my future self?
+These are just some questions which flow from me like an endless stream of unstoppable curiosity.
+Do I have answers for most of my questions?
+No.
+Do I have answers for a few of them?
+Only very few.
+
+So, what would I tell my younger self about logic?
+Would telling my younger self to do something different with respect to logic really change his behavior in any way?
+Are counterfactual conditionals like these even helpful?
+They are relative to a theory of the world and it is relative to such a theory that logic would have the greatest impact, even for my younger self.
+
+Do we say that young people have theories of the world, ones that evolve over time as they are tested and as trials and errors pile up for or against this or that variation on some working theory of the world?
+That's a long question.
+Long questions rarely have short answers that are also self contained i.e. answers that encapsulate the question without posing it.
+
+Rather than start with how logic would help my younger self I'll start with how logic has helped me, the older self to my younger self.
+Logic helps me deal with the world and all the problems it presents to me.
+Putting a problem into words is the first step and paraphrasing those words into a logical theory helps me factor some large theory of the world into tiny parts that I can see at a glance.
+It focuses me on the predicates of a theory and the potential premises whose implied conclusions are so often fated to be overthrown by experiment.
+None of this is what a young me would care about or notice.
+
+When I help my nephews with their math homework I almost always do it over the phone so that we have to talk out a solution without simply sending each other pictures of things we've written down.
+The first thing I tend to teach them is to read out the problem aloud.
+To most people this may seem like a tiny thing: don't people know how to read aloud?
+No, a lot of people don't.
+They were barely taught to read selections from books aloud to each other, and are rarely asked to read math problems aloud.
+How do you read most of the notation anyway?
+
+That there are effective ways of reading mathematical notation aloud makes all the difference between noticing a parenthesis and skipping it (and messing up the rest of the problem).
+What does this have to do with logic?
+Logic takes our exposure to our native tongue and shapes it up into a verbal machine that introduces mechanical advantages to a language.
+But, what does that mean to a youngling?
+
+There are different ways you can talk about the world.
+Some of them are helpful and some of them are hurtful.
+If you want the way that you talk about the world to help you and not hurt you then speak logically.
+Logic is made for dealing with what is true.
+As much as dealing with what is true helps you to deal with the world, logic helps.
+
+How do you speak logically?
+First you have to notice that the way you talk about the world affects how you deal with it.
+Lots of teachers struggle to teach this.
+We know they struggle because so many kids say "Will this be on the test?" or "What does this have to do with the real world?".
+If teachers were honest they would tell kids "It has nothing to do with the real world. This is a game that we made. We make you play it because we don't know what else to do. We don't know how else to help you deal with the world."
+Instead, they threaten students with bad grades.
+Bad grades are not what education avoids: they are just side effects of teachers not knowing what to do.
+It is the bad consequences of dealing with the world poorly that actually threaten the young and old alike.
+
+Education is not overtly presented as "the way to avoid dealing poorly with the world and the pains that follow from doing so".
+It is presented as some sort of obligation or insurance or self contained arena of competition.
+As if the educational environment is of independent interest relative to the rest of the world.
+The practices of education have survived because they just barely make the educated person more effective than the uneducated person in almost everything that they do.
+"Just barely" is all it takes: those who talk up 10x or 100x multipliers are credit/debit shills.
+The snowball of fundamental productivity plows through the ups and downs of short sighted accelerationists (who now, more than ever, invoke the "long term" as nothing more than a verbal hedge or buzzword).
+
+So what have I actually said of logic itself?
+There is little to say, especially now that we have Quine's main method of proof for quantificational logic: a sentence is inconsistent if when put into prenex form a truth functional inconsistency is accumulated from instantiation so that existentials always receive new variables.
+Logic links truth with grammar through validity either as that which can be derived from Quine's main method (as inconsistency of negation) or that which is true under all interpretations (where interpretation can be taken semantically or syntactically if at least the premises of placevalue notation are present).
+
+From these technical conclusions there are vernacular conventions e.g. very few sentences are of any consequence what so ever since validity is no kind of honorific but rather an expedient of verbal linkage.
+Where logic links up the essential sentences of a theory, it binds their fate in any practical experiment.
+Deferred consequences of logical links come out in surprising ways that are fatal to a fledgling theory.
+Those insensitive to logic are more easily spotted as its practices become more and more familiar.
+Such logical deviants break up logical links either out of careless insensitivity or out of coercive intervention.
+
+
 ## 2025 0522
 
 ### 2025 0522 2202
