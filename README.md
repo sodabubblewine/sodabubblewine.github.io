@@ -1,6 +1,113 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0526
+
+### 2025 0526 1619 Books on my Desk and Reading Shelf
+Books on my reading shelf:
+
+* 1935 "The Story of Civilization: Volume I. Our Oriental Heritage" by Will and Ariel Durant
+* 2017 "Understanding Behaviorism: Behavior, Culture, and Evolution 3rd Edition" by William M. Baum
+* 1985 "Behaviorism: A conceptual Reconstruction" by G. E. Zuriff
+* 1999 "Cumulative Record Definitive Edition" by B. F. Skinner
+* 1973 "I.Q. in the Meritocracy" by R. J. Hernnstein
+* 1996 "The Bell Curve: Intelligence and Class Structure in Americal Life" by Hernnstein and Murray
+* 2020 "Human Diversity: They Biology of Gender, Race, and Class" by Murray
+* 1993 "Cognitive Foundations of Natural History: Towards an Anthropology of Science" by Scott Atran
+* 2022 "The Structure of Scientific Revolutions: 50th Anniversary Edition" by Kuhn and Hacking
+* 2016 "Classical Philosophy: A history of philosophy without any gaps, Volume 1" by Peter Adamson
+* 1984 "The Presocratic Philosophers: A Critical History with a Selection of Texts 2nd Edition" by G. S. Kirk, J. E. Raven, M. Schofield
+* 1755 "Discourse on Inequality" by Jean-Jacques Rousseau
+* 2011 "Introduction to Reliable and Secure Distributed Programming 2nd ed." by Christian Cachin, Rachid Guerraoui, Luís Rodrigues
+* 1985 "Communicating Sequential Processes" by C. A. R. Hoare
+* 2005 "Finite Model Theory 2nd Edition" by Ebbinghaus and Flum
+* 2019 "Geometric Algebra for Electrical Engineers: Multivector electromagnetism" by Joot
+* 2011 "Linear and Geometric Algebra" by Alan Macdonald 
+* 2012 "Vectora and Geometric Calculus" by Alan Macdonald
+* 2024 "Projective and Geometric Algebra Illuminated" by Eric Lengyel
+* 1943 "The Glass Bead Game" by Hermann Hesse
+* 1920 "The Mysterious Affair at Styles" by Agatha Christie
+* 2013 "Hercule Poirot: The Complete Short Stories: A Hercule Poirot Mystery: The Official Authorized Edition" by Agatha Christie
+* 2018 "Hey Mom: Stories for My Mother, But You Can Read Them Too" by Louie Anderson 
+
+Books on my desk:
+* 1950 "The Story of Art" by EH Gombrich and Leonie Gombrich
+* 1952 "Anatomy Lessons From the Great Masters" by Robert Beverly Hale and Terence Coyle
+* 1979 "Tage Frid Teaches Woodworking: Three Step-by-Step Guidebooks to Essential Woodworking Techniques" by Tage Frid
+* 1967 "From Frege to Gödel: A Source Book in Mathematical Logic, 1879-1931" edited by Jean van Heijenoort
+* 1997 "The Frege Reader" edited by Michael Beaney
+* 1960 "Word and Object" by Quine
+* 1995 "Selected Logic Papers" by Quine
+* 1971 "Set Theory and its Logic Revised Edition" by Quine
+* 1994 "Mathematical Logic 2nd ed." by Ebbinghaus, Flum, Thomas
+* 2023 "The Earth and Its Peoples 8th ed." by Richard Bulliet, Pamela Crossley, Daniel Headrick, Steven Hirsch, and Lyman Johnson
+* 1973 "Essentials of Earth History: An Introduction to Historical Geology 3rd ed" by William Lee Stokes
+* 2017 "The Little Book of Big History" by Ian Crofton and Jeremy Black
+* 1973 "A History of American Law 1st ed." by Friedman
+
+> the 4th edition was published in 2019 (maybe get that)
+
+* 2009 "History of the Ojibway People" by William W. Warren
+* 2014 "History of the World 6th ed." by J. M. Roberts and Odd Arne Westad
+* 1992 "History of the World 3rd ed." by J. M. Roberts (this one has pictures)
+* 1993 "The Harper Encyclopedia of Military History" by R. Ernest Dupuy and Trevor N. Dupuy
+* 2013 "The Encyclopedia of Warfare" by Dennis E. Showalter
+* 2011 "The Rise and Fall of the Third Reich 50th anniversary edition" by William L. Shirer
+
+> get Richard J. Evan’s “Third Reich Trilogy”:
+> * “The Coming of the Third Reich”  2003
+> * “The Third Reich in Power” 2005
+> * “The Third Reich at War” 2008
+
+* 2023 "The Economic Government of the World: 1933-2023" by Martin Daunton
+* 1969 "The Rise of Anthropological Theory: A History of Theories of Culture" by Marvin Harris
+
+> the updated edition was published in 2001
+
+* 1977 "Cannibals and Kings" by Marvin Harris 
+* 1968 "The Sacred and the Profane: The Nature of Religion" by Mircea Eliade
+* 1902 "The Varieties of Religious Experience" by William James
+* 1999 "JPS Hebrew-English Tanakh, 2nd Edition" by the Jewish Publication Society
+* 2007 "The Tibetan Book of the Dead: First Complete Translation (Penguin Classics Deluxe Edition)" by Coleman, Padmasambhava, et al.
+* 2002 "The Holy Quran with English Translation and Commentary" by Maulana Muhammad Ali
+* 2007 "The Bhagavad Gita" translated by Eknath Easwaran
+* 1611 "The Holy Bible" commissioned by King James I of England
+* 1999 "Selected Writings (Penguin Classics)" by Thomas Aquinas and edited by Ralph McInerny
+* 426 "The City of God" by Augustine of Hippo
+* 397-400 "The Confessions" by Augustine of Hippo
+* 1321 "The Divine Comedy" by Dante Alighieri
+* 1990 "The Victorian Fairy Tale Book" edited by Michael Patrick Hearn
+* 1998 "Legends and Tales of the American West" by Richard Erdoes.
+* 1997 "Yiddish Folktales" by Beatrice Weinreich translated by Wolf
+* 1982 "Norwegian Folk Tales" by Peter Christen Asbjørnsen and Jørgen Moe
+* 1970 "Asimov's Guide to Shakespeare" by Isaac Asimov
+* 1961 "Call for the Dead" by John le Carré
+* 1999 "The Well-Trained Mind: A Guide to Classical Education at Home" by Susan Wise Bauer and Jessie Wise
+* 2015 "The Reading Teacher's Book of Lists, 6th Edition" by Jacqueline E. Kress and Edward B. Fry
+* 2011 "The New York Times Guide to Essential Knowledge" by The New York Times staff
+* 1989 "Madrigal's Magic Key to Spanish" by Margarita Madrigal
+* 1786 "The Diversions of Purley" by John Horne Tooke
+* 1905 "The Elements of Psychology" by Edward L. Thorndike
+* 1896 "An Outline of Psychology" by Edward Bradford Titchener
+* 1957 "Verbal Behavior" by B.F. Skinner
+* 1971 "Beyond Freedom and Dignity" by B.F. Skinner
+* 1974 "About Behaviorism" by B.F. Skinner
+* 1996 "Modern Political Thought: Readings from Machiavelli to Nietzsche" edited by David Wootton
+* 1963 "History of Political Philosophy" by Leo Strauss and Joseph Cropsey
+* 2006 "Introduction to Philosophy: Classical and Contemporary Readings, Fourth Edition" edited by John Perry, Michael Bratman, and John Martin Fischer
+* 2019 "The History of Philosophy" by A. C. Grayling
+* 1926 "The Story of Philosophy" by Will Durant
+* 1946 "A History of Western Philosophy" by Bertrand Russell
+* 1912 "The Problems of Philosophy" by Bertrand Russell
+* 1898 "Pragmatism: a new name for some old ways of thinking" by William James
+* 1516 "Utopia" by Thomas More
+* 1626 "New Atlantus" by Sir Francis Bacon
+* 1623 "The City of the Sun" by Tommaso Campanella
+* 1996 "Structure and Interpretation of Computer Programs 2nd Edition" by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
+* 1995 "The Little Schemer, 4th Edition" by Daniel P. Friedman and Matthias Felleisen
+* 1995 "The Seasoned Schemer 2nd edition" by Daniel P. Friedman and Matthias Felleisen
+* 2018 "The Reasoned Schemer 2nd Edition" by Daniel P. Friedman, William E. Byrd, Oleg Kiselyov, and Jason Hemann.
+
 ## 2025 0523
 
 ### 2025 0523 1401 What would I tell my younger self?
@@ -131,13 +238,19 @@ Compounds are (functionally) valid waow each of their functional substitutions d
 > In logic programming, the historical origin of both Quine and Dreben's method is emphasized by referring directly to either implicitly universally quantified variables or to Skolem constants, or to Skolem functions of implicitly universally quantified variables and Skolem constants, and so on.
 > 
 > In the definition of validity then "valid where and only where each of their functional substitutions denote everywhere" there are only universals, and carry over to predicate abstract notation as
+>
 > > each {xyz : x is valid if and only if y is a functional substitution of x and y denotes z}
+>
 > under Quine's interpretation, and as 
+>
 > > each {x: x is valid if and only if each {y : y is a functional substitution of x and each {z : y denotes z}}}
+>
 > under Dreben's (more or less).
 > But, in rendering this definition as a sentence in predicate abstract logic it is important to note that the letter to the right of 'denotes' does not effectively carry the complex whereabouts which ultimately come through the later development.
 > In an implicit quantifier notation of some logical programming languages, this definition carries over to the sentence
+>
 > > ?x is valid if and only if ?y is a functional substitution of ?x and ?y denotes ?z
+>
 > but none of these examples shows the notation for implicit existential compounds.
 >
 > The carry over of the fundamental consequence of the definition of consistency "consistent waow some functional substitutions denote somewhere" does.
