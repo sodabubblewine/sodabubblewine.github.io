@@ -1,6 +1,38 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0529
+
+### 2025 0529 1419 The Philosophy of Composition by Edgar Allan Poe
+R.P. shared a delightful paper with me upon reading my last entry on Paul Graham's "Good Writing":
+[The Philosophy of Composition by Edgar Allan Poe](https://www.poetryfoundation.org/articles/69390/the-philosophy-of-composition).
+It is to be compared to B. F. Skinner's talk "On Having a Poem" a recording of which can be heard here: <https://www.bfskinner.org/bf-skinners-lecture-on-having-a-poem/>
+
+Standards of records required to provide explanations for the origins of poetic behavior, or any verbal behavior whatsoever, are to be found in Skinner's ["Cumulative Record Definitive Edition"](https://www.bfskinner.org/wp-content/uploads/2015/02/CUMULATIVE_RECORD.pdf) on page 115 titled "A Case History of Scientific Method" which appeared originally in around 1955.
+The details mentioned by Skinner in that paper are not sufficient, but his larger work "[Schedules of Reinforcement](https://www.bfskinner.org/wp-content/uploads/2015/05/Schedules_of_Reinforcement_PDF.pdf)" with Ferster provides sufficient conditions for explaning the behavior of pigeons under controlled laboratory conditions.
+Similar methods are at least required to explain human behavior (however inconvenient they might be).
+
+I do not have time to write on all these things now, and have left this note here in the off chance that I may return to it later.
+
+But, here is what I have to say of what I have already read of Poe's paper.
+The meat of the matter is found in the eigth paragraph.
+The earlier paragraphs simply set the reader next to Poe as if all that was read had been just penned before you.
+It is a delightful trick, and much of the paper itself follows the same methods as those who purport to be only comedians and yet have surprisingly strong political effects.
+
+The eigth paragraph begins after all the essential features of a behavior analysis would otherwise have ended:
+
+> Let us dismiss, as irrelevant to the poem, per se, the circumstance—or say the necessity—which, in the first place, gave rise to the intention of composing a poem that should suit at once the popular and the critical taste.
+
+Such a dismissal is perhaps the most profound deception in the entirety of Poe's paper.
+The 'per se' pricks the vail of deception and provides Poe with permission, from the reader who continues to read, to be as sly as is his want.
+This is a perfect example of what I was talking about when I said in my paper on Paul Graham's "Good Writing" that
+
+> the initial ambiguity and the consequent incompatible methods could have been charitably explained away as nonrhetorical literary language e.g. as a linguistic ignis fatuus.
+
+Where Graham failed, Poe has instructively succeeded.
+
+I very much appreciate R.P. bringing this beautiful example of good writing to my attention.
+
 ## 2025 0526
 
 ### 2025 0526 2141 The First Two Words of Paul Graham's Paper "Good Writing" 
@@ -38,7 +70,8 @@ Alternatively, different ways can just as well diverge and yet later intersect a
 This negative outlook can be countered with the German's "sinn" which is most famous as a single word from Frege's "Über Sinn und Bedeutung".
 It is clear from the remainder of this essay that Graham is committed to a mentalistic outlook, one that follows the German 'sinn' through 'sense' to 'mind'.
 Thus, the occurrence of 'sense' primes talk of mental things.
-Ideas, as in the vernacular (or that special part of the vernacular called folk psychology), are objects of the mind (charitably, the mind is what the brain does), expressed by words and writing is the a process by which ideas are expressed through words.
+Ideas, as in the vernacular (or that special part of the vernacular called folk psychology), are objects of the mind (charitably, the mind is what the brain does), expressed by words.
+Then, writing is the a process by which ideas are expressed through words.
 This is the same story as in hoodoo rootwork where a spell is written on a slate and washed into a glass of water which somehow expresses the cure and is absorbed by the drinker.
 
 More charitably, the mind is what the body does, and the body as much has ideas as it has behaviors.
@@ -47,7 +80,7 @@ Then, to identify the key features of good writing is to identify the reinforcin
 This is not the same as concluding with a kind of cultural relativism nor with a kind of cultural darwinism ("survival of the fittest" is so often interpreted as "'fit' is equivalent to 'survive'" that any such short story on the process of selection by consequences from variation on cultural scales is bankrupt).
 
 Good verbal behavior presumably contributes to the survival of the culture within which it occurs.
-It presumably takes into account deferred consequences of its appearence in a culture sensitive to contributions of deferred consequences of its practices to its survival.
+It presumably takes into account the deferred consequences of its appearence in a culture sensitive to contributions of the deferred consequences of its practices to its survival.
 It no more helps to supplant these descriptions by "sounds good and gets ideas right" than it does to supplant the principles of aerospace engineering with Kelly Johnson's "If it looks good, it will fly well" (which I was unable to find a record of from a search with DuckDuckGo or Google).
 
 The result of my snarky analysis is copied here from Twitter (one of the worse places to write on the internet):
