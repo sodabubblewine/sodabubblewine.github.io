@@ -4,7 +4,7 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 ## 2025 0526
 
 ### 2025 0526 2141 The First Two Words of Paul Graham's Paper "Good Writing" 
-Here I sincerely analyze Paul Graham's latest paper on ("Good Writing")[https://www.paulgraham.com/goodwriting.html] (I transcribe the snarky analysis I made on twitter at the end for completeness).
+Here I sincerely analyze Paul Graham's latest paper on ["Good Writing"](https://www.paulgraham.com/goodwriting.html) (I transcribe the snarky analysis I made on twitter at the end for completeness).
 
 The first sentence
 
