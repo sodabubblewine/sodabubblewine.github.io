@@ -259,7 +259,7 @@ I shall add comments on what is written or what is to be written (as a record of
 #### Science, Logic, Functional Compounding, and Chains
 Logic is the science of validity and validity is a consequence of grammar and denotation.
 
-Compounding is (denotative) functional when, exclusively each like compound denotes or each like compound does not denote where and only where (waow), exclusively, each like component denotes or each like component does not denote.
+Compounding is (denotative) functional when, exclusively, each like compound denotes or each like compound does not denote where and only where (waow), exclusively, each like component denotes or each like component does not denote.
 Chains are compounds compounded functionally e.g. joint denials denote waow each of their components do not, negations are self joint denials (they denote waow their component does not), alternations are negations of joint denials (they denote waow some of their components do), and conjunctions are joint denials of engatiosn (they denote waow each of their components do).
 
 > The phrase "where and only where" is critical here: it links up the practices of logic with talk of the rest of the world.
