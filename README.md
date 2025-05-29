@@ -3,6 +3,60 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0526
 
+### 2025 0526 2141
+Here I sincerely analyze Paul Graham's latest paper on ("Good Writing")[https://www.paulgraham.com/goodwriting.html] (I transcribe the snarky analysis I made on twitter at the end for completeness).
+
+The first sentence
+
+> There are two senses in which writing can be good: it can sound good, and the ideas can be right.
+
+begins with the ambiguous phrase "There are".
+Vernacular expands it to either "there are at least" or "there are exactly" (there are exactly three ways "there are" can be taken and the third is as "there are at most" as in "there are at most three Stooges" but this is not carried by the vernacular).
+Logicians, having noted this ambiguity, regiment "there are" as "there are at least" e.g. "There are at least two senses in which writing can be good".
+This regimentation is not merely a convenience.
+It is the difference between existence and uniqueness e.g. "there is exactly one even prime number" and "there is at least one even prime number".
+Lawyers also noted this ambiguity and regiment "there are" as "there are exactly" under the rule "Expressio unius est exclusio alterius".
+Between logicians and lawyers the language of the home leaves the first sentence of Paul Graham's essay woefully underdetermined.
+
+The strong reader rallies with contextual clues.
+But, the first clue is very far from the proximate context.
+In the eleventh paragraph the lawyers finally win: "So yes, the two senses of good writing are connected".
+But then, before the sentence can end, everyone looses.
+The full sentence is "So yes, the two senses of good writing are connected in at least two ways." and it spits on the languages of lawyers, logicians, and locals.
+For, "the two senses" implies the lawyers rule but "in at least two ways" breaks it since two and only two connections are given.
+
+Had Graham's "Good Writing" been on something other than good writing, then the initial ambiguity and the consequent incompatible methods could have been charitably explained away as nonrhetorical literary language e.g. as a linguistic ignis fatuus.
+But, charity extends to the paper as an example of good writing in exactly those ways explained: "it can sound good, and the ideas can be right."
+In other words, the ambiguous and incompatible methods are covert rather than accidental.
+The deferred cosequences of covert methods are rarely helpful i.e. the ninth item of Russell's decalogue, "Be scrupulously truthful, even if the truth is inconvenient, for it is more inconvenient when you try to conceal it." 
+
+The etymology of 'sense' likely goes to the PIE root \*sent- for "to go" and is the "source also of Old High German sinnan "to go, travel, strive after, have in mind, perceive," German Sinn "sense, mind," Old English sið "way, journey," Old Irish set, Welsh hynt 'way'" (<https://www.etymonline.com/word/sense>).
+Replacing 'sense' with 'way' as in "There are two ways in which writing can be good" uncovers the metaphorical role of 'sense' in any sentence in which it occurs.
+But, a reason to avoid "way" in Graham's sentence is because "two ways" is near "diverging paths" and the point is made later in the essay that these ways are not independent.
+Alternatively, different ways can just as well diverge and yet later intersect and in general, the nearer a pair of people are to a destination the fewer ways there are to finish their trip i.e. the more likely they are to take the same way.
+
+This negative outlook can be countered with the German's "sinn" which is most famous as a single word from Frege's "Über Sinn und Bedeutung".
+It is clear from the remainder of this essay that Graham is committed to a mentalistic outlook, one that follows the German 'sinn' through 'sense' to 'mind'.
+Thus, the occurrence of 'sense' primes talk of mental things.
+Ideas, as in the vernacular (or that special part of the vernacular called folk psychology), are objects of the mind (charitably, the mind is what the brain does), expressed by words and writing is the a process by which ideas are expressed through words.
+This is the same story as in hoodoo rootwork where a spell is written on a slate and washed into a glass of water which somehow expresses the cure and is absorbed by the drinker.
+
+More charitably, the mind is what the body does, and the body as much has ideas as it has behaviors.
+In fact, the intermediate talk of ideas which are later expressed by behaviors then dissolves and writing as a repertoire is said to be good or bad in as far as it is reinforced by prevailing cultural practices.
+Then, to identify the key features of good writing is to identify the reinforcing practices which build and maintain one repertoire of writing rather than some other.
+This is not the same as concluding with a kind of cultural relativism nor with a kind of cultural darwinism ("survival of the fittest" is so often interpreted as "'fit' is equivalent to 'survive'" that any such short story on the process of selection by consequences from variation on cultural scales is bankrupt).
+
+Good verbal behavior presumably contributes to the survival of the culture within which it occurs.
+It presumably takes into account deferred consequences of its appearence in a culture sensitive to contributions of deferred consequences of its practices to its survival.
+It no more helps to supplant these descriptions by "sounds good and gets ideas right" than it does to supplant the principles of aerospace engineering with Kelly Johnson's "If it looks good, it will fly well" (which I was unable to find a record of from a search with DuckDuckGo or Google).
+
+The result of my snarky analysis is copied here from Twitter (one of the worse places to write on the internet):
+
+> The whole paper is paraphrased as follows:
+>
+> Good writing is sound, salient, and, essentially, slick. Why essentially? Lo, Paul Graham knows it is, and thou shalt not show Him otherwise. Soundness and salience are essential too. Why? Hark! Thou shalt know it as He does for thou art made as Him. He shakes the heavens and the earth with his grace and all becomes beautiful in its perfection: "In the beginning was the Word, and the Word was with God, and the Word was God."
+
+
 ### 2025 0526 1619 Books on my Desk and Reading Shelf
 Books on my reading shelf:
 
