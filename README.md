@@ -3,6 +3,154 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 ## 2025 0529
 
+### 2025 0529 1511
+This continues my work on my little lisp from way back in [2025 0514 2226](#2025-0514-2226).
+
+It has been a while since I last worked on my little lisp, and, as is so often the case when I return to what I left incomplete, I must begin by collecting the entirety of what was done.
+As a reminder: I do my programming in a browser by first going to the url "about:blank" and then opening the developer tools on it.
+In Google's Chromium, script snippets are my programming environment.
+This is not because it is "the best programming environment", but because this happens to be the easiest way I can program on whatever computer happens to be available to me.
+
+
+```
+// pairs
+let theEmptyPair={}
+, isEmpty = it => it == theEmptyPair
+, pairOf = (it, that) => [it, that]
+, leftOf = it => isEmpty(it) ? it : it[0]
+, rightOf = it => isEmpty(it) ? it : it[1];
+
+// sequences as pairs
+let theEmptySequence = theEmptyPair
+, isEmptySequence = isEmpty
+, singletonSequenceOf = it => pairOf(it, theEmptySequence)
+, headOf = leftOf
+, restOf = rightOf
+, concatOf = (it, that) => isEmptySequence(it) ? that 
+  : pairOf(headOf(it), concatOf(restOf(it), that))
+, prependSingletonOf = (it, that) =>
+   concatOf(singletonSequenceOf(it), that)
+, appendSingletonOf = (it, that) =>
+   concatOf(that,singletonSequenceOf(it));
+
+// stacks as pairs
+let theEmptyStack = theEmptyPair
+, isEmptyStack = isEmpty
+, singletonStackOf = it => pairOf(theEmptyStack, it)
+, pushOf = pairOf
+, dropOf = leftOf
+, topOf = rightOf
+, secondOf = stack => topOf(dropOf(stack))
+, drop2Of = stack => dropOf(dropOf(stack))
+
+, prependOf = stack => pushOf(drop2Of(stack)
+  , prependSingletonOf(topOf(stack), secondOf(stack)))
+, appendOf = stack => pushOf(drop2Of(stack)
+  , appendSingletonOf(topOf(stack), secondOf(stack)));
+
+// letters, strings, concatenations and runes
+let isConcatenationOf = (x,y,z) => x == y.concat(z)
+, isEmptyConcatenation = x => isConcatenationOf(x,x,x)
+, theEmptyConcatenation = ''
+, isIdenticalConcatenation = (x,y) => 
+   isConcatenationOf(x,y,theEmptyConcatenation)
+, theConcatenationOf = (x,y) => x.concat(y)
+
+, stringOf = (...letters) => theEmptyConcatenation.concat(...letters)
+, firstLetterOf = letters => isEmptyConcatenation(letters) ? theEmptyConcatenation : letters[0]
+, restLettersOf = letters => isEmptyConcatenation(letters) ? theEmptyConcatenation : letters.slice(1)
+
+, theAlphabet = '() 0123456789abcdefghijklmnopqrstuvwxyz'
+
+, runeHelpOf = (it, abc) =>
+ isEmptyConcatenation(abc) || isIdenticalConcatenation(it, firstLetterOf(abc)) ? theEmptyPair
+ : pairOf(theEmptyPair, runeHelpOf(it, restLettersOf(abc)))
+, runeOf = it => runeHelpOf(it, theAlphabet)
+
+, letterHelpOf = (it, abc) => isEmptyConcatenation(abc) ? theAlphabet
+ : isEmpty(it) ? firstLetterOf(abc)
+ : letterHelpOf(rightOf(it), restLettersOf(abc))
+, letterOf = it => letterHelpOf(it,theAlphabet)
+
+, runesOf = letters => isEmptyConcatenation(letters) ? theEmptySequence
+  : prependSingletonOf(runeOf(firstLetterOf(letters))
+    , runesOf(restLettersOf(letters)))
+
+, lettersOf = runes => isEmptySequence(runes) ? theEmptyConcatenation
+  : stringOf(letterOf(headOf(runes)), lettersOf(restOf(runes)))
+
+// read and print sequences
+let theOpenRune = theEmptyPair
+, isOpenRune = isEmpty
+, readOpenRuneOf = (stack, runes) => 
+   readSequenceOf(pushOf(stack,theEmptySequence), restOf(runes))
+
+, theCloseRune = pairOf(theEmptyPair, theOpenRune)
+, isCloseRune = it => !isEmpty(it) && isEmpty(leftOf(it)) && isOpenRune(rightOf(it))
+, readCloseRuneOf = (stack, runes) =>
+   readSequenceOf(appendOf(stack), restOf(runes))
+
+, readDefaultRune = (stack, runes) =>
+   readSequenceOf(appendOf(pushOf(stack,headOf(runes))), restOf(runes))
+
+, readSequenceOf = (stack, runes) => 
+  isEmptySequence(runes) ? headOf(topOf(stack))
+  : isOpenRune(headOf(runes)) ? readOpenRuneOf(stack,runes)
+  : isCloseRune(headOf(runes)) ? readCloseRuneOf(stack, runes)
+  : readDefaultRune(stack, runes)
+, readOf = runes => readSequenceOf(theEmptyStack, runes);
+
+let parenOf = runes => prependSingletonOf(theOpenRune
+    , appendSingletonOf(theCloseRune, runes))
+
+, printSequenceOf = sequence =>
+  isEmptySequence(sequence) ? theEmptySequence
+  : concatOf(printOf(headOf(sequence))
+    , printSequenceOf(restOf(sequence)))
+
+, printOf = sequence =>
+  isEmptySequence(sequence) ? parenOf(theEmptySequence)
+  : parenOf(printSequenceOf(sequence))   
+
+, read = letters => readOf(runesOf(letters))
+, print = sequence => lettersOf(printOf(sequence));
+```
+
+The definition of 'isConcatenationOf' aspires to more than it can reach in Javascript: a three place predicate in the lexicon of a theory of concatenation.
+The definition of 'theConcatenationOf' most clearly reveals the weakness (to anyone who wasn't already confused by the invocation of '.concat' in the definition of 'isConcatenationOf'): it is not short for a singular description.
+The three place functional predicate 'is the concatenation of' is constructed with the help of singular descriptions as
+
+> x, y, and z are such that x is identical to the (w such that w concatenates y with z)
+
+where 'is identical to' is coextensive with 'is indistinguishable from' as in a schematic thoery of identity.
+This is the basic context within which Russell's elimination of singular descriptions occurs:
+
+> x, y, and z are such that some item is (w such that x is identical to w and each item is (u such that u is identical to w if and only if u concatenates y with z)).
+
+I shall leave that behind and go on to what occurs to me in response to copying the latest iteration here.
+
+I've been looking for a better way to weave together the work so that it is cumulative without imposing additional constraints which are extraneous (as was done in an older iteration which built stacks from sequences rather than from pairs).
+
+The problem remains printing and reading, as much as these are likely to stick around in later iterations.
+A new solution occurred to me which is no more foreign to me than any other solutions that have occurred to me (that is they were already present in some work or another that I was exposed to and can not even remotely be attributed to me except perhaps for passing through me).
+
+By including a default function which catches what the defined reader doesn't, i.e. as in the default case of a case statement in a standard imperitive programming language, readers and printers can be combined like LEGOs to accomidate evolving occassions that must be dealt with e.g. as when the items of a sequence are dealt with as something other than sequences.
+
+The names of functions defined are already far longer than they would ever be if I was programming privately, perhaps this is for the better or perhaps this is for the worst, I can not yet tell.
+I'm inclined to introduce the following obtuse names "readStringAsRune", "readStringAsRunes", etc. so that then all is readers e.g. "readPairAsString" is the new name of the old function "printAsString".
+It may even be more convenient then to just name the functions "letterAsPair", "lettersAsPair", "lettersAsSequence", etc. where, e.g., "lettersAsSequence" happens to be identical to the composition of the functions designated by "lettersAsSequence" and "sequenceAsPair".
+But this doesn't make sense.
+
+The distinction between reading and writing is an io problem.
+So, "inputAsSequence" or "readAsSequence" makes sense because everthing after "inputAs" is, by explicit design, a pair.
+
+Aha, ignore all that.
+I uncovered a potential solution that simplifes and unites.
+Instead of creating a seperate set of functions for letters, strings, and the like, I can just go straight to a sequence of runes.
+
+Darn, I'll have to come back and fill this out later.
+It has been very hard to find time to write out what I have to say as it occurs to me, even with respect to these little steps along this programming project.
+
 ### 2025 0529 1419 The Philosophy of Composition by Edgar Allan Poe
 R.P. shared a delightful paper with me upon reading my last entry on Paul Graham's "Good Writing":
 [The Philosophy of Composition by Edgar Allan Poe](https://www.poetryfoundation.org/articles/69390/the-philosophy-of-composition).
