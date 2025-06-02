@@ -1,6 +1,34 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0602
+
+### 2025 0602 1615 The Ethics of Logic
+There is a grand misconception that since logic is not about anything in particular then logic is not about the world and hence logic, as with science, is without ethical or moral values.
+Logic is part of the world.
+It "deals with" or "is about" the world through each of its primary orgigins: grammar and denotation (as 'is true of' and not as 'designates').
+
+Ethical and moral contingencies (as consequences from responses on occasions e.g. a door opens from a push on a lever, an electron emits from a photon on an atom, etc.) are as much a consequence of logic as they are grammar and denotation.
+For most people, it is easier to note the part played by denotation in ethics than it is the part played by grammar.
+Grammar is traditionally dealt with as something secondary to denotation as if denotation covered meaning rather than meaning following as a trivial kind of reference accomodated entirely by denotation of a special sort (just as designation is a special case of denotation e.g. denotation by a one place singular predicate).
+
+The origins of grammatical and denotative verbal behavior dispell such traditional fictions and fictious explanations leaving a concrete link between logic and the rest of the world: the autoclitics of Skinner's "Verbal Behavior".
+
+...
+
+The ethics of logic works much like the grammar of logic in that the logic of grammar strengthes the grammar of logic and so on like so many other human practices.
+Just as the logic of grammar is a consequence of the gramamr of logic, so to is the logic of ethics a consequence of the ethics of logic.
+
+...
+
+Logic is the fulcrum of languages.
+
+the ethics of extensionality
+
+the ethics of validity
+
+the predicates of ethical theories
+
 ## 2025 0529
 
 ### 2025 0529 1511
@@ -150,6 +178,37 @@ Instead of creating a seperate set of functions for letters, strings, and the li
 
 Darn, I'll have to come back and fill this out later.
 It has been very hard to find time to write out what I have to say as it occurs to me, even with respect to these little steps along this programming project.
+
+The following incomplete and uncommented code is left here as a record of what was done but not as what was explained.
+
+```
+, where = (is, seq) => isEmptySequence(seq) 
+  || is==headOf(seq) ? theEmptySequence 
+  : prependSingletonOf(theEmptySequence, where(is, restOf(seq)))
+, here = (at, seq) => isEmptySequence(at) ? headOf(seq)
+  : itemAt(restOf(seq), restOf(at))
+, each = (f, seq) => isEmptySequence(seq) ? theEmptySequence
+  : prependSingletonOf(f(headOf(seq)), each(f, restOf(seq)))
+, over = (f, f0, seq) => isEmptySequence(seq) ? f0
+  : f(headOf(seq), over(f, f0, restOf(seq)))
+
+, til = (stop, base, step, part, rest, it) => stop(it) ? base
+  : step(part(it), til(stop, base, step, part, rest, rest(it)))
+
+, sequenceOf = items => til(x=>x.length==0, theEmptySequence, prependSingletonOf, x=>x[0], x=>x.slice(1), items)
+, here = (at, seq) => til(isEmptySequence, headOf, x=>x )
+
+, theAlphabet = sequenceOf('() 0123456789abcdefghijklmnopqrstuvwxyz')
+, readRune = rune => where(rune, theAlphabet)
+, printRune = pair => here(pair, theAlphabet)
+
+, readRunes = runes => each(readRune, sequenceOf(runes))
+, printRunes = pair => 
+```
+
+It is unclear if taking up these methods of functions on functions is sufficiently smooth to warrent admission into this discovery expedition.
+It occurs to me that since I have only recently begun sharing public notes that those reading these may not know how familiar I am with the scope and limits of different methods of programming and their mathematical theories.
+Ultimately this is of no concern to me because if I can avoid burdening others with all that I have learned and subsequently passed over, then they will be left with that much more energy to learn all that I never shall in my life.
 
 ### 2025 0529 1419 The Philosophy of Composition by Edgar Allan Poe
 R.P. shared a delightful paper with me upon reading my last entry on Paul Graham's "Good Writing":
