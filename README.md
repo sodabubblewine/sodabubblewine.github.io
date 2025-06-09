@@ -1,12 +1,105 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+## 2025 0608
+
+### 2025 0608 1515
+This continues work on my paper on logic from [2025 0521 1232](#2025-0521-1232).
+
+In order to better show how old notation gives way to better methods by way of the substitutional definition of validity, and to take a big step towards finishing my paper on logic, I shall write out my thinking as I prove the theorems which, at first, appear to decidedly take truth functional (denotative functional) logic into truth functional and existential closure logic of one place predicates (Boolean closure logic).
+
+This corresponds to the arguments from chapter 18 of Quine's "Methods of Logic 4th edition".
+First a review of terms:
+
+> Compounding is (denotative) functional when, exclusively, each like compound denotes or each like compound does not denote where and only where (waow), exclusively, each like component denotes or each like component does not denote. Chains are compounds compounded functionally e.g. joint denials denote waow each of their components do not, negations are self joint denials (they denote waow their component does not), alternations are negations of joint denials (they denote waow some of their components do), and conjunctions are joint denials of negations (they denote waow each of their components do).
+>
+> Subcompounds of compounds are their self or those of their components. Subsitutions of like compounds for like nonchain subcompounds are (denotative) functional. Compounds are (functionally) valid waow each of their functional substitutions denotes everywhere, consistent waow their negation is nonvalid (some of their substitutions denote somewhere), implied by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) is nonconsistent (each of their functional substitutions denotes where the same of the other does), and equivalent to others waow they are mutually implicative (each of their functional substitutions denotes waow the same of the other does).
+
+The last addition made to the evolving paper was the definition of (existential) closures and what I call Boolean chains and what Quine called "Boolean statement schemata".
+Quine could call them statements, or, as he tended to in his later work, sentences because they were built directly from the truth functional combinations of sentences as instances of truth functional schema of sentence letters e.g. 'It is raining or it is cold' is an instance of the truth functional schema 'p or q' where 'p' and 'q' are sentence letters and 'p' is substituded by the sentence 'it is raining' and 'q' is substituted by the sentence 'it is cold'.
+
+Here, there are only predicates, and the shift from 'is true' to 'is true of' is coupled with a disavowal of schematic methods entirely for purely grammatical ones e.g. 'rain or cold' is the alternation of the predicates 'rain' and 'cold'.
+Thus, the alternation of 'rain' and 'cold' is denotes where and only where 'rain' denotes and 'cold' denotes i.e. 'rain or cold' is true where and only where 'rain' or 'cold' is.
+To be absolutely clear in traditional terms: there is somewhere, call it x, such that 'rain or cold' denotes x if and only if 'rain' denotes x or 'cold' denotes x.
+I am hesitant to put things in these terms because they do not properly carry the methods at hand.
+
+They posit some item (here called 'x') which poses as an individuated or reified object, but what I have in mind is much more like an undifferentiated occasion or, now speaking with overt metaphors, a global stimulation or a kind of passing show or, unhappily, a unitary essence (though I would never agree to anything like this last blatently metaphysical description).
+
+The plan is to attack the problem of individuation and reification through the abstract items known as ordered pairs and subject to the single rule that ordered pairs are identical if and only if their corresponding components are.
+This simple plan is actually much more difficult to execute than it would seem because the problem of individuation and reification are difficult.
+They are difficult in that individuation and reification are remote from talk of them: they are not easy to examine by speaking and listening alone.
+The wedge of simplicity that I plan on pushing through this problem is that talk of the left and right part of an ordered pair is sufficiently similar to what is called for by individuation that it can sturdy any drift into metaphysical speculation.
+
+This long prelude to what is ultimately a report on my discovery expedition into a proof about Boolean chains is warrented by the problem posed by introducing the principle to prove.
+Quine was able to give the law as follows
+
+> If a Boolean term schema is consistent, then in any universe containing a given object there is an interpretation fo term letters that makes the schema come out true of that object. [pg. 115]
+
+A Boolean term schema is just a truth functional composition of one place predicates which Quine then paraphrases into truth functional sentence schema by distributing the name of an object, e.g. 'x', down the truth functional connectives until it is predicated of each one place predicate.
+The steps are given by the first paragraph of chapter 18:
+
+> To say of an object x that it is an F, we write 'Fx'. Here then is a new sort of sentence schema: 'Fx', 'Gx', etc. These may be compounded by truth functions; e.g. 'Fx and not Gx, or Gx only if Hx'. We may conveniently abbreviate such compounds by extracting the 'x' everywhere and putting it at the end, thus: '[F and not G, or G only if H]x'. We arrive in this way at schematic representations of certain complex terms: schemat such as 'not G', 'F and G', 'G only if H', 'F and not G, or G only if H', etc. They will be called *Boolean term schemata*. [pg. 114]
+
+Since I begin with predicates rather than sentences, I have no recourse to the logic of sentences and their truth functional structure.
+I also do not have access to methods of truth value analysis that Quine uses throughout his text.
+The consequence of these restrictions is a prestine simplicity: what comes out as truth functional analysis in Quine's text comes out as equivalence to succesive alternational developments of subcomponents.
+I've not gone through the details of this development in the paper yet because it would break the law of premature optimization.
+
+Most importantly, I do not have names for things: variables play no part at all nor do singular terms nor do singular descriptions.
+All of these carry over into singular predicates which denote one and only one item: all methods of designation reduce to this use.
+Predication is achieved by, e.g., an existential cropping of a conjunction of a singular predicate with a one place predicate.
+Existential croppings are straight out of Quine's presentations of predicate functor logic.
+Croppings do not crop up anywhere in the Boolean parts of my paper on logic.
+
+Returning now to the law at hand in Quine's words.
+The consistency of the Boolean term schema of the law guarentees that there is some object of some universe under some interpretation that it is true of.
+What the law says is something more than what consistency directly implies: pick an object in any universe whatso ever and there is an intrepretation that makes that consistent Boolean term schema true of that object in that universe.
+Quine's argument is short and simple in ways that are not accessible directly by my methods:
+
+> For, being consistent, the schema resolves to the true under some substitution of the true and the false for the term letters. We have merely to interpret each term letter as true or false of the given object according as its substitute was the true or the false. [pg. 115]
+
+One note on my quotation of Quine's words: I've replaced quotations of a special bold letter tee and its upside down reflection with the phrases 'the true' and 'the false' even though Quine otherwise mentioned these notations as short for 'truth' and 'falsity' as truth values.
+This is primarly to draw a closer connection between Frege's outlook and Quine's (it is mostly to remind my future self that there is more to say about this later).
+
+> Anywhere is denoted by some functional substitution of a consistency.
+
+That is the problem to solve.
+It is not solved here because I stopped here writing before I solved it.
+
+## 2025 0605
+
+### 2025 0605 1541
+
+Henkin's theorem is presented in Ebbinghaus, Flum, and Thomas as 
+
+> Let capital phi be a consistent set of formulas which is negation complete and contains witnesses. Then, for all phi, 
+> > the term interpretation of capital phi satisfies phi if and only if capital phi proves phi.
+
+This reveals one of the weaknesses of Ebbinghaus, Flum, and Thomas' book (and a lot of books on mathematical logic): a needlessly complex sequence of symbols and definitions are lofted atop each other in haste to establish a narrow statement of an otherwise general result.
+
+There are a number of things that I have to get out of the way in order to write on this:
+
+1. Almost all books on mathematical logic (and some on logic) make a grand dichotomy between syntax and semantics as if these are two complementary and comprehensive classifications of the methods of logic i.e. as if a method of logic is syntactic or semantic (or perhaps both, although usually only by some equivalence).
+This yields the myopic view that there are two classifications of logical methods: model theoretic and proof theoretic.
+In EFT model theoretic methods are a kind of mathematical semantics and proof theoretic methods are a kind of matheamtical syntax.
+But this is not really just a pecularity of EFT's book on mathematical logic, it can be found throughout books on mathematical logic e.g. the classic by Joseph R. Shoenfield.
+
+    This is a mistake of history and says more about the insensitivity of mathematical logicians to logicians than it does anything about logic or mathematical logic.
+
+2.
+
+
+Well, there's a fragment of writing that I'll never finish.
+
+
+
+
 ## 2025 0602
 
 ### 2025 0602 1615 The Ethics of Logic
 There is a grand misconception that since logic is not about anything in particular then logic is not about the world and hence logic, as with science, is without ethical or moral values.
 Logic is part of the world.
-It "deals with" or "is about" the world through each of its primary orgigins: grammar and denotation (as 'is true of' and not as 'designates').
+It "deals with" or "is about" the world through each of its primary origins: grammar and denotation (as 'is true of' and not as 'designates').
 
 Ethical and moral contingencies (as consequences from responses on occasions e.g. a door opens from a push on a lever, an electron emits from a photon on an atom, etc.) are as much a consequence of logic as they are grammar and denotation.
 For most people, it is easier to note the part played by denotation in ethics than it is the part played by grammar.
@@ -500,7 +593,7 @@ I shall add comments on what is written or what is to be written (as a record of
 Logic is the science of validity and validity is a consequence of grammar and denotation.
 
 Compounding is (denotative) functional when, exclusively, each like compound denotes or each like compound does not denote where and only where (waow), exclusively, each like component denotes or each like component does not denote.
-Chains are compounds compounded functionally e.g. joint denials denote waow each of their components do not, negations are self joint denials (they denote waow their component does not), alternations are negations of joint denials (they denote waow some of their components do), and conjunctions are joint denials of engatiosn (they denote waow each of their components do).
+Chains are compounds compounded functionally e.g. joint denials denote waow each of their components do not, negations are self joint denials (they denote waow their component does not), alternations are negations of joint denials (they denote waow some of their components do), and conjunctions are joint denials of negations (they denote waow each of their components do).
 
 > The phrase "where and only where" is critical here: it links up the practices of logic with talk of the rest of the world.
 > This turns on a geometric interpretation of spacetime which I do not mention except through the occurrence of 'where' and 'when'.
