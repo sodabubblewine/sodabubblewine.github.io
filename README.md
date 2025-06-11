@@ -1,6 +1,64 @@
 # What I Must Do Before I Die
 Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
 
+# Notes
+
+## 2025 0610
+
+### 2025 0610 1648
+Notes on "the brain is not a computer".
+
+
+The brain is not a computer: it is not a consequence of centuries of science and logic.
+It evolved, like any other organ, by natural selection by consequences from variations.
+
+It evolved without anything like the deliberate designs which brought about modern digital computers and their analogue predecessors.
+We can say that the brain evolved as part of a behaving organism and that the practices which brought about computers evolved as social environments brought more and more of their deferred consequences under scientific and logical control.
+
+A common mistake, especially among brain scientists, is to say that the mind is what the brain does.
+That different parts of the mind are the computations which run on different parts of the brain as biochemical computers.
+
+What I finally wrote (and I regret sending it):
+
+> The brain is not a computer in the same way that the physical world is not an equation. Computers are a consequence of centuries of science and logic, but the brain is a consequence of some 4 billion years of natural selection. Zeno's paradoxes teach how such metaphors miscarry.
+
+
+### 2025 0610 1606
+
+#### HOW TO CONTROL YOUR BEHAVIOR
+
+Your behavior is under the control of its consequences.
+The more control you have over the consequences of your behavior, the more (self) control you have over your behavior:
+1. Find the controls you have.
+2. Build better controls from them.
+3. Go to 1.
+
+
+#### HOW TO MAKE A THEORY LOGICAL
+
+1. List the nouns and verbs you use when you talk about it.
+2. Define as many of them as you can from as few as you can.
+3. List sentences made from those few that are true.
+4. Conclude as many of them as you can from as few as you can.
+5. Go to 1.
+
+
+#### HOW TO ACT
+
+Conclude from contemplation on templates:
+1. Notes link templates to conclusions.
+2. Memos link contemplations to templates.
+3. Rules link conclusions to contemplations.
+4. Good notes accurately report.
+5. Good memos accelerate change.
+6. Good rules adaptively govern.
+
+If memos, notes, and rules were lights of a traffic signal they would be colored red, yellow, and green.
+
+Logic is the axis on which the lever arm of language turns.
+Without logic, all the work in the world is without fixed purpose.
+
+
 ## 2025 0608
 
 ### 2025 0608 1515
@@ -53,7 +111,7 @@ Croppings do not crop up anywhere in the Boolean parts of my paper on logic.
 
 Returning now to the law at hand in Quine's words.
 The consistency of the Boolean term schema of the law guarentees that there is some object of some universe under some interpretation that it is true of.
-What the law says is something more than what consistency directly implies: pick an object in any universe whatso ever and there is an intrepretation that makes that consistent Boolean term schema true of that object in that universe.
+What the law says is something more than what consistency directly implies: pick an object in any universe whatsoever and there is an intrepretation that makes that consistent Boolean term schema true of that object in that universe.
 Quine's argument is short and simple in ways that are not accessible directly by my methods:
 
 > For, being consistent, the schema resolves to the true under some substitution of the true and the false for the term letters. We have merely to interpret each term letter as true or false of the given object according as its substitute was the true or the false. [pg. 115]
