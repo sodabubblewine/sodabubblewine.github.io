@@ -3,6 +3,28 @@ Discover, predict, and control changes in counts, rates, and accelerations as se
 
 # Notes
 
+## 2025 0616
+
+### 2025 0616 1545
+
+Evolving sentences.
+
+> Quotations record verbal responses without recording their occasion or their consequence.
+
+Became:
+
+> Quotations show you what was said without showing you who said it, when they said it, where they said it, or what hapened after they said it e.g. 'This is red.' does not show that a child said it of a blue ball to an adult who then said 'No, that is blue.'
+
+Now for some live work.
+
+1. Linguists find rules for making all the quotations they meet.
+2. Linguists list quotations and make rules for generating as many quotations on the list as they can.
+3. Linguists look at quotations. 
+4. Linguists collect quotations.
+5. Linguist collect quotations and organize them into languages and grammars.
+6. Linguist collect quotations and behaviorists collect the quotation, the occasion on which it occurred, and the consequence.
+7. Logic, borrowing from the linguists as grammarians, 
+
 ## 2025 0610
 
 ### 2025 0610 1648
