@@ -1,6 +1,6 @@
 # HINTS
 
-**WHAT TO DO**
+### WHAT TO DO
 1. Discover, predict, and control changes
 <br> *in counts, rates, and accelerations*
 2. as selections from variations
@@ -16,7 +16,7 @@
 <br> **behavior** *biological, biosocial, social*
 <br> **culture** *history, science, technology*
 
-**HOW TO DO IT**
+### HOW TO DO IT
 
 Conclude from contemplation on templates:
 1. Notes link templates to conclusions.
@@ -28,19 +28,19 @@ Conclude from contemplation on templates:
 
 
 
-**HOW TO WRITE IT WELL 99% OF THE TIME**
+### HOW TO WRITE IT WELL 99% OF THE TIME
 
 1. Read "Writing that Works" by Joel Raphaelson and Kenneth Roman.
 2. Read "The Elements of Style" by E. B. White and William Strunk Jr.
-3. Go to 1
+3. Go to 1.
 
-**HOW TO WRITE IT WELL THE OTHER 1% OF THE TIME**
+### HOW TO WRITE IT WELL THE OTHER 1% OF THE TIME
 
 Journal your thoughts and feelings.
 
 
 
-**HOW TO MAKE IT LOGICAL**
+### HOW TO MAKE IT LOGICAL
 
 1. List the nouns and verbs you use when you talk about it.
 2. Define as many of them as you can from as few as you can.
@@ -50,7 +50,7 @@ Journal your thoughts and feelings.
 
 
 
-**HOW TO CONTROL YOUR BEHAVIOR**
+### HOW TO CONTROL YOUR BEHAVIOR
 
 1. Your behavior is selected by its consequences.
 2. The more control you have over the consequences of your behavior, the more (self) control you have over your behavior:
@@ -112,7 +112,6 @@ Conclude from contemplation on templates:
 5. Good memos accelerate change.
 6. Good hints adaptively govern.
 
----
 
 Memos and hints evolve from notes.
 
