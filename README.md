@@ -1,7 +1,160 @@
-# What I Must Do Before I Die
-Discover, predict, and control changes in counts, rates, and accelerations as selections from variations on physical, chemical, biological, behavioral, and cultural scales by making and maintaining strong practices mediated by strong people marked by strong principles from the sciences of logic (denotative, Boolean, and functor), mathematics (calculi, collections, and categories), physics (quantum field theory, statistical thermodynamics, gravity), chemistry (phyiscal, biophysical, and biological), biology (oranelles, organisms, environments), behavior (biological, biosocial, social), and culture (history, science, technology).
+# HINTS
 
-# Notes
+**WHAT TO DO**
+1. Discover, predict, and control changes
+<br> *in counts, rates, and accelerations*
+2. as selections from variations
+<br> *on physical, chemical, biological, behavioral, and cultural scales*
+3. by making and maintaining strong practices
+<br> *mediated by strong people marked by strong principles*
+4. from the sciences of
+<br> **logic** *denotative, Boolean, functor*
+<br> **mathematics** *calculi, collections, categories*
+<br> **physics** *quantum field theory, statistical thermodynamics, gravity*
+<br> **chemistry** *phyiscal, biophysical, and biological*
+<br> **biology** *oranelles, organisms, environments*
+<br> **behavior** *biological, biosocial, social*
+<br> **culture** *history, science, technology*
+
+**HOW TO DO IT**
+
+Conclude from contemplation on templates:
+1. Notes link templates to conclusions.
+2. Memos link contemplations to templates.
+3. Hints link conclusions to contemplations.
+4. Good notes accurately report.
+5. Good memos accelerate change.
+6. Good hints adaptively govern.
+
+
+
+**HOW TO WRITE IT WELL 99% OF THE TIME**
+
+1. Read "Writing that Works" by Joel Raphaelson and Kenneth Roman.
+2. Read "The Elements of Style" by E. B. White and William Strunk Jr.
+3. Go to 1
+
+**HOW TO WRITE IT WELL THE OTHER 1% OF THE TIME**
+
+Journal your thoughts and feelings.
+
+
+
+**HOW TO MAKE IT LOGICAL**
+
+1. List the nouns and verbs you use when you talk about it.
+2. Define as many of them as you can from as few as you can.
+3. List sentences made from those few that are true.
+4. Conclude as many of them as you can from as few as you can.
+5. Go to 1.
+
+
+
+**HOW TO CONTROL YOUR BEHAVIOR**
+
+1. Your behavior is selected by its consequences.
+2. The more control you have over the consequences of your behavior, the more (self) control you have over your behavior:
+3. Find the controls you have.
+4. Build better controls from them.
+5. Go to 3.
+
+
+
+
+# NOTES
+
+## 2025 0618
+
+### 2025 0618 2104
+Some rejected designs for the hint on what I must do before I die:
+
+> **WHAT I MUST DO BEFORE I DIE**
+> 1. Discover, predict, and control changes--*in counts, rates, and accelerations*
+> 2. as selections from variations--*on physical, chemical, biological, behavioral, and cultural scales*
+> 3. by making and maintaining strong practices--*mediated by strong people marked by strong principles*
+> 4. from the sciences: 
+> 5. logic--*denotative, Boolean, functor*
+> 6. mathematics--*calculi, collections, categories*
+> 7. physics--*quantum field theory, statistical thermodynamics, gravity*
+> 8. chemistry--*phyiscal, biophysical, and biological*
+> 9. biology--*oranelles, organisms, environments*
+> 10. behavior--*biological, biosocial, social*
+> 11. culture--*history, science, technology*
+
+> **WHAT I MUST DO BEFORE I DIE**
+> 1. Discover, predict, and control changes
+>   - *in counts, rates, and accelerations*
+> 2. as selections from variations 
+>    - *on physical, chemical, biological, behavioral, and cultural scales*
+> 3. by making and maintaining strong practices 
+>    - *mediated by strong people marked by strong principles*
+> 4. from the sciences 
+>    - *logic--denotative, Boolean, functor*
+>   - *mathematics--calculi, collections, categories*
+>   - *physics--quantum field theory, statistical thermodynamics, gravity*
+>   - *chemistry--phyiscal, biophysical, and biological*
+>   - *biology--oranelles, organisms, environments*
+>   - *behavior--biological, biosocial, social*
+>   - *culture--history, science, technology*
+
+
+
+### 2025 0618 2009
+These dated entries are now officially notes in the following sense.
+
+**HOW TO DO IT**
+
+Conclude from contemplation on templates:
+1. Notes link templates to conclusions.
+2. Memos link contemplations to templates.
+3. Hints link conclusions to contemplations.
+4. Good notes accurately report.
+5. Good memos accelerate change.
+6. Good hints adaptively govern.
+
+---
+
+Memos and hints evolve from notes.
+
+I'm now writing under the control of 
+
+**HOW TO WRITE WELL 99% OF THE TIME**
+
+1. Read "Writing that Works" by Joel Raphaelson and Kenneth Roman.
+2. Read "The Elements of Style" by E. B. White and William Strunk Jr.
+3. Go to 1
+
+**HOW TO WRITE WELL THE OTHER 1% OF THE TIME**
+
+Journal your thoughts and feelings.
+
+
+### 2025 0618 1953
+
+#### HOW TO WRITE WELL 99% OF THE TIME
+1. Read "Writing that Works" by Joel Raphaelson and Kenneth Roman.
+2. Read "The Elements of Style" by E. B. White and William Strunk Jr.
+3. Go to 1
+
+#### HOW TO WRITE WELL THE OTHER 1% OF THE TIME
+Journal your thoughts and feelings.
+
+#### HOW TO SOLVE MATH PROBLEMS WITH MY NEPHEWS OVER THE PHONE
+1. Show me the problems.
+2. Show me the work.
+3. Call me.
+4. Talk it out.
+5. Share hints.
+
+#### FROM TWITTER
+* "The Golden Road" by William Dalrymple
+* Hard Chip: MOSFETs and Spaceships
+* Better methods tend to deal with more pains--not fewer.
+* Sir Gary Oldman
+* Cascadian Chorale performs "Reqium" by Jeremy Kings
+* Replace 'rules' with 'hints'.
+* "Augmented Vertex Block Descent" by Giles, Diaz, and Yuksel--compare to XPBD
+
 
 ## 2025 0616
 
