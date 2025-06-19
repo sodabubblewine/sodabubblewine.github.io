@@ -11,7 +11,7 @@
 <br> **logic** *denotative, Boolean, functor*
 <br> **mathematics** *calculi, collections, categories*
 <br> **physics** *quantum field theory, statistical thermodynamics, gravity*
-<br> **chemistry** *phyiscal, biophysical, and biological*
+<br> **chemistry** *phyiscal, biophysical, biological*
 <br> **biology** *oranelles, organisms, environments*
 <br> **behavior** *biological, biosocial, social*
 <br> **culture** *history, science, technology*
@@ -26,8 +26,6 @@ Conclude from contemplation on templates:
 5. Good memos accelerate change.
 6. Good hints adaptively govern.
 
-
-
 ### HOW TO WRITE IT WELL 99% OF THE TIME
 
 1. Read "Writing that Works" by Joel Raphaelson and Kenneth Roman.
@@ -38,8 +36,6 @@ Conclude from contemplation on templates:
 
 Journal your thoughts and feelings.
 
-
-
 ### HOW TO MAKE IT LOGICAL
 
 1. List the nouns and verbs you use when you talk about it.
@@ -48,7 +44,12 @@ Journal your thoughts and feelings.
 4. Conclude as many of them as you can from as few as you can.
 5. Go to 1.
 
+### HOW PREDICATE ABSTRACTS WORK
 
+1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
+2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
+3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
+4. Thus, whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
 
 ### HOW TO CONTROL YOUR BEHAVIOR
 
@@ -62,6 +63,83 @@ Journal your thoughts and feelings.
 
 
 # NOTES
+
+## 2025 0619
+
+### 2025 0619 1718
+1. The first memo must be on predicate (functor) logic.
+
+2. It must combine Quine's "Methods of Logic 4th edition", "Philosophy of Logic 2nd edition", and the 1954 entry in the Encyclopedia Americana on symbolic logic.
+
+3. The encyclopedia entry is included in "selected logic papers Enlarged edition".
+
+4. It covers the entirety of an earlier edition of methods of logic in a few pages.
+
+5. Many arguments are left out and since it was written in 1954 it does not contain Quine's main method.
+
+6. It also doesn't contain the distinctions that Quine would later point up as distinctions between logic and mathematics.
+
+7. I submit that the methods of logic can be completely, clearly, and effectively given in a memo of only a few pages.
+
+8.  The key is to entirely avoid the complexities of variables, schema, truth values, and other supplementary methods which obscure the role that grammar and denotation play in logic.
+
+9. Here is a short story I wrote as a candidate introduction to the memo on predicate logic:
+> Once upon a time a man grew up in the jungle learning only how to grunt until one day a woman taught him to speak.
+> She held up an apple, said 'red', the man help it up, grunted 'red', and she showered him with praises.
+> He held up another apple, grunted 'red', she said 'no', held it up, and said 'green'.
+> So the story goes.
+
+10. It occurred to me that a single paragraph of italic text could be put at the beginning of a memo to tell a story that makes it eaiser to find the memo and to set up its conclusions.
+
+11. In this case the story sets up the first paragraph
+> Sayings like 'red' and 'green' are called predicates because they are true or false *of* the occasion on which they are said.
+> Technically, one place predicates -- e.g. 'dog', 'round', 'runs' -- are true or false of items; two place predicates -- e.g. 'parent of', 'ontop of', 'less than' -- are true or false of ordered pairs of items; three place predicates are ture or false of ordered triples; and so on.
+
+12. It just occurred to me that when taking notes it is probably best that I number each phrase I compose rather than simply bullet point them; I just looked at a preview of this entry where bullet points where used instead of numbers and it was clear that numbers would help more than bullet points when finding and perhaps mentioning the specifics of this note in any note (including this one).
+
+13. Something about the specificity of numbers makes them concrete markers when read as part of a page of text.
+
+14. Bullet points just run together like a laundry list: this is an accurate report not a laundry list, and, ultimately, it aims to link conclusions with templates; do numbers help this? Yes. They enforce an order that is part of how the writing occurred.
+15. It is a common mistake for people to say that their thoughts are multidimensional or tree like, as if there is a branch tree of choices that they are able to contemplate as a kind of superposition of comparisons; but that is inaccurate; we behave linearly and locally; it is only the mentalistic metaphors that point to some other world where the topology of concepts takes on supernatural shapes.
+
+15. When writing numbered lists like these in markdown, put a space between each numbered item.
+If you don't then what starts out as an easy to navigate number list turns into a big blob and your eye has to hunt for where the numbers are and there's always the question if they are just the end of a sentence that coincidentally runs onto the beginning of the next line.
+
+16. I should be able to look back on past notes and see the change in style from before and after I took the advice in the book "Writing that Works" by Roman and Raphaelson.
+
+17. Another thing that writing with numbered lists allows me is to avoid complete sentences i.e. to avoid adding needless words; I can just go on to the next thing and leave the last thing behind; this is not the case when it comes to memos, but, there, numbered lists serve an even more powerful purpose: they can churn up effective action again and again, and if there is a particularly powerful item, its number can be learned and make finding it even that much easier.
+
+18. Numbering items also makes it easier to break things into managable chunks.
+
+19. A second attempt at writing the single paragraph story from 9.
+> Once upon a time a man grew up in the jungle.
+> The only noises he made were grunts until one day a woman taught him to speak.
+> She held up an apple, said 'red', he held it up, slowly said 'red', and she mirrored for him to take a bite out of it.
+> He held up another apple, said 'red', she held it up, said 'no', then said 'green'.
+
+20. I'm apt to change 'sayings' to 'phrases' because 'phrase' has an etymology closer to that of verbal response.
+
+21. In the past, 'verbal response' was what I would write when talking about logical behavior as a kind of verbal behavior, but it does not work when I'm talking to those who are not already involved in the science of behavior or who are unfamiliar with the details of its experimental analyses.
+Technical terms like 'experimental analysis' is unlikely to be read with the trappings of a concrete noun like 'gadget', although an experimental analysis can be described concretely as what goes on in a lab.
+Sadly, this then leaves the phrase further undefined: what happens in labs?
+Does the person reading this know what really goings on in labs?
+It is as part of an answer to this question that I think Skinner was primed to frequently refer to "Wundt's brass instruments".
+
+22. Another practical reason to number these notes is that they are more likely than ever to be referenced in conversations with others.
+I am learning more about how best to connect with others without burdening them with time wasted or the promise there of.
+Most of my writing is of this sort, and whatever I can do to cut through it as early as possible, i.e. to make accurate and salient records of thinking and feeling, the faster I can get out effective memos, make effective conclusions, and build up a treasure trove of strong templates.
+
+23. Second attempt at writing the first paragraph from 11.
+> Phrases like 'red' and 'green' are predicates.
+> They are true or false *of* the occasion on which they are said.
+> - When they are said, they are true or false *of* the occasion.
+> - They are true or false *of* where they are said.
+> - They are true or false where they are said.
+
+24. The phrases 'true of' and 'false of' are for those who are unfamiliar with 'denotes' and for those who do not yet distinguish between 'denotes' and 'designates'.
+Following Quine -- who followed Mill -- I say that predicates denote each thing they are true of and singular terms purport to designate one and only one thing.
+
+25. It just occurred to me that my single sentence explanation of how predicate abstracs work is worthy of joining the other hints at the top of this document.
 
 ## 2025 0618
 
