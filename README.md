@@ -81,7 +81,10 @@ Journal your thoughts and feelings.
     > Note that this representation makes each n-tuple (...x,...y) an m-tuple ((...x),...y) since (...x,...y) = ((...x),...y).
     > Finite sequences will be represented below in a modified form in such a way that each finite sequence has definite length.
 
-5. 
+5. Another attempt to write the short story starting the memo on predicate logic
+    > Once upon a time a man grew up grunting in the jungle until a woman taught him to speak.
+    > She held up an apple, said ‘red’, he held it up, slowly said ‘red’, and then she smiled.
+    > He held up another apple, said ‘red’, she held it up, said ‘no’, and then said ‘green’.
 
 ### 2025 0619 1718
 1. The first memo must be on predicate (functor) logic.
@@ -160,6 +163,7 @@ Following Quine -- who followed Mill -- I say that predicates denote each thing 
 26. It just occurred to me that my single sentence explanation of how predicate abstracs work is worthy of joining the other hints at the top of this document.
     I edited the single paragarph 
     >The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}' which *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:' so that the *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick': whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
+
     into 
 
     > **HOW PREDICATE ABSTRACTS WORK**
