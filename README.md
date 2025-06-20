@@ -38,10 +38,10 @@ Journal your thoughts and feelings.
 
 ### HOW TO MAKE IT LOGICAL
 
-1. List the nouns and verbs you use when you talk about it.
-2. Define as many of them as you can from as few as you can.
-3. List sentences made from those few that are true.
-4. Conclude as many of them as you can from as few as you can.
+1. List the nouns, adjectives, and verbs you use to talk about it.
+2. Define as many as you can from as few as you can.
+3. List true sentences made from those few.
+4. Conclude as many as you can from as few as you can.
 5. Go to 1.
 
 ### HOW PREDICATE ABSTRACTS WORK
@@ -53,16 +53,39 @@ Journal your thoughts and feelings.
 
 ### HOW TO CONTROL YOUR BEHAVIOR
 
-1. Your behavior is selected by its consequences.
-2. The more control you have over the consequences of your behavior, the more (self) control you have over your behavior:
-3. Find the controls you have.
-4. Build better controls from them.
-5. Go to 3.
-
-
+1. Consequences select behavior.
+2. Control consequences to control behavior.
+3. Build new behavior from old behavior.
+4. Build new controls from old controls.
 
 
 # NOTES
+
+## 2025 0620
+
+### 2025 0620 1337
+1. Short story for predicate logic memo
+> Once upon a time, a man grew up all alone in the jungle and only knew how to make grunts.
+> One day, a woman came and taught him to speak.
+> She held up an apple, said 'red', he held it up, said 'red', and she smiled.
+> He held up another apple, said 'red', she frowned, held it up, and said 'green.
+> And so on the story goes.
+
+2. Updated some hints (old versions can be found at [2025 0610 1606](#2025-0610-1606)).
+    > **HOW TO MAKE IT LOGICAL**
+    > 
+    > 1. List the nouns, adjectives, and verbs you use to talk about it.
+    > 2. Define as many as you can from as few as you can.
+    > 3. List true sentences made from those few.
+    > 4. Conclude as many as you can from as few as you can.
+    > 5. Go to 1.
+    > 
+    > **HOW TO CONTROL YOUR BEHAVIOR**
+    > 
+    > 1. Consequences select behavior.
+    > 2. Control consequences to control behavior.
+    > 3. Build new behavior from old behavior.
+    > 4. Build new controls from old controls.
 
 ## 2025 0619
 
@@ -76,6 +99,7 @@ Journal your thoughts and feelings.
 
 4. As Quine mentions on page 37 of "Philosophy of Logic 2nd edition"
     > Longer sequences can be defined by iteration: (x,y,z) as ((x,y),z), then (x,y,z,w) as ((x,y),z,w), and so on. But David Miller has shown me that this method leads to ambiguities of length if we admit sequences of different lengths in the same contexts, as I shall be doing.
+
     and as Feferman mentions on page 4 of "Finitary Inductively Presented Logic" (with my paraphrasing)
     > *Abbreviations.* (x,y) := the pair whose left part is x and whose right part is y; (x) := x; (...x, y) := ((...x), y).
     > Note that this representation makes each n-tuple (...x,...y) an m-tuple ((...x),...y) since (...x,...y) = ((...x),...y).
@@ -84,7 +108,7 @@ Journal your thoughts and feelings.
 5. Another attempt to write the short story starting the memo on predicate logic
     > Once upon a time a man grew up grunting in the jungle until a woman taught him to speak.
     > She held up an apple, said ‘red’, he held it up, slowly said ‘red’, and then she smiled.
-    > He held up another apple, said ‘red’, she held it up, said ‘no’, and then said ‘green’.
+    > He held up another apple, said ‘red’, she frowned, held it up, and then said ‘green’.
 
 ### 2025 0619 1718
 1. The first memo must be on predicate (functor) logic.
@@ -165,7 +189,6 @@ Following Quine -- who followed Mill -- I say that predicates denote each thing 
     >The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}' which *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:' so that the *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick': whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
 
     into 
-
     > **HOW PREDICATE ABSTRACTS WORK**
     >
     > 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
@@ -340,16 +363,16 @@ What I finally wrote (and I regret sending it):
 
 ### 2025 0610 1606
 
-#### HOW TO CONTROL YOUR BEHAVIOR
+**HOW TO CONTROL YOUR BEHAVIOR**
 
 Your behavior is under the control of its consequences.
-The more control you have over the consequences of your behavior, the more (self) control you have over your behavior:
+The more control you have over the consequences of your behavior, the more (self) control you have over your behavior.
 1. Find the controls you have.
 2. Build better controls from them.
 3. Go to 1.
 
 
-#### HOW TO MAKE A THEORY LOGICAL
+**HOW TO MAKE A THEORY LOGICAL**
 
 1. List the nouns and verbs you use when you talk about it.
 2. Define as many of them as you can from as few as you can.
@@ -358,7 +381,7 @@ The more control you have over the consequences of your behavior, the more (self
 5. Go to 1.
 
 
-#### HOW TO ACT
+**HOW TO ACT**
 
 Conclude from contemplation on templates:
 1. Notes link templates to conclusions.
