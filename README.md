@@ -66,6 +66,25 @@ Journal your thoughts and feelings.
 
 ## 2025 0619
 
+### 2025 0619 2004
+
+1. Vernacular has number names but not tree names.
+
+2. Just as we can speak of the shape of an array in the J programming language, so too can I speak of the shape of a predicate.
+
+3. Predicates can be tree shaped, sequence shaped, and any other shape that can be set up from the introduction of ordered pairs as those items which are identical where and only where their left components are identical and the right components are identical.
+
+4. As Quine mentions on page 37 of "Philosophy of Logic 2nd edition"
+    > Longer sequences can be defined by iteration: (x,y,z) as ((x,y),z), then (x,y,z,w) as ((x,y),z,w), and so on. But David Miller has shown me that this method leads to ambiguities of length if we admit sequences of different lengths in the same contexts, as I shall be doing.
+
+    and as Feferman mentions on page 4 of "Finitary Inductively Presented Logic" (with my paraphrasing)
+    > *Abbreviations.* (x,y) := the pair whose left part is x and whose right part is y
+    > 
+    > (x) := x; (...x, y) := ((...x), y)
+    > Note that this representation makes each n-tuple (...x,...y) an m-tuple ((...x),...y) since (...x,...y)=((...x),...y). Finite sequences will be represented below in a modified form in such a way that each finite sequence has definite length.
+
+5. 
+
 ### 2025 0619 1718
 1. The first memo must be on predicate (functor) logic.
 
@@ -163,16 +182,25 @@ In his presentation he has access to the truth values and interpretations of dum
 These methods fail to emphasize the key to modern logical methods: Tarski's analysis of truth.
 
 28. Tarski's analysis of truth points up exactly those ways in which logical methods are derivative of the methods of grammar and the methods of denotation.
-Most people are familiar with the methods of grammar: they are taught that complete sentences have a subject and a predicate and that compound sentences are composed from component sentences that are complete with grammatical particles like 'and', 'not', or 'or'.
+Most people are familiar with the methods of grammar: they are taught that complete sentences have a subject and a predicate and that compound sentences are composed from component sentences that are compounded with grammatical particles like 'and', 'not', or 'or'.
 Most people are unfamiliar with the methods of denotation: they are not taught how verbal behavior is shaped by the reinforcing practices of a verbal community as in the story about the man who grunted in the jungle until he met a woman who spoke and listened in English.
 
 29. Just lost like 10 minutes to twitter: picking it up to send off a tweet is followed by scrolling.
 The origins of picking up the phone to send the tweet in the first place are in that elusive schedule of reinforcement called "posting".
 Just as babies appear to be born babblers, adults appear to be born tweeters [groucho face].
 
-30. [Captioning Tip Sheet](https://dcmp.org/learn/225-captioning-tip-sheet) and [Captioning Key](https://dcmp.org/learn/captioningkey)
+30. I recently became interested in how subtitles and captions are composed.
+I watch almost everything with subtitles on, and happened to notice that those of BritBox were exemplary.
+Here are some hints on making captions work: [Captioning Tip Sheet](https://dcmp.org/learn/225-captioning-tip-sheet) and [Captioning Key](https://dcmp.org/learn/captioningkey)
 
-31. 
+31. Went away from the keyboard to make some book recommendations for a friend; got lost reading on evolutionary biology; fear I'm letting my free time slip away unproductively (making a book recommendation is productive, getting lost reading something that is not scheduled is unproductive).
+
+32. Should I start a new timestamped note after a certain number of items have been listed? after I've gotten up from the keyboard?
+
+33. I wrote some notes on 'how to sit and think' and 'how to walk and think', but I can't find them now.
+I'm mad.
+
+34. Because of 31, I'm going to do dishes.
 
 ## 2025 0618
 
