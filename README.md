@@ -10,7 +10,7 @@
 4. from the sciences of
 <br> **logic** *denotative, Boolean, functor*
 <br> **mathematics** *calculi, collections, categories*
-<br> **physics** *quantum field theory, statistical thermodynamics, gravity*
+<br> **physics** *quantum, thermodynamic, gravitional*
 <br> **chemistry** *phyiscal, biophysical, biological*
 <br> **biology** *oranelles, organisms, environments*
 <br> **behavior** *biological, biosocial, social*
@@ -76,12 +76,10 @@ Journal your thoughts and feelings.
 
 4. As Quine mentions on page 37 of "Philosophy of Logic 2nd edition"
     > Longer sequences can be defined by iteration: (x,y,z) as ((x,y),z), then (x,y,z,w) as ((x,y),z,w), and so on. But David Miller has shown me that this method leads to ambiguities of length if we admit sequences of different lengths in the same contexts, as I shall be doing.
-
     and as Feferman mentions on page 4 of "Finitary Inductively Presented Logic" (with my paraphrasing)
-    > *Abbreviations.* (x,y) := the pair whose left part is x and whose right part is y
-    > 
-    > (x) := x; (...x, y) := ((...x), y)
-    > Note that this representation makes each n-tuple (...x,...y) an m-tuple ((...x),...y) since (...x,...y)=((...x),...y). Finite sequences will be represented below in a modified form in such a way that each finite sequence has definite length.
+    > *Abbreviations.* (x,y) := the pair whose left part is x and whose right part is y; (x) := x; (...x, y) := ((...x), y).
+    > Note that this representation makes each n-tuple (...x,...y) an m-tuple ((...x),...y) since (...x,...y) = ((...x),...y).
+    > Finite sequences will be represented below in a modified form in such a way that each finite sequence has definite length.
 
 5. 
 
@@ -119,88 +117,88 @@ Journal your thoughts and feelings.
 13. Something about the specificity of numbers makes them concrete markers when read as part of a page of text.
 
 14. Bullet points just run together like a laundry list: this is an accurate report not a laundry list, and, ultimately, it aims to link conclusions with templates; do numbers help this? Yes. They enforce an order that is part of how the writing occurred.
+
 15. It is a common mistake for people to say that their thoughts are multidimensional or tree like, as if there is a branch tree of choices that they are able to contemplate as a kind of superposition of comparisons; but that is inaccurate; we behave linearly and locally; it is only the mentalistic metaphors that point to some other world where the topology of concepts takes on supernatural shapes.
 
-15. When writing numbered lists like these in markdown, put a space between each numbered item.
+16. When writing numbered lists like these in markdown, put a space between each numbered item.
 If you don't then what starts out as an easy to navigate number list turns into a big blob and your eye has to hunt for where the numbers are and there's always the question if they are just the end of a sentence that coincidentally runs onto the beginning of the next line.
 
-16. I should be able to look back on past notes and see the change in style from before and after I took the advice in the book "Writing that Works" by Roman and Raphaelson.
+17. I should be able to look back on past notes and see the change in style from before and after I took the advice in the book "Writing that Works" by Roman and Raphaelson.
 
-17. Another thing that writing with numbered lists allows me is to avoid complete sentences i.e. to avoid adding needless words; I can just go on to the next thing and leave the last thing behind; this is not the case when it comes to memos, but, there, numbered lists serve an even more powerful purpose: they can churn up effective action again and again, and if there is a particularly powerful item, its number can be learned and make finding it even that much easier.
+18. Another thing that writing with numbered lists allows me is to avoid complete sentences i.e. to avoid adding needless words; I can just go on to the next thing and leave the last thing behind; this is not the case when it comes to memos, but, there, numbered lists serve an even more powerful purpose: they can churn up effective action again and again, and if there is a particularly powerful item, its number can be learned and make finding it even that much easier.
 
-18. Numbering items also makes it easier to break things into managable chunks.
+19. Numbering items also makes it easier to break things into managable chunks.
 
-19. A second attempt at writing the single paragraph story from 9.
+20. A second attempt at writing the single paragraph story from 9.
 > Once upon a time a man grew up in the jungle.
 > The only noises he made were grunts until one day a woman taught him to speak.
 > She held up an apple, said 'red', he held it up, slowly said 'red', and she mirrored for him to take a bite out of it.
 > He held up another apple, said 'red', she held it up, said 'no', then said 'green'.
 
-20. I'm apt to change 'sayings' to 'phrases' because 'phrase' has an etymology closer to that of verbal response.
+21. I'm apt to change 'sayings' to 'phrases' because 'phrase' has an etymology closer to that of verbal response.
 
-21. In the past, 'verbal response' was what I would write when talking about logical behavior as a kind of verbal behavior, but it does not work when I'm talking to those who are not already involved in the science of behavior or who are unfamiliar with the details of its experimental analyses.
+22. In the past, 'verbal response' was what I would write when talking about logical behavior as a kind of verbal behavior, but it does not work when I'm talking to those who are not already involved in the science of behavior or who are unfamiliar with the details of its experimental analyses.
 Technical terms like 'experimental analysis' is unlikely to be read with the trappings of a concrete noun like 'gadget', although an experimental analysis can be described concretely as what goes on in a lab.
 Sadly, this then leaves the phrase further undefined: what happens in labs?
 Does the person reading this know what really goings on in labs?
 It is as part of an answer to this question that I think Skinner was primed to frequently refer to "Wundt's brass instruments".
 
-22. Another practical reason to number these notes is that they are more likely than ever to be referenced in conversations with others.
+23. Another practical reason to number these notes is that they are more likely than ever to be referenced in conversations with others.
 I am learning more about how best to connect with others without burdening them with time wasted or the promise there of.
 Most of my writing is of this sort, and whatever I can do to cut through it as early as possible, i.e. to make accurate and salient records of thinking and feeling, the faster I can get out effective memos, make effective conclusions, and build up a treasure trove of strong templates.
 
-23. Second attempt at writing the first paragraph from 11.
+24. Second attempt at writing the first paragraph from 11.
 > Phrases like 'red' and 'green' are predicates.
 > They are true or false *of* the occasion on which they are said.
 > - When they are said, they are true or false *of* the occasion.
 > - They are true or false *of* where they are said.
 > - They are true or false where they are said.
 
-24. The phrases 'true of' and 'false of' are for those who are unfamiliar with 'denotes' and for those who do not yet distinguish between 'denotes' and 'designates'.
+25. The phrases 'true of' and 'false of' are for those who are unfamiliar with 'denotes' and for those who do not yet distinguish between 'denotes' and 'designates'.
 Following Quine -- who followed Mill -- I say that predicates denote each thing they are true of and singular terms purport to designate one and only one thing.
 
-25. It just occurred to me that my single sentence explanation of how predicate abstracs work is worthy of joining the other hints at the top of this document.
-I edited the single paragarph 
->The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}' which *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:' so that the *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick': whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
+26. It just occurred to me that my single sentence explanation of how predicate abstracs work is worthy of joining the other hints at the top of this document.
+    I edited the single paragarph 
+    >The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}' which *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:' so that the *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick': whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
+    into 
 
-   into 
+    > **HOW PREDICATE ABSTRACTS WORK**
+    >
+    > 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
+    > 2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
+    > 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
+    > 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
-   > **HOW PREDICATE ABSTRACTS WORK**
-   >
-   > 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
-   > 2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
-   > 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
-   > 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
-
-26. Third attempt at editing 11.
+27. Third attempt at editing 11.
 > Phrases like 'red' and 'green' are predicates.
 > They are true or false *of* where they are said.
 > Specifically, one place predicates -- e.g. 'dog', 'round', 'runs' -- are true or false of items; two place predicates -- e.g. 'parent of', 'ontop of', 'less than' -- are true or false of ordered pairs of items; three place predicates are ture or false of ordered triples; and so on.
 > Technically, there are types of predicates for every shape of nesting of ordered pairs e.g. nested ordered pairs are, in general, called binary trees, and n-tuples are taken as sequences which are themselves special binary trees which terminate down their left or right branch with the empty tree (a unique binary tree which has no left or right components).
 
-27. I was delighted when I read Quine's encyclopedia article on 'symbolic logic' to see that he immediately emphasized alternational normal forms before introducing conditionals or biconditionals.
+28. I was delighted when I read Quine's encyclopedia article on 'symbolic logic' to see that he immediately emphasized alternational normal forms before introducing conditionals or biconditionals.
 In his presentation he has access to the truth values and interpretations of dummy sentence letters as truth values (and then the dummy predicate letters are having assigned a truth value for each tuple of items in the prescribed "universe of discourse").
 These methods fail to emphasize the key to modern logical methods: Tarski's analysis of truth.
 
-28. Tarski's analysis of truth points up exactly those ways in which logical methods are derivative of the methods of grammar and the methods of denotation.
+29. Tarski's analysis of truth points up exactly those ways in which logical methods are derivative of the methods of grammar and the methods of denotation.
 Most people are familiar with the methods of grammar: they are taught that complete sentences have a subject and a predicate and that compound sentences are composed from component sentences that are compounded with grammatical particles like 'and', 'not', or 'or'.
 Most people are unfamiliar with the methods of denotation: they are not taught how verbal behavior is shaped by the reinforcing practices of a verbal community as in the story about the man who grunted in the jungle until he met a woman who spoke and listened in English.
 
-29. Just lost like 10 minutes to twitter: picking it up to send off a tweet is followed by scrolling.
+30. Just lost like 10 minutes to twitter: picking it up to send off a tweet is followed by scrolling.
 The origins of picking up the phone to send the tweet in the first place are in that elusive schedule of reinforcement called "posting".
 Just as babies appear to be born babblers, adults appear to be born tweeters [groucho face].
 
-30. I recently became interested in how subtitles and captions are composed.
+31. I recently became interested in how subtitles and captions are composed.
 I watch almost everything with subtitles on, and happened to notice that those of BritBox were exemplary.
 Here are some hints on making captions work: [Captioning Tip Sheet](https://dcmp.org/learn/225-captioning-tip-sheet) and [Captioning Key](https://dcmp.org/learn/captioningkey)
 
-31. Went away from the keyboard to make some book recommendations for a friend; got lost reading on evolutionary biology; fear I'm letting my free time slip away unproductively (making a book recommendation is productive, getting lost reading something that is not scheduled is unproductive).
+32. Went away from the keyboard to make some book recommendations for a friend; got lost reading on evolutionary biology; fear I'm letting my free time slip away unproductively (making a book recommendation is productive, getting lost reading something that is not scheduled is unproductive).
 
-32. Should I start a new timestamped note after a certain number of items have been listed? after I've gotten up from the keyboard?
+33. Should I start a new timestamped note after a certain number of items have been listed? after I've gotten up from the keyboard?
 
-33. I wrote some notes on 'how to sit and think' and 'how to walk and think', but I can't find them now.
+34. I wrote some notes on 'how to sit and think' and 'how to walk and think', but I can't find them now.
 I'm mad.
 
-34. Because of 31, I'm going to do dishes.
+35. Because of 32, I'm going to do dishes.
 
 ## 2025 0618
 
