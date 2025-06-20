@@ -41,7 +41,7 @@ Journal your thoughts and feelings.
 1. List the nouns, adjectives, and verbs you use to talk about it.
 2. Define as many as you can from as few as you can.
 3. List true sentences made from those few.
-4. Conclude as many as you can from as few as you can.
+4. Conclude as many truths as you can from as few as you can.
 5. Go to 1.
 
 ### HOW PREDICATE ABSTRACTS WORK
@@ -73,15 +73,15 @@ Journal your thoughts and feelings.
 
 2. Updated some hints (old versions can be found at [2025 0610 1606](#2025-0610-1606)).
     > **HOW TO MAKE IT LOGICAL**
-    > 
+    >
     > 1. List the nouns, adjectives, and verbs you use to talk about it.
     > 2. Define as many as you can from as few as you can.
     > 3. List true sentences made from those few.
     > 4. Conclude as many as you can from as few as you can.
     > 5. Go to 1.
-    > 
+    >
     > **HOW TO CONTROL YOUR BEHAVIOR**
-    > 
+    >
     > 1. Consequences select behavior.
     > 2. Control consequences to control behavior.
     > 3. Build new behavior from old behavior.
@@ -294,29 +294,30 @@ Journal your thoughts and feelings.
 
 ### 2025 0618 1953
 
-#### HOW TO WRITE WELL 99% OF THE TIME
+**HOW TO WRITE WELL 99% OF THE TIME**
 1. Read "Writing that Works" by Joel Raphaelson and Kenneth Roman.
 2. Read "The Elements of Style" by E. B. White and William Strunk Jr.
 3. Go to 1
 
-#### HOW TO WRITE WELL THE OTHER 1% OF THE TIME
+**HOW TO WRITE WELL THE OTHER 1% OF THE TIME**
+
 Journal your thoughts and feelings.
 
-#### HOW TO SOLVE MATH PROBLEMS WITH MY NEPHEWS OVER THE PHONE
+**HOW TO SOLVE MATH PROBLEMS WITH MY NEPHEWS OVER THE PHONE**
 1. Show me the problems.
 2. Show me the work.
 3. Call me.
 4. Talk it out.
 5. Share hints.
 
-#### FROM TWITTER
-* "The Golden Road" by William Dalrymple
-* Hard Chip: MOSFETs and Spaceships
-* Better methods tend to deal with more pains--not fewer.
-* Sir Gary Oldman
-* Cascadian Chorale performs "Reqium" by Jeremy Kings
-* Replace 'rules' with 'hints'.
-* "Augmented Vertex Block Descent" by Giles, Diaz, and Yuksel--compare to XPBD
+**FROM TWITTER**
+- "The Golden Road" by William Dalrymple
+- Hard Chip: MOSFETs and Spaceships
+- Better methods tend to deal with more pains--not fewer.
+- Sir Gary Oldman
+- Cascadian Chorale performs "Reqium" by Jeremy Kings
+- Replace 'rules' with 'hints'.
+- "Augmented Vertex Block Descent" by Giles, Diaz, and Yuksel--compare to XPBD
 
 
 ## 2025 0616
