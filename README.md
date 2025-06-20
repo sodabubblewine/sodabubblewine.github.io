@@ -49,7 +49,7 @@ Journal your thoughts and feelings.
 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
 2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
-4. Thus, whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
+4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
 ### HOW TO CONTROL YOUR BEHAVIOR
 
@@ -140,6 +140,39 @@ Most of my writing is of this sort, and whatever I can do to cut through it as e
 Following Quine -- who followed Mill -- I say that predicates denote each thing they are true of and singular terms purport to designate one and only one thing.
 
 25. It just occurred to me that my single sentence explanation of how predicate abstracs work is worthy of joining the other hints at the top of this document.
+I edited the single paragarph 
+>The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}' which *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:' so that the *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick': whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
+
+into 
+
+> **HOW PREDICATE ABSTRACTS WORK**
+>
+> 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
+> 2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
+> 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
+> 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
+
+26. Third attempt at editing 11.
+> Phrases like 'red' and 'green' are predicates.
+> They are true or false *of* where they are said.
+> Specifically, one place predicates -- e.g. 'dog', 'round', 'runs' -- are true or false of items; two place predicates -- e.g. 'parent of', 'ontop of', 'less than' -- are true or false of ordered pairs of items; three place predicates are ture or false of ordered triples; and so on.
+> Technically, there are types of predicates for every shape of nesting of ordered pairs e.g. nested ordered pairs are, in general, called binary trees, and n-tuples are taken as sequences which are themselves special binary trees which terminate down their left or right branch with the empty tree (a unique binary tree which has no left or right components).
+
+27. I was delighted when I read Quine's encyclopedia article on 'symbolic logic' to see that he immediately emphasized alternational normal forms before introducing conditionals or biconditionals.
+In his presentation he has access to the truth values and interpretations of dummy sentence letters as truth values (and then the dummy predicate letters are having assigned a truth value for each tuple of items in the prescribed "universe of discourse").
+These methods fail to emphasize the key to modern logical methods: Tarski's analysis of truth.
+
+28. Tarski's analysis of truth points up exactly those ways in which logical methods are derivative of the methods of grammar and the methods of denotation.
+Most people are familiar with the methods of grammar: they are taught that complete sentences have a subject and a predicate and that compound sentences are composed from component sentences that are complete with grammatical particles like 'and', 'not', or 'or'.
+Most people are unfamiliar with the methods of denotation: they are not taught how verbal behavior is shaped by the reinforcing practices of a verbal community as in the story about the man who grunted in the jungle until he met a woman who spoke and listened in English.
+
+29. Just lost like 10 minutes to twitter: picking it up to send off a tweet is followed by scrolling.
+The origins of picking up the phone to send the tweet in the first place are in that elusive schedule of reinforcement called "posting".
+Just as babies appear to be born babblers, adults appear to be born tweeters [groucho face].
+
+30. [Captioning Tip Sheet](https://dcmp.org/learn/225-captioning-tip-sheet) and [Captioning Key](https://dcmp.org/learn/captioningkey)
+
+31. 
 
 ## 2025 0618
 
