@@ -143,14 +143,14 @@ Following Quine -- who followed Mill -- I say that predicates denote each thing 
 I edited the single paragarph 
 >The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}' which *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:' so that the *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick': whatever can be said of a thing can be said by predicating a predicate of it i.e. *predicational completeness*.
 
-into 
+   into 
 
-> **HOW PREDICATE ABSTRACTS WORK**
->
-> 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
-> 2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
-> 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
-> 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
+   > **HOW PREDICATE ABSTRACTS WORK**
+   >
+   > 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
+   > 2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
+   > 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
+   > 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
 26. Third attempt at editing 11.
 > Phrases like 'red' and 'green' are predicates.
