@@ -63,13 +63,71 @@ Journal your thoughts and feelings.
 
 ## 2025 0620
 
+### 2025 0620 1506
+1. Notes on
+    1. implicit quantifier notation (aka. Quine's or Dreben's functional normal form)
+    2. Substitution and Unification
+    3. Modified Modus Ponens
+    4. Forward and backward chaining
+
+    from [Artificial Intelligence: Knowledge Representation and Reasoning](https://youtube.com/playlist?list=PLyqSpQzTE6M-t-Qr2Z0Gf_KP5RC97uOKC&si=08qpVdUiKkdTtJu6)
+
+2. The problem to solve here is that the presentation by Deepak Khermani includes gems that are obscured by the clutter of murky logical methods.
+First I have to introduce the list notation that goes with the methods of logic when they developed within a LISP like programming language.
+
+3. The aim is to pull these methods inside out: from logic programming to stack (or what I call pile) programming languages and then list (or what is properly called 'sequence') programming langauges.
+None of these sentences are satisfactory. *frown*
+
+4. Space seperated parentheticals are used to write out the grammatical structure of a logical compound composed of variables and dummy predicate letters from the particles of grammar as follows.
+    1. '(and F G)' for 'F and G' (or, properly, '(F) and (G)')
+    2. '(and F ..G H)' for 'F, ..G, and H'
+    3. '(or F G)' for 'F or G'
+    4. '(or F ..G H)' for 'F, ..G, or H'
+    5. '(not F)' for 'not F'
+    6. '(some F)' for 'some F'
+    7. '(each F)' for 'each F'
+    8. '(such (..x) F)' for '{..x: F}'
+    9. '(is (..x) F)' for 'F..x'
+
+5. It occurs to me that 4 gives something like predicate functors until 'such' and 'is' are introduced.
+
+6. Under this notation, concretion is:
+    > (iff (is (..y) (such (..x) (is (..x) F))) (is (..y) F))
+
+    or
+    > (iff (is (..y) (such (..x) (is (..x ..z) F))) (is (..y ..z) F))
+
+    where the length of ..y and ..x must be equal, or some convention like Quine's in 'Philosophy of logic' for satisfaction by sequences, or my convention of remainder of division by length, or remainder of division by number of children and cycling back to root when indexing beyond an atom.
+
+7. I must give an example of that last one to make it concrete.
+A binary tree like '((1, 2), 3)' can be indexed into with a binary sequence '01011' so that the following are equal (in this context)
+    1. ((1, 2), 3) 01011
+    2. (1,2) 1011
+    3. 2 011
+    4. ((1, 2), 3) 11
+    5. 3 1
+    6. ((1, 2), 3)
+
+    Another example with sequences -- e.g. '(1 2 3 4)' is short for '(1, (2, (3, (4, ()))))' where '()' is the empty binary tree -- that demonstrates the remainder of the quotient by the length of the sequence.
+    The following are equal (in this context):
+    1. (1 2 (3 4) ((5 6) 7 8 9)) (10 9 8 7)
+    2. (3 4) (9 8 7)
+    4. 4 (8 7)
+    5. (1 2 (3 4) ((5 6) 7 8 9)) (7)
+    6. ((5 6) 7 8 9)
+
+8. Quine's way is to repeat the last item as you do when you write unending decimal numbers that repeat the same digit over and over again e.g. zero point nine repeating (usually indicated by putting a line over the last digit that is to be repeated).
+
+9. Note, the phrase 'in this context' is needed because indexing into a number like '4' as an atom (which it is in this case) could turn up an entirely different sequence in a different context.
+That is, numbers can occur within any sequence just as sequences can occur within sequences and the sequences within which they occur are their respective contexts.
+
 ### 2025 0620 1337
 1. Short story for predicate logic memo
-> Once upon a time, a man grew up all alone in the jungle and only knew how to make grunts.
-> One day, a woman came and taught him to speak.
+> Once upon a time, a man grew up alone in the jungle and only learned to grunt.
+> One day, a woman taught him to speak.
 > She held up an apple, said 'red', he held it up, said 'red', and she smiled.
-> He held up another apple, said 'red', she frowned, held it up, and said 'green.
-> And so on the story goes.
+> He held up another apple, said 'red', she frowned, held it up, and said 'green'.
+> On and on it went.
 
 2. Updated some hints (old versions can be found at [2025 0610 1606](#2025-0610-1606)).
     > **HOW TO MAKE IT LOGICAL**
@@ -86,6 +144,44 @@ Journal your thoughts and feelings.
     > 2. Control consequences to control behavior.
     > 3. Build new behavior from old behavior.
     > 4. Build new controls from old controls.
+
+3. I didn't take a hint: instead of editing a fresh copy of the story I wrote in 1, I made edits to 1 directly.
+This even after having written 2.
+I've deprived myself and others of the opportunity to better grasp the origins of my verbal behavior by erasing past records.
+Don't do that.
+
+4. The memo on predicate logic may talk about the shapes of predicates: one, two, three, and many place predicates are a run of familiarly shaped predicates.
+Since we have names for numbers in the vernacular and we do not have names for trees in the vernacular, the many place predicates are more familiar than the tree shaped predicates.
+Instead of saying 'many place predicates' it is technically correct to say 'sequence shaped predicates', but such technical terms are not to be introduced lightly.
+
+5. Technical terms weigh heavy on the reader: they slow things down rather than speed things up.
+
+6. Drink more water than you think you need (largely because you can).
+
+7. Primitive recursive analysis is significant if not just because it is that which follows almost immediately from the methods of logic programming.
+
+8. More work on the first paragraph of the memo on predicate logic.
+    1. Instead of saying 'true of' or 'false of' we say 'denotes' or 'does not denote'
+    2. We say 'denotes' for 'true of' and 'does not denote' for 'false of'.
+    3. Designation plays no part at all in predicate logic.
+    4. Denotation is distinguish from designation where a singular term purports to designate on and only one item 
+    5. A predicate denotes each item of which it is true and a singular term purports to designate one and only one item.
+    6. Without loss of generality, designation plays no part in predicate logic.
+    7. The conjunction of similarly shaped predicates denotes where and only where (waow) each does; and their alternation denotes waow some do.
+    8. Negations denote waow their component does not.
+    9. A compound is compounded functionally from its components with respect to some one place predicate waow whether the predicate does or doesn't denote the compound is unchanged by substitution of components for components which the predicate correspondingly denotes or not.
+    10. whether the predicate denotes the compound, or not, is unchanged by substitution of components for others which the predicate correspondingly denotes or not
+    11. Conjunctions of similarly shaped predicates denote where and only where (waow) each component does -- e.g. 'red and round' denotes waow 'red' denotes and 'round' denotes-- and alternations denote waow some component does -- e.g. 'blue or square' denotes waow 'blue' denotes or 'square' denotes'.
+    12. Link up the similarly shaped predicates 'red' and 'round' with the grammatical particle 'and' to build the compound predicate 'red and round' called the conjunction of the components.
+    13. There are at least 4 grammatical particles in predicate logic. The logical one: cropped alternative denial. And, the recombic ones: drop, hem, push.
+
+9. Present the grammatical part first, what is otherwise mentioned unhappily as 'well formed formula', then present the denotative part, what is otherwise mentioned very unhappily as models and proofs.
+
+10. It is only because logical behavior is being conditioned from a native language that validity is first defined as 'denotes from every substitution and supplementation of lexicon' and then the main method is given from that.
+Otherwise, the main method is all that is needed even though it seems very arbitrary indeed.
+In such a case the main method includes the full alternational normal form got by flattening the tree of alternational developments.
+Like the alternational developments of compound predicates, the main method goes from one conjunction to another with the special form of trailing conjunctions each of which is an instant of the previous one with appropriately supplemented predicates for instances of (existential) croppings. 
+
 
 ## 2025 0619
 
