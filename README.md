@@ -1,3 +1,5 @@
+My life and work are reported, changed, and governed by these [notes](#notes), [memos](#memos), and [hints](#hints).
+
 # HINTS
 
 ### WHAT TO DO
