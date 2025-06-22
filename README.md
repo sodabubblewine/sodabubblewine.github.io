@@ -63,6 +63,24 @@ Journal your thoughts and feelings.
 
 # NOTES
 
+## 2025 0622
+
+### 2025 0622 1237
+
+1. Why are microcassette recorders so expensive? Some are hundreds of dollars.
+
+2. More work on the first memo.
+    > *Once upon a time, a man grew up alone in the jungle. He only knew how to grunt. One day, a woman taught him to speak. She held up an apple, said 'red', he held it up, said 'red', and she smiled. He held up another apple, said 'red', she frowned, held it up, and said 'green'. On and on it went.*
+    >
+    > Phrases like 'red' and 'green' are called **predicates** because they are true or false *of* the occasion on which they are said.
+    > **Compound** predicates are built from **component** predicates and grammatical **particles** e.g. 'red and round' from 'red' and 'round' and the particle 'and'.
+    > **Atomic** predicates have no components e.g. 'red', 'parent of', 'takes'.
+    > **Predicate logic** sorts out which compounds are true or false of which occasions.
+    > The rest of the sciences sort out which atoms are true or false of which occasions.
+    >
+    > Technically, one place predicates -- e.g. 'dog', 'round', 'runs' -- are true or false of items; two place predicates -- e.g. 'parent of', 'ontop of', 'less than' -- are true or false of ordered pairs of items; three place predicates are ture or false of ordered triples; and so on.
+
+
 ## 2025 0620
 
 ### 2025 0620 1506
