@@ -63,14 +63,80 @@ Journal your thoughts and feelings.
 
 # NOTES
 
+## 2025 0623
+
+### 2025 0623 1521
+
+1. More work on **HOW TO FIND A GOOD PSYCHOLOGIST**
+    1. **Never** settle for a bad one.
+    2. Good ones are exceptional people who happen to be psychologists.
+    3. They are cultural liasons.
+    4. You're more likely to find a good psychologist through a friend than you are through a phycisian.
+
+2. The only way to control email is not to have it.
+
+3. The previous drafts of the memo on predicate logic gave an inaccurate definition of predicate logic: they said that predicate logic sorts out which compounds are true or false of which occasions.
+
+4. Predicate logic sorts out valid ones from the others.
+
+5. Validity is defined from grammar and denotation (where 'denotes' is short for 'true of' so that each predicate denotes each seperate item it is true of; by contrast, a singular term purports to designate one and only one item).
+
+6. How is validity defined from grammar and denotation?
+
+7. Grammar not only sorts out what counts as a predicate and what doesn't, it also explains how to construct and deconstruct a predicate into its most basic parts, and it is through these basic parts that denotation of compound predicates of a theory are defined (this being Tarski's analysis of truth applied to a consistent theory of denotation).
+
+8. What are the methods of grammar?
+
+9. [Sidorov S.A. (MSU), Shumakov M.N. (NIISI RAN) DSSP AND FORTH. COMPARE ANALYSIS](https://web.archive.org/web/20230405010717/http://brokestream.com/daf.txt)
+
+10. The methods of grammar relevant to logic are
+    1. Accept or reject the form of a response as belonging to the set of forms of responses from a given language.
+    2. Recall, a language is a collection of the reinforcing practices of a verbal community: it is a social (verbal) environment composed of verbal contingencies that are built, maintained, and mediated by speakers and listeners.
+    3. Like the methods of any other effective science, grammar is primitive recursive: each of its steps conspicuously initiates and terminates with the same kind of control we have come to expect from swinging a hammer at a nail.
+        1. There is an unhealthy outlook in science and logic that follows primarly from misinterpretations of the absense of a decision procedure for predicate logic that I must correct.
+        2. Given a complete proof procedure for predicate logic it is known that each step prescribed by the procedure is mechanically given and one step is taken after another just as mechanically, but, on any given walk down the path(s) prescribed by the procedure, there is no guarentee of a terminus.
+        3. This is then interpreted as saying that, as with the halting problem of Turing's machines, there is always a next step that must be taken after any given step and that once a walk has begun it is unending.
+        4. I've tried to sketch the situation using language similar to that of Zeno's paradoxes in order to bring it up indirectly.
+        5. We do not, as logicians, get stuck, as in Zeno's Dichotomy paradox, whenever we set out down the path set out by a proof procedure (note, I am, almost always, speaking with Quine's main method in mind because it is a straight path and mechanically prescribed so there is know whiff of a problem like that of Frost's road not taken).
+        6. At each step we may stop, and often do: note how frustrating it is to finally find a proof and to then try to explain how it occurred to you (this is another important feature of Quine's main method: the mechanical method can be subverted immediately by a happy accident which can be run in a zig zag fashion with the grand and comprehensive procedure prescribed in the completeness proof of the main method).
+        7. That we stop at some step rather than get stuck on an endless walk makes all the difference between primitive recursive methods and those which purport to be general recursive:      
+
+### 2025 0623 1412
+
+1. How to find a good psychologist
+    1. A good psychologist is an exceptional person who happens to be a psychologist.
+    2. A good psychologist is a cultural liason.
+
+2. How to sit and think
+    1. Sit in a fine wooden rocking chair e.g. from the Amish.
+    2. Close your eyes and rock away the world around you until you begin to settle into each breath.
+    3. As you settle into each breath you rock less.
+    4. Think to unify.
+    5. Breath to relax every part of your head and neck: the chair must be such that it is hard yet comfortable, this is acheived by the design of the chair in accordance with human anatomy so that when the back of the head is rested upon the chair and the arms are rested upon the arms of the chair, the neck and back are not tight and are stretched ever so slightly into a comfortable resting position.
+    6. The chair must be made of strips of wood so that the chair does not retain the heat of the body as it would if it i was a solid piece of wood, slots for air to pass through
+
 ## 2025 0622
+
+### 2025 0622 1516
+
+1. Where many say "That's how it is.", scientists say "I don't know."
+
+2. [The Origins of Cognitive Thought](https://www.appstate.edu/~steelekm/classes/psy5150/Documents/Skinner1989.pdf) by B. F. Skinner 1989
+
+3. More work on the first memo. Must include definition of validitiy which requires definition of lexicon and grammatical compounds.
+    > *Once upon a time a man grew up in isolation. He only knew how to grunt. One day, a woman taught him to speak. She held up an apple, said 'red', he held it up, said 'red', and then she smiled. He held up another apple, said 'red', she frowned, held it up, and said 'green'. On and on it went.*
+    >
+    > Phrases like 'red' and 'green' are **predicates**: they are true or false *of* the occasions on which they occur.
+    > **Compound** predicates are made from **component** predicates and grammatical **particles**.
+
+4. Microcassette recorders are so expensive because no one manufactures them anymore.
 
 ### 2025 0622 1237
 
 1. Why are microcassette recorders so expensive? Some are hundreds of dollars.
 
 2. More work on the first memo.
-    > *Once upon a time, a man grew up alone in the jungle. He only knew how to grunt. One day, a woman taught him to speak. She held up an apple, said 'red', he held it up, said 'red', and she smiled. He held up another apple, said 'red', she frowned, held it up, and said 'green'. On and on it went.*
+    > *Once upon a time, a man grew up alone in the jungle. He only knew how to grunt. One day, a woman taught him to speak. She held up an apple, said 'red', he held it up, said 'red', and then she smiled. He held up another apple, said 'red', she frowned, held it up, and said 'green'. On and on it went.*
     >
     > Phrases like 'red' and 'green' are called **predicates** because they are true or false *of* the occasion on which they are said.
     > **Compound** predicates are built from **component** predicates and grammatical **particles** e.g. 'red and round' from 'red' and 'round' and the particle 'and'.
