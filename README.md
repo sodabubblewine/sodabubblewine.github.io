@@ -83,9 +83,9 @@ Journal your thoughts and feelings.
     > Predicates are true or false of the occasions on which they occur e.g. 'red' and 'green'.
     > Constructions make compound predicates from component predicates and connective particles e.g.
     >
-    >     1. the conjunction 'red and green' is made from 'red', 'green', and the particle 'and',
-    >     2. the alternation 'red or green', and 
-    >     3. the negation 'not red'.
+    > 1. the conjunction 'red and green' is made from 'red', 'green', and the particle 'and',
+    > 2. the alternation 'red or green', and 
+    > 3. the negation 'not red'.
     >
     > Lexicons list particles and atoms -- predicates without components.
     > Grammars give lexicons and constructions.
