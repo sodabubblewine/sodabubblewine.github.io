@@ -63,6 +63,18 @@ Journal your thoughts and feelings.
 
 # NOTES
 
+## 2025 0624
+
+### 2025 0624 1607
+
+1. More work on memo
+    > *Predicates* are true or false of the occasions on which they occur.
+    > *Constructions* pair *component* predicates with *connectives*.
+    > *Lexicons* list predicates without components i.e. *atoms*.
+    > *Grammars* generated *categories* from iterated constructions on lexicons.
+    > *Negations* pair their component with 'not'.
+    > *Conjunctions*, *alternations*, and *alternative denials* pair their left and right components with 'and', 'or', and 'nor' respectively. 
+
 ## 2025 0623
 
 ### 2025 0623 2130
@@ -70,6 +82,7 @@ Journal your thoughts and feelings.
 1. More work on the first paragraph of the memo on predicate logic.
     > Predicates are true or false of the occasions on which they occur e.g. 'red' and 'green'.
     > Constructions make compound predicates from component predicates and connective particles e.g.
+    >
     >     1. the conjunction 'red and green' is made from 'red', 'green', and the particle 'and',
     >     2. the alternation 'red or green', and 
     >     3. the negation 'not red'.
