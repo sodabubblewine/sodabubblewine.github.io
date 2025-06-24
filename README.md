@@ -90,16 +90,32 @@ Journal your thoughts and feelings.
 9. [Sidorov S.A. (MSU), Shumakov M.N. (NIISI RAN) DSSP AND FORTH. COMPARE ANALYSIS](https://web.archive.org/web/20230405010717/http://brokestream.com/daf.txt)
 
 10. The methods of grammar relevant to logic are
-    1. Accept or reject the form of a response as belonging to the set of forms of responses from a given language.
+
+    1. Accept or reject the form of a response as that from a given language.
+
     2. Recall, a language is a collection of the reinforcing practices of a verbal community: it is a social (verbal) environment composed of verbal contingencies that are built, maintained, and mediated by speakers and listeners.
+
     3. Like the methods of any other effective science, grammar is primitive recursive: each of its steps conspicuously initiates and terminates with the same kind of control we have come to expect from swinging a hammer at a nail.
+
         1. There is an unhealthy outlook in science and logic that follows primarly from misinterpretations of the absense of a decision procedure for predicate logic that I must correct.
+
         2. Given a complete proof procedure for predicate logic it is known that each step prescribed by the procedure is mechanically given and one step is taken after another just as mechanically, but, on any given walk down the path(s) prescribed by the procedure, there is no guarentee of a terminus.
+
         3. This is then interpreted as saying that, as with the halting problem of Turing's machines, there is always a next step that must be taken after any given step and that once a walk has begun it is unending.
+
         4. I've tried to sketch the situation using language similar to that of Zeno's paradoxes in order to bring it up indirectly.
-        5. We do not, as logicians, get stuck, as in Zeno's Dichotomy paradox, whenever we set out down the path set out by a proof procedure (note, I am, almost always, speaking with Quine's main method in mind because it is a straight path and mechanically prescribed so there is know whiff of a problem like that of Frost's road not taken).
+
+        5. We do not, as logicians, get stuck, as in Zeno's Dichotomy paradox, whenever go on the path set out by a proof procedure (note, I am, almost always, speaking with Quine's main method in mind because it is a straight path and mechanically prescribed so there is no whiff of a problem like that of Frost's road not taken).
+
         6. At each step we may stop, and often do: note how frustrating it is to finally find a proof and to then try to explain how it occurred to you (this is another important feature of Quine's main method: the mechanical method can be subverted immediately by a happy accident which can be run in a zig zag fashion with the grand and comprehensive procedure prescribed in the completeness proof of the main method).
-        7. That we stop at some step rather than get stuck on an endless walk makes all the difference between primitive recursive methods and those which purport to be general recursive:      
+
+        7. That we stop at some step rather than get stuck on an endless walk makes all the difference between primitive recursive methods and those which purport to be general recursive.
+
+        8. The moral of the story, which I have not done a good enough job to teach, is that the metaphor of general recursion does not carry over to the other sciences in the same way that the metaphor of a convergent sequences does not carry over to a walk down Zeon's Dichotomous lane.  
+
+    4. The lexicon of a grammar lists the connective particles and atomic predicates which together with rules for connecting component predicates with connective particles into compound predicates, are said to generate the forms of response of a language grammatically.
+
+    5. Each construction rule is expected to have a unique deconstruction rule when dealing with a logical grammar: this eliminates ambiguities which florish in nonlogically langauges and speeds up the grammatical analsis of a compound into its particles and atoms.
 
 ### 2025 0623 1412
 
