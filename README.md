@@ -65,6 +65,21 @@ Journal your thoughts and feelings.
 
 ## 2025 0623
 
+### 2025 0623 2130
+
+1. More work on the first paragraph of the memo on predicate logic.
+    > Predicates are true or false of the occasions on which they occur e.g. 'red' and 'green'.
+    > Constructions make compound predicates from component predicates and connective particles e.g.
+    >     1. the conjunction 'red and green' is made from 'red', 'green', and the particle 'and',
+    >     2. the alternation 'red or green', and 
+    >     3. the negation 'not red'.
+    >
+    > Lexicons list particles and atoms -- predicates without components.
+    > Grammars give lexicons and constructions.
+
+2. Make a list of "loose ends" at the top of these notes: pull the threads.
+Better, call it "TIE UP" and just list the loose ends that must be tied up.
+
 ### 2025 0623 1521
 
 1. More work on **HOW TO FIND A GOOD PSYCHOLOGIST**
@@ -115,7 +130,7 @@ Journal your thoughts and feelings.
 
     4. The lexicon of a grammar lists the connective particles and atomic predicates which together with rules for connecting component predicates with connective particles into compound predicates, are said to generate the forms of response of a language grammatically.
 
-    5. Each construction rule is expected to have a unique deconstruction rule when dealing with a logical grammar: this eliminates ambiguities which florish in nonlogically langauges and speeds up the grammatical analsis of a compound into its particles and atoms.
+    5. Each construction rule is expected to have a unique deconstruction rule when dealing with a logical grammar: this eliminates ambiguities which florish in nonlogical langauges and speeds up the grammatical analysis of a compound into its particles and atoms.
 
 ### 2025 0623 1412
 
