@@ -38,6 +38,13 @@ Conclude from contemplation on templates:
 
 Journal your thoughts and feelings.
 
+### HOW TO CONTROL YOUR BEHAVIOR
+
+1. Consequences select behavior.
+2. Control consequences to control behavior.
+3. Build new behavior from old behavior.
+4. Build new controls from old controls.
+
 ### HOW TO MAKE IT LOGICAL
 
 1. List the nouns, adjectives, and verbs you use to talk about it.
@@ -53,13 +60,6 @@ Journal your thoughts and feelings.
 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
-### HOW TO CONTROL YOUR BEHAVIOR
-
-1. Consequences select behavior.
-2. Control consequences to control behavior.
-3. Build new behavior from old behavior.
-4. Build new controls from old controls.
-
 
 # NOTES
 
@@ -70,10 +70,8 @@ Journal your thoughts and feelings.
 1. More work on memo
     > *Predicates* are true or false of the occasions on which they occur.
     > *Constructions* pair *component* predicates with *connectives*.
-    > *Lexicons* list predicates without components i.e. *atoms*.
-    > *Grammars* generated *categories* from iterated constructions on lexicons.
-    > *Negations* pair their component with 'not'.
-    > *Conjunctions*, *alternations*, and *alternative denials* pair their left and right components with 'and', 'or', and 'nor' respectively. 
+    > *Lexicons* list *atoms*, predicates without components.
+    > *Grammars* generate *categories* from repeated constructions on lexicons e.g. *negations*, *crops*, *drops*, *pushes*, *pops*, and *swaps* pair their component with 'not', 'crop', 'drop', 'push', 'pop', and 'swap' respectively; and *conjunctions*, *alternations*, and *alternative denials* pair their left and right components with 'and', 'or', and 'nor' respectively.
 
 ## 2025 0623
 
@@ -82,7 +80,6 @@ Journal your thoughts and feelings.
 1. More work on the first paragraph of the memo on predicate logic.
     > Predicates are true or false of the occasions on which they occur e.g. 'red' and 'green'.
     > Constructions make compound predicates from component predicates and connective particles e.g.
-    >
     > 1. the conjunction 'red and green' is made from 'red', 'green', and the particle 'and',
     > 2. the alternation 'red or green', and 
     > 3. the negation 'not red'.
