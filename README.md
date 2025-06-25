@@ -63,6 +63,62 @@ Journal your thoughts and feelings.
 
 # NOTES
 
+**TIE UP**
+
+1. Earmuff Experiment [2025 0625 1537](#2025-0625-1537).
+
+## 2025 0625
+
+### 2025 0625 1537
+
+1. I began an experiment on controlling my auditory environment.
+    1. I bought 3M PELTOR Hearing Protection Optime 98 Earmuffs.
+    2. They arrived today.
+    3. I'm wearing them now.
+    4. I'm sensitive to sounds, though I am grateful that they are not so often overwhelming as similar sounds can be for others.
+    5. I recently lost my hearing for a few days becuase of severe allergies: my ears were clogged and only Pseudoephedrine cleared them.
+    6. I noticed that it was easier to sit and think when my ears were clogged than it seemed it was when they were not.
+    7. It is stil not clear how accurate the principle which generalizes from that instance is.
+    8. I listen to music when I work sometimes, and sometimes it feels as if it helps, other times it feels as if it hurts.
+    9. These earmuffs are comfortable enough, though I have only been wearing them for about twenty or thirty minutes.
+    10. To help me better grasp the effects of wearing or not wearing earmuffs, I may indicate in a note when I am or am not.
+
+### 2025 0625 1426
+
+1. **HOW TO DEAL WITH ANHEDONIA AND UNCERTAINTY**
+    1. Read Dalio's "Life and Work Principles" when you feel anhedonia.
+    2. Read Quine's "Methods of Logic 4th Ed." when you feel uncertain.
+
+2. More memo work.
+    > *Predicates* denote or don't, i.e. are true or false of, the occasions on which they occur.
+    > *Constructions* pair *component* predicates with *connectives*.
+    > *Lexicons* list *atoms*, predicates without components.
+    > *Grammars* generate *categories* from repeated constructions on lexicons.
+    > *Negations*, *caps*, *crops*, *drops*, *pushes*, *pops*, and *swaps* pair their component with 'not', 'cap', 'crop', 'drop', 'push', 'pop', and 'swap' respectively.
+    > *Conjunctions*, *alternations*, and *alternative denials* pair their left and right components with 'and', 'or', and 'nor' respectively.
+    >
+    > Constructed compounds inheret where they denote from their components.
+    > Negations denote where and only where (waow) their component doesn't.
+    > Conjunctions/alternations denote waow each/some of their components do.
+    > Alternative denials denote waow each of their components don't.
+    > Caps denote waow there is somewhere denoted by their component.
+    > 
+    > Occasions, like conjunctions, alternations, and alternative denials, are said to have left and right parts.
+    > These parts can be divided further into left and right parts e.g. the left part of the left part of the occasion, the right part of the left part of the occasion, and so on.
+    > Whether occasions break into an endless dichotomy or whether they terminate into atomic parts is a problem I have not yet solved.
+    > 
+
+3. Just as the brave logician checks the empty universe as a degenerate special case, so too must the brave philosopher check the solipsistic universe as a degenerate special case.
+
+4. Reading Bertrand Russells "Inquiry into Meaning and Truth" and "Human Knowledge" to deal with the problem of individuation, entification, reification, etc.
+
+5. Access points to solutions to the individuation problem:
+    1. Does 'this' denote or designate?
+    2. Ordered pairs are identical if and only if their left parts are identical and their right parts are identical.
+
+6. Few walk the talk.
+
+
 ## 2025 0624
 
 ### 2025 0624 1607
