@@ -45,12 +45,17 @@ Journal your thoughts and feelings.
 3. Build new behavior from old behavior.
 4. Build new controls from old controls.
 
+**HOW TO DEAL WITH ANHEDONIA AND UNCERTAINTY**
+1. Read Dalio's "Life and Work Principles" when you feel anhedonia.
+2. Read Quine's "Methods of Logic 4th Ed." when you feel uncertain.
+3. Go to 1.
+
 ### HOW TO MAKE IT LOGICAL
 
-1. List the nouns, adjectives, and verbs you use to talk about it.
-2. Define as many as you can from as few as you can.
+1. List the nouns, adjectives, and verbs used to talk about it.
+2. Define as many from as few as you can.
 3. List true sentences made from those few.
-4. Conclude as many truths as you can from as few as you can.
+4. Conclude as many from as few as you can.
 5. Go to 1.
 
 ### HOW PREDICATE ABSTRACTS WORK
@@ -60,15 +65,61 @@ Journal your thoughts and feelings.
 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
+### HOW TO FIND A GOOD PSYCHOLOGIST
+1. **Never** settle for a bad one.
+2. Good ones are exceptional people who happen to be psychologists.
+3. They are cultural liasons.
+4. You're more likely to find a good psychologist through a friend than you are through a phycisian.
 
 # NOTES
 
 **TIE UP**
 
-1. Earmuff Experiment [2025 0625 1537](#2025-0625-1537).
+1. Predicate Logic Memo
+    1. [2025 0625 2043](#2025-0625-2043)
+2. Earmuff Experiment
+    1. [2025 0625 1537](#2025-0625-1537)
+    2. [2025 0625 2259](#2025-0625-2259)
 
 ## 2025 0625
 
+### 2025 0625 2259
+
+1. Wore earmuffs while thinking in a chair today.
+
+2. Added hint "how to deal with anhedonia and uncertainty"
+
+3. The earmuffs appear to have helped.
+
+4. While wearing them and thinking while sitting I was able to see that I had already written on the operations required to deal with the division of occasions into left and right parts.
+
+5. I was able to then see that it connected exactly as Russell describes in "An Inquiry into Meaning and Truth" and "Human Knowledge".
+
+6. Then the sentences of the previous entry occurred to me, though only the first few since the rest were written at the computer with the earmuffs on.
+
+7. I introduced the 'tie up' section at the beginning of notes.
+So far it lists under each loose end some of the entries that need to be tied together by, what I can only suppose, is a memo.
+It must be emphasized that this is all still very much a verbal discovery expedition.
+
+### 2025 0625 2043
+
+1. Predicate memo work on the dichotomy of occasions
+
+2. The left part of an occasion is called its pile, and the right part its list.
+
+3. Occasions split into left and right parts: the pile and the list.
+
+4. The list and pile do too: the right part of the pile is called the top, the left part of the list is called the head, the left part of the pile is called the rest of the pile and the right part of the list is called the rest of the list.
+
+5. One occasion is the *pop* of an other where and only where (waow) the pile of the one is the rest of the pile of the other and the head of the one is the top of the other and the rest of the list of the one is the list of the other.
+
+6. One occasion is the *push* of an other waow the rest of the pile of the one is the pile of the other, the top of the one is the head of the other, and the list of the one is the rest of the list of the other.
+
+7. One occasion is the *drop* of an other waow the pile of the one is the rest of the pile of the other and the list of the one is the list of the other.
+
+8. One occasion is the *dup* of an other waow the 
+
+ 
 ### 2025 0625 1537
 
 1. I began an experiment on controlling my auditory environment.
