@@ -80,6 +80,7 @@ Journal your thoughts and feelings.
 
 1. Predicate Logic Memo
     1. [2025 0625 2043](#2025-0625-2043)
+    2. [2025 0625 2333](#2025-0625-2333)
 
 2. Earmuff Experiment
     1. [2025 0625 1537](#2025-0625-1537)
