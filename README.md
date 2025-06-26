@@ -86,6 +86,12 @@ Journal your thoughts and feelings.
     1. [2025 0625 1537](#2025-0625-1537)
     2. [2025 0625 2259](#2025-0625-2259)
 
+## 2025 0626
+
+### 2025 0626 1806
+
+1. 
+
 ## 2025 0625
 
 ### 2025 0625 2333
@@ -114,29 +120,35 @@ Journal your thoughts and feelings.
     > 2. the head of the one is the top of the other, and
     > 3. the rest of the list of the one is the list of the other.
     >
+    >
     > One occasion is the *push* of an other waow 
     > 1. the rest of the pile of the one is the pile of the other,
     > 2. the top of the one is the head of the other, and 
     > 3. the list of the one is the rest of the list of the other.
     >
+    >
     > One occasion is the *drop* of an other waow
     > 1. the pile of the one is the rest of the pile of the other and 
     > 2. the list of the one is the list of the other.
+    >
     >
     > One occasion is the *dup* of an other waow 
     > 1. the top of the one is the top of the other,
     > 2. the rest of the pile of the one is the pile of the other, and 
     > 3. the list of the one is the list of the other.
     >
+    >
     > One occasion is the *swap* of an other waow
     > 1. the list of the one is the list of the other, 
     > 2. the top of the one is the right part of the rest of the pile of the other, and
     > 3. the right part of the rest of the pile of other is the top of the other.
     >
+    >
     > One occasion is the *hem* of an other waow
     > 1. the head of the one is the right part of the rest of the pile of the other, 
     > 2. the rest of the list of the one is the list of the other, and 
     > 3. the pile of the one is the pile of the other.
+    >
     >
     > The pop, dup, and swap of an occasion can be defined from the push, drop, and *hem* of an occasion.
     >
