@@ -45,7 +45,8 @@ Journal your thoughts and feelings.
 3. Build new behavior from old behavior.
 4. Build new controls from old controls.
 
-**HOW TO DEAL WITH ANHEDONIA AND UNCERTAINTY**
+### HOW TO DEAL WITH ANHEDONIA AND UNCERTAINTY
+
 1. Read Dalio's "Life and Work Principles" when you feel anhedonia.
 2. Read Quine's "Methods of Logic 4th Ed." when you feel uncertain.
 3. Go to 1.
@@ -66,22 +67,110 @@ Journal your thoughts and feelings.
 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
 ### HOW TO FIND A GOOD PSYCHOLOGIST
+
 1. **Never** settle for a bad one.
 2. Good ones are exceptional people who happen to be psychologists.
 3. They are cultural liasons.
 4. You're more likely to find a good psychologist through a friend than you are through a phycisian.
 
+
 # NOTES
 
-**TIE UP**
+## TIE UP
 
 1. Predicate Logic Memo
     1. [2025 0625 2043](#2025-0625-2043)
+
 2. Earmuff Experiment
     1. [2025 0625 1537](#2025-0625-1537)
     2. [2025 0625 2259](#2025-0625-2259)
 
 ## 2025 0625
+
+### 2025 0625 2333
+
+1. Predicate memo work: bringing together pieces.
+    > *Once upon a time a man grew up in isolation. He only knew how to grunt. One day, a woman taught him to speak. She held up an apple, said 'red', he held it up, said 'red', and then she smiled. He held up another apple, said 'red', she frowned, held it up, and said 'green'. On and on it went.*
+    >
+    > *Predicates* denote or don't, i.e. are true or false of, the occasions on which they occur.
+    > *Constructions* pair *component* predicates with *connectives*.
+    > *Lexicons* list *atoms*, predicates without components.
+    > *Grammars* generate *categories* from repeated constructions on lexicons.
+    > *Negations*, *caps*, *crops*, *dups*, *drops*, *pushes*, *pops*, and *swaps* pair their component with 'not', 'cap', 'crop', 'dup', 'drop', 'push', 'pop', and 'swap' respectively.
+    > *Conjunctions*, *alternations*, and *alternative denials* pair their left and right components with 'and', 'or', and 'nor' respectively.
+    >
+    > Constructed compounds inheret where they denote from their components.
+    > Negations denote where and only where (waow) their component doesn't.
+    > Conjunctions/alternations denote waow each/some of their components do.
+    > Alternative denials denote waow each of their components don't.
+    > Caps denote waow there is somewhere denoted by their component.
+    > 
+    > Occasions, like conjunctions, alternations, and alternative denials, split into left and right parts: the *pile* and the *list*.
+    > The list and pile do too: the right part of the pile is called the *top*, the left part of the list is called the *head*, the left part of the pile is called the *rest of the pile* and the right part of the list is called the *rest of the list*.
+    >
+    > One occasion is the *pop* of an other waow 
+    > 1. the pile of the one is the rest of the pile of the other,
+    > 2. the head of the one is the top of the other, and
+    > 3. the rest of the list of the one is the list of the other.
+    >
+    > One occasion is the *push* of an other waow 
+    > 1. the rest of the pile of the one is the pile of the other,
+    > 2. the top of the one is the head of the other, and 
+    > 3. the list of the one is the rest of the list of the other.
+    >
+    > One occasion is the *drop* of an other waow
+    > 1. the pile of the one is the rest of the pile of the other and 
+    > 2. the list of the one is the list of the other.
+    >
+    > One occasion is the *dup* of an other waow 
+    > 1. the top of the one is the top of the other,
+    > 2. the rest of the pile of the one is the pile of the other, and 
+    > 3. the list of the one is the list of the other.
+    >
+    > One occasion is the *swap* of an other waow
+    > 1. the list of the one is the list of the other, 
+    > 2. the top of the one is the right part of the rest of the pile of the other, and
+    > 3. the right part of the rest of the pile of other is the top of the other.
+    >
+    > One occasion is the *hem* of an other waow
+    > 1. the head of the one is the right part of the rest of the pile of the other, 
+    > 2. the rest of the list of the one is the list of the other, and 
+    > 3. the pile of the one is the pile of the other.
+    >
+    > The pop, dup, and swap of an occasion can be defined from the push, drop, and *hem* of an occasion.
+    >
+    > Two occasions with the same items can be described from the other with push, drop, and hem: **recombic completeness**.
+    >
+    > Crops denote the drop of waow its component denotes.
+    > A component denotes 
+    > 1. the dup of waow its dup does,
+    > 2. the drop of waow its drop does,
+    > 3. the push of waow its push does,
+    > 4. the pop of waow its pop does,
+    > 5. the swap of waow its swap does, and
+    > 6. the hem of waow its hem does.
+
+2. This all seems a bit much:
+    1. Can focus be brought to the predicates away from the occasions?
+    2. Can Russell's argument for n place predicates be used to simplify and unify here?
+    3. Can the presentation be achieved without mentioning ordered pairs explicitly or mentioning their principle of extensionality?
+    4. Can the definitions of dup through hem be flipped? Should they be? What do they look like?
+    5. What expedients can be introduced that shorten phrases like "the rest of the pile" and "the rest of the list"?
+
+3. The order of introduction, what Russell calls the epipstomological order, is
+    1. Grammar
+    2. Denotation (of compounds)
+    3. Validity
+
+4. Validity can be introduced without mentioning denotation by direct reference to a purported complete proof procedure: how does that change the way I would write this memo on predicate logic?
+    1. e.g. via Quine's main method, conjunctions are constructed one after another and checked for truth functional inconsistency, in the grand way prescribed by the completeness proof of the main method in "Methods of Logic 4th edition".
+    2. It is unknown whether such a member of this elaborate category is eventually generated by the grammar.
+    3. It is known that restrictions to this category, e.g. pure existentials and universals, are eventually generated.
+
+5. What is the recombic version of full alternational normal form?
+    1. There must be a standard way of arranging dups, drops, etc.
+    2. or perhaps there is something about the undecidability of the word problem lurking here
+    3. standard recombic compounds
 
 ### 2025 0625 2259
 
@@ -117,8 +206,30 @@ It must be emphasized that this is all still very much a verbal discovery expedi
 
 7. One occasion is the *drop* of an other waow the pile of the one is the rest of the pile of the other and the list of the one is the list of the other.
 
-8. One occasion is the *dup* of an other waow the 
+8. One occasion is the *dup* of an other waow the top of the one is the top of the other and the rest of the pile of the one is the pile of the other, and the list of the one is the list of the other.
 
+9. One occasion is the *swap* of an other waow the list of the one is the list of the other, the top of the one is the right part of the rest of the pile of the other, and the right part of the rest of the pile of other is the top of the other.
+
+10. The pop, dup, and swap of an occasion can be defined from the push, drop, and *hem* of an occasion.
+
+11. One occasion is the hem of an other if the head of the one is the right part of the rest of the pile of the other, the rest of the list of the one is the list of the other, and the pile of the one is the pile of the other.
+
+12. Two occasions with the same items can be described from the other with push, drop, and hem: **recombic completeness**.
+
+13. Read the final two chapters of Russell's "An Inquiry into Meaning and Truth" titled "Analysis" and "Language and Metaphysics", and read "The Principle of Individuation" in "Human Knowledge: its scope and limits" also by Russell.
+
+14. These both deal with the problem at hand: the division of occasions into parts and the influence, if any, this has on logical method.
+
+15. Russell's predicate is 'x is part of y' and mine is 'x pairs y with z'.
+
+16. For Russell, the question is if the predicate 'x is part of y' is or is not always definable in other terms of a given logical theory.
+
+17. An example of something like this is Quine's schematic methods in a schematic theory of indiscernibility/identity.
+
+18. Somehow, in ways that are still beyond me, Russell concludes that predicates as opposed to just proper names/nouns are necessary in some sense which is presumably metaphysical.
+
+19. Russell clings to qualities and other such stuff: it is inaccessible to me.
+It is only through carrying over his arguments into something like Quine's "ordered sequence of active receptors" or "global stimulus" that I am likely to grasp what Russell "had in mind".
  
 ### 2025 0625 1537
 
@@ -165,6 +276,7 @@ It must be emphasized that this is all still very much a verbal discovery expedi
 
 5. Access points to solutions to the individuation problem:
     1. Does 'this' denote or designate?
+
     2. Ordered pairs are identical if and only if their left parts are identical and their right parts are identical.
 
 6. Few walk the talk.
