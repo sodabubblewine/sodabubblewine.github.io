@@ -109,7 +109,7 @@ The text is paraphrased to conform to the methods of predicate abstracts (see [H
 3. Prenexing and purifying are key to building up uniform methods e.g. pure existentials, sentences/predicate brought into prenex form such that the prefixed quantifiers are a list of universal quantifiers followed by a list of existential quantifiers, are decidedly valid or not.
 > A pure existential is valid if and only if we get a truth functionally valid schema by taking the alternation of the results of substituting the free variables for the existential ones in the matrix.
 
-Where the matrix is the truth functional part of the prenex form (chop off the quantifiers and the matrix is what you're left with).
+    Where the matrix is the truth functional part of the prenex form (chop off the quantifiers and the matrix is what you're left with).
 (I think the phrase 'matrix' is from Russell.)
 
 4. The decision procedure for validity of pure existentials suggests that when prenexing always bring out universal quantifiars first in the hope that a pure existential shall be got.
