@@ -88,11 +88,12 @@ Journal your thoughts and feelings.
 
 ## 2025 0627
 
-### 2025 0627 1253
+### 2025 0627 1410
 
 1. More memo work
 
-2. 
+2. Quine's functional normal form takes a quantificational and truth-functional sentence and 
+    >
 
 ## 2025 0626
 
@@ -105,65 +106,65 @@ Journal your thoughts and feelings.
 ### 2025 0625 2333
 
 1. Predicate memo work: bringing together pieces.
-    > *Once upon a time a man grew up in isolation. He only knew how to grunt. One day, a woman taught him to speak. She held up an apple, said 'red', he held it up, said 'red', and then she smiled. He held up another apple, said 'red', she frowned, held it up, and said 'green'. On and on it went.*
-    >
-    > *Predicates* denote or don't, i.e. are true or false of, the occasions on which they occur.
-    > *Constructions* pair *component* predicates with *connectives*.
-    > *Lexicons* list *atoms*, predicates without components.
-    > *Grammars* generate *categories* from repeated constructions on lexicons.
-    > *Negations*, *caps*, *crops*, *dups*, *drops*, *pushes*, *pops*, and *swaps* pair their component with 'not', 'cap', 'crop', 'dup', 'drop', 'push', 'pop', and 'swap' respectively.
-    > *Conjunctions*, *alternations*, and *alternative denials* pair their left and right components with 'and', 'or', and 'nor' respectively.
-    >
-    > Constructed compounds inheret where they denote from their components.
-    > Negations denote where and only where (waow) their component doesn't.
-    > Conjunctions/alternations denote waow each/some of their components do.
-    > Alternative denials denote waow each of their components don't.
-    > Caps denote waow there is somewhere denoted by their component.
-    > 
-    > Occasions, like conjunctions, alternations, and alternative denials, split into left and right parts: the *pile* and the *list*.
-    > The list and pile do too: the right part of the pile is called the *top*, the left part of the list is called the *head*, the left part of the pile is called the *rest of the pile* and the right part of the list is called the *rest of the list*.
-    >
-    > One occasion is the *pop* of an other waow 
-    >     1. the pile of the one is the rest of the pile of the other,
-    >     2. the head of the one is the top of the other, and
-    >     3. the rest of the list of the one is the list of the other.
-    >
-    > One occasion is the *push* of an other waow 
-    > 1. the rest of the pile of the one is the pile of the other,
-    > 2. the top of the one is the head of the other, and 
-    > 3. the list of the one is the rest of the list of the other.
-    >
-    > One occasion is the *drop* of an other waow
-    > 1. the pile of the one is the rest of the pile of the other and 
-    > 2. the list of the one is the list of the other.
-    >
-    > One occasion is the *dup* of an other waow 
-    > 1. the top of the one is the top of the other,
-    > 2. the rest of the pile of the one is the pile of the other, and 
-    > 3. the list of the one is the list of the other.
-    >
-    > One occasion is the *swap* of an other waow
-    > 1. the list of the one is the list of the other, 
-    > 2. the top of the one is the right part of the rest of the pile of the other, and
-    > 3. the right part of the rest of the pile of other is the top of the other.
-    >
-    > One occasion is the *hem* of an other waow
-    > 1. the head of the one is the right part of the rest of the pile of the other, 
-    > 2. the rest of the list of the one is the list of the other, and 
-    > 3. the pile of the one is the pile of the other.
-    >
-    > The pop, dup, and swap of an occasion can be defined from the push, drop, and *hem* of an occasion.
-    >
-    > Two occasions with the same items can be described from the other with push, drop, and hem: **recombic completeness**.
-    >
-    > Crops denote the drop of waow its component denotes.
-    > A component denotes 
-    > 1. the dup of waow its dup does,
-    > 2. the drop of waow its drop does,
-    > 3. the push of waow its push does,
-    > 4. the pop of waow its pop does,
-    > 5. the swap of waow its swap does, and
-    > 6. the hem of waow its hem does.
+> *Once upon a time a man grew up in isolation. He only knew how to grunt. One day, a woman taught him to speak. She held up an apple, said 'red', he held it up, said 'red', and then she smiled. He held up another apple, said 'red', she frowned, held it up, and said 'green'. On and on it went.*
+>
+> *Predicates* denote or don't, i.e. are true or false of, the occasions on which they occur.
+> *Constructions* pair *component* predicates with *connectives*.
+> *Lexicons* list *atoms*, predicates without components.
+> *Grammars* generate *categories* from repeated constructions on lexicons.
+> *Negations*, *caps*, *crops*, *dups*, *drops*, *pushes*, *pops*, and *swaps* pair their component with 'not', 'cap', 'crop', 'dup', 'drop', 'push', 'pop', and 'swap' respectively.
+> *Conjunctions*, *alternations*, and *alternative denials* pair their left and right components with 'and', 'or', and 'nor' respectively.
+>
+> Constructed compounds inheret where they denote from their components.
+> Negations denote where and only where (waow) their component doesn't.
+> Conjunctions/alternations denote waow each/some of their components do.
+> Alternative denials denote waow each of their components don't.
+> Caps denote waow there is somewhere denoted by their component.
+> 
+> Occasions, like conjunctions, alternations, and alternative denials, split into left and right parts: the *pile* and the *list*.
+> The list and pile do too: the right part of the pile is called the *top*, the left part of the list is called the *head*, the left part of the pile is called the *rest of the pile* and the right part of the list is called the *rest of the list*.
+>
+> One occasion is the *pop* of an other waow 
+> 1. the pile of the one is the rest of the pile of the other,
+> 2. the head of the one is the top of the other, and
+> 3. the rest of the list of the one is the list of the other.
+>
+> One occasion is the *push* of an other waow 
+> 1. the rest of the pile of the one is the pile of the other,
+> 2. the top of the one is the head of the other, and 
+> 3. the list of the one is the rest of the list of the other.
+>
+> One occasion is the *drop* of an other waow
+> 1. the pile of the one is the rest of the pile of the other and 
+> 2. the list of the one is the list of the other.
+>
+> One occasion is the *dup* of an other waow 
+> 1. the top of the one is the top of the other,
+> 2. the rest of the pile of the one is the pile of the other, and 
+> 3. the list of the one is the list of the other.
+>
+> One occasion is the *swap* of an other waow
+> 1. the list of the one is the list of the other, 
+> 2. the top of the one is the right part of the rest of the pile of the other, and
+> 3. the right part of the rest of the pile of other is the top of the other.
+>
+> One occasion is the *hem* of an other waow
+> 1. the head of the one is the right part of the rest of the pile of the other, 
+> 2. the rest of the list of the one is the list of the other, and 
+> 3. the pile of the one is the pile of the other.
+>
+> The pop, dup, and swap of an occasion can be defined from the push, drop, and *hem* of an occasion.
+>
+> Two occasions with the same items can be described from the other with push, drop, and hem: **recombic completeness**.
+>
+> Crops denote the drop of waow its component denotes.
+> A component denotes 
+> 1. the dup of waow its dup does,
+> 2. the drop of waow its drop does,
+> 3. the push of waow its push does,
+> 4. the pop of waow its pop does,
+> 5. the swap of waow its swap does, and
+> 6. the hem of waow its hem does.
 
 2. This all seems a bit much:
     1. Can focus be brought to the predicates away from the occasions?
