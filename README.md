@@ -79,12 +79,12 @@ Journal your thoughts and feelings.
 ## TIE UP
 
 1. Predicate Logic Memo
-   1. [2025 0625 2043](#2025-0625-2043)
-   2. [2025 0625 2333](#2025-0625-2333)
+    1. [2025 0625 2043](#2025-0625-2043)
+    2. [2025 0625 2333](#2025-0625-2333)
 
 2. Earmuff Experiment
-   1. [2025 0625 1537](#2025-0625-1537)
-   2. [2025 0625 2259](#2025-0625-2259)
+    1. [2025 0625 1537](#2025-0625-1537)
+    2. [2025 0625 2259](#2025-0625-2259)
 
 ## 2025 0627
 
@@ -92,8 +92,55 @@ Journal your thoughts and feelings.
 
 1. More memo work
 
-2. Quine's functional normal form takes a quantificational and truth-functional sentence and 
-    >
+2. The Rules of Passage from "Free Logic, Descriptions, and Virtual Classes" by Quine 1994 and included in "Selected Logic Papers" pg. 279.
+The text is paraphrased to conform to the methods of predicate abstracts (see [HOW PREDICATE ABSTRACTS WORK](#how-predicate-abstracts-work)).
+> A basic technique in quantification theory is transformation of a formula in such a way as to bring all its quantifiers out to the beginning (*prenexing*) or, alternatively, to drive every quantifier in so that it governs only clauses in which its variable recurs (*purifying). The transformations depend on eight familiar equivalences called the rules of passage:
+> 1. some {x: p and Fx} if and only if (iff) p and some {x : Fx}
+> 2. each {x: p and Fx} iff p and each {x: Fx}
+> 3. some {x: p or Fx} iff p or some {x: Fx}
+> 4. each {x: p or Fx} iff p or each {x: Fx}
+> 5. some {x: p only if Fx} iff p only if some {x: Fx}
+> 6. each {x: p only if Fx} iff p only if each {x: Fx}
+> 7. some {x: Fx only if p} iff each {x: Fx} only if p
+> 8. each {x: Fx only if p} iff some {x: Fx} only if p
+>
+> Four of these eight fail for the empty universe. Only 1, 4, 6, and 8 carry over.
+
+3. Prenexing and purifying are key to building up uniform methods e.g. pure existentials, sentences/predicate brought into prenex form such that the prefixed quantifiers are a list of universal quantifiers followed by a list of existential quantifiers, are decidedly valid or not.
+> A pure existential is valid if and only if we get a truth functionally valid schema by taking the alternation of the results of substituting the free variables for the existential ones in the matrix.
+
+Where the matrix is the truth functional part of the prenex form (chop off the quantifiers and the matrix is what you're left with).
+(I think the phrase 'matrix' is from Russell.)
+
+4. The decision procedure for validity of pure existentials suggests that when prenexing always bring out universal quantifiars first in the hope that a pure existential shall be got.
+
+5. It would seem that there is no general shortcut to checking if a schema is a pure existential or not other than to go through the steps of prenexing in every way possible.
+Something like this seems to follow
+> > each {x: some {y: each {z: Fxy, not Fxx, and Fyz, only if Fxz}}}
+> From a 1933 paper by Godel it is known that this prefix 'each {x: some {y: each {z:' is the simplest that a prenex infinity schema can have.
+> 
+> There is no complete proof procedure for showing schemata to be infinity schemata. For, if there were, we could add it to our complete proof procedure for finite consistency, and get a complete proof procedure for consistency. [pg. 215 of Methods of Logic 4th ed.]
+
+where 
+> The schemata that are consistent by not finitely so are the stubborn kind. They may be called *infinity schemata*. [pg. 215 of Methods of Logic 4th ed.]
+
+6. The practical course of action is to identify grammatical categories which are just narrow enough to admit a decision procedure.
+That there is no complete proof procedure for consistency tells us that this practical course must always leave out some schemata that we may later be interested in.
+This is not a sadness because practical action also suggests we work on problems that are just narrow enough to be solved during an average human life span, or on the scale of the human species.
+
+7. Quine's main method mechanizes the following method of disproof (which is easily mistaken as a proof by contradiction, i.e. "*reductio ad absurdum*: the disproof by derivation of a clear contradiction"[pg. 190 MOL4], but which can not be taken as such since, as shall be seen, implication is not forthcoming at each step):
+> We see thus that our main method is a sound one. It is a rather natural one, moreover, despite the austerity of the argument above. The patter (1)-(12) could be verbalized, as a disproof of some conjunction of actual statements in lieu of (1)-(3), along the following line. According to (1), there is something that is *F* to everything. Very well, call it *z*. So we have (4). But (2) said that everything *x* is such that ... . Well then in particular *z* will be that way. So we have (5): that there is something such that ... . Call it *t*. Continuing thus, we get to the contradiction (7), (10)-(12). The premises (1)-(3) are thus disproved. One or two of them may be true, but not all three. [pg. 193 MOL4]
+
+8. It is important to mention that this "verbalization, as a disproof" is natural in that it is the one which can be found in many of Socrate's arguments as told by Plato.
+Furthermore, it is that method of argument which often has the strongest rhetorical punch: "so you say that such and such is the case, well let us assume it is, then there is such a thing as what you say, call it 'x', and so it is true of the other thing you've said, but x can not be both so and not so, we must have started wrong."
+
+9. The giant problem in firmly grasping the soundness of the main method is in the apparent absense of implication with respect to steps from existential premises to the lexically restricted instances.
+This is beautiful because it explains why the strictures of implication are not apparent throughout Plato.
+The role of implication is overblown by modern methods.
+Validity is too, but less so, and though proof theory has done the most to curb our enthusiasm, logical methods are, metaphorically, everything and nothing: they deal with everything because they deal with nothing in particular.
+
+10. The soundness of the main method is established beautifully in that it combines, without reference to the complexity of, e.g., 'syntactic models' and problems of 'witnesses', steps from the most familiar results, to a modern student of mathematical logic, without trapping us in terminology or without stepping far from the cumulative results of previous chapters, each of which slides smothly into the next.
+One day I may find a better way of explaining this, but it remains astounding to me that so few are unfamiliar with Quine's main method: it is easy to explain, and easy to prove sound, and its completeness proof is delightfully simple (relatively speaking).
 
 ## 2025 0626
 
@@ -123,36 +170,36 @@ Journal your thoughts and feelings.
 > 
 > Occasions, like conjunctions, alternations, and alternative denials, split into left and right parts: the *pile* and the *list*.
 > The list and pile do too: the right part of the pile is called the *top*, the left part of the list is called the *head*, the left part of the pile is called the *rest of the pile* and the right part of the list is called the *rest of the list*.
->
+> 
 > One occasion is the *pop* of an other waow 
 > 1. the pile of the one is the rest of the pile of the other,
 > 2. the head of the one is the top of the other, and
 > 3. the rest of the list of the one is the list of the other.
->
+> 
 > One occasion is the *push* of an other waow 
 > 1. the rest of the pile of the one is the pile of the other,
 > 2. the top of the one is the head of the other, and 
 > 3. the list of the one is the rest of the list of the other.
->
+> 
 > One occasion is the *drop* of an other waow
 > 1. the pile of the one is the rest of the pile of the other and 
 > 2. the list of the one is the list of the other.
->
+> 
 > One occasion is the *dup* of an other waow 
 > 1. the top of the one is the top of the other,
 > 2. the rest of the pile of the one is the pile of the other, and 
 > 3. the list of the one is the list of the other.
->
+> 
 > One occasion is the *swap* of an other waow
 > 1. the list of the one is the list of the other, 
 > 2. the top of the one is the right part of the rest of the pile of the other, and
 > 3. the right part of the rest of the pile of other is the top of the other.
->
+> 
 > One occasion is the *hem* of an other waow
 > 1. the head of the one is the right part of the rest of the pile of the other, 
 > 2. the rest of the list of the one is the list of the other, and 
 > 3. the pile of the one is the pile of the other.
->
+> 
 > The pop, dup, and swap of an occasion can be defined from the push, drop, and *hem* of an occasion.
 >
 > Two occasions with the same items can be described from the other with push, drop, and hem: **recombic completeness**.
