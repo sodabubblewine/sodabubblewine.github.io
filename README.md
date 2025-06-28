@@ -79,14 +79,51 @@ Journal your thoughts and feelings.
 ## TIE UP
 
 1. Predicate Logic Memo
-    1. [2025 0625 2043](#2025-0625-2043)
-    2. [2025 0625 2333](#2025-0625-2333)
+   1. [2025 0625 2043](#2025-0625-2043)
+   2. [2025 0625 2333](#2025-0625-2333)
+   3. [2025 0627 1410](#2025-0627-1410)
 
 2. Earmuff Experiment
-    1. [2025 0625 1537](#2025-0625-1537)
-    2. [2025 0625 2259](#2025-0625-2259)
+   1. [2025 0625 1537](#2025-0625-1537)
+   2. [2025 0625 2259](#2025-0625-2259)
 
 ## 2025 0627
+
+### 2025 0627 1904
+
+1. Among the rules of passage mentioned by Quine in "Free Logic, Descriptions, and Virtual Classes" 1994, there is not one for negation:
+    1. some {x: not Fx} if and only if (iff) not each {x: Fx}
+    2. each {x: not Fx} iff not some {x: Fx}
+
+2. Such rules together with De Morgan's laws
+> not (p and q), iff (not p) or not q
+> not (p or q), iff (not p) and not q
+
+and with the law of double negation
+> not not p, iff p
+
+yield the negational normal form where only predications are negated: push all negations inward and they pile up on predications until they are eliminated by hitting another already attached to a predication.
+
+3. "an instance of a quantification exactly matches the old open schema that followed the quantifier, except that it may show a different variable in place of the recurrences of the variable of the quantifier. If it does show a different variable, it must show it in all the places (at least) where the old variable had been free in the old open schema that followed the quantifier. Moreover, it must show it *free* in those places. The reader will recognize in these requirements the effects of the restrictions on substitution for term letters."[pg. 180 MOL4]
+
+4. "A universal quantification implies each of its instances, and an existential quantification is implied by each of its instances." [pg. 180 MOL4]
+
+5. The main method proves inconsistency of a sentence by
+    1. putting it into prenex form
+    2. if the outer most quantifier is universal, then, for each free variable of the sentence write the instance of the universal quantification with 
+
+6. evolving some sentences
+    - write instances of the universal quantification for each free variable as an instantial variable
+    - write each instance of the universal quantification where the instantial variable is one of the free variables of the sentence
+
+7. The definition in 3 of 'an instance of a quantification' misses the chance to define 'instantial variable' in the relevant context.
+Quine defines it here: "The *instantial variable*, which is substituted for the variable that was bound by the dropped existential quantifier, must be *new*. More accurately: it must be free in no line prior to this instantiation." [pg. 190-191 MOL4]
+
+8. There is a lot of relettering stuff that seems like it could be avoided by another normal form e.g. alphabetized normal form.
+Presumably this is a form where all free and quantified variables are replaced from left to right with variable letters in some alphabetical order.
+
+9. Alphabatized form is reached by first establishing an alphabetical order to all variables.
+When subscripted variables, aka complex variables, aka open singular terms, aka compound or complex singular terms, aka Skolem names, aka Skolem functions are in play, dictionary order takes care of any hiccups.
 
 ### 2025 0627 1410
 
@@ -121,8 +158,8 @@ Something like this seems to follow
 > 
 > There is no complete proof procedure for showing schemata to be infinity schemata. For, if there were, we could add it to our complete proof procedure for finite consistency, and get a complete proof procedure for consistency. [pg. 215 of Methods of Logic 4th ed.]
 
-where 
-> The schemata that are consistent by not finitely so are the stubborn kind. They may be called *infinity schemata*. [pg. 215 of Methods of Logic 4th ed.]
+    where 
+    > The schemata that are consistent by not finitely so are the stubborn kind. They may be called *infinity schemata*. [pg. 215 of Methods of Logic 4th ed.]
 
 6. The practical course of action is to identify grammatical categories which are just narrow enough to admit a decision procedure.
 That there is no complete proof procedure for consistency tells us that this practical course must always leave out some schemata that we may later be interested in.
