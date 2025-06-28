@@ -79,13 +79,12 @@ Journal your thoughts and feelings.
 ## TIE UP
 
 1. Predicate Logic Memo
-   1. [2025 0625 2043](#2025-0625-2043)
-   2. [2025 0625 2333](#2025-0625-2333)
-   3. [2025 0627 1410](#2025-0627-1410)
-
+    1. [2025 0625 2043](#2025-0625-2043)
+    2. [2025 0625 2333](#2025-0625-2333)
+    3. [2025 0627 1410](#2025-0627-1410)
 2. Earmuff Experiment
-   1. [2025 0625 1537](#2025-0625-1537)
-   2. [2025 0625 2259](#2025-0625-2259)
+    1. [2025 0625 1537](#2025-0625-1537)
+    2. [2025 0625 2259](#2025-0625-2259)
 
 ## 2025 0627
 
@@ -96,13 +95,13 @@ Journal your thoughts and feelings.
     2. each {x: not Fx} iff not some {x: Fx}
 
 2. Such rules together with De Morgan's laws
-> not (p and q), iff (not p) or not q
-> not (p or q), iff (not p) and not q
+    > not (p and q), iff (not p) or not q
+    > not (p or q), iff (not p) and not q
 
-and with the law of double negation
-> not not p, iff p
+    and with the law of double negation
+    > not not p, iff p
 
-yield the negational normal form where only predications are negated: push all negations inward and they pile up on predications until they are eliminated by hitting another already attached to a predication.
+    yield the negational normal form where only predications are negated: push all negations inward and they pile up on predications until they are eliminated by hitting another already attached to a predication.
 
 3. "an instance of a quantification exactly matches the old open schema that followed the quantifier, except that it may show a different variable in place of the recurrences of the variable of the quantifier. If it does show a different variable, it must show it in all the places (at least) where the old variable had been free in the old open schema that followed the quantifier. Moreover, it must show it *free* in those places. The reader will recognize in these requirements the effects of the restrictions on substitution for term letters."[pg. 180 MOL4]
 
@@ -131,20 +130,20 @@ When subscripted variables, aka complex variables, aka open singular terms, aka 
 
 2. The Rules of Passage from "Free Logic, Descriptions, and Virtual Classes" by Quine 1994 and included in "Selected Logic Papers" pg. 279.
 The text is paraphrased to conform to the methods of predicate abstracts (see [HOW PREDICATE ABSTRACTS WORK](#how-predicate-abstracts-work)).
-> A basic technique in quantification theory is transformation of a formula in such a way as to bring all its quantifiers out to the beginning (*prenexing*) or, alternatively, to drive every quantifier in so that it governs only clauses in which its variable recurs (*purifying). The transformations depend on eight familiar equivalences called the rules of passage:
-> 1. some {x: p and Fx} if and only if (iff) p and some {x : Fx}
-> 2. each {x: p and Fx} iff p and each {x: Fx}
-> 3. some {x: p or Fx} iff p or some {x: Fx}
-> 4. each {x: p or Fx} iff p or each {x: Fx}
-> 5. some {x: p only if Fx} iff p only if some {x: Fx}
-> 6. each {x: p only if Fx} iff p only if each {x: Fx}
-> 7. some {x: Fx only if p} iff each {x: Fx} only if p
-> 8. each {x: Fx only if p} iff some {x: Fx} only if p
->
-> Four of these eight fail for the empty universe. Only 1, 4, 6, and 8 carry over.
+    > A basic technique in quantification theory is transformation of a formula in such a way as to bring all its quantifiers out to the beginning (*prenexing*) or, alternatively, to drive every quantifier in so that it governs only clauses in which its variable recurs (*purifying). The transformations depend on eight familiar equivalences called the rules of passage:
+    > 1. some {x: p and Fx} if and only if (iff) p and some {x : Fx}
+    > 2. each {x: p and Fx} iff p and each {x: Fx}
+    > 3. some {x: p or Fx} iff p or some {x: Fx}
+    > 4. each {x: p or Fx} iff p or each {x: Fx}
+    > 5. some {x: p only if Fx} iff p only if some {x: Fx}
+    > 6. each {x: p only if Fx} iff p only if each {x: Fx}
+    > 7. some {x: Fx only if p} iff each {x: Fx} only if p
+    > 8. each {x: Fx only if p} iff some {x: Fx} only if p
+    >
+    > Four of these eight fail for the empty universe. Only 1, 4, 6, and 8 carry over.
 
 3. Prenexing and purifying are key to building up uniform methods e.g. pure existentials, sentences/predicate brought into prenex form such that the prefixed quantifiers are a list of universal quantifiers followed by a list of existential quantifiers, are decidedly valid or not.
-> A pure existential is valid if and only if we get a truth functionally valid schema by taking the alternation of the results of substituting the free variables for the existential ones in the matrix.
+    > A pure existential is valid if and only if we get a truth functionally valid schema by taking the alternation of the results of substituting the free variables for the existential ones in the matrix.
 
     Where the matrix is the truth functional part of the prenex form (chop off the quantifiers and the matrix is what you're left with).
 (I think the phrase 'matrix' is from Russell.)
@@ -153,10 +152,11 @@ The text is paraphrased to conform to the methods of predicate abstracts (see [H
 
 5. It would seem that there is no general shortcut to checking if a schema is a pure existential or not other than to go through the steps of prenexing in every way possible.
 Something like this seems to follow
-> > each {x: some {y: each {z: Fxy, not Fxx, and Fyz, only if Fxz}}}
-> From a 1933 paper by Godel it is known that this prefix 'each {x: some {y: each {z:' is the simplest that a prenex infinity schema can have.
-> 
-> There is no complete proof procedure for showing schemata to be infinity schemata. For, if there were, we could add it to our complete proof procedure for finite consistency, and get a complete proof procedure for consistency. [pg. 215 of Methods of Logic 4th ed.]
+    > > each {x: some {y: each {z: Fxy, not Fxx, and Fyz, only if Fxz}}}
+    >
+    > From a 1933 paper by Godel it is known that this prefix 'each {x: some {y: each {z:' is the simplest that a prenex infinity schema can have.
+    > 
+    > There is no complete proof procedure for showing schemata to be infinity schemata. For, if there were, we could add it to our complete proof procedure for finite consistency, and get a complete proof procedure for consistency. (pg. 215 of Methods of Logic 4th ed.)
 
     where 
     > The schemata that are consistent by not finitely so are the stubborn kind. They may be called *infinity schemata*. [pg. 215 of Methods of Logic 4th ed.]
@@ -166,7 +166,7 @@ That there is no complete proof procedure for consistency tells us that this pra
 This is not a sadness because practical action also suggests we work on problems that are just narrow enough to be solved during an average human life span, or on the scale of the human species.
 
 7. Quine's main method mechanizes the following method of disproof (which is easily mistaken as a proof by contradiction, i.e. "*reductio ad absurdum*: the disproof by derivation of a clear contradiction"[pg. 190 MOL4], but which can not be taken as such since, as shall be seen, implication is not forthcoming at each step):
-> We see thus that our main method is a sound one. It is a rather natural one, moreover, despite the austerity of the argument above. The patter (1)-(12) could be verbalized, as a disproof of some conjunction of actual statements in lieu of (1)-(3), along the following line. According to (1), there is something that is *F* to everything. Very well, call it *z*. So we have (4). But (2) said that everything *x* is such that ... . Well then in particular *z* will be that way. So we have (5): that there is something such that ... . Call it *t*. Continuing thus, we get to the contradiction (7), (10)-(12). The premises (1)-(3) are thus disproved. One or two of them may be true, but not all three. [pg. 193 MOL4]
+    > We see thus that our main method is a sound one. It is a rather natural one, moreover, despite the austerity of the argument above. The patter (1)-(12) could be verbalized, as a disproof of some conjunction of actual statements in lieu of (1)-(3), along the following line. According to (1), there is something that is *F* to everything. Very well, call it *z*. So we have (4). But (2) said that everything *x* is such that ... . Well then in particular *z* will be that way. So we have (5): that there is something such that ... . Call it *t*. Continuing thus, we get to the contradiction (7), (10)-(12). The premises (1)-(3) are thus disproved. One or two of them may be true, but not all three. [pg. 193 MOL4]
 
 8. It is important to mention that this "verbalization, as a disproof" is natural in that it is the one which can be found in many of Socrate's arguments as told by Plato.
 Furthermore, it is that method of argument which often has the strongest rhetorical punch: "so you say that such and such is the case, well let us assume it is, then there is such a thing as what you say, call it 'x', and so it is true of the other thing you've said, but x can not be both so and not so, we must have started wrong."
