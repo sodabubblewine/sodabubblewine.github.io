@@ -78,15 +78,30 @@ Journal your thoughts and feelings.
 
 ## TIE UP
 
-1. Predicate Logic Memo
+1. Predicate (Functor) Logic Memo
     1. [2025 0625 2043](#2025-0625-2043)
     2. [2025 0625 2333](#2025-0625-2333)
     3. [2025 0627 1410](#2025-0627-1410)
+    4. [2025 0627 1904](#2025-0627-1904)
 2. Earmuff Experiment
     1. [2025 0625 1537](#2025-0625-1537)
     2. [2025 0625 2259](#2025-0625-2259)
+3. LISP
+4. FORTH
 
 ## 2025 0627
+
+### 2025 0627 2141
+
+1. I've wasted so much time trying to figure out how spaces work with lists and sublists.
+
+2. In working out how to alphabetize a schema the problem of freedom and bondage occurs.
+This is dealt with conspicuously by predicate abstracts and [HOW PREDICATE ABSTRACTS WORK](#how-predicate-abstracts-work).
+
+3. Sadly, quantifiers are still so popular as to intrude even upon Quine's methods of logic 4th edition as in this fundamental restriction on substitution:
+    > Quantifiers of the substituted abstract must not capture variables of the schema in which the substitution takes place, and variables of the substituted abstract must not be captured by quantifiers of the schema in which the substitution takes place." (pg. 162 MOL4)
+
+4. The notation '(such (..x) F..x..y)' is a way to regiment the predicate abstracts in a LISP like language or the language of Fefermann's Finitary Inductively presented logics.
 
 ### 2025 0627 1904
 
