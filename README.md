@@ -86,8 +86,73 @@ Journal your thoughts and feelings.
 2. Earmuff Experiment
     1. [2025 0625 1537](#2025-0625-1537)
     2. [2025 0625 2259](#2025-0625-2259)
+    3. [2025 0629 1518](#2025-0629-1518)
 3. LISP
 4. FORTH
+
+## 2025 0629
+
+### 2025 0629 1706
+
+1. The "Foxfire" series on Appalachian culture is priceless.
+Such records can be made by any culture.
+Cultures can be deliberately designed to make and maintain such records.
+    1. <https://en.wikipedia.org/wiki/Foxfire_(magazine)>
+    2. <https://www.foxfire.org/>
+
+2. Now more than ever I am in a position to evolve a new experimental culture which, like the older tinier one, is governed by the principles of an experimental analysis of behavior.
+
+3. The hints, memos, and notes made by members of such a new culture are only secondary to the concrete contingencies of the world from which they are selected.
+
+4. Copleston's History of Philosophy
+    1. 1946 Greece and Rome
+    2. 1950 Augustine to Scotus
+    3. 1953 Ockham to Suarez
+    4. 1958 Descartes to Leibniz
+    5. 1959 Hobbes to Hume
+    6. 1960 Wolff to Kant
+    7. 1963 Fichte to Nietzsche
+    8. 1966 Bentham to Russell
+    9. 1975 Maine de Biran to Sartre
+    10. 1986 Russian Philosophy
+    11. 1956 Logical Positivism and Existentialism
+
+5. Copleston's history of philosophy might otherwise have been written as something like Foxfire.
+
+6. In 2 of [2025 0629 1518](#2025-0629-1518) Quine's initial definitions of 'lexicon' and 'particle' are given.
+In his book "Philosophy of Logic Second Edition" (POL2) they are defined as "words".
+This is refined in "From Stimulus to Science", indirectly, through his definition of 'predicate': "a predicate in my sense is always an integral word, phrase, or clause, grammatically a noun, adjective, or verb. Some are generated from others by grammatical constructions, notably the relative clause or, formally, predicate abstraction or predicate functors." (pg. 61 From Stimulus to Science).
+
+7. In POL2, Quine only briefly mentions the construction, and endless enlargement of the category, of predicates by way of predicate functors.
+
+### 2025 0629 1518
+
+1. I want fast answers -- that are sound, salient, and smooth -- to apt questions.
+Rarely having them energizes me.
+
+2. In "Philosophy of Logic Second Edition" Quine first defines lexical and partical items as "the words classed in the categories comprise the lexicon, whereas the words or signs that are not thus classified but are handled only as parts of specific constructions are the particles" (pg. 26-27).
+
+3. The books I take notes from are hard to keep open.
+When I type I use both of my hands and have none free to hold open books.
+A bookstand may help me.
+
+4. An experiment with a bookstand is like my experiment with earmuffs.
+
+5. On the earmuff experiment:
+    1. When I sit down to my computer or sit down to think I have frequently put on my earmuffs.
+    2. They dampen all sounds, except perhaps for the lowest of frequencies.
+    3. When the earmuffs are on I am less likely to respond to sounds that otherwise control my attention e.g. dogs barking and bird chirping (though I much prefer birds chirping).
+    4. Wearing earmuffs has uncovered a few unexpected things.
+    5. The low frequencies are not as often noticed when they are combined with the rest of the sounds that I hear e.g. the low yet loud hum of some far off semi engine breaking, or, to my surprise, the low and pulsating hum of some overhead fans.
+    6. One of the most surprising things I discovered is that I have volentary control over my tensor tympani muscle.
+    7. I just learned that my father has this volentary control as well.
+    8. It was uncovered because I heard the roaring sound in my right ear even though I had the earmuffs on.
+    9. Even after flipping the muffs around, so that the one over the left ear was now over the right, the sound remained.
+    10. I then discovered that by focusing on relaxing my neck and upper back, it went away.
+    11. It came back when I breathed through my nose if I did not deliberately try to relax my neck and back.
+    12. It occurred to me that I make the rushing sound whenever I swallow.
+
+6. Most of the bookstands I saw from a quick search where more than I would pay for what they offer.
 
 ## 2025 0627
 
