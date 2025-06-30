@@ -92,6 +92,44 @@ Journal your thoughts and feelings.
 
 ## 2025 0629
 
+### 2025 0629 1959
+
+1. It has been a while since I've worked on my calculus notes.
+I now have a clearer aim to put it into a memo.
+
+2. Calculus, for me, is indistinguishable from primitive recursive analysis.
+In particular, the synthesis of algebra and geometry which hits the big tools of math in the rest of the sciences is precisely the synthesis of projective geometry and primitive recursive arithmetic that fits closely with Tarski and Givant's metamathematical methods in geometry.
+
+3. Sadly, there is no glory in diving into these methods of calculus without first finishing the memo on (predicate) logic.
+The exact primitive recursive methods, either in the geometric or algebraic constructions, are those which follow from the proper premises as in logic programming.
+
+4. Logic programming is to be shown to follow immediately from Quine's main method.
+Specifically, it follows immediately from the functional normal form of Quine's main method where the purely notational tool of compound singular terms (which plays the logical part of Skolem's functions).
+
+5. Quine's work on singular terms changed my outlook on logic: it turned it active where it had once been transcient.
+
+6. The relevant definitions are these.
+    > In terms of logical structure, what it means to say that the singular term "purports to name one adn only one object" is just this: *The singular term belongs in positions of the kind in which it would also be coherent to use variables 'x', 'y, etc.* (or, in ordinary language, pronouns). pg.260
+
+    > General terms, in contrast to singular ones, do not occur in positions appropriate to variables. pg. 261
+
+    > The 'x' of an open sentence may refer to objects of any kind, but it is supposed to refer to them one at a time; and then application of 'each {x:' or 'some {x:' means that what the open sentence says of *x* is true of all or some objects taken thus one at a time. pg. 261
+
+    > Just as the sentence letters in a schema stand as dummy sentences and the term letters ad dummy general terms, so the free variables may be seen as standing as dummy singular terms. pg. 262
+
+    > It is usual in logic to write 'the {x:', with the inverted iota, to mean "the object x such that'. pg 274
+
+    > Singular terms are called *descriptions* when written in this form. The singular terms of ordinary language which may be represented thus as descriptions begin typically with the singular 'the', but by no means necessarily so. pg. 274
+
+    > In general a singular term purports to name one and only one object, and in particular a singular term of the form 'the {x: Fx}' purports to name the one and only object of which the general term represented by 'F' is true. Thus, if y is the object the {x: Fx}, then y must be such that y Fs and nothing-but-y Fs. this conjunction amounts to saying that, for each thing x, 'F' is true of x if x=y, and false of x otherwise. In short: each {x: Fx if and only if x=y}. pg. 274
+
+    > If 'F' is true of nothing or of many things, then there is no such thing as the {x: Fx}. Actually the term appearing in the role of the 'F' of 'the {x: Fx}' in verbal examples from ordinary discourse very frequently needs supplementary clauses to narrow it down to the point of being true of only one object, but this situation can commonly be viewed merely as a case of the familiar practice of depending on context or situation to resolve ambiguities of ordinary language. Moreover, it would be unnatural to construe all use of the singular 'the' in this way; often a better account is simply pronominal. Commonly 'the boy', 'the car', serves merely as a pronoun whose grammatical antecedent is some name or description or perhaps some general term and quantifier. In logical notation such a pronoun might come through simply as a bound variable. pg. 275
+
+    > arguments involving a singular term can be carried through by straight quantification theory with a free variable, say 'y', for the singular term, but that the application of the results depend on construing y as the object named by the singular term, and hence is contingent on existence of such an object. This construing of y, and the existence assumption on which it rests, figured nowhere in the schematism of the proof, but only in the informal step of application. pg. 275
+
+    > the beauty of descriptions is that here the construing of y as the named object can itself be schematized quite explicitly as an additional premise of the form 'each {x: Fx if and only if x=y}'. So our technique for arguments involving descriptions is as follows: we use free variables for the descriptions as for any singular term, but we also add a *descriptional premise* of the form 'each {x: Fx if and only if x=y}' for each description. an axiom of identity is also usually called for, because of the '=' in the descriptional premise.
+
+
 ### 2025 0629 1706
 
 1. The "Foxfire" series on Appalachian culture is priceless.
@@ -176,6 +214,7 @@ This is dealt with conspicuously by predicate abstracts and [HOW PREDICATE ABSTR
 
 2. Such rules together with De Morgan's laws
     > not (p and q), iff (not p) or not q
+    >
     > not (p or q), iff (not p) and not q
 
     and with the law of double negation
