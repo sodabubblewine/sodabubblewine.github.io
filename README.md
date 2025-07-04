@@ -79,16 +79,66 @@ Journal your thoughts and feelings.
 ## TIE UP
 
 1. Predicate (Functor) Logic Memo
-    1. [2025 0625 2043](#2025-0625-2043)
-    2. [2025 0625 2333](#2025-0625-2333)
-    3. [2025 0627 1410](#2025-0627-1410)
-    4. [2025 0627 1904](#2025-0627-1904)
+    - [2025 0608 1515](#2025-0608-1515)
+    - [2025 0625 2043](#2025-0625-2043)
+    - [2025 0625 2333](#2025-0625-2333)
+    - [2025 0627 1410](#2025-0627-1410)
+    - [2025 0627 1904](#2025-0627-1904)
 2. Earmuff Experiment
     1. [2025 0625 1537](#2025-0625-1537)
     2. [2025 0625 2259](#2025-0625-2259)
     3. [2025 0629 1518](#2025-0629-1518)
 3. LISP
 4. FORTH
+
+## 2025 0703
+
+### 2025 0703 1245
+
+1. Finish collecting Quine quotations on singular terms in [2025 0629 1959](#2025-0629-1959).
+
+2. Memo work:
+    1. The left part of the occasion is called the pile, the right part is called the list. The left part of the pile is called the rest, the right part is called the top. The left part of the list is called the head, and the right part is called the body.
+    2. The component of the drop denotes the rest with the list of where and only where (waow) the compound does.
+    3. The component of the push denotes the pile with the head, with the body of waow the compound does.
+    4. Drop components denote the rest with the list of waow their compound does.
+    5. Push components denote the pile with the head, with the body of waow the compound does.
+    7. Hem components denote the pile with, the the right part of the rest with the list of waow the compound does.
+    8. Components of
+        1. drops denote the rest with the list of waow their comopund does
+        2. pushes denote the pile with the head, with the body of waow the comopund does
+        3. hems denote the pile with, the right part of the rest with teh list of waow the compound does
+    9. Drop components denote the left part of the left part with the right part of waow their compound does.
+
+3. Cumulative draft of memo on predicate logic
+    > *Once upon a time, a man grew up all alone. One day, a woman taught him to speak: she held up an apple, said 'red', he held it up, said 'red', she smiled, he held up another, said 'red', she frowned, held it up, said 'green', and so on.*
+    >
+    > *Predicates* do or don't denote (are true or false of) where they occur.
+    > *Constructions* connect predicates, *lexicons* list atomic predicates, and *grammars* generate *categories* from recurrent constructions on lexicons.
+    > *Logic* reveals *validities* whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+    >
+    > Predicates are
+    > 1. consistent waow their negation isn't valid (some of their SLSs denote somewhere) ,
+    > 2. implied by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) isn't consistent (each of their SLSs denotes where the same of the other does), and
+    > 3. equivalent to others waow they are mutually implicative (each of their SLSs donotes waow the same of the other does).
+    >
+    > Constructions inheret where they denote from their components (Tarski) e.g.
+    > 1. joint denials denote waow each of their components don't,
+    > 2. negations (self joint denials) denote waow their component does not,
+    > 3. alternations (negations of joint denials) denote waow some of their components do,
+    > 4. conjunctions (joint denials of negations) denote waow each of their components do,
+    > 5. alternative denials (alternations of negations) denote waow some of their components don't, and 
+    > 6. closures denote waow there is somewhere denoted by their component
+    > 7. 
+
+
+## 2025 0701
+
+### 2025 0701 1317
+
+1. Each substitution in *valid* predicates for (supplemented) lexicon denotes everywhere.
+
+2. Logic Programming Notes by Frank Pfenning <https://people.mpi-sws.org/~dg/teaching/lis2014/modules/lp-fp-07.pdf>
 
 ## 2025 0629
 
@@ -128,6 +178,8 @@ Specifically, it follows immediately from the functional normal form of Quine's 
     > arguments involving a singular term can be carried through by straight quantification theory with a free variable, say 'y', for the singular term, but that the application of the results depend on construing y as the object named by the singular term, and hence is contingent on existence of such an object. This construing of y, and the existence assumption on which it rests, figured nowhere in the schematism of the proof, but only in the informal step of application. pg. 275
 
     > the beauty of descriptions is that here the construing of y as the named object can itself be schematized quite explicitly as an additional premise of the form 'each {x: Fx if and only if x=y}'. So our technique for arguments involving descriptions is as follows: we use free variables for the descriptions as for any singular term, but we also add a *descriptional premise* of the form 'each {x: Fx if and only if x=y}' for each description. an axiom of identity is also usually called for, because of the '=' in the descriptional premise.
+
+    >
 
 
 ### 2025 0629 1706
