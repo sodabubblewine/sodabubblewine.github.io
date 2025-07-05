@@ -121,7 +121,9 @@ You can stick with these accumulated operations that are entirely ignorant of th
     > The component of a
     >
     > - *drop* denotes the left of the left with the right,
+    >    
     > - *push* denotes the left with the left of the right, with the right of the right,
+    >    
     > - *hem* denotes the left with, the right of the left with the right,
     > 
     > of waow the compound does.
