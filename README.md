@@ -91,6 +91,41 @@ Journal your thoughts and feelings.
 3. LISP
 4. FORTH
 
+## 2025 0705
+
+### 2025 0705 1353
+
+1. Components of *lefts* and *rights*, and the left and right components of *Cartesian pairs*, denote the corresponding parts of waow their compound does.
+
+2. Wait, are these recombically complete?
+If there is no duplication then there is no way to construct the relfection of a predicate.
+
+3. It just occurred to me that I've been down this road before when looking for a recombically complete set of predicate functors.
+
+4. After you define the left, the right, and the Cartisian product functor, you see that you can't construct reflections, so you add reflections constructions in e.g. reflections denote the ordered pair whose left and right part match where and only where (waow) their component does.
+
+5. Then you're left without a construction for the symmetric/swap of a prediate i.e. symmetrics denote the right with the left part of waow their component denotes.
+
+6. Next, it is uncovered that there is no way to move items around the trees of items constructed from lefts, rights, cartesian pairs, reflections, and symmetrics, so the left and right shifts come up as a solution i.e. the component of the left shift denotes the left with the elft of the right, with the right of the right of waow the comopund denotes, and the comopnet of the right shift denotes the left with the left of the right, with the right of the right of waow the compound denotes.
+
+7. Here, with the left and right shifts, we have the stack operations of push and pop, or in traditional forth notation '>R' and 'R>' which are read aloud as 'to ar' and 'ar from'.
+You can stick with these accumulated operations that are entirely ignorant of the duality of lists and stacks as the right and left parts of an ordered binary tree, but there are diminishing returns as it is uncovered that the left and right shifts which are called for inevitably, permit the construction of reflections and symmetrics that are dealt with in calculations with commensorate methods. 
+
+8. For example, components of reflections denote the left with, the right of the left with the right of waow their compound denotes, and components of symmetrics denote the left of the left with the left of the right, with the right of the left with the right of the right of waow their compound denotes.
+
+9. The definitions of 4 and 5 are then of *major* reflections and symmetrics, and the definitions of 8 are their *minor* extensions.
+
+10. You're not bad for feeling things even though the things that you feel may feel bad.
+
+11. Draft of definitions of recombically complete predicate functors for memo on logic:
+    > The component of a
+    >
+    > - *drop* denotes the left of the left with the right,
+    > - *push* denotes the left with the left of the right, with the right of the right,
+    > - *hem* denotes the left with, the right of the left with the right,
+    > 
+    > of waow the compound does.
+
 ## 2025 0703
 
 ### 2025 0703 1245
