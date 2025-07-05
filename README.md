@@ -93,6 +93,66 @@ Journal your thoughts and feelings.
 
 ## 2025 0705
 
+### 2025 0705 1515
+
+1. Write up an even simpler construction of Alan Macdonald's "An elementary construction of the geometric algebra" which follows notational extensions of R. L. Goodstein's primitive recursive equation calculi by giving the permutation parity function and other combinatory functions (and APL like functions).
+    - <https://www.faculty.luther.edu/~macdonal/>
+    - <https://www.faculty.luther.edu/~macdonal/GAConstruct.pdf>
+
+2. Write a memon on Goodstein's primitive recursive equation calculus and its notational extensions through to primitive recursive analysis e.g. the primitive recursive elementary functions and primitive recursive calculus (maybe even primitive recursive geometry through the Tarski/Hilbert form of the predicate 'x between y and z' or 'x is colinear to y with z' or 'xyz colinear' or, just, 'colinear'.
+
+3. The aim is primitive recursive quantum field theory i.e. primitive recursive functional analysis and operator theory.
+
+4. Collect primary source I already have in my library, and collate with references from e.g. [A Short Introduction to the Quantum Formalisms](https://arxiv.org/abs/1211.5627) by Francois David.
+
+5. Also, what's up with the behaviorist Jack Michael? <https://en.wikipedia.org/wiki/Jack_Michael> He appears to have caused a lot of trouble for the science of behavior by building what he called "Applied Behavior Analysis".
+The problem appears to be that the applied behavior analysts are not so much worried about the science of behavior as they are with its consequences in capitally controlled cultures i.e. they appear only to take advantage of those fragments of the science of behavior which they find most convenient without being subject to the scientific countercontrol which the science of behavior would otherwise enforce.
+
+6. But first, more drafts of the memo on logic.
+    > *Once upon a time, a man grew up all alone. One day, a woman taught him to speak: she held up an apple, said 'red', he held it up, said 'red', she smiled, he held up another, said 'red', she frowned, held it up, said 'green', and so on.*
+    >
+    > *Predicates* do or don't denote (are true or false of) where they occur.
+    > *Constructions* connect predicates, *lexicons* list atomic predicates, and *grammars* generate *categories* from recurrent constructions on lexicons.
+    > *Logic* reveals *validities* whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+    >
+    > Constructions inheret where they denote from their components (Tarski).
+    > They sort into three bins: *recombic*, e.g. components of
+    >
+    > 1. *drops* denote the left of the left with the right,
+    >    
+    > 2. *pushes* denote the left with the left of the right, with the right of the right,
+    >    
+    > 3. *hems* denote the left with, the right of the left with the right,
+    > 
+    > of waow their compound does; functional e.g.
+    >
+    > 4. joint denials denote waow each of their components don't,
+    >
+    > 5. negations (self joint denials) denote waow their component does not,
+    >
+    > 6. alternations (negations of joint denials) denote waow some of their components do,
+    >
+    > 7. conjunctions (joint denials of negations) denote waow each of their components do,
+    >
+    > 8. alternative denials (alternations of negations) denote waow some of their components don't; and 
+    > 
+    > and determinative, e.g.
+    >
+    > 9. closures denote waow there is somewhere denoted by their component,
+    >
+    > 10. components of croppings denote when some item is the right of the left with the right of waow the compound denotes.
+
+7. Work on the definition of croppings that ultimate ends up in 6
+    - components of croppings denote the left with something, with the right of waow their compound does
+    - croppings denote the left of the left with the right of waow some item is such that the left with it, with the right  of waow is denoted by the compound, is denoted by the component
+    - components of croppings denote when some item is the right of the left with the right of waow the compound denotes
+
+
+8. Sometimes I get really mad at the world for letting so many bright stars burn out rather than helping them to shine on.
+
+9. Read Kleene's 1981 THE THEORY OF RECURSIVE FUNCTIONS, APPROACHING ITS CENTENNIAL
+
+
 ### 2025 0705 1353
 
 1. Components of *lefts* and *rights*, and the left and right components of *Cartesian pairs*, denote the corresponding parts of waow their compound does.
