@@ -93,6 +93,66 @@ Journal your thoughts and feelings.
 
 ## 2025 0705
 
+### 2025 0705 2243
+
+1. I delight in the evolution of the memo on logic.
+The following is a better ordering of the major catogories from most to least familiar.
+It also includes those parts of the earlier drafts that carry over directly to this new definition of validity.
+    > *Once upon a time, a man grew up all alone. One day, a woman taught him to speak: she held up an apple, said 'red', he held it up, said 'red', she smiled, he held up another, said 'red', she frowned, held it up, said 'green', and so on.*
+    >
+    > *Predicates* do or don't denote (are true or false of) where they occur.
+    > *Constructions* connect predicates, *lexicons* list atomic predicates, and *grammars* generate *categories* from recurrent constructions on lexicons.
+    > *Logic* reveals *validities* whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+    >
+    > Constructions inheret where they denote from their components (Tarski).
+    > They sort into three bins:  functional e.g.
+    >
+    > 1. *joint denials* denote waow each of their components don't,
+    >
+    > 2. *negations* (self joint denials) denote waow their component does not,
+    >
+    > 3. *alternations* (negations of joint denials) denote waow some of their components do,
+    >
+    > 4. *conjunctions* (joint denials of negations) denote waow each of their components do,
+    >
+    > 5. *alternative denials* (alternations of negations) denote waow some of their components don't; and 
+    > 
+    > determinative, e.g.
+    >
+    > 6. *closures* denote waow there is somewhere denoted by their component, and 
+    >
+    > 7. components of *croppings* denote when some item is the right of the left with the right of waow the compound denotes; and
+    >
+    >*recombic*, e.g. components of
+    >
+    > 8. *drops* denote the left of the left with the right,
+    >    
+    > 9. *pushes* denote the left with the left of the right, with the right of the right,
+    >    
+    > 10. *hems* denote the left with, the right of the left with the right,
+    > 
+    > of waow their compound does.
+    >
+    > Predicates are
+    >
+    > 11. *consistent* waow their negation isn't valid (some of their SLSs denote somewhere) ,
+    >
+    > 12. *implied* by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) isn't consistent (each of their SLSs denotes where the same of the other does), and
+    >
+    > 13. *equivalent* to others waow they are mutually implicative (each of their SLSs donotes waow the same of the other does).
+    >
+    > Examples:
+    > 
+    > 14. Alternations of compounds with their negations are valid (they denote waow the compound does or its negation does, i.e. waow it does or does not, so, each SLS denotes everywhere).
+    >
+    > 15. Conjunctions of compounds with their negations are not consistent (they denote waow their compound does and its negation does, and, hence, waow it does and does not, so, each SLS of the conjunction does not denote everywhere i.e. the negation of the conjunction is valid).
+    > 
+    > 16. Compounds are implied by and equivalent to their self.
+
+2. Little steps.
+
+
+
 ### 2025 0705 1515
 
 1. Write up an even simpler construction of Alan Macdonald's "An elementary construction of the geometric algebra" which follows notational extensions of R. L. Goodstein's primitive recursive equation calculi by giving the permutation parity function and other combinatory functions (and APL like functions).
@@ -116,7 +176,15 @@ The problem appears to be that the applied behavior analysts are not so much wor
     > *Logic* reveals *validities* whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
     >
     > Constructions inheret where they denote from their components (Tarski).
-    > They sort into three bins:  functional e.g.
+    > They sort into three bins:  *recombic*, e.g. components of
+    >
+    > 1. *drops* denote the left of the left with the right,
+    >    
+    > 2. *pushes* denote the left with the left of the right, with the right of the right,
+    >    
+    > 3. *hems* denote the left with, the right of the left with the right,
+    > 
+    > of waow their compound does; functional e.g.
     >
     > 4. joint denials denote waow each of their components don't,
     >
@@ -132,17 +200,8 @@ The problem appears to be that the applied behavior analysts are not so much wor
     >
     > 9. closures denote waow there is somewhere denoted by their component, and 
     >
-    > 10. components of croppings denote when some item is the right of the left with the right of waow the compound denotes; and
+    > 10. components of croppings denote when some item is the right of the left with the right of waow the compound denotes.
     >
-    >*recombic*, e.g. components of
-    >
-    > 1. *drops* denote the left of the left with the right,
-    >    
-    > 2. *pushes* denote the left with the left of the right, with the right of the right,
-    >    
-    > 3. *hems* denote the left with, the right of the left with the right,
-    > 
-    > of waow their compound does.
     >
     > Predicates are
     >
