@@ -85,11 +85,94 @@ Journal your thoughts and feelings.
     - [2025 0627 1410](#2025-0627-1410)
     - [2025 0627 1904](#2025-0627-1904)
 2. Earmuff Experiment
-    1. [2025 0625 1537](#2025-0625-1537)
-    2. [2025 0625 2259](#2025-0625-2259)
-    3. [2025 0629 1518](#2025-0629-1518)
+    - [2025 0625 1537](#2025-0625-1537)
+    - [2025 0625 2259](#2025-0625-2259)
+    - [2025 0629 1518](#2025-0629-1518)
 3. LISP
 4. FORTH
+
+## 2025 0706
+
+### 2025 0706 1353
+
+1. The definition of croppings in the draft of the the memo on logic from the last note is wrong: it fails to fully describe where the component denotes with respect to the compound.
+    > components of *croppings* denote when some item is the right of the left with the right of waow the compound denotes
+    >
+    > WRONG!
+
+2. work on a fix
+    1. components of *croppings* denote when the left with some item, with the right of waow the compound denotes
+    2. components of *croppings* denote when some item is such that the left with it, with the right of waow the compound denotes
+    3. *croppings* denote waow the left of it with some item, with the right of it is denoted by the component
+    4. *croppings* denote waow some item is such that the left of where the compound denotes with it, with the right of where the compound denotes, is where the component denotes
+    5. there is some item such that it is the right of the left part of waow the component denotes and the left of the left with the right of waow the compound denotes
+    6. A cropping denotes waow there is some item such that it is the right of the left part of waow the component denotes
+    7. when there is some item such that it is the right part of the left of where the component denotes, the compound denotes the left of the left with the right of the matching occasion
+    8. a cropping denotes waow some item is x such that the component denotes the left of the left of it with x, with the right of it
+
+3. I'm failing to avoid a switch to my outlook on croppings that comes from Quine's sublime definition of the truth of existentials in "Philosophy of Logic second edition":
+    > An existential quantification consists of some sentence preceded by an existential quantifier whose variable is, say, the ith variable of the alphabet. This quantification, then is satisfied by a given sequence if and only if the constituent sentence is satisfied by some sequence that matches the given one except perhaps in its ith place. POL2 pg.39
+
+4. This would change the definition of croppings as follows: croppings denote waow there is somewhere denoted by the component that matches it except perhaps at the right of the left of it.
+
+5. The problem with this change is unfortunate because it does not make the compound a smaller shape than the component: it makes it the same shape.
+There is something important about making everything the same shape, and ultimately this may be the only option available to me because of precisely the problems Quine navigates with subtle talk of satisfaction by sequences rather than satisfaction by sequences of a given length on page 37 and 38.
+
+6. But a good definition may have just occurred to me:
+    1. Croppings denote the left of the left with the right of waow some item is the right of the left of it and it is denoted by the component.
+    2. Components of croppings denote the left with some item, with the right of waow the compound does
+    3. When some item is such that 
+    4. Croppings denote when some item is such that their component denotes the left with it, with the right of waow they denote.
+    5. Croppings denote when some item is such that the component of the cropping denotes the left with it, with the right of waow the compound denotes.
+
+7. For now I'm settling on the somewhat cryptic 'Components of *croppings* denote the left with some item, with the right of waow the compound does.'
+
+8. It is cryptic because it is complete yet, perhaps, incompressible.
+
+9. The rest of the basic recombic functors are not yet given in the draft of the memo.
+It's unclear where they can best be introduced, but it is clear that the details of their introduction must be given in full so that others do not fumble around like I did when looking for a cumulative straight line to them.
+    - 'OVER F' for 'HEM PUSH F'
+    - 'OVER2 F' for 'OVER OVER F'
+    - 'OEM F' for 'OVER HEM F'
+    - 'DSH F' for 'DROP PUSH F'
+    - 'DUP F' for 'OEM DSH F'
+    - 'DROP2 F' for 'DROP DROP F'
+    - 'POP F' for 'OEM DROP2 F'
+    - 'NIP F' for 'POP DSH F'
+    - 'HIP F' for 'HEM NIP F'
+    - 'HIP2 F' for 'HIP HIP F'
+    - 'SWAP F' for 'HIP PUSH F'
+    - 'PUSH2 F' for 'PUSH PUSH F'
+    - 'TOR F' for 'HIP2 PUSH2 F'
+    - 'ROT F' for 'TOR TOR F'
+
+10. Press shift and space to scroll up a page.
+
+11. The logical connectives 
+    - Alternative Denial) 'F nand G' for '{..x: not(F..x and G..x)}'
+    - Complement) 'comp F' or 'not F' or '-F' for 'F nand F'
+    - Alternation) 'F or G' for '(not F) nand (not G)'
+    - Joint Denial) 'F nor G' for 'not(F or G)'
+    - Complementary Conditional) 'F not only if G' for 'F nor not G'
+    - Conditional) 'F only if G' for 'not (F not only if G)'
+    - Converse Conditional) 'F if G' for 'G only if F'
+    - Complementary Converse Conditional) 'F not if G' for 'not(F if G)'
+    - Conjunction) 'F and G' for 'F not if (not G)'
+    - Biconditional) 'F iff G' for '(F only if G) and (F if G)'
+    - Exclusive Alternation) 'F xor G' for 'not(F iff G)'
+    - Minor Existential) 'some F' for '{..x:some item is y such that Fy..x}'
+    - Major Existential) 'Some F' for 'some^n F' where 'F' is an n place predicate and for a predicate funtor 'f' the iterates are 'f^1' for 'f' and 'f^(n+1)' for 'f^n f'
+    - Minor Universal) 'each F' for 'not some not F'
+    - Major Universal) 'Each F' for 'not Some not F'
+    - Inclusion) 'F => G' for 'Each(F only if G)'
+    - Converse Inclusion) 'F <= G' for 'G => F'
+    - Proper Inclusion) 'F > G' for '(F => G) and not (F <= G)'
+    - Converse Proper Inclusion) 'F < G' for 'G > F'
+    - Coextension) 'F <=> G' for '(F <= G) and (F => G)'.
+
+12. there are two paths to define the 'logical' functions: from nand and from nor.
+One of them works better when introducing a boolean arithmetic prior to talk of the arithmetic of remainders of division by two.
+
 
 ## 2025 0705
 
@@ -104,8 +187,7 @@ It also includes those parts of the earlier drafts that carry over directly to t
     > *Constructions* connect predicates, *lexicons* list atomic predicates, and *grammars* generate *categories* from recurrent constructions on lexicons.
     > *Logic* reveals *validities* whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
     >
-    > Constructions inheret where they denote from their components (Tarski).
-    > They sort into three bins:  functional e.g.
+    > Constructions inheret where they denote from their components (Tarski) e.g. functionally, e.g.
     >
     > 1. *joint denials* denote waow each of their components don't,
     >
@@ -117,13 +199,13 @@ It also includes those parts of the earlier drafts that carry over directly to t
     >
     > 5. *alternative denials* (alternations of negations) denote waow some of their components don't; and 
     > 
-    > determinative, e.g.
+    > determinatively, e.g.
     >
     > 6. *closures* denote waow there is somewhere denoted by their component, and 
     >
     > 7. components of *croppings* denote when some item is the right of the left with the right of waow the compound denotes; and
     >
-    >*recombic*, e.g. components of
+    > recombically, e.g. components of
     >
     > 8. *drops* denote the left of the left with the right,
     >    
