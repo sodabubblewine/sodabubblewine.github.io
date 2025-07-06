@@ -116,15 +116,7 @@ The problem appears to be that the applied behavior analysts are not so much wor
     > *Logic* reveals *validities* whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
     >
     > Constructions inheret where they denote from their components (Tarski).
-    > They sort into three bins: *recombic*, e.g. components of
-    >
-    > 1. *drops* denote the left of the left with the right,
-    >    
-    > 2. *pushes* denote the left with the left of the right, with the right of the right,
-    >    
-    > 3. *hems* denote the left with, the right of the left with the right,
-    > 
-    > of waow their compound does; functional e.g.
+    > They sort into three bins:  functional e.g.
     >
     > 4. joint denials denote waow each of their components don't,
     >
@@ -136,11 +128,21 @@ The problem appears to be that the applied behavior analysts are not so much wor
     >
     > 8. alternative denials (alternations of negations) denote waow some of their components don't; and 
     > 
-    > and determinative, e.g.
+    > determinative, e.g.
     >
-    > 9. closures denote waow there is somewhere denoted by their component,
+    > 9. closures denote waow there is somewhere denoted by their component, and 
     >
-    > 10. components of croppings denote when some item is the right of the left with the right of waow the compound denotes.
+    > 10. components of croppings denote when some item is the right of the left with the right of waow the compound denotes; and
+    >
+    >*recombic*, e.g. components of
+    >
+    > 1. *drops* denote the left of the left with the right,
+    >    
+    > 2. *pushes* denote the left with the left of the right, with the right of the right,
+    >    
+    > 3. *hems* denote the left with, the right of the left with the right,
+    > 
+    > of waow their compound does.
     >
     > Predicates are
     >
