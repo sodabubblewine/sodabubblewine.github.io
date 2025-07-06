@@ -141,6 +141,14 @@ The problem appears to be that the applied behavior analysts are not so much wor
     > 9. closures denote waow there is somewhere denoted by their component,
     >
     > 10. components of croppings denote when some item is the right of the left with the right of waow the compound denotes.
+    >
+    > Predicates are
+    >
+    > 1. *consistent* waow their negation isn't valid (some of their SLSs denote somewhere) ,
+    >
+    > 2. *implied* by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) isn't consistent (each of their SLSs denotes where the same of the other does), and
+    >
+    > 3. *equivalent* to others waow they are mutually implicative (each of their SLSs donotes waow the same of the other does).
 
 7. Work on the definition of croppings that ultimate ends up in 6
     - components of croppings denote the left with something, with the right of waow their compound does
