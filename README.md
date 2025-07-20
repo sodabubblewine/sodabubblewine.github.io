@@ -3,20 +3,17 @@ My life and work are reported, changed, and governed by these [notes](#notes), [
 # HINTS
 
 ### WHAT TO DO
-1. Discover, predict, and control changes
-<br> *in counts, rates, and accelerations*
-2. as selections from variations
-<br> *on physical, chemical, biological, behavioral, and cultural scales*
-3. by making and maintaining strong practices
-<br> *mediated by strong people marked by strong principles*
-4. from the sciences of
-<br> **logic** *denotative, Boolean, functor*
-<br> **mathematics** *calculi, collections, categories*
-<br> **physics** *quantum, thermodynamic, gravitional*
-<br> **chemistry** *phyiscal, biophysical, biological*
-<br> **biology** *oranelles, organisms, environments*
-<br> **behavior** *biological, biosocial, social*
-<br> **culture** *history, science, technology*
+1. Discover, predict, and control changes (in counts, rates, and accelerations)
+2. as selections from variations (on physical, chemical, biological, behavioral, and cultural scales)
+3. by making and maintaining strong practices (mediated by strong people marked by strong principles)
+4. from the sciences (of 
+    - logic (denotative, Boolean, functor)
+    - mathematics (calculi, collections, categories)
+    - physics (quantum, thermodynamic, gravitional)
+    - chemistry (phyiscal, biophysical, biological)
+    - biology (oranelles, organisms, environments)
+    - behavior (biological, biosocial, social)
+    - culture (history, science, technology)).
 
 ### HOW TO DO IT
 
@@ -78,18 +75,96 @@ Journal your thoughts and feelings.
 
 ## TIE UP
 
-1. Predicate (Functor) Logic Memo
+- Predicate (Functor) Logic Memo
     - [2025 0608 1515](#2025-0608-1515)
     - [2025 0625 2043](#2025-0625-2043)
     - [2025 0625 2333](#2025-0625-2333)
     - [2025 0627 1410](#2025-0627-1410)
     - [2025 0627 1904](#2025-0627-1904)
-2. Earmuff Experiment
+- Earmuff Experiment
     - [2025 0625 1537](#2025-0625-1537)
     - [2025 0625 2259](#2025-0625-2259)
     - [2025 0629 1518](#2025-0629-1518)
-3. LISP
-4. FORTH
+- LISP
+- FORTH
+- "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
+    - [2025 0718 1745](#2025-0718-1745)
+
+
+## 2025 0718
+
+### 2025 0718 1745
+
+1. Notes on "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
+
+2. This paper is related to my work on the theory of ordered pairs.
+The basic predicate in such a theory is 'x pairs y with z' and it is written 'xPyz' for short (technically, 'P' is short for 'x, y, and z such that x pairs y with z', or using Quine's predicate abstract notation, '{xyz: x pairs y with z}'
+
+3. Extensionality of binary trees is given by the following sentence:
+    - each item is (q, r, s, t, x, and y such that each item is (u and v such that xPuv if and only if yPuv), qPxr, and sPtx, only if qPyr and sPty)
+
+4. Extensionality as given is a far cry from what most are used to when dealing with the basic principle of ordered pairs (as it is so often called) e.g. '(x,y)=(u,v) if and only if x=u and y=v'.
+
+5. But, it corresponds directly to the more familiar principle of extensionality of sets e.g. 'each item is (x such that x in y if adn only if x in z) and y in w, only if z in w'.
+
+6. Even this is not so often noticed as the principle of extensionality of sets.
+In English "sets with the same members are equal" i.e. each item is (x such that x in y if and only if x in z) only if y equals z.
+
+7. The parallel principle for orderd pairs is 'each item is (u and v such that xPuv if and only yPuv) only if x=y'.
+
+8. Shall come back to this later.
+
+
+### 2025 0718 1429
+
+Old version of hint for "what to do" which was itself a newer version of the hint "what I must do before I die".
+
+> **WHAT TO DO**
+> 1. Discover, predict, and control changes
+> <br> *in counts, rates, and accelerations*
+> 2. as selections from variations
+> <br> *on physical, chemical, biological, behavioral, and cultural scales*
+> 3. by making and maintaining strong practices
+> <br> *mediated by strong people marked by strong principles*
+> 4. from the sciences of
+> <br> **logic** *denotative, Boolean, functor*
+> <br> **mathematics** *calculi, collections, categories*
+> <br> **physics** *quantum, thermodynamic, gravitional*
+> <br> **chemistry** *phyiscal, biophysical, biological*
+> <br> **biology** *oranelles, organisms, environments*
+> <br> **behavior** *biological, biosocial, social*
+> <br> **culture** *history, science, technology*
+
+## 2025 0707
+
+### 2025 0707 1949
+
+1. I have not worked on my stack based programming language for a while.
+
+2. It is written in javascript: there's no other language that seems as well known or as easy to know (and play with) than it.
+It will eventually be given as a logic program with Quine's main method.
+
+3. The garabage collector implements "A Linear Algorithm for Copying Binary Trees using Bounded Workspace" by K. P. Lee from March 1980.
+
+4. In the past I took pictures of the code and posted it to Twitter.
+Now I shall do more to explain myself from the beginning.
+
+5. First, we allot a lot of cells, 65536 to be exact, and label them with numbers from 0 to 65535.
+We call the allotment 'at' because you store and retrieve what is in a cell *at* a number.
+Allotments are called 'arrays' in Javascript.
+```
+let at = new Array(65536);
+```
+
+6. The allotment has to be big because everything, even numbers, are treated as (ordered) pairs.
+We make it a convention to address a pair by the address of its left part, that is, with an even number (zero is even), and to always put its right part at the successor of the address of its left part i.e. the n-th pair is at n*2, its left part is there too, and its right part is at n*2+1.
+```
+L = n => at[n*2];
+R = n => at[n*2+1];
+X = (n,L,R) => (at[n*2]=L, at[n*2+1]=R, n);
+```
+
+7. What happens if 
 
 ## 2025 0706
 
