@@ -63,12 +63,24 @@ Journal your thoughts and feelings.
 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
+### HOW INDISCERNIBILITY WORKS
+
+1. For the predicate letter 'F' write '=F' for '{xy: each {u..v: Fxu..v if and only if Fyu..v, .., and Fu..vx if and only if Fu..vy}'.
+2. Write '=(F,..,G)', or just '=', for '{xy: (=F)xy, ..., and (=G)xy}'.
+3. Identity and indiscernibility (with respect to the lexicon of predicates of a standard theory) are coextensive.
+
 ### HOW TO FIND A GOOD PSYCHOLOGIST
 
 1. **Never** settle for a bad one.
 2. Good ones are exceptional people who happen to be psychologists.
 3. They are cultural liasons.
 4. You're more likely to find a good psychologist through a friend than you are through a phycisian.
+
+### OTHERS
+
+- The conditional connective 'only if' is a grammatical partical and 'implies' is a predicate.
+
+- A predicate is not a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
 
 
 # NOTES
@@ -90,6 +102,46 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+
+## 2025 0720
+
+### 2025 0720 1732
+
+1. Don't play the piano too much: it gets in the way of typing things up and the thinking that comes along with that.
+
+2. I have not returned fully to my work on primitive recursive number theory, primitive recursive calculus, and primitive recursive analysis since I fully familiarized myself with Quine's methods of logic.
+I'm returning to it fully now.
+
+3. As Quine repeatedly showed throughout his later works: identity is coextensive with indiscernibility in a standard logic.
+A standard logic is one with a finite lexicon i.e. a finite list of basic predicates from which all grammatical categories are constructed via predication (with variables, which are also classed as part of the lexicon under technical complications, involving accentuation in the simplest case, but which are entirely dropped when predicate functors are taken as the only grammatical particles and predicates are the only items of teh lexicon).
+
+4. There are many things that I finally wrote up that I have not copied here.
+Giving the definition of indiscernibility relative to a lexicon of predicates is one such thing.
+
+5. In a truth functional and quantification logic, indiscernibility can be given as a predicate functor which takes a finite list of predicates and a pair of variables and constructs the relevant compound sentence.
+
+6. Schematically, for predicate letters 'F', ..G, and 'H' of f, ..g, and h places (the number of places of a predicate letter tells us how many variables are to attach to any predicate which comes to substitute it: recall that each predicate has a shape, and, traditionally, it is given as a length from counting the number of variable letters attached to it e.g. 'x parented y' shows that 'parented' is a two place predicate).
+I use '..G,' as a further schematism to avoid the trouble of introducing some scheme of subscripts, superscripts, or other indexical marks that tend to clutter methods presented for an unspecified but finite list of things (those who doubt there are definite methods of so indexing can start with predicate letters 'F0', 'F1', 'F2', ..., 'F' concatenated with the decimal numeral of some number designated by 'N', but note that this tends to make it appear as if an argument or construction is the result of some number theory even though it is not; the only method by which all such doubts can be eliminated is to present a logical theory of logic but that is precisely what I am trying to avoid).
+
+7. Write 'x equals y with respect to F' for 'each item is (u,..v, and w such that Fxu..vw if and only if Fyu..vw, Fux..vw if and only if Fuy..vw, ..., Fu..vxw if and only if Fu..vyw, and Fu..vwx if and only if Fu..vwy)' where, all together, the list of distinct variable letters 'u..vwx' is of length f.
+
+8. Write 'x equals y with respect to F, ..G, H' for 'x equals y with respect to F, ..G, and each item is (u,..v, and w such that Hxu..vw if and only if Hyu..vw, Hux..vw if and only if Huy..vw, ..., Hu..vxw if and only if Hu..vyw, and Hu..vwx if and only if Hu..vwy)' where, all together, the list of distinct variable letters 'u..vwx' is of length h.
+
+9. Other than by Quine's method of quasiquotation, the mechanical production of the sentence abbreviated by 'x equals y with respect to F, ..G, H' can be got by the now standard string manipulation functions of modern computer programming languages.
+Note, it is strange to see Quine's method of quasiquotation presented as 'templates' or 'macros' without directly mentioning their origins in Quine's "Mathematical Logic".
+The reason this is so strange, is that they were introduced for a specific reason, to make it all but impossible for a careless reader to falal into the use-mention trap, and yet that reason seems to go unheeded by many designers of programming languages and many programmers of such languages.
+
+10. I must go out of my way to mention that Quine's method of quansiquotation would save anyone from 'what color is your function', among many other strange methods that have cropped up recently in programming languages.
+Though, I must also go out of my way to mention that literally coloring functions, as in colorForth, uhdForth, or my own programming language is supported by Quine's methods, so that might put people off because his methods are too liberal.
+To those so put off, I would have them restrict Quine's method of quasiquotation rather than toss it out entirely as some ancient and useless relic of a bygone era.
+
+11. A better way of introducing indiscernibility occurred to me while I was thinking to myself of better ways of getting it into a form amenable to inclusion in [hints](#hints).
+
+12. For the predicate letter 'F' write '=F' for '{xy: each {u..v: Fxu..v if and only if Fyu..v, .., and Fu..vx if and only if Fu..vy}' and '=(F,..,G)', or just '=', for '{xy: (=F)xy, ..., and (=G)xy}'.
+
+13. That method does depend on mastery of predicate abstracts, but there is no excuse for not mastering them when you belong to a culture that insists on the conspicuity of variables.
+
+14. This note was supposed to deal with primitive recursive arithmetic, but it ended up making a new hint: [how indicernibility works][#how-indiscernibility-works].
 
 ## 2025 0718
 
