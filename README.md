@@ -66,7 +66,7 @@ Journal your thoughts and feelings.
 ### HOW INDISCERNIBILITY WORKS
 
 1. For the predicate letter 'F' write '=F' for '{xy: each {u..v: Fxu..v if and only if Fyu..v, .., and Fu..vx if and only if Fu..vy}'.
-2. Write '=(F,..,G)', or just '=', for '{xy: (=F)xy, ..., and (=G)xy}'.
+2. Write '=(..F,G)', or just '=', for '{xy: (=(..F))xy and (=G)xy}'.
 3. Identity and indiscernibility (with respect to the lexicon of predicates of a standard theory) are coextensive.
 
 ### HOW TO FIND A GOOD PSYCHOLOGIST
@@ -102,6 +102,99 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+
+## 2025 0721
+
+## 2025 0721 1657
+
+1. There are a cluster of methods of logic that are almost unique to Quine but which are worthy of a braod inclusion in any presentation purporting to introduce a student to the study of logic.
+
+2. The cluster of methods appears to crystalize around indiscernability.
+
+3. It may also be said to crystalize around identity.
+
+4. Between indiscernability and identity we find Leibniz and his analysis of both in terms of the other e.g. in, so called and sadly so, 'second order logic' we call the 'second order sentence'
+    > each item is (x and y such that x is identical to y if and only if each item is (F such that x is F if and only if y is F))
+
+    by the name 'Leibniz's Law', and sometimes 'Leibniz's Biconditoinal Law' when emphasizing that the connective between identity and the biconditional purporting to define 'x is indiscernable from y' (as the second order sentence 'each item is (F such that x is F if and only if y is F) is itself the bicondtiional and not a conditional, with grammatical partical 'only if', or a converse conditional, with grammatical partical 'if'.
+
+5. Second order logic fails for the well known reasons, e.g. [Lindström's theorem](https://en.wikipedia.org/wiki/Lindstr%C3%B6m%27s_theorem), and must be abandoned wherever predicate logic prevails.
+
+6. For more on the problems with putting predicates in positions suited for variables, see Quine's chapter on "Deviant Logics" in "Philosophy of Logic 2nd Edition" (note, there are circumstances where a substitutional definition of quantification appears to carry out what n-order logics purport to deal with, but note that such a theory of logic is explained with predicate logic for exactly those reasons that primed Frege's enterprise: extensionality).
+
+7. Leibniz's Law is charitably taken as submitting, in one direction, that each instance of the schema
+    > each item is (x and y such that x is identical to y only if, x is F if and only if y is F)
+
+    is a premise of a theory subject to this law for (schematic) predicate letter 'F.
+
+8. Two things:
+    1. This schematic half, the 'only if' part of Leibniz's Law, is properly called "the indiscernibility of identicals", and
+    2. the compound 'x is F' is now firmly in the grammatical category of predications in that 'is' is a grammatical partical, called a copula, whose construction takes a variable and a predicate and affixes one to the other, most often, as 'Fx' and only sometimes as 'x is F', "x F's", etc.
+
+9. One more thing: since 'F' is no a schematic predicate letter to which only one variable is attached in the schema given in 7, the consequent of the universal conditional no longer carries the purported definition of indiscernability given by an allegidly second order sentence.
+
+10. When the schematic letter 'F' is predicated of only one variable, then the predicates which are permitted to replace 'F', when forming an instance of a schema that contains it as a predicate letter, are only and solely one place predicates.
+
+11. Indiscernability demands more than that each biconditional of a one place predicate with respect to one variable in the antecedent and another variable in the consequent be true.
+That is, it is not enough to somehow conclude 'x is indiscernable from y' from having shown that each instance of 'Fx only if Fy' is true (though, this is a line which has been taken in the past by those who are unable to distinguish between a predicate and its purported extension, or, worse, its perported property, attribute, essence, concept, quality, proposition, propositional function, or, in general, its intension as a conspicuously nonextensional substance or kind).
+
+12. Note, to conclude 'x is indiscernable from y' from having shown each instance of 'Fx only if Fy' is true involves a theory in which predicates of truth, quotation, and substitution (or some other items which fascilitate the general method which Quine has called 'semantic ascent', but note that semantic ascent only involves quotation or its reflection, disquotation, and substitution may not be directly involved, though it appears unavoidably so, and to uncover this fully would require a digression from this digression so I shall not indulge it now).
+
+13. Concretely, the conditional which paraphrases the conclusion of 'x is indiscernable from y' from the premisis "each instance of 'Fx only if Fy' is true" is give as
+
+    > each item is (x and y such that each item is (z such that z quotes a predicate only if the substitution of z for 'F' throughout 'Fx only if Fy' is true of (x,y)) only if x is indiscernable from y)
+
+    where 'is true of' is defined as in the consistent theory of predicates of 'denotes' from Quine's chapter "Denotation and Truth" in "From Stimulus to Science" adapted to the careful method of extending 'satisfaction' to sequences in Quine's chapter "Truth" from his "Philosophy of Logic".
+
+14. Thankfully, the method sketched in 13 is both like what must be done to paraphrase the traditional definition of 'indiscernibility' as 'qualitative samness' or 'have all properties in common', contemplated in the second order paraphrase of Leibniz's law, and entirely obviated by a resolution of the problem pointed up in 11.
+
+15. From supplementary definitions of the predicate functors (a grammatical construction which permits ingredients from any list of grammatical categories e.g. variables and one place predicates)
+    1. 'x is indiscernable from y with respect to the m place predicate F in the n-th place' for 'each item is (..u..v such that F..ux..v if and only if F..uy..v)'
+    2. 'x is indiscernable from y with respect to the m place predicate F' for 'x is indiscernable from y with respect to the m place predicate F in the 0-th place, .., and x is indiscernable from y with respect to the m place predicate F in the m-th place'
+
+    indiscernability is defined relative to the lexicon of a standard theory whose finite list of m, .., and n place predicates F, .., and G (respectively) as
+    3. 'x is indiscernable from y' for 'x is indiscernable from y with respect to the m place predicate F, .., and x is indiscernable from y with respect to the n place predicate G'
+
+    and also seen not to depend on any particular feature of the natural numbers (though I admit to relying heavily on their convenience in pointing the way to systematically unraveling the abbreviations by '..').
+
+16. The full demonstration that this definition of indiscernability is adequate builds on the thurough demonstration by Quine in the first section of the revised edition of "Set Theory and its Logic".
+
+17. The demonstration there does not do full just to the problem posed by 11 here, which to reaffirm its relevance in this context, can be described as the problem of constructing an extensional paraphrase of Leibniz's law.
+
+18. Though I will not repeat Quine's demonstration, I shall build upon it and emphasize the pieces relevant to the problem restated as in 17.
+
+19. First, though Quine is not particularly interested in the larger problem of an extensional paraphrase of Leibniz's law, the order of his presentation is surprisingly parallel to some arguments that have been presented to address this problem in the past.
+
+20. Before I forget, identity and indiscernability are not to be confused with equality (which purports to be the extension of identity as a special kind of relation) and equivalence (as a predicate functor which when attached to, e.g., a two place predicate abbreviates the grammatical construction of the conjunction of attaching that same predicate to the predicate functors of reflexivity, symmetry, and transitivity, each of which should themselves not be confused for the narrower definitions of reflexive relation, symmetric relation, or transitive relation).
+
+21. Sadly, I know of no good explanation of all the distinctions from 20 and the others used here: it is part because of that sad fact that I am even writing this now.
+
+22. As Quine so deftly begins on page 12 of "set theory and its logic revised edition' there is a method of logic which not only contributes greatly to the reach of such methods, but which also can be seen as independent inspiration from the methods of logic itself for appropriate constraints on identity and indiscernability: what Quine calls there "substitutivity of the biconditional", but which he later calls "substitutivity of coextensiveness" as part of his definition of 'extensional context' on page 90 of "From Stimulus to Science".
+Schematically:
+    > each item is (x, .., and y such that Fx..y if and only if Gx..y) and ...F..., only if ...G...
+
+23. A footnote explains that the full demonstration of this can be found in the 13th section of Quine's Mathematical Logic the revised edition (I can not overemphasize how important it is to get the latest edition of Quine's books because they evolved in often drastic ways that change the consequences of his work from trivial to nontrivial).
+
+24. Now, in Quine's "Methods of Logic 4th edition", there is a distinction made between substitutivity of the biconditional and substitutivity of the coextenstional (where the coextensional of a pair of predicates is the universal closure of their biconditoinal; it was originally introduced by Peano who attached what we now call the universally quantified variables to the mark of his biconditional (which was a three parallel equally lengthed lines stratled by its components, like an equal sign with one more line)).
+
+25. Interestingly, in Quine's definition of 'exentional context' in "from stimulus to science" he calls "substitutivity of covalence" what he can, and perhaps should, call "substitutivity of biconditional"!
+This is an interesting example of a common problem when it comes to dealing with logic: we are not the first to have arrived in such wilds and hence not the first to talk about all these beautiful and sometimes dangerous things).
+
+26. Substitutivity of the biconditional, in Quines "Methods of Logic 4th edition", is first established for truth-functional logic in chapter 9 on "equivalence", and I am glad I went and hunted for it because I need to switch up my technical terms in order to avoid some deep pit falls.
+
+27. The main distintion I've messed up is that between 'substitution' and 'interchange'.
+The word 'substitution' is usually contrasted with the word 'replacement', and, often enough, defined with respect to it as "replace each occurrence of this in that with it".
+Note, "replacement of occurrences" and the more carefully given "replacement of nonoverlapping occurrences" are precisely the problems that Quine addressed when he gave the first (surprising I know) definition of "substitution" in the 1936 paper (again I know that it is hard for people to accept that there was not a definition of "substitution" prior to 1936) "Definition of Substitution" to the "society of fellows, harvard university".
+
+28. Outside "Methods of Logic 4th edition" Quine picked the word 'substitution' rather than 'interchange' or 'replacement' because it is far more familiar to the audience of his books: 'interchange' is unfamiliar outside Quine's "Methods of Logic" and that is why it is so valuable.
+
+29. What I have come to call "substitutivity of the biconditional" and "substitutivity of the coextensional" are cast by Quine as "Laws of Interchange".
+
+30. Interchange comes up as distinct from substitution (and more suggestive than replacement) as a result of examining methods of generating validities from valid schema.
+
+31. Sadly, I've been writing for a little under three hours straight (it's 202507211944) and must stop here: hopefully I've laid enough foundation to pick up where I left off and get on to the cluster of methods from Quine (whcih include, identity as indiscernability, definition of predicate abstraction in a truth-functional and quantificational logic with a predicate of identity, and the elimination of singular terms as singular descriptions and the elimination of singular descriptions either by Russell's contextual definition or by Peano's premises, and the relation of those methods to the ones presented in methods of logic, where "descriptional premises" are overtly mentioned as part of theories which deal with items purportedly designated by singular descriptions, and the role of singular descriptions in the introduction of variables into a predicate functor theory and how they are related to predicate abstracts, and now it should be obvious why there is so much work done here and yet to be done here).
+
+32. I really wish there was something I could read that dealt with all these problems so that I didn't have to do all this.
 
 ## 2025 0720
 
@@ -141,7 +234,7 @@ To those so put off, I would have them restrict Quine's method of quasiquotation
 
 13. That method does depend on mastery of predicate abstracts, but there is no excuse for not mastering them when you belong to a culture that insists on the conspicuity of variables.
 
-14. This note was supposed to deal with primitive recursive arithmetic, but it ended up making a new hint: [how indicernibility works][#how-indiscernibility-works].
+14. This note was supposed to deal with primitive recursive arithmetic, but it ended up making a new hint: [how indicernibility works](#how-indiscernibility-works).
 
 ## 2025 0718
 
