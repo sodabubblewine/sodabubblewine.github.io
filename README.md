@@ -102,6 +102,10 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0722 2115
+
+I just discovered that using backticks gives an inline quote under the rules of markdown.
+To get a literal back tick (for, e.g., use in writing out a javascript template literal) you must prepend a backslash to the backtick!
 
 ## 2025 0722 1740
 
@@ -172,7 +176,7 @@ Such invocations of the prefix 'meta-' were dropped by Quine for the good reason
 Confusion on this issue is so great that an appendix had to be added by Quine to ML explaining the difference between a 'metatheorem' and a 'theorem': this appendix along with other problems involving the so called "higher order logics" entirely extinguished Quine's use of such terminology in, e.g., MOL4.
 
 25. The first paragraph of section 13 of ML (which gives the principle of substitutivity of the biconditional) is
-    > "In section 13 a restriction was imposed according to which one formula can occur in another only in a context of quantification or truth-functional composition. This restriction gives rise, it will be found, to the following convenient *substitutivity principle*: if A and B are statements agreeing in truth value, then B can be substituted for any occurrences of A in any statement CA without affecting the truth value of CA. In other words, if the statements CA and CB are alike except that CB contains the statement B in places where CA contains the statement A, then CA and CB are alike in truth value if A and B are. In other words, (I) *any statement of the form* `${A} if and only if ${B}, only if ${CA} if and only if ${CB}` *is true, where* CB *is like* CA *except for containing* B *in places where* CA *contains* A. E.g., the conditional:
+    > "In section 13 a restriction was imposed according to which one formula can occur in another only in a context of quantification or truth-functional composition. This restriction gives rise, it will be found, to the following convenient *substitutivity principle*: if A and B are statements agreeing in truth value, then B can be substituted for any occurrences of A in any statement CA without affecting the truth value of CA. In other words, if the statements CA and CB are alike except that CB contains the statement B in places where CA contains the statement A, then CA and CB are alike in truth value if A and B are. In other words, (I) *any statement of the form* \`${A} if and only if ${B}, only if ${CA} if and only if ${CB}\` *is true, where* CB *is like* CA *except for containing* B *in places where* CA *contains* A. E.g., the conditional:
     > > Smith met Jones if and only if Jones was in Omaha, only if each item is (x such that Smith met Jones or not Smith sold x to Jones) if and only if each item is (x such that Jones was in Omaha or not smith sold x to Jones)
     >
     > is true.
