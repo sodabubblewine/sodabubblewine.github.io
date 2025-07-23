@@ -103,7 +103,91 @@ Journal your thoughts and feelings.
     - [2025 0718 1745](#2025-0718-1745)
 
 
-## 2025 0721
+## 2025 0722 1740
+
+1. Instead of sectioning notes into days and days into entries timestamped down to the minute, I'll try flattening everything down to the minute timestamped entries: I wasn't very often making more than one entry a day except for right at the beginning and anything that can be done to flatten the organization seems like it is more likely to help than to hurt, but time will tell.
+
+2. Last entry left off right as I was about to go over how what Quine calls 'substitutivity of the biconditional' or 'substitutivity of covalence' (and what is distinguishable from what he has called 'subsitutivity of coextension') gives a logical basis for the premises of a theory of identity.
+
+3. I left off exactly at the moment that it occurred to me that in "Methods of Logic 4th edition" (MOL4) Quine made the distinction between 'substitutivity of the biconditional' and 'substitutivity of the coextensional' with the word 'interchange' and that he did so relative to truth-functional, monadic, and quantificational equivalence.
+
+4. What is called 'quantificational equivalence' in MOL4 is elsewhere called 'logical equivalence', e.g. in 'Philosophy of Logic 2nd Edition' (POL2). 
+
+5. Most people are familiar with 'logical equivalence' as the counterpart to 'logical implication' (which is the most familiar) and, sadly, with 'logical truth' which, following the pattern from 'equivalence' and 'implication', is more helpfully called 'logical validity'.
+In each case, the prefixed word 'logical' is dispensible if not just because there is no validity but that which is logical (a controvertial claim I am told) and it leaves room for distinguishing between different grades of validity e.g. truth-functional, monadic, quantificational, functorial, etc.
+
+6. I'll make this note here, though I may have already made it in the last entry but it can only help to repeat it, that the distinctions Quine makes in MOL4 are some of the most helpful that I've found in any of the books on math, logic, and science that I've read or been taught from.
+
+7. This has largely to do with the fact that each sentence in MOL4 has evolved as a consequence of its context in the rest of the book.
+
+8. Quine is highly adept at smoothly cross referencing forward and backwards within a text so as to tie together technical terminology into a critical mass of consequential distinctions.
+
+9. It is only in "From Stimulus to Science" FSTS that there are perhaps more such distinctions: as difficult a text as it is, I can not recommend that anyone go on reading early Quine without cross referencing his past terminology with that in FSTS.
+Especially when navigating his nonlogical work (i.e. any work done outside the boundaries set up by MOL4).
+
+10. The reason for this is that he drops certain distinctions that were once important in the evolution of his writing, but which were too sharp when literally applied.
+Subsequent revisions to terminological distinctions dulled and broadened the boundaries which softly separate concerns.
+
+11. Perhaps the most important example is the change in terms from 'Word and Object" (WAO) to FSTS: the later use of occasion, observation, and standing sentences is divorced more from their earlier commitment to what he then called 'stimulus meaning'.
+In WAO he leaned too heavily on a crude grasp of verbal behavior as operant behavior which rendered it almost indistinguishable from the ancient analysis of verbal behavior under the stimulus-response psychology of Watson.
+Still, even in FSTS, Quine's references to 'dispositions' and 'global stimuli' are an inadequate analysis of, e.g., Skinner's "Verbal Behavior" in light of such work as in Skinner and Ferster's "Schedules of Reinforcement".
+
+12. All that praise of Quine aside, the distinction he made in MOL4 was given as 'Laws of Interchange' rather than as 'substitutivity of the biconditional' or 'substitutivity of the coextensional'.
+
+13. The laws of interchange are given first in the chapter 9 "equivalence" pg. 63 of MOL4, where the equivalence of the chapter is specifically called truth-functional equivalence and contrasted with monadic and quantificational equivalence as already mentioned in 3 above.
+
+14. The laws of interchange are contrasted with the laws of substitution which are given in paragraphs prior to the introduction of the term 'interchange'.
+    > "Substitution consists always in putting schemata for single letters, and for all recurrences of teh letters. When these restrictions are not met, the putting of one schema for another will be called not substitution but *interchange*. Thus interchange consists in putting one schema for another which need not be a single letter, and which need not be supplanted in all its recurrences." pg. 63 MOL4
+
+15. Though the laws of interchange are presented as seperate laws, they are perhaps better explained as three steps to the final grand law of interchange:
+    > "Interchange of equivalents preserves validity, implication, equivalence, and inconsistency, and unlike substitution for letters, it even preserves consistency, nonvalidity, nonimplication, and nonequivalence." pg. 64 MOL4
+
+16. Here is another note I must make now: this just quoted sentence is an example of Quine using the terminology that I favor 'nonvalidity', 'nonimplication' and 'nonequivalence', but he mixes it with 'inconsistency' where, if he was to keep that method of prefixing, 'invalidity' can replace 'nonvalidity'.
+I have settled on 'nonconsistency' and 'non' everything, because the definition of each such technical term is never given by me in my presentation of logic: their definition is implicit in taking 'non' as 'not' in any exposition where such technical terms occur.
+
+17. What Quine calls "the third law of interchange" is what, following the other patterns he established with the phrases containing 'substitution', e.g. 'substitution of the bicondtiional', is either what I call "THE law of interchange" or "Interchange of Equivalents".
+
+18. Interchange of Equivalents covers two parts of Quine's definition of 'extensional contexts' in FSTS: substitution of covalence (aka substitution of the biconditional) and substitution of coextensiveness (aka substitution of the coestensional).
+BUT, only when "interchange of equivalents" includes "Interchange of Truth-Functional Equivalents" and "Interchange of Quantificational Equivalents".
+
+19. The coextensional of a pair of predicates is the universal closure of their biconditional.
+
+20. Quantificational equivalence is validity of the coextensional.
+
+21. So, interchange of equivalents, specifically interchange of quantificational equivalents, is what Quine calls "Substitution of the biconditional" in "Set Theory and its Logic Revised Edition" (STL):
+    > "Students of logic are familiar also with certain second-order generalizations regarding the validity of quantificational schemata. Conspicuous among these is the *substitutivity of the biconditional*, which may be represented thus:
+    > > each item is (..x, and y such that A if and only B) and CA, only if CB.
+    > 
+    > Here 'A', 'B', 'CA', and 'CB' represent any quantificational schemata such that the last two are alike except for containing as corresponding parts the respective schemata represented by 'A' and 'B'; and ..'x', and 'y' represent all variables , free in the schemata represented by 'A' and 'B', that are captured by quantifiers in the schemata represented by 'CA' and CB' (See for example my *Mathematical Logic* section 18)." pg. 12 STL
+
+22. The reference to section 18 of "Mathematical Logic Revised Edition" (ML) is another example of Quine's deft cross referencing.
+
+23. It is also a concrete example of how and when later and earlier writings of Quine can be interpreted with respect to the other.
+This is so important, and also this particular example is directly relevant to the general problem of establishing a logical basis for the premises of theories of identity (and establishing such links as there may be wtih theories of indiscernability) that I shall say mroe about section 18 of ML.
+
+24. Section 18 of ML is titled "Substitutivity of the Biconditional" and it is from here that he borrows the same phrase in STL.
+The first paragraph gives what is there called "a principle" but what is in STL called "a second-order generalization".
+In ML the principle is ultimately give as what is there called 'a metatheorem'.
+Such invocations of the prefix 'meta-' were dropped by Quine for the good reason that there it suggests a special status which is inappropriate e.g. it is still common for people to speak of 'metatheories', or perhaps even 'metalogic', as if they are some how above and beyond the reach of theory and logic. They are not in that they are just theories which purport to include some of the apparatuses of some theories as their items.
+Confusion on this issue is so great that an appendix had to be added by Quine to ML explaining the difference between a 'metatheorem' and a 'theorem': this appendix along with other problems involving the so called "higher order logics" entirely extinguished Quine's use of such terminology in, e.g., MOL4.
+
+25. The first paragraph of section 13 of ML (which gives the principle of substitutivity of the biconditional) is
+    > "In section 13 a restriction was imposed according to which one formula can occur in another only in a context of quantification or truth-functional composition. This restriction gives rise, it will be found, to the following convenient *substitutivity principle*: if A and B are statements agreeing in truth value, then B can be substituted for any occurrences of A in any statement CA without affecting the truth value of CA. In other words, if the statements CA and CB are alike except that CB contains the statement B in places where CA contains the statement A, then CA and CB are alike in truth value if A and B are. In other words, (I) *any statement of the form* `${A} if and only if ${B}, only if ${CA} if and only if ${CB}` *is true, where* CB *is like* CA *except for containing* B *in places where* CA *contains* A. E.g., the conditional:
+    > > Smith met Jones if and only if Jones was in Omaha, only if each item is (x such that Smith met Jones or not Smith sold x to Jones) if and only if each item is (x such that Jones was in Omaha or not smith sold x to Jones)
+    >
+    > is true.
+
+26. Two things about notatoin in my quotation of the first paragraph of sectoin 13 of ML in 25:
+    1. I have replaced phi by 'A', primed phi by 'B', psi by 'CA' and primed ps by 'CB' to bring the paragraph closer to the notation used to paraphrase the quote in 21 from STL
+    2. I have, against my better judgement, used javascript template literal notation to give an example of exactly how Quine's method of quasiquotation is inhereted by javascripts method of template literals (aka template strings)
+
+27. I have been sitting for far too long i.e. since I started until now which is 2025 0722 2102.
+
+28. I need a book holder.
+
+29. I'm going to stand up, make food, eat, and maybe come back here.
+If not later today, then later tomorrow.
+
 
 ## 2025 0721 1657
 
@@ -125,13 +209,13 @@ Journal your thoughts and feelings.
 7. Leibniz's Law is charitably taken as submitting, in one direction, that each instance of the schema
     > each item is (x and y such that x is identical to y only if, x is F if and only if y is F)
 
-    is a premise of a theory subject to this law for (schematic) predicate letter 'F.
+    is a premise of a theory subject to this law for (schematic) predicate letter 'F'.
 
 8. Two things:
     1. This schematic half, the 'only if' part of Leibniz's Law, is properly called "the indiscernibility of identicals", and
     2. the compound 'x is F' is now firmly in the grammatical category of predications in that 'is' is a grammatical partical, called a copula, whose construction takes a variable and a predicate and affixes one to the other, most often, as 'Fx' and only sometimes as 'x is F', "x F's", etc.
 
-9. One more thing: since 'F' is no a schematic predicate letter to which only one variable is attached in the schema given in 7, the consequent of the universal conditional no longer carries the purported definition of indiscernability given by an allegidly second order sentence.
+9. One more thing: since 'F' is not a schematic predicate letter to which only one variable is attached in the schema given in 7, the consequent of the universal conditional no longer carries the purported definition of indiscernability given by an allegidly second order sentence.
 
 10. When the schematic letter 'F' is predicated of only one variable, then the predicates which are permitted to replace 'F', when forming an instance of a schema that contains it as a predicate letter, are only and solely one place predicates.
 
@@ -140,13 +224,13 @@ That is, it is not enough to somehow conclude 'x is indiscernable from y' from h
 
 12. Note, to conclude 'x is indiscernable from y' from having shown each instance of 'Fx only if Fy' is true involves a theory in which predicates of truth, quotation, and substitution (or some other items which fascilitate the general method which Quine has called 'semantic ascent', but note that semantic ascent only involves quotation or its reflection, disquotation, and substitution may not be directly involved, though it appears unavoidably so, and to uncover this fully would require a digression from this digression so I shall not indulge it now).
 
-13. Concretely, the conditional which paraphrases the conclusion of 'x is indiscernable from y' from the premisis "each instance of 'Fx only if Fy' is true" is give as
+13. Concretely, the conditional which paraphrases the conclusion of 'x is indiscernable from y' from the premise "each instance of 'Fx only if Fy' is true" is give as
 
     > each item is (x and y such that each item is (z such that z quotes a predicate only if the substitution of z for 'F' throughout 'Fx only if Fy' is true of (x,y)) only if x is indiscernable from y)
 
     where 'is true of' is defined as in the consistent theory of predicates of 'denotes' from Quine's chapter "Denotation and Truth" in "From Stimulus to Science" adapted to the careful method of extending 'satisfaction' to sequences in Quine's chapter "Truth" from his "Philosophy of Logic".
 
-14. Thankfully, the method sketched in 13 is both like what must be done to paraphrase the traditional definition of 'indiscernibility' as 'qualitative samness' or 'have all properties in common', contemplated in the second order paraphrase of Leibniz's law, and entirely obviated by a resolution of the problem pointed up in 11.
+14. Thankfully, the method sketched in 13 is both like what must be done to paraphrase the traditional definition of 'indiscernibility' as 'qualitative samness' or 'have all properties in common' contemplated in the second order paraphrase of Leibniz's law, and entirely obviated by a resolution of the problem pointed up in 11.
 
 15. From supplementary definitions of the predicate functors (a grammatical construction which permits ingredients from any list of grammatical categories e.g. variables and one place predicates)
     1. 'x is indiscernable from y with respect to the m place predicate F in the n-th place' for 'each item is (..u..v such that F..ux..v if and only if F..uy..v)'
