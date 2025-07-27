@@ -35,25 +35,12 @@ Conclude from contemplation on templates:
 
 Journal your thoughts and feelings.
 
-### HOW TO CONTROL YOUR BEHAVIOR
-
-1. Consequences select behavior.
-2. Control consequences to control behavior.
-3. Build new behavior from old behavior.
-4. Build new controls from old controls.
-
-### HOW TO DEAL WITH ANHEDONIA AND UNCERTAINTY
-
-1. Read Dalio's "Life and Work Principles" when you feel anhedonia.
-2. Read Quine's "Methods of Logic 4th Ed." when you feel uncertain.
-3. Go to 1.
-
 ### HOW TO MAKE IT LOGICAL
 
 1. List the nouns, adjectives, and verbs used to talk about it.
 2. Define as many from as few as you can.
 3. List true sentences made from those few.
-4. Conclude as many from as few as you can.
+4. Conclude as many from as few (premises) as you can.
 5. Go to 1.
 
 ### HOW PREDICATE ABSTRACTS WORK
@@ -74,7 +61,6 @@ Journal your thoughts and feelings.
 1. **Never** settle for a bad one.
 2. Good ones are exceptional people who happen to be psychologists.
 3. They are cultural liasons.
-4. You're more likely to find a good psychologist through a friend than you are through a phycisian.
 
 ### OTHERS
 
@@ -101,6 +87,164 @@ Journal your thoughts and feelings.
 - FORTH
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
+
+## 2025 0726 1710
+
+1. There are two sets of notes to type up here: 1. the use of predicate abstracts in explaining free logics, and 2. a fuller and more compact exposition of the power of predicate functors to take over what was once relegated to (naive) set theory.
+
+2. The first step from logic to set theory is the premise of extensionality of sets i.e. sets with the same members are the same.
+
+3. But, before getting to logic, it's time to deal with the problem of open sentences and free logics.
+
+4. The phrase "free logic" comes through Hugues Leblanc and Rolf Schock according to Quine's March 1994 paper "Free Logic, Description, and Virtual Classes" given on the occasion of Lebanc's seventieth birthday in Montreal.
+
+5. Free logic is contrasted with logic in two points (both of which are to be shown to not actually distinguish the methods of free logic from those of logic itself) :
+    1. Free logics do not presuppose that some item exists
+    2. Free logics do not presuppose that each singular term designates some item and only that item.
+
+6. It is said, e.g. by Leblanc, that the methods of logic technically include 
+    1. a premise asserting the existence of some item e.g. 'some item is (x such that Fx only if Fx)'
+    2. premises asserting that each singular term designates some item i.e. that each singular term (in modern terminology, which draws almost entirely from mathematical logic, these are logical constants and they are sometimes relegated to zero degree function terms).
+
+7. Free logic is then contrasted with logic where it is (errnoeously) said to include such premises as describe in 6.1 nad 6.2.
+
+8. The problem of the empty universe is dealt with in standard predicate logic by the common method of "checking the empty universe" by marking each existential as false and each universal as true and resolving the whole by truth functional analysis.
+
+9. Thus, logic retains the methods of prenexing and purifying by the rules of passage, and addresses the free logicians concerns about an empty universe.
+
+10. I take this distinction a bit further than Quine and simply distinguish between trivial validity and nontrivial validity where "validity" comes to be short for "nontrivial validitiy".
+A sentence is trivially valid if true from each interpretation in an empty universe e.g. by the method described in 8 of checking the empty universe.
+Then it is (nontrivially) valid if true from each interpretation in a nonempty universe i.e. by the familiar methods which embrace the rules of passage which otherwise are trivially nonvalid.
+
+11. In "Methods of Logic 4th Edition" Quine gives a definition of validity outright relative to nonempty universes.
+I find my method far more inclusive in terminology which also emphasizes the outlook of, e.g., the free logician.
+So, if the free logician wishes to emphasize their outlook, they simply assert a sentence is trivially and nontrivially valid, where as the logician who is not particularly interested in trivial validity can stick with validities knowing that all free logicians are to read 'validity' as 'nontrivially valid'.
+
+12. Note, it is here where I find myself siding with those who criticize Quine for his tight restriction on what to count as methods of logic i.e. Quine left out the empty case and accomodated it by external invocation of truth-functional methods to "checking the empty universe", but I keep it in logic as trivial validity.
+ 
+13. The problem with singular terms which purport to designate is far more significant i.e. point 5.2 and its paraphrase in 6.2 are an opportunity for the methods of logic to shine in their accommodation of the free logicians concerns.
+
+13. Singular terms which purport to designate but which don't in a given theory are sometimes called 'empty terms' in parallel with 'empty universes'.
+The classic example is 'Pegasus' or some other mythical creature which is presumably an empty singular term in any theory which purports to deal with this culturally significant singular term.
+
+14. Quine's analysis of singular terms is simple: they are all to be regimented as discriptions.
+Consequently, so called 'free variables' are to stand for some unspecified description.
+A description is formed from a descriptive predicate functor 'the' and is combined with a predicate abstract e.g. 'the (x such that x is F)' (where 'is' is taken as the copula of predication and NOT as a predicate e.g. not identity, not membership).
+
+15. A step by step explanation for the general method by which singular terms can be analyzed into singular descriptions starts with a selection from "Philosophy of Logic 2nd edition" (POL)
+    > "Think of 'a' as a name, and think of 'Fa' as any sentence containing it. But clearly 'Fa' is equivalent to 'some item is (x such that a=x and Fx)'. We see from this consideration that 'a' needs never occur except in the context 'a='. But we can as well render 'a=' always as a simple predicate 'A', thus abandoning the name 'a'. 'Fa' gives way thus to 'some item is (x such that Ax and Fx)', where the predicate 'A' is true solely of the object a.
+    >
+    > It may be objected that this paraphrase deprives us of an assurance of uniqueness that the name has afforded. It is understood that the name applies to only one object, whereas the predicate 'A' supposes no such condition. However, we lose nothing by this, since we can always stipulate by further sentences, when we wish, that 'A' is true of one and only one thing:
+    > 1. some item is (x such that Ax)
+    > 2. not some item is (x such that Ax, Ay, and not x is identical to y).
+    >
+    > (The identity sign 'is identical to' here would either count as one of the simple predicates of the language or be paraphrased in terms of them).
+    >
+    > The notation without names talks still of a and other objects, for they are the values of the quantified variables. An object can also be specified uniquely, still, by presenting some open sentence (in one variable) which that object uniquely satisfies. 'Ax' is such a sentence for teh object a. And the names can even be resotred at pleasure, as a convenient redundancy, by a convention of abbreviation. This convention would be simply the converse of the procedure by which we just now eliminated names. Each predication, let us say 'Fa', containing the name 'a', would be explained as an abbreviation of the quantification 'some item is (x such that Ax and Fx)'. In effect this si somewhat the idea behind Russell's theory of singular descriptions." pg. 26 POL.
+
+16. Quine hints at the next step but it is not yet clear from this explanation except that Russell's method of eliminating singular descriptions is hinted at.
+Before moving onto the next step, I must note that Quine's observation is profound: the method of abbreviating 'some item is (x such that Ax and Fx)' as 'Fa' is of grand consequence beyond it as an apparent intermediate step between singular terms (also called "names" in the quotation) and elimination of singular descriptions by Russell's contextual method.
+
+17. I shall linger here because Quine did not make the full connection in the quotation between 'Fa' as an abbreviation for 'some item is (x such that Ax and Fx)' and compound predicates '{xy: Fx only if Fy}' paraphrasing predicate functors through the following steps:
+    1. {xy: (Nip F)xy only if (Drop F)xy}
+    2. {xy: ((Nip F) only if (Drop F))xy}
+    3. (Nip F) only if (Drop F)
+
+18. A bit more on notation that Quine did not get to: '..x is F to ..y' is shortened to '..xF..y' and predicate abstracts can be given "two sides" as in '{..x: ..xF..y :..y}' which (I am now very excited) showed me that my method of using predicate abstracts to distinguish between variables as singular terms and variables as bound quantified colocaters is a key step to effective homogenization! (note, this insight does not require the left and right stack notation which I originally introduced here in [Stack Notation for Predicate Functor Logic](#a-stack-notation-for-predicate-functor-logic-2025-0414-1626)).
+
+19. phew! let me take a slow step back because multiple things came together all at once there.
+
+20. First, variables are used to abbreviate complex compound predicate functors in the following way.
+
+21. They occur only and solely within a predicate abstract.
+
+22. The steps in 17 are to be entirely discarded and replaced by the more carefully assembled predicate functors from here [Stack Notation for Predicate Functor Logic](#a-stack-notation-for-predicate-functor-logic-2025-0414-1626).
+
+23. By way of example, the predicate functor schema "(Drop F) only if (Push Drop F)" has a principle configuration of (1,1) since the principle configuration of a conditional is the max of left parts of the principle configurations of its components paired with teh max of the right parts of the principle configurations of its components, and the principle configuration of a drop is one plus the left part of the principle configuration of its component paired with the right part of the principle configuration of its component, and the principle configuration of a push is the left part of the principle configuration of its component paired with one plus the right part of its principle configuration.
+Finally, predicate letters have a principle configuration of zero paired with zero (unless they are given an explicit configuration by what I plan on introducing as a 'rank' operation like that of the J programming language but of a tree form).
+
+24. A much easier way to find the principle configuration of a compound predicate functor schema is along the same pattern that I am about to demonstrate that goes from a compoud predicate functor schema to its abbreviation with variables.
+
+25. Since (1,1) is the principle configuration of "(Drop F) only if (Push Drop F)" then the abbreviation by variables proceeds as follows:
+    1. {x: x((Drop F) only if (Push Drop F))y :y}
+    2. {x: x(Drop F)y only if x(Push Drop F)y :y}
+    3. {x: Fy only if xy(Drop F) :y}
+    4. {x: Fy only if xyF :y}
+
+26. The predicate abstract must be kept, since 'xF only if yF' turns into '(some (X and F)) only if (some (Y and F))', which reduces to where it came from by exactly the method proposed by Quine that he says harkens back to Russell's method of singular description as follows:
+    1. (some {u: u(X and F)}) only if (some {v: v(Y and F)})
+    2. (some {u: uX and uF}) only if (some {v: vY and vF})
+    3. (some item is (u such that uX and uF)) only if (some item is v such that vY and vF)
+    4. xF only if yF
+
+27. Although the methods in 26 leave much to be desired, they point out the direction of more elaborate methods.
+They also suggest that singular terms really do not fit the rubric they are said to by those, who like Russell, suggest there are designata beyond denotation. 
+
+
+
+## 2025 0724 1617
+
+1. For those familiar with truth-functional and quantification logic it is easier to explain first how predicate abstracts work and then how predicate functors work than it is to explain outright how predicate functors work.
+
+2. This is because variables come to be bound by predicate abstracts and not by quantifiers in such a way that compound and complex predicates are easily constructed from sentences which only become open *within* a predicate abstract.
+
+3. It also just occurred to me that predicate abstracts make it surprisingly obvious what the difference is between so called 'free variables' as singular terms and the variables bound by a predicate abstract.
+
+4. It also occurs to me that Quine did not notice this distinction could be made with predicate abstracts.
+
+5. An example: the sentence 'x loves y' is said, in classical truth functional and quantificational logic, to be open, and consequently, is often dealt with not as a sentence with singular terms 'x' and 'y', but rather as a *predicate* and not a sentence at all: 'x loves y' is said to be true of this paired off with that if and only if this loves that.
+
+6. The accident here is of not recognizing the power of predicate abstracts!
+
+7. The sentence 'Tom loves Dick' is as much an open sentence as 'x loves y', but because we are taught that such a sentence does not appear with respect to any old Tom or Dick, but with respect to some Tom and Dick that are otherwise uncovered by that all encompassing method of "context clues", it is hard to see that 'Tom' and 'Dick' are variables just as 'x' and 'y' are.
+
+8. This is made clear by the method of predicate abstraction where 'Tom loves Dick' and 'x loves y' are the same (they are complete *sentences* in that 'x' and 'y' are as much like 'Tom' and 'Dick' in that we're not talking about any old x or y) and both are different from the predicates '{Tom,Dick: Tom Loves Dick}' and '{x,y: x loves y}' (which are in fact coextensive and hence quantificationally equivalent).
+
+9. What's more, when we look at the origin of the predicate abstract in the grammarians relative clause, we find that there are even in our native tongue a difference between 'x loves y' which is a perfectly fine closed sentence with items purportedly designated by the singular terms 'x' and 'y' and the *incomplete* sentence 'x and y such that x loves y'.
+
+10. In other words, predicate abstracts point up that what once went on as open sentences are actually incomplete sentences which have not been fully rendered as the relative clause which they purport to stand for.
+
+11. This is far more profound than I had ever expected.
+
+
+## 2025 0724 1604
+
+I am removing the following from [hints][#hints]:
+
+> ** HOW TO CONTROL YOUR BEHAVIOR **
+> 1. Consequences select behavior.
+> 2. Control consequences to control behavior.
+> 3. Build new behavior from old behavior.
+> 4. Build new controls from old controls.
+> 
+> ** HOW TO DEAL WITH ANHEDONIA AND UNCERTAINTY **
+> 1. Read Dalio's "Life and Work Principles" when you feel anhedonia.
+> 2. Read Quine's "Methods of Logic 4th Ed." when you feel uncertain.
+> 3. Go to 1.
+
+and I am removing 4 of 
+
+> ** HOW TO FIND A GOOD PSYCHOLOGIST **
+> 1. **Never** settle for a bad one.
+> 2. Good ones are exceptional people who happen to be psychologists.
+> 3. They are cultural liasons.
+> 4. You're more likely to find a good psychologist through a friend than you are through a phycisian.
+
+because I doubt its accuracy e.g. there may be families which point people to others who will only and solely reinforce their familial control and that this could be far more damaging than finding a psychologist through a phycisian.
+
+I've made these edits because those hints do not help in the same way, e.g., that the hints on how prediate abstracts work or how indiscernibiliy works.
+
+There are better hints to be made than these.
+The material contained within them will not be entirely dropped.
+
+Another edit.
+
+In [HOW TO MAKE IT LOGICAL][#how-to-make-it-logical] point 3 is stronger when given as 'List true conclusions made from those few'.
+It prompts me to write point 4 as 'Conclude as many from as few (premises) as you can.'
+This introduces the important difference between premises and conclusions in the actual construction of a logical theory: everything that 'goes into' the construction is classed as a conclusion up to that point, it is only once the theory is assembled that the distinction between conclusions, premises, and truths.
+
+Perhaps an even better way of doing this is to leave 3 as is "List ture sentences made from those few" and only add the parenthetical "(premises)" into point 4.
+I'll try that out first: it follows the principle of minimal mutilation.
 
 ## 2025 0722 2115
 
