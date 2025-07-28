@@ -88,6 +88,105 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0727 2308
+
+Don't forget to go through all of the canonical forms of truth functional compounds e.g. <https://en.wikipedia.org/wiki/Boolean_function#Representation>.
+
+## 2025 0727 2102
+
+1. Here is a fresh attempt to gather together the methods of predicate abstracts and predicate functors from truth-functional and quantificational logic.
+
+2. Perhaps unsurprisingly, the elimination of singular terms by singular descriptions is tied up with Wang's single schematic premise for a theory of identity.
+I mention this to at least present some link between this note and the last one.
+There are many wonderful things occurring at once as a result of multiple mounds of work merging towards a single mountain of progress.
+
+3. A quick note on terminology.
+Predicate functors break predicate logic into two grammatical categories: the recombic category and the alethic category.
+
+4. Another note: all of predicate logic can be reduced to three predicate functors.
+I do not yet know if it is possible for fewer than three predicate functors to suffice for all of predicate logic.
+A reason to suspect this is the case is that Quine's theory of abstraction and inclusion, like Church's theory of abstraction and application, does the work of a theory of mathematical logic (in Quine's case the theory is that of sets).
+
+5. Here a clear distinction must be made between logic and mathematical logic. the grammatical particales 'and' and 'or' combine with component sentences in a grammatical construction that builds conjunctions and alternations as compound sentences.
+The unhappily named "boolean functions" designated by 'and' and 'or' are functions, they are singular terms, and they combine with other singular terms, such as those designated traditionally by 'truth' and 'falsity' as the so called 'truth values', to designate via a compound term like 'truth and truth' a truth value, in this example truth.
+
+6. Inability to distinguish between 'and' as a grammatical particle and 'and' as a singular term designating a function lead to insufferable errors when arguments from predicate logic (where 'and' is a grammatical particle) are confalted with arguments from mathematical logic (where 'and' tends to designate a boolean function).
+
+7. Surprisingly, much of truth-functional logic remains wedded to arguments which properly belong to mathematical logic e.g. whenever truth tables, trees, diagrams, or maps are invoked to establish the validity of a truth functional schemata.
+The logical alternative has been available for some time: full alternational normal form and full conjunctive normal form are both accessible through an argument by equivalents: truth functional validity is established outright by direct inspection.
+
+8. Wang's schematic premise of identity is "Fx if and only if some item is (y such that x is identical to y and Fy)".
+
+9. Note,
+    1. This biconditional was used by Quine in "Philosophy of Logic 2nd Edition" (POL) to argue for the elimination of singular terms, aka names, to demonstrate that singular terms occur only in the context of identity i.e. "Fx" is equivalent to "some item is (y such that x= y and Fy)" so that "x=" can be replaced by a one place predicate 'X' so that 'Fx' is equivalent to 'some item is (y such that Xy and Fy)'
+    2. Two applications of Wang's schematic premise of identity are required to set up the full abbreviation of predicate abstraction in truth-functional and quantificational logic!
+
+10. A third point is far more important and also related to observations made in the last note (and actually in the last few notes) is that the following schema are to be kept distinct if logic is to deal well with empty singular terms:
+    1. Fx if and only if some item is (y such that x is identical to y and Fy)
+    2. x such that Fx if and only if some item is (y such that x is identical to y and Fy)
+    3. each item is (x such that Fx if and only if some item is (y such that x is identical to y and Fy))
+
+11. These most recent notes have mostly been born from discovery expedititions into Quine's analysis of 1. singular terms, 2. identity and indiscernability, 3. descriptions, 4. predicate abstraction and concretion, 5. predication, and 6. predicate functors among other things.
+
+10. It is 10.3 which stands out as the appropriate schema to go by the name "Wang's schematic premise of identity", a fact which is obliquely mentioned on pages 272 and 273 of Quine's "Methods of Logic 4th edition" (MOL).
+It is oblique because Wang's schematic premise of identity is only hinted at as equivalent to Godel's schematic premises of identity in exercise 2 on page 273, and the last sentence on 273 is
+    > "It is convenient sometimes to cite the axiom with its quantifier or quantifiers and soemtimes without, as the above examples shown."
+
+11. The problem is, contrary to Quine's expectation, more than a matter of convenience as he unearths in his later paper "Free Logic, Description, and Virtual Classes" of 1994:
+    > "For a more broadly applicable treatment of descriptions, then, I am turned back from Russell to Peano, who first brought descriptions into logic. It was Peano who introduced iota as well as epsilon into logic, both inverted and upright. For him singular description was premitive notation, and my definition of 'the F = x' was for him rather an axiom schema:
+    > > (the F)=x if and only if each item is (y such that Fy if and only if y=x)
+    >
+    > Peano expressed the existence condition as 'some item is (x such that (the F)=x)' even as we, and invoked it as a condition whenever he used a singular description. David Hilbert followed him in this.
+    > 
+    > We can join company with Peano and Hilbert and Still adhere to my account of all singular terms as descriptions and my convention to use 'a', 'b', etc. as parameters for them all. Formally the resulting logic is the same, I believe, as Leblanc and Theodore Hailperin's logic of free terms, provided that like those authors we extend the logical axioms of identity unconditionally to singular terms." pg. 281-282 "Selected Logic Papers Enlarged Edition"
+
+12. The extension hinted at in that last sentence is where the subitems of 10 most clearly come into play.
+It is the halmark of the schematic methods of logic in application to the analysis of singular terms to let free variables play the part of dummy singular terms in the same way that sentence letters play the part of dummy sentences and predicate letters play the part of dummy predicates.
+But, additional care must be taken when setting up terminology that deals with potentially empty singular terms i.e. the dummies must be managed in such a way that some interpretation may leave them without a designata!
+
+13. This care was not quite taken by Quine overtly in MOL the same way that some care was taken overtly in MOL with the case of what I have called trivial validity which entertains the possibility of an empty universe by marking each existential as false and each universal as true and resolving the whole sentence by truth functional analysis to the truth value in the empty case.
+
+14. Specifically, it is not until the third part of MOL that the problem of empty singular terms is even mentioned (in the first chapter/section of that part called "singular terms").
+Then, unhappily still, it is not even hinted at as resolvable until three chapters later in "Elimination of Singular Terms" by a method of singular description to be further described here.
+
+15. To link up MOL with Quine's later paper on "Free Logics" I must give a bit of MOL and link what I give up with what I gave from that paper.
+
+16. I'll start backwards so as to "cut to the chase".
+Just as checking the empty universe was the result of taking existentials as false and universals as true and resolving by truth functional analysis, so too is a similar method of 1. taking simple contexts as overtly true or false, 2. resolving by familiar contextual clues.
+    > "Let us take up the problem, which has been looming for some time, of the truth value of such statements as 'Cerberus barks'. Falsity, as a sweeping answer covering all statements containing 'Cerberus', would be over-hasty: first because the statement 'There is no such thing as Cerberus', at least, is true; and second, because whatever statements we adjudge false must admit of compounds, e.g., their negations, whcih will be true. Truth, as a sweeping answer, would encounter parallel difficulties.
+    >
+    > Our deductive methods for singular terms throw no light on the question: for we already assume that the singular term names an object when we represent the singular term by a free varaiable, and we make the same assumption again when we adopt a descriptive premise for a description. Failing a named object, our methods show nothing, for what they purport to show rests then on a contrary-to-fact assumption. Common usage, moreover, likewise leaves us in the dark; for excepting such contexts as 'There is no such thing as Cerberus', a singular term is ordinarily used only when the speaker believes or cares to pretend that the object exists." pg. 278 MOL
+
+17. This being the first time that the problem is fully mentioned and that the naive solutions are given and dismissed is an unhappiness.
+Mostly because, in practice, the student of logic is troubled by such validities as
+    1. Fx only if some item is (y such that Fy)
+    2. each item is (x such that Fx) only if Fy
+
+18. But, 17.1 and 17.2 come to be validities only in the crude way that what I have called trivial validities are explained away by Quine as having extralogical interest but yet also a logical resolution.
+
+19. The next quote is much more important than I once expected having read it a dozen times or so before: it demonstrates the ways by which logic and science cross polinate each other above and beyond applications.
+    > "Under ordinary usage, we saw (Chapter 3), truth values attach not to indicative conditionals as wholes but only to the consequents conditionally upon truth of the antecedents. Analogously, under ordinary usage truth values attach to contexts of singular terms for the most part only conditionally upon existence of the objects. But if we are to have a smooth logical theory we must fill such gaps, even though arbitrarily, in such a way that every statement comes to have a truth value. Thus it was that we conventionally extended teh concept of the conditionaly, in Chapter 3, so as to allow truth values generally to conditionals as wholes. An extension in the same spirit is needed now on the score of singular terms that do not name." pg. 278 -279
+
+20. Here I must note that the previous chapter on descriptions already introduced and eliminated a tricky problem that isn't quite effectively distinguished from that mentioned in 16 and dealt with in spirit in 19.
+
+21. It is the problem of descriptive (or described?) singular terms and nondescriptive (or undescribable?) singular terms as oppossed to the difference between empty and nonempty singular terms.
+
+22. I am glad that I've written through these things because I had not made that distinction clear to myself before.
+
+23. A singular term 'a' can be said to be described by a one place predicate 'F' if 'Fa and each item is (x such that a=x if and only if Fx)'.
+As a predicate functor:
+    - 'F describes x' for 'Fx and each item is (y such that x=y if and only if Fy)'
+
+24. The definition in 23 can be simplified by noting that 'each item is (y such that x=y if and only if Fy)' implies 'x=x if and only if Fx' which is equivalent to 'Fx' so that when 'F describes x' for 'each item is (y such that x=y if and only if Fy)' then 'F describes x' implies 'Fx'.
+
+25. But note!!! The argument in 24 depends on a definition of validity (and consequently of implication) that presupposes each free variable designates some item!!! That is, it will be seen that Quine's method of eliminating singular terms in MOL has to yield expected results.
+
+26. Jumping ahead, predicates which belong to the lexicon when predicated of an empty singular term are taken as false.
+So, in an empty universe, the universal 'each item is (x such that Fx)' is false for any predicate substituting the predicate letter 'F' and 'Fy' when 'F' is substituted by a predicate of the lexicon is false, but when 'F' is substituted by a compound predicate ...
+
+27. I'm too sleepy to finish this now.
+
+
 ## 2025 0726 1710
 
 1. There are two sets of notes to type up here: 1. the use of predicate abstracts in explaining free logics, and 2. a fuller and more compact exposition of the power of predicate functors to take over what was once relegated to (naive) set theory.
