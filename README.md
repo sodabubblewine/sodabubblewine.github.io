@@ -88,6 +88,41 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0729 1947
+
+1. Among von Neumann's many accomplishments (including the method of stored programs), perhaps his most concequential technique is his schematic method from his 1927 "Zur Hilbertschen Beweistheorie".
+
+2. In section two "Die Formder Axiomenregel" he introduces the full technique of schematic methods summarized in this sentence:
+    > "Es werden gewisse Schemata angegeben, d. h. gewisse Kombinationen von einfachen Zeichen, mit den Zeichen a,b,c,.. und xp, xq, .. sowie Subst derart, dass wenn wir fur a,b,c,... Formeln einsetzen und fur xp, xq,... Variable (unter Einhaltung der fur a,b,c,..; xp,xq,.. jeweils zu formulierenden Bedingungen) und dann die Subst ausfuhren, eine Normalformel entsteht.
+    >
+    > Diese im folgenden anzugebenden Schemata sind die Axiomenschemata. Die Normalformeln, die so entstehen, dass isn einem Axiomenschema a,b,c,..; xp,xq,.. auf die oben beschriebene Art ersetzt und die Substausgefuhrt werden, sind die Axiome." pg. 13-14 Mathematische Zeitschrift. 1927
+
+3. Which purportedly translates to:
+    > "Certain schemata are given, i.e., certain combinations of simple symbols, with the symbols a, b, c,... and xp, xq, .. as well as substs such that if we substitute formulas for a, b, c,... and variables for xp, xq,... (subject to the conditions to be formulated for a, b, c,...; xp, xq,...) and then execute the substs, a normal formula results.
+    >
+    > These schemata, to be given below, are the axiom schemata. The normal formulas that result from substituting a, b, c,...; xp, xq,... in an axiom schema in the manner described above and executing the substs, are the axioms."
+
+4. The distinction between schema and sentences (or, worse, sense) has raised a host of problems for the modern logician navigating a world awash with mathematical logic without any hint of its history and hurtles.
+
+5. A schematic premise is no premise at all but rather a template from which premises may be constructed or otherwise identified.
+
+## 2025 0728 1847
+
+1. 'x is {y: Fy}' for 'some item is (z such that z=x and some item is (y such that y=z and Fy))' (from pg. 17 of "Set Theory and its Logic Revised Edition" (STL) by Quine)
+
+2. The abbreviation shown in 1 is from STL and is the full analysis of the various parts that variables play in a logic with predicate abstracts as primitive notation without actually introducing such basic notation.
+
+3. Predicate abstracts can be introduced as primitive notation by taking the parts of the above abbreviation and casting them into the parts of a biconditional:
+    - x is {y: Fy} if and only if some item is (z such that z=x and some item is (y such that y=z and Fy))
+
+4. When such premises are contemplated, it is expedient to present rather the following named schematic premise of concretion:
+    - x is {y: Fy} if and only if Fx
+
+5. This schematic premise of concretion is in the same vein as Peano's schematic premise of description:
+    - x=the F if and only if each item is (y such that x=y if and only if Fy)
+
+6. Though it wasn't until von Neumann 1927
+
 ## 2025 0727 2308
 
 Don't forget to go through all of the canonical forms of truth functional compounds e.g. <https://en.wikipedia.org/wiki/Boolean_function#Representation>.
