@@ -88,6 +88,58 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0729 2237
+
+1. The schematic premise of predicate abstraction and concretion is
+    > ..x{..y:  ~~~..y~~~..u~~~  :..u}..v if and only if ~~~..x~~~..v~~~.
+
+2. In addition to committing to quantifiers when specifying the restrictions on substitution for predicate letters in valid schema to generate valid schema, as noted in the last entry, Quine also forgot to mention the problem of overlapping bondage in netsted abstracts with the same bound variables e.g. '{x: Fx and x{x: Gx only if xHy :y}x}'.
+
+3. The example in 2 introduces a new abbreviation: '{..x: ~~~}' for '{..x: ~~~:}'.
+Whether this shall be later advised is unknown.
+
+4. Quine deals with the problem of overlapping bondage in "Mathematical Logic Revised Edition" in the way given by Hilbert and Ackermann: the inner most occurrence of bondage prevails over the others.
+
+5. There remains the problem of an abstract whose binding prefix or postfix contains no variable free in its component.
+There also remains the problem of iterated abstracts e.g. '{x: {y: xFy}}'.
+
+6. Neither the problem solved in 4 or the problems brought up in 5 are dealt with in "Methods of Logic 4th Edition".
+It appears as if the methods from "Mathematical Logic Revised Edition" can be carried over in part, but there the distinction between 'matrix', or what is later called 'open sentence', and a closed sentence with what is otherwise taken as one composed by dangling pronouns needs to be dealt with well when it comes to their appearence in free logic i.e. when dealing with vacuous singular terms. 
+
+## 2025 0729 2020
+
+1. For now I adopt the two sided definition of predicate abstraction that most closely follows the patterns of development I uncovered in [#a-stack-notation-for-predicate-functor-logic-2025-0414-1626](#a-stack-notation-for-predicate-functor-logic-2025-0414-1626).
+
+2. The schematic premise of concretion is
+    > ..x{..y:  ~~~..y~~~..u~~~  :..u}..v if and only if ~~~..x~~~..v~~~.
+
+3. It is given with such strange notation as '~~~' to indicate that the schematic premise itself is in fact an additional schematism which, though it can be given a more careful grammatical construction, is distracting at this moment.
+
+4. It is indispensible though for predicate abstracts themselves are the tool upon which substitution for predicate letters is achieved.
+The rule is as follows:
+    > "We may sum up the two restrictions symmetrically thus: Quantifiers of the substituted abstract must not capture variables of the schema in which the substitution takes place, and variables of the substituted abstract must not be captured by quantifiers of the schema in which the substitution takes place. These restrictions simply ward off confusions of variables which, if allowed, would cause substitution to deviate from tis intended purpose of interpreting term letters." pg. 162 Quine, Methods of Logic 4th Edition (MOL)
+
+5. Alas, this rule as given by Quine is needlessly tied up with quantifiers in large part so that fewer edits had to be made to weave in predicate abstraction as the logical importa of the grammarian's relative clause without disrupting too much of the other text.
+
+6. The symmetric rules can be translated as follows into the language of pure predicate abstract logic:
+    > We may sum up the two restrictions symmetrically thus: abstracts of the substituted abstract must not capture variables of the schema in which the substitution takes place, and variables of the substituted abstract must not be captured by the abstracts of the schema in which the substitution takes place.
+
+7. The main reason to promote the restrictions on substitution to pure predicate abstracts rather than to entertain quantifiers is to extinguish the mistake made by Frege when he introduced quantifiers and entangled them with the bondage and freedom of variables.
+
+8. It also allows those who are interested in other predicate functors that might not conform to the old quantificational outlook to explore how deviant ones combine with the bound variables of predicate abstraction.
+For example, the whole problem of scope in the practices of computer programming are a consequence of the methods of predicate abstraction.
+
+9. Note, the schematic premise of concretion introduces predicate abstracts, such as '{u: u pairs x with y :xy}', as basic notation i.e. it ushers in a new gramamtical category by a new gramamtical construction and does so, by including the schematic premise of concretion in the contemplated theory, without enlarging the logic.
+Concretion assures us that anything said with abstracts can be said without them by eliminating each abstract for its concretion via the appropriate premise.
+
+10. But, there is some care that must be taken and which I have not taken myself: predicate abstracts can be introduced as abbreviations for quantificational sentences, does the abbreviation correspond to the notation introduced by the schematic premise of concretion?
+
+11. Wang's schematic premise of identity guarentees it.
+
+## 2025 0729 2018
+
+My repeated comments that Quine was not as careful with the problem of vacuous singular terms as he was with vacuous validity in [#2025-0727-2102](#2025-0727-2102) was wrong: he makes repeated mention in, e.g. the chpater on identity, as he ramps up to his method presented in the chapter on the elimination of singular terms.
+
 ## 2025 0729 1947
 
 1. Among von Neumann's many accomplishments (including the method of stored programs), perhaps his most concequential technique is his schematic method from his 1927 "Zur Hilbertschen Beweistheorie".
