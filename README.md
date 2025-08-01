@@ -88,14 +88,68 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+
+## 2025 0801 1103
+
+1. Ambiguous abbreviations are not a proper problem of any theory, but rather of the logic applied to it.
+
+2. Russell's contextual elimination of descriptions is ambiguous abbreviation: as much as such was noticed when he bound the context of a description in the same way a variable was bound by a quantifier.
+
+3. Relative to a finite lexicon, contextual elimination of descriptions by minimal context is unambiguous in the theory, but still ambiguous in the logical methods e.g. schematic methods.
+
+4. Quine follows Peano by introducing descriptional notation via the schematic premise of descriptions in the context of identity (being itself dependent upon, e.g., Wang's schematic premise of identity):
+    > x is identical to (the F) if and only if some item is (y such that x=y if and only if Fy).
+
+5. Properly, a schematic premise is not a premise at all: each of its instances are.
+
+6. Still, even here, 'G(the F)' abbreviates 'some item is (x such that Gx and x is identical to (the F))'.
+
+7. Such an abbreviation is eliminated by a further schematic premise of descriptions in a context other than identity:
+    > G\-\-\-the F\-\-\- if and only if some item is (x such that G\-\-\-x\-\-\- and x is identical to (the F).
+
+8. Combining the two schematic premises from 4 and 7 into one schematic premise of description gives
+    > \-\-\-the F\-\-\- if and only if some item is (x such that \-\-\-x\-\-\- and each item is (y such that x is identical to y if and only if Fy).
+
+9. Note, Quine failed to give this full schematic premise when channeling Peano in "Free Logic, Description, and Virtual Classes".
+He also failed to give first the schematic premise of predicate abstraction and concretion
+    > ..u{..v: \-\-\-..v\-\-\-..x\-\-\- :..x}..y if and only if \-\-\-..u\-\-\-..y\-\-\-
+
+    before then introducing the premise of exstentionality for classes (and sets, sets are classes that belong to some class)
+    > each item is (x, y, and z such that each item is (u such that u in x if and only if u in y) and x in z, only if y in z)
+
+    and before introducing the schematic premise of class abstraction
+    > x in the class of {y such that Fy} if and only if Fx
+
+    and he never demonstrates the relation between class abstraction and descriptions in any theory with a premise of extensionality for classes:
+    > the class of {x such that Fx} is identical to the (y such that each item is (x such that x in y if and only if Fx))
+
+    and, perhaps worse of all, in none of his texts, not even Mathematical Logic 4th edition (MOL), does he deal with the double life of BOTH predicate abstracts as class abstracts AND the copula of predication with the predicate 'in' of class membership (which I shall attempt to do here).
+
+10. Much of the work required to bring predicate abstracts and class abstracts together, so that following Quine we can let predicate abstracts "moonlight" as names of their extensionality as classes, is found in "Set Theory and its Logic Revised Edition" (STL) by Quine.
+
+11. He mentioned the mistakes he made in STL in MOL chapter 21 "The Bound Variable":
+    > "In formulating set theory in 1940 Godel appealed informally to fictious supplementary objects taht he called *notions*. They were like classes but were not values of variables. They were just a manner of speaking avoidable by cirumlocution. In my Brazlil lectures of 1942 I pressed this fiction. I presented what I called the virtual theory of classes and relations, in which I used the notation fo set theory as far as I could without assuming classes. See *O Sentido da nova logica* section 51. Martin was urging the idea concurrently. In *Set Theory and Its Logic* (1963, 1967) I made extensive use of the virtual theory of classes as an auxiliary to the real theory of classes. It proved to be a valuable axuiliary, but I persisted in presenting it as a mere prolegomenon to set theory and as a sly partial simulation thereof, failing, as we all did, to appreciate that it should stand squarely in elementary logic as a regimentation of a fundamental feature of language, the relative clause." pg. 136 MOL
+
+12. In recent notes, I've tended to use 'is' as the copula of predication and 'in' as a predicate present in schematic premises of extensionality of classes.
+
+
+
+## 2025 0730 1943
+
+1. Predicate abstracts and functors render naive set theory as neither naive nor set theory.
+It becomes pure logic.
+The missing link between Frege and this surprising conclusion is von Neumann's schematic methods.
+
+2. There is no more to communication than effective action.
+
 ## 2025 0729 2237
 
 1. The schematic premise of predicate abstraction and concretion is
-    > ..x{..y:  ~~~..y~~~..u~~~  :..u}..v if and only if ~~~..x~~~..v~~~.
+    > ..x{..y:  \-\-\-..y\-\-\-..u\-\-\-  :..u}..v if and only if \-\-\-..x\-\-\-..v\-\-\-.
 
 2. In addition to committing to quantifiers when specifying the restrictions on substitution for predicate letters in valid schema to generate valid schema, as noted in the last entry, Quine also forgot to mention the problem of overlapping bondage in netsted abstracts with the same bound variables e.g. '{x: Fx and x{x: Gx only if xHy :y}x}'.
 
-3. The example in 2 introduces a new abbreviation: '{..x: ~~~}' for '{..x: ~~~:}'.
+3. The example in 2 introduces a new abbreviation: '{..x: \-\-\-}' for '{..x: \-\-\-:}'.
 Whether this shall be later advised is unknown.
 
 4. Quine deals with the problem of overlapping bondage in "Mathematical Logic Revised Edition" in the way given by Hilbert and Ackermann: the inner most occurrence of bondage prevails over the others.
@@ -111,9 +165,9 @@ It appears as if the methods from "Mathematical Logic Revised Edition" can be ca
 1. For now I adopt the two sided definition of predicate abstraction that most closely follows the patterns of development I uncovered in [#a-stack-notation-for-predicate-functor-logic-2025-0414-1626](#a-stack-notation-for-predicate-functor-logic-2025-0414-1626).
 
 2. The schematic premise of concretion is
-    > ..x{..y:  ~~~..y~~~..u~~~  :..u}..v if and only if ~~~..x~~~..v~~~.
+    > ..x{..y:  \-\-\-..y\-\-\-..u\-\-\-  :..u}..v if and only if \-\-\-..x\-\-\-..v\-\-\-.
 
-3. It is given with such strange notation as '~~~' to indicate that the schematic premise itself is in fact an additional schematism which, though it can be given a more careful grammatical construction, is distracting at this moment.
+3. It is given with such strange notation as '\-\-\-' to indicate that the schematic premise itself is in fact an additional schematism which, though it can be given a more careful grammatical construction, is distracting at this moment.
 
 4. It is indispensible though for predicate abstracts themselves are the tool upon which substitution for predicate letters is achieved.
 The rule is as follows:
