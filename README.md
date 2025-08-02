@@ -88,6 +88,83 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0802 1540
+
+1. This note records my work on solving a problem of substitution: how to deal with notation such as '\-\-\-x\-\-\-' and 'Fx' where 'F' is a schematic predicate letter and 'x' is a pronoun (otherwise called a variable).
+
+2. This is all relative to the methods of logic given by Quine in "Methods of Logic 4th edition" (MOL).
+
+3. The first place where a notation like '\-\-\-x\-\-\-' is used in that book is actually when 'p', 'q', and 'r' are used as dummy closed sentences or schematic closed sentence letters e.g. '\-\-\-p\-\-\-'.
+
+4. It first appears on page 63:
+    > "But there are useful laws of interchange, the least of which is the *first law of interchange*: Think of '. . . p . . .' as any schema containing 'p', and of '. . . q . . .' as formed from '. . . p . . .' by putting 'q' for one or more occurrence of 'p'; then 'p if and only if q' implies '. . . p . . . if and only if . . . q . . .'." pg. 63-64 MOL
+
+5. The schema mentioned in the quotation in 4 is only truth-functional.
+
+6. The letters 'p' and 'q' are first introduced as part of the methods of logic in a way that is distinct from how they are dealt with in the chapter quoted from in 4.
+
+7. It is in the third paragraph of the first chapter "Negation, Conjunction and Alternation" that single letters are introduced as notational expedients in the following way (the whole paragraph is given because it also gives a key part of the method of paraphrasing or regimenting characteristic of logic):
+    > "In logical studies it is convenient to adopt a single sign of negation, consisting of the prefix '-', applied to statements as wholes. Thus '-(Jones is away)' means 'Jones is not away'; the parentheses here serve to group, in a single whole, the statement to which '-' is applied. The sign '-' might be translated into words as 'it is not the case that'; briefly it may be pronounced 'not'. When a statement is represented as a single letter 'p', as is commonly done in logical discussion, the sign of negation will be placed above instead of in front; thus we shall write '???' instead of '-p' for the negation of 'p'." pg. 9 MOL
+
+8. What are here called 'statements' are later mentioned as 'sentences' by Quine because 'statement' still has the haze of meaning or proposition about it.
+We know this from the second page of Quine's "Philosophy of Logic 2nd Edition" (POL):
+    > "Some philosophers, commendably diffident about positing propositions in this bold sense, have taken refuge in teh word 'statement'. The opening question of this chapter illustrates this evasive use. my inveterate use of 'statement' in earlier books does not; I there used the word merely to refer to declarative sentences, and said so. Later I gave up the word in the face of the growing tendency at Oxford to use the word for acts that we perform in uttering declarative sentences. Now by appealing to statements in such a sense, instead of to propositions, certainly no clarity is gained. I shall say no more about statements, but will go on about propositions." pg. 2 POL
+
+9. The etymology of 'statement' goes through the PIE \*sta\- as from <https://www.etymonline.com/word/*sta->
+    > *stā-, Proto-Indo-European root meaning "to stand, set down, make or be firm," with derivatives meaning "place or thing that is standing."
+    > 
+    > It might form all or part of: Afghanistan; Anastasia; apostasy; apostate; armistice; arrest; assist; astatic; astatine; Baluchistan; bedstead; circumstance; consist; constable; constant; constitute; contrast; cost; desist; destination; destine; destitute; diastase; distance; distant; ecstasy; epistasis; epistemology; establish; estaminet; estate; etagere; existence; extant; Hindustan; histidine; histo-; histogram; histology; histone; hypostasis; insist; instant; instauration; institute; interstice; isostasy; isostatic; Kazakhstan; metastasis; obstacle; obstetric; obstinate; oust; Pakistan; peristyle; persist; post (n.1) "timber set upright;" press (v.2) "force into service;" presto; prostate; prostitute; resist; rest (v.2) "to be left, remain;" restitution; restive; restore; shtetl; solstice; stable (adj.) "secure against falling;" stable (n.) "building for domestic animals;" stage; stalag; stalwart; stamen; -stan; stance; stanchion; stand; standard; stanza; stapes; starboard; stare decisis; stasis; -stat; stat; state (n.1) "circumstances, conditions;" stater; static; station; statistics; stator; statue; stature; status; statute; staunch; (adj.) "strong, substantial;" stay (v.1) "come to a halt, remain in place;" stay (n.2) "strong rope which supports a ship's mast;" stead; steed; steer (n.) "male beef cattle;" steer (v.) "guide the course of a vehicle;" stem (n.) "trunk of a plant;" stern (n.) "hind part of a ship;" stet; stoa; stoic; stool; store; stound; stow; stud (n.1) "nailhead, knob;" stud (n.2) "horse kept for breeding;" stylite; subsist; substance; substitute; substitution; superstition; system; Taurus; understand.
+    > 
+    > It might also be the source of: Sanskrit tisthati "stands;" Avestan histaiti "to stand;" Persian -stan "country," literally "where one stands;" Greek histēmi "put, place, cause to stand; weigh," stasis "a standing still," statos "placed," stylos "pillar;" Latin sistere "stand still, stop, make stand, place, produce in court," status "manner, position, condition, attitude," stare "to stand," statio "station, post;" Lithuanian stojuos "I place myself," statau "I place;" Old Church Slavonic staja "place myself," stanu "position;" Gothic standan, Old English standan "to stand," stede "place;" Old Norse steði "anvil;" Old Irish sessam "the act of standing.""
+
+
+10. The etymology of 'sentence' goes through 'sense' to \*sent\- which I already dealt with in [#2025-0526-2141-the-first-two-words-of-paul-grahams-paper-good-writing](#2025-0526-2141-the-first-two-words-of-paul-grahams-paper-good-writing)
+
+11. Neither 'statement' nor 'sentence' are effective, and as much is clear from Skinner's "Verbal Behavior" (VB).
+
+12. Like later Quine, I avoid 'statement' and if I am to speak of 'utterences' then I am already close enough to behavior to switch over entirely from the philosophic, logic, and gramamtical traditions to that of the radical behaviorists e.g. 'form of response', 'topography of response', or, better, 'operanda'.
+Perhaps 'operanda' is the best: it points up the problem of describing responses, recording responses, and all else that comes up when comparing one occurrence with another by switching from the effectors of an organism to the effect on the laboratory environment.
+
+13. This is not a note on behavior and I shall abandon this path of exploration.
+
+14. I tend to use 'sentence', but 'quotation' is probably better.
+Let me look at its etymology.
+
+15. First we have <https://www.etymonline.com/word/quote>
+    >quote(v.) late 14c., coten, "to mark or annotate (a book) with chapter numbers or marginal references" (a sense now obsolete), from Old French coter and directly from Medieval Latin quotare "distinguish by numbers, mark off into chapters and verses," from Latin quotus "which in order? what number (in sequence)?," from quot "how many," from PIE *kwo-ti-, from pronominal root *kwo-.
+
+16. Then the PIE <https://www.etymonline.com/word/*kwo->
+    > *kwo- also *kwi-, Proto-Indo-European root, stem of relative and interrogative pronouns.
+    > 
+    > It might form all or part of: cheese (n.2) "a big thing;" cue (n.1) "stage direction;" either; hidalgo; how; kickshaw; neither; neuter; qua; quality; quandary; quantity; quasar; quasi; quasi-; query; quibble; quiddity; quidnunc; quip; quodlibet; quondam; quorum; quote; quotidian; quotient; ubi; ubiquity; what; when; whence; where; whether; which; whither; who; whoever; whom; whose; why.
+    > 
+    > It might also be the source of: Sanskrit kah "who, which;" Avestan ko, Hittite kuish "who;" Latin quis/quid "in what respect, to what extent; how, why," qua "where, which way," qui/quae/quod "who, which;" Lithuanian kas "who;" Old Church Slavonic kuto, Russian kto "who;" Old Irish ce, Welsh pwy "who;" Old English hwa, hwæt, hwær, etc.
+
+16. From which it is clear that quotations spell things out e.g. morphemes, responses, etc.
+
+17. Spelling and concatenating and listing are close to quotations.
+
+18. The etymology of 'spell' <>
+    > spell(v.1) early 14c., spellen, "read letter by letter, write or say the letters of;" c. 1400, "form words by means of letters," said in most etymology sources to be from Anglo-French espeller, Old French espelir "to mean, signify; explain, interpret," also "spell out letters, pronounce, recite."
+    > 
+    > This French word is from Frankish *spellon "to tell" or some other Germanic source, from Proto-Germanic *spellam (source also of Dutch spellen, Old High German spellon "to tell," Old Norse spjalla, Gothic spillon "to talk, tell").
+    > 
+    > The native cognate word is Old English spellian, spillian "to tell, talk, speak, discourse." Only Barnhart seems to allow that the modern English word is partially from the Old English one, due to the difference in sense.
+    > 
+    > Klein's sources suggest a possible origin for this Germanic group in a PIE root *spel- (2) "to say aloud, recite, speak with emphasis" and cognates in Greek apeilē "threat" among other words, but Beekes finds the suggestion "rather far-fetched."
+    > 
+    > Also in early use speldren, from Old French espeldre, a variant of espelir. Related: Spelled; spelling.
+    > 
+    > In early Middle English still "to speak, preach, talk, tell," hence such expressions as hear spell "hear (something) told or talked about," spell the wind "talk in vain" (both 15c.). The meaning "form words with proper letters" is from 1580s.
+    > 
+    > Spell out "explain step-by-step" is recorded from 1940, American English. Shakespeare has spell (someone) backwards "reverse the character of, explain in a contrary sense, portray with determined negativity."
+
+19. In "From Stimulus to Science" (FSS) Quine describes quotations as spelling out the letters of a sentence:
+    > "The quotation is just a name of the depicted sequence of letters and spaces, dissociated grammatically and semantically from the outlying text. The dissociation becomes still more graphic when we analyze the quotation explicity into names of the individual characters and spaces, linked by concatenation signs. ... 
+    > 
+    > We have a familiar word for this analysis of quotation: it is *spelling*. Spelled out, the words disappear and so do questions of substitutivity. Substitutivity within quotation is confusion of use with mention." pg. 94-95 FSS
+
+7. In chapter 21 "The Bound Variable" a similar notation is used 
 
 ## 2025 0801 1103
 
@@ -98,7 +175,7 @@ Journal your thoughts and feelings.
 3. Relative to a finite lexicon, contextual elimination of descriptions by minimal context is unambiguous in the theory, but still ambiguous in the logical methods e.g. schematic methods.
 
 4. Quine follows Peano by introducing descriptional notation via the schematic premise of descriptions in the context of identity (being itself dependent upon, e.g., Wang's schematic premise of identity):
-    > x is identical to (the F) if and only if some item is (y such that x=y if and only if Fy).
+    > x is identical to (the F) if and only if some item is (y such that x is identical to y if and only if Fy).
 
 5. Properly, a schematic premise is not a premise at all: each of its instances are.
 
