@@ -88,6 +88,27 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0804 1726
+
+1. Validity can be defined in purely grammatical terms as transformable into a certain grammatical category with respect to some finite list of transformations.
+
+2. These are frequently paraphrased as theories of calculi, e.g. syntactic rules of inference, better, of concatenation, e.g. binary strings, or, better still, trees, e.g. binary trees.
+
+3. Truth functional inconsistency is established by full alternational or conjunctive normal form.
+
+4. Quantificational inconsistency is established by teh chance construction of a truth-functionally inconsistent conjunction via Quine's main method (a sequence of transformations which takes a conjunction to endlessly longer ones).
+
+5. It is important to distinguish between these grammatical definitions and the methods of proof that are so often confused with such grammatical methods in the same way that the predicate of implication is confused with the grammatical particle of conditional compound sentences 'only if'.
+
+6. Why analyze validity into grammar and denotation?
+Why not stick with proof, or with the related definition relative to special grammatical constructions as above?
+
+7. To show that validity is as transcendent (or immanent) as grammar and denotation are.
+
+8. The above line of thinking is what led me to ask: does the purported predicate 'grammatical' fall prey to Grelling's paradox?
+
+9. The answer is no, but perhaps only with respect to one analysis of 'is grammatical' as defined from the predicate of lexicality and the predicates of grammatical construction e.g. 'is lexical', 'conjoins', 'negates', 'existential 
+
 ## 2025 0802 1540
 
 1. This note records my work on solving a problem of substitution: how to deal with notation such as '\-\-\-x\-\-\-' and 'Fx' where 'F' is a schematic predicate letter and 'x' is a pronoun (otherwise called a variable).
@@ -144,7 +165,7 @@ Let me look at its etymology.
 
 17. Spelling and concatenating and listing are close to quotations.
 
-18. The etymology of 'spell' <>
+18. The etymology of 'spell' <https://www.etymonline.com/word/spell>
     > spell(v.1) early 14c., spellen, "read letter by letter, write or say the letters of;" c. 1400, "form words by means of letters," said in most etymology sources to be from Anglo-French espeller, Old French espelir "to mean, signify; explain, interpret," also "spell out letters, pronounce, recite."
     > 
     > This French word is from Frankish *spellon "to tell" or some other Germanic source, from Proto-Germanic *spellam (source also of Dutch spellen, Old High German spellon "to tell," Old Norse spjalla, Gothic spillon "to talk, tell").
