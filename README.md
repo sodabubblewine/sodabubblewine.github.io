@@ -2,7 +2,7 @@ My life and work are reported, changed, and governed by these [notes](#notes), [
 
 # HINTS
 
-### WHAT TO DO
+## WHAT TO DO
 1. Discover, predict, and control changes (in counts, rates, and accelerations)
 2. as selections from variations (on physical, chemical, biological, behavioral, and cultural scales)
 3. by making and maintaining strong practices (mediated by strong people marked by strong principles)
@@ -15,7 +15,7 @@ My life and work are reported, changed, and governed by these [notes](#notes), [
     - behavior (biological, biosocial, social)
     - culture (history, science, technology)).
 
-### HOW TO DO IT
+## HOW TO DO IT
 
 Conclude from contemplation on templates:
 1. Notes link templates to conclusions.
@@ -25,44 +25,57 @@ Conclude from contemplation on templates:
 5. Good memos accelerate change.
 6. Good hints adaptively govern.
 
-### HOW TO WRITE IT WELL 99% OF THE TIME
+## HOW TO WRITE IT WELL 99% OF THE TIME
 
 1. Read "Writing that Works" by Joel Raphaelson and Kenneth Roman.
 2. Read "The Elements of Style" by E. B. White and William Strunk Jr.
 3. Go to 1.
 
-### HOW TO WRITE IT WELL THE OTHER 1% OF THE TIME
+## HOW TO WRITE IT WELL THE OTHER 1% OF THE TIME
 
 Journal your thoughts and feelings.
 
-### HOW TO MAKE IT LOGICAL
+## HOW TO MAKE IT LOGICAL
 
-1. List the nouns, adjectives, and verbs used to talk about it.
+1. List the words used to talk about it.
 2. Define as many from as few as you can.
 3. List true sentences made from those few.
-4. Conclude as many from as few (premises) as you can.
+4. Conclude as many from as few as you can.
 5. Go to 1.
 
-### HOW PREDICATE ABSTRACTS WORK
+## HOW LOGIC WORKS
+
+1. Predicates do or don't denote (are true or false of) where they occur, constructions connect them, and lexicons list atomic ones.
+2. Grammars generate categories from recurrent constructions on lexicons.
+3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+4. Constructions inheret where they denote from their components (Tarski):
+5. recombically, i.e. components of
+    - drops denote the left of the left of with teh right of where and only where (waow) their compound does,
+    - pushes denote the left of with the left of the right of with the right of the right of waow the compound does,
+    - hems denote the left of with the right of the left of with the right of waow the compound does;
+6. or alethically, i.e.
+    - each component of existential joint denials doesn't denote the left of with some same item with the right of waow the compound does.
+
+## HOW PREDICATE ABSTRACTS WORK
 
 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
 2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
-### HOW INDISCERNIBILITY WORKS
+## HOW INDISCERNIBILITY WORKS
 
 1. For the predicate letter 'F' write '=F' for '{xy: each {u..v: Fxu..v if and only if Fyu..v, .., and Fu..vx if and only if Fu..vy}'.
 2. Write '=(..F,G)', or just '=', for '{xy: (=(..F))xy and (=G)xy}'.
 3. Identity and indiscernibility (with respect to the lexicon of predicates of a standard theory) are coextensive.
 
-### HOW TO FIND A GOOD PSYCHOLOGIST
+## HOW TO FIND A GOOD PSYCHOLOGIST
 
 1. **Never** settle for a bad one.
 2. Good ones are exceptional people who happen to be psychologists.
 3. They are cultural liasons.
 
-### OTHERS
+## OTHERS
 
 - The conditional connective 'only if' is a grammatical partical and 'implies' is a predicate.
 
@@ -87,6 +100,59 @@ Journal your thoughts and feelings.
 - FORTH
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
+
+## 2025 0805 1421
+
+1. I finally succeeded in assembling the meat of predicate functor logic independent of truth functional and quantificational logic.
+
+2. Once upon a time, a woman taught a man to speak: she held up an apple, said 'red', he held it up, said 'red', she smiled, he held up another, said 'red', she frowned, held it up, said 'green', etc.
+
+3. Predicates do or don't denote (are true or false of) where they occur, constructions connect them, and lexicons list atomic ones.
+
+4. Grammars generate categories from recurrent constructions on lexicons.
+
+5. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+
+6. Constructions inheret where they denote from their components (Tarski): recombically, i.e.
+    1. components of drops denote teh left of the left of with teh right of where and only where (waow) their compound does,
+    2. components of pushes denote the left of with the left of the right of with the right of the right of waow the compound does,
+    3. components of hems denote the left of with the right of the left of with the right of waow the compound does;
+
+    or alethically, i.e.
+    4. each component of existential joint denials doesn't denote the left of with some same item with teh right of waow the compound does.
+
+7. This will now be added to a hint.
+
+8. I'm editing the hint "how to make it logical"
+    > HOW TO MAKE IT LOGICAL
+    > 1. List the nouns, adjectives, and verbs used to talk about it.
+    > 2. Define as many from as few as you can.
+    > 3. List true sentences made from those few.
+    > 4. Conclude as many from as few as you can.
+    > 5. Go to 1.
+
+9. It now reads
+    > HOW TO MAKE IT LOGICAL
+    > 
+    > 1. List the words used to talk about it.
+    > 2. Define as many from as few as you can.
+    > 3. List true sentences made from those few.
+    > 4. Conclude as many from as few as you can.
+    > 5. Go to 1.
+
+10. I have added this hint
+    > HOW LOGIC WORKS
+    > 
+    > 1. Predicates do or don't denote (are true or false of) where they occur, constructions connect them, and lexicons list atomic ones.
+    > 2. Grammars generate categories from recurrent constructions on lexicons.
+    > 3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+    > 4. Constructions inheret where they denote from their components (Tarski):
+    > 5. recombically, i.e. components of
+    >    - drops denote teh left of the left of with teh right of where and only where (waow) their compound does,
+    >    - pushes denote the left of with the left of the right of with the right of the right of waow the compound does,
+    >    - hems denote the left of with the right of the left of with the right of waow the compound does;
+    > 6. or alethically, i.e.
+    >    - each component of existential joint denials doesn't denote the left of with some same item with the right of waow the compound does.
 
 ## 2025 0804 1726
 
