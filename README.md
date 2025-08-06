@@ -101,6 +101,64 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0806 1439
+
+1. A suite of abbreviations slowly factors out the methods of logic which follow from
+    > HOW LOGIC WORKS
+    > 
+    > 1. Predicates do or don't denote (are true or false of) where they occur, constructions connect them, and lexicons list atomic ones.
+    > 2. Grammars generate categories from recurrent constructions on lexicons.
+    > 3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+    > 4. Constructions inheret where they denote from their components (Tarski):
+    > 5. recombically, i.e. components of
+    >    - drops denote teh left of the left of with teh right of where and only where (waow) their compound does,
+    >    - pushes denote the left of with the left of the right of with the right of the right of waow the compound does,
+    >    - hems denote the left of with the right of the left of with the right of waow the compound does;
+    > 6. or alethically, i.e.
+    >    - each component of existential joint denials doesn't denote the left of with some same item with the right of waow the compound does.
+
+2. The recombic abbreviations are
+    1. overs are hems of pushes of their component,
+    2. over2s are overs of overse of theirs,
+    3. ohems are overse of hems of theirs,
+    4. dushes are drops of pushes of theirs,
+    5. dupes are ohems of dushes of theirs,
+    6. drop2s are drops of drops of theirs,
+    7. pops are ohems of drops of theirs,
+    8. nips are hems of dushes of theirs,
+    9. hips are hems of nips of theirs,
+    10. hip2s are hips of hips of theirs,
+    11. swaps are hips of pushes of theirs,
+    12. push2s are pushes of pushes of theirs,
+    13. tors are hip2s of push2s of theirs, and 
+    14. rotes are tors of tors of theirs.
+
+3. The truth-functional, better 'denotative-functional', abbreviations are
+    1. joint denials are existential joint denials of drops of their (two) components,
+    2. negations are joint denials of their component with itself,
+    3. alternations are negations of joint denials of their (two) components,
+    4. converse conditionals are alternations of their left component (consequent) with the negation of their right component (antecedent),
+    5. complementary converse conditionals are negations of the converse conditional of their components,
+    6. complementary conditionals are complementary converse conditionals of their right component with their left component,
+    7. conditionals are negations of complementary conditionals of their components,
+    8. alternative denials are conditionals of their left component with the negation of their right component,
+    9. conjunctions are negations of alternative denials of their components,
+    10. exclusive alternations are conjunctions of alternative denials of their components with alternations of their components,
+    10. biconditionals are negations of exclusive alternations of their (two) components, and 
+    11. sequents are conditionals of the conjunction of its antecedent components with the alternation of its consequent components.
+
+5. The quantificational abbreviations are
+    1. universal croppings are negations of existential joint denials of their component with itself, and
+    2. existential croppings are negations of universal croppings of negations of their component.
+
+6. I am confronted with the problem of closed quantifications.
+In the past I have made it clear that the truth functional, or what is better called the denotative functional, connectives combine with a predicate functor of existential closure, as explained by Quine in "Methods of Logic 4th edition" chapter 18 titled "Boolean Schemata".
+
+7. The steps in this slower development are closer to each of the problems which have come up in the history of mathematics and its logic e.g. mereolgical problems, collections, assemblies, wholes, parts, individuation.
+
+8. Do not forget S2S and Rabin's 1969 "Decidability of Second-order Theories and Automata on infinite trees".
+
+ 
 ## 2025 0805 1421
 
 1. I finally succeeded in assembling the meat of predicate functor logic independent of truth functional and quantificational logic.
