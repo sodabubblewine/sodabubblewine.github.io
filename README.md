@@ -49,12 +49,14 @@ Journal your thoughts and feelings.
 2. Grammars generate categories from recurrent constructions on lexicons.
 3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
 4. Constructions inheret where they denote from their components (Tarski):
-5. recombically, i.e. components of
-    - drops denote the left of the left of with teh right of where and only where (waow) their compound does,
-    - pushes denote the left of with the left of the right of with the right of the right of waow the compound does,
-    - hems denote the left of with the right of the left of with the right of waow the compound does;
-6. or alethically, i.e.
-    - each component of existential joint denials doesn't denote the left of with some same item with the right of waow the compound does.
+5. alethically, i.e.
+    1. joint denials denote where and only where (waow) each of their components don't,
+    2. existential closures denote waow there is some where denoted by their component, and
+    3. components of existential croppings denote the left of waow their compound denotes with some item with the right of the same whereabouts, and
+6. recombically, i.e.
+    4. drops denote the left of the left of waow the compound does with the right of the same whereabouts,
+    5. pushes denote the left of waow the compound does, with the left of the right of the same whereabouts, with the right of the right of the same whereabouts, and
+    6. hems denote the left of waow the compound does, with the right of the left of the left of the same whereabouts with the right of the same whereabouts.
 
 ## HOW PREDICATE ABSTRACTS WORK
 
@@ -100,6 +102,59 @@ Journal your thoughts and feelings.
 - FORTH
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
+
+## 2025 0807 1405
+
+1. Predicates do or don't denote (are true or false of) where they occur, constructions connect them, and lexicons list atomic ones.
+2. Grammars generate categories from recurrent constructions on lexicons.
+3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+4. Constructions inheret where they denote from their components (Tarski):
+5. alethically, i.e.
+    1. joint denials denote where and only where (waow) each of their components don't,
+    2. existential closures denote waow there is some where denoted by their component, and
+    3. components of existential croppings denote the left of waow their compound denotes with some item with the right of the same whereabouts, and
+6. recombically, i.e.
+    4. drops denote the left of the left of waow the compound does with the right of the same whereabouts,
+    5. pushes denote the left of waow the compound does, with the left of the right of the same whereabouts, with the right of the right of the same whereabouts, and
+    6. hems denote the left of waow the compound does, with the right of the left of the left of the same whereabouts with the right of the same whereabouts.
+
+7. The truth-functional, better 'denotative-functional', abbreviations are
+    1. joint denials are existential joint denials of drops of their (two) components,
+    2. negations are joint denials of their component with itself,
+    3. alternations are negations of joint denials of their (two) components,
+    4. converse conditionals are alternations of their left component (consequent) with the negation of their right component (antecedent),
+    5. complementary converse conditionals are negations of the converse conditional of their components,
+    6. complementary conditionals are complementary converse conditionals of their right component with their left component,
+    7. conditionals are negations of complementary conditionals of their components,
+    8. alternative denials are conditionals of their left component with the negation of their right component,
+    9. conjunctions are negations of alternative denials of their components,
+    10. exclusive alternations are conjunctions of alternative denials of their components with alternations of their components,
+    10. biconditionals are negations of exclusive alternations of their (two) components, and 
+    11. sequents are conditionals of the conjunction of its antecedent components with the alternation of its consequent components.
+
+8. The Boolean abbreviation is
+    - universal closures are negations of existential closures of negations of their component.
+
+9. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations of their component.
+
+10. The recombic abbreviations are
+    1. overs are pushes of hems of their component,
+    2. over2s are overs of overs of theirs,
+    3. ohems are hems of overs of theirs,
+    4. dushes are pushes of drops of theirs,
+    5. dupes are dushes of ohems of theirs,
+    6. drop2s are drops of drops of theirs,
+    7. pops are drops of ohems of theirs,
+    8. nips are dushes of hems of theirs,
+    9. digs are nips of hems of theirs,
+    10. dig2s are digs of digs of theirs,
+    11. burys are pushes of digs of theirs,
+    12. push2s are pushes of pushes of theirs,
+    13. 2burys are push2s of dig2s of theirs, and
+    14. 2unburys are 2burys of 2burys of theirs.
+
+11. I've updated [#how-logic-works](#how-logic-works) in accordance with the updates here.
 
 ## 2025 0806 2002
 
