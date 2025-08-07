@@ -101,6 +101,25 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0806 2002
+
+1. The problem of closures and croppings has not yet been effectively resolved.
+
+2. Existential closures denote where and only where (waow) there is somewhere denoted by their component.
+
+3. Traditionally, closures are defined from croppings as iterated croppings which "close" the shape of their component predicate.
+Such closed predicates are most often called closed sentences, but in predicate (functor) logic there is no longer a principle role for sentences (be they open or closed) and we are left speaking of predicates alone rather than dealing with the trouble of the grammatical construction called predication or the grammatical category of variables (thus there is also no confusion over the problem of a finite lexicon which contains a finite list of variables and constructs the remaining category of variables by way of, e.g., accentuation).
+
+3. Components of existential croppings denote the left of with some item with the right of waow the compound does.
+
+4. Note, the definition of croppings involves the complex singular descriptions 'the right of' and 'the left of' which are ultimately compounded, in 3, with 'where' as in 'the left of where and only where the compound does with some item with the right of the same whereabouts'.
+
+5. An alternative to 3 is this: components of existential croppings denote the of waow the compound denotes with some item with the right of the same whereabouts.
+
+6. Further alternatives may rely on the introduction of 'predicate' as that which does or doesn't denote where it occurs by giving the definition of 'predicate' rather as that which does or doesn't denote a given occasion.
+
+7. The introduction of occasions is misleading though, as the problem of individuation is bound up with spatiotemporal whereabouts.
+
 ## 2025 0806 1439
 
 1. A suite of abbreviations slowly factors out the methods of logic which follow from
