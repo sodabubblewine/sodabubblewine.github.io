@@ -87,6 +87,7 @@ Journal your thoughts and feelings.
 # NOTES
 
 ## TIE UP
+(this has fallen out of sync with all that I'm doing, and I may have to just drop this section because I skip right over it almost every time I have a look at recent notes)
 
 - Predicate (Functor) Logic Memo
     - [2025 0608 1515](#2025-0608-1515)
@@ -102,6 +103,61 @@ Journal your thoughts and feelings.
 - FORTH
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
+
+## 2025 0807 2259
+
+1. I have the great delight of finally running into Carnap's 1958 "Introduction to Symbolic Logic and its Applications" (ISLA)!
+    - <https://archive.org/details/rudolf-carnap-introduction-to-symbolic-logic-and-its-applications>
+
+2. So much of what Carnap accomplished with language C of ISLA falls squarely under the more restricted methods of predicate functor logic as given, e.g., in my last note.
+
+3. It is extremely exciting to find someone else who went to all the trouble to collate the many results that bring together the methods of truth-functional, quantificational, predicate abstraction, and predicate functor logic.
+
+4. What I am beginning to see with greater clarity is that the methods pointed up, e.g., in my last note bring together the methods of relation algebras uncovered by Tarski and the methods of logic uncovered by Carnap, through the careful methods of logic collated by Quine.
+
+5. So much of Quine follows Carnap that it is tempting to point past Quine to Carnap and leave it there: this would be a huge mistake.
+
+6. Carnap hastily generalized, as did Church and his followers, the power of lambda abstraction far beyond anything permitted by the methods of logic: such full blown assemblies of set theoretic powers continue to go unntoiced by modern mathematicians.
+
+7. The method of predicate abstraction as the logical import of the grammarians relative clause clears up the problems caused by taking lambda abstraction as something that may be carelessly carried over beyond a given theory of lambda abstraction and application.
+
+8. For all the sensitivity that Carnap had to the hierarchy of languages, and for all that he promoted with his existentional thesis, he was too quick to take his notation for a ride.
+
+9. I have just this day come to see that perhaps the primary importance of the methods of logic, e.g. those started in the last note, is that notation is entirely avoided.
+
+10. There is a cost and there is a benefit; the cost is that nonnative speakers of the language of predicate logic I've introduced are unlikely to follow the later parts without first going over the earlier parts, the benefit is that no single notation is going to mislead me, or any other reader, into seeing metaphors that are not there.
+
+11. The classic example of a miscarriage of metaphor in the methods of logic is the introduction of quantifiers which purport to bind predicate letters in a schema of predicate logic: this is simply incoherent and reveals that those inclined to bind predicate letters have yet to master the schematic methods so clearly and exactly set out by von Neumann's 1927 "Zur Hilbertschen Beweistheorie".
+
+12. As I reach further out from these new beginnings I hope to take a closer look at Ernst Schröder's work.
+
+13. Schröder, E., 1890–1905. Vorlesungen über die Algebra der Logik, 3 vols. Leipzig: B.G. Teubner. Reprints: 1966, Chelsea; 2000, Thoemmes Press.
+    - Ernst Schröder 1890 Vorlesungen über die Algebra der Logik (Exakte Logik), Volume 1,
+        - <http://gdz.sub.uni-goettingen.de/dms/load/img/?PPN=PPN717192873>
+    - Ernst Schröder 1891 Vorlesungen über die Algebra der Logik (Exakte Logik), Volume 2, Abt. 1
+        - <http://gdz.sub.uni-goettingen.de/dms/load/img/?PPN=PPN717193640>
+    - Ernst Schröder 1905 Vorlesungen über die Algebra der Logik (Exakte Logik), Volume 2, Abt. 2
+        - <http://gdz.sub.uni-goettingen.de/dms/load/img/?PPN=PPN717194256>
+    - Ernst Schröder 1905 Algebra und Logik der Relative, der Vorlesungen über die Algebra der Logik 3, Volume 3, Abt. 1
+        - <http://gdz.sub.uni-goettingen.de/dms/load/img/?PPN=PPN717195317>
+
+14. I have read that much of Russell and Whitehead's work in Principia Mathematica was drawn from Schröder's work and would like to see that for myself.
+
+15. It remains a great sadness that the works of those like Hilbert and Schröder are still not yet translated into English.
+It is quite a strange thing to live in a world which professes its advanced methods without having any of the evidence one would reasonably expect from such purported advancements.
+
+16. Another text to triangulate with is Tarski's "On the Calculus of Relations"
+    - <https://www.cl.cam.ac.uk/teaching//1415/Databases/Tarski_1941.pdf>
+
+17.  Vaughn Pratt The Origins of the Calculus of Relations suggests Peirce
+    > "Collected Papers of Charles Sanders Peirce edited by Hartshorne
+and Weiss and published by Harvard University Press
+in the 1930’"
+
+18. Additionally, Steven Givant's 2006 "The Calculus of Relations as a Foundation for Mathematics"
+    - <https://sci-hub.st/10.1007/s10817-006-9062-x>
+
+19. I've read some of Schröder 1905 Volume 3 before, but it fits together with this emerging story better than it once did (I peeked at it and saw a host of visulaizations of relations that I have seen before).
 
 ## 2025 0807 1405
 
@@ -119,16 +175,15 @@ Journal your thoughts and feelings.
     6. hems denote the left of waow the compound does, with the right of the left of the left of the same whereabouts with the right of the same whereabouts.
 
 7. The truth-functional, better 'denotative-functional', abbreviations are
-    1. joint denials are existential joint denials of drops of their (two) components,
-    2. negations are joint denials of their component with itself,
-    3. alternations are negations of joint denials of their (two) components,
-    4. converse conditionals are alternations of their left component (consequent) with the negation of their right component (antecedent),
-    5. complementary converse conditionals are negations of the converse conditional of their components,
-    6. complementary conditionals are complementary converse conditionals of their right component with their left component,
-    7. conditionals are negations of complementary conditionals of their components,
-    8. alternative denials are conditionals of their left component with the negation of their right component,
-    9. conjunctions are negations of alternative denials of their components,
-    10. exclusive alternations are conjunctions of alternative denials of their components with alternations of their components,
+    1. negations are joint denials of their component with itself,
+    2. alternations are negations of joint denials of their (two) components,
+    3. converse conditionals are alternations of their left component (consequent) with the negation of their right component (antecedent),
+    4. complementary converse conditionals are negations of the converse conditional of their components,
+    5. complementary conditionals are complementary converse conditionals of their right component with their left component,
+    6. conditionals are negations of complementary conditionals of their components,
+    7. alternative denials are conditionals of their left component with the negation of their right component,
+    8. conjunctions are negations of alternative denials of their components,
+    9. exclusive alternations are conjunctions of alternative denials of their components with alternations of their components,
     10. biconditionals are negations of exclusive alternations of their (two) components, and 
     11. sequents are conditionals of the conjunction of its antecedent components with the alternation of its consequent components.
 
