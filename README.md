@@ -104,6 +104,87 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0808 2217
+
+1. Going over Carnap's logical methods in his language C.
+
+2. Definition D28-1 of section 28 "Compound Predicate Expressions" occurs on page 107 of "Introduction to Symbolic Logic and its Applications" (ISLA):
+    > To legitimatize this use of connectives in building up compound predicate expressions we introduce the following definitions for predicate expressions of the simplest type. Analogous definitions are understood to hold for each other type of predicate variable.
+    >
+    > D28-1.
+    > 1. (not F)x if and only if not (Fx)
+    > 2. (F or G)x if and only if (Fx or Gx)
+    > 3. (F and G)x if and only if (Fx and Gx)
+    > 4. (F only if G)x if and only if (Fx only if Gx)
+    > 5. (F if and only if G)x if and only if (Fx if and only if Gx).
+
+3. As Carnap has set up his language, such "open sentences" as those in D28-1 are read as if they were ammended by a universal closure.
+
+4. The expedients of D28-1 are employed to great effect by Quine in "Methods of Logic 4th edition" in the chapter named "Boolean Schemata".
+Quine adds all that comes with distinguishing between schematisms and symbolisms.
+
+5. Carnap introduces similar notational expedients in his "Logical Syntax of Language".
+I recall reading it and know that it is less than half way through the book, but I do not recall the actual page or chapter.
+
+6. I have not ventured into Carnap's methods of typing, but give the following selection from two paragraphs prior to that containing D28-1 and on page 106:
+    > "The new compounds are as follows: '(P or Q)a' is counted as an abbreviation of the sentences 'Pa or Qa', and 'P or Q' treated as a predicate expression of the same type as 'P', viz. a one-place predicate expression of the first level and of type (0);"
+
+7. Typing, as far as I am concerned, is a matter of shaping up predicates in the same way that the J programming language shapes up arrays and extends operations with its clever little rank operation.
+
+8. Note, Carnap's book appeared before Gerhard Gentzen's introduction of the upside down 'A' as the mark of universal quantification from his works in 1935 'Untersuchungen über das logische Schließen', in English 'Investigations into Logical Deduction I and II", had spread.
+I do not use anything like such notation and have gone ahead and translated the obscure marks into their pidgin English.
+
+9. Carnap introduces universal closures (as they are now called) rather than existental closures (as I tend to start with when presenting the Boolean part of logic following the pattern of Quine, but with particular emphasis on the proper distinction between existential closures and existential croppings which is of great significance for those who, like Russell in "An Inquiry into Meaning and Truth" and "Human Knowledge: Its Scope and Limits", rightfully struggle with the problems of individuation, mereology, and a few other phrases that I have fogotten but which are mixed up with this ancient problem of forests and trees):
+    > "28b. Universality. A property of individuals is called universal provided every individual has this property. Correspondingly, in the terminology of classes: a class of individuals is universal provided every individual belongs to th is class. Generally, a class of any type is said to be universal if each entity of that type belongs to this class. Our symbol for universality is 'U'; and 'the class (or property) P is universal' is rendered 'U(P)'. Since 'U(P)' is clearly synonymous with '(x)Px', the following definition is natural:
+    > 
+    > D28-2. U(F) if and only if (x)Fx.
+    > 
+    > Analogous definitions are understood to hold for predicates of any other type, be they one-place or many-place. E.g. '(x)(y)Rxy' can be abbreviated 'U(R)'."
+
+10. The last sentence of the quote in 9 indicates that what is there defined as 'universal' is what we now call 'universal closure'.
+
+11. The quote in 9 is also presented as part of the problem with the frequent attempt to mix schematism with symbolism as if predicates name their extension or attribute/property.
+
+## 2025 0808 1614
+
+1. Carnap's methods in "Introduction to Symbolic Logic and its Applications" (ISLA) are the closest thing to the elaborate evolution of predicate functor logic that I've had in my written notes for some time.
+Today I'll be going through the parts that are relevant to me.
+
+2. I shall be receiving a print copy of ISLA over the next few days (perhaps even tomorrow): it is much easier for me to read a book than it is for me to read a screen, especially when it comes to cross referencing entries in mathematical or scientific texts.
+
+3. Carnap introduces "Compound Predicate Expressiosn" in section 28 under the chapter "The Extended Language C".
+
+4. Carnap does not distinguish between schematic methods, with its dummy sentence and predicate letters, from symbolic methods, with its designating sentence and predicate names.
+The presupposition that predicates are names of properties or extensions is, as Quine repeatedly emphasized and which was first made crystal clear through von Neuman's schematic methods in 1927 "Zur Hilbertschen Beweistheorie", is resolved by presenting a logical theory of properties or extensions which purport to carry over the logical work of predicates to the items of their respective theories.
+
+5. There is a historic problem that has persisted since the earliest days of philosophical record: attributing properties to things.
+
+6. Sadly, attributing a property to a thing has been conflated with predicating a predicate of it.
+Properties are sometimes even defined as that which can be predicated of an object.
+
+7. It helps to distinguish between 'attributing attributes' and 'predicating predicates' and 'classing classes'.
+
+8. Historically, all three of these methods have been dealt with as if they were one and the same or as if passage from one to the other goes without saying.
+
+9. Classes are extensions of predicates, each item classed to a class is so clased because its name predicated to the predicate of which the class is its extension is true.
+
+10. In the past, it did not make sense, e.g. to Bertrand Russell, that the integral phrases that make up a predicate and a subject of a sentence might carry the load once carried by properties and concepts, better, attributes and classes.
+
+11. There was the problem of meaning: how could a sentence have ever appeared without the stuff which the sentence purports to be about?
+
+12. Such stuff was to be attributes in Russell and Whitehead's "Principia Mathematica" and from there, the classes were constructed through what I am here calling 'predicates' (following John Stuart Mill through Quine, as integral words or phrases) and names (or what are often called 'singular terms').
+
+13. For Russell and Whitehead, what I call 'predicates' were 'propositional functions'.
+
+14. Propositions are the attributes (or properties) of logic, according to those like Russell: they are what are true or false and sentences simply express this propositional property.
+
+15. It was Frege who pointed the way through predicates (as I take them) from attributes to classes: predicates, as the notation of Frege's Begriffsschrift, were part of the logic of truth-functions and quantifications and hence subject to the extensionality of such a logic, and thus Russell could round up the attributes (which he thought he knew better than he knew predicates) through propositions, as attributes of attributing attributes of things, and propositional functions, as functions which when applied to things attributes an atribute of it i.e. metaphorically takes a thing and returns an attribute (in this case a proposition).
+
+16. Looking back it can be hard to see how this path was preferrable e.g. Russel's own paradox prohibits such free wheeling shifts between attributes, predicates, and classes.
+
+17. All of this confusion remains to this day, and is present in Carnap's ISLA.
+
+
 ## 2025 0807 2259
 
 1. I have the great delight of finally running into Carnap's 1958 "Introduction to Symbolic Logic and its Applications" (ISLA)!
