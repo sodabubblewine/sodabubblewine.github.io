@@ -48,7 +48,7 @@ Journal your thoughts and feelings.
 1. Predicates do or don't denote (are true or false of) where they occur, constructions connect them, and lexicons list atomic ones.
 2. Grammars generate categories from recurrent constructions on lexicons.
 3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
-4. Constructions inheret where they denote from their components (Tarski):
+4. Constructions inherit where they denote from their components (Tarski):
 5. alethically, i.e.
     1. joint denials denote where and only where (waow) each of their components don't,
     2. existential closures denote waow there is some where denoted by their component, and
@@ -103,6 +103,73 @@ Journal your thoughts and feelings.
 - FORTH
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
+
+## 2025 0809 1606
+
+1. Happily, I received my copy of Rudolf Carnap's 1958 "Introduction to Symbolic Logic and its Applications".
+
+2. I shall write up my notes on it here as it occurs to me.
+
+3. Importantly, the book can be bought from Dover and is hence not nearly as expensive as other technical books of this caliber are.
+
+4. As with all of Carnap's technical writings, there are ample divisions of his writing from parts all the way down to subsections.
+
+5. The book begins with Part One "System of Symbolic Logic" Chapter A "The Simple Language A" Section One "The Problem of Symbolic Logic" subsection 1a "The purpose of symbolic language".
+    > "Symbolic logic (also called mathematical logic or logistic) is the modern form of logic developed in the last hundred years." page 1.
+
+6. It is in this first sentence that there is already a hint at where Carnap goes wrong and where he goes right.
+He goes wrong in that he does not distinguish between the methods of logic and those of mathematical logic (or what he also calls logistic).
+He goes write in that he presents much of what logic has contributed to mathematics over the hundred years prior to his publication.
+
+7. The nail in the coffin is the third sentence:
+    > "Such a system is not a theory (i.e. a system of assertions about objects), but a language (i.e. a system of signs and of rules for their use)."
+
+8. It is interesting that he says this even though he directly references Quine's "Mathematical Logic" in the sources provided.
+There, Quine goes out of his way in the last chapter to present his theory of protosyntax and to explain the ways in which it comes to inclusively cover the methods that so often fly under the flag of 'formal' or 'finite' or, perhaps more restrictively, 'constructive'.
+
+9. That is, Quine shows that, in fact, formal languages are as much theories as geometries or algebras.
+
+10. Any doubts about where Carnap is likely to go wrong are further dashed by the next sentence:
+    > "We will so construct this symbolic language that into it can be translated the sentences of any given theory about any objects whatever, provided only that some signs of the language have received determinate interpretations such that the signs serve to designate the basic concepts of the theory in question. So long as we remain in the domain of pure logic (i.e. so long as we are concerned with building this language, and not with its application and interpretation respecting a given theory), the signs of our language remain uninterpreted. Strictly speaking, what we construct is not a language but a schema or skeleton of a language: out of this schema we can produce at need a proper language (conceived as an instrument of communication) by interpretation of certain signs."
+
+11. The use of 'symbols', 'signs', and, especially, 'designates' is the end of the schematic methods of logic: logic is not about anything in particular and its schematic letters no more symbolize, signal, or designate things than do our native sentences mean their meaning, inform their information, or propose their proposition.
+
+12. Theories of meaning, informing, and proposing, along with theories of attributing and classing are either logical or not, and it is those methods that make up the logic of a theory which are properly dealt with in the two step process of schematics introduced by von Neumann in 1927 “Zur Hilbertschen Beweistheorie”.
+Though, there he uses "Zeichen" whose PIE root is *deik-
+    > <https://www.etymonline.com/word/*deik->
+    >
+    > *deik-
+    > 
+    > Proto-Indo-European root meaning "to show," also "pronounce solemnly," "also in derivatives referring to the directing of words or objects" [Watkins].
+    >
+    > It might form all or part of: abdicate; abdication; addict; adjudge; apodictic; avenge; benediction; betoken; condition; contradict; contradiction; dedicate; deictic; deixis; dictate; diction; dictionary; dictum; digit; disk; ditto; ditty; edict; Eurydice; index; indicate; indication; indict; indiction; indictive; indite; interdict; judge; judicial; juridical; jurisdiction; malediction; malison; paradigm; policy (n.2) "written insurance agreement;" preach; predicament; predicate; predict; prejudice; revenge; soi-disant; syndic; teach; tetchy; theodicy; toe; token; valediction; vendetta; verdict; veridical; vindicate; vindication; voir dire.
+    > 
+    > It might also be the source of: Sanskrit dic- "point out, show;" Greek deiknynai "to show, to prove," dikē "custom, usage;" Latin dicere "speak, tell, say," digitus "finger," Old High German zeigon, German zeigen "to show," Old English teon "to accuse," tæcan "to teach."
+
+13. 'Zeichen' can be read as 'sign', 'symbol', 'token', 'mark', or even 'character'.
+It is the last reading 'character' that comes out in schematic methods as 'letters', and all that the marks mark, signs signal, or symbols symbolize is recurrence of place in quotation upon which the operation of substitution (as given by von Neumann) is to be 'executed'.
+The german is 'ausführen' as in 'einen Plan ausführen' ('to carry out a plan') or 'ein Programm ausführen' ('to execute a program').
+
+14. No matter what I may say, the second paragraph makes clear the problem with Carnap's approach by stating his approach clearly and exactly:
+    > "In the present Chapter A, the first of three chapters comprising Part One, we describe a simple symbolic language A containing the following sorts of signs (to be explained later): sentential constants and variables, individual constants and variables, predicate constants and variables of various levels and types, functor constants and variables, sentential connectives, and quantifiers." page 1.
+
+15. Predicate letters in truth function and quantification schema are neither constants nor variables.
+Variables are pronouns (perhaps bound as in a relative clause) and they occur as much in schema as they do in instances of the same.
+Not even von Neumann made this distinction, and many are prepared to use a new set of letter forms to speak of 'variable letters' as dummy variables!
+
+16. Free variables can even come to play the part of names or constants or, best, singular terms, but in the schematic method, they are at best dummy singular terms, and can perhaps better be called 'pronoun letters' if we follow the dummy variable path, or, perhaps better, pronouns which no more dangle than proper nouns do to those inadept at a language.
+
+17. All of this is to say that to take predicate letters as variables is to misunderstand the power of schematic methods and to mix theory with logic.
+
+18. With these warnings in mind, a delightful distinction characteristic of Carnap's sharp wit, occurs on page 2:
+    > "In the course of constructing our symbolic language systems, it frequently happens that a new precisely-defined concept is introduced in place of one which is familiar but insufficiently precise. Such a new concept is called an *explication* of the old one, and its introduction an *explication*. (The concept to be explicated is sometimes called the *explicandum*.) ... (FOr a more complete exposition of the methods of explication and the requirements an adequate explicatum must meet, see Carnap (Probability), Chapter I.)."
+
+19. So it is that Carnap has put yet another book on my reading radar.
+
+20. The question of 'explanation' and 'explication' is one dealt with by Quine, e.g. in "From Stimulus to Science" (FSTS), as
+    > "The reduction of the mental to the physical, or indeed of arithmetic to set theory, can be characterized in either of two ways: as *explaining* or as explaining *away*. There is no difference, but the first phrasing has a gentler ring. To have *rupidiated* the life of the mind seems harsher than to have *explained* it in physical terms.
+    >
+    > In some domains the harsher phrasing is better, notably in the various ways of defining natural numbers in set theory. For Frege, twelve was (nearly enough) the class of all dozens; for von Neumann it was the class fo the first twelve natural numbers, from zero through eleven. It cannot be both. We can resolve the dilemma by not identifying twelve with either. We can do without the natural numbers; their work can be done by Frege's classes or, equally, by von Neumann's. We proceed to use one or the other set of surrogates, or some thrid, and conveniently callt eh surrogates by the newly vacated numerical names. We have solved the puzzle by speaking of *alternative eliminations* rather than *conflicting explanations*. But there is no real difference between the two characterizations." pg. 86-87 Quine "From Stimulus to Science".
 
 ## 2025 0808 2217
 
