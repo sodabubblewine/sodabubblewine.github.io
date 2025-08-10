@@ -104,6 +104,73 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0810 1522
+More work on logic memo.
+
+1. Predicates do or don't denote (are true or false of) where they occur, constructions compound them with connectives, and lexicons itemize atomic ones.
+
+2. Grammars generate categories from recurrent constructions on lexicons.
+
+3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+
+4. Constructions inherit where they denote from their components (Tarski):
+
+5. alethically, i.e.
+    1. joint denials denote where and only where (waow) each of their components don't,
+    2. existential closures denote waow there is some where denoted by their component, and
+    3. components of existential croppings denote the left of waow their compound denotes with some item with the right of the same whereabouts, and
+
+6. recombically, i.e.
+    4. drops denote the left of the left of waow the compound does with the right of the same whereabouts,
+    5. pushes denote the left of waow the compound does, with the left of the right of the same whereabouts, with the right of the right of the same whereabouts, and
+    6. hems denote the left of waow the compound does, with the right of the left of the left of the same whereabouts with the right of the same whereabouts.
+
+7. The truth-functional, better 'denotative-functional', abbreviations are
+    1. negations are joint denials of their component with itself,
+    2. alternations are negations of joint denials of their (two) components,
+    3. converse conditionals are alternations of their left component (consequent) with the negation of their right component (antecedent),
+    4. complementary converse conditionals are negations of the converse conditional of their components,
+    5. complementary conditionals are complementary converse conditionals of their right component with their left component,
+    6. conditionals are negations of complementary conditionals of their components,
+    7. alternative denials are conditionals of their left component with the negation of their right component,
+    8. conjunctions are negations of alternative denials of their components,
+    9. exclusive alternations are conjunctions of alternative denials of their components with alternations of their components,
+    10. biconditionals are negations of exclusive alternations of their (two) components, and 
+    11. sequents are conditionals of the conjunction of its antecedent components with the alternation of its consequent components.
+
+8. The Boolean abbreviation is
+    - universal closures are negations of existential closures of negations of their component.
+
+9. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations of their component.
+
+10. The recombic abbreviations are
+    1. overs are pushes of hems of their component,
+    2. over2s are overs of overs of theirs,
+    3. ohems are hems of overs of theirs,
+    4. dushes are pushes of drops of theirs,
+    5. dupes are dushes of ohems of theirs,
+    6. drop2s are drops of drops of theirs,
+    7. pops are drops of ohems of theirs,
+    8. nips are dushes of hems of theirs,
+    9. digs are nips of hems of theirs,
+    10. dig2s are digs of digs of theirs,
+    11. burys are pushes of digs of theirs,
+    12. push2s are pushes of pushes of theirs,
+    13. 2burys are push2s of dig2s of theirs,
+    14. 2unburys are 2burys of 2burys of theirs,
+
+11. The wording for 10 of burrying and unburrying has to be fixed to accomodate the standard way of speaking of iterated constructions by predciate functors e.g. 'bury 6' is short for '6 pushes of 6 digs' where '1 push' is 'push of', '2 pushes of' is 'push of push of', and '1+n pushes' is 'push of n pushes' and so on.
+
+12. Furthering 11, '4 bury 6' is short for 'bury 6 of 3 bury 6' etc.
+
+13. The phrase 'bury 6' can be seen in two ways:
+    1. the top six items on the stack are being put under the seventh item, or
+    2. the seventh item is being unburried.
+
+14. This correspondence has caused me confusion
+    
+
 ## 2025 0809 1606
 
 1. Happily, I received my copy of Rudolf Carnap's 1958 "Introduction to Symbolic Logic and its Applications".
