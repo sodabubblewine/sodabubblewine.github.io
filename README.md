@@ -58,7 +58,7 @@ Journal your thoughts and feelings.
     5. pushes denote the left of waow the compound does, with the left of the right of the same whereabouts, with the right of the right of the same whereabouts, and
     6. hems denote the left of waow the compound does, with the right of the left of the left of the same whereabouts with the right of the same whereabouts.
 
-## ABBREVIATIONS OF LOGIC
+## HOW THE ABBREVIATIONS OF LOGIC WORK
 
 1. The truth-functional, better 'denotative-functional', abbreviations are
     1. negations are joint denials of their component with itself,
