@@ -45,7 +45,7 @@ Journal your thoughts and feelings.
 
 ## HOW LOGIC WORKS
 
-1. Predicates do or don't denote (are true or false of) where they occur, constructions connect them, and lexicons list atomic ones.
+1. Predicates do or don't denote (are true or false of) where they occur, constructions compound them with connectives, and lexicons itemize atomic ones.
 2. Grammars generate categories from recurrent constructions on lexicons.
 3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
 4. Constructions inherit where they denote from their components (Tarski):
@@ -57,6 +57,47 @@ Journal your thoughts and feelings.
     4. drops denote the left of the left of waow the compound does with the right of the same whereabouts,
     5. pushes denote the left of waow the compound does, with the left of the right of the same whereabouts, with the right of the right of the same whereabouts, and
     6. hems denote the left of waow the compound does, with the right of the left of the left of the same whereabouts with the right of the same whereabouts.
+
+## ABBREVIATIONS OF LOGIC
+
+1. The truth-functional, better 'denotative-functional', abbreviations are
+    1. negations are joint denials of their component with itself,
+    2. alternations are negations of joint denials of their (two) components,
+    3. converse conditionals are alternations of their left component (consequent) with the negation of their right component (antecedent),
+    4. complementary converse conditionals are negations of the converse conditional of their components,
+    5. complementary conditionals are complementary converse conditionals of their right component with their left component,
+    6. conditionals are negations of complementary conditionals of their components,
+    7. alternative denials are conditionals of their left component with the negation of their right component,
+    8. conjunctions are negations of alternative denials of their components,
+    9. exclusive alternations are conjunctions of alternative denials of their components with alternations of their components,
+    10. biconditionals are negations of exclusive alternations of their (two) components, and 
+    11. sequents are conditionals of the conjunction of its antecedent components with the alternation of its consequent components.
+
+2. The Boolean abbreviations are
+    1. universal closures are negations of existential closures of negations of their component
+    2. inclusions are universal closures of conditionals of their components,
+    3. converse inclusions are universal closures of converse conditionals of theirs,
+    4. proper inclusions are conjunctions of inclusions of theirs with the negation of their converse inclusion, and
+    5. coextensions are conjunctions of inclusions with their converse inclusion.
+
+4. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations of their component.
+
+5. The recombic abbreviations are
+    1. overs are pushes of hems of their component,
+    2. ohems are hems of overs of theirs,
+    3. dushes are pushes of drops of theirs,
+    4. props are drops of pushes of theirs,
+    5. dupes are dushes of ohems of theirs,
+    6. pops are drops of ohems of theirs,
+    7. nips are dushes of hems of theirs,
+    8. digs are nips of hems of theirs,
+    9. buries are pushes of digs of theirs,
+    10. bury ns are n pushes of n digs of theirs,
+    11. unburies are two buries of theirs, and    
+    12. unbury ns are n bury ns of theirs.
+
+6. An (i,j,k)-resultant is j existential croppings of k bury (j+k)s of the conjunction of k drops of the left component with i props of the right component.
 
 ## HOW PREDICATE ABSTRACTS WORK
 
@@ -103,6 +144,94 @@ Journal your thoughts and feelings.
 - FORTH
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
+
+## 2025 0810 1739
+
+More work on logic memo.
+
+1. Predicates do or don't denote (are true or false of) where they occur, constructions compound them with connectives, and lexicons itemize atomic ones.
+
+2. Grammars generate categories from recurrent constructions on lexicons.
+
+3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+
+4. Constructions inherit where they denote from their components (Tarski):
+
+5. alethically, i.e.
+    1. joint denials denote where and only where (waow) each of their components don't,
+    2. existential closures denote waow there is some where denoted by their component, and
+    3. components of existential croppings denote the left of waow their compound denotes with some item with the right of the same whereabouts, and
+
+6. recombically, i.e.
+    4. drops denote the left of the left of waow the compound does with the right of the same whereabouts,
+    5. pushes denote the left of waow the compound does, with the left of the right of the same whereabouts, with the right of the right of the same whereabouts, and
+    6. hems denote the left of waow the compound does, with the right of the left of the left of the same whereabouts with the right of the same whereabouts.
+
+7. The truth-functional, better 'denotative-functional', abbreviations are
+    1. negations are joint denials of their component with itself,
+    2. alternations are negations of joint denials of their (two) components,
+    3. converse conditionals are alternations of their left component (consequent) with the negation of their right component (antecedent),
+    4. complementary converse conditionals are negations of the converse conditional of their components,
+    5. complementary conditionals are complementary converse conditionals of their right component with their left component,
+    6. conditionals are negations of complementary conditionals of their components,
+    7. alternative denials are conditionals of their left component with the negation of their right component,
+    8. conjunctions are negations of alternative denials of their components,
+    9. exclusive alternations are conjunctions of alternative denials of their components with alternations of their components,
+    10. biconditionals are negations of exclusive alternations of their (two) components, and 
+    11. sequents are conditionals of the conjunction of its antecedent components with the alternation of its consequent components.
+
+8. The Boolean abbreviations are
+    1. universal closures are negations of existential closures of negations of their component
+    2. inclusions are universal closures of conditionals of their components,
+    3. converse inclusions are universal closures of converse conditionals of theirs,
+    4. proper inclusions are conjunctions of inclusions of theirs with the negation of their converse inclusion, and
+    5. coextensions are conjunctions of inclusions with their converse inclusion.
+
+9. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations of their component.
+
+10. The recombic abbreviations are
+    1. overs are pushes of hems of their component,
+    2. ohems are hems of overs of theirs,
+    3. dushes are pushes of drops of theirs,
+    4. props are drops of pushes of theirs,
+    5. dupes are dushes of ohems of theirs,
+    6. pops are drops of ohems of theirs,
+    7. nips are dushes of hems of theirs,
+    8. digs are nips of hems of theirs,
+    9. buries are pushes of digs of theirs,
+    10. bury ns are n pushes of n digs of theirs,
+    11. unburies are two buries of theirs, and    
+    12. unbury ns are n bury ns of theirs.
+
+11. Pushes, pops, dupes, drops, buries, and unburies are recombically complete: any arrangement of any items can be set up from them.
+
+12. An (i,j,k)-resultant is j existential croppings of k bury (j+k)s of the conjunction of k drops of the left component with i props of the right component.
+
+13. An (m,n)-resultant of a pair of components where the right part of the shape of the left component and the left part of the shape of the right component are both k is k existential croppings of the conjunction of n props of k pops of the left component with n bury ks of n drops of the right component.
+
+14. I originally thought that 13 would be simpler to write out than 12, but it is clear that 12 is simpler: this was all but bound to happen because this is precisely the definition which encapsulates the composition of stack operations and notation.
+
+15. Problems to solve next:
+    1. define (m,n)-resultants in terms of (i,j,k)-resultants
+    2. define n iterates in terms of (i,j,k)-resultants
+    3. the rest!
+
+16. I've updated the hint [#how-logic-works](#how-logic-works) in accordance with work in this entry:
+    > HOW LOGIC WORKS
+    > 
+    > 1. Predicates do or don't denote (are true or false of) where they occur, constructions connect them, and lexicons list atomic ones.
+    > 2. Grammars generate categories from recurrent constructions on lexicons.
+    > 3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
+    > 4. Constructions inherit where they denote from their components (Tarski):
+    > 5. alethically, i.e.
+    >     1. joint denials denote where and only where (waow) each of their components don't,
+    >     2. existential closures denote waow there is some where denoted by their component, and
+    >     3. components of existential croppings denote the left of waow their compound denotes with some item with the right of the same whereabouts, and
+    > 6. recombically, i.e.
+    >     4. drops denote the left of the left of waow the compound does with the right of the same whereabouts,
+    >     5. pushes denote the left of waow the compound does, with the left of the right of the same whereabouts, with the right of the right of the same whereabouts, and
+    >     6. hems denote the left of waow the compound does, with the right of the left of the left of the same whereabouts with the right of the same whereabouts.
 
 ## 2025 0810 1522
 More work on logic memo.
