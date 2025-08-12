@@ -206,7 +206,7 @@ There is a lot that can be said in even less space with unfamiliar three letter 
 
 11. A (i,m)-counterclockwise (CCW) turn is m pushes of a bury (i+m) of m pops.
 
-12. Indiscernibility with respect to a predicate with left shape (i+1) and right shape m is i (existential croppings of bury 2s) of m (existential croppings of pops) of the conjunction of each biconditional whose left part is the drop of one of the up to i+m (i,m)-CCW turns with the nip of the same.
+12. Indiscernibility with respect to a predicate with left shape (i+1) and right shape m is i (existential croppings of bury 2s) of m (existential croppings of pops) of the conjunction of each biconditional of the drop of one of the up to i+m (i,m)-CCW turns with the nip of the same.
 
 ## 2025 0810 1739
 
