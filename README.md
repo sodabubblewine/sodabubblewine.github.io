@@ -202,7 +202,7 @@ There is a lot that can be said in even less space with unfamiliar three letter 
 
 9. A (j,k,m)-resultant is j existential croppings of k bury (j+k)s of the conjunction of k drops with m props.
 
-10. The first iterate of a predicate whose left shape is (j*2) is itself and its (n+1)st iterate is the (j,j,0)-resultant of itself with the j nip (j*2) of its n-th iterate.
+10. The first iterate of a predicate whose left shape is (j\*2) is itself and its (n+1)st iterate is the (j,j,0)-resultant of itself with the j nip (j\*2) of its n-th iterate.
 
 11. A (i,m)-counterclockwise (CCW) turn is m pushes of a bury (i+m) of m pops.
 
