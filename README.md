@@ -145,6 +145,69 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0812 1501
+
+The memo and the hint on predicate (functor) logic may soon diverge.
+There is a lot that can be said in even less space with unfamiliar three letter words along with terse sentences that have longer explanations in the appropriate memos.
+
+1. Predicates do or don't denote (are true or false of) where they occur, grammars recursively construct categories with connectives from lexicon, and validities's supplemented lexical substitutions (SLS) denote everywhere (Quine).
+
+2. Constructions inherit where they denote (Tarski): alethically, i.e.
+    1. joint denials denote where and only where (waow) each of their components don't,
+    2. existential closures denote waow there is some where denoted by their component, and
+    3. components of existential croppings denote the left of waow their compound denotes with some item with the right of the same whereabouts, and
+
+    recombically, i.e.
+
+    4. drops denote the left of the left of waow the compound does with the right of the same whereabouts,
+    5. pushes denote the left of waow the compound does, with the left of the right of the same whereabouts, with the right of the right of the same whereabouts, and
+    6. hems denote the left of waow the compound does, with the right of the left of the left of the same whereabouts with the right of the same whereabouts.
+
+5. The truth-functional, better 'denotative-functional', abbreviations are
+    1. negations are self joint denials,
+    2. alternations are negations of joint denials,
+    3. converse conditionals are alternations of their consequent with the negation of their antecedent,
+    4. complementary converse conditionals are negations of converse conditionals,
+    5. complementary conditionals are swapped complementary converse conditionals,
+    6. conditionals are negations of complementary conditionals,
+    7. alternative denials are conditionals with negated consequents,
+    8. conjunctions are negations of alternative denials,
+    9. exclusive alternations are conjunctions of alternative denials with alternations of matching components,
+    10. biconditionals are negations of exclusive alternations, and 
+    11. sequents are conditionals of conjunctions with alternations.
+
+6. The Boolean abbreviations are
+    1. universal closures are negations of existential closures of negations,
+    2. inclusions are universal closures of conditionals,
+    3. converse inclusions are swapped inclusions,
+    4. proper inclusions are conjunctions of inclusions with the negation of  their converse, and
+    5. coextensions are conjunctions of inclusions with their converse.
+
+7. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations.
+
+8. The recombic abbreviations are
+    1. dushes are pushes of drops,
+    2. props are drops of pushes,
+    3. overs are pushes of hems,
+    4. nops are drops of overs,
+    5. oems are hems of overs,
+    6. dupes are dushes of oems,
+    7. pops are two drops of oems,
+    8. nip ns are n pushes of drops of n pops,
+    9. dips are nips of drops,
+    10. digs are nips of hems,
+    11. bury ns are n pushes of n digs, and
+    12. unbury ns are n bury ns.
+
+9. A (j,k,m)-resultant is j existential croppings of k bury (j+k)s of the conjunction of k drops with m props.
+
+10. The first iterate of a predicate whose left shape is (j*2) is itself and its (n+1)st iterate is the (j,j,0)-resultant of itself with the j nip (j*2) of its n-th iterate.
+
+11. A (i,m)-counterclockwise (CCW) turn is m pushes of a bury (i+m) of m pops.
+
+12. Indiscernibility with respect to a predicate with left shape (i+1) and right shape m is i (existential croppings of bury 2s) of m (existential croppings of pops) of the conjunction of each biconditional whose left part is the drop of one of the up to i+m (i,m)-CCW turns with the nip of the same.
+
 ## 2025 0810 1739
 
 More work on logic memo.
