@@ -145,6 +145,72 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0814 1547
+
+Predicate memo work.
+
+1. Predicates denote or don't (are true or false of) where they occur (Aristotle); grammars generate categories from recurrent connective construction on itemized atomic lexicons (Frege, Hilbert, von Neumann); supplemented lexical substitutions (SLS) of validities denote everywhere (Quine); and constructed compounds inherit their denotata from connected components (Tarski) alethically, i.e.
+    1. joint denials denote where and only where (waow) each of their components don't (Peirce, Sheffer),
+    2. existential closure denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
+    3. existential croppings denote the left part of waow their compound does with some item, with the right part of the same whereabouts (Frege, Russell, Quine),
+
+    and recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore)
+
+    4. drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
+    5. pushes denote the left part of waow their comopund does with the left part of the right part of the same whereabouts, with the right part of the right part of the same whereabouts, and
+    6. hems denote the left part of waow their compound does, with the right part of the left part of the left part of the same whereabouts with the right part of the same whereabouts.
+
+2. The truth-functional, better 'denotative-functional', abbreviations are
+    1. negations are self joint denials,
+    2. alternations are negations of joint denials,
+    3. converse conditionals are alternations of their consequent with the negation of their antecedent,
+    4. complementary converse conditionals are negations of converse conditionals,
+    5. complementary conditionals are swapped complementary converse conditionals,
+    6. conditionals are negations of complementary conditionals,
+    7. alternative denials are conditionals with negated consequents,
+    8. conjunctions are negations of alternative denials,
+    9. exclusive alternations are conjunctions of alternative denials with matching alternations,
+    10. biconditionals are negations of exclusive alternations, and 
+    11. sequents are conditionals of conjunctions with alternations.
+
+3. The Boolean abbreviations are
+    1. universal closures are negations of existential closures of negations,
+    2. inclusions are universal closures of conditionals,
+    3. converse inclusions are swapped inclusions,
+    4. proper inclusions are conjunctions of inclusions with the negation of  their converse, and
+    5. coextensions are conjunctions of inclusions with their converse.
+
+4. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations.
+
+5. The recombic abbreviations are
+    1. dushes are pushes of drops,
+    2. props are drops of pushes,
+    3. overs are pushes of hems,
+    4. oems are hems of overs,
+    5. dupes are dushes of oems,
+    6. pops are two drops of oems,
+    7. nip ns are n pushes of drops of n pops,
+    8. digs are nips of hems,
+    9. bury ns are n pushes of n digs,
+    10. unbury ns are n bury ns,
+    11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
+    12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
+
+6. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
+
+7. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
+
+8. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+
+9. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st, .., thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
+
+10. Identities are conjunctions of lexical indiscernabilities (Leibniz, Quine).
+
+11. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops.
+
+12. (i,m)-fields are alternations of each (i,m)-projection of the 1st, .., thru (i+m)th (i,m)-CWs of their component.
+
 ## 2025 0812 1501
 
 The memo and the hint on predicate (functor) logic may soon diverge.
@@ -172,7 +238,7 @@ There is a lot that can be said in even less space with unfamiliar three letter 
     6. conditionals are negations of complementary conditionals,
     7. alternative denials are conditionals with negated consequents,
     8. conjunctions are negations of alternative denials,
-    9. exclusive alternations are conjunctions of alternative denials with alternations of matching components,
+    9. exclusive alternations are conjunctions of alternative denials with matching alternations,
     10. biconditionals are negations of exclusive alternations, and 
     11. sequents are conditionals of conjunctions with alternations.
 
