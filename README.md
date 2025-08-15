@@ -145,6 +145,80 @@ Journal your thoughts and feelings.
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
 
+## 2025 0815 1354
+
+1. Hailperin's 1981 "Boole's Algebra Isn't Boolean Algebra" is the only other palce other than Quine's "Methods of Logic 4th edition" (MOL) where I've found an accurate report on the actual methods presented in Boole's 1854 "An Investigation of the Laws of Thought: on Which are Founded the Mathematical Theories of Logic and Probabilities" (aka "Laws of Thought').
+
+2. For Quine, and perhaps in part for Hailperin, Boole's contribution to logic covers the logic of existential closures and denotative functions.
+
+3. Each item of the grammatical category of denotative functions is equivalent to one in the grammatical category of recurrent joint denial constructions which enforce a uniformity of shape among its non-denotative-functional subcomponents e.g. the joint denial of a pair of predicates with shape (2,2) inherits the shape (2,2).
+
+4. The existential closure of a denotative functional compound is called by Quine a "Boolean Existence Sentence" schema (on page 116 of MOL Quine was speaking technically of "Boolean Existence Schema" each instance of which can be called a "Boolean Existence Sentence", though Quine was still wed to 'statement' when he wrote MOL and would later drop it for 'sentence' to avoid any confusion between the consequences of a verbal response and the verbal response itself).
+
+5. Denotative functions of existential closures were then called "Boolean sentences": these have a delightful decision procedure called by Quine "Existential Conditionals".
+
+6. The strict correspondence between Boole's work and Quine's method of "Existential Conditionals" is sketched out in chapter 20 of MOL "Some Boolean Incidentals" (a sorta catch all for the utilities of Boolean abbreviations).
+
+7. In Quine's "Logic Papers" the method of "Existential Conditionals" is obscured by picking up Boole's equational methods earlier than he does in MOL.
+There, as in Boole's "Laws of Thought", Quine begins by writing "There does not exist" as "0=".
+
+8. In MOL Quine almost comes out and says that Booles methods are not those of Boolean algebra, but he merely hints at the past association between an algebra of classes and Boole's equations, quickly leaving such potential misinterpretations for an abbreviated notation close to that of Boole's which is equivalent to the method of existential conditionals.
+
+9. Quine does not take the further step to deal with existential closures of Boolean sentences.
+It is clear enough upon further reflection that there is strictly nothing added by repeatedly construction existential closures of existential closures, but free wheeling construction of complex existential closures and denotative functions fits with the methods familiar in truth functional and quantificational logic.
+
+10. Quine also fails to make a distinction between existential closures and repeated existential croppings: when are they equivalent, are they?
+
+11. In MOL the closest he comes to confronting this problem is when he introduces the predicate functor of existential cropping itself.
+There he first contemplates the construction of an existential closure of a predicate abstract which is made equivalent to a sequence of quantifiers each variable of which is one bound by the predicate abstract (in the order given by the binding phrase) and these are themselves existential closures of the strict kind contemplated by Quine in the chapters on Boolean logic which are actually only about one place predicates.
+
+12. The logic of existential closures is, as mentioned in 3, accomodating of predicates of any number of places, but a closer examination of the case Quine excluded, mentioned above in 9, reveals that Quine's predicate abstracts cover up the evolution of a 'partial existential closure' into 'existential cropping' proper.
+
+13. This evolution is primed by predicate functors which are called for if the rules of passage which can be shown with Boolean sentences (and, specifically, Boolean existence sentences) are to carry over to situations described as in 9 e.g. Existential closures of Boolean sentences.
+
+14. Actually, 13 and 9 do not quite reach the problems hinted at in 12 and 13: it is when Boolean terms (which are here called denotative functional compounds) are mixed with Boolean sentences and Boolean Closures.
+Some definitions will help make the distinctions clear.
+
+15. What Quine called Boolean terms are now simply called denotative functions (as shown in 3).
+Boolean compounds now come to be existential closures or denotative functions of lexical predicates or Boolean compounds.
+Then, Boolean schema are existential closures or denotative functions of predicate letters or Boolen schema.
+
+16. By definition the existential closure of a predicate has the shape of a sentence (which, in the stack notation embraced here, means a shape of (0,0)).
+The constraints on the shape of denotative compounds from the shapes of their components (they must all be the same) makes it so that a Boolean schema which conjoins a predicate letter to an existential closure fixes the shape of the predicate letter to (0,0).
+
+17. But, how then to preserve the rule of passage which takes the conjunction of predicate letter with an existential closure to the existential closure of the predicate letter with the component of the earlier existential closure?
+
+18. Quine, as much as Carnap in his 1958 “Introduction to Symbolic Logic and its Applications” (ISLA) gives sentence letters that may end up being purportededly open or closed.
+The open case is made clear by me when we take a sentence 'x loves y' as closed (where 'x' and 'y' are as much like 'John' and 'Dick' and are no more like dangling pronouns than 'John' and 'Dick' are) and 'x and y such that x loves y' as the predicate which open sentences are so often taken as (that is, an open sentence is not open at all, it is simply a relative clause whose bound parts have not been properly indicated).
+
+19. With 18 in mind, answering 17 becomes clearer.
+First a closer look at the rule of passage in its schematic form from page 142 chapter 23 "Rules of Passage. Monadic Schemata".
+    > "In the schemata in which we have illustrated quantification thus far, the scope of each occurrence of a quantifier has been a truth function of 'Fx', 'Gx', etc. But we can be more liberal, allowing some components of the scope to be devoid of 'x' and represented simply as 'p' and 'q'.
+    >
+    > It makes good sense, e.g., to write 'some item is (x such that p and Fx)'. This should come out true under just those interpretations of 'p' and F' that make 'p and Fx' true of at least one thing x. Those, of course, are just the interpretations that make 'p' true and 'F' true of something; so teh two schemata 'each item is (x such that p and Fx)' and 'p and each item is (x such that Fx)' are equivalent." pg.142 Quine MOL
+
+20. In a pure predicate functor logic the equivalence of 19, which is given by Quine with variables and quantifiers (the quantifiers themselves been explained by the construction of an existential closure of a one place predicate abstract), is that between the existential cropping of a conjunction of a drop of a predicate on the left with a predicate on the right, and a conjunction of the predicate on the left with the existential cropping of the predicate on the right.
+
+21. But, note in 20, that existential croppings appear and not existential closures.
+
+22. Starting instead with a conjunction with a left predicate and an existential closure of a right predicate, the shape of the right predicate dictates an equivalence between the existential closure of the right predicate and, say, (i+m) existential croppings of a recombic combination of the right predciate (whose shape is now obviously (i,m)).
+
+23. Supposing we leave out the part about the recombic combination of the right predicate (by just supposing we have a lexical predicate of appropraite shape or that we do not look beyond the presently unknown recombic functors as part of our official logical language) we are introduced to exactly one recombic functor by way of maintaining the rule of passage.
+
+24. Specifically, (i+m) existential croppings of the conjunction of (i+m) drops of the left predicate with the right predicate, is equivalent to the conjunction of the left predicate with (i+m) existential croppings of the right predicate.
+
+25. Moving from repeated existential croppings to existential closures, there appears to be a 'drop closure' such that an existential closure of the conjunction of a drop closure of a left predicate with a right predicate, is equivalent to the conjunction of the left predicate with the existential closure of the right predicate.
+
+26. This 'big drop' is then later seen to be equivalent to appropriately repeated drops.
+
+27. I must end here, but must also mention that the big problem looming here is that pointed up at the end of Russell's "An Inquiry into Meaning and Truth" in the chapter on "analysis" where the problem of the predicate 'is a part of' appears as it relates to the methods of logic.
+
+28. As is very clear from the other notes I've made here, I find it all but impossible to talk about logic without mentioning ordered pairs, and it may only be in semantic ascent that the problem of 'is a part of' occurs.
+Here, the orderd pair is always as Quine noticed at the end of "Word and Object": a paradigm of philosophic analysis.
+
+29. On the other hand, the abreviation "{(a,b)}" for the predicate abstract '{xy: x=a and y=b}' found in Carnap's ISLA, along with some side comments by Herbrand (I think it was in Herbrand's later paper or his thesis).
+
+
 ## 2025 0814 1547
 
 Predicate memo work.
