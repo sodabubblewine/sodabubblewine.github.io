@@ -7,13 +7,13 @@ My life and work are reported, changed, and governed by these [notes](#notes), [
 2. as selections from variations (on physical, chemical, biological, behavioral, and cultural scales)
 3. by making and maintaining strong practices (mediated by strong people marked by strong principles)
 4. from the sciences (of 
-    - logic (denotative, Boolean, functor)
-    - mathematics (calculi, collections, categories)
-    - physics (quantum, thermodynamic, gravitional)
-    - chemistry (phyiscal, biophysical, biological)
-    - biology (oranelles, organisms, environments)
-    - behavior (biological, biosocial, social)
-    - culture (history, science, technology)).
+    - logic, e.g. denotative, Boolean, functor;
+    - mathematics, e.g. calculi, collections, categories;
+    - physics, e.g. quantum, thermodynamic, gravitional;
+    - chemistry, e.g. phyiscal, biophysical, biological;
+    - biology, e.g. oranelles, organisms, environments;
+    - behavior, e.g. biological, biosocial, social; and
+    - culture, e.g. history, science, technology).
 
 ## HOW TO DO IT
 
@@ -123,6 +123,19 @@ Journal your thoughts and feelings.
 
 # NOTES
 
+## 2025 0815 2047
+
+Typing up handwritten notes from 2025 0723 1609.
+I hesitate to type these up because the notation used in them is so much more like traditional notation that it may suggest to the reader that there is some enduring value in such methods.
+I can only emphasize that however familiar are these notational methods, they are superceeded in almost every way by the stack based notation found elsewhere (this same comment applies to the last note 2025 0815 2028).
+
+I write down as many different kinds of notation as I can find in the hopes that something better appears from the work of those who are so obviously better than me.
+If I recall accurately, these notes are a paraphrase of selections from Quine's "Methods of Logic 4th edition" (even though I would now see them more clearly as Quine's paraphrase of Carnap's "1958 “Introduction to Symbolic Logic and its Applications” (ISLA)).
+
+1. 'Symmetric F^(2+n)' for 'each {xy..z: Fxy..z only if Fyx..z}'
+2. 'Asymmetric F^(2+n)' for 'each {xy..z: Fxy..z only if not Fyx..z}'
+3. 'Transitive F^(2+n)' for '
+
 ## 2025 0815 2028
 
 Typing up handwritten notes from 2025 0723 1329
@@ -149,7 +162,9 @@ Typing up handwritten notes from 2025 0723 1329
 ## 2025 0815 2006
 
 1. First to update the hints from:
+
 ```
+
 ##HOW LOGIC WORKS
 
 1. Predicates do or don't denote (are true or false of) where they occur, constructions compound them with connectives, and lexicons itemize atomic ones.
@@ -214,6 +229,7 @@ Typing up handwritten notes from 2025 0723 1329
 ```
 
 2. To: 
+
 ```
 ## HOW LOGIC WORKS
 
@@ -274,7 +290,9 @@ Typing up handwritten notes from 2025 0723 1329
 ```
 
 3. and retiring the 'tie up' section:
+
 ```
+
 ## TIE UP
 (this has fallen out of sync with all that I'm doing, and I may have to just drop this section because I skip right over it almost every time I have a look at recent notes)
 
