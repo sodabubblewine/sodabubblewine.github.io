@@ -123,6 +123,39 @@ Journal your thoughts and feelings.
 
 # NOTES
 
+## 2025 0815 2200
+
+1. I may soon have to write for those who are already entrenched in their most cherished methods of argument and debate rather than for those who are already familiar with, e.g., the methods of logic as taught by Quine in "Methods of Logic 4th edtiion".
+
+2. The challenge is the same as it has been for about the whole history of philosophy: many things that go without saying don't.
+
+3. I've been reading some of Conor Mayo-Wilson's papers, e.g. "Russell's Logicism and Theory of Coherence" from 2011, and find myself at a loss to explain myself to the writer of such papers.
+    - <http://faculty.washington.edu/conormw/Papers.htm>
+
+4. This is largely because there is a modern canon of philosophy which is under the control of cognitive science and probabilistic and statistical methods.
+
+5. Said another way, there is a looming influence from information theories that make it appear as if propositions are back in play throughout philosophy, even though there is very little to say of them in the methods of logic or their application.
+
+6. Another strange practice that turns up in recent readings I've done of philosophy: the authors try to understand what the philosopher meant by this or that.
+As if what was written is just expression of some deeper idea that can somehow be guessed at by the analytic reader who is properly in tune with the state of the writer across their own time period all the way up to ours.
+
+7. The challenge is met, at least in the beginning, by going straight to the experimental analysis of behavior.
+But, even here there is a great divide between where modern reading and writing is and the work of those like Skinner and Forester in "Schedules of Reinforcement".
+
+8. In modern philosophy, philosophers reason, logicians reason, people reason, and they frequently do so statistically.
+How am I to square this with the behavior that is actually investigated in experimental laboratories where the schedules of reinforcement are carefully controlled and rates of response are selected by the contingencies connecting various operanda?
+
+9. Here is a sentence from Mayo's paper "Qualitative Birnbaum" that poses a problem to solve for me as an unknown:
+    > "Everyone agrees that data should sometimes change our beliefs."
+
+10. Another sentence, from the end of the same paragraph from which 9 came,
+    > "Equipped with probabilism, one can then easily explain how the probabilistic structure of data should incorporated into a rational agent’s beliefs, as the latter also have probabilistic structure."
+
+11. What 'rational agents'?
+
+12. There may be some bridge to build by explaining Nelsons "Radically Elementary Probability Theory" within the evolving predicate functor logic.
+
+
 ## 2025 0815 2047
 
 Typing up handwritten notes from 2025 0723 1609.
@@ -134,7 +167,43 @@ If I recall accurately, these notes are a paraphrase of selections from Quine's 
 
 1. 'Symmetric F^(2+n)' for 'each {xy..z: Fxy..z only if Fyx..z}'
 2. 'Asymmetric F^(2+n)' for 'each {xy..z: Fxy..z only if not Fyx..z}'
-3. 'Transitive F^(2+n)' for '
+3. 'Transitive F^(2+n)' for 'each {xyz..u: Fxy..u and Fyz..u, only if Fxz..u}'
+4. 'Intransitive F^(2+n)' for 'each {xyz..u: Fxy..u and Fyz..u, only if not Fxz..u}'
+5. 'Reflexive F^(2+n)' for 'each {xy..u: Fxy..u only if Fxx..u and Fyy..u}'
+6. 'Total Reflexive F^(2+n)' for 'each {xy..y: Fxx..y}'
+7. 'Irreflexive F^(2+n)' for 'each {xy..u: Fxy..u only if not Fxx..u and not Fyy..u}'
+8. 'Total Irreflexive F^(2+n)' for 'each {x..y: not Fxx..y}'
+9. Irreflexives and Total Irrelfexives of the same predicate are equivalent.
+10. 'Cartesian Product of F^m with G^n' or 'F^m * G^n' for '{..x..y: F..x and G..y}'
+11. 'k-Resultant of F^(m+k) with G^(n+k)' or 'F^(m+k) /k G^(n+k)' for '{..x..y: some {..z: F..x..z and G..z..x}}'
+12. 'Image of F^(m+n) with G^n' or 'F^(m+n) " G^n' for 'F^(m+n) /n G^n'
+13. 'crop F^(n+1)' for '{..x: some item is {y: Fy..x}}'
+14. 'Negation of F' or 'not F' for '{..x: not F..x}'
+15. 'Conjunction of F with G' or 'F and G' for '{..x: F..x and G..x}'
+16. 'dup F^(n+2)' for '{x..y: Fxx..y}'
+17. 'drop F^n' for '{x..y: F..y}'
+
+> Note that 'dup' and 'drop' above are not like those of the stack based methods elsewhere presented. It is impossible for me to sort through all the different kinds of notation that might be used to work with these things, and this is in fact one of the main reasons for presenting how logic works the way that I do: without notation.
+
+18. 'swap F^(2+n)' for '{xy..z: Fyx..z}'
+19. 'cw F^(n+1)' for '{x..y: F..yx}'
+20. 'ccw F^(n+1)' for '{..xy: Fy..x}'
+21. 'Homoginization of F and ..alpha with respect to G and ..beta' where '..alpha' and '..beta' designate lists of variables that may occur more than once, e.g. 'xyzx'.
+    - I have no definition here, I was going to write something like the homoginization algorithm presented by Quine when translating from truth functional and quantificational logic to predicate functor logic.
+22. 'item^n' for '{..x: .., and x=x}'
+23. 'void^n' for '{..x: .., and not x=x}'
+24. '{x}' for '{y: y=x}'
+25. '{..x}' for '{y: .., or y=x}' i.e. '.., or {x}'
+26. '{(x,y)}' for '{uv: u=x and v=y}'
+27. '{.., (..x)}' for '{..u: .., or ..u=..x}'
+28. 'some 0 F' for 'not some {..x: F..x}'
+29. 'some n+1 F' for 'some {..x: F..x and some n {..y: F..y and not ..x=..y}}'
+30. 'Collective Relate of F with x' for '{..y: Fx..y}'
+31. 'Collective Relate of F with ..x' for '{..y: F..x..y}'
+32. 'F^(2\*n) transmits G^n' for 'each {..x..y: G..x and F..y..x, only if G..y}'
+
+> This is a note from the John who is typing up these handwritten notes.
+> I'm very happy to have done this because I now have much better names for the predicate functors that correspond to the above and below schematically given predicate functors e.g. 'symmetrics' instead of 'symmetries', 'asymmetrics' instead of 'asymmetries', 'transitives' instead of 'transitivities', and 'intransitives' instead of 'intransitivities', etc. 
 
 ## 2025 0815 2028
 
