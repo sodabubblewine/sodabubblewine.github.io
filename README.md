@@ -45,6 +45,99 @@ Journal your thoughts and feelings.
 
 ## HOW LOGIC WORKS
 
+1. Predicates denote or don't (are true or false of) where they occur (Aristotle); 
+2. grammars generate categories from recurrent connective construction on itemized atomic lexicons (Frege, Hilbert, von Neumann);
+3. supplemented lexical substitutions (SLS) of validities denote everywhere (Quine); and 
+4. denotata are inherited (Tarski)
+5. alethically, i.e.
+    1. joint denials denote where and only where (waow) each of their components don't (Peirce, Sheffer),
+    2. existential closure denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
+    3. existential croppings denote the left part of waow their compound does with some item, with the right part of the same whereabouts (Frege, Russell, Quine), and
+6. recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
+    4. components of drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
+    5. components of pushes denote the left part of waow their comopund does with the left part of the right part of the same whereabouts, with the right part of the right part of the same whereabouts, and
+    6. components of hems denote the left part of waow their compound does, with the right part of the left part of the left part of the same whereabouts with the right part of the same whereabouts.
+
+## HOW THE ABBREVIATIONS OF LOGIC WORK
+
+1. The truth-functional, better 'denotative-functional', abbreviations are
+    1. negations are self joint denials,
+    2. alternations are negations of joint denials,
+    3. converse conditionals are alternations of their consequent with the negation of their antecedent,
+    4. complementary converse conditionals are negations of converse conditionals,
+    5. complementary conditionals are swapped complementary converse conditionals,
+    6. conditionals are negations of complementary conditionals,
+    7. alternative denials are conditionals with negated consequents,
+    8. conjunctions are negations of alternative denials,
+    9. exclusive alternations are conjunctions of alternative denials with matching alternations,
+    10. biconditionals are negations of exclusive alternations, and 
+    11. sequents are conditionals of conjunctions with alternations.
+2. The Boolean abbreviations are
+    1. universal closures are negations of existential closures of negations,
+    2. inclusions are universal closures of conditionals,
+    3. converse inclusions are swapped inclusions,
+    4. proper inclusions are conjunctions of inclusions with the negation of  their converse, and
+    5. coextensions are conjunctions of inclusions with their converse.
+3. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations.
+4. The recombic abbreviations are
+    1. dushes are pushes of drops,
+    2. props are drops of pushes,
+    3. overs are pushes of hems,
+    4. oems are hems of overs,
+    5. dupes are dushes of oems,
+    6. pops are two drops of oems,
+    7. nip ns are n pushes of drops of n pops,
+    8. digs are nips of hems,
+    9. bury ns are n pushes of n digs,
+    10. unbury ns are n bury ns,
+    11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
+    12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
+5. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
+
+6. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
+
+7. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+
+8. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st, .., thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
+
+9. Identities are conjunctions of lexical indiscernabilities (Leibniz, Quine).
+
+10. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops.
+
+11. (i,m)-fields are alternations of each (i,m)-projection of the 1st, .., thru (i+m)th (i,m)-CWs of their component.
+
+## HOW PREDICATE ABSTRACTS WORK
+
+1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
+2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
+3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
+4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
+
+
+## HOW TO FIND A GOOD PSYCHOLOGIST
+
+1. **Never** settle for a bad one.
+2. Good ones are exceptional people who happen to be psychologists.
+3. They are cultural liasons.
+
+## OTHERS
+
+- The conditional connective 'only if' is a grammatical partical and 'implies' is a predicate.
+
+- A predicate is not a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
+
+
+# NOTES
+
+
+
+## 2025 0815 2006
+
+1. First to update the hints from:
+```
+##HOW LOGIC WORKS
+
 1. Predicates do or don't denote (are true or false of) where they occur, constructions compound them with connectives, and lexicons itemize atomic ones.
 2. Grammars generate categories from recurrent constructions on lexicons.
 3. Logic uncovers validities whose supplemented lexical substitutions (SLS) denote everywhere (Quine).
@@ -99,34 +192,82 @@ Journal your thoughts and feelings.
 
 6. An (i,j,k)-resultant is j existential croppings of k bury (j+k)s of the conjunction of k drops of the left component with i props of the right component.
 
-## HOW PREDICATE ABSTRACTS WORK
-
-1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
-2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
-3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
-4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
-
 ## HOW INDISCERNIBILITY WORKS
 
 1. For the predicate letter 'F' write '=F' for '{xy: each {u..v: Fxu..v if and only if Fyu..v, .., and Fu..vx if and only if Fu..vy}'.
 2. Write '=(..F,G)', or just '=', for '{xy: (=(..F))xy and (=G)xy}'.
 3. Identity and indiscernibility (with respect to the lexicon of predicates of a standard theory) are coextensive.
+```
 
-## HOW TO FIND A GOOD PSYCHOLOGIST
+2. To: 
+```
+## HOW LOGIC WORKS
 
-1. **Never** settle for a bad one.
-2. Good ones are exceptional people who happen to be psychologists.
-3. They are cultural liasons.
+1. Predicates denote or don't (are true or false of) where they occur (Aristotle); 
+2. grammars generate categories from recurrent connective construction on itemized atomic lexicons (Frege, Hilbert, von Neumann);
+3. supplemented lexical substitutions (SLS) of validities denote everywhere (Quine); and 
+4. denotata are inherited (Tarski)
+5. alethically, i.e.
+    1. joint denials denote where and only where (waow) each of their components don't (Peirce, Sheffer),
+    2. existential closure denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
+    3. existential croppings denote the left part of waow their compound does with some item, with the right part of the same whereabouts (Frege, Russell, Quine), and
+6. recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
+    4. components of drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
+    5. components of pushes denote the left part of waow their comopund does with the left part of the right part of the same whereabouts, with the right part of the right part of the same whereabouts, and
+    6. components of hems denote the left part of waow their compound does, with the right part of the left part of the left part of the same whereabouts with the right part of the same whereabouts.
 
-## OTHERS
+## HOW THE ABBREVIATIONS OF LOGIC WORK
 
-- The conditional connective 'only if' is a grammatical partical and 'implies' is a predicate.
+1. The truth-functional, better 'denotative-functional', abbreviations are
+    1. negations are self joint denials,
+    2. alternations are negations of joint denials,
+    3. converse conditionals are alternations of their consequent with the negation of their antecedent,
+    4. complementary converse conditionals are negations of converse conditionals,
+    5. complementary conditionals are swapped complementary converse conditionals,
+    6. conditionals are negations of complementary conditionals,
+    7. alternative denials are conditionals with negated consequents,
+    8. conjunctions are negations of alternative denials,
+    9. exclusive alternations are conjunctions of alternative denials with matching alternations,
+    10. biconditionals are negations of exclusive alternations, and 
+    11. sequents are conditionals of conjunctions with alternations.
+2. The Boolean abbreviations are
+    1. universal closures are negations of existential closures of negations,
+    2. inclusions are universal closures of conditionals,
+    3. converse inclusions are swapped inclusions,
+    4. proper inclusions are conjunctions of inclusions with the negation of  their converse, and
+    5. coextensions are conjunctions of inclusions with their converse.
+3. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations.
+4. The recombic abbreviations are
+    1. dushes are pushes of drops,
+    2. props are drops of pushes,
+    3. overs are pushes of hems,
+    4. oems are hems of overs,
+    5. dupes are dushes of oems,
+    6. pops are two drops of oems,
+    7. nip ns are n pushes of drops of n pops,
+    8. digs are nips of hems,
+    9. bury ns are n pushes of n digs,
+    10. unbury ns are n bury ns,
+    11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
+    12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
+5. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
 
-- A predicate is not a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
+6. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
 
+7. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
 
-# NOTES
+8. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st, .., thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
 
+9. Identities are conjunctions of lexical indiscernabilities (Leibniz, Quine).
+
+10. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops.
+
+11. (i,m)-fields are alternations of each (i,m)-projection of the 1st, .., thru (i+m)th (i,m)-CWs of their component.
+```
+
+3. and retiring the 'tie up' section:
+```
 ## TIE UP
 (this has fallen out of sync with all that I'm doing, and I may have to just drop this section because I skip right over it almost every time I have a look at recent notes)
 
@@ -144,6 +285,12 @@ Journal your thoughts and feelings.
 - FORTH
 - "A first-order axiomatization of the theory of finite trees" by Backofen, Rogers, and Vijay-Shanker 1995
     - [2025 0718 1745](#2025-0718-1745)
+```
+
+4. Some edits and tiny corrections were made in bringing the latest work on the predicate logic memo to the hints section e.g. the bicategoricals of the recombic connectives were missing an initial phrase 'the components of', and the wordy sentence about the inheritance of denotata has been replaced with just 'denotata are inherited'.
+
+5. No longer is a distinction made about the direction of the inheritance of denotata e.g. Quine emphasizes chasing truth up and down the tree of grammar.
+Proofs are another way, as Quine also demonstrated, although it was much more remote than may be thought upon reading "Philosophy of Logic 2nd Ed." (POL) where it is merely mentioned that his main method can be applied outright to sentences rather than to the truth functional and quantificational schema that turn up in his "Methods of Logic 4th ed." (MOL).
 
 ## 2025 0815 1354
 
