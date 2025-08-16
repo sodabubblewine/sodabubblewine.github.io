@@ -48,12 +48,11 @@ Journal your thoughts and feelings.
 1. Predicates denote or don't (are true or false of) where they occur (Aristotle); 
 2. grammars generate categories from recurrent connective construction on itemized atomic lexicons (Frege, Hilbert, von Neumann);
 3. supplemented lexical substitutions (SLS) of validities denote everywhere (Quine); and 
-4. denotata are inherited (Tarski)
-5. alethically, i.e.
+4. denotata are inherited (Tarski) alethically, i.e.
     1. joint denials denote where and only where (waow) each of their components don't (Peirce, Sheffer),
     2. existential closure denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
     3. existential croppings denote the left part of waow their compound does with some item, with the right part of the same whereabouts (Frege, Russell, Quine), and
-6. recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
+5. recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
     1. components of drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
     2. components of pushes denote the left part of waow their comopund does with the left part of the right part of the same whereabouts, with the right part of the right part of the same whereabouts, and
     3. components of hems denote the left part of waow their compound does, with the right part of the left part of the left part of the same whereabouts with the right part of the same whereabouts.
@@ -94,18 +93,12 @@ Journal your thoughts and feelings.
     11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
     12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
 5. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
-
 6. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
-
 7. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
-
-8. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st, .., thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
-
+8. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
 9. Identities are conjunctions of lexical indiscernabilities (Leibniz, Quine).
-
 10. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops.
-
-11. (i,m)-fields are alternations of each (i,m)-projection of the 1st, .., thru (i+m)th (i,m)-CWs of their component.
+11. (i,m)-fields are alternations of each (i,m)-projection of the 1st thru (i+m)th (i,m)-CWs of their component.
 
 ## HOW PREDICATE ABSTRACTS WORK
 
@@ -130,7 +123,28 @@ Journal your thoughts and feelings.
 
 # NOTES
 
+## 2025 0815 2028
 
+Typing up handwritten notes from 2025 0723 1329
+
+1. Write 'S' for '{xy: x immediately succeedes y}'.
+2. each {xyz: xSy and zSy, only if x=z} (functional)
+3. each {x: some {y: y Sx}}
+4. some {x: each {y: not xSy}}
+5. each {xyz: xSy and ySz, only if xSz} (transitive)
+6. each {xy: xSy only if not each {z: xSz and zSy}}
+7. each {xy: xSy only if not ySx}
+8. each {x: not xSx}
+9. each {x: some {y: y = the {z: zSx}}
+10. '0' for 'the {x: each {y: not xSy}}'
+11. 's(x)' for 'the {y: ySx}'
+12. 'z(x)' for 'the {y: x=x and y=0}'
+13. 'z(..x)' for 'the {y: .., and x=x and y=0}'
+14. each {x: xAx0}
+15. each {xyz: some {u: xAyu and uSz} if and only if some {v: vAyz and vSx}}
+16. each {xy: xAxy if and only if each {z: not ySz}}
+17. Self-verifying theories
+18. Discretely ordered Semiring axiomatization of Peano arithmetic
 
 ## 2025 0815 2006
 
@@ -206,15 +220,14 @@ Journal your thoughts and feelings.
 1. Predicates denote or don't (are true or false of) where they occur (Aristotle); 
 2. grammars generate categories from recurrent connective construction on itemized atomic lexicons (Frege, Hilbert, von Neumann);
 3. supplemented lexical substitutions (SLS) of validities denote everywhere (Quine); and 
-4. denotata are inherited (Tarski)
-5. alethically, i.e.
+4. denotata are inherited (Tarski) alethically, i.e.
     1. joint denials denote where and only where (waow) each of their components don't (Peirce, Sheffer),
     2. existential closure denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
     3. existential croppings denote the left part of waow their compound does with some item, with the right part of the same whereabouts (Frege, Russell, Quine), and
-6. recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
-    4. components of drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
-    5. components of pushes denote the left part of waow their comopund does with the left part of the right part of the same whereabouts, with the right part of the right part of the same whereabouts, and
-    6. components of hems denote the left part of waow their compound does, with the right part of the left part of the left part of the same whereabouts with the right part of the same whereabouts.
+5. recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
+    1. components of drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
+    2. components of pushes denote the left part of waow their comopund does with the left part of the right part of the same whereabouts, with the right part of the right part of the same whereabouts, and
+    3. components of hems denote the left part of waow their compound does, with the right part of the left part of the left part of the same whereabouts with the right part of the same whereabouts.
 
 ## HOW THE ABBREVIATIONS OF LOGIC WORK
 
@@ -252,18 +265,12 @@ Journal your thoughts and feelings.
     11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
     12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
 5. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
-
 6. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
-
 7. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
-
-8. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st, .., thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
-
+8. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
 9. Identities are conjunctions of lexical indiscernabilities (Leibniz, Quine).
-
 10. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops.
-
-11. (i,m)-fields are alternations of each (i,m)-projection of the 1st, .., thru (i+m)th (i,m)-CWs of their component.
+11. (i,m)-fields are alternations of each (i,m)-projection of the 1st thru (i+m)th (i,m)-CWs of their component.
 ```
 
 3. and retiring the 'tie up' section:
@@ -291,6 +298,7 @@ Journal your thoughts and feelings.
 
 5. No longer is a distinction made about the direction of the inheritance of denotata e.g. Quine emphasizes chasing truth up and down the tree of grammar.
 Proofs are another way, as Quine also demonstrated, although it was much more remote than may be thought upon reading "Philosophy of Logic 2nd Ed." (POL) where it is merely mentioned that his main method can be applied outright to sentences rather than to the truth functional and quantificational schema that turn up in his "Methods of Logic 4th ed." (MOL).
+
 
 ## 2025 0815 1354
 
