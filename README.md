@@ -54,9 +54,9 @@ Journal your thoughts and feelings.
     2. existential closure denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
     3. existential croppings denote the left part of waow their compound does with some item, with the right part of the same whereabouts (Frege, Russell, Quine), and
 6. recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
-    4. components of drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
-    5. components of pushes denote the left part of waow their comopund does with the left part of the right part of the same whereabouts, with the right part of the right part of the same whereabouts, and
-    6. components of hems denote the left part of waow their compound does, with the right part of the left part of the left part of the same whereabouts with the right part of the same whereabouts.
+    1. components of drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
+    2. components of pushes denote the left part of waow their comopund does with the left part of the right part of the same whereabouts, with the right part of the right part of the same whereabouts, and
+    3. components of hems denote the left part of waow their compound does, with the right part of the left part of the left part of the same whereabouts with the right part of the same whereabouts.
 
 ## HOW THE ABBREVIATIONS OF LOGIC WORK
 
