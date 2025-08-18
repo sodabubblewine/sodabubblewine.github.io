@@ -123,6 +123,33 @@ Journal your thoughts and feelings.
 
 # NOTES
 
+## 2025 0817 2213
+
+1. Time to organize some more of the defined predicate functors.
+
+2. The sameness abbreviations are:
+    1. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
+    2. Identity is the conjunction of each indiscernability of a lexical atom(Leibniz, Quine).
+    3. ((i+1)\*2)-identities are conjunctions of each i nip 2s of i nip 1s of the 1st thru ith (i,0)-CWs of their component. 
+
+3. The compositional abbreviations are:
+    1. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
+    2. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
+    3. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+
+4. It is late and I have to get up early tomorrow, but I am reminded of the semisignificant saying of Dr. Larson "A small fish is better than an empty dish."
+I can at least be happy that I got out a first draft definition of ((i+1)\*2)-identities.
+I will have to make up a list of translations between the predicate functor, the predicate abstract, and the truth-functional and quantificational sentences for each of these things so that nonnatives can go.
+
+5. The functional abbreviations are
+    1. i-functionalities are inclusions of ((1+i)\*2)-identities with the conjunction of i drops with i nip i's of their component
+    2. i-totalities are universal closures of i existential croppings
+    3. i-partialities are negations of i-totalities
+    4. (i,j)-injectivities are inclusions of ((1+i)\*2)-identities with the conjunction of i nip js with i nip (i+j)s of their component
+    5. (i,j)-surjectivities are universal closures of i existential croppings of j (i+j,0)-CWs of their component
+    6. (i,j)-bijectivities are the conjunction of the (i,j)-injectivity with the (i,j)-surjectivity of its component
+    7. (i,j)-correlations are the conjunction of the i-functionality with the (i,j)-injectivity of their component
+
 ## 2025 0817 1523
 
 Notes on "Russell's Logicism and Theory of Coherence" by Conor Mayo-Wilson in 
