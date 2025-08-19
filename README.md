@@ -92,13 +92,29 @@ Journal your thoughts and feelings.
     10. unbury ns are n bury ns,
     11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
     12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
-5. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
-6. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
-7. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
-8. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
-9. Identities are conjunctions of lexical indiscernabilities (Leibniz, Quine).
-10. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops.
-11. (i,m)-fields are alternations of each (i,m)-projection of the 1st thru (i+m)th (i,m)-CWs of their component.
+5. The sameness abbreviations are:
+    1. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
+    2. Identity is the conjunction of each indiscernability of a lexical atom(Leibniz, Quine).
+    3. ((i+1)\*2)-identities are conjunctions of each i nip 2s of i nip 1s of the 1st thru ith (i,0)-CWs of their component. 
+6. The compositional abbreviations are:
+    1. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
+    2. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
+    3. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+7. The functional abbreviations are
+    1. i-functionalities are inclusions of ((1+i)\*2)-identities with the conjunction of i drops with i nip i's of their component
+    2. i-totalities are universal closures of i existential croppings
+    3. i-partialities are negations of i-totalities
+    4. (i,j)-injectivities are inclusions of ((1+i)\*2)-identities with the conjunction of i nip js with i nip (i+j)s of their component
+    5. (i,j)-surjectivities are universal closures of i existential croppings of j (i+j,0)-CWs of their component
+    6. (i,j)-bijectivities are the conjunction of the (i,j)-injectivity with the (i,j)-surjectivity of its component
+    7. (i,j)-correlations are the conjunction of the i-functionality with the (i,j)-injectivity of their component
+8. The graph abbreviations are
+    1. i-symmetrics are inclusions of their component with the first (i\*2)-inverse iterate of their component
+    2. i-nonsymmetrics are negations of i-symmetrics
+    3. i-asymmetrics are inclusions of their component with the negation fo the first (i\*2)-inverse iterate of their component
+    4. i-transitivities are inclusions of the second (i\*2)-iterate of their component with their component,
+    5. i-nontransitivities are negations of i-transitivities,
+    6. i-intransitivities are inclusions of the second (i\*2)-iterate of their component with the negation of their component,
 
 ## HOW PREDICATE ABSTRACTS WORK
 
@@ -122,6 +138,136 @@ Journal your thoughts and feelings.
 
 
 # NOTES
+
+## 2025 0818 2248
+
+1. Updating hints from
+
+```
+HOW THE ABBREVIATIONS OF LOGIC WORK
+
+1. The truth-functional, better 'denotative-functional', abbreviations are
+    1. negations are self joint denials,
+    2. alternations are negations of joint denials,
+    3. converse conditionals are alternations of their consequent with the negation of their antecedent,
+    4. complementary converse conditionals are negations of converse conditionals,
+    5. complementary conditionals are swapped complementary converse conditionals,
+    6. conditionals are negations of complementary conditionals,
+    7. alternative denials are conditionals with negated consequents,
+    8. conjunctions are negations of alternative denials,
+    9. exclusive alternations are conjunctions of alternative denials with matching alternations,
+    10. biconditionals are negations of exclusive alternations, and 
+    11. sequents are conditionals of conjunctions with alternations.
+2. The Boolean abbreviations are
+    1. universal closures are negations of existential closures of negations,
+    2. inclusions are universal closures of conditionals,
+    3. converse inclusions are swapped inclusions,
+    4. proper inclusions are conjunctions of inclusions with the negation of  their converse, and
+    5. coextensions are conjunctions of inclusions with their converse.
+3. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations.
+4. The recombic abbreviations are
+    1. dushes are pushes of drops,
+    2. props are drops of pushes,
+    3. overs are pushes of hems,
+    4. oems are hems of overs,
+    5. dupes are dushes of oems,
+    6. pops are two drops of oems,
+    7. nip ns are n pushes of drops of n pops,
+    8. digs are nips of hems,
+    9. bury ns are n pushes of n digs,
+    10. unbury ns are n bury ns,
+    11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
+    12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
+5. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
+6. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
+7. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+8. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
+9. Identities are conjunctions of lexical indiscernabilities (Leibniz, Quine).
+10. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops.
+11. (i,m)-fields are alternations of each (i,m)-projection of the 1st thru (i+m)th (i,m)-CWs of their component.
+
+```
+
+2. to this
+
+```
+HOW THE ABBREVIATIONS OF LOGIC WORK
+
+1. The truth-functional, better 'denotative-functional', abbreviations are
+    1. negations are self joint denials,
+    2. alternations are negations of joint denials,
+    3. converse conditionals are alternations of their consequent with the negation of their antecedent,
+    4. complementary converse conditionals are negations of converse conditionals,
+    5. complementary conditionals are swapped complementary converse conditionals,
+    6. conditionals are negations of complementary conditionals,
+    7. alternative denials are conditionals with negated consequents,
+    8. conjunctions are negations of alternative denials,
+    9. exclusive alternations are conjunctions of alternative denials with matching alternations,
+    10. biconditionals are negations of exclusive alternations, and 
+    11. sequents are conditionals of conjunctions with alternations.
+2. The Boolean abbreviations are
+    1. universal closures are negations of existential closures of negations,
+    2. inclusions are universal closures of conditionals,
+    3. converse inclusions are swapped inclusions,
+    4. proper inclusions are conjunctions of inclusions with the negation of  their converse, and
+    5. coextensions are conjunctions of inclusions with their converse.
+3. The quantificational abbreviation is
+    - universal croppings are negations of existential croppings of negations.
+4. The recombic abbreviations are
+    1. dushes are pushes of drops,
+    2. props are drops of pushes,
+    3. overs are pushes of hems,
+    4. oems are hems of overs,
+    5. dupes are dushes of oems,
+    6. pops are two drops of oems,
+    7. nip ns are n pushes of drops of n pops,
+    8. digs are nips of hems,
+    9. bury ns are n pushes of n digs,
+    10. unbury ns are n bury ns,
+    11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
+    12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
+
+5. The sameness abbreviations are:
+    1. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
+    2. Identity is the conjunction of each indiscernability of a lexical atom(Leibniz, Quine).
+    3. ((i+1)\*2)-identities are conjunctions of each i nip 2s of i nip 1s of the 1st thru ith (i,0)-CWs of their component. 
+
+6. The compositional abbreviations are:
+    1. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
+    2. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
+    3. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+
+7. The functional abbreviations are
+    1. i-functionalities are inclusions of ((1+i)\*2)-identities with the conjunction of i drops with i nip i's of their component
+    2. i-totalities are universal closures of i existential croppings
+    3. i-partialities are negations of i-totalities
+    4. (i,j)-injectivities are inclusions of ((1+i)\*2)-identities with the conjunction of i nip js with i nip (i+j)s of their component
+    5. (i,j)-surjectivities are universal closures of i existential croppings of j (i+j,0)-CWs of their component
+    6. (i,j)-bijectivities are the conjunction of the (i,j)-injectivity with the (i,j)-surjectivity of its component
+    7. (i,j)-correlations are the conjunction of the i-functionality with the (i,j)-injectivity of their component
+
+8. The graph abbreviations are
+    1. i-symmetrics are inclusions of their component with the first (i\*2)-inverse iterate of their component
+    2. i-nonsymmetrics are negations of i-symmetrics
+    3. i-asymmetrics are inclusions of their component with the negation fo the first (i\*2)-inverse iterate of their component
+    4. i-transitivities are inclusions of the second (i\*2)-iterate of their component with their component,
+    5. i-nontransitivities are negations of i-transitivities,
+    6. i-intransitivities are inclusions of the second (i\*2)-iterate of their component with the negation of their component,
+
+```
+
+## 2025 0818 1824
+
+1. The graph abbreviations are
+    1. i-symmetrics are inclusions of their component with the first (i\*2)-inverse iterate of their component
+    2. i-nonsymmetrics are negations of i-symmetrics
+    3. i-asymmetrics are inclusions of their component with the negation fo the first (i\*2)-inverse iterate of their component
+    4. i-transitivities are inclusions of the second (i\*2)-iterate of their component with their component,
+    5. i-nontransitivities are negations of i-transitivities,
+    6. i-intransitivities are inclusions of the second (i\*2)-iterate of their component with the negation of their component,
+
+2. Not done with these, but that's all I can finish for now.
 
 ## 2025 0817 2213
 
