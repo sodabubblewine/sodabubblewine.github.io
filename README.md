@@ -50,7 +50,7 @@ Journal your thoughts and feelings.
 3. supplemented lexical substitutions (SLS) of validities denote everywhere (Quine); and 
 4. denotata are inherited (Tarski) alethically, i.e.
     1. joint denials denote where and only where (waow) each of their components don't (Peirce, Sheffer),
-    2. existential closure denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
+    2. existential closures denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
     3. existential croppings denote the left part of waow their compound does with some item, with the right part of the same whereabouts (Frege, Russell, Quine), and
 5. recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
     1. components of drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
@@ -90,8 +90,8 @@ Journal your thoughts and feelings.
     8. digs are nips of hems,
     9. bury ns are n pushes of n digs,
     10. unbury ns are n bury ns,
-    11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
-    12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
+    11. (i,m)-clockwise turns (CWs) are m pops of one bury (i+m) of m pushes, and
+    12. (i,m)-counterclockwise turns (CCWs) are m pops of one unbury (i+m) of m pushes. 
 5. The sameness abbreviations are
     1. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
     2. identity is the conjunction of each indiscernability of a lexical atom(Leibniz, Quine).
@@ -102,9 +102,10 @@ Journal your thoughts and feelings.
     1. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops,
     2. (i,m)-fields are alternations fo each (i,m)-projection of the first thru (i+m)th (i,m)-CWs,    
     3. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
-    4. first (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component,
-    5. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
-    6. zeroth ((j+1)\*2)-iterates are conjunctions of ((j+1)\*2)-identities with each first thru ((j+1)\*2)-CW of (j\*2 +1) drops of the ((j+1)\*2,0)-field of their component.
+    4. first (j\*2)-iterates are their component,
+    5. (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component,
+    6. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+    7. zeroth ((j+1)\*2)-iterates are conjunctions of ((j+1)\*2)-identities with each first thru ((j+1)\*2)-CW of (j\*2 +1) drops of the ((j+1)\*2,0)-field of their component.
 7. The functional abbreviations are
     1. i-functionalities are inclusions of ((1+i)\*2)-identities with the conjunction of i drops with i nip i's of their component
     2. i-totalities are universal closures of i existential croppings
@@ -124,7 +125,7 @@ Journal your thoughts and feelings.
 ## HOW PREDICATE ABSTRACTS WORK
 
 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
-2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *open* sentence 'x loves Dick' with the prefix 'x:'.
+2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *free* sentence 'x loves Dick' with the prefix 'x:'.
 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
@@ -143,6 +144,32 @@ Journal your thoughts and feelings.
 
 
 # NOTES
+
+## 2025 0820 1436
+
+note: I discover that 3-6 are wrong in 7 and present the correction in 8 with reflection on what went wrong in 9.
+
+1. Changed 'open sentence' to 'free sentence' in hint on how predicate abstracts work.
+
+2. I submit that the practice of speaking of 'open sentences' is incomplete and that what was once called an open sentence is either a poorly paraphrased relative clause, i.e. a predicate, or simply a sentence with dangling pronouns or poorly paraphrased proper nouns.
+
+3. 'F transitively closes G with respect to H' for 'Transitive H, and H includes G, only if H includes F'
+
+4. Relative transitive closures are conditionals of conjunctions of a transitivity of a first component with the inclusion of the first with a second, with the inclusion of the first with a third.
+
+5. Premises of transitive closures of one component with respect to an other are relative transitive closures of the one with the other with yet some other.
+
+6. 'F transitively closes G with respect to F' implies 'Transitive F, and F includes G': 'F includes F' is valid and 'Transitive F, and F includes G, only if F includes F' with 'F includes F' implies 'Transitive F, and F includes G'.
+
+7. NO, 6 is wrong, and hence the rest of 3-6 do not work out as I said.
+
+8. There is no getting around the premises of transitive closure of indefinite predicate F* of the other indefinite predicate G* as
+    1. Transitive F* and F* includes G*
+    2. each instance of 'Transitive F and G* includes F, only if F* includes F' for the schmematic predicate letter 'F'.
+
+9. This is a great example of not being governed by the laws of implication: predicates imply validities.
+
+10. I appear to have taken the converse conditional associated with the implication instead of the conditional.
 
 ## 2025 0820 1416
 
