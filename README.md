@@ -92,14 +92,19 @@ Journal your thoughts and feelings.
     10. unbury ns are n bury ns,
     11. a (i,m)-clockwise turn (CW) is m pops of a bury (i+m) of m pushes, and
     12. a (i,m)-counterclockwise turn (CCW) is m pops of a unbury (i+m) of m pushes. 
-5. The sameness abbreviations are:
+5. The sameness abbreviations are
     1. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
-    2. Identity is the conjunction of each indiscernability of a lexical atom(Leibniz, Quine).
+    2. identity is the conjunction of each indiscernability of a lexical atom(Leibniz, Quine).
     3. ((i+1)\*2)-identities are conjunctions of each i nip 2s of i nip 1s of the 1st thru ith (i,0)-CWs of their component. 
-6. The compositional abbreviations are:
-    1. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
-    2. First (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component.
-    3. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+    4. 2-nonidentities are negations of identities, and 
+    5. (i+3)-nonidenties are conjunctions of i+2 dupes of ((i+3)\*2)-identities, with the drop of (i+2)-nonidentity,
+6. The compositional abbreviations are
+    1. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops,
+    2. (i,m)-fields are alternations fo each (i,m)-projection of the first thru (i+m)th (i,m)-CWs,    
+    3. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
+    4. first (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component,
+    5. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+    6. zeroth ((j+1)\*2)-iterates are conjunctions of ((j+1)\*2)-identities with each first thru ((j+1)\*2)-CW of (j\*2 +1) drops of the ((j+1)\*2,0)-field of their component.
 7. The functional abbreviations are
     1. i-functionalities are inclusions of ((1+i)\*2)-identities with the conjunction of i drops with i nip i's of their component
     2. i-totalities are universal closures of i existential croppings
@@ -138,6 +143,38 @@ Journal your thoughts and feelings.
 
 
 # NOTES
+
+## 2025 0820 1416
+
+More work on logic memo.
+
+1. The sameness abbreviations are
+    1. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
+    2. Identity is the conjunction of each indiscernability of a lexical atom(Leibniz, Quine).
+    3. ((i+1)\*2)-identities are conjunctions of each i nip 2s of i nip 1s of the 1st thru ith (i,0)-CWs of their component. 
+    4. 2-nonidentities are negations of identities, and (i+3)-nonidenties are conjunctions of i+2 dupes of ((i+3)\*2)-identities, with the drop of (i+2)-nonidentity
+
+2. The compositional abbreviations are
+    1. (i,m)-projections are i, existential croppings of bury 1s of, m, existential croppings of pops,
+    2. (i,m)-fields are alternations fo each (i,m)-projection of the first thru (i+m)th (i,m)-CWs,    
+    3. (j,k,m)-resultants are j existential croppings of j bury (j+k)s of the conjunction of k drops with m props.
+    4. first (j\*2)-iterates are their component, and  (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component,
+    5. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
+    6. zeroth ((j+1)\*2)-iterates are conjunctions of ((j+1)\*2)-identities with each first thru ((j+1)\*2)-CW of (j\*2 +1) drops of the ((j+1)\*2,0)-field of their component.
+
+3. updating the hint with the above.
+
+## 2025 0819 1911
+
+1. There are two parts to the problem posed by what are sometimes called 'free logics', but which may better be called "vacuous logic":
+    1. the problem of vacuous universes of discourse
+    2. the problem of vacuous singular terms.
+
+2. The phrase 'universe of discourse' comes from DeMorgan 1846 "On the Structure of the Syllogism"
+    - <https://api.pageplace.de/preview/DT0400.9780429511394_A38476725/preview-9780429511394_A38476725.pdf>
+
+3. Sadly that's as far as this note goes.
+
 
 ## 2025 0818 2248
 
