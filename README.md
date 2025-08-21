@@ -129,6 +129,9 @@ Journal your thoughts and feelings.
 3. The *predication* '{x:x loves Dick}Tom' *concretes* to 'Tom loves Dick'.
 4. **predicational completeness** *whatever can be said of a thing can be said by predicating a predicate of it*
 
+## HOW TO COOK IT
+
+Use a thermometer.
 
 ## HOW TO FIND A GOOD PSYCHOLOGIST
 
@@ -144,6 +147,150 @@ Journal your thoughts and feelings.
 
 
 # NOTES
+
+## 2025 0821 1706
+
+1. Added hint "HOW TO COOK IT": use a theremometer.
+
+2. Most people over cook or under cook their meats (and other foodstuffs).
+Cooking foods to the temperatures given by those who have spent their life cooking is a better place to start than cooking to taste.
+
+3. Cook to taste after cooking to temperature.
+You are likely to find that cooking to temperature unlocks flavors and textures that can be startling in their surprise to the tongue and palate.
+
+## 2025 0820 1850
+
+1. Today I got Godlfarb's "Deductive Logic" 2003.
+
+2. When I got to page 56 I almost threw the book across the room.
+
+3. It occurs in section 12 "Use and Mention".
+
+4. It reveals clearly and exactly that Goldfarb, like Carnap, does not know the difference between a schematic letter and a pronoun or variable.
+
+5. The selection is as follows:
+    > "Thus in talking about a schema we use a name of that schema, most usually the name obtained by surrounding the schema with quotation marks. What then do we use to talk abotu schemata generally? Naturally, we use expressions such as 'every schema' and the like; but for some purposes we must also use variables that range over schemata, which are called *syntactic variables*. Just as we might use 'x' as a numerical variable and say
+    > 
+    > (4) A number x is odd if and only if x^2 is odd,
+    >
+    > we can use 'X' and 'Y' as syntactic variables and say
+    >
+    > (5) A schema X implies a schema Y if and only if the conditional with antecedent X and consequent Y is valid.
+    >
+    > Particular instances of (4) are obtained by replacing the variable 'x' with the name of a number, for example, '3 is odd if and only if 3^2 is odd'. So too particular instances of (5) are obtained by preplacing teh variables 'X' and 'Y' with names of schemata, for example,
+    >
+    > (6) '-p' implies '-(p.q)' if and only if the condition with antecdent '-p' and consequent '-(p.q)' is valid.
+    >
+    > Note that the last ten words of (6) constitute a complex name of the schemata '-P only if -(p.q)'." pg. 56-57 Goldfarb "Deductive Logic".
+
+6. At best, Goldfarb has weakly presented a substitutional theory of quantification without going out of his way to alert the reader to this fact and to its limitations.
+I will get to its limitations directly by later quoting a later part of Quine's "Philosophy of Logic Second Edition" (POL) of 1986.
+
+7. In short, the substitutional theory of quantification is the result of a hasty generalization that goes back to Wittgenstein and his introduction of the phrase "Tautologous".
+The inspiration for a substitutional theory of quantification comes from the following logical equivalence: in a universe of discourse whose items are only and solely designated by the names 'Fred', 'Tim', and 'Joe' the following schema are equivalent:
+    1. each item is (x such that Fx)
+    2. F(Fred), F(Tim), and F(Joe).
+Also, the following are equivalent:
+    1. some item is (x such that Fx)
+    2. F(Fred), F(Tim), or F(Joe).
+
+8. It is possible to avoid the parenthesis around 'Fred', 'Tim' and 'Joe' if the lowercase letters 'a', 'b', 'c' designate only and solely the items in the universe of discourse:
+    1. 'each item is (x such that Fx)' is equivalent to 'Fa, Fb, and Fc'
+    2. 'some item is (x such that Fx)' is equivalent to 'Fa, Fb, or Fc'.
+
+9. Some people have trouble with the phrase 'each item is' followed by a parenthetically enclosed relative clause, e.g. 'x such that Fx', and crave the awkward notation that prevails throughout mathematics and logic.
+I've avoided similar notation as often as possible for two reasons:
+    1. it permits exactly the kinds of use and mention errors that I am here explaining, those that are mostly decendent from the early mistake of confusing logic with something called 'symbolic logic' (at best symbolic logic is another name for mathematical logic which is most often identified with a poorly specified set theory or, as is more popular in computer programming circles, a type theory or formal calculus, or, very rarely, as Quine's theory of protosyntax), and 
+    2. It weakens logic as a language by making it hard to read aloud, hard to write with a limited alphabet, and harder to collate with translations or paraphrases.
+
+10. The entire issue is dealt with in POL starting on page 66:
+    > "This tendency to see set theory as logic has depended early and late on overestimating the kinship between membership and predication. An intermediate notion, attribution of attributes, insinuates itself and heightens the illusion of continuity.
+    >
+    > In the innocent 'Fx' of the logic of quantification the schematic letter 'F' stands in place of a predicate. Or, more explicitly, the combination 'Fx' stands in the place of an open sentence in 'x'; whether the sentence has 'x' on one side and an isolated predicate on the other is of no moment. What is important is that in writing 'F' and 'Fx' we are just schematically simulating sentences and their parts; we are not *referring* to predicates or other strings of signs, nor are we referring to attributes or sets. Some logicians, however, have taken a contray line, reading 'F' as an attribute variable and 'Fx' as 'x has F'. Some, fond of attributes, have done this with their eyes open; others have been seduced into it by a confusion.
+    >
+    > The confusion begins as a confusion of sign and object; a confusion between mentioning a sign and using it. Instead of seeing 'F' steadfastly as *standing in place of* an unspecified predicate, our confused logician sees it half the time as *naming* an unspecified predicate. Thus 'F' gains noun status, enabling him to read 'Fx' as 'x has F' without offend his grammatical ear. Having got this far, he can round out his confusion by calling F an attribute. This attunes his usage to that of the unconfused but prodigal logician who embraces attributes with his eyes open.
+    >
+    > The prodigal logician is identifiable with Frege. The confused logician could be Russell, dispite his great contributions." pg. 66
+
+11. I make the distinction Quine makes in the second to last paragraph of the quote in 10 by talking about the difference between a schematic letter and a dangling pronoun.
+Schematic letters are replaced in the mechanical operation of substitution (von Neumann went so far as to say that substitution is executed on a schema in order to further distinguish between the schema and its sentences), but pronouns which occur in a schema (such as 'x', 'y', or 'it') also occur in the substitutional instances of such a schema.
+
+12. I have gone out of my way when designing my memo on predicate logic to not only avoid pronouns (which is made possible by Quine's predicate functors) but also to avoid schema.
+I have have gone so far as to avoid notation generally.
+The price is high, but the pros far outweight the cons: there is no access point for any of the confusion caused over the past century by, e.g., mistaking predicating a predicate for attributing an atribute or classing a class.
+
+13. It is still my mission to provide a perfectly smooth explanation of predicate logic from the logic of truth functions and quantifications (TQL) or, unhappily, "first-order logic".
+This can be accomplished by successive abbreviations through Quine's method of predicate abstraction and concretion (which is the logical import of the grammarians relative clause).
+
+15. In fact, TQL can be seen as an abbreviation for predicate (functor) logic, and that is too be shown e.g. Wang's schematic premise of identity is 'Fx if and only if some item is (y such that Fy and x=y)' which is equivalent to 'Fx if and only if (crop (F and {x}))' where '{x}' is short for the predicate (abstract) 'y such that x=y' and 'crop F' is short for the predicate abstract '.., and x such that some item is y such that Fy..x' and where the predicate abstract '(x such that Fx)y' is short for 'some u is such that u=y and some x is such that u=x and Fx', which, all together, provides a biconditional whose left component is a predication of TQL and whose right component is a predicate functor of component predicates.
+    > For those unable to deal with the appearence of 'x' in '{x}' it is advised that they introduce a one place predicate 'X' to their lexicon (perhaps with appropriate adornments to distinguish it from some other unforunately conflicting predicate) along with the premises 1) 'some u is such that Xu' and 2) 'each u is such that each v is such that, Xu and Xv, only if u=v'.
+    > In general, what is 'learned by ostention' in a predicate functor community are predicates: names are excommunicated.
+    > Said another way, designation and truth are degenerates of denotation.
+
+16. All that being said, back to "the heart of the matter":
+    > "The quantifiers 'some F is such that' and 'each F is such that' are at the heart of the matter. I already deplored this sort of quantification somewhat after the middle of Chapter 2. I think it worth while now to develop my objections in more detail.
+    > 
+    > Consider first some ordinary quantifications "some x is such that (x walks)', 'each x is such that (x walks)', 'some x is such that (x is prime)'. The open sentence after the quantifier shows 'x' in a position where a name could stand; a name of a walker, for instance, or of a prime number. The quantifications do not mean that names walk or are prime; what are said to walk or to be prime are the things that could be named *by* names in those positions. To put the predicate letter 'F' in a quantifier, then, is to treat predicate positions suddenly as name positions, and hence to treat predicates as names of entities fo some sort. The quantifier 'some F is such that' or 'each F is such that' says not that some or all predicates are thus and so, but that some or all entitles of the sort named by predicates are thus and so. The logician who grasps this point, and still quantifies 'F', may say that these entities are attributes; attributes are for him the values 'F', the things over which 'F' ranges. The more confused logician, on the other hand, may say that these entities, the values of 'F', are predicates. He fails to appreciate the difference between schematically *simulating* predicates and quantificationally talking *about* predicates, let alone about attributes.
+    >
+    > Even the first logician's line here is to be deplored. I urged in Chapter 1 that propositions are undesirable; and the same goes for attributes. Attributes are to predicates, or open sentences, as propositions are to closed sentences. Attributes are like propositions in the inadequacy of their individuation. Sets are well individuated by the *law of extensionality*, which identifies sets whose members are the same; but this law fails for attributes, save as the wrod 'attribute' is ill-applied and 'set' would serve better. Open sentences that are true of just the same things never determine two sets, but may determine two attributes. What is further required for sameness of attributes is synonymy, in some sense, of the open sentences; and in Chapter 1 we despaired of making satisfactory sense of such synonymy.
+    >
+    > Some logicians, for this reason, view the values of 'F' as sets. But I deplore the use of predicate letters as quantified variables, even when the values are sets. Predicates have attributes as their 'intensions' or meanings (or would if there were attributes), and they have sets as their extensions; but they are names of neither. Variables eligible for quantification therefore do not belong in predicate positions. They belong in name positions.
+    > 
+    > To put the point another way: even one who admits attributes should not read 'Fx' as 'x has F', with 'F' thus in a name position; rather let him write 'x has y', or, if he prefers distinctive variables for attributes, 'x has \#'. Likewise, if someone wants to admit sets as values of quantifiable variables, let him write 'x in y'; or, if he prefers distinctive variables for sets 'x in \#'. Let him switch explicitly to what I called in Chapter 4 the set-theoretic analogue. The predicate letter 'F', like the sentence letter 'p', is not a value-taking variable at all, but just a substitution-taking schematic letter." pg. 66-67
+
+17. The only thing Quine forgot to mention overtly in these paragraphs (and the next ones I shall further quote to cover just one of the consequent errors which follows from not taking such advice to heart) is that it is only and solely in predicate logic as strictly maintained by Quine in his later work that the definitions of validity in terms of structure, substitution, models, proof, and grammar are equivalent in so weak a theory as protosyntax or what can be made equivalent to a theory of numeric place value notation.
+One example of the supremacy of this equivalence can be seen in Lindström's theorem.
+
+18. For those that would throw out such methods there is nothing more to ask of them but to produce a better alternative.
+Quine awaited such a day and now so do I.
+
+19. The remaining quote from the section on "Set Theory in Sheep's Clothing" traces the historic origins of mixing up predicating predicates with attributing attributes and classing classes:
+    > "If anyone thought attributes a more congenial assumption than sets, he could assume quantification over attributes and then introduce quantification over sets, or a reasonable fascimile, by a certain scheme of contextual definition. Russell took this line. the point of the definition is just to secure the law of extensionality for sets without assuming it for attributes; for this law is the only difference between the two domains. But why would Russell find attributes a more congenial assumption than sets? It was a case rather of not appreciating where elementary logic, in its innocent simulation of predicates, gave way to talk about attributes. The phrase 'propositional function', adapted from Frege, cloaked the confusion; Russell used it to refer sometimes to predicates and sometimes to attributes. As a result it was thought by some that Russell had derived set theory, and therewith mathematics generally, from narrowly logical beginnings.
+    >
+    > Followers of Hilbert have continued to quantify predicate letters, obtaining what they call a higher-order predicate calculus. The values of these variables are in effect sets; and this way of presenting set theory gives it a deceptive resemblance to logic. One is apt to feel that no abrupt addition to ordinary logic of quantification has been made; just some more quantifiers, governing predicate letters already present. In order to appreciate how deceptive this line can be consider the hypothese 'some y is such that each x is such that (x in y if and only if Fx)'. It assumes a set {x: Fx} determined by an open sentence in the role of 'Fx'. This is the central hypothesis of set theory, and the one that has to be restrained in one way or another to avoid the paradoxes. This hypothesis itself falls out of sight in the so-called higher-order predicate calculus. We get 'some G is such that each x is such that (Gx if and only Fx)', which evidently follows from the genuinely logical triviality 'each x is such that (Fx if and only Fx)' by an elemntary logical inference. There is no actual risk of paradox as long as the ranges of values of 'x' and 'G' are kept apart, but still a fair bit of set theory has slipped in unheralded." pg. 67-68
+
+20. In the past I have not made a proper distinction between 'each item is x such that Fx' and 'each item x is such that Fx' because I've made no effort to present logical theories of logic and have kept to my native tongue of English as much as possible (an extension of my avoidance of notation most likely).
+To explain myself here, at least, I quote Quine from page 31 of "From Stimulus to Science"
+    > "Instead of reading .. '(something x)(is such that Fx)', we take to read it as '(something is)(x such that Fx)'.
+    >
+    > Making this shift means recognizing an operator 'x such that' of *predicate abstraction*, in Peano's notation .., for encapsulating in a self-contained complex predicate all that a sentence affirms of an object. Just substitution 'x' for 'Tom' in the sentence, if Tom is the object in question, and prefix 'x such that' to the resulting open sentence. The complex predicate thus formed, when predicate of anyone, will say of him what the original sentence said of Tom. This is our familiar 'such that' idiom, which is matheamtical pidgin English for our indigenous relative clause."
+
+21. Then, rather than taking the indefinite singular terms 'some thing' or 'every thing' I took 'some item' and 'each item'.
+I then froze those into 'some item is such that' and 'each item is such that' as canonical quantifiers, from which the problems of cross reference are relieved by the suite of quantifiers 'some item x is such that' and 'each item x is such that', and then the operation of quantification is factored from the operation of predicate abstraction by switching to 'some item is' and 'each item is' with the suite of predicate abstractions 'x such that Fx', 'y such that Fy', and so on.
+This is all to pave the way for elimination of variables entirely, recognizing 'some' as a predicate functor of existential cropping and 'each' as its universal analogue and homogenizing and eliminating the variables bound by predicate abstractions via the recombic predicate functors.
+
+22. There is a subtle reason for preferring 'each' over 'every' and 'all' and it has to do with section 2 of chapter 5 of John Stuart Mill's 1868 "A System of Logic" where a predicate is said to denote 'each seperate thing of which it is true' according to Quine on page 60 of 'From Stimulus to Science', or, directly from page 101 of Mill
+    > "The only propositions of which HObbes' principle is a sufficient account, are that limited and unimportant class in which both the predicate ant eh subject are proper names. For, as has already been remarked, proper names have strictly no meaning; they are mere marks for individual objects: and when a proper name is predicated of another proper name, all the signification conveyed is, that botht eh names are marks for the same object. But this is precisely what Hobbes produces as a theory of predication in general. His doctrine is full explanation of such predications as these: Hyde was Clarendon, or, Tully is Cicero. It exhausts the meaning of those propositions. But it is sadly inadequate theory of any others. That it should ever have been thought of as such, can be accounted for only by the fact, that Hobbes, in common with other Nominalists, bestowed little or no attention upon the *connotation* of words: and sought for their meaning exclusively in what they *denote*: as if all names had been (what none but proper names really are) marks put upon individuals; and as if there were no difference between a proper and general name, except that the first denotes only one individual, adn the last a greater number."
+    - <https://archive.org/details/asystemoflogic01milluoft>
+    - <https://archive.org/details/asystemoflogic02milluoft>
+    - <https://archive.org/details/john-stuart-mill-a-system-of-logic>
+    
+23. The word 'designates' (as opposed to 'denotes') is then reserved for singular (as opposed to general) terms which purport to name one and only one item in the purportedly nonempty universe of discourse.
+
+24. But for the hindesight of history, there would be an irony to Mill making this distinction between designation and denotation in reaction to Hobbes by reference to propositions and attributes.
+
+25. Finally I come to the selection from Quine's "Philosophy of Logic Second Edition" where substitutional quantification is confronted and connected to all that has thus far been mentioned in this note.
+    > "We reflected lately on the connection between existential quantification and alternation. If all the objects are named and finite in number, the quantification is of course dispensable in favor of alternation, and can be viewed as a mere abbreviation. If the objects are infinite in number, on the other hand, this expansion would require an infinitely long alternation. Midway in Chapter 4 we arrived at a view of expressions as finite sequences, in a mathematical sense; and the further step to infinite sequences is in no way audacious. It would, however, be distinctly a departure from all writings on grammar and most writings on logic, including this book, to invoke infinite expressions. Existential quantification over an infinite universe is not dispensable in favor of our alternation notation: finite alternation.
+    >
+    > But existential quantification over an infinite universe still admits of an attractive semantical explanation of truth conditions, even though not of elimination, so long as all the objects have names. The quantification is true if adn only if at least one of its instances-- got by dropping the quantifier and putting a name for the variable-- is true.
+    >
+    > All this about existential quantification holds equally, *mutatis mutandis*, for universal quantification. As long as all objects have names, a universal quantification is true if and only if all its instances are true.
+    >
+    > Our standard logical grammar, at its strictest, admitted no names (Chapter 2). Names can be simulated by contextual definitions; this was why we could do without names in our strictest standard grammar. This way of providing for names does not go very well with these semantical explanations of quantification, however, since quantification is needed already in the contextual definition. So we will do well for the space of the present discussion to think in terms rather of standard logical grammar in the broader sense, admitting names.
+    >
+    > These truth conditions for quantification, based on substitution of names and variables, have been favored by Ruth Marcus and others. They compare and contrast curiously with the Tarskian one seen in (5) of Chapter 3. They do not share the sort of circularity that was already remarked on midway in Chapter 3: the existential quantifcation is true if *some* instance is true, and the universal quantification is true if *every* instance is true. But the great contrast is that (5) of Chapter 3 speaks only of values of variables and makes no appeal to names. For this, (5) pays a price in complexity.
+    >
+    > Thus far, no deviation; just different characterizations of the same quantification, so long as everything has a name. But now it must be remarked that this last is a very restrictive condition, even given our provisional new rediness to admit names. In a generous universe there are more things than can be named even with an infiniteude of names. For, let us recall again one of the twin discrepancies noted in Chapter 4 between sets and open sentences. We saw that some of the sets are not determined by any of the sentences. But these ests will lack names; for if a set has a name, say 'a', then the set is determined by the sentece 'x in a'.
+    >
+    > A more customary argument to the same purpose makes reference to a classical theorem of set theory, which says taht the irrational numbers cannot all be assigned distinct integers. In contrast, all names can be assigned distinct integers, for instance in Godel's way. It follows that the irrational numbers can not all be assigned distinct integers.
+    >
+    > We saw in Chapter 4 that the substitutional definitions of logical truth came out coextensive with teh model-theoretic definition of logical trut, so long as the object language was rich enough in vocabulary. We now see that an oppostie sort of situation holds for quantification: the substitutional characterization fo quantification is not coextensive witht eh characterization in terms of objects, or values of variables, if we we assume a rich universe. An existential quantification could turn out false when substitutionally construed and true when objectually construed, because of there being objects of the purported kind but only nameless ones. A universal quantification could turn out false when objectually construed and true when substitutionally construed, because of there being objects to the contrary but only nameless ones. And no lvaishness with names can prevent there beign nameless objects in a generous universe. Substitutional quantification is deviant if the universe is rich.
+    >
+    > *Its strengths*. The deviation just now noted consists in leaving certain objects out of account, namely, those without names. But substitutional quantification can deviate also in an opposite way: the substituted expressions can fail to name. The truth condition that we formulated for substitutional quantification spoke expressly fo the substitutino of names, but it would work for any other grammatical category as well as for the category of names. If the category is finite, then the quantifications are again of course eliminable in favor of alternations and conjunctions. We sawa  case of precisely this already in teh altter part of Chapter 5, in teh elimination of quantification of the 'alpha', 'beta', etc., in the positions of a hundred one-place predicates. It is interesting to note now an extension of that eliminable brand of quantification, in the form of an uneliminable brand of substitutional quantification. It builds upon the virtual theory fo classes (Chapter 5), and the names that it draws upon in substitution for its variables 'alpha', 'beta', 'etc. are contextually defined abstracts of the virtual theory. If the resulting quantification over simulated classes is seen as cause for rejoicing, then let me remind you in sorrow that these quantifiers are no mere manner of speaking. They are nicely explained, but they are not eliminably defined. Moreover, because vritual class abstracts and corresponding variables come only after 'in', the domain of classes afforded is insufficient foundation for any appreciable matheamtics.
+    >
+    > When soem new brand of quantification is introduced by definition, and thus eliminable, it of course does nto commit us really to recognizing any objects as values of the variables. It is simulated quantification with a simulated ontological commitment. Our real commitment rests rather with the real quantifiers in the standard language that backs up these false fronts of contextual definition. And note the importance of this stiuplation that the grammar be standard. If modalities or other constructions are admitted in addition to truth functions and quantifiers, they add to the strength or content of the theories in ways that are incommensurable with what mgiht be got by enlaring the universe; incommensurable, that is, except relative to some translation of the whole into standard grammar.
+    >
+    > Substitution quantification, on the ohter hand, is neither an eliminable simulation nor a genuine objectual quantification (unless, of course, all things have names). It is not a way, then, of getting along with a null ontology, an empty universe; it is a non-standard idiom, rather, foreign to the langauge in which we talk fo what there is and of values of variables. IF one does still happen to wonder what would be an adequate universe for some theory that comes to him in this non-standard idiom, the thing for him to do is seek one or another reasonable-looking paraphrase of the theory into a standard form in which quantification is objectually construed. Then he can assess the universe of this theory-- though the various passable translationas may well call for different universes. An unimaginative way of those translating substitution quantification is to translate it into a metalanguage in which we talk fo strings of signsa nd conctenation and substitution and truth-- the sort of language touched on midway in Chapter 3. Identifying the strings with numbers as Godel did, we end up with the positive integers as universe." pg. 91-94.
 
 ## 2025 0820 1436
 
