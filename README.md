@@ -190,7 +190,9 @@ I will get to its limitations directly by later quoting a later part of Quine's 
 The inspiration for a substitutional theory of quantification comes from the following logical equivalence: in a universe of discourse whose items are only and solely designated by the names 'Fred', 'Tim', and 'Joe' the following schema are equivalent:
     1. each item is (x such that Fx)
     2. F(Fred), F(Tim), and F(Joe).
-Also, the following are equivalent:
+
+    Also, the following are equivalent:
+
     1. some item is (x such that Fx)
     2. F(Fred), F(Tim), or F(Joe).
 
