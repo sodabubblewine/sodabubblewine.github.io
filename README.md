@@ -148,6 +148,232 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0821 2007
+
+1. Before I began itemizing my notes and flattening entries down to the hour (if you scroll down far enough you'll find entries broken into days and then days into entries identified down to the minute), I was writing long paragraphs of notes on the things that I was reading.
+I stopped doing that because it was unsustainable, and made navigating such entries almost impossible.
+
+2. I begin again with a new book.
+
+3. Will and Ariel Durant's 1936 "The Story of Civilization: Part I Our Oriental Heritage".
+
+4. The first six chapters compose an unnamed 'Book Zero':
+    1. the conditions of civilization
+    2. the economic elements of civilization
+    3. the political elements of civilization
+    4. the moral elements of civilization
+    5. the mental elements of civilization
+    6. the prehistoric beginnings of civilizations
+
+5. In American English, 'oriental' can happily be replaced with 'asian'.
+
+6. Since the science of behavior only appeared less than a century ago, there is little to no history of individual behavior which comes close to that which is necessary for a theoretical analysis.
+
+7. At best, the histories which have been assembled since reports of events began being recorded textually can provide some foundation for a theoretical analysis of cultural scales of change.
+
+8. The social practices which composed the cultures of the world throughout history are know to us by their often deferred consequences.
+The past is remote and histories are our weak link to them.
+
+9. The contingencies which select and maintain social behavior compose a social environment and the shape of the social environment is often mentioned by talk of cultural or social practices e.g. the economic, political, moral, and mental elements mentioned in the Durants's volumes.
+
+10. There is no room in psychology as a science of behavior for mental attributes and, thankfully, the sections of chatper five "the mental elements of civilization" are
+    1. letters: language, its animal background, its human origins, its development, its results, education, initiation, writing, poetry
+    2. science: origins, mathematics astronomy, medicine, surgery
+    3. art: the meaning of beauty, of art, the primitive sense of beauty, the painting of the body, cosmetics, tattooing, scarification, clothing, ornaments, pottery, painting, sculpture, architecture, the dance, music, summary of the primitive preparation for civilization.
+
+11. None of these sections or the items in their description raise any problems which demand mentalistic explanations (thankfully) e.g.
+    > "After fifty thousand years of art men still dispute as to its sources in instinct and in history. What is beauty?-- why do we admire it?-- why do we endeavor to create it? Since this is no place for psychological discourse we shall answer, briefly and precariously, that beauty is any quality by which an object or a form pleases a beholder. Primarily and originally the object does not please the beholder because it is beautiful, but rather he calls it beautiful because it pleases him. Any object that satisfies desire will seem beautiful: food is beautiful-- Thais is not beautiful-- to a starving man." pg. 82
+
+12. The final sentence, 'food is beautiful to a starving man' is the crux of any effective theoretical analysis of cultural practices: as far as we can identify the contingencies of reinforcement (or punishment) that prevailed during a given time, most often by examining the artifacts which helped to maintain social contingencies in the absense of an other organism medaiting their consequences, is as far as we can take whatever history has to offer us.
+
+13. I hope that as the science of behavior supplants the prescience of mind (and its modern reincarnation in cognitive, information, and systems theories) there will be more that the history of day can give to the people and cultures of tomorrow.
+
+14. Until then, I have only the assembled histories available to me e.g. the volumes from the Durants and 2023 “The Earth and Its Peoples 8th ed.” by Richard Bulliet, Pamela Crossley, Daniel Headrick, Steven Hirsch, and Lyman Johnson and 2014 “History of the World 6th ed.” by J. M. Roberts and Odd Arne Westad.
+
+15. It is surprising to many people that science and technology change the control we have over history.
+The popular story is that history has happened, and that there is some correspondence between the past and its history.
+Whatever connection there is is established by science in the same way that any other records of events are connected to other records of events.
+
+16. It is better for me to begin with what textual records there are than to speculate on the scope and limits of such records: such theoretical speculation is for a much later time.
+
+17. Book One 'the near east' is divided into the following chapters:
+    1. Sumeria
+    2. Egypt
+    3. Babylonia
+    4. Assyria
+    5. a motley of nations
+    6. Judea
+    7. Persia
+
+18. Book Two 'India and her Neighbors' is divided into
+    1. The foundations of India
+    2. Buddha
+    3. From Alexander to Aurangzer
+    4. the life of the people
+    5. the paradise of the gods
+    6. the life of the mind
+    7. the literature of India
+    8. Indian art
+    9. a Christian epilogue
+
+19. Book Three 'The Far East' is broken into two parts: China and Japan.
+
+20. Part A 'China' is broken into:
+    1. the age of the philosophers
+    2. the age of the poets
+    3. the age of the artists
+    4. the people and the state
+    5. revolutions and renewal
+
+21. Part B 'Japan' is broken into:
+    1. the makers of Japan
+    2. the political and moral foundations
+    3. the mind adn art of old Japan
+    4. the new Japan
+
+22. This particular edition doesn't have the printed pictures within the texts: it does have black and white images at the front of the book.
+The back and front covers have endsheets that display simple maps of the larger regions dealt with in the text: there is not a one-to-one match between places mentioned in the text and places labeled on the maps.
+
+23. Since this history is a little less than a century old, there is an additional problem of collating its reports with those made by modern texts, such as the eigth edition of 'The Earth and its Peoples'.
+
+24. The first chapter is titled "The conditions of Civilization":
+    1. definition
+    2. geological conditions
+    3. geographical
+    4. economic
+    5. racial
+    6. psychological
+    7. causes of the decay of civilizations
+
+25. The term 'civilization' has the following etymology:
+    > <https://www.etymonline.com/word/civilization>
+    > 
+    > civilization(n.)
+    > 
+    > 1704, in a now-obsolete sense "law which makes a criminal process civil," from civil + -ization.
+    > 
+    > The meaning "civilized condition, state of being reclaimed from the rudeness of savage life" is recorded by 1772, probably from French civilisation, serving as an opposite to barbarity and a distinct word from civility, as if from civilize + -ation.
+    > 
+    > The sense of "a particular human society in a civilized condition, considered as a whole over time," is from 1857. Related: Civilizational.
+    > 
+    > Civility, formerly the substantive of both civil and civilize—the latter of which it was not likely to suggest, except by help of its context,—was judiciously relieved of one of its meanings, by civilization. [Fitzedward Hall, "Modern English," 1873]
+    >
+
+    > <https://www.etymonline.com/word/civil>
+    >
+    > civil(adj.)
+    >
+    > late 14c., "relating to civil law or life; pertaining to the internal affairs of a state," from Old French civil "civil, relating to civil law" (13c.) and directly from Latin civilis "relating to a society, pertaining to public life, relating to the civic order, befitting a citizen," hence by extension "popular, affable, courteous;" alternative adjectival derivative of civis "townsman" (see city).
+    > 
+    > Meaning "not barbarous, civilized" is from 1550s. Specifically "relating to the commonwealth as secularly organized" (as opposed to military or ecclesiastical) by 1610s. Meaning "relating to the citizen in his relation to the commonwealth or to fellow citizens" also is from 1610s.
+    > 
+    > The word civil has about twelve different meanings; it is applied to all manner of objects, which are perfectly disparate. As opposed to criminal, it means all law not criminal. As opposed to ecclesiastical, it means all law not ecclesiastical: as opposed to military, it means all law not military, and so on. [John Austin, "Lectures on Jurisprudence," 1873]
+The sense of "polite" was in classical Latin, but English did not pick up this nuance of the word until late 16c., and it has tended to descend in meaning to "meeting minimum standards of courtesy." "Courteous is thus more commonly said of superiors, civil of inferiors, since it implies or suggests the possibility of incivility or rudeness" [OED].
+    > 
+    > Civil, literally, applies to one who fulfills the duty of a citizen; It may mean simply not rude, or observant of the external courtesies of intercourse, or quick to do and say gratifying and complimentary things. ... Courteous, literally, expresses that style of politeness which belongs to courts: a courteous man is one who is gracefully respectful in his address and manner — one who exhibits a union of dignified complaisance and kindness. The word applies to all sincere kindness and attention. [Century Dictionary, 1895]
+Civil case (as opposed to criminal) is recorded from 1610s. Civil liberty "natural liberty restrained by law only so far as is necessary for the public good" is by 1640s.
+
+    > <https://www.etymonline.com/word/city>
+    >
+    > city(n.)
+    >
+    > c. 1200, from Old French cite "town, city" (10c., Modern French cité), from earlier citet, from Latin civitatem (nominative civitas; in Late Latin sometimes citatem) originally "citizenship, condition or rights of a citizen, membership in the community," later "community of citizens, state, commonwealth" (used, for instance of the Gaulish tribes), from civis "townsman," from PIE root \*kei- (1) "to lie," also forming words for "bed, couch," and with a secondary sense of "beloved, dear."
+    > 
+    > Now "a large and important town," but originally in early Middle English a walled town, a capital or cathedral town. Distinction from town is early 14c. OED calls it "Not a native designation, but app[arently] at first a somewhat grandiose title, used instead of the OE. burh" (see borough).
+    > 
+    > Between Latin and English the sense was transferred from the inhabitants to the place. The Latin word for "city" was urbs, but a resident was civis. Civitas seems to have replaced urbs as Rome (the ultimate urbs) lost its prestige. Loss of Latin -v- is regular in French in some situations (compare alleger from alleviare; neige from nivea; jeune from juvenis. A different sound evolution from the Latin word yielded Italian citta, Catalan ciutat, Spanish ciudad, Portuguese cidade.
+    > 
+    > London is the city from 1550s. As an adjective, "pertaining to a city, urban," from c. 1300. City hall "chief municipal offices" is first recorded 1670s; to fight city hall is 1913, American English. City slicker "a smart and plausible rogue, of a kind usu. found in cities" [OED] is first recorded 1916 (see slick (adj.)). City limits is from 1825.
+    > 
+    > The newspaper city-editor, who superintends the collection and publication of local news, is from 1834, American English; hence city desk attested from 1878. Inner city first attested 1968.
+
+    > <https://www.etymonline.com/word/*kei->
+    >
+    > \*kei-(1)
+    >
+    > Proto-Indo-European root meaning "to lie," also forming words for "bed, couch," and with a secondary sense of "beloved, dear."
+    > 
+    > It might form all or part of: ceilidh; cemetery; city; civic; civil; civilian; civilization; civilize; hide (n.2) measure of land; incivility; incunabula; Siva.
+    > 
+    > It might also be the source of: Sanskrit Sivah "propitious, gracious;" Greek keisthai "to lie, lie asleep;" Latin cunae "a cradle;" Old Church Slavonic semija "family, domestic servants;" Lithuanian šeima "domestic servants," Lettish sieva "wife;" Old English hiwan "members of a household."
+
+26. Following B. F. Skinner's hint 'Etymology is the archeology of thought.' and digging in and around 'civilization', the PIE root '\*kei-' we find that the origins of civilization are beloved beds.
+It is this much wider sense (with all of its metaphorical trappings) that I shall take as 'civilization' and I shall leave behind civilization as something opposed to barbarity.
+
+27. But not before digging up the etymology of 'barbarity':
+    > <https://www.etymonline.com/word/barbarity> 
+    >
+    > barbarity(n.)
+    >
+    > 1560s, "want of civilization," from Latin barbarus (see barbarian (n.)) + -ity. The meaning "savage cruelty, inhuman conduct" is recorded from 1680s.
+
+    > <https://www.etymonline.com/word/barbarian>
+    >
+    > barbarian(adj.)
+    > 
+    > mid-14c., "foreign, of another nation or culture," from Medieval Latin barbarinus (see barbarian (n.)). The meaning "of or pertaining to savages, rude, uncivilized" is from 1590s.
+    > 
+    > barbarian(n.)
+    >
+    > early 15c., in reference to classical history, "a non-Roman or non-Greek," earlier barbar (late 14c.) "non-Roman or non-Greek person; non-Christian; person speaking a language different from one's own," from Medieval Latin barbarinus (source of Old French barbarin "Berber, pagan, Saracen, barbarian"), from Latin barbarus "strange, foreign, barbarous," from Greek barbaros "foreign, strange; ignorant," from PIE root \*barbar- echoic of unintelligible speech of foreigners (compare Sanskrit barbara- "stammering," also "non-Aryan," Latin balbus "stammering," Czech blblati "to stammer").
+    > 
+    > Greek barbaroi (plural noun) meant "all that are not Greek," but especially the Medes and Persians; originally it was not entirely pejorative, but its sense became moreso after the Persian wars. The Romans (technically themselves barbaroi) took up the word and applied it to tribes or nations which had no Greek or Roman accomplishments.
+    > 
+    > Also in Middle English (c. 1400) "native of the Barbary coast;" meaning "rude, wild person" is from 1610s. Occasionally in 19c. English distinguished from savage (n.) as being a step closer to civilization. Sometimes, in reference to Renaissance Italy, "a non-Italian." It also was used to translate the usual Chinese word of contempt for foreigners.
+    > 
+    > Barbarian applies to whatever pertains to the life of an uncivilized people, without special reference to its moral aspects. Barbarous properly expresses the bad side of barbarian life and character, especially its inhumanity or cruelty: as, a barbarous act. Barbaric expresses the characteristic love of barbarians for adornment, magnificence, noise, etc., but it is not commonly applied to persons: it implies the lack of cultivated taste .... [Century Dictionary, 1889]
+
+28. So it is that 'barbarity' descends from the PIE '\*barbar-' "echoic of unintelligible speech of foreigners".
+It is here also that 'civilization' clearly ceases to be of any help in separating scientifically significant elements of social environments from irrelevant ones.
+
+29. Yet, the Durants (I will continue throughout to speak of both husband and wife even though Ariel was only later added as author of later volumes) define civilization as follows:
+    > "Civilization is social order promoting cultural creation. Four elements constitute it: economic provision, political organization, moral traditions, and the pursuit of knowledge and the arts. It begins when chaos and insecurity end. For when fear is overcome, curiosity and constructiveness are free, and man passes by natural impulse towards the understanding and embellishments of life." pg. 1
+
+30. Here we find the developmentalistic metaphors of those like Piaget who speak as if organisms are promoted through distinct stages of progress or perhaps fail to take the step from one stage to the next because of some punitive intervention or lack of innate potential.
+It is as if one culture creates the next with the first culture coming from some unknown creator.
+
+31. Cultures are no more created than species are.
+Social behavior is selected by consequences from variations on past social and nonsocial behavior and, hence, cultural practices as social contingences in a social environment evolve like biological organisms and their behaviors do.
+
+32. There is no more to natural impulse than what has been selected by consequences from variations on past impulses and nonimpulses (whatever these may be).
+Impulses and impedence point to the push and pull of forces having conspicuous causes and effects or occasions and responses: the selecting consequences are left unmentioned.
+
+33. Just as the opposite of reinforcement is not punishment (it is extinction), so too are pairs like 'encourage' and 'discourage' unfavorable to a theoretical analysis of history.
+
+34. Thankfully, the marks of selection by consequences from variation are in records made whether they are so described or not.
+    > "Certain factors condition civilization, and may encourage or impeded it. First, geological conditions. Civilization is an interlude between ice ages: at any tiem the current of glaciation may rise again, cover with ice and stone the works of man, and reduce life to some narrow segment of the earth. Or the demon of earthquake, by whose leave we build our cities, may shrug his shoulders and consume us indifferently." pg.1
+
+35. Recent work on "Big History" has brought some more attention to the problem of how chemical changes appear from physical ones, how biological changes appear from chemical ones, how behavioral changes appear from biological ones, and how social changes appear from behavioral ones.
+
+36. The conditions of geology and geography are seen as far more dynamic than they once were: the environments in which social behaviors occur are less a stage on which bits of behaving biology play, and more a cumulative selector.
+
+37. geological conditions:
+    1. ice ages
+    2. glaciation
+    3. ice and stone
+    4. earth
+    5. earth quake
+
+38. There are more, and they are to be found in notes that have yet to appear on the science of geology.
+
+39. geographical conditions:
+    1. heat
+    2. rain
+    3. soil
+    4. river
+    5. lake
+    6. ocean
+
+40. The modern science of geography which is closest to studying conditions like those listed above are nonexclusive divisions of what is called physical geography:
+    1. geomorphology: what consequences select the form of the surfaces above or below seal level (bathymetric or hypsometric surfaces of the major distribution of liquid water) on the planet?
+    2. hydrology: what consequences select the distribution of liquid water above sea level on the planet?
+    3. oceanography: what consequences select the distribution of liquid water below sea level on the planet?
+    3. glaciology: what consequences select the distribution of solid water (above sea level) on the planet?
+    4. climatology: what consequences select the distribution of gaseous water (above sea level) on the planet?
+    5. soil geography: what consequences select the composition of the surfaces of the planet?
+
+
+
 ## 2025 0821 1706
 
 1. Added hint "HOW TO COOK IT": use a theremometer.
@@ -218,7 +444,7 @@ I've avoided similar notation as often as possible for two reasons:
 Schematic letters are replaced in the mechanical operation of substitution (von Neumann went so far as to say that substitution is executed on a schema in order to further distinguish between the schema and its sentences), but pronouns which occur in a schema (such as 'x', 'y', or 'it') also occur in the substitutional instances of such a schema.
 
 12. I have gone out of my way when designing my memo on predicate logic to not only avoid pronouns (which is made possible by Quine's predicate functors) but also to avoid schema.
-I have have gone so far as to avoid notation generally.
+I have gone so far as to avoid notation generally.
 The price is high, but the pros far outweight the cons: there is no access point for any of the confusion caused over the past century by, e.g., mistaking predicating a predicate for attributing an atribute or classing a class.
 
 13. It is still my mission to provide a perfectly smooth explanation of predicate logic from the logic of truth functions and quantifications (TQL) or, unhappily, "first-order logic".
