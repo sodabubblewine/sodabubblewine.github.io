@@ -105,7 +105,7 @@ Journal your thoughts and feelings.
     4. first (j\*2)-iterates are their component,
     5. (n+2)th (j\*2)-iterates are (j,j,0)-resultants of their component with j nip (j\*2)s of (n+1)th (j\*2)-iterates of their component,
     6. (n+1)th (j\*2)-inverse iterates are (n+1)th (j\*2)-iterates of j bury (j\*2)s.
-    7. zeroth ((j+1)\*2)-iterates are conjunctions of ((j+1)\*2)-identities with each first thru ((j+1)\*2)-CW of (j\*2 +1) drops of the ((j+1)\*2,0)-field of their component.
+    7. zeroth ((j+1)\*2)-iterates are conjunctions of ((j+1)\*2)-identities with each first thru ((j+1)\*2)th ((j+1)\*2)-CWs of (j\*2 +1) drops of the ((j+1)\*2,0)-field of their component.
 7. The functional abbreviations are
     1. i-functionalities are inclusions of ((1+i)\*2)-identities with the conjunction of i drops with i nip i's of their component
     2. i-totalities are universal closures of i existential croppings
@@ -121,6 +121,10 @@ Journal your thoughts and feelings.
     4. i-transitivities are inclusions of the second (i\*2)-iterate of their component with their component,
     5. i-nontransitivities are negations of i-transitivities,
     6. i-intransitivities are inclusions of the second (i\*2)-iterate of their component with the negation of their component,
+    7. i-reflexivities are inclusions of the zeroth i-iterate of their component with their component
+    8. i-nonreflexivities are negations of i-reflexivities
+    9. i-irreflexivities are inclusions of their component with i-nonidentities.
+    10. i-totalreflexivities are inclusions of i-identities with their component
 
 ## HOW PREDICATE ABSTRACTS WORK
 
@@ -147,6 +151,60 @@ Use a thermometer.
 
 
 # NOTES
+
+## 2025 0822 1810
+
+1. The notes in [#2025-0821-2007](#2025-0821-2007) on the first volume of the "story of civilization" by the Durants sparked the collection of the references to be collated into my history of the world.
+
+2. The center piece, for better or for worse, is 2023 “The Earth and Its Peoples 8th ed.” by Richard Bulliet, Pamela Crossley, Daniel Headrick, Steven Hirsch, and Lyman Johnson.
+
+3. This is largerly because I have access to Richard Bulliet's lectures on an earlier edition of this book where he makes specific comments about its composition and the various conflicts between members of the commity assembled to construct it.
+The economic, political, religious, and academic influences are emphasized throughout Bulliet's lectures and aid in my own interpretation of the text as it relates to the often older sources available to me.
+    - <https://youtube.com/playlist?list=PLXxM47ZxXvkaODXkQBO5RrUJQh5mA0N6l&si=QcW61mPKNdVEZ8jL>
+
+4. Another video source is the Crash Course on World History designed around the 2012 AP World History curriculum presented in many small chunks by John Green:
+    - <https://www.youtube.com/playlist?list=PLBDA2E52FB1EF80C9>
+
+5. A major task is collating the chronology.
+
+6. But first a proper list of secondary sources that I have at hand (in no particular order):
+    1.  Bulliet, Richard, et al. The Earth and Its Peoples: A Global History, 8th ed., Cengage Learning, 2024
+    2. Durant, Will. Our Oriental Heritage; The Story of Civilization. New York: Simon and Schuster, 1954.
+    3. Bauer, Susan Wise. The History of the Ancient World: From the Earliest Accounts to the Fall of Rome. 2007.
+    4. Christian, David. Origin Story: A Big History of Everything. New York: Little, Brown and Company, 2018.
+    5. Crofton, Ian, and Jeremy Black. The Little Book of Big History: The Story of Life, the Universe and Everything. Michael O'Mara Books, 2016.
+    6. Wiesner-Hanks, Merry E. A Concise History of the World. Cambridge University Press, 2015.
+    7. Harman, Chris. A People's History of the World. Verso, 2017.
+    8. McNeil, Ian, ed. An Encyclopedia of the History of Technology. Routledge, 1990.
+    9. Harris, Marvin. Cannibals and Kings: The Origins of Cultures. New York: Random House, 1977.
+    10. Roberts, J. M., & Westad, O. A. (2013). The Penguin History of the World. Oxford University Press.
+    11. Roberts, J. M. (1993). History of the World. Oxford University Press.
+
+7. I have the remaining books in the Durants's volumes, and the other two history texts by Susan Wise Bauer.
+I also have a few texts on the history of philosophy, political philosophy, and histories of economics that must also get folded into my history.
+
+8. There is no good place to start when writing the kind of history I have in my sights, but start I shall, and start I have.
+
+## 2025 0822 1541
+
+1. I shall start composing rather than just improvising at the piano.
+This is largely due to a conversation that I had with a friend.
+
+2. Continuing work on what I'm now calling "the graph abbreviations" for the memo on predicate logic.
+
+3. The graph abbreviations are
+    1. i-symmetrics are inclusions of their component with the first (i\*2)-inverse iterate of their component
+    2. i-nonsymmetrics are negations of i-symmetrics
+    3. i-asymmetrics are inclusions of their component with the negation fo the first (i\*2)-inverse iterate of their component
+    4. i-transitivities are inclusions of the second (i\*2)-iterate of their component with their component,
+    5. i-nontransitivities are negations of i-transitivities,
+    6. i-intransitivities are inclusions of the second (i\*2)-iterate of their component with the negation of their component,
+    7. i-reflexivities are inclusions of the zeroth i-iterate of their component with their component
+    8. i-nonreflexivities are negations of i-reflexivities
+    9. i-irreflexivities are inclusions of their component with i-nonidentities.
+    10. i-totalreflexivities are inclusions of i-identities with their component
+
+4. Each of these abbreviations is in need of further review: compare and contrast with the corresponding abbreviations in Quine's "Set Theory and its Logic" in the section on virtual relations (which are later taken in Quine's "Methods of Logic 4th edition" as proper predicate functors), and Tarski's 1941 "Calculus of Relations" and Givant's 2006 "The Calculus of Relations as a Foundation for Mathematics".
 
 ## 2025 0821 2007
 
@@ -186,7 +244,7 @@ The past is remote and histories are our weak link to them.
 
 12. The final sentence, 'food is beautiful to a starving man' is the crux of any effective theoretical analysis of cultural practices: as far as we can identify the contingencies of reinforcement (or punishment) that prevailed during a given time, most often by examining the artifacts which helped to maintain social contingencies in the absense of an other organism medaiting their consequences, is as far as we can take whatever history has to offer us.
 
-13. I hope that as the science of behavior supplants the prescience of mind (and its modern reincarnation in cognitive, information, and systems theories) there will be more that the history of day can give to the people and cultures of tomorrow.
+13. I hope that as the science of behavior supplants the prescience of mind (and its modern reincarnation in cognitive, information, and systems theories) there will be more that the history of today can give to the people and cultures of tomorrow.
 
 14. Until then, I have only the assembled histories available to me e.g. the volumes from the Durants and 2023 “The Earth and Its Peoples 8th ed.” by Richard Bulliet, Pamela Crossley, Daniel Headrick, Steven Hirsch, and Lyman Johnson and 2014 “History of the World 6th ed.” by J. M. Roberts and Odd Arne Westad.
 
@@ -231,7 +289,7 @@ Whatever connection there is is established by science in the same way that any 
     3. the mind adn art of old Japan
     4. the new Japan
 
-22. This particular edition doesn't have the printed pictures within the texts: it does have black and white images at the front of the book.
+22. This particular edition doesn't have the printed pictures within the text: it does have black and white images at the front of the book.
 The back and front covers have endsheets that display simple maps of the larger regions dealt with in the text: there is not a one-to-one match between places mentioned in the text and places labeled on the maps.
 
 23. Since this history is a little less than a century old, there is an additional problem of collating its reports with those made by modern texts, such as the eigth edition of 'The Earth and its Peoples'.
@@ -297,7 +355,7 @@ Civil case (as opposed to criminal) is recorded from 1610s. Civil liberty "natur
     > 
     > It might also be the source of: Sanskrit Sivah "propitious, gracious;" Greek keisthai "to lie, lie asleep;" Latin cunae "a cradle;" Old Church Slavonic semija "family, domestic servants;" Lithuanian šeima "domestic servants," Lettish sieva "wife;" Old English hiwan "members of a household."
 
-26. Following B. F. Skinner's hint 'Etymology is the archeology of thought.' and digging in and around 'civilization', the PIE root '\*kei-' we find that the origins of civilization are beloved beds.
+26. Following B. F. Skinner's hint 'Etymology is the archeology of thought.' and digging in and around 'civilization' to the PIE root '\*kei-' it is found that the origins of civilization are beloved beds.
 It is this much wider sense (with all of its metaphorical trappings) that I shall take as 'civilization' and I shall leave behind civilization as something opposed to barbarity.
 
 27. But not before digging up the etymology of 'barbarity':
