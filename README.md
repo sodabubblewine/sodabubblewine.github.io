@@ -152,6 +152,225 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0823 1534
+
+1. In an attempt to write out the name of the chapter mentioned in the the 19th item of the previous note, I was thrown into reading a number of selections from Russell's "An Inquiry into Meaning and Truth" (IMT) as a result of having read and made notes in [#2025-0817-1523](#2025-0817-1523) on  “Russell’s Logicism and Theory of Coherence” by Conor Mayo-Wilson in Russell: The Journal of Bertrand Russell Studies. Vol. 31. Summer, 2011. pp. 89-106.
+
+2. I turned to page 400 of IMT, the first page of chapter 23 titled 'Warrented Assertability' and read the second sentence
+    > "The third, that of coherence, was discussed and rejected in Chapter X." pg. 400
+
+3. From there it occurred to me that Mayo-Wilson was claiming something else, that Russel was primarly concerned with coherence.
+Here is a selection from the abstract to Mayo-Wilson's paper:
+    > "This raises the question: what did Russell understand to be the philosophical importance of logicism? Building on recent work by Andrew Irvine and Martin Godwyn, I argue that Russell thought a systematic reduction of mathematics increases the certainty of known mathematical theorems (even basic arithmetic) facts by showing mathematical knowledge to be *coherently* organized. The paper outlines Russell's theory of coherence, and discusses its relevance to logicism and teh certainty attributed to mathematics." pg. 1
+
+4. Next I flipped to Chapter 21 titled 'Truth and Verification' and read the following selection:
+    > IN recent philosophy we may distinguish four main types of theory as to 'truth' or as to its replacement by some concept which is thought preferable. These four theories are:
+    > 1. The theory which substitues 'warrented assertability' for 'truth'. This theory is advocated by Dr. Dewey and his school.
+    > 2. The theory which substitutes 'probability' for 'truth'. This theory is advocated by Professor Reichenbach.
+    > 3. The theory which defines 'truth' as 'coherence'. This theory is advocated by Hegelians and certain lgoical positivits.
+    > 4. The correspondence theory of truth, according to which the truth of basic propositions depends upon their relation to some occurrence, and the truth of other propositions depends upon their syntactical relations to basic propositions.
+    > 
+    > For my part I adhere firmly to this last theory. It has, however, two forms between which the decision is not easy. In one form, the basic propositions must be derived from experience, and therefore propositions which cannot be sutably related to experience are neither true nor false. In the other form, the basic propositions need note be related to experience, but only to 'fact,' though if they are not related to experience they cannot be known. Thus the two forms of the correspondence theory differ as to the relation of 'truth' to 'knowledge'.
+    > 
+    > Of the above four theories, I have discussed the third in chapter X;" pg. 362-363 Russell IMT
+
+5. Upon reading that last sentence I turned to chapter ten titled 'Basic Propositions' and sought out where Russell wrote 'coherence'.
+It is a long and meandering chapter, and for all that seems to hinge upon it, it is weakly assembled and frequently supported by the kind of personalized convictions which pervade Russell's literary style e.g.
+    > "But what do I know?
+    > 1. What I see when I look at them
+    > 2. What I hear when others read them aloud
+    > 3. What I see when others quote them in print
+    > 4. What I see when I compare two copies of the same book." pg. 180
+
+6. The experimental analyst of behavior has spent a great deal of time and energy removing such blind spots i.e. in making clear that such naive certainty is extinguished the moment the behavior of organisms is examined in a laboratory environment and is reinforced by vistigial literary environments found in prescientific libraries.
+
+7. This particular quote from the tenth chapter is also an indication of Russell's outlook: that which is certain is that with which he is in direct contact.
+
+8. I can not keep everything together without simply quoting selections that I have read:    
+    > "Assuming, as I shall do henceforth, that there are basic propositions, it seems to me that, for theory of knowledge, 'basic propositions' may be alternatively defined as 'those propositions about particular occurrences which, after a critical scrutiny, we still believe independently of any extraneous evidence in their favour.'
+    >
+    > Let us consider the clauses of this definition, and let us begin at the end. There may be evidence in favoour of a basic proposition, but it is not this evidence *alone* that causes our belief. You may wake up in the morning and see that it is daylight, and you may see from your watch that it is daylight, and you may see from your watch that it must be daylight. But even if your watch pointed to midnight, you would not doubt that it is daylight. in my scientific system, a number of propositions based on observations support each other, but each is capable of commanding belief on its own account. Moreover mutual support among basic propositions is only possible on the basis of some theory.
+    >
+    > There are cases, however-chiefly where memory is concerned-- in which our belief, though not inferential, is more or less uncertain. In such cases, a system composed of such beliefs wins more acceptance than any one of them singly. I think Mr. Z. invited me to dinner on Thursday; I look in my diary, and find an entry to that effect. Both my memory adn my diary are fallible, but when tehy agree I think it unlikely that they are both wrong. I will return to this kind fo case later; for the present, i wish to exclude it. It is to be observed, meantime, that a non-inferential belief need not be either certain or indubitable." 187-188
+
+    > "We thus arrive at the momentary perception as the least questionable thing in our experience, and as therefore the criterion and touchstone of all other certainties and pseudocertainties.
+    > 
+    > But for theory fo knolwedge it is not sufficient that we should perceive something; it is necessary that we should express what we perceive in words. now most objectwords are condensed inductions; this is true of teh word 'dog,' as we have already had occasion to notice. We must avoid such words, if we wish to be merely recording what we perceive. To do this is very difficult, and requires a special vocabulary. We have seen that this vocabulary includes words such as 'red,' and relation-words such as 'precedes,' but not names of persons or physical objects or classes of such terms.
+    >
+    > We have considered the subject of 'basic propositions' or 'Protokollsatze,' and tried to show that empirical knowledge is impossible without them. it will be remembered that we defined a 'basic proposition' by two characteristics:
+    > 1. It arises on occasion of a perception, which is the evidence for its truth;
+    > 2. It has a form such that no two propositions having the form can be mutually inconsistent if derived from different percepts.   
+    >
+    > A proposition having these two characteristics cannot be disproved, but it would be rash to say that it *must* be true.
+    >
+    > Perhpas no actual proposition quite rigidly fulfils the definition. But pure perceptive propositions remain a limit to which we can approach indefinitely, and the nearer we approach the smaller is the risk of error.
+    > 
+    > Empirical knowledge requires, however, other premises asserting matters of fact, in addition to pure perceptive propositions. I shall give the name 'factual premiss' to any uninferred proposition which asserts something having a date and which I believe after a critical scrutiny. I do not mean that the date is part of theassertion, but merely that soem kind of temporal occurrence is what is involved in teh truth of the assertion.
+    >
+    > Factual premisses are not alone sufficient for empirical knowledge, since most of it is inferred. We require, in addition, the premisses necessary for deduction, and those other premisses, whatever they may be, that are necessary for the non-demonstrative inferences upon which science depends." 189-190 IMT ch. 'factual premises'
+
+    > "It must be held, on logical grounds, that no occurrence gives *demonstrative* grounds in favor of belief in any other occurrence. But the grounds are often such as we cannot fail to accept as giving *practical* certainty. We saw taht there can be no reason for disbelieving the proposition 'that is red' when made in the presence of a red percept; it must, however, be admitted that belief in this proposition is logically possible in teh absence of a red percept. Such grounds as exist for supposing that thsi does not occur are derived from causal laws as to teh occurrence of language. We can, however, in theory, distinguish two cases in relation to a judgement such as 'taht is red': one, when it is cause by what it asserts, adn the other, when words or images enter into its causation. In the formercase, it must be true; in the latter, it may be false." pg. 199-200 ch. 'factual premises'
+
+    > "It must be remembered that a factual premiss need not be indubitable, even subjectively; it need only command a certain degree of credence. It can therefore always be reinforced if it is found to harmonize with other factual premisses. What characterizes a factual premiss is not indubitabilitiy, but the fact that it commands a greater or less degree of belief on its own account, independently of its relations to other propositions. We are then led to a combination of self-evidence with coherence: sometimes one factor is very much more important than the other, but in theory coherence always plays some part. The coherence required, however, is not strict logical coherence, for factual premisses can and should be so stated as to be deductively independent of each other. The kind of coherence invovled is a matter which I hope to consider in a later work." pg. 201-202 ch. 'factual premises', Russell 'Inquiry into Meaning and Truth'
+
+9. There is still much to be done to better understand where Mayo-Wilson is coming from and where Russell is coming from in IMT.
+
+## 2025 0823 1417
+
+Work on potential memo 'Stack Notation for Predicate Functor Logic' set to strengthen [#a-stack-notation-for-predicate-functor-logic-2025-0414-1626](#a-stack-notation-for-predicate-functor-logic-2025-0414-1626).
+
+1. Stack notation for predicate functor logic combines the utility of the Forth and J programming languages with Quine's elimination of variables from truth-functional and quantificational logic via the additional methods of predicate abstraction and concretion as the logical import of the grammarian's relative clause.
+
+2. Instead of a predicate having a certain number of crossreferenced places wherein given names are predicated of it, each predicate has a number of left and a number of right places.
+
+3. For example, the classic two place predicates 'father of', 'less than', and 'member of' each have one left place and one right place and are therefore called '(1,1) place predicates'.
+
+4. Predications of (i,m) place predicate letters are depicted schematically by prepending i variables and appending m variables to a predicate letter e.g. 'uFx', 'uvGxyz', and 'uvwHxyz'.
+
+5. Thus, a predication such as '*a* pairs *b* with *c*' is rendered as '*a*PAIRS*bc*'.
+
+6. Quine's predicate abstracts can be introduced as an abbreviation of truth-functional and quantificational logic of an identity theory (technically, the predicate abstract is introduced as part of an abbreviated predication and it is shown that the predicate abstract part is coextensive with the predicate of the abstracted predication):
+    - '{u: Fu}x' for 'some a is such that x=a and some u is such that Fu and u=a'
+    - '{uv: Guv}xy' for 'some a is such that some b is such that x=a, y=b, and some u is such that some v is such that Guv, u=a, and v=b'
+    - '{..u: H..u}..x' for '.. some a is such that .., x=a, and .. some u is such that H..u, .., and u=a'.
+
+7. Predicate abstraction and its various parts are explained as the logical import of the relative clause:
+    1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
+    2. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *free* sentence 'x loves Dick' with the prefix 'x:'.
+
+8. What I call 'free sentences' are called by Quine, and most others, as 'open sentences'.
+
+9. The shift in terminology is justified by noting that what once went as an open sentence, e.g. 'x is a member of y', was either taken as a closed sentence where the free variables 'x' and 'y' were playing the part of names (singular terms) purporting to designate one and only one item throughout a given logical demonstration, or where properly paraphrased as predicates by supplmenting a suppresed prefix of predicate abstraction, e.g. 'x and y are such that x is a member of y'.
+
+10. Thus, a free sentence is free to be the component of a predicate abstract or to stand alone as a proper (closed) sentence containing proper names (singular terms).
+
+11. When predicate abstracts are abbreviations of sentences of truth-functional and quantificational logic the schematic biconditionals of concretion (which has its origins in Frege and Russell) can be proved from  instances of Wang's schematic premise of identity theory 'Fx if and only if some y is such that Fy and x=y' e.g.
+    1. Fu if and only if some u is such that Fu and u=x 
+    2. some u is such that Fu and u=x, iff some a is such that a=x and some u is such that u=a and Fu
+
+12. The schematic biconditionals of concretion are then
+    1. Fx if and only if {u: Fu}x
+    2. Fxy if and only if {uv: Fuv}xy
+    3. F..x if and only if {..u: F..u}..x
+
+13. The schematic biconditionals of concretion can themselves be given as the starting point of a truth functional, predicate abstract, and predicate functor logic, but that shall not be shown here.
+
+14. Rounding out the role of relative clause
+    1. the predication ‘{x:x loves Dick}Tom’ concretes to ‘Tom loves Dick’, and
+    2. predicate abstraction and concretion bestow predicational completeness upon truth-functional and quantificational logic: what can be said of a thing can be said by predicating a predicate of its name.
+
+15. Concretion makes each predicate coextensive with each predicate abstract of its predications so that the shapes of predicates and predicate letters in a stack based language can be depicted by a predicate abstract of a predication like '*a*PAIRS*bc*' e.g. '{xyz: xPAIRSyz}'.
+
+16. But, the predicate abstract '{xyz: xPAIRSyz}' is not only misleading to those who see the curly brackets as indicating what is most commonly called 'set builder notation', but also does not preserve the shape of the predicate shown i.e. '*a*PAIRS*bc* if and only if {xyz: xPAIRSyz}*abc*' suggests that the predicate abstract '{xyz: xPAIRSyz}' has the shape (0,3) whereas its purportedly coextensive predicate 'PAIRS' has shape (1,2).
+
+17. In languages where variables abound, this confusion over shape is obviously eliminated by further and familiar regimentation: 'xPAIRSyz' is regimented as 'PAIRSxyz' or, with an eye towards the methods of stack based langauges, 'xyzPAIRS'.
+
+18. When it comes to eliminating variables and perhaps even introducing them from a variable free predicate functor logic, the methods of stack based languages do pay their way, but to those unfamiliar with overtly stack based langauges, e.g. Charles H. Moore's Forth programming language or Iverson and Hui's J programming language, or with the covertly stack based langauges, e.g. John McCarthy and Steve Russell's LISP programming language, there may appear as if there is little to recommend with such divisions of predicates into their left and right parts.
+
+19. Interestingly, it was Russell in "An Inquiry into Meaning and Truth" and "Human Knolwedge: its scope and limits" where the problems of analysis, e.g. the logic of a predicate 'part of', and individuation are brought down to a division of the world, or at least what can be seen by an eye, into its left and right parts.
+
+20. Variations on the curly bracket notation abound e.g.
+
+    1. (xyz: xFyz)
+    2. (xyz such that xFyz)
+    3. ((x, yz) such that xFyz)
+    4. (x with yz such that xFyz.
+
+    and such grander deviations as
+    
+    5. {x: xFyz :yz}
+    6. (x: xFyz :yz)
+    7. (x such that xFyz that for yz)
+
+    or such pedantic (and wild) deviations as
+
+    8. {(((), x), (y, (z, ())))): xFyz)
+    9. ( ((), x) with (y, (z, ())) such that xFyz)
+    10. ( ((), x) such that xFyz that for (y, (z, ())) ).
+
+21. Somewhere among all these parentheses, the notation of LISP recommends itself if the lambda calculus retcon is ignored (lambda abstraction and application suffer from the same unfortunate kinship to predicate abstraction and concretion that membership does to predication) e.g.
+    1. ( ( (u v w) (x y) ) uvwFxy)
+    2. ( ( () (x y)) Fxy)
+
+22. A variation on the LISP notation which draws from the tacit methods of the J programming language yields:
+    1. ( (u) uFxyz (x y z) )
+    2. ( (u v w) uvwF () )
+
+23. Such is the notation best suited to my full generalization of concretion to its destructuring expedient e.g. 
+    - (a (b c)) ( (u v) (v (u u) v)F((x y) (x y z)) ((x y) z) ) ((f g) h) if and only if ((b c d) (a a))F((f g) (f g h)).
+
+25. But, thankfully, such generalization doesn't fit the simple aim sought here, and the notation which shows some affinity to Grassmann's inner product notation and Dirac's Bra-ket notation shall be finally adopted e.g.
+    1. (uvw: vuuwFxxxy :xyz)
+    2. (u..vw: ..vu..vF..x..zy :..xy..z).
+
+26. I do sincerely hope that all this talk fo alternative notations justifies my inclination to avoid notation all togehter for well factored and carefully compounding abbreviations.
+
+27. Having rolled out the red carpet there is nothing left to do but construct the entirety of predicate logic and its profoundly powerful reach into traditionally mathematical realms from three predicate functors:
+    1. 'drop F' for '(..uv: ..uF..x :..x)'
+    2. 'hem F' for '(..uvw: ..uvwFv..x :..x)'
+    3. 'huh F G' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)'
+    > Technically, 'v' must be replaced by some varaible fresh to the context.
+
+28. For those wishing to see predicate abstracts in the abbreviation as well as the abbreviated phrase, and who are considerate of the further restrictions imposed on substitutions in and for predicate abstracts, the following may be instructive:
+    1. 'drop (..u: ..uF..x :..x)' for '(..uv: ..uF..x :..x)'
+    2. 'hem (..uvw: ..uvwFx..y :x..y)' for '(..uvw: ..uvwFv..y :..y)'
+    3. 'huh (..uxw: ..uxwF..y :..y) (..uxw: ..uxwG..y :..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)'
+    > with the same technical stipulation on 'v'.
+
+29. Warning! The predicate functor 'huh' is an amalgam of what is otherwise presented as three seperate predicate functors: 'push', 'some', and 'nor'.
+Following the changes in shape when they are shown in both parts of the abbreviation can be confusing and can otherwise be worked out, with some effort, from the work just shown.
+
+30. Technically: given that the reader is careful about the additional constraints on where and when a given variable can be introduced. Such constraints can be formally deduced by going all the way back to the truth functional and quantificational abbreviation of predicate abstracts and the relevant restraints on substutitutions of variables between truth functional and quantificational schema.
+
+31. Such technicalities are avoided by assuming only what has already been weakly at work with notation such as '..x' i.e. the various parts are to be filled out into the appropriate shapes based on context clues.
+
+32. The following abbreviation continues the play on words of confusion from 'huh' because both are overtly confusing for the sake of showing that logic can be got down to at most three predicate functors:
+    - 'uh F' for 'huh F F' i.e. '(..u: some v is such that ..uxvF..y nor uxvF..y :x..y)'.
+
+33. While I've gone ahead and expanded 'huh F F' into the predicate abstract it abbreviates '(..u: some v is such that ..uxvF..y nor uxvF..y :x..y)' so that 'uh F' can be written directly as the predicate abstract it abbreviates, I may not always do so, and when I don't it is appropriate to work it out for yourself.
+
+33. Finally, a familiar alethic predicate functor and one which is familiar to those who work with Forth and other stack based programming languages:
+    - 'not F' for 'uh hem drop drop F'
+    - 'push F' for 'not uh drop F'
+
+34. There is one step in unraveling these abbreviations that I have not overtly shown and so I shall go through the steps of first getting down to the predicate abstract abbreviated by 'not F' and then the one abbreviated by 'push F'.
+
+35. Unraveling 'not F':
+    1. uh hem drop drop F
+    2. huh (hem drop drop F) (hem drop drop F) (abbreviation)
+    3. (..u: some v is such that ..uxv(hem drop drop F)..y nor uxv(hem drop drop F)..y :x..y) (abbreviation)
+    4. (..u: some v is such that not ..uxv(hem hem drop F)..y :x..y) (interchange of equivalents 'p nor p, if and only if not p')
+    5. (..u: not each v is such that ..uxv(..abc: ..abc(drop drop F)b..f :..f)..y :x..y) (rule of passage)
+    6. (..u: not each v is such that ..uxv(drop drop F)x..y :x..y) (concretion)
+    7. (..u: not each v is such that ..uxv(..abc: ..ab(drop F)f..g :f..g)x..y :x..y)
+    8. (..u: not each v is such that ..ux(drop F)x..y :x..y) (concretion)
+    9. (..u: not each v is such that ..ux(..ab: ..aFf..g :f..g)x..y :x..y) (abbreviation)
+    10. (..u: not each v is such that ..uFx..y :x..y) (concretion)
+    11. (..u: not ..uFx..y :x..y) (interchange of equivalents '(each v is such that p) if and only if p')
+
+36. This unraveling explains to the native speaker of truth functional and quantificational logic (with its abbreviation for predicate abstracts) what it is that the predicate functor logician is talking about when they use the predicate functor of negation as opposed to the truth function of negation.
+
+37. All in all, the above work on 'not F' may be abbreviated as follows:
+    - 'not F' for 'uh hem drop drop F' i.e. '(..u: not ..uF..x :..x)'.
+
+38. Now for the unraveling of 'push F'
+    1. not uh drop F
+    2. (..u: not ..u(uh drop F)..x :..x) (abbreviation)
+    3. (..u: not ..u(huh (drop F) (drop F))..x :..x) (abbreviation)
+    4. (..u: not ..u(..a: some b is such that ..afb(drop F)..g nor ufv(drop F)..g :f..g)..x :..x) (abbreviation)
+    5. (..u: not some b is such that ..uyb(drop F)..z nor ..uyb(drop F)..z :y..z) (concretion, but note 'y..z' and '..x' have the same length and corresponding variables i.e. the double dot notation dodges some tedium that is explained in greater detail elsewhere)
+    6. (..u: not some b is such that not ..uyb(drop F)..z :y..z) (interchange of equivalents 'p nor p, if and only if not p')
+    7. (..u: each b is such that ..uyb(drop F)..z :y..z) (interchange of equivalents 'not some b is such that not Gb, if and only if each b is such that Gb')
+    8. (..u: each b is such that ..uyb(..ac: ..aF..f :..f)..z :y..z) (abbreviation)
+    9. (..u: each b is such that ..uyF..z :y..z) (concretion)
+    10.(..u: ..uyF..z :y..z) (interchange of equivalents 'each b is such that p, if and only if p)
+
+39. Thus, 'push F' for 'not uh drop F' i.e. '(..u: ..uxF..y :x..y)'.
+
+40. Tomorrow I shall start with the three basic predicate functors 'drop', 'hem', and 'huh', and shorten all that has been shown here in the last few notes, and then get on with the rest of the abbreviations of logic as described in the hint [#how-the-abbreviations-of-logic-work](#how-the-abbreviations-of-logic-work) (though there they are described without notation, and a total of six predicate functors are actually used as a starting point in [#how-logic-works](#how-logic-works)).
+    
+
+
 ## 2025 0822 1810
 
 1. The notes in [#2025-0821-2007](#2025-0821-2007) on the first volume of the "story of civilization" by the Durants sparked the collection of the references to be collated into my history of the world.
