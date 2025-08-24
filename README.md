@@ -240,7 +240,7 @@ Work on potential memo 'Stack Notation for Predicate Functor Logic' set to stren
 
 8. What I call 'free sentences' are called by Quine, and most others, as 'open sentences'.
 
-9. The shift in terminology is justified by noting that what once went as an open sentence, e.g. 'x is a member of y', was either taken as a closed sentence where the free variables 'x' and 'y' were playing the part of names (singular terms) purporting to designate one and only one item throughout a given logical demonstration, or where properly paraphrased as predicates by supplmenting a suppresed prefix of predicate abstraction, e.g. 'x and y are such that x is a member of y'.
+9. The shift in terminology is justified by noting that what once went as an open sentence, e.g. 'x is a member of y', was either taken as a closed sentence where the free variables 'x' and 'y' were playing the part of names (singular terms) purporting to designate one and only one item throughout a given logical demonstration, or were properly paraphrased as predicates by supplmenting a suppresed prefix of predicate abstraction, e.g. 'x and y are such that x is a member of y'.
 
 10. Thus, a free sentence is free to be the component of a predicate abstract or to stand alone as a proper (closed) sentence containing proper names (singular terms).
 
@@ -274,7 +274,7 @@ Work on potential memo 'Stack Notation for Predicate Functor Logic' set to stren
     1. (xyz: xFyz)
     2. (xyz such that xFyz)
     3. ((x, yz) such that xFyz)
-    4. (x with yz such that xFyz.
+    4. (x with yz such that xFyz)
 
     and such grander deviations as
     
