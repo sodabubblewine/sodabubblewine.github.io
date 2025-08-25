@@ -70,7 +70,7 @@ Journal your thoughts and feelings.
     8. conjunctions are negations of alternative denials,
     9. exclusive alternations are conjunctions of alternative denials with matching alternations,
     10. biconditionals are negations of exclusive alternations, and 
-    11. sequents are conditionals of conjunctions with alternations.
+    11. cedents are conditionals of conjunctions with alternations.
 2. The Boolean abbreviations are
     1. universal closures are negations of existential closures of negations,
     2. inclusions are universal closures of conditionals,
@@ -80,18 +80,18 @@ Journal your thoughts and feelings.
 3. The quantificational abbreviation is
     - universal croppings are negations of existential croppings of negations.
 4. The recombic abbreviations are
-    1. dushes are pushes of drops,
-    2. props are drops of pushes,
-    3. overs are pushes of hems,
-    4. oems are hems of overs,
-    5. dupes are dushes of oems,
-    6. pops are two drops of oems,
-    7. nip ns are n pushes of drops of n pops,
-    8. digs are nips of hems,
-    9. bury ns are n pushes of n digs,
+    1. dushes are drops of pushes,
+    2. props are pushes of drops,
+    3. overs are hems of pushes,
+    4. oems are overs of hems,
+    5. dupes are oems of dushes,
+    6. pops are oems of two drops,
+    7. nip ns are n pops of a drop of n pushes,
+    8. digs are hems of nips,
+    9. bury ns are n digs of n pushes,
     10. unbury ns are n bury ns,
-    11. (i,m)-clockwise turns (CWs) are m pops of one bury (i+m) of m pushes, and
-    12. (i,m)-counterclockwise turns (CCWs) are m pops of one unbury (i+m) of m pushes. 
+    11. (i,m)-clockwise turns (CWs) are m pushes of one bury (i+m) of m pops, and
+    12. (i,m)-counterclockwise turns (CCWs) are m pushes of one unbury (i+m) of m pops. 
 5. The sameness abbreviations are
     1. (i+1,m)-indiscernabilities are i, universal croppings of bury 2s of, m, universal croppings of pops of, conjunctions of each biconditional of, drops of with nip 1s of, the 1st thru (i+m)th (i,m)-CWs of their component (Leibniz, Quine).
     2. identity is the conjunction of each indiscernability of a lexical atom(Leibniz, Quine).
@@ -151,6 +151,202 @@ Use a thermometer.
 
 
 # NOTES
+
+## 2025 0824 1844
+
+1. Went to a bookfair, bought over 60 books for $50.
+
+2. Anyone reading this note is assumed to have read the slower and gentler explanations in [#2025-0823-1417](#2025-0823-1417) on the evolution of predicate functor logic from truth-functional and quantification logic thru predicate abstracts and the schematic premise of abstraction and concretion.
+
+3. ‘a(u: uFx :x)b’ for ‘some v is such some y is such that v=a, y=b, and some u is such some x is such that that uFx, u=v, and x=y’
+    1. In general, '..a{..u: ..uH..x :..x}..b' for '.. some v is such that .. some y is such that .., v=a, .., y=b, and .. some u is such .. some x is such that that ..uH..x, .., u=v, .., and x=y'
+    2. Predicate abstraction and its various parts are explained as the logical import of the relative clause.
+    3. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
+    4. It *abstracts* 'Tom' from 'Tom loves Dick' by *binding* the *free* occurrence of 'x' in the *free* sentence 'x loves Dick' with the prefix 'x:'.
+
+4. Wang’s schematic premise of identity theory ‘Fx if and only if some y is such that Fy and x=y’ implies the schematic biconditionals of concretion
+
+    1. a (u: uFx :x) b if and only if aFb
+    2. ..a (..u: ..uF..x: ..x)..b if and only if ..aF..b
+
+    and round out the role of relative clause
+
+    3. the predication ‘{x:x loves Dick}Tom’ concretes to ‘Tom loves Dick’, and
+    4. predicate abstraction and concretion bestow predicational completeness upon truth-functional and quantificational logic: what can be said of a thing can be said by predicating a predicate of its name.
+
+5. All of predicate logic rest upon at most three predicate functors:
+    1. 'drop (..u: ..uF..x :..x)' for '(..uv: ..uF..x :..x)'
+    2. 'hem (..uvw: ..uvwFx..y :x..y)' for '(..uvw: ..uvwFv..y :..y)'
+    3. 'huh (..uxw: ..uxwF..y :..y) (..uxw: ..uxwG..y :..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)'    
+    > Technically, 'v' must be replaced by some varaible fresh to the context.
+
+    i.e.
+    1. 'drop F' for '(..uv: ..uF..x :..x)'
+    2. 'hem F' for '(..uvw: ..uvwFv..x :..x)'
+    3. 'F huh G' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)'
+
+6. 'F nor G' for '(hem drop drop F) huh (hem drop drop G)' i.e.
+    1. (..u: some v is such that ..uxv(hem drop drop F)..y nor uxv(hem drop drop G)..y :x..y) (abbreviation)
+    2. (..u: some v is such that..uxv(..abc: ..abc(drop drop F)b..f :..f)..y nor ..uxv(..abc: ..abc(drop drop G)b..f :..f)..y :x..y) (abbreviation)
+    3. (..u: some v is such that ..uxv(drop drop F)x..y nor ..uxv(drop drop G)x..y :x..y) (concretion)
+    4.  (..u: some v is such that ..uxv(..abc: ..ab(drop F)f..g :f..g)x..y nor ..uxv(..abc: ..ab(drop G)f..g :f..g)x..y :x..y) (abbreviation)
+    5. (..u: some v is such that ..ux(drop F)x..y nor ..ux(drop G)x..y :x..y) (concretion)
+    6. (..u: ..ux(drop F)x..y nor ..ux(drop G)x..y :x..y) (interchange of equivalents ‘(each v is such that p) if and only if p’)
+    7. (..u: ..ux(..ab: ..aFf..g :f..g)x..y nor ..ux(..ab: ..aGf..g :f..g)x..y :x..y) (abbreviation)
+    8. (..u: ..uFx..y nor ..uGx..y :x..y) (concretion).
+
+7. 'not F' for 'F nor F' i.e.
+    1. (..u: ..uF..x nor ..uF..x :..x) (abbreviation)
+    2. (..u: not ..uF..x :..x) (interchange of equivalents 'p nor p, if and only if not p')
+
+8. 'F or G' for 'not (F nor G)' i.e.
+    1. (..u: not ..u(F nor G)..x :..x) (abbreviation)
+    2. (..u: not ..u(..v: ..vF..y nor ..vG..y :..y)..x :..x) (abbreviation)
+    3. (..u: not (..uF..x nor ..uG..x) :..x) (concretion)
+    4. (..u: ..uF..x or ..uG..x :..x) (interchange of equivalents 'p or q, if and only if not, p or q')
+
+9. The rest of the logical abbreviations work out just as 'not' and 'or' do from 'nor' and they are
+    1. 'F if G' for 'F or not G'
+    2. 'F not if G' for 'not (F if G)'
+    3. 'F not only if G' for 'G not if F'
+    4. 'F only if G' for 'not (F not only if G)'
+    5. 'F not and G' for 'F only if not G'
+    6. 'F and G' for 'not (F not and G)'
+    7. 'F or exclusively G' for '(F or G) and (F not and G))'
+    8. 'F if and only if G' for 'not (F or exclusively G)'
+    9. '..F cede ..G' for '(.., and F) only if (.., or G)
+
+10. Happily, in composing 8.9 I stumbled upon the name 'cedent' for what I and most have called 'sequents' and it yielded a beautiful way of reading cedents alound as 'cede'.
+Happy linguistic accidents are often the best.
+
+11. 'push F' for 'not ((drop F) huh (drop F))' i.e.
+    1. not (..u: some v is such that ..uxv(drop F)..y nor ..uxv(drop F)..y :x..y) (abbreviation)
+    2. not (..u: some v is such that ..uxF..y nor ..uxF..y :x..y) (interchange of equivalents '..uv(drop F)..x if and only if ..uF..x')
+    3. not (..u: ..uxF..y nor ..uxF..y :x..y) (interchange of equivalents 'p if and only if some v is such that p')
+    4. not (..u: not ..uxF..y :x..y) (interchange of equivalents 'p nor p, if and only if not p')
+    5. (..u: not not ..uxF..y :x..y) (abbreviation)
+    6. (..u: ..uxF..y :x..y) (interchange of equivalents 'p if and only if not not p')
+
+12. The valid schema '..uv(drop F)..x if and only if ..uF..x' invoked in step 2 of item 10 is characteristic of recombic functors in that such biconditionals shorten the intermediate equivalents established by abbreviation and concretion e.g. the following are equivalent
+    1. ..uv(drop F)..x
+    2. ..uv(..ab: ..aF..f :..f)..x (abbreviation)
+    3. ..uF..x (concretion).
+
+13. 'dush F' for 'drop push F' i.e.
+    1. (..uv: ..u(push F)x..y :x..y) (abbreviation)
+    2. (..uv: ..uxF..y :x..y) (interchnage of equivalents '..u(push F)x..y if and only if ..uxF..y').
+
+14. 'prop F' for 'push drop F' i.e.
+    1. (..u: ..ux(drop F)..y :x..y) (abbreviation)
+    2. (..u: ..uF..y :x..y) (interchange of equivalents '..uv(drop F)..x if and only if ..uF..x')
+
+15. 'over F' for 'hem push F' i.e.
+    1. (..uvw: ..uvw(push F)v..x :..x)
+    2. (..uvw: ..uvwvF..x :..x)
+
+16. 'oem F' for 'over hem F' i.e.
+    1. (..uvw: ..uvwv(hem F)..x :..x) 
+    2. (..uvw: ..uvwvFw..x :..x)
+
+17. 'dup F' for 'oem dush F' i.e.
+    1. (..uvw: ..uvwv(dush F)w..x :..x)
+    2. (..uvw: ..uvwwF..x :..x)
+
+18. 'pop F' for 'oem drop drop F' i.e.
+    1. (..uvw: ..uvwv(drop drop F)w..x :..x)
+    2. (..uvw: ..uvw(drop F)w..x :..x)
+    3. (..uvw: ..uvFw..x :..x)
+
+19. 'nip F' for 'pop drop push F' i.e.
+    1. (..uvw: ..uv(drop push F)w..x :..x)
+    2. (..uvw: ..u(push F)w..x :..x)
+    3. (..uvw: ..uwF..x :..x)
+
+20. Repeat notation is technically a step up to predicate functor functors, but rather than take that step formally, I'll simply employ this imprecise yet accurate abbreviation (grouping parentheses are dropped when convenient):
+    1. '.0.( \~\~\~ )' for ''    
+    2. '.1.( \~\~\~ )' for '\~\~\~'
+    3. '.1+n.( \~\~\~ )' for '\~\~\~ .n.( \~\~\~ )'
+    > This dot notation is experimental and may be replaced by something like 
+    > - '(1+n)( \~\~\~ )' for '\~\~\~ (n)( \~\~\~)'
+    > - '(1+n \~\~\~)' for '\~\~\~ (n \~\~\~)'
+
+21. Based on the comment to 20 the repeat notation is very experimental and so much so that I'm already changing it to:
+    1. '(0 \~\~\~)' for ''
+    2. '(1 \~\~\~)' for '\~\~\~'
+    3. '(1+n \~\~\~)' for '\~\~\~ (n \~\~\~)'
+
+22. 'nip 1+n F' for '(1+n pop) drop (1+n push) F' i.e.
+    1. (..uv..wa: ..uv..w((n pop) drop (1+n push) F)a..x :..x)
+    2. (..uv..wa: ..uv(drop (1+n push) F)..wa..x :..x)
+    3. (..uv..wa: ..u((1+n push) F)..wa..x :..x)
+    4. (..uv..wa: ..u..waF..x :..x)
+
+23. 'dig F' for 'hem nip F' i.e.
+    1. (..uvw: ..uvwFv..x :..x)
+    2. (..uvw: ..uwFv..x :..x)
+
+24. 'bury F' for 'dig push F' i.e.
+    1. (..uvw: ..uw(push F)v..x :..x)
+    2. (..uvw: ..uwvF..x :..x)
+
+25. 'bury 1+n F' for '(1+n dig) (1+n push) F' i.e.
+    1. (..u..vw: ..uw((1+n push) F)..v..x :..x)
+    2. (..u..vw: ..uw..vF..x :..x)
+
+26. 'unbury F' for 'bury F' i.e.
+    1. (..uvw: ..uwvF..x :..x)
+
+27. 'unbury 1+n F' for '(1+n bury 1+n) F' i.e.
+    1. (..uw..va: ..uaw..v((n bury 1+n) F)..x :..x)
+    2. (..uw..va: ..u..vawF..x :..x)
+
+28. 'clockwise i m F' or 'cw i m F' for '(m push) bury i+m (m pop) F' i.e.
+    1. (..u..wv: ..u..wv..xy(bury i+m (m pop) F)..z :..xy..z) 
+    2. (..u..wv: ..uy..wv..x((m pop) F)..z :..xy..z) 
+    3. (..u..wv: ..uy..wFv..x..z :..xy..z)
+
+29. 'counterclockwise i m F' or 'ccw i m F' for '(m push) unbury i+m (m pop) F) i.e.
+    1. (..uw..v: ..uw..vx..y(unbury i+m (m pop) F)..z :x..y..z)
+    2. (..uw..v: ..u..vx..yw((m pop) F)..z :x..y..z)
+    3. (..uw..v: ..u..vxF..yw..z :x..y..z)
+
+30. Doing each of the recombic functors above made me notice that I had written the order of predicate functors in the recombic abbreviations backwards!
+This is something that happens from time to time because there is a bit of confusion when working from the inside out and the outside in with predicate functors and then going over and working with the functional predicates that carry over the recombic functors like the remainder of the quotient of arithmetic operations divided by two do for the truth functional functors (better, denotative functional functors).
+
+31. 'each F' for 'not ( (hem nip F) huh (hem nip F))' i.e.
+    1. not (..u: some v is such that ..uxv(hem nip F)..y nor ..uxv(hem nip F)..y :x..y)
+    2. not (..u: some v is such that not ..uxv(hem nip F)..y :x..y)
+    3. not (..u: some v is such that not ..uxv(nip F)x..y :x..y)
+    4. not (..u: some v is such that not ..uvFx..y :x..y)
+    5. (..u: not some v is such that not ..uvFx..y :x..y)
+    6. (..u: each v is such that ..uvFx..y :x..y)
+
+32. 'some F' for 'not each not F'
+    1. not (..u: each v is such that ..uv(not F)x..y :x..y)
+    2. (..u: not each v is such that ..uv(not F)x..y :x..y)
+    3. (..u: not each v is such that not ..uvFx..y :x..y)
+    4. (..u: some v is such that ..uvFx..y :x..y)
+
+33. 'Each F' for '(i+m each) (m pop) (..u: ..uF..x :..x)' i.e.
+    1. (i+m each) (..u..x: ..uF..x :)
+    2. (: .. each u is such that .. each x is such that ..uF..x :)
+    3. .. each u is such that .. each x is such that ..uF..x
+
+34. 'Some F' for 'not Each not F'
+
+35. 'F includes G' for 'Each (F if G)'
+
+36. 'F is included in G' for 'G includes F'
+
+37. 'F is coextensive with G' for '(F includes G) and (F is included in G)'
+
+38. 'F properly includes G' for 'F includes G and not F is coextensive with G'
+
+39. 'F is properly included in G' for 'G properly includes F'
+
+40. That completes the schematic denotative functional, Boolean, quantificational, and recombic abbreviations of logic.
+
+41. Soon I will give the schematic sameness, compositional, functional, and graphical of logic (and then much more).
 
 ## 2025 0823 1534
 
@@ -299,35 +495,35 @@ Work on potential memo 'Stack Notation for Predicate Functor Logic' set to stren
 23. Such is the notation best suited to my full generalization of concretion to its destructuring expedient e.g. 
     - (a (b c)) ( (u v) (v (u u) v)F((x y) (x y z)) ((x y) z) ) ((f g) h) if and only if ((b c d) (a a))F((f g) (f g h)).
 
-25. But, thankfully, such generalization doesn't fit the simple aim sought here, and the notation which shows some affinity to Grassmann's inner product notation and Dirac's Bra-ket notation shall be finally adopted e.g.
+24. But, thankfully, such generalization doesn't fit the simple aim sought here, and the notation which shows some affinity to Grassmann's inner product notation and Dirac's Bra-ket notation shall be finally adopted e.g.
     1. (uvw: vuuwFxxxy :xyz)
     2. (u..vw: ..vu..vF..x..zy :..xy..z).
 
-26. I do sincerely hope that all this talk fo alternative notations justifies my inclination to avoid notation all togehter for well factored and carefully compounding abbreviations.
+25. I do sincerely hope that all this talk fo alternative notations justifies my inclination to avoid notation all togehter for well factored and carefully compounding abbreviations.
 
-27. Having rolled out the red carpet there is nothing left to do but construct the entirety of predicate logic and its profoundly powerful reach into traditionally mathematical realms from three predicate functors:
+26. Having rolled out the red carpet there is nothing left to do but construct the entirety of predicate logic and its profoundly powerful reach into traditionally mathematical realms from three predicate functors:
     1. 'drop F' for '(..uv: ..uF..x :..x)'
     2. 'hem F' for '(..uvw: ..uvwFv..x :..x)'
     3. 'huh F G' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)'
     > Technically, 'v' must be replaced by some varaible fresh to the context.
 
-28. For those wishing to see predicate abstracts in the abbreviation as well as the abbreviated phrase, and who are considerate of the further restrictions imposed on substitutions in and for predicate abstracts, the following may be instructive:
+27. For those wishing to see predicate abstracts in the abbreviation as well as the abbreviated phrase, and who are considerate of the further restrictions imposed on substitutions in and for predicate abstracts, the following may be instructive:
     1. 'drop (..u: ..uF..x :..x)' for '(..uv: ..uF..x :..x)'
     2. 'hem (..uvw: ..uvwFx..y :x..y)' for '(..uvw: ..uvwFv..y :..y)'
     3. 'huh (..uxw: ..uxwF..y :..y) (..uxw: ..uxwG..y :..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)'
     > with the same technical stipulation on 'v'.
 
-29. Warning! The predicate functor 'huh' is an amalgam of what is otherwise presented as three seperate predicate functors: 'push', 'some', and 'nor'.
+28. Warning! The predicate functor 'huh' is an amalgam of what is otherwise presented as three seperate predicate functors: 'push', 'some', and 'nor'.
 Following the changes in shape when they are shown in both parts of the abbreviation can be confusing and can otherwise be worked out, with some effort, from the work just shown.
 
-30. Technically: given that the reader is careful about the additional constraints on where and when a given variable can be introduced. Such constraints can be formally deduced by going all the way back to the truth functional and quantificational abbreviation of predicate abstracts and the relevant restraints on substutitutions of variables between truth functional and quantificational schema.
+29. Technically: given that the reader is careful about the additional constraints on where and when a given variable can be introduced. Such constraints can be formally deduced by going all the way back to the truth functional and quantificational abbreviation of predicate abstracts and the relevant restraints on substutitutions of variables between truth functional and quantificational schema.
 
-31. Such technicalities are avoided by assuming only what has already been weakly at work with notation such as '..x' i.e. the various parts are to be filled out into the appropriate shapes based on context clues.
+30. Such technicalities are avoided by assuming only what has already been weakly at work with notation such as '..x' i.e. the various parts are to be filled out into the appropriate shapes based on context clues.
 
-32. The following abbreviation continues the play on words of confusion from 'huh' because both are overtly confusing for the sake of showing that logic can be got down to at most three predicate functors:
+31. The following abbreviation continues the play on words of confusion from 'huh' because both are overtly confusing for the sake of showing that logic can be got down to at most three predicate functors:
     - 'uh F' for 'huh F F' i.e. '(..u: some v is such that ..uxvF..y nor uxvF..y :x..y)'.
 
-33. While I've gone ahead and expanded 'huh F F' into the predicate abstract it abbreviates '(..u: some v is such that ..uxvF..y nor uxvF..y :x..y)' so that 'uh F' can be written directly as the predicate abstract it abbreviates, I may not always do so, and when I don't it is appropriate to work it out for yourself.
+32. While I've gone ahead and expanded 'huh F F' into the predicate abstract it abbreviates '(..u: some v is such that ..uxvF..y nor uxvF..y :x..y)' so that 'uh F' can be written directly as the predicate abstract it abbreviates, I may not always do so, and when I don't it is appropriate to work it out for yourself.
 
 33. Finally, a familiar alethic predicate functor and one which is familiar to those who work with Forth and other stack based programming languages:
     - 'not F' for 'uh hem drop drop F'
@@ -342,7 +538,7 @@ Following the changes in shape when they are shown in both parts of the abbrevia
     4. (..u: some v is such that not ..uxv(hem hem drop F)..y :x..y) (interchange of equivalents 'p nor p, if and only if not p')
     5. (..u: not each v is such that ..uxv(..abc: ..abc(drop drop F)b..f :..f)..y :x..y) (rule of passage)
     6. (..u: not each v is such that ..uxv(drop drop F)x..y :x..y) (concretion)
-    7. (..u: not each v is such that ..uxv(..abc: ..ab(drop F)f..g :f..g)x..y :x..y)
+    7. (..u: not each v is such that ..uxv(..abc: ..ab(drop F)f..g :f..g)x..y :x..y) (abbreviation)
     8. (..u: not each v is such that ..ux(drop F)x..y :x..y) (concretion)
     9. (..u: not each v is such that ..ux(..ab: ..aFf..g :f..g)x..y :x..y) (abbreviation)
     10. (..u: not each v is such that ..uFx..y :x..y) (concretion)
@@ -363,7 +559,7 @@ Following the changes in shape when they are shown in both parts of the abbrevia
     7. (..u: each b is such that ..uyb(drop F)..z :y..z) (interchange of equivalents 'not some b is such that not Gb, if and only if each b is such that Gb')
     8. (..u: each b is such that ..uyb(..ac: ..aF..f :..f)..z :y..z) (abbreviation)
     9. (..u: each b is such that ..uyF..z :y..z) (concretion)
-    10.(..u: ..uyF..z :y..z) (interchange of equivalents 'each b is such that p, if and only if p)
+    10. (..u: ..uyF..z :y..z) (interchange of equivalents 'each b is such that p, if and only if p)
 
 39. Thus, 'push F' for 'not uh drop F' i.e. '(..u: ..uxF..y :x..y)'.
 
@@ -10134,9 +10330,9 @@ let occursIn = (string, item) => string.includes(item)
 And, here are some examples:
 
 ```
-shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one))
+shorten(concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one))
   ',.,...'
-decode(encode(shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one))))
+decode(encode(shorten(concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one))))
   '..,.,...,,,'
 ```
 
@@ -10226,7 +10422,7 @@ let pairUpEverything = stack =>
 run("decode(encode(concatenate(zero,zero,one)))")
 run("decode(encode(concatenate(zero,zero,zero,zero)))")
 run("decode(encode(concatenate(one,zero,one,zero,zero,zero)))");
-run("decode(encode(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one)))");
+run("decode(encode(concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one)))");
 
 let occursIn = (string, item) => string.includes(item)
 , trimLeftZeros = string => string.slice(string.indexOf(one))
@@ -10236,8 +10432,8 @@ let occursIn = (string, item) => string.includes(item)
   isEmptyString(string) ? '.'
   : occursIn(string,zero) && occursIn(string,one) ? trim(string)
   : string;
-run("shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one))");
-run("decode(encode(shorten(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one))))");
+run("shorten(concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one))");
+run("decode(encode(shorten(concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one))))");
 ```
 
 ## 2025 0412
