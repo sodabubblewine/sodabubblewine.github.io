@@ -331,17 +331,13 @@ This is something that happens from time to time because there is a bit of confu
     2. (: .. each u is such that .. each x is such that ..uF..x :)
     3. .. each u is such that .. each x is such that ..uF..x
 
-34. 'Some F' for 'not Each not F'
-
-35. 'F includes G' for 'Each (F if G)'
-
-36. 'F is included in G' for 'G includes F'
-
-37. 'F is coextensive with G' for '(F includes G) and (F is included in G)'
-
-38. 'F properly includes G' for 'F includes G and not F is coextensive with G'
-
-39. 'F is properly included in G' for 'G properly includes F'
+34. The rest of the schematic Boolean abbreviations are
+    1. 'Some F' for 'not Each not F'
+    2. 'F includes G' for 'Each (F if G)'
+    3. 'F is included in G' for 'G includes F'
+    4. 'F is coextensive with G' for '(F includes G) and (F is included in G)'
+    5. 'F properly includes G' for 'F includes G and not F is coextensive with G'
+    6. 'F is properly included in G' for 'G properly includes F'
 
 40. That completes the schematic denotative functional, Boolean, quantificational, and recombic abbreviations of logic.
 
