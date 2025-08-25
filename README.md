@@ -170,7 +170,6 @@ Use a thermometer.
     2. ..a (..u: ..uF..x: ..x)..b if and only if ..aF..b
 
     and round out the role of relative clause
-
     3. the predication ‘{x:x loves Dick}Tom’ concretes to ‘Tom loves Dick’, and
     4. predicate abstraction and concretion bestow predicational completeness upon truth-functional and quantificational logic: what can be said of a thing can be said by predicating a predicate of its name.
 
