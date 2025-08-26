@@ -152,6 +152,37 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0826 1442
+
+1. With a few simple edits to the abbreviations laid out in [#2025-0825-1745](#2025-0825-1745) I can more easily reach universal and existential closures while also making way for indiscernibility.
+The introduction of the abbreviations for indiscernibility are unhappy, but I'd rather get on with it than labor over notation.
+
+2. 'each i m F' for '(i+m each) (m pop) F'
+3. 'each F' for 'each 1 0 F'
+4. 'some i m F' for 'not each i m not F'
+5. 'some F' for 'some 1 0 F'
+4. 'Each F' for 'each i m F' where 'F' is substituted for an i m place predicate or schema
+5. 'Some F' for 'not Some not F'
+
+6. That completes the new methods of introducing the Boolean abbreviations.
+Now for the sameness abbreviations of indiscernibility and (lexical) identity:
+
+6. 'indi 0 i+2 m F' for 'each i m (2 unbury i+2) iff drop F nip F'
+7. 'indi 1+k i+2 m F' for 'and indi 0 i+2 m F indi k i+2 m cw i m F'
+8. 'indi F' for 'indi i+2+m i+2 m F' where 'F' is substituted for an i m place predicate or schema
+9. 'ide ()' or 'ide 0' for ''
+10. 'ide (F ..G)' or 'ide 1+n F .. G' for 'and indi F ide n ..G'
+11. 'id' for the substitution in 'ide (..F)' of ..F for the lexical predicates
+12. 'id 0 (i+1)\*2' for '(i nip) (i nip 2) id'
+13. 'id 1+k (i+1)\*2' for 'and id 0 (i+1)\*2 cw (i+1)\*2 0 id 1+k (i+1)\*2'
+14. 'id (i+1)\*2' for 'id i (i+1)\*2'
+15. 'id 0' and 'id i\*2+1' for 'over drop' i.e. no-op
+16. 'nid i' for 'not id i'
+
+12. Now is a good time to recall that the abbreviations of logic are inert: they do little more than hint at the validities in which they play a part.
+Validities are equally inert in that they merely hint at the theories in which they play a part.
+
+
 ## 2025 0825 2104
 
 1. The 30 books that I got for $25 were 30 of the 54 volumes in the 1952 series 'Great Books of the Western World'.
