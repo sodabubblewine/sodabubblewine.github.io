@@ -236,10 +236,12 @@ Knowing the number of places of a predicate functor makes chaining them together
 6. I shall continue to keep the infix notation of familiar truth functional (better, denotative functional) and quantificational logic e.g. 'huh F G' is equivalent to '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)' just as it was with the old predicate functor notation.
 
 7. The new abbreviations are
-    1. Basic Predicate Functors:
-        1. Drop: 'drop F' or 'drop (..u: ..uF..x :..x)' for '(..uv: ..uF..x :..x)'
-        2. Hem: 'hem F' or 'hem (..uvw: ..uvwFx..y :x..y)' for '(..uvw: ..uvwFv..y :..y)'
-        3. Huh: 'huh F G' or 'huh (..uxw: ..uxwF..y :..y) (..uxw: ..uxwG..y :..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)' (technically: 'v' must be replaced by some varaible fresh to the context)
+    1. The Basics:
+        1. Predicate Abstraction: '..a(..u: ..uH..x :..x)..b' for '.. some v is such that .. some y is such that .., v=a, .., y=b, and .. some u is such .. some x is such that that ..uH..x, .., u=v, .., and x=y'
+        2. Concretion: ..a (..u: ..uF..x: ..x)..b if and only if ..aF..b
+        3. Drop: 'drop F' or 'drop (..u: ..uF..x :..x)' for '(..uv: ..uF..x :..x)'
+        4. Hem: 'hem F' or 'hem (..uvw: ..uvwFx..y :x..y)' for '(..uvw: ..uvwFv..y :..y)'
+        5. Huh: 'huh F G' or 'huh (..uxw: ..uxwF..y :..y) (..uxw: ..uxwG..y :..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)' (technically: 'v' must be replaced by some varaible fresh to the context)
     2. Joint Denial: 'nor F G' for 'huh (hem drop drop F)  (hem drop drop G)' i.e. '(..u: ..uFx..y nor ..uGx..y :x..y)'
     3. Negation: 'not F' for 'nor F F' i.e. '(..u: not ..uF..x :..x)'
     4. Alternation: 'or F G' for 'not (nor F G)' i.e. '(..u: ..uF..x or ..uG..x :..x)'
