@@ -152,6 +152,142 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0825 2104
+
+1. The 30 books that I got for $25 were 30 of the 54 volumes in the 1952 series 'Great Books of the Western World'.
+    - <https://en.wikipedia.org/wiki/Great_Books_of_the_Western_World>
+
+2. I have all but one or two books after the 24th and none before that one.
+While I may buy the missing books online, I may also just leave them as little quests. 
+
+3. One thing I know for sure is that this series contains many of the texts that I've either read online or have wanted to read e.g. I already dove into Spinoza's 1677 'Ethics' (written from 1661-1675) and Descarte's 1701 'Rules for the Direction of the Mind' (written from 1628).
+
+4. I also got the entire compendium of 'Harvard Classics' for $30.
+
+5. There should be more series like this that are less encyclopedic but more exaustive.
+
+6. The methods of logic have yet to be adequatly applied to history.
+
+7. The compendiums are woefully inadequate when compared with what is presently known about the history of the world.
+
+## 2025 0825 1745
+
+1. Went to the bookfar again: bought over 30 books for $25.
+
+2. A grammatically simpler and uniform prefix notation shall be adapted as a result of the notational exploration done in the previous note.
+
+3. First a summary of the results derived yesterday in [#2025-0824-1844](#2025-0824-1844) (with the old notation).
+    1. Predicate Abstraction: '..a(..u: ..uH..x :..x)..b' for '.. some v is such that .. some y is such that .., v=a, .., y=b, and .. some u is such .. some x is such that that ..uH..x, .., u=v, .., and x=y'
+    2. Concretion: ..a (..u: ..uF..x: ..x)..b if and only if ..aF..b
+    3. Basic Predicate Functors:
+        1. Drop: 'drop F' or 'drop (..u: ..uF..x :..x)' for '(..uv: ..uF..x :..x)'
+        2. Hem: 'hem F' or 'hem (..uvw: ..uvwFx..y :x..y)' for '(..uvw: ..uvwFv..y :..y)'
+        3. Huh: 'F huh G' or '(..uxw: ..uxwF..y :..y) huh  (..uxw: ..uxwG..y :..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)' (technically: 'v' must be replaced by some varaible fresh to the context)
+    4. Joint Denial: 'F nor G' for '(hem drop drop F) huh (hem drop drop G)' i.e. '(..u: ..uFx..y nor ..uGx..y :x..y)'
+    5. Negation: 'not F' for 'F nor F' i.e. '(..u: not ..uF..x :..x)'
+    6. Alternation: 'F or G' for 'not (F nor G)' i.e. '(..u: ..uF..x or ..uG..x :..x)'
+    7. Converse Conditional: 'F if G' for 'F or not G'
+    8. Complementary Converse Conditional: 'F not if G' for 'not (F if G)'
+    9. Complementary Conditional: 'F not only if G' for 'G not if F'
+    10. Conditional: 'F only if G' for 'not (F not only if G)'
+    11. Alternative Denial: 'F not and G' for 'F only if not G'
+    12. Conjunction: 'F and G' for 'not (F not and G)'
+    13. Exclusive Alternation: 'F or exclusively G' for '(F or G) and (F not and G))'
+    14. Biconditionals: 'F if and only if G' for 'not (F or exclusively G)'
+    15. Cedents: '..F cede ..G' for '(.., and F) only if (.., or G)
+    16. Push: 'push F' for 'not ((drop F) huh (drop F))' i.e. '(..u: ..uxF..y :x..y)'
+    17. Dush: 'dush F' for 'drop push F' i.e. '(..uv: ..uxF..y :x..y)'
+    18. Prop: 'prop F' for 'push drop F' i.e. '(..u: ..uF..y :x..y)'
+    19. Over: 'over F' for 'hem push F' i.e. '(..uvw: ..uvwvF..x :..x)'
+    20. Oem: 'oem F' for 'over hem F' i.e. '(..uvw: ..uvwvFw..x :..x)'
+    21. Dup: 'dup F' for 'oem dush F' i.e. '(..uvw: ..uvwwF..x :..x)'
+    22. Pop: 'pop F' for 'oem drop drop F' i.e. '(..uvw: ..uvFw..x :..x)'
+    23. Nip: 'nip F' for 'pop drop push F' i.e. '(..uvw: ..uwF..x :..x)'
+    24. Repeat Notation:
+        1. '(0 \~\~\~)' for ''
+        2. '(1 \~\~\~)' for '\~\~\~'
+        3. '(1+n \~\~\~)' for '\~\~\~ (n \~\~\~)'
+    25. Nip n: 'nip 1+n F' for '(1+n pop) drop (1+n push) F' i.e. '(..uv..wa: ..u..waF..x :..x)'
+    26. Dig: 'dig F' for 'hem nip F' i.e. '(..uvw: ..uwFv..x :..x)'
+    27. Bury: 'bury F' for 'dig push F' i.e. '(..uvw: ..uwvF..x :..x)'
+    28. Bury n: 'bury 1+n F' for '(1+n dig) (1+n push) F' i.e. '(..u..vw: ..uw..vF..x :..x)'
+    29. Unbury: 'unbury F' for 'bury F' i.e. '(..uvw: ..uwvF..x :..x)'
+    30. Unbury n: 'unbury 1+n F' for '(1+n bury 1+n) F' i.e. '(..uw..va: ..u..vawF..x :..x)'
+    31. Clockwise: 'clockwise i m F' or 'cw i m F' for '(m push) bury i+m (m pop) F' i.e. '(..u..wv: ..uy..wFv..x..z :..xy..z)'
+    32. Counterclockwise: 'counterclockwise i m F' or 'ccw i m F' for '(m push) unbury i+m (m pop) F) i.e. '(..uw..v: ..u..vxF..yw..z :x..y..z)'
+    33. Universal Cropping: 'each F' for 'not ( (hem nip F) huh (hem nip F))' i.e. '(..u: each v is such that ..uvFx..y :x..y)'
+    34. Existential Cropping: 'some F' for 'not each not F' i.e. '(..u: some v is such that ..uvFx..y :x..y)'
+    35. Universal Closure: 'Each F' for '(i+m each) (m pop) (..u: ..uF..x :..x)' i.e. '.. each u is such that .. each x is such that ..uF..x'
+    36. Existential Closure: 'Some F' for 'not Each not F'
+    37. Inclusion: 'F includes G' for 'Each (F if G)'
+    38. Converse Inclusion: 'F is included in G' for 'G includes F'
+    39. Coextension: 'F is coextensive with G' for '(F includes G) and (F is included in G)'
+    40. Proper Inclusion: 'F properly includes G' for 'F includes G and not F is coextensive with G'
+    41. Proper Converse Inclusion: 'F is properly included in G' for 'G properly includes F'
+
+4. The uniform grammar enforces a prefix notation on composing predicate functors.
+It eliminates a lot but not all parentheses but they can always be included to guide the eye even when they are otherwise redundant.
+Each of the predicate functor abbreviations given above are given below with the new notation.
+
+5. Each predicate functor has a number of places (just like each predicate has a number of left places and a number of right places).
+For example, huh is a two place predicate functor (just as 'fathered' is a 1 1 place predciate since it has one left place and one right place, and 'pairs' is a 1 2 place predicate since it has one left place and two right places).
+Knowing the number of places of a predicate functor makes chaining them together require no parentheses e.g. 'huh huh F G H' is equivalent to 'huh (huh F G) H' (remember that most parentheses are there to help your eye) and 'huh huh F G huh H F' is equivalent to 'huh (huh F G) (huh H F)'.
+
+6. I shall continue to keep the infix notation of familiar truth functional (better, denotative functional) and quantificational logic e.g. 'huh F G' is equivalent to '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)' just as it was with the old predicate functor notation.
+
+7. The new abbreviations are
+    1. Basic Predicate Functors:
+        1. Drop: 'drop F' or 'drop (..u: ..uF..x :..x)' for '(..uv: ..uF..x :..x)'
+        2. Hem: 'hem F' or 'hem (..uvw: ..uvwFx..y :x..y)' for '(..uvw: ..uvwFv..y :..y)'
+        3. Huh: 'huh F G' or 'huh (..uxw: ..uxwF..y :..y) (..uxw: ..uxwG..y :..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)' (technically: 'v' must be replaced by some varaible fresh to the context)
+    2. Joint Denial: 'nor F G' for 'huh (hem drop drop F)  (hem drop drop G)' i.e. '(..u: ..uFx..y nor ..uGx..y :x..y)'
+    3. Negation: 'not F' for 'nor F F' i.e. '(..u: not ..uF..x :..x)'
+    4. Alternation: 'or F G' for 'not (nor F G)' i.e. '(..u: ..uF..x or ..uG..x :..x)'
+    5. Converse Conditional: 'if F G' for 'or F (not G)'
+    6. Complementary Converse Conditional: 'not-if F G' for 'not (if F G)'
+        > The complementary converse conditional is one of the first examples where proper notational methods make special names superflurous e.g. there is never a need to write 'not-if F G' since it is equivalent to 'not if F G'.
+        > This convenience is familiar to any Forth programmer.
+        > If you're a Forth programmer then you can think of predicate functors as defining words like colon and semicolon.
+    7. Complementary Conditional: 'not-only-if F G' for 'not-if G F'
+    8. Conditional: 'only-if F G' for 'not (not-only-if F G)'
+        > 'not-only-if F G' and 'only-if F G' can both be written as 'not only if F G' and 'only if F G' by taking 'only' as a predicate functor functor, but I shall not do that at this time.
+        > Not only does it confuse this prefix notation (which, with appropriate parentheses, is familiar to LISP programmers), it also prompts erroneous talk of 'higher order predicate functor logics' which are as bad as talk of 'higher order truth functional and quantificational logics'.
+    9. Alternative Denial: 'not-and F G' for 'only-if F (not G)'
+    10. Conjunction: 'and F G' for 'not not-and F G'
+    11. Exclusive Alternation: 'or-exclusively F  G' or 'orx F G' for 'and or F G not and F G' i.e. 'and (or F G) (not-and F G)'
+    12. Biconditionals: 'if-and-only-if F G' or 'iff F G' for 'not or-exclusively F G'
+    13. Repeat notation (this needs a better name):
+        1. '(0 \~\~\~)' for ''
+        2. '(1 \~\~\~)' for '\~\~\~'
+        3. '(1+n \~\~\~)' for '\~\~\~ (n \~\~\~)'
+    14. Cedents: 'cede (..F) (..G)' or 'cede m n ..F ..G' for 'only-if (m and) ..F (n or) ..G'
+    15. Push: 'push F' for 'not huh drop F drop F' i.e. '(..u: ..uxF..y :x..y)'
+    16. Dush: 'dush F' for 'drop push F' i.e. '(..uv: ..uxF..y :x..y)'
+    17. Prop: 'prop F' for 'push drop F' i.e. '(..u: ..uF..y :x..y)'
+    18. Over: 'over F' for 'hem push F' i.e. '(..uvw: ..uvwvF..x :..x)'
+    19. Oem: 'oem F' for 'over hem F' i.e. '(..uvw: ..uvwvFw..x :..x)'
+    20. Dup: 'dup F' for 'oem dush F' i.e. '(..uvw: ..uvwwF..x :..x)'
+    21. Pop: 'pop F' for 'oem drop drop F' i.e. '(..uvw: ..uvFw..x :..x)'
+    22. Nip n: 'nip n F' for '(n pop) drop (n push) F' i.e. '(..uv..wa: ..u..waF..x :..x)'
+    23. Nip: 'nip F' for 'nip 1 F' i.e. '(..uvw: ..uwF..x :..x)'
+    24. Dig: 'dig F' for 'hem nip F' i.e. '(..uvw: ..uwFv..x :..x)'
+    25. Bury n: 'bury n F' for '(n dig) (n push) F' i.e. '(..u..vw: ..uw..vF..x :..x)'
+    26. Bury: 'bury F' for 'bury 1 F' i.e. '(..uvw: ..uwvF..x :..x)'
+    28. Unbury n: 'unbury n F' for '(n bury n) F' i.e. '(..uw..va: ..u..vawF..x :..x)'
+    27. Unbury: 'unbury F' for 'unbury 1 F' i.e. '(..uvw: ..uwvF..x :..x)'
+    29. Clockwise: 'clockwise i m F' or 'cw i m F' for '(m push) bury i+m (m pop) F' i.e. '(..u..wv: ..uy..wFv..x..z :..xy..z)'
+    30. Counterclockwise: 'counterclockwise i m F' or 'ccw i m F' for '(m push) unbury i+m (m pop) F) i.e. '(..uw..v: ..u..vxF..yw..z :x..y..z)'
+    31. Universal Cropping: 'each F' for 'not huh hem nip F hem nip F' i.e. '(..u: each v is such that ..uvFx..y :x..y)'
+    32. Existential Cropping: 'some F' for 'not each not F' i.e. '(..u: some v is such that ..uvFx..y :x..y)'
+    33. Universal Closure: 'Each F' for '(i+m each) (m pop) (..u: ..uF..x :..x)' i.e. '.. each u is such that .. each x is such that ..uF..x'
+    34. Existential Closure: 'Some F' for 'not Each not F'
+    35. Inclusion: 'includes F G' for 'Each if F G'
+    36. Converse Inclusion: 'included F G' for 'includes G F'
+    37. Coextension: 'coextensive F G' or 'coex F G' for 'and includes F G included F G'
+    38. Proper Inclusion: 'properly-includes F G' or 'pincludes F G' for 'and includes F G not coex F G'
+    39. Proper Converse Inclusion: 'properly-included F G' or 'pincluded F G' for 'pincludes G F'
+
+
 ## 2025 0824 1844
 
 1. Went to a bookfair, bought over 60 books for $50.
@@ -176,7 +312,7 @@ Use a thermometer.
 5. All of predicate logic rest upon at most three predicate functors:
     1. 'drop (..u: ..uF..x :..x)' for '(..uv: ..uF..x :..x)'
     2. 'hem (..uvw: ..uvwFx..y :x..y)' for '(..uvw: ..uvwFv..y :..y)'
-    3. 'huh (..uxw: ..uxwF..y :..y) (..uxw: ..uxwG..y :..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)'    
+    3. '(..uxw: ..uxwF..y :..y) huh  (..uxw: ..uxwG..y :..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)'    
     > Technically, 'v' must be replaced by some varaible fresh to the context.
 
     i.e.
@@ -215,7 +351,7 @@ Use a thermometer.
     8. 'F if and only if G' for 'not (F or exclusively G)'
     9. '..F cede ..G' for '(.., and F) only if (.., or G)
 
-10. Happily, in composing 8.9 I stumbled upon the name 'cedent' for what I and most have called 'sequents' and it yielded a beautiful way of reading cedents alound as 'cede'.
+10. Happily, in composing 9.9 I stumbled upon the name 'cedent' for what I and most have called 'sequents' and it yielded a beautiful way of reading cedents alound as 'cede'.
 Happy linguistic accidents are often the best.
 
 11. 'push F' for 'not ((drop F) huh (drop F))' i.e.
