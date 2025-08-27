@@ -149,8 +149,103 @@ Use a thermometer.
 
 - A predicate is not a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
 
-
 # NOTES
+
+## 2025 0826 1635
+
+1. Notes on Chapter 1 'Nature, Humanity, and History, to 3500 BCE' from 2023 “The Earth and Its Peoples 8th ed.” (EP) by Richard Bulliet, Pamela Crossley, Daniel Headrick, Steven Hirsch, and Lyman Johnson.
+
+2. Geological Epochs (EP pg. 7)
+    1. 2M-9k BCE Pleistocene (Great Ice Age)
+    2. 8k BCE-present Holocene
+
+3. Technology (EP pg. 7)
+    1. 2.6M BCE Earliest stone tools; foraging
+    2. 2M-8k BCE Paleolithic (Old Stone Age)
+    3. 400k BCE Fire
+    4. 30k BCE Cave paintings
+    5. 8-2k BCE Neolithich (New Stone Age); agriculture
+
+4. Species and Migrations (EP pg. 7)
+    1. 7M BCE Earliest hominids
+    2. 4.5M BCE Australopithecines
+    3. 2.3M BCE Early *Homo habilis*
+    4. 1.8M-350k BCE *Homo Erectus*
+    5. 200-100k BCE Anatomically modern *Homo sapiens* in Africa
+    6. 80-50k BCE Behaviorally modern *Homo sapiens*; migrations to Eurasia
+    7. 46k BCE Modern humans in Australia
+    8. 18k BCE Modern humans in Americas 
+
+5. In 1856 in the Neander Valley of Germany the 40,000 year old 'Neanderthal 1' fossil of Homo neanderthalensis was found:
+    > "A creature with a body much like that of modern humans but with a face that had heavy brown ridges and a low forehead, like the faces of apes." EP pg. 5
+
+6. In 1871 Charles Darwin (1809–1882) published 'The Descent of Man and Selection in Relation to Sex' which extended his 1859 book 'On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life' to the evolution of humans and predicted that humans first appeared in Africa because of their similarities to African apes.
+
+7. In 1891 in the Indonesian island of Java Eugene Duboi's team found the 700,000 and 1,490,000 year old skullcap of 'Java man' (Homo erectus erectus).
+
+8. In 1924 "Raymond Dar found the skull of a creature he named *Australopithecus africanus* (aw-strah-loh-PITH-uh-kuhs ah-frih-KAH-nuhs) (African southern ape), which he argued was transitional between apes and early humans" (EP pg. 6).
+
+9. In 1929 near Peking (old Beijing) China, W. C. Pei found the skullcap of 'Peking man' and it was similar to the one found by Duboi.
+
+10. "Since 1950, Louis and Mary Leaky and their son, Richard, along with many others have discovered a wealth of early human fossils in the exposed sediments of the Great Rift Valley of eastern Africa." (EP pg. 6)
+
+11. "Biologists classify *australopithescines* (aw-strah-loh-PITH-uh-seen) and humans as members of a family of primates known as *hominids* (HOM-uh-nid) .. The first hominids are now dated about 7M years ago." (EP pg. 6)
+
+12. "Three traits distinguish humans from apes and other primates"
+    1. "bipedalism (walking upright on two legs). Being upright frees the forelimbs from any role in locomotion and enhances an older primate trait: a hand with a long, opposable thumb that can work with the fingers to manipulate objects skillfully."
+    2. "very large brain."
+    3. "The location fo the *larynx* (voice box). In humans it lies much lower in the neck than in any other primate" (EP pg 6) 
+
+13. "Beginning approximately 4.5M years ago, several species of australopithecines evolved in southern and eastern Africa."
+    1. In 1974 northern Ehtiopia, Donald Johanson found 24 year old female skeleton "Lucy"
+    2. In 1977 Tanzania, Mary Leaky found fossilized footprints: "visual evidence that australopithecines walked on two legs" (EP pg. 7)
+
+14. Between 2M and 3M years ago, climate selected genus *Homo* (to which modern human belong).
+
+15. In 1960s Olduvai (ol-DOO-vy) Gorge of northern Tanzania, Louis Leakey found fossilized *Homo habilis* (HOH-moh HAB-uh-luhs) (handy human) whose brain was about 50\% larger than that of australopithecines: "Seeds adn other fossilized remains found in ancient *Homo habilis* camps indicate that the new species ate a greater variety of more nutritious foods than did australopithecines." (EP pg. 7)
+
+16. "By 1M years ago, *Homo habilis* and all the australopithecines had become extinct" (EP pg. 7) and "*Homo erectus* (HOH-moh ee-REK-tuhs) (upright human)" took their place having appeared in eastern Africa some 1.8M years ago.
+    1. Brains were a third larger than *Homo habilis*.
+    2. In 1984 Lake Turkana of Kenya, Richard Leaky found complete fossil of male *Homo erectus*: similar to modern humans from the neck down.
+    3. May have had language, 1-2M years ago.
+
+17. In 2015 Gauteng of South Africa, Rick Hunter and Steven Tucker found about 1k bones of *Homo naledi*.
+In 2017, Dirks et al. dated the bones to 335–236k years ago i.e. in the Middle Pleistocene.
+They had small brains and experts are presently revising the part that brain size plays in theories of human evolution because of this.
+    - Dirks, P.H.G.M.; Roberts, E.M.; Hilbert-Wolf, H.; Kramers, J.D.; Hawks, J.; et al. (2017). "The age of Homo naledi and associated sediments in the Rising Star Cave, South Africa"
+    -  Berger, L.R.; Hawks, J.D.; Dirks, P.H.G.M.; Elliott, M.; Roberts, E.M. (2017). "Homo naledi and Pleistocene hominin evolution in subequatorial Africa"
+
+18. Between 200k and 100k years ago *Homo sapiens* (HOH-moh SAY-pee-enz) (wise human) appeared:
+    1. probably in Eastern and southern Africa
+    2. brain a third larger than *Homo erectus*.
+    2. anatomically similar to present day humans
+
+19. No later than 80-50k years ago did verbal communities of humans appear.
+It could be much earlier because the science of behavior has yet to be effectively applied to history outside of what similarities it shares with experimental anthropology.
+
+20. Between 50-46k years ago humans migrated out of eastern and southern Africa throughout south Asia.
+Around 46k years ago they populated western and eastern Asia and Australia.
+Some 46-10k years ago they were in northeastern Asia and north and south America.
+
+
+Notes on chapter 2 'The first River Valley Civilizations, 3500-1500 BCE' of 
+
+1. Before 2000 BCE, the 'Epic of Gilgamesh' defined 'civilization' as the people of Mesopotamia.
+    > "Certain political, social, economic, and technological traits are usually seen as indicators of *civilization*:
+    > 1. cities as administrative centers,
+    > 2. a political system based on control of a defined territory rather than kinship connections,
+    > 3. many people engaged in specialized, nonfood-producing activities,
+    > 4. status distinctions based largely on accumulations of substantial wealth by some groups,
+    > 5. monumental buildings,
+    > 6. a system for keeping permanent records,
+    > 7. long-distance trade,
+    > 8. major advances in science and the arts.
+    >
+    > The earliest societies exhibiting these traits developed in the floodplains of great rivers: the Tigris (TIE-gris) and Euphrates (you-FRAY-teez) in Iraq, the Indus in Pakistan, the Yellow or Huang He (hwang huh) in China, and the Nile in Egypt." EP pg. 28-29
+
+2. 'Mesopotamia' is Greek for 'the land between rivers' i.e. the alluvial plains (now Iraq), north of the Syrian and Arabian deserts and southwest of the Zagros Mountains, split by the Euphrates and Tigris rivers which flow southeast from the Taurus Mountains of Anatolia (now Turkiye) to the Persian Gulf.
+
+
 
 ## 2025 0826 1442
 
