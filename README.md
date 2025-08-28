@@ -162,9 +162,16 @@ You can try this yourself:
     4. turn off the lights and close the door
     5. wait for your eyes to adjust to the low light
     6. look on the walls for upside down images of the world outside your room
-    7. if your walls are darker colors you can put a piece of white poster board on the wall across from the window
+    7. if your walls are darker colors you can put a piece of white poster board (the less glossy the better) on the wall across from the window.
 
-2. The forward imagining model of a pinhole camera transforms the coordinates in the world of a point into the coordinates of the image sensor hit by the projection of that point through the hole in the camera onto the image plane.
+2. This situation presents a problem: if you know exactly where points of the tree are outside your room can you calculate where they will be projected onto the back wall?
+In other words, if someone covers up the hole and carefully measures, e.g. in meters, where a point on the tree is relative to the pinhole in the window, can you mark on the back wall exactly where that point will be projected when the pinhole is uncovered?
+
+3. Setting up and solving this problem produces the forward imagining model of a pinhole camera: how to go from a point in the world to a point on an image sensor, e.g. the back wall of the dark room.
+
+4. When you try to go from a point on the image sensor, e.g. the back wall, to a point in the world that produces the backward imaging model of a pinhole camera: it ends up that you need at least two *camera obscura* (the fancy term for 'pinhole camera') to calculate the location of a point in the world.
+
+4. The forward imaging model transforms the coordinates in the world of a point into the coordinates on the back wall of its projected point. the image sensor hit by the projection of that point through the hole in the camera onto the image plane.
 
 2. The the forward imagine model can be made linear (with homogeneous coordinates) and reduces a four step calculation into a single 'projection' matrix operation.
 
