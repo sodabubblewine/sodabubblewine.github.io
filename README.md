@@ -151,23 +151,44 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0828 1649
+
+1. Light bounces off a tree and passes through a tiny hole in a very dark room and is projected onto the back wall.
+Surprisingly, the image of the tree on the wall is upside down.
+You can try this yourself:
+    1. on a bright and sunny day
+    2. cover up the windows in a room
+    3. make a very tiny hole for light to come through
+    4. turn off the lights and close the door
+    5. wait for your eyes to adjust to the low light
+    6. look on the walls for upside down images of the world outside your room
+    7. if your walls are darker colors you can put a piece of white poster board on the wall across from the window
+
+2. The forward imagining model of a pinhole camera transforms the coordinates in the world of a point into the coordinates of the image sensor hit by the projection of that point through the hole in the camera onto the image plane.
+
+2. The the forward imagine model can be made linear (with homogeneous coordinates) and reduces a four step calculation into a single 'projection' matrix operation.
+
+3. The projection matrix can be factored into two parts:
+    1. Intrinsic Matrix: internal parameters (pixel densities, principle point, and focal length) that give the geometry of the camera
+    2. Extrinsic Matrix: external parameters (position and orientation) that place the camera in the world.
+
 ## 2025 0828 1623
 
 1. Paul Graham is reading the 1721 edition of "The Works of the Right Hounourable Joseph Addison, Esq" a four volume work on the cofounder of The Spectator and whose books were banned by the Catholic Church until 1966.
 
 2. Here are the links to the 1721 editions at the internet archive:
-    1. https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_1_0
-    2. https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_2
-    3. https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_3
-    4. https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_4
+    1. <https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_1_0>
+    2. <https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_2>
+    3. <https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_3>
+    4. <https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_4>
 
 3. I originally linked to the 1761 editions when I wrote up a tweet giving the full name of 'Addision' as 'Joseph Addison' because I didn't know of him.
 While I had a weak response to 'The Spectator' I'm pretty sure it was just that there is a modern magizine called 'The Spectator'.
 
 4. Links to the relevant wikipedia articles
-    1. https://en.wikipedia.org/wiki/Joseph_Addison
-    2. https://en.wikipedia.org/wiki/The_Spectator_(1711)
-    3. https://en.wikipedia.org/wiki/Richard_Steele
+    1. <https://en.wikipedia.org/wiki/Joseph_Addison>
+    2. <https://en.wikipedia.org/wiki/The_Spectator_(1711)>
+    3. <https://en.wikipedia.org/wiki/Richard_Steele>
 
 5. The reason that Paul is likely reading this is that it shaped the thinking and writing of the world, e.g. the 'founding fathers', and continues to control much of what goes as wit and wisdom to this day.
 
