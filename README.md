@@ -151,6 +151,26 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0828 1623
+
+1. Paul Graham is reading the 1721 edition of "The Works of the Right Hounourable Joseph Addison, Esq" a four volume work on the cofounder of The Spectator and whose books were banned by the Catholic Church until 1966.
+
+2. Here are the links to the 1721 editions at the internet archive:
+    1. https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_1_0
+    2. https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_2
+    3. https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_3
+    4. https://archive.org/details/bim_eighteenth-century_the-works-of-the-right-h_addison-joseph_1721_4
+
+3. I originally linked to the 1761 editions when I wrote up a tweet giving the full name of 'Addision' as 'Joseph Addison' because I didn't know of him.
+While I had a weak response to 'The Spectator' I'm pretty sure it was just that there is a modern magizine called 'The Spectator'.
+
+4. Links to the relevant wikipedia articles
+    1. https://en.wikipedia.org/wiki/Joseph_Addison
+    2. https://en.wikipedia.org/wiki/The_Spectator_(1711)
+    3. https://en.wikipedia.org/wiki/Richard_Steele
+
+5. The reason that Paul is likely reading this is that it shaped the thinking and writing of the world, e.g. the 'founding fathers', and continues to control much of what goes as wit and wisdom to this day.
+
 ## 2025 0826 1635
 
 1. Notes on Chapter 1 'Nature, Humanity, and History, to 3500 BCE' from 2023 “The Earth and Its Peoples 8th ed.” (EP) by Richard Bulliet, Pamela Crossley, Daniel Headrick, Steven Hirsch, and Lyman Johnson.
