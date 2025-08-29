@@ -154,7 +154,7 @@ Use a thermometer.
 ## 2025 0829 1227
 
 1. In note [#2025-0828-1649](#2025-0828-1649) we set up the world coordinate frame with a stick we found next to the tree whose upside down projection first presented the problem of modeling a pinhole camera.
-With the counterclockwise bases vectors we were able to measure where points are in the world to the origin of the world coordinate frame.
+With the counterclockwise bases vectors we were able to measure where points are in the world the world coordinate frame.
 
 2. The task is still to calculate the point projected through the pinhole in the window from the tree onto the back wall of the dark room.
 
