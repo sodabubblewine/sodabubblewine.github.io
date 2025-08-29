@@ -151,6 +151,125 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0829 1423
+
+Notes on 'Geography' by Crash Course.
+
+1. When organizing my reading, writing, and thinking on my history of the world, I have found geography to be extremely helpful e.g. its divisions of the planet into the litho-, hydro-, bio-, and atomo- spheres.
+It is funny, in a good way, that the division of the world, e.g. by Aristotle, into earth, water, air, and fire lives a ghostly life through this broad organizational scheme of geography.
+
+2. I do not mean to imply that the division of the world into its four spheres is the one that I shall settle on.
+For me, the world is still to be organized around its contingencies where a contingency is a consequence from a response on an occasion e.g. a door opens from a push on a lever, a heart beats faster from a kiss on a cheek, and mountains rise from shifts on tectonic plates.
+
+3. While my aim is on organizing the contingencies of the world around the methods of logic, I must start with what is already available to me e.g. the delightful presentations from The Crash Course YouTube Playlist on Geography:
+    - <https://www.youtube.com/playlist?list=PL8dPuuaLjXtO85Sl24rSiVQ93q7vcntNF>
+
+4. The first four vides in the playlist are a gentle preamble to geography and paint a big picture of its origins and aims.
+My notes start on the fourth video in the series.
+    - <https://youtu.be/vlVVaZhRAEA?si=dHlhI--5QFOl4hdy>
+
+I'm disinclined to fixate on the 'space', 'place', etc. principles of geography because they mismanage the social contingencies which are better handled on the side of the science of behavior (though, perhaps this conclusion will be contravened by contemplations recorded here).
+
+4. The methods of geograph are divided into two nonexclusive and nonexhaustive parts: physical and human.
+Human geography discovers, predicts, and, not so often, controls changes in social behaviors as a result of changes in the litho, hydro, bio, and atmo spheres.
+Physical geography uncovers the chnages above adn below the surface of the earth.
+    > "Physical geograph is all about recognizing the characteristics of teh environment and the processes that create, modify, and destroy those environments" (1:35 'What is physical geography? Crash Course Geography #4')
+    >
+
+5. Geo-ecosphere is the collection of all systems of the planet (Earth).
+It is divided into four subsystems:
+    1. Atmosphere: clouds, weather, ozone layer, air we breath
+    2. Hydrosphere: water underground, oceans, lakes, ice caps, water in plants and animals, water molecules in the atmosphere
+    3. Lithosphere: outermost layer of earth, continents, line the bottom of the oceans
+    4. Biosphere: where life can occur
+
+6. Ecosystems are composed of the interconnected systems of the atmo, hydro, litho, and bio spheres.
+
+7. What causes these systemst to interact? The sun and its insolation (incoming solar radiation).
+
+8. Topography: shape of the land.
+
+9. Geomorphology: the origin and evolution of the shape of the Earth's surface e.g. weathering, glaciers, streams.
+
+10. Pedology: study of soil types and how they form.
+
+11. Hydrology: how water is moved managed and distributed above and below the Earth's surface.
+
+12. Climatology: study of atmospheric weather patterns over time
+
+13. Oceanography: study of the past present and future features of the oceans
+
+14. Meteorology: study of atmospheric processes and phenomena
+
+15. Biogeography: distribution of plants and animals (fauna and flora) in an area
+
+16. Ecologists study the biosphere: what physically happens as different species interact across the landscape
+
+17. When geographers study the biosphere they focus on how ecological processes are distributed across space, and how species move and change over time.
+They focus on spatial patterns in the landscapes.
+
+18. Notes from episode 5 'How does the Earth move?'
+    - <https://youtu.be/ljjLV-5Sa98?si=5DgM6W2NT8DO6Kc4>
+
+19. 13.7B years ago the universe began!
+
+20. 4.5B years ago in the Milkyway Galaxy a solar nebula collapsed under its own gravity: most of its mass went to the center as what we now call the sun, and the rest, a very tiny amount, spun out and formed the rest of the solar system.
+
+21. That tiny amount spun out the Earth and other planets: they rotate counterclockwise because they are all gravitationally condensed parts of that tiny bit of the collapsed solar nebula that made our sun.
+
+22. As a consequence of the solar nebula collapse, the earth rotates around the sun and rotates around a central axis which passes through the north and south poles.
+A full rotation occurs once about every 24 hours.
+
+23. At the equator the Earth spins at 1.6k kilometers per hour (km/h) which is about 13 times faster than a Cheetah can run at top speed.
+
+24. In St. Petersburg, at 60 degrees North latitude, the spin speed is half that at the equator i.e. about 800 km/h.
+
+25. At the poles, it is 0 km/h.
+
+26. The sun moves in the sky because of the relative motion of an observer on the surface of the Earth.
+From the moon it is easy to see the Earth rotating because the moon rotates on its axis at the exact same rate it orbits Earth i.e. on Earth we always see the same side of the moon.
+
+27. The Circle of Illumination: the dividing line that seperates the half of Earth that's currently receiving light and solar energy from the other half that's in total darkness.
+
+28. Earth wobbles: Milankovitch cycles select Earth's climate
+    1. on a 26k year cycle called precession where the central axis wobbles predictably like a spinningtop
+    2. melting ice changes the distribution of water in the sea, also changing distribution of land mass, and causing unpredicted changes in the wobble
+    3. redistribution of ground water (because of human use) at 45 degrees North and South latitude amplifies unpredicted wobble because of spherical harmonics
+
+29. The path of the Earth around the sun is called an orbit: a revolution (traveling from one point on the orbit and back to it) takes about 365 days.
+
+30. The orbit is eliptical:
+    1. Perihelion: where on the orbit the Earth is closest to the sun, January, about 147M km from the sun
+    2. Aphelion: where on the orbit the Earth is farthest from the sun, July, 152M km from the sun
+    3. Our distance from the sun does not change enough in our orbit to play a functional part in our climate
+
+31. Plane of the Ecliptic: the imaginary plane that contains Earth's orbit
+
+32. The Earth is tilted 23.5 degrees from a line perpendicular to the plane of the ecliptic through the center of the Earth (probably happend when something hit Earth billions of years ago).
+
+33. Insolation: incoming solar radiation. It's how the different Earth systems.
+
+34. How the progression of seasons works:
+    1. December Solstice (December 21): 
+        1. the south pole is tilted towards the sun so that everything south of 66.5 degrees South Latitude (the Antarctic Circle) receives 24 hours of daylight.
+        2. At noon, sunrays are perpendicular to the surface of the Earth at 23.5 degrees south (the Tropic of Capricorn).
+        3. The 66.5 degrees North latitude (the Artic Circle) receives 24 hours of darkness.
+        4. The Northern Hemisphere is in winter and the Southern Hemisphere is in summer.
+    2. March Equinox (near March 21st):
+        1. Earth's axis isn't tilted toward or away from the sun.
+        2. The circle of illumination passes through both the North and South poles: each place on Earth has equal hours of day and night.
+        3. Spring in the Northern Hemispher and Fall in the Southern Hemisphere.
+    3. June Solstice (around June 21st):
+        1. Earth's axis tilts towards the sun.
+        2. Opposite conditions from December solstice: Artic Circle gets 24 hours daylight, Antartic Circle gets 24 hours darkness.
+        3. At noon, surays are perpendicular to the surface of the Earth at 23.5 degrees North (the Tropic of Cancer).
+    4. September Equinox (near September 21st):
+        1. Everything is like the March Equinox except its fall in the Northern Hemisphere and Spring in the southern Hemisphere.
+
+35. Obviously, the seasons select the behavior of organisms e.g. what food is grown where, what organisms survive where and when, etc.
+
+
+
 ## 2025 0829 1227
 
 1. In note [#2025-0828-1649](#2025-0828-1649) we set up the world coordinate frame with a stick we found next to the tree whose upside down projection first presented the problem of modeling a pinhole camera.
