@@ -153,9 +153,12 @@ Use a thermometer.
 
 ## 2025 0828 1649
 
-1. Light bounces off a tree and passes through a tiny hole in a very dark room and is projected onto the back wall.
+Work on a memo on how to program your own virtual worlds from scratch.
+
+1. Light bounces off a tree and passes through a tiny pinhole in a very dark room and is projected onto the back wall.
 Surprisingly, the image of the tree on the wall is upside down.
-You can try this yourself:
+
+2. You can try this yourself:
     1. on a bright and sunny day
     2. cover up the windows in a room
     3. make a very tiny hole for light to come through
@@ -164,20 +167,82 @@ You can try this yourself:
     6. look on the walls for upside down images of the world outside your room
     7. if your walls are darker colors you can put a piece of white poster board (the less glossy the better) on the wall across from the window.
 
-2. This situation presents a problem: if you know exactly where points of the tree are outside your room can you calculate where they will be projected onto the back wall?
-In other words, if someone covers up the hole and carefully measures, e.g. in meters, where a point on the tree is relative to the pinhole in the window, can you mark on the back wall exactly where that point will be projected when the pinhole is uncovered?
+3. If someone covers up the pinhole and carefully measures, e.g. in meters, where a point on the tree is relative to the hole in the window, can you mark on the back wall exactly where that point will be projected when the pinhole is uncovered?
 
 3. Setting up and solving this problem produces the forward imagining model of a pinhole camera: how to go from a point in the world to a point on an image sensor, e.g. the back wall of the dark room.
 
-4. When you try to go from a point on the image sensor, e.g. the back wall, to a point in the world that produces the backward imaging model of a pinhole camera: it ends up that you need at least two *camera obscura* (the fancy term for 'pinhole camera') to calculate the location of a point in the world.
+4. When you try to go from a point on the image sensor, e.g. the back wall, to a point in the world you get the backward imaging model of a pinhole camera. Interestingly, at least two *camera obscura* (the fancy word for 'pinhole camera') are needed to calculate the location of a point in the world!
 
-4. The forward imaging model transforms the coordinates in the world of a point into the coordinates on the back wall of its projected point. the image sensor hit by the projection of that point through the hole in the camera onto the image plane.
+5. Technically, the forward imaging model transforms the world coordinates of a point into the image sensor coordinates of its projected point.
 
-2. The the forward imagine model can be made linear (with homogeneous coordinates) and reduces a four step calculation into a single 'projection' matrix operation.
+6. I'll do my best to explain everything as concretely as possible and first walk through each of the steps that lead from the simple camera obscura experiment to the simple geometry and algebra that goes into drawing virtual worlds on a screen and controlling them with your mouse and keyboard.
 
-3. The projection matrix can be factored into two parts:
+7. This little project is one of the better ways to see how the methods of linear algebra solve all sorts of practical problems using only a handfull of vector and matrix methods.
+But, I'm not going to focus on the linear algebra at all, because it isn't actually needed to navigate the steps that make up the forward imaging model of a pinhole camera.
+
+8. In fact, the forward imaging model is not even linear at first!
+It can be turned into a linear problem by the beautifully general methods of homogenous coordinates. 
+No need to worry about that now though.
+
+9. For those who aren't scared off by seeing technical terms they do not yet know fee free to read any sentence that starts with 'technically'.
+Otherwise, feel free to skip over any such sentence.
+
+10. Technically, the forward imaging model can be made linear with homogeneous coordinates and reduces a four step calculation into a single 'projection' matrix operation.
+The projection matrix can be factored into two parts:
     1. Intrinsic Matrix: internal parameters (pixel densities, principle point, and focal length) that give the geometry of the camera
     2. Extrinsic Matrix: external parameters (position and orientation) that place the camera in the world.
+
+11. The first step in setting up the pinhole camera problem is to pick a point in the world and call it the *origin*.
+More than one origin turns up as we go along, so this one will be called 'the world origin' or 'the origin of the world', or, technically, *the origin of the world coordinate frame*.
+
+12. The world coordinate frame is a fancy way of mentioning how we're going to measure things from the origin (of the world!) e.g. how we're going to figure out where a point on the tree is at in the world with respect to the origin.
+
+13. Pick up a stick and put one end at the origin and the other end of that stick now becomes the end point of our first *basis vector*.
+Vectors are no more complicated than that: one point is their tip and the other point is their tail.
+
+14. What makes the origin and the other end of the stick into a *basis* vector is that we're going to use the length of the stick as our basic or basis unit.
+Everything else we do will be in basic stick units.
+
+15. If we happen to use a meter stick, then other people with a meter stick can more easily recreate all the measurements we'll need to make.
+There is nothing more special to a meter than that. 
+
+16. Technically, the meter is special in that it is convenient when making physical calculations.
+Even more technically, there are stacks of papers on how we arrived at the standard units of measurement used throughout the sciences and you can read more by searching for them.
+
+17. The line that goes through the first basis vector of the world coordinate frame is called 'the x-axis', or, more precisely, 'the world x-axis', or, technically, 'the x-axis of the world coordinate frame'.
+
+18. The word 'coordinate' in the phrase 'the world coordinate frame' refers to the triple of numbers that we'll use to write down our measurements once we've set up our world coordinate frame e.g. '(2,3,4)' designates a triple whose first coordinate tells us to go two stick units in the direction of the first basis vector (and along the x-axis) to find the point with coordinate (2,3,4) in the world coordinate frame.
+
+19. By keeping the tail of our stick at the origin of the world and rotating it at a right angle from the first basis vector, we get the point at the tip of the second basis vector.
+The line that goes through the second basis vector is called the 'y-axis of the world coordinate frame'.
+
+20. Constructing a right angle is one of those delightful things that you learn when doing geometry with straight edge and compass.
+A great place to pick up a lot of the tricks of the trade from geometry is by watching the wonderfully instructive YouTube videos of Chris from ClickSpring.
+    - <https://www.youtube.com/channel/UCworsKCR-Sx6R6-BnIjS2MA>
+
+    Especially the series "Antikythera Fragments - Ancient Tool Technology"
+    - <https://youtube.com/playlist?list=PLZioPDnFPNsGnUXuZScwn6Ackf6LGILCa&si=LR38jL7H_KMwqHFK>
+
+    But, if you just want to see how geometric constructions work, then its best to look for YouTube videos on drafting techniques or those on geometric constructions outright e.g.
+    - <https://youtube.com/playlist?list=PLXSXBztZD71NulqG4PDC1BsYCpR0Us9IN&si=zg8ksBlhWKDCiZuU>
+
+21. To get the third basis vector we move the stick so that it is perpendicular to the first and second basis vector.
+Sadly, there are two ways that you can do this!
+One is called the clockwise way and the other is called the counterclockwise way.
+
+22. To figure out whether the third basis vector makes a clockwise or counterclockwise coordinate frame you have to draw a circle through the three points at the tips of each basis vector and then look at the origin through the circle and see if when you go from the first to the second to the third basis vector you go clockwise or counterclockwise around the circle.
+
+23. We want a counterclockwise frame.
+It is most often known as a 'right handed frame' becuase if you put out your thumb, pointer finger, and middle finger on your right hand as if you were making them into the first, second, and third basis vector then you make a counterclockwise path around the points at their tips.
+
+24. The three triples '(1,0,0)', '(0,1,0)', and '(0,0,1)' designate the tips of the first, second, and third basis vector.
+Any point in the world can be reached, in only *one* way, by going out along the first axis, then the second, then the third and writing out the number of steps along each basis vector in a triple e.g. '(3,-4,5)' designates the point at three units out from the origin in the direction of the first basis vector, then negative four units out from the origin in the direction of the second basis vector (i.e. four units out from the origin in the *opposite* direction of the second basis vector), and five units out in the direction of the third basis vector.
+
+25. These triples of numbers are all that you get when you're calculating where the point designated by such triples is projected on the back wall through the pinhole.
+They can be more than just integers e.g. '(3.5, -4.32, 1.6)'.
+
+26. The first world coordinate we get is that of the origin of the camera coordinate frame i.e. the location of the pinhole in the world.
+
 
 ## 2025 0828 1623
 
