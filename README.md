@@ -166,7 +166,7 @@ So, all together there are two origins: the origin of the world coordinate frame
 5. The origin of the camera coordinate frame also comes with three basis vectors.
 Unlike with the bases vectors of the world coordinate frame, the bases vectors of the camera coordinate frame come with some important constraints i.e. we can't just pick up a stick and set up a counterclockwise coordinate frame by turning it at right angles around the origin willy nilly.
 
-6. The most important basis vector of the camera coordinate frame is the third one: it points perpendicular to the window with the pinhole in it.
+6. The most important basis vector of the camera coordinate frame is the third one: it points perpendicular to the window with the pinhole in it and it points *into* the dark room.
 The line through the third basis vector of the camera coordinate frame is called 'the optical axis'.
 
 7. The second most important basis vector is, surprise, the second one.
