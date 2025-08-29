@@ -151,6 +151,40 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0829 1227
+
+1. In note [#2025-0828-1649](#2025-0828-1649) we set up the world coordinate frame with a stick we found next to the tree whose upside down projection first presented the problem of modeling a pinhole camera.
+With the counterclockwise bases vectors we were able to measure where points are in the world to the origin of the world coordinate frame.
+
+2. The task is still to calculate the point projected through the pinhole in the window from the tree onto the back wall of the dark room.
+
+3. The first point measured from the origin of the world is the location of the pinhole i.e. the world coordinates of the camera.
+
+4. The world coordinates of the camera are also the world coordinates of the origin of the camera coordinate frame!
+So, all together there are two origins: the origin of the world coordinate frame and the origin of the camera coordinate frame.
+
+5. The origin of the camera coordinate frame also comes with three basis vectors.
+Unlike with the bases vectors of the world coordinate frame, the bases vectors of the camera coordinate frame come with some important constraints i.e. we can't just pick up a stick and set up a counterclockwise coordinate frame by turning it at right angles around the origin willy nilly.
+
+6. The most important basis vector of the camera coordinate frame is the third one: it points perpendicular to the window with the pinhole in it.
+The line through the third basis vector of the camera coordinate frame is called 'the optical axis'.
+
+7. The second most important basis vector is, surprise, the second one.
+It's often called 'the up vector' because when you're using a camera without twisting or turning it in interesting, and perhaps even artistic ways, it is perpendicular to the optical axis and perpendicular to the ground.
+I've also seen it called 'the top vector' because it is perpendicular to the top plate of a camera.
+
+8. The least important basis vector is the first and it is set up by requiring that the camera coordinate frame be a counterclockwise one i.e. it is perpendicular to the third basis vector (the optical one) and the top or up vector and if you go from the first to the second and then the third basis vector it makes a counterclockwise path along the cricle through their tips when you look through that circle at the origin.
+
+9. To recap:
+    1. The world coordinate frame is set up by picking a world origin point and grabbing a stick and putting one end at the origin and letting the other end be the tip of the first basis vector.
+The next basis vector is got by turning the tip of the stick through a right angle.
+The last is perpendicular to both, but since there are two ways to do that, we pick one, the counterclockwise way, which we check by drawing a circle through the tips of the bases vectors and looking at the origin through the circle to see if going from the first to the second to the third basis vector takes us around the circle clockwise or counterclockwise.
+    2. The camera coordinate frame is set up by measuring where the pinhole of the camera is in the world coordinate frame and picking that point as the camera origin.
+The third basis vector is made by putting one end of the stick at the camera origin and pointing the other end so that the stick is perpendicular to the window the pinhole is in.
+The line through the third basis vector is called the optical axis.
+The second basis vector is perpendicular to the third and perpendicular to the ground: it's called the up or top vector.
+The first basis vector of the camera coordinate frame is perpendicular to the other two and oriented counterclockwise.
+
 ## 2025 0828 2145
 
 1. With the schematic sameness abbreviations of logic written out in [#2025-0826-1442](#2025-0826-1442), I move onto the schematic compositional abbreviations.
@@ -209,7 +243,7 @@ Surprisingly, the image of the tree on the wall is upside down.
 
 3. If someone covers up the pinhole and carefully measures, e.g. in meters, where a point on the tree is relative to the hole in the window, can you mark on the back wall exactly where that point will be projected when the pinhole is uncovered?
 
-3. Setting up and solving this problem produces the forward imagining model of a pinhole camera: how to go from a point in the world to a point on an image sensor, e.g. the back wall of the dark room.
+3. Setting up and solving this problem produces the forward imaging model of a pinhole camera: how to go from a point in the world to a point on an image sensor, e.g. the back wall of the dark room.
 
 4. When you try to go from a point on the image sensor, e.g. the back wall, to a point in the world you get the backward imaging model of a pinhole camera. Interestingly, at least two *camera obscura* (the fancy word for 'pinhole camera') are needed to calculate the location of a point in the world!
 
