@@ -151,6 +151,89 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0829 1654
+
+Notes on 'The Little Book of Big History' by Ian Crofton and Jeremy Black 2017
+
+1. 'The Little Book of Big History' is broken into six parts:
+    1. Setting The Scene
+    2. Animal Planet
+    3. Humans Start to Dominate
+    4. Civilization
+    5. The Rise of the West
+    6. The Modern World
+
+2. Timeline:
+    1. 13.8B years ago: the big bang
+    2. 4.6B years ago: the sun, Earth, and solar system form
+    3. 4.5B years ago: the moon appears (collision between Earth and Mars size planet?)
+    4. 4.2B years ago: oceans formed?
+    5. 4.1-3.8B years ago: astroids pepper inner planets including Earth
+    6. 4B years ago: appearence of rocks found to this day (proto-lifeforms e.g. metabolism or replicators?)
+    7. 3.7B years ago: organic molecules and proto-bacteria?
+    8. 3.4B years ago: photosynthesizing Cyanobacteria (blue-green algae)
+    9. 2.45B years ago: oxygen in atmosphere from photosynthesis
+    10. 600M years ago: multicellular organisms
+    11. 542-488M years ago: Cambrian period e.g. external skeletons (trilobites and brachiopods), vertebrates (notochord as proto-spinal column)
+    12. 488-444M years ago: Ordovician period e.g. diversity of trilobites, lamp shells, gastropods, and graptolites; appearence of sea urchins, starfishes, and ammonites; later, land plants and mass extinctions
+    13. 444-416M years ago: Silurian period e.g. marine life (e.g. cartilaginuous, latterly boney); invertebrates on land (e.g. scorpions andwingless insects); vascular plants (e.g. club mosses)
+    14. 416-359M years ago: Devonian period e.g. big coral reefs, ferns, early amphibians, four-legged animals, spread of land animals
+    15. 359-299M years ago: Carboniferous period e.g. flying insects, reptiles, land plants (e.g. conifers) spread (origin of modern coal deposits)
+    16. 299-251M years ago: Permian period e.g. diverse reptiles, mass extinction of many marine and land animals (e.g. trilobytes)
+    17. 251-200M years ago: Triassic period e.g. dinosaurs and small mammals
+    18. 200M-145M years ago: Jurassic period e.g. diverse dinosaurs, turltes, crocodiles, tropical forests, and birds
+    19. 145M-66M years ago: Creteous period e.g. flower plants, grasses, extinction of dinosaurs, survival of birds and mammals
+    20. 66-56M years ago: Palaeoscene epoch e.g. diverse mammals, primates
+    21. 56-34M years ago: Eocene epoch e.g. mammls spread (e.g. elephants, whales, rodents, carnivores and hoofed)
+    22. 34-23M years ago: Oligocene epoch e.g. grasslands, monkeys
+    23. 23-5.3M years ago: Miocene epoch e.g. horses, apes, frogs, snakes, rats
+    24. 7M years ago: common ancestor splits into ancestors of humans, chimps, and bonobos
+    25. 6M years ago: some early humans walk on hind legs
+    26. 5.3-2.6M years ago: Plioscene epoch e.g. mammoths, early humans walk upright
+    27. 2.6M years ago: human tool use
+    28. 2.6M-11.7k years ago: Pleistocene epoch e.g. ice ages and warmer interglacial periods
+    29. 2.4M years ago: *Homo habilis*
+    30. 1.9M-143k years ago: *Homo erectus* spreads
+    31. 200k years ago: *Homo sapien* in Africa
+    32. 150-50k years ago: language?
+    33  100k years ago: *Homo sapien* out of Africa, burials and graves
+    34. 75k years ago: pierced shell necklaces
+    35. 45k years ago: "fully modern" humans in Europe ???
+    36. 42k years ago: wood and bone flutes in Europe
+    37. 40-35k years ago: stone and ivory carved into human-animal shapes in Europe
+    38. 38-35k years ago: cave art
+    39. 22k years ago: peak of latest ice age
+    40. 19k years ago: foraging wild cereal in Middle East
+    41. 14k years ago: domestocation of dogs from wolves, grindstones in Middle East
+    42. 13k years ago: engraved antler in Longyn Cave of China
+    43. 12k years ago: European glaciers retreat
+    44. 11.7k-present: Holoscene epoch e.g. end of last ice age, extinction of many large land animals (by humans?), humans spread far and wide
+    45. 8k years ago: cultivation of wheat and barley from Middle East to Nile valley
+    46. 7k years ago: villages of hunters and fishers in Yangtze river delta of China cultivate rice, villages of western Europe farm cereal
+    47. 5.5-4k BCE: Sumerian culture in Mesopotamia (now Iraq)    
+    48.  4.5k years ago: long-distance trade in South America
+    49. 3650-1400 BCE: Minoan and early Aegean cultures
+    50. 3100 BCE: Upper and Lower Egypt united by first pharaoh
+    51. 2600-1900 BCE: strong Indus valley cultures
+    52. 2580-2560 BCE: Great Pyramid of Giza
+    53. 2070 BCE: Xia dynasty of China
+    54. 2000 BCE: preclassic Mayan culture in Mesoamerica
+    55. 1754 BCE: Code of Hammurabi of Babylonian empire
+    56. 1650 BCE: Hittite kingdom of Turkie
+    57. 1600 BCE: Shang dynasty of middle valley of Yellow River of China
+    58. 1600-1500 BCE: Olmec culture in present day Mexico
+    59. 1550-1077 BCE: New Empire of Egypt controls Levant to Nubia
+    60. 1500-800 BCE: Vedic Age e.g. Hindu scripture of India
+    61. 1070 BCE: Kush Kingdom in present day Sudan
+    62. 1000 BCE: Strong Phoenician cultures, e.g., of Tyre and Sidon
+    63. 911-612 BCE: Neo-Assyrian culture of Tigris valley
+    64. 900-200 BCE: Chavin culture of present day Peru
+    65. 800-400 BCE: D'mt Kingdom of Ethiopia
+    66. c. 550 BCE: Cyrus the Great's Achaemenid empire of Persia
+    67. 510-323 BCE: Classical Ancient Greece
+    68. 509 BCE: Roman Republic
+    69. ended on page 99
+
 ## 2025 0829 1423
 
 Notes on 'Geography' by Crash Course.
