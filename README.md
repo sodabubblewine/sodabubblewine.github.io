@@ -168,7 +168,7 @@ For me, the world is still to be organized around its contingencies where a cont
 My notes start on the fourth video in the series.
     - <https://youtu.be/vlVVaZhRAEA?si=dHlhI--5QFOl4hdy>
 
-I'm disinclined to fixate on the 'space', 'place', etc. principles of geography because they mismanage the social contingencies which are better handled on the side of the science of behavior (though, perhaps this conclusion will be contravened by contemplations recorded here).
+    I'm disinclined to fixate on the 'space', 'place', etc. principles of geography because they mismanage the social contingencies which are better handled on the side of the science of behavior (though, perhaps this conclusion will be contravened by contemplations recorded here).
 
 4. The methods of geograph are divided into two nonexclusive and nonexhaustive parts: physical and human.
 Human geography discovers, predicts, and, not so often, controls changes in social behaviors as a result of changes in the litho, hydro, bio, and atmo spheres.
