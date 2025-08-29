@@ -184,7 +184,7 @@ But, I'm not going to focus on the linear algebra at all, because it isn't actua
 It can be turned into a linear problem by the beautifully general methods of homogenous coordinates. 
 No need to worry about that now though.
 
-9. For those who aren't scared off by seeing technical terms they do not yet know fee free to read any sentence that starts with 'technically'.
+9. For those who aren't scared off by seeing technical terms they do not yet know feel free to read any sentence that starts with 'technically'.
 Otherwise, feel free to skip over any such sentence.
 
 10. Technically, the forward imaging model can be made linear with homogeneous coordinates and reduces a four step calculation into a single 'projection' matrix operation.
@@ -211,7 +211,7 @@ Even more technically, there are stacks of papers on how we arrived at the stand
 
 17. The line that goes through the first basis vector of the world coordinate frame is called 'the x-axis', or, more precisely, 'the world x-axis', or, technically, 'the x-axis of the world coordinate frame'.
 
-18. The word 'coordinate' in the phrase 'the world coordinate frame' refers to the triple of numbers that we'll use to write down our measurements once we've set up our world coordinate frame e.g. '(2,3,4)' designates a triple whose first coordinate tells us to go two stick units in the direction of the first basis vector (and along the x-axis) to find the point with coordinate (2,3,4) in the world coordinate frame.
+18. The word 'coordinate' in the phrase 'the world coordinate frame' refers to the triple of numbers that we'll use to write down our measurements once we've set up our world coordinate frame e.g. '(2,3,4)' designates a triple whose first coordinate tells us to go two stick units in the direction of the first basis vector (and along the x-axis) as the first step in finding the point with coordinate (2,3,4) in the world coordinate frame.
 
 19. By keeping the tail of our stick at the origin of the world and rotating it at a right angle from the first basis vector, we get the point at the tip of the second basis vector.
 The line that goes through the second basis vector is called the 'y-axis of the world coordinate frame'.
