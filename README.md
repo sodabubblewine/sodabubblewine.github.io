@@ -151,6 +151,46 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0828 2145
+
+1. With the schematic sameness abbreviations of logic written out in [#2025-0826-1442](#2025-0826-1442), I move onto the schematic compositional abbreviations.
+
+2. Projections: 'proj 1+i m k F' for 'each i m (k cw i+1 m) F'
+
+3. Fields:
+    1. 'field 1+i m 0 F' for 'proj 1+i m 1 F'
+    2. 'field 1+i m 1+k F' for 'or proj 1+i m 1+k F field 1+i m k F'
+    3. 'field 1+i m F' for 'field 1+i m 1+i+m F'
+    4. 'field F' for 'field 1+i m F' where 'F' is substituted for an i m place predicate or schema
+    5. 'field F 0 1+n' for '(n drop) field F'
+    6. 'field F 1+k 1+n' for 'and field F 0 1+n cw 1+n 0 field F k 1+n'
+    7. 'field F 1+n' for 'field F 1+n 1+n'
+
+4. Resultants: 'res j k m F G' for 'each j 0 (j bury j+k) and (k drop) F (m prop) G'
+
+5. Iterates:
+    1. 'iter 0 (j+1)\*2 F' for 'and id (i+1)\*2 field F (i+1)\*2'
+    2. 'iter 1 (j+1)\*2 F' for 'F'
+    3. 'iter 2+n (j+1)\*2 F' for 'res j+1 j+1 0 F (j+1 nip (j+1)\*2) iter 1+n (j+1)\*2 F'
+    4. 'iter -n (j+1)\*2 F' for 'iter n (j+1)\*2 (j+1 bury (1+j)\*2) F'
+
+6. Now for the functional abbreviations.
+
+7. Functionalities: 'func i F' for 'included id i\*2 and (i drop) F (i nip i) F'
+
+8. Totalities: 'total i F' for 'Each some i 0 F'
+
+9. Partialities: 'partial i F' for 'not total i F'
+
+10. Injectivities: 'inject i j F' for 'included id i\*2 and (i nip j) F (i nip i+j) F'
+
+11. Surjectivities: 'surject i j F' for 'Each some i 0 (j cw i+j 0) F'
+
+12. Bijectivities: 'biject i j F' for 'and inject i j F surject i j F'
+
+13. Correlations: 'corr i j F' for 'and func i F inject i j F'
+
+
 ## 2025 0828 1649
 
 Work on a memo on how to program your own virtual worlds from scratch.
