@@ -190,7 +190,7 @@ So, there are no more than two ways each of them can point i.e. they can point i
 
 16. Because of how image sensors work, and because of how images are drawn on computer screens (a pixel at a time), the bases vectors of the image plane coordinate frame are made to point in the opposite directions of those of the camera coordinate frame.
 
-17. So, since the second basis vector of the camera coordinate frame points up, then the second of the image plane coordinate frame points down, and since, when looking through the pinhole to the back wall, the first basis vector of the camera coordinate plane points left, then the first of the image plane coordinate plane points right (when peeping through the pinhole to the back wall).
+17. So, since the second basis vector of the camera coordinate frame points up, then the second of the image plane coordinate frame points down, and since, when looking through the pinhole to the back wall, the first basis vector of the camera coordinate plane points left, then the first of the image plane coordinate frame points right (when peeping through the pinhole to the back wall).
 
 18. To recap:
     1. The origin of the world coordinate frame is some point (usually in the exterior of the camera) and its basis vectors are set up by picking up a stick and putting one end at the origin, its tail, and letting its tip select the first basis vector.
@@ -205,7 +205,7 @@ The first basis vector is got by the same counterclockwise convention from setti
     3. The optical axis is perpendicular to the front and back wall and intersects the back wall at the principle point.
 The distance from the pinhole to the principle point is called the (effective) focal length.
 The principle point is designated by '(0, 0, the focal length)' in the camera coordinate frame.
-The origin of the image plane coordinate plane is the principle point, the first basis vector points in the opposite direction of the first basis vector of the camera coordinate frame, and the same for the second basis vector.
+The origin of the image plane coordinate frame is the principle point, the first basis vector points in the opposite direction of the first basis vector of the camera coordinate frame, and the same for the second basis vector.
 
 
 
