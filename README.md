@@ -151,6 +151,28 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0830 1409
+
+1. With the schematic compositional and functional abbreviations completed in [#2025-0828-2145](#2025-0828-2145) I move on to the schematic graph abbreviations of logic.
+
+2. But, first, it occurred to me that I forgot to put two fundamental abbreviations in the sameness section:
+    1. Item: 'item' for 'dup id'
+    2. Void: 'void' for 'not item'
+
+    Though they may seem silly in their brief insignificance, they complete a wide range of validities that are often misinterpreted as algebraic identites.
+
+3. Symmetries: 'sym i\*2 F' for 'included F iter -1 i\*2 F'
+4. Nonsymmetries: 'nonsym i F' for 'not sym i F'
+5. Asymmetries: 'asym i F' for 'included F not iter -1 i\*2 F'
+6. Antisymmetric: 'antisym i\*2 F' for 'included and F F iter -1 i\*2 id i\*2'
+7. Transitivities: 'tran i\*2 F' for 'included iter 2 i\*2 F F'
+8. Nontransitivities: 'nontran i F' for 'not tran i F'
+9. Intransitivities: 'intran i F' for 'included iter 2 \i*2 F not F'
+10. Reflexvities: 'refl i\*2 F' for 'included iter 0 i\*2 F F'
+11. Nonreflexivities: 'nonrefl i F' for 'not refl i F'
+12. Irreflexivities: 'irrefl i\*2 F' for 'included F nid i\*2'
+13. Total Reflexivities: 'trefl i\*2 F' for 'included id 2\*i F'
+
 ## 2025 0829 1654
 
 Notes on 'The Little Book of Big History' by Ian Crofton and Jeremy Black 2017
@@ -382,7 +404,7 @@ I've also seen it called 'the top vector' because it is perpendicular to the top
 The next basis vector is got by turning the tip of the stick through a right angle.
 The last is perpendicular to both, but since there are two ways to do that, we pick one, the counterclockwise way, which we check by drawing a circle through the tips of the bases vectors and looking at the origin through the circle to see if going from the first to the second to the third basis vector takes us around the circle clockwise or counterclockwise.
     2. The camera coordinate frame is set up by measuring where the pinhole of the camera is in the world coordinate frame and picking that point as the camera origin.
-The third basis vector is made by putting one end of the stick at the camera origin and pointing the other end so that the stick is perpendicular to the window the pinhole is in.
+The third basis vector is made by putting one end of the stick at the camera origin and pointing the other end so that the stick is perpendicular to the window with the pinhole in it and points intside the dark room.
 The line through the third basis vector is called the optical axis.
 The second basis vector is perpendicular to the third and perpendicular to the ground: it's called the up or top vector.
 The first basis vector of the camera coordinate frame is perpendicular to the other two and oriented counterclockwise.
@@ -392,7 +414,6 @@ The first basis vector of the camera coordinate frame is perpendicular to the ot
 1. With the schematic sameness abbreviations of logic written out in [#2025-0826-1442](#2025-0826-1442), I move onto the schematic compositional abbreviations.
 
 2. Projections: 'proj 1+i m k F' for 'each i m (k cw i+1 m) F'
-
 3. Fields:
     1. 'field 1+i m 0 F' for 'proj 1+i m 1 F'
     2. 'field 1+i m 1+k F' for 'or proj 1+i m 1+k F field 1+i m k F'
@@ -401,9 +422,7 @@ The first basis vector of the camera coordinate frame is perpendicular to the ot
     5. 'field F 0 1+n' for '(n drop) field F'
     6. 'field F 1+k 1+n' for 'and field F 0 1+n cw 1+n 0 field F k 1+n'
     7. 'field F 1+n' for 'field F 1+n 1+n'
-
 4. Resultants: 'res j k m F G' for 'each j 0 (j bury j+k) and (k drop) F (m prop) G'
-
 5. Iterates:
     1. 'iter 0 (j+1)\*2 F' for 'and id (i+1)\*2 field F (i+1)\*2'
     2. 'iter 1 (j+1)\*2 F' for 'F'
@@ -413,17 +432,11 @@ The first basis vector of the camera coordinate frame is perpendicular to the ot
 6. Now for the functional abbreviations.
 
 7. Functionalities: 'func i F' for 'included id i\*2 and (i drop) F (i nip i) F'
-
 8. Totalities: 'total i F' for 'Each some i 0 F'
-
 9. Partialities: 'partial i F' for 'not total i F'
-
 10. Injectivities: 'inject i j F' for 'included id i\*2 and (i nip j) F (i nip i+j) F'
-
 11. Surjectivities: 'surject i j F' for 'Each some i 0 (j cw i+j 0) F'
-
 12. Bijectivities: 'biject i j F' for 'and inject i j F surject i j F'
-
 13. Correlations: 'corr i j F' for 'and func i F inject i j F'
 
 
