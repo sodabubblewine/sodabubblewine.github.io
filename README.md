@@ -151,11 +151,69 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0830 1425
+
+1. Having set up the world and camera coordinate frames in [#2025-0829-1227](#2025-0829-1227) there remain two coordinate frames to set up (those of the image plane and the image sensor) before solving the problem of calculating the point projected through a pinhole from the world onto the sensor, better the receptor, can be solved.
+
+2. The third basis vector of the camera coordinate frame points into the dark room or box of our camera obscura.
+All the work put into setting up the world and camera coordinate frames is collected under the phrase 'extrinsic parameters' since they deal with stuff that is outside the dark room.
+Even though I didn't overtly say that the points of the world to be projected through the pinhole are to be outside the room, I've tacitly made descriptions of the projected points as being exterior when I spoke of the trunk of a tree being projected upside down onto the back wall of the dark room.
+Now that I've overtly required that the points to be projected be outside the room, that can be added to the list of things that fall under the premises of the forward model of pinhole cameras.
+
+3. The remaining parameters to be explained are called 'intrinsic parameters' becuase they deal with the interior of the camera obscura.
+
+4. Just as the first measurement in the world coordinate frame was the location of the origin of the camera coordinate frame with respect to the origin of the world coordinate frame, so too is the first measurement in the camera coordinate frame the origin of the *image plane coordinate frame* the first measurement in the camera coordinate frame.
+
+5. The line along the third basis vector of the camera coordinate frame (the one whose tail is at the pinhole and that points into the dark room and is perpendicular to the window with the pinhole in it) is called the optical axis.
+
+6. The optical axis intersects with the back wall of the dark room.
+The back wall of the dark room is called the image plane because it is the two dimensional surface on which the points projected by the pinhole are imaged.
+
+7. The point where the optical axis intersects with the image plane is called 'the principle point' (of the camera).
+
+8. In a standard camera (or in a standard room) the back wall is perpendicular to the wall with the pinhole in it so that the optical axis is perpendicular not only to the image plane of the back wall but also to the window with the pinhole in it.
+Complex cameras can include elaborate mirrors (and even more elaborate lenses) that bounce projected points that would otherwise hit the back wall towards some other surface: nothing like that is contemplated here.
+
+9. The distance from the pinhole to the principle point is called the 'effective focal length' of the camera, or just the focal length.
+
+10. Since the third basis vector of the camera coordinate frame points right at the principle point from the pinhole, then the coordinate of the principle point in the camera coordinate frame is '(0, 0, the focal length)'.
+
+11. The principle point is *the origin of the image plane coordinate frame*.
+
+12. The image plane coordinate frame has only two basis vectors: only two measurements are needed to locate any point on the back wall with respect to the principle point i.e. with respect to the origin of the image plane coordinate frame.
+
+13. Just as some basic conventions constrained the way the camera coordinate frame was set up, there are basic conventions when setting up the image plane coordinate frame that keep calculations nice and tidy.
+
+14. The first and second basis vectors of the image plane coordinate frame are parallel to the first and asecond basis vectors of the camera coordinate frame.
+So, there are no more than two ways each of them can point i.e. they can point in the same direction as the bases vectors of the camera coordinate frame or in the opposite direction of the bases vectors of the camera cordiante frame.
+
+15. Because of how image sensors work, and because of how images are drawn on computer screens (a pixel at a time), the bases vectors of the image plane coordinate frame are made to point in the opposite directions of those of the camera coordinate frame.
+
+16. So, since the second basis vector of the camera coordinate frame points up, then the second of the image plane coordinate plane points down, and since, when looking through the pinhole to the back wall, the first basis vector of the camera coordinate plane points left, then the first of the image plane coordinate plane points right (when peeping through the pinhole to the back wall).
+
+17. To recap:
+    1. The origin of the world coordinate plane is some point (usually in the exterior of the camera) and its basis vectors are set up by picking up a stick and putting one end at the origin, its tail, and letting its tip select the first basis vector.
+Then, turn the tip of the stick through a right angle (any way will do) while keeping the tail at the origin to get the second basis vector.
+The third basis vector must be perpendicular to the first two: there are two ways this can be done, clockwise or counterclockwise.
+By convention, the counterclockwise orientation is picked and we check that we did it right by looking through the circle formed by the tips of the bases vectors to the origin of the world coordinate frame and seeing that going from the first to the second to the third basis vector takes us counterclockwise around the circle.
+    2. The world coordinates of the pinhole of the camera pick out the origin of the camera coordinate frame.
+Putting the tail of the stick at the pinhole and pointing it into the dark room so that it is perpendicular to the wall with the pinhole in it gives the third basis vector of the camera coordinate frame.
+The line that goes through the pinhole in the direction of the third basis vector is called the optical axis.
+Rotate the tip of the stick so that it is perpendicular to the third basis vector and the ground to get the second "up" basis vector of the camera coordinate frame.
+The first basis vector is got by the same counterclockwise convention from setting up the world coordinate frame.
+    3. The optical axis is perpendicular to the front and back wall and intersects the back wall at the principle point.
+The distance from the pinhole to the principle point is called the (effective) focal length.
+The principle point is designated by '(0, 0, the focal length)' in the camera coordinate frame.
+The origin of the image plane coordinate plane is the principle point, the first basis vector points in the opposite direction of the first basis vector of the camera coordinate frame, and the same for the second basis vector.
+
+
+
 ## 2025 0830 1409
 
 1. With the schematic compositional and functional abbreviations completed in [#2025-0828-2145](#2025-0828-2145) I move on to the schematic graph abbreviations of logic.
 
 2. But, first, it occurred to me that I forgot to put two fundamental abbreviations in the sameness section:
+
     1. Item: 'item' for 'dup id'
     2. Void: 'void' for 'not item'
 
@@ -275,7 +333,7 @@ My notes start on the fourth video in the series.
 
     I'm disinclined to fixate on the 'space', 'place', etc. principles of geography because they mismanage the social contingencies which are better handled on the side of the science of behavior (though, perhaps this conclusion will be contravened by contemplations recorded here).
 
-4. The methods of geograph are divided into two nonexclusive and nonexhaustive parts: physical and human.
+4. The methods of geography are divided into two nonexclusive and nonexhaustive parts: physical and human.
 Human geography discovers, predicts, and, not so often, controls changes in social behaviors as a result of changes in the litho, hydro, bio, and atmo spheres.
 Physical geography uncovers the chnages above adn below the surface of the earth.
     > "Physical geograph is all about recognizing the characteristics of teh environment and the processes that create, modify, and destroy those environments" (1:35 'What is physical geography? Crash Course Geography #4')
