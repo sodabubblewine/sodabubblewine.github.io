@@ -190,10 +190,10 @@ So, there are no more than two ways each of them can point i.e. they can point i
 
 16. Because of how image sensors work, and because of how images are drawn on computer screens (a pixel at a time), the bases vectors of the image plane coordinate frame are made to point in the opposite directions of those of the camera coordinate frame.
 
-17. So, since the second basis vector of the camera coordinate frame points up, then the second of the image plane coordinate plane points down, and since, when looking through the pinhole to the back wall, the first basis vector of the camera coordinate plane points left, then the first of the image plane coordinate plane points right (when peeping through the pinhole to the back wall).
+17. So, since the second basis vector of the camera coordinate frame points up, then the second of the image plane coordinate frame points down, and since, when looking through the pinhole to the back wall, the first basis vector of the camera coordinate plane points left, then the first of the image plane coordinate plane points right (when peeping through the pinhole to the back wall).
 
 18. To recap:
-    1. The origin of the world coordinate plane is some point (usually in the exterior of the camera) and its basis vectors are set up by picking up a stick and putting one end at the origin, its tail, and letting its tip select the first basis vector.
+    1. The origin of the world coordinate frame is some point (usually in the exterior of the camera) and its basis vectors are set up by picking up a stick and putting one end at the origin, its tail, and letting its tip select the first basis vector.
 Then, turn the tip of the stick through a right angle (any way will do) while keeping the tail at the origin to get the second basis vector.
 The third basis vector must be perpendicular to the first two: there are two ways this can be done, clockwise or counterclockwise.
 By convention, the counterclockwise orientation is picked and we check that we did it right by looking through the circle formed by the tips of the bases vectors to the origin of the world coordinate frame and seeing that going from the first to the second to the third basis vector takes us counterclockwise around the circle.
