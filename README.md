@@ -199,7 +199,7 @@ It is still
         2. 1 2 6 (uvw: some a is such that uvaSTEPxy and uvawSTEPy :xy) 'plus' 'times' (abbreviation)
         3. some a is such that 1 2 a STEP 'plus' 'times' and 1 2 a 6 STEP 'times' (concretion)
 
-    the last of which follows from "1 2 3 STEP 'plus' 'times'" and "1 2 3 6 STEP 'times'".
+        the last of which follows from "1 2 3 STEP 'plus' 'times'" and "1 2 3 6 STEP 'times'".
 
     7. Thus, the resultant, as defined, makes it easy to analyze about what is classically called 'the composition of concatenative programs'
 
