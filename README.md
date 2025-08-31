@@ -151,6 +151,88 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0831 1542
+
+A very important ascii map
+
+```
+180 150W  120W  90W   60W   30W  000   30E   60E   90E   120E  150E 180
+|    |     |     |     |     |    |     |     |     |     |     |     |
++90N-+-----+-----+-----+-----+----+-----+-----+-----+-----+-----+-----+
+|          . _..::__:  ,-"-"._       |7       ,     _,.__             |
+|  _.___ _ _<_>`!(._`.`-.    /        _._     `_ ,_/  '  '-._.---.-.__|
+|.{     " " `-==,',._\{  \  / {)     / _ ">_,-' `                mt-2_|
++ \_.:--.       `._ )`^-. "'      , [_/(                       __,/-' +
+|'"'     \         "    _L       oD_,--'                )     /. (|   |
+|         |           ,'         _)_.\\._<> 6              _,' /  '   |
+|         `.         /          [_/_'` `"(                <'}  )      |
++30N       \\    .-. )          /   `-'"..' `:._          _)  '       +
+|   `        \  (  `(          /         `:\  > \  ,-^.  /' '         |
+|             `._,   ""        |           \`'   \|   ?_)  {\         |
+|                `=.---.       `._._       ,'     "`  |' ,- '.        |
++000               |    `-._        |     /          `:`<_|h--._      +
+|                  (        >       .     | ,          `=.__.`-'\     |
+|                   `.     /        |     |{|              ,-.,\     .|
+|                    |   ,'          \   / `'            ,"     \     |
++30S                 |  /             |_'                |  __  /     +
+|                    | |                                 '-'  `-'   \.|
+|                    |/                                        "    / |
+|                    \.                                            '  |
++60S                                                                  +
+|                     ,/           ______._.--._ _..---.---------._   |
+|    ,-----"-..?----_/ )      _,-'"             "                  (  |
+|.._(                  `-----'                                      `-|
++90S-+-----+-----+-----+-----+----+-----+-----+-----+-----+-----+-----+
+Map 1998 Matthew Thomas. Freely usable as long as this line is included
+
+```
+
+## 2025 0831 1507
+
+1. Corrected the schematic abbreviation by the predicate functor of functionality in [#2025-0830-2137](#2025-0830-2137) whose compositional component was missing 'j'.
+
+2. Continuing the timeline from [#2025-0829-1654](#2025-0829-1654) starting on page 99 of 'The Little Book of Big History' by Ian Crofton and Jeremy Black 2017.
+
+
+3. 331 BCE: Alexander the Great of Macedon strengthens Hellenistic culture by controlling from the Adriatic Sea to the Indus River e.g. introducing Roman practcies into Achamenid culture of Persia
+
+4. 321-185 BCE: Mauryan culture of India
+
+5. 300 BCE: Library of Alexandria
+
+6. 221 BCE: Qin then Han culture unites China
+
+7. 212 BCE: Edict of Caracalla
+
+8. 100 BCE: Rome is the biggest city
+
+9. 100 BCE - 750 CE: Teotihuacan evolves and dies as the once biggest city of the Americas
+
+10. 300-1200 CE: Ghana culture in present day Naurtania and Mali
+
+11. 410 CE: Roman culture extinguished by Visigoths no later than 476 CE
+
+12. 661-750 (CE) : Umayyad caliphate culture controls largest area including that of present day Georgia, Uzbekistan, Pakistan, Arabian penisula, North Africa, Spain, and Portugal
+
+13. 1055: Seljuk Turks control Baghdad
+
+14. c. 1200: Incas in Andean valley of Peru
+
+15. 1200-1400: Mississippian culture of North America is strongest
+
+16. 1206: Qutb al-Din Aibak is first controller of Delhi Sultante
+
+17. 1211: Mongols start controlling Eurasia and northern China
+
+18. 1368: Ming dynasty established in China
+
+19. 1393: Timur (aka Tamerlane) sacks Baghdad.
+
+20. 1405: Beginning of Zheng He's voyages in Indian Ocean
+
+21. 1438: Beginning of period of Inca conquests
+
+
 ## 2025 0830 2137
 
 1. A reminder that the abbreviations of logic (and their schematic descendants) do little more than set the stage for validities (e.g. 'coex and F F F') and that validities do little more than set the stage for theories.
@@ -229,7 +311,7 @@ It is still
 
 14. The predicate functor 'compose' also comes in handy when giving better abbreviations for the predicate functor of functionality:
 
-    - 'func i j F' for 'included compose i F (i ccw i+j) F id j\*2'
+    - 'func i j F' for 'included compose i j F (i ccw i+j) F id j\*2'
 
 15. Note this new abbreviation brings 'func' into harmony with the other three place predicate functors 'inject', 'surject', 'biject', and 'corr'.
 This is a grand improvement over the abbreviations in [#2025-0828-2145](#2025-0828-2145).
