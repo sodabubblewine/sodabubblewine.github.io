@@ -151,6 +151,101 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0830 2137
+
+1. A reminder that the abbreviations of logic (and their schematic descendants) do little more than set the stage for validities (e.g. 'coex and F F F') and that validities do little more than set the stage for theories.
+
+2. It occurred to me that philosophy as a science can be defined as that which seperates theory from logic e.g. set theory from its logic.
+This would explain the back and forth between philosophers, logicians, and theoraticians (and experimentalists).
+
+3. Having completed in [#2025-0830-1409](#2025-0830-1409) the schematic graph abbreviations of logic I turne forward to the order abbreviations.
+But, before that, I looked back at what I had done thus far and found beautiful room for further simplifying improvements.
+
+4. Going back to the schematic compositional abbreviations of logc set out in [#2025-0828-2145](#2025-0828-2145) a simplification can be introduced by moving from 'resultant' to an intermediate 'composition' of predicates.
+I'm unsettled on the phrase 'composition', but accept that there is room for a definition of its sort in the methods of logic as I give them (that is with respect to a stack based outlook).
+
+5. The definition of resultants does not change.
+It is still (I had to correct this when looking back at it: it had 'each' where it needed 'some'):
+
+    - ‘res j k m F G’ for ‘some j 0 (j bury j+k) and (k drop) F (m prop) G’.
+
+    It is very unfamiliar for those not already steeped in stack based methods of programming e.g. be they in a high level language like Forth or a low level language like x86 assembly.
+
+6. I still have to go back and give each schematic predicate functor abbreviation as a predicate abstract abbreviation, but to help explain how resultants work in a stack based world for those not already familiar with them, I'll skip to unraveling the resultant:
+    1. res j k m F G
+    2. some j 0 (j bury j+k) and (k drop) F (m prop) G  (abbreviation)
+    3. (j+0 some) (0 pop) (j bury j+k) and (k drop) F (m prop) G (abbreviation)
+    4. (..u: some ..v is such that ..u..v( (0 pop) (j bury j+k) and (k drop F) (m prop) G )..x..y :..x..y) (abbreviation)
+    5. (..u..w: some ..v is such that ..u..w..v( (j bury j+k) and (k drop F) (m prop) G) ..x..y : ..x..y) (abbreviation)
+    6. (..u..w: some ..v is such that ..u..v..w( and (k drop) F (m prop) G )..x..y : ..x..y) (abbreviation)
+    7. (..u..w: some ..v is such that ..u..v..w( (k drop) F )..x..y and ..u..v..w( (m prop) G)..x..y :..x..y) (abbreviation)
+    8. (..u..w: some ..v is such that ..u..vF..x..y and ..u..v..wG..y :..x..y)
+
+7. So, ‘res j k m F G’ for ‘some j 0 (j bury j+k) and (k drop) F (m prop) G’ i.e. '(..u..w: some ..v is such that ..u..vF..x..y and ..u..v..wG..y :..x..y)'.
+
+8. This is familiar to Forth programmers in the following way:
+    1. an instance of the part '..u..vF..x..y' is "1 2 3 STEP 'plus' 'times'" where 'STEP' is the predicate of a single step in the execution of a stack based language
+    2. everything to the left of 'STEP' is 'on the stack' as Forth programmers say, and everything to the right is on the return stack, which, in this special case, is literally the execution stack i.e. the list of operations that are going to be performed (this is a deep topic and I will only stay in the shallow end of the pool e.g. the 'instruction register' is usually where 'machine codes' are listed and where one state of the machine is a step from an other)
+    3. in "1 2 3 STEP 'plus' 'times' " it is seen that the predicate '(uvw: uvwPLUS :)', which is true of ((a,b,c),()) if and only if c is the addition of b to a, implies (along with the standard premises of the arithmetic of natural numbers) '1 2 3 PLUS' since three sums two with one. 
+    4. now, an instance of  the part '..u..v..wG..y' is "1 2 3 6 STEP 'times'" where 'TIMES' is true of ((a,b,c),()) if and only if a multiplies b with c
+    5. it is standard form when programming Forth to 'pass parameters' on the stack between the programs mentioned on the return stack i.e. "1 2 3 6 STEP 'times'" is true since '2 3 6 TIMES' is true (i.e. six multiplies three with two)
+    6. now, the result of 'STEP' with 'STEP' is two steps of execution of a stack machine i.e. the following are equivalent
+
+        1. 1 2 6 (res 3 3 1 STEP STEP) 'plus' 'times'
+        2. 1 2 6 (uvw: some a is such that uvaSTEPxy and uvawSTEPy :xy) 'plus' 'times' (abbreviation)
+        3. some a is such that 1 2 a STEP 'plus' 'times' and 1 2 a 6 STEP 'times' (concretion)
+
+    the last of which follows from "1 2 3 STEP 'plus' 'times'" and "1 2 3 6 STEP 'times'".
+    7. Thus, the resultant, as defined, makes it easy to analyze about what is classically called 'the composition of concatenative programs'
+
+9. Thus the definition of resultant of a pair of predicates enforces a method of program composition at a very early stage without ever mentioning such complex theories.
+
+10. The drawback is but momentary: the definition of resultant doesn't appear to have the features familiar to those who were erroneously trained as mathematicians or computer scientists to deal with the composition of two place relations rather than predicates and rather than predicates regimented on the expedience of stack notation.
+
+11. The intermediate definition of composition is introduced now (it was already hidden in the iterate abbreviations):
+
+    - 'compose i j F G' for 'res i j 0 F (i nip j) G'
+    - 'compose i F G' for 'compose i i F G'
+
+
+12. I still refuse to give any abbreviation what so ever for truth functional and quantificational schema like
+
+    - some y is such that zFy and yGx
+
+    or, better, their predicate abstract logic analogue
+
+    - (z: some y is such that zFy and yGx :x)
+
+    which is closest to Godel 1940 and Peano 1911 which are to be greatly preferred, as Quine strongly suggests on pages 24 and 25 of 'Set Theory and its Logic Revised Edition', to modern methods (which were the methods by which I was originally instructed when I was taught a strictly deductive mathematical logic).
+
+13. With the predicate functor 'compose' in hand, the abbreviation of the predicate functor of iteration is much shorter (and more familiar):
+
+    - 'iter 2+n (j+1)\*2 F' for 'compose j+1 F iter 1+n (j+1)\*2 F'
+
+14. The predicate functor 'compose' also comes in handy when giving better abbreviations for the predicate functor of functionality:
+
+    - 'func i j F' for 'included compose i F (i ccw i+j) F id j\*2'
+
+15. Note this new abbreviation brings 'func' into harmony with the other three place predicate functors 'inject', 'surject', 'biject', and 'corr'.
+This is a grand improvement over the abbreviations in [#2025-0828-2145](#2025-0828-2145).
+
+16. Oh, it seems there are also abbreviations for 'cw' and 'ccw' that I have yet to include:
+
+    - 'cw i F' for 'cw i 0 F'
+    - 'ccw i F' for 'ccw i 0 F'
+
+    There are perhaps others of similar familial resemblence which I have accidentally omitted: this is a large part of why I distinguish between notes and memos!
+    Memos set a high bar.
+
+17. In preperation for the schematic order abbreviations of logic:
+    
+    - Connectivities: 'conn i\*2 F' for 'included field F i\*2 or or F iter -1 i\*2 F id i\*2'
+
+18. I do not yet know if 'antisym' shoudl be put as an order abbreviation or a graph abbreviation.
+It is likely that only by putting everything together anew that I shall sort through smoother steps.
+I am frightened to think of what further consideration of schematic validities might give way to in future evolutions! 
+
+
 ## 2025 0830 1425
 
 1. Having set up the world and camera coordinate frames in [#2025-0829-1227](#2025-0829-1227) there remain two coordinate frames to set up (those of the image plane and the image sensor) before solving the problem of calculating the point projected through a pinhole from the world onto the sensor, better the receptor, can be solved.
@@ -481,7 +576,7 @@ The first basis vector of the camera coordinate frame is perpendicular to the ot
     5. 'field F 0 1+n' for '(n drop) field F'
     6. 'field F 1+k 1+n' for 'and field F 0 1+n cw 1+n 0 field F k 1+n'
     7. 'field F 1+n' for 'field F 1+n 1+n'
-4. Resultants: 'res j k m F G' for 'each j 0 (j bury j+k) and (k drop) F (m prop) G'
+4. Resultants: 'res j k m F G' for 'some j 0 (j bury j+k) and (k drop) F (m prop) G'
 5. Iterates:
     1. 'iter 0 (j+1)\*2 F' for 'and id (i+1)\*2 field F (i+1)\*2'
     2. 'iter 1 (j+1)\*2 F' for 'F'
