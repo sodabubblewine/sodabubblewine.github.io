@@ -158,20 +158,22 @@ Use a thermometer.
 2. It occurred to me that philosophy as a science can be defined as that which seperates theory from logic e.g. set theory from its logic.
 This would explain the back and forth between philosophers, logicians, and theoraticians (and experimentalists).
 
-3. Having completed in [#2025-0830-1409](#2025-0830-1409) the schematic graph abbreviations of logic I turne forward to the order abbreviations.
-But, before that, I looked back at what I had done thus far and found beautiful room for further simplifying improvements.
+3. Having completed in [#2025-0830-1409](#2025-0830-1409) the schematic graph abbreviations of logic I turned forward to the order abbreviations.
+But, before that, I looked back at what I had done thus far and found further simplifying improvements.
 
-4. Going back to the schematic compositional abbreviations of logc set out in [#2025-0828-2145](#2025-0828-2145) a simplification can be introduced by moving from 'resultant' to an intermediate 'composition' of predicates.
-I'm unsettled on the phrase 'composition', but accept that there is room for a definition of its sort in the methods of logic as I give them (that is with respect to a stack based outlook).
+4. Going back to the schematic compositional abbreviations of logc set out in [#2025-0828-2145](#2025-0828-2145) a simplification can be introduced by moving from 'resultant' to an intermediate predicate functor 'composition'.
+I'm unsettled on the phrase 'composition', but accept that there is room for a definition of its sort in the methods of logic as I give them (that is with a stack based outlook).
 
 5. The definition of resultants does not change.
-It is still (I had to correct this when looking back at it: it had 'each' where it needed 'some'):
+It is still 
 
     - ‘res j k m F G’ for ‘some j 0 (j bury j+k) and (k drop) F (m prop) G’.
 
+    (I had to correct this when looking back at it: it had 'each' where it needed 'some')
     It is very unfamiliar for those not already steeped in stack based methods of programming e.g. be they in a high level language like Forth or a low level language like x86 assembly.
 
-6. I still have to go back and give each schematic predicate functor abbreviation as a predicate abstract abbreviation, but to help explain how resultants work in a stack based world for those not already familiar with them, I'll skip to unraveling the resultant:
+6. To help explain how resultants work in a stack based world for those not already familiar with them, I'll skip to unraveling the resultant:
+
     1. res j k m F G
     2. some j 0 (j bury j+k) and (k drop) F (m prop) G  (abbreviation)
     3. (j+0 some) (0 pop) (j bury j+k) and (k drop) F (m prop) G (abbreviation)
@@ -181,12 +183,14 @@ It is still (I had to correct this when looking back at it: it had 'each' where 
     7. (..u..w: some ..v is such that ..u..v..w( (k drop) F )..x..y and ..u..v..w( (m prop) G)..x..y :..x..y) (abbreviation)
     8. (..u..w: some ..v is such that ..u..vF..x..y and ..u..v..wG..y :..x..y)
 
+    (I still have to do this for most of the other schematic abbreviations).
+
 7. So, ‘res j k m F G’ for ‘some j 0 (j bury j+k) and (k drop) F (m prop) G’ i.e. '(..u..w: some ..v is such that ..u..vF..x..y and ..u..v..wG..y :..x..y)'.
 
 8. This is familiar to Forth programmers in the following way:
     1. an instance of the part '..u..vF..x..y' is "1 2 3 STEP 'plus' 'times'" where 'STEP' is the predicate of a single step in the execution of a stack based language
-    2. everything to the left of 'STEP' is 'on the stack' as Forth programmers say, and everything to the right is on the return stack, which, in this special case, is literally the execution stack i.e. the list of operations that are going to be performed (this is a deep topic and I will only stay in the shallow end of the pool e.g. the 'instruction register' is usually where 'machine codes' are listed and where one state of the machine is a step from an other)
-    3. in "1 2 3 STEP 'plus' 'times' " it is seen that the predicate '(uvw: uvwPLUS :)', which is true of ((a,b,c),()) if and only if c is the addition of b to a, implies (along with the standard premises of the arithmetic of natural numbers) '1 2 3 PLUS' since three sums two with one. 
+    2. everything to the left of 'STEP' is 'on the stack' as Forth programmers say, and everything to the right is on the return stack, which, in this special case, is the execution stack i.e. the list of operations that are going to be performed (this is a deep topic and I will only stay in the shallow end of the pool e.g. the 'instruction register' is usually where 'machine codes' are listed and where one state of the machine is a step from an other)
+    3. in "1 2 3 STEP 'plus' 'times'" it is seen that the predicate '(uvw: uvwPLUS :)', which is true of ((a,b,c),()) if and only if c is the addition of b to a, implies (along with the standard premises of the arithmetic of natural numbers) '1 2 3 PLUS' since three sums two with one. 
     4. now, an instance of  the part '..u..v..wG..y' is "1 2 3 6 STEP 'times'" where 'TIMES' is true of ((a,b,c),()) if and only if a multiplies b with c
     5. it is standard form when programming Forth to 'pass parameters' on the stack between the programs mentioned on the return stack i.e. "1 2 3 6 STEP 'times'" is true since '2 3 6 TIMES' is true (i.e. six multiplies three with two)
     6. now, the result of 'STEP' with 'STEP' is two steps of execution of a stack machine i.e. the following are equivalent
@@ -196,6 +200,7 @@ It is still (I had to correct this when looking back at it: it had 'each' where 
         3. some a is such that 1 2 a STEP 'plus' 'times' and 1 2 a 6 STEP 'times' (concretion)
 
     the last of which follows from "1 2 3 STEP 'plus' 'times'" and "1 2 3 6 STEP 'times'".
+
     7. Thus, the resultant, as defined, makes it easy to analyze about what is classically called 'the composition of concatenative programs'
 
 9. Thus the definition of resultant of a pair of predicates enforces a method of program composition at a very early stage without ever mentioning such complex theories.
@@ -280,7 +285,7 @@ Complex cameras can include elaborate mirrors (and even more elaborate lenses) t
 
 14. Just as some basic conventions constrained the way the camera coordinate frame was set up, there are basic conventions when setting up the image plane coordinate frame that keep calculations nice and tidy.
 
-15. The first and second basis vectors of the image plane coordinate frame are parallel to the first and asecond basis vectors of the camera coordinate frame.
+15. The first and second basis vectors of the image plane coordinate frame are parallel to the first and second basis vectors of the camera coordinate frame.
 So, there are no more than two ways each of them can point i.e. they can point in the same direction as the bases vectors of the camera coordinate frame or in the opposite direction of the bases vectors of the camera cordiante frame.
 
 16. Because of how image sensors work, and because of how images are drawn on computer screens (a pixel at a time), the bases vectors of the image plane coordinate frame are made to point in the opposite directions of those of the camera coordinate frame.
