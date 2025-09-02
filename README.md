@@ -151,13 +151,93 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0901 1832
+
+1. Continuing the timeline from [#2025-0831-1507](#2025-0831-1507) of ‘The Little Book of Big History’ by Ian Crofton and Jeremy Black 2017.
+
+2. 1453: Ottoman Turks control Constantinople
+3. 1455: Gutenberg Bible from his printing press
+4. 1492: Muslim control in Spain extinguished by Christians; Columbus in West Indies
+5. 1498: Vasco da Gama of Portugal in India via South most tip of Africa
+6. 1517: Protestant Reformation of Martin Luther
+7. 1519-21: Spanish control Aztec culture
+8. 1519-22: Magellan and Del Cano circumnavigate the world
+9. 1526: Mughal controls India
+10. 1532-5: Spanish control Inca
+11. 1543: heliocentric theory of Copernicus
+12. 1571: Ottoman control of Mediterranean ended at Lepanto by Holy League
+13. 1607: English control Virginia
+14. 1644: Machus set up Qing control of China
+15. 1648: End of Thirty Years's War
+16. 1652: Dutch set up Cape Colony of southern Africa
+17. 1683: Vienna countercontrols Turks
+18. 1687: Newton's of motion and universal gravitation
+19. 1763: End of Seven Years's War
+20. 1776: US Declaration of Independence; 'Wealth of Nations' by Adam Smith
+21. 1783: Human flight by baloon
+22. 1785: Steam powered cotton mill
+23. 1788: British in Australia
+24. 1789: French Revolution
+25. 1792-1815: French Revolutionary and Napoleonic wars
+26. 1803: US buy part of North America from France
+27. 1808-26: Spanish control of Amercas weakens
+28. 1825: passenger steam railway in England, from Stockton to Darlington
+29. 1830: Greece countercontrols Ottoman Turks
+30. 1833: British culture abolishes slavery
+31. 1844: Morse's telegraph
+32. 1848: 'Communist Manifesto' of Marx and Engles
+33. 1848-9: revolutions extinguished in Europe
+34. 1853: US countercontrols Japan: opens trade 
+35. 1857: India countercontrols British
+36. 1859: 'Origin of Species' by Darwin
+37. 1861: Italian Unification
+38. 1861-5: American Civil War
+39. 1868: Japan strengthens
+40. 1869: transcontinental railway in USA; Suez Canal
+41. 1871: German Unification
+42. 1876: telephone
+43. 1884: Europeans control Africa at Berlin Conference
+44. 1895: wireless telegraphy from Marconi
+45. 1903: Wright Flyer
+46. 1905: Einstien's special theory of relativity
+47. 1911: Chinese revolution
+48. 1914: First World War; Panama canal
+49. 1917: Russian Revolution
+50. 1918: End of First World War; Austrian, German, and Turkish cultures weaken
+51. 1923: non-Mliky Way galaxies
+52. 1928: penicillin
+53. 1929: Great Depression
+54. 1933: Nazi's strengthen
+55. 1937: Second Sino-Japanese War
+56. 1939: Second World War
+57. 1943: electronic computer
+58. 1945: atomic bomb; End of Second World War; United Nations; Cold War
+59. 1947: Indian Independence
+60. 1949: Chinese Civil War; NATO
+61. 1950-3: Korean War
+62: 1955-75: Vietnam War
+63. 1957: Sputnik 1; European Economic Community
+64. 1960: 3B people
+65. 1961: Human Space Flight
+66. 1967: Human heart transplant
+67. 1969: Human on Moon
+68. 1976: Robot on Mars
+69. 1978: Human invitro fertilization
+70. 1979: Smallpox extinguished
+71. 1989: World Wide Web
+72. 1991: Soviet Union extinguished
+73. 1997: cloned mammal
+74. 1999: 6B people
+75: 2003: Human Genome Project
+76. 2011: 7B people
+77. 2012: Higgs Boson
+
 ## 2025 0831 1542
 
 A very important ascii map
 
 ```
 180 150W  120W  90W   60W   30W  000   30E   60E   90E   120E  150E 180
-|    |     |     |     |     |    |     |     |     |     |     |     |
 +90N-+-----+-----+-----+-----+----+-----+-----+-----+-----+-----+-----+
 |          . _..::__:  ,-"-"._       |7       ,     _,.__             |
 |  _.___ _ _<_>`!(._`.`-.    /        _._     `_ ,_/  '  '-._.---.-.__|
@@ -186,6 +266,10 @@ A very important ascii map
 Map 1998 Matthew Thomas. Freely usable as long as this line is included
 
 ```
+
+There is also a program that displays maps in the terminal:
+    - <https://www.uninformativ.de/>
+    - <https://www.linuxlinks.com/asciiworld-world-map-ascii/>
 
 ## 2025 0831 1507
 
