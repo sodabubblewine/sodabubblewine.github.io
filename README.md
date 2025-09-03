@@ -151,6 +151,51 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0902 1648
+
+1. In [#2025-0830-1425](#2025-0830-1425) the world, camera, and image plane coordinate frames were constructed.
+All that is left, to finish setting up the camera obscura problem (of predicting where points are projected from the world through the pinhole onto the back wall), is to set up the image sensor or image receptor coordinate frame.
+
+2. In the dark room version of the camera obscura presented first in [#2025-0828-1649](#2025-0828-1649) the back wall became what is now called the image sensor.
+I've suggested multiple times now that it is better named 'image receptor' because 'sensing' is a far more elaborate repertoire than 'receiving' and receptors are the basis of our contact with the world at the ends of our peripheral nervous system.
+
+3. Whether it's called the image sensor or image receptor, there are only a few key measurements that complete the description of the intrinsic or internal parameters of the camera.
+
+4. The image sensor is a rectangular part of the image plane.
+Each of its sides are parallel to one of the basis vectors of the image plane coordinate frame and perpendicular to the other i.e. its upper and lower sides are parallel to the floor and its left and right sides are perpendicular to the floor.
+
+5. It has a definite width and height.
+Both are measured in (meter) stick units of the image plane coordinate frame.
+
+6. In the idealized camera obscura, the principle point (the origin of the image plane coordinate plane) is at the intersection of the diagonals of the image sensor.
+In reality, finding the location of the principle point relative to the image sensor coordinate frame is part of a general problem called 'camera calibration'.
+
+7. The origin of the image sensor coordinate frame is the upper left hand corner of the image sensor (when looking through the pinhole to the image plane).
+Therefore, the origin of the image sensor is designated by '(-half of the width of the image sensor, -half of the height of the image sensor)' in the image plane coordinate frame.
+
+8. The image sensor is made of rectangular pixels and the units of the image sensor coordinate frame are pixels.
+So, when talking about lengths it can either be given in the units of the image sensor coordinate frame or in the units of the image plane coordinate frame.
+
+9. Since the pixels are rectangular and not square, three horizontal pixels may be longer, shorter, or the same length as three vertical pixels.
+Thus, lengths are most often given in (meter) stick units because those are the same units as the world, camera, and image plane coordinate frames.
+
+10. Unlike the basis vectors of the world, camera, and image plane, the basis vectors of the image sensor coordinate frame are possibly different lengths even though they are both given in pixel units.
+Thus, we differentiate between horizontal and vertical pixel units.
+
+11. A horizontal pixel unit is the width (in the world, camera, or image plane units) of a pixel, and a vertical pixel unit is the height of a pixel.
+The first basis vector points from the upper left to the upper right of a single pixel and the second basis vector points from the upper left to the lower left of a single pixel.
+
+12. Since pixels are rectangles and not points, the pixel at the origin of the image sensor coordinate frame intersects the origin at its upper left hand corner.
+While it may seem obvious that the upper left corner of the image sensor is the upper left corner of a pixel, this is not always the case, and there are other ways of picking the origin that may be helpful e.g. some times it helps to pick the center of the upper left corner pixel as the origin.
+
+13. Converting between pixel units and (meter) stick units involves two densities: horizontal and vertical pixel density.
+Horizontal pixel density is the number of horizontal pixles per meter and vertical pixel density is the number of vertical pixels per meter.
+
+14. Thus, the principle point is designated by '(the product of the horizontal pixel density with half the width of the image sensor, the product of the vertical pixel density with half the height of the image sensor)' in the image sensor coordinate frame.  
+
+15. Now, to solve the problem of projecting a point in the world onto the image sensor, we need to go from the world coordinate frame to the camera coordinate frame to the image plane coordinate plane to the image sensor coordinate frame!
+
+
 ## 2025 0901 1832
 
 1. Continuing the timeline from [#2025-0831-1507](#2025-0831-1507) of ‘The Little Book of Big History’ by Ian Crofton and Jeremy Black 2017.
@@ -268,8 +313,8 @@ Map 1998 Matthew Thomas. Freely usable as long as this line is included
 ```
 
 There is also a program that displays maps in the terminal:
-    - <https://www.uninformativ.de/>
-    - <https://www.linuxlinks.com/asciiworld-world-map-ascii/>
+- <https://www.uninformativ.de/>
+- <https://www.linuxlinks.com/asciiworld-world-map-ascii/>
 
 ## 2025 0831 1507
 
@@ -279,43 +324,24 @@ There is also a program that displays maps in the terminal:
 
 
 3. 331 BCE: Alexander the Great of Macedon strengthens Hellenistic culture by controlling from the Adriatic Sea to the Indus River e.g. introducing Roman practcies into Achamenid culture of Persia
-
 4. 321-185 BCE: Mauryan culture of India
-
 5. 300 BCE: Library of Alexandria
-
 6. 221 BCE: Qin then Han culture unites China
-
 7. 212 BCE: Edict of Caracalla
-
 8. 100 BCE: Rome is the biggest city
-
-9. 100 BCE - 750 CE: Teotihuacan evolves and dies as the once biggest city of the Americas
-
+9. 100 BCE - 750 CE: Teotihuacan evolves and dies as the once biggest city of the mericas
 10. 300-1200 CE: Ghana culture in present day Naurtania and Mali
-
 11. 410 CE: Roman culture extinguished by Visigoths no later than 476 CE
-
 12. 661-750 (CE) : Umayyad caliphate culture controls largest area including that of present day Georgia, Uzbekistan, Pakistan, Arabian penisula, North Africa, Spain, and Portugal
-
 13. 1055: Seljuk Turks control Baghdad
-
 14. c. 1200: Incas in Andean valley of Peru
-
 15. 1200-1400: Mississippian culture of North America is strongest
-
 16. 1206: Qutb al-Din Aibak is first controller of Delhi Sultante
-
 17. 1211: Mongols start controlling Eurasia and northern China
-
 18. 1368: Ming dynasty established in China
-
 19. 1393: Timur (aka Tamerlane) sacks Baghdad.
-
 20. 1405: Beginning of Zheng He's voyages in Indian Ocean
-
 21. 1438: Beginning of period of Inca conquests
-
 
 ## 2025 0830 2137
 
