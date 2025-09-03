@@ -273,7 +273,7 @@ Horizontal pixel density is the number of horizontal pixles per meter and vertic
 72. 1991: Soviet Union extinguished
 73. 1997: cloned mammal
 74. 1999: 6B people
-75: 2003: Human Genome Project
+75. 2003: Human Genome Project
 76. 2011: 7B people
 77. 2012: Higgs Boson
 
