@@ -151,6 +151,30 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0904 1549
+
+1. Sequence of links to papers that are relevant to garbarge collection of binary trees.
+
+2. Henry Baker 1992 'Lively linear Lisp'
+    - <https://www.cs.utexas.edu/~hunt/research/hash-cons/hash-cons-papers/BakerLinearLisp.pdf>
+
+3. Henry Baker 1994 'Linear logic and permutations stacks'
+    - <https://dcreager.net/pdf/Baker1994.pdf>
+    - <https://plover.com/~mjd/misc/hbaker-archive/ForthStack.html>
+
+4. Doublas W. Clark 1978 'A Fast Algorithm for Copying List Structures'
+    - <https://dl.acm.org/doi/abs/10.1145/359488.359491>
+
+5. Gary Lindstrom 1974 'copying List Structures Using Bounded Workspace'
+    - <https://dl.acm.org/doi/10.1145/360924.360936>
+
+6. K. P. Lee 1980 'A Linear Algorithm for Copying Binary Trees Using Bounded Workspace'
+    - <https://dl.acm.org/doi/abs/10.1145/358826.358835>
+
+7. Jacques Cohen 1981 'Garbage Collection of Linked Data Structures'
+    - <https://www2.cs.arizona.edu/~collberg/Teaching/553/2011/Resources/gc-cohen.pdf>
+    - <https://dl.acm.org/doi/10.1145/356850.356854>
+
 ## 2025 0904 1501
 
 1. Most people learn logic for the same reason they learn any other foreign language: they love someone (or something) and wish to know them (or it) in their native tongue.
