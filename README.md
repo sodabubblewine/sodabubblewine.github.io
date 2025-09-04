@@ -151,6 +151,125 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0904 1501
+
+1. Most people learn logic for the same reason they learn any other foreign language: they love someone (or something) and wish to know them (or it) in their native tongue.
+
+2. Those in love with ideas, items, and words are ready for logic.
+Those who love this or that philosopher may only be as prepared to learn logic as they are to learn their native language, be it Latin, Greek, Gemran, French, Spanish, English, Chinese etc.
+
+3. The language of philosophy's most well known child, science, is logic.
+Contemporaries would point to something beyond logic, be it a deviation or the divinations of statisticians and probability theorists (the modern day Oracle's of Delphi).
+
+4. At least the propbability theorist has the courage to put 'theorist' in their name.
+Those that would dodge the dismissive of 'theory' are doomed to be found out and live in constant worry that they shall be caught by their assumptions.
+
+5. The days where philosophy gave us a consistent way of life are gone, but the delights of philosophic practices are as alive as ever.
+Those that condemn human behavior for its limited fallibility have condemned their life no matter how consistent it may seem.
+
+6. There is no better reason for anyone to read on than there is for them to go to a pizza parlor just because I recommended it.
+It is easy enough for me to admit that I hide in obscurities because I am destine to lose to anyone who professes the profound.
+The richess of my methods are mundane when compared to the new.
+Mine are old.
+Not so old as the stories we have told since we found stories to tell, but much older than the new and much less ornate in their presentation.
+
+7. I am told that this is a failure on my part.
+Though I object, perhaps by saying this is a feature, I am at a loss to defend myself against the profound, the ambitious, or the earnest.
+The performance is lost on me, my life, and my work.
+
+8. At best I meddle in the world of words, never quite reaching the items and ideas that dazzle and confound the best and worst of the world (though to call me a nominalist would be a dire insult).
+
+9. What logic brings to me is my love.
+If your love is science, and if through it you have found a kind of sublime satisfaction, then logic is the language in which you may know your love better than you know your self.
+
+10. Once upon a time, logic was correct reasoning.
+Humans were special because they reasoned in ways that no other creature could.
+The division of logic into its purportedly formal and informal parts was a grand mistake: at best they are poor names for pools between which the practices of paraphrasing are more or less effective.
+
+11. Arguments express inferences, or so we are told: what evidence there is for either the argument or the inference is in need of closer examination.
+
+12. An argument was then correct when its conclusions can be inferred from its premises: it is seen by some as evidence for the inference which is part of an act of reason.
+
+13. When an argument is said (erroneously) to express an inference, the premises and conclusions of the argument are said to express what the inference is about.
+The things inferences are about are called propositions: they are also the things that are said (erroneously) to be true or false.
+
+14. When it is said that a sentence of an argument is true, it is true only because it expresses a true proposition (again this is the classical error).
+
+15. This has been a poorly written polemic.
+
+## 2025 0904 1346
+
+1. My  work is largely inaccessible because of how bad I am at writing.
+Almost all of the writing I've done throughout my life is aimed at a kind of self discovery: it doesn't take into account what other people are interested in or in what they tend to think.
+
+2. While there's room for the kind of writing that leads to discovery, it can only go so far.
+It might help one or two people who are already on a similar discovery expedition.
+
+
+## 2025 0903 1853
+
+1. When I work to know a thing my view of the world narrows upon it.
+I am blind to what else the world has to offer and may bash myself upon an obstacle heralded no more covertly than the rising of the sun.
+
+2. This blindness seems characteristic of any intense investigation.
+In the past, metaphors made up for such mistakes.
+A reader may question whether the metaphor carries the day, but may never make it back to the skirmish from which it was won.
+My fear, and it is so very frequent, is that without logic I shall always be blind to the largest of obstacles: doubt.
+
+3. To know logic has been my thing.
+Beyond logic is theory and my theory of the world is bound to B. F. Skinner's radical behaviorism.
+
+4. The basic things of the world are contingencies.
+They are consequences from responses on occasions.
+No more is known of them than that.
+
+5. Theories project logic upon the world and work with the rest of our repertoires to deal with what troubles us most.
+
+6. The premises of a theory activate the network of validities uncovered by logic, and through them reach conclusions which check the rest of the world.
+Conclusions go extinct before premises, but no premise is left unthreatened by contravened conclusions.
+
+7. I am failing to write freely.
+
+## 2025 0903 1548
+
+1. The wikipedia page on binary relations <https://en.wikipedia.org/wiki/Binary_relation> includes a subsection on 'Types of Binary Relations'.
+These are properly taken as types of two place, or two zero place, or one one place, predicates.
+
+2. The sum of the number of left and right places of a predicate is its degree.
+The organization of predicates of any degree with respect to the types of binary relations proceeds in the same way as when the methods of integral and differential calculus are extended to their multivariable generalizations.
+
+3. Thankfully, my names for the different kinds of funtional abbreviations of logic are consistent with those in the wikipedia article.
+
+4. Upon reading the wikipedia article, it occurred to me to distinguish between injectiveness, perhpas just injective, and injectivity.
+Maybe better, the difference between injective and injection.
+
+5. An injection is total and injective i.e. functional and injective.
+
+6. The difference between functive and functional just occured to me.
+This would be carried on as injective and injectional, surjective and surjectional, and bijective and bijectional.
+
+7. Another edit that must be made to my organization of predicates is to change 'graph abbreviations' to 'multigraph abbreviations'.
+They were always multigraph abbreviations and it is only when the multigraph abbreviations are restricted to predicates of degree two that they become graph abbreviations.
+
+8. Connectivity may also be better explained as the inclusion of the appropriately degreed nonidentity of the predicate with the alternation of the predicate and its inverse.
+
+## 2025 0903 1455
+
+1. Having got a complete collection of the 'Harvard Classics' and a partial collection of 'Great Books of the Western World' my interest in lists of great books grew.
+    - <https://en.wikipedia.org/wiki/Harvard_Classics>
+    - <https://en.wikipedia.org/wiki/Great_Books_of_the_Western_World>
+
+2. A great list of great lists is found at <http://www.greaterbooks.com/>.
+
+3. My interest is in the verbal control of human behavior e.g. the textual and vocal responses that are shaped by verbal behavior which was emitted hundreds if not thousands of years ago.
+
+4. Books are the tip of a verbal iceberg which is forever submerged in the murky waters of unrecorded history.
+
+5. Completely unrelated, a link to Carnap's 1950 'Empiricism, Semantics, and Ontology': <https://www.phil.cmu.edu/projects/carnap/editorial/latex_pdf/1956-ESO.pdf>
+
+6. The list with books from the world, not just from Europe and America, is <https://lawpark.jimdofree.com/>.
+Other gems can be found thereabouts.
+
 ## 2025 0902 1648
 
 1. In [#2025-0830-1425](#2025-0830-1425) the world, camera, and image plane coordinate frames were constructed.
