@@ -183,7 +183,7 @@ Use a thermometer.
 Those who love this or that philosopher may only be as prepared to learn logic as they are to learn their native language, be it Latin, Greek, Gemran, French, Spanish, English, Chinese etc.
 
 3. The language of philosophy's most well known child, science, is logic.
-Contemporaries would point to something beyond logic, be it a deviation or the divinations of statisticians and probability theorists (the modern day Oracle's of Delphi).
+Contemporaries would point to something beyond logic, be it a deviation or the divinations of statisticians and probability theorists (the modern day Oracle of Delphi).
 
 4. At least the propbability theorist has the courage to put 'theorist' in their name.
 Those that would dodge the dismissive of 'theory' are doomed to be found out and live in constant worry that they shall be caught by their assumptions.
