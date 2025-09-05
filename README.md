@@ -189,9 +189,9 @@ There are no obvious entryways into the bits that matter most.
 Everything is either obvious or obscure.
 
 9. There is the temptation, one which has been around for centuries, to flirt with philosophy or with some other science which is in vogue e.g. cognitive science is still popular enough to command the attention of most casual readers.
-A kind of watered down cognitive science is still popular among the influencers who profess a kind of mystic mastery over the minds of the masses.
+A kind of watered down cognitive science is still popular among the influencers who profess a sort of mystic mastery over the minds of the masses.
 
-10. It's popularity gives the public a feeling of familiarity: if they don't already know something about it they feel as if there is something there to be known.
+10. It is popularity gives the public a feeling of familiarity: if they don't already know something about it they feel as if there is something there to be known.
 It is surprising how often I have spoken either about behavior or logic and the listener has said 'I do not know what you are talking about'.
 Yet, if I was to tell a fantasy story about a unicorn's search for the lost love of their youth, there is suddenly something to know.
 
