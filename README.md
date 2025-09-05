@@ -151,6 +151,88 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0904 2341
+
+An experiment in writing without restraints.
+
+1. It is sad but true that I have not yet written substantially about behavior in these notes.
+So much of the last decade of my life and work has been dedicated to behavior and yet there is nothing here that would make that clear.
+Sure, I mention B. F. Skinner more often than most, but here I have mentioned Quine more than Skinner.
+To those that know me 'in real life' this is a surprise: they wait for Skinner to enter every conversation (and, unsurprisingly, they now bring Skinner up before I do).
+
+2. I am not a disciple of Skinner.
+I may call myself more of a radical behaviorist than just a regular old behaviorist, but that does not, to me at least, then imply that I am devoted to all that Skinner has said or all that has been attributed to what Skinner may or may not have said.
+This must be written explicitly because there is so much about Skinner that can either be misunderstood or when understood is very unlike what I have got from reading him.
+
+3. It is not uncommon for me to read something that so many others have read and to discover something about it that is at odds with prevailing interpretations.
+This happens when I read Skinner and when I read Quine.
+It happens because I have read almost everything that they have written and reread it all again.
+There are always gaps in my reading: I am not a reading machine even though I may dream of one day being one.
+
+4. The Skinner we have from his writings is not the same Skinner we have from the rest of his work.
+This is true of anyone who has done work which the public has been forced to recognize because of its consequences to culture.
+Little has had a more profound effect on the way we live and work than the science which sometimes goes by the peculiar name 'the experimental analysis of behavior'.
+
+5. The phrase 'the experimental analysis of behavior' is a mouthful.
+Sometimes it is interchangeable with 'the science of behavior' and sometimes it is not.
+When I speak with others about behavior, especially when I speak to them about human behavior, I often have to say 'the experimental analysis of behavior' rather than 'the science of behavior' because most people are quick to separate humans from the rest of the behaving organisms the world has come to know.
+
+6. Another reason to emphasize the experimental analysis of behavior is to point away from 'the analysis of mind' or 'psychological analysis', e.g., as in Freud's early science.
+Skinner said on more than one occasion that Freud was one of the first behaviorists, and this is as much a word game as it is a concrete observation: Freud linked present behavior to past consequences.
+
+7. As an aside, I'm writing more casually than I have up to this point because I can not stand the stark entries I've made as of late.
+They are practically impenetrable to most people and I do not like that.
+I'd rather write in a way that is at least accessible to someone who, unlike me, is less sensitive to precision: inaccuracy is inexcusable but imprecision is often acceptable.
+
+8. How to start up the science of behavior is as difficult a problem as how to start up the science of logic.
+There are no obvious entryways into the bits that matter most.
+Everything is either obvious or obscure.
+
+9. There is the temptation, one which has been around for centuries, to flirt with philosophy or with some other science which is in vogue e.g. cognitive science is still popular enough to command the attention of most casual readers.
+A kind of watered down cognitive science is still popular among the influencers who profess a kind of mystic mastery over the minds of the masses.
+
+10. It's popularity gives the public a feeling of familiarity: if they don't already know something about it they feel as if there is something there to be known.
+It is surprising how often I have spoken either about behavior or logic and the listener has said 'I do not know what you are talking about'.
+Yet, if I was to tell a fantasy story about a unicorn's search for the lost love of their youth, there is suddenly something to know.
+
+11. It is not as if I suck at communicating, though I in no way profess to be good at writing or speaking.
+I lack the rhetorical flare that comes from that false sense of certainty behind any hard won piece of proper literature (be it an essay or an encyclopedic entry).
+
+12. I am uncertain in almost all that I do and this is the ultimate weakness in an effective writer.
+Writers are tyrrants.
+They take complete control of the reader and are bound by no laws, no reasons, no limits other than what they can get away with, and a good writer can get away with the world.
+
+13. A good story well told beats any sort of scientific explanation or experiment every time.
+It doesn't just beat it, it extinguishes it.
+Science lives or dies by the stories that people tell: no experiment in the world can undo the damage done by a good story.
+Good stories are their own death, and so often that death is delayed again and again.
+People can't drop a good story even if it harms their friends and family.
+The world is powerless, and the writer knows all of this, and somehow they still publish.
+
+14. I'm glad to say that this note has now become less about the science of behavior and more about the pains caused by my subpar writing.
+I'm uncertain and fallible.
+Raw strength sniffs out whatever whiff of weakness there is to be found in unfamiliar words and sentences.
+Those who would preach to the choir are at least assured of the interests of their audience.
+Pick love, money, power, or any other of the more complex derivatives of food, sex, and water and you'll find a choir waiting for you to sing for your supper.
+
+15. How am I to tell a good story when I dispise them so?
+Can science go on without stories?
+Others have told me that there is a compromise e.g. imprecision is unavoidable.
+If you had to sit around all day and speak down to ever nanometer you'd never reach any part of the world beyond the tip of your nose.
+Are accuracy and imprecision enough to spawn stories?
+Why not just look at what others have written?
+
+16. Writers of history have done the most to help me understand the kinds of stories that can be told which are both accurate and imprecise.
+Imprecision is the order of the day in history.
+But, historians are plagued by the same old problem: who cares?
+So what if so-and-so won the war some two centuries ago: why are you wasting my time with this?
+
+17. To say "Well, some people like history and some people don't." is to condemn those who do and those who don't.
+They are born that way, or they were brought up that way, and there's nothing you can do about their birth or their upbringing: they are in the past and inaccessible, much less manipulable.
+Science is where such misguided excuses end: the more we know about how the world works the more control we have over how the world works out.
+
+19. This has been another strange experiment in a less restricted kind of writing.
+
 ## 2025 0904 1549
 
 1. Sequence of links to papers that are relevant to garbarge collection of binary trees.
@@ -185,15 +267,15 @@ Those who love this or that philosopher may only be as prepared to learn logic a
 3. The language of philosophy's most well known child, science, is logic.
 Contemporaries would point to something beyond logic, be it a deviation or the divinations of statisticians and probability theorists (the modern day Oracle of Delphi).
 
-4. At least the propbability theorist has the courage to put 'theorist' in their name.
-Those that would dodge the dismissive of 'theory' are doomed to be found out and live in constant worry that they shall be caught by their assumptions.
+4. At least the probability theorist has the courage to put 'theorist' in their name.
+Those that would dodge the dismissive of 'theory' are doomed to be found out and live in constant fear that they shall be caught by their assumptions.
 
 5. The days where philosophy gave us a consistent way of life are gone, but the delights of philosophic practices are as alive as ever.
 Those that condemn human behavior for its limited fallibility have condemned their life no matter how consistent it may seem.
 
-6. There is no better reason for anyone to read on than there is for them to go to a pizza parlor just because I recommended it.
+6. There is no better reason for anyone to read what I've written here than there is for them to go to a pizza parlor just because I recommended it.
 It is easy enough for me to admit that I hide in obscurities because I am destine to lose to anyone who professes the profound.
-The richess of my methods are mundane when compared to the new.
+The richness of my methods are mundane when compared to the new.
 Mine are old.
 Not so old as the stories we have told since we found stories to tell, but much older than the new and much less ornate in their presentation.
 
@@ -208,7 +290,7 @@ If your love is science, and if through it you have found a kind of sublime sati
 
 10. Once upon a time, logic was correct reasoning.
 Humans were special because they reasoned in ways that no other creature could.
-The division of logic into its purportedly formal and informal parts was a grand mistake: at best they are poor names for pools between which the practices of paraphrasing are more or less effective.
+The division of logic into its purportedly formal and informal parts was a grand mistake: at best they are poor names for poles between which the practices of paraphrasing are more or less effective (but do not be fooled into taking effectiveness as a criterion of logic).
 
 11. Arguments express inferences, or so we are told: what evidence there is for either the argument or the inference is in need of closer examination.
 
