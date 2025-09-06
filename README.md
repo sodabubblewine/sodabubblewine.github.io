@@ -151,6 +151,28 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0905 2108
+
+1. Happened to catch an episode of Jude Judy's 'Justice on Trial' and enjoyed it quite a lot: I would enjoy seeing more mock trial shows.
+
+2. A delightful conversation with the wonderfully talented Polyducks <https://polyducks.co.uk> prompted me to dig back into the foundations of the science of behavior.
+
+3. One of the key paths that needs smoothing out is that from social behavior through verbal behavior to scientific and logical behavior.
+I shall collect notes from work done by Skinner and others along this path and attempt to link everything together with a aim towards the construction of a logical theory.
+
+4. There are many things which Skinner went out of his way to explain with a kind of clarity that very often surpasses Quine's keen eye for clear and exact prose.
+Skinner's explanation of 'interpretation' is one such example:
+    > "The use of concepts and laws derived from an experimental analysis in the interpretation of daily life is also a source of misunderstanding. An analogy from another science may be helpful. Geophysics interprets the present condition of the accessible parts of the earth in terms of presumed conditions in the mantle and core. It appeals quite freely to the physical laws derived from laboratory analyses of matter under various pressures and temperatures, even though it is merely an assumption that comparable states actually prevail in the interior of the earth. In the same way familiar facts about verbal behavior are interpreted with principles derived from the laboratory study of contingencies of reinforcement, even though the contingencies maintained by the verbal environment cannot be precisely ascertained. In both these examples principles derived from research conducted under the favorable conditions of the laboratory are used to give a plausable account of facts which are not at the moment under experimental control. Neither account can at the present time be proved, but both are to be preferred to treatments which lack the same kind of experimental support." pg. 100 Skinner 'Contingencies of Reinforcement'
+
+5. This distinguishes interpretation from speculation, though the boundary is not as clear as that between, e.g., preformal and formal mathematics.
+What Skinner emphasizes is that the vast majority of verbal behavior is not strictly logical or scientific and yet much of what passes as scientific and logic behavior is not as strict as vast majority of scientists and logicians purport.
+
+6. As a side note: almost all (all?) of Skinner's writings are available through the B. F. Skinner foundation <https://www.bfskinner.org/>.
+
+7. The following selection from the beginning of the fourth chapter 'The experimental analysis of behavior' in Skinner's book 'Contingencies of Reinforcement' is perhaps my favorite starting point:
+    > "A natural datum in a science of behavior is the probability that a given bit of behavior will occur at a given time. An experimental analysis deals with that probability in terms of frequency or rate of responding. Like probability, rate of responding would be a meaningless concept if it were not possible to specify topography of response in such a way that separate instances of an operant can be counted. The specification is usually made with the help of a part of the apparatus-- the 'operandum'-- which senses occurrences of a response. In practice, responses so defined show a considerable uniformity as the organism moves about in a framework set by its own anatomy and the immediate environment." pg. 83.
+
+
 ## 2025 0904 2341
 
 An experiment in writing without restraints.
