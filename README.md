@@ -255,6 +255,57 @@ Presumably, they are helpful enough that their tolerance and that of the difficu
         1. 'void i' for 'not item i'
         2. 'void' for 'void 0'
 
+8. The compositional abbreviations
+    1. Projection: 'proj k i m F' for 'some i m (k roll 1+i m) F'
+    2. Field
+        1. 'field 0 i m F' for 'proj 0 i m F'   
+        2. 'field 1+k i m F' for 'or field 0 i m F field k i m roll 1+i m F'
+        3. 'field i m F' for 'field i+m i m F'
+        4. 'field F' for 'field i m F' when 'F' is substituted for an i m place predicate or schema
+        5. 'field F 0 n' for '(n drop) field F'
+        6. 'field F 1+k n' for 'and field F 0 n roll n field F k n'
+        7. 'field F n' for 'field F n n'
+    3. Resultant: 'res j k m F G' for 'some j (j bury j+k) and (k drop) F (m prop) G'
+    4. Composition
+        1. 'compose i j F G' for 'res i j 0 F (i nip j) G'
+        2. 'compose i F G' for 'compose i i F G'
+    5. Iteration
+        1. 'iter 0 i F' for 'and id i field F i'
+        2. 'iter 1 i F' for 'F'
+        3. 'iter 1+k i F' for 'compose i F iter k i F'
+    6. Converse
+        1. 'conv i j F' for '(j roll i+j) F'
+        2. 'conv i F' for 'conv i i F'
+        3. 'conv F' for '(m push) conv i m (i pop) F' when 'F' is substituted for an i m place predicate or schema
+    7. Inverse Iteration
+        1. '-iter k i F' for 'iter k i conv i F'
+        2. '-iter F' for '-iter 1 i F' when 'F' is substituted for an 2\*i m place predicate or schema
+    8. Functive
+        1. 'functive i j F' for 'included compose i j F conv i j F id i'
+        2. 'functive F' for 'functive i m (m push) F' when 'F' is substituted for an i m place predicate or schema
+    9. Injective: 'injective i j F' for 'included compose j i conv i j F F id j'
+    10. One-to-one: 'one-to-one i j F' for 'and injective i j F functive i j F '
+    11. One-to-many: 'one-to-many i j F' for 'and injective i j F not functive i j F'
+    12. Many-to-one: 'many-to-one i j F' for 'and not injective i j F functive i j F'
+    13. Many-to-many: 'many-to-many i j F' for 'and not injective i j not functive i j F'
+    14. Total: 'total i j F' for 'each i some j F'
+    15. Surjective: 'surjective i j F' for 'total j i conv i j F'
+    16. Functional: 'functional i j F' for 'and functive i j F total i j F'
+    17. Injectional: 'injectional i j F' for 'and functional i j F injective i j F'
+    18. Surjectional: 'surjectional i j F' for 'and functional i j F surjective i j F'
+    19. Bijectional: 'bijectional i j F' for 'and and functional i j F injectional i j F surjectional i j F'
+
+9. The multigraph abbreviations
+    1. Symmetries: 'sym i F' for 'included F conv i F'
+    2. Nonsymmetries: 'nonsym i F' for 'not sym i F'
+    3. Asymmetries: 'asym i F' for 'included F not conv i F'
+    4. Transitivities: 'tran i F' for 'include iter 2 i F F'
+    5. Nontransitivities: 'nontran i F' for 'not tran F'
+    6. Intransitivities: 'intran i F' for incluced iter 2 i F not F'
+    7. Reflexivities: 'refl i F' for 'included iter 0 i F F'
+    8. Nonreflexivities: 'nonrefl i F' for 'not refl i F'
+    9. Irreflexivities: 'irrefl i F' for 'included F nid i'
+    10. Total Reflexivities 'trefl i F' for 'included id i F'
 
 ## 2025 0906 2107
 
