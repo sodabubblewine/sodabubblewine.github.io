@@ -151,6 +151,124 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0908 1633
+
+Although it can be time consuming, when I collect and collate past notes into present ones, as I shall do here, I often type them out rather than copy and paste.
+It helps me to catch old errors and every so often introduces new ones.
+Not all new errors are helpful, but sometimes they are.
+Presumably, they are helpful enough that their tolerance and that of the difficulty of typing rather than copypasting is worth it in the end.
+
+1. The predication abbreviations:
+    1. Abstraction: '..a(..u:..uF..x:..x)..b' for '..some v is such that.. some y is such that .., v=a, .., y=b, and .. some u is such taht .. some x is such that ..uF..x, .., u=v, .., and x=y'
+    2. Concretion: ..a(..u:..uF..x:..x)..b if and only if ..aF..b
+
+2. A complete collection of primitive predicate functor abbreviations
+    1. Drop: 'drop F' or 'drop (..u:..uF..x:..x)' for '(..uv:..uF..x:..x)'
+    2. Hem: 'hem F' or 'hem (..uvw:..uvwFx..y:x..y)' for '(..uvw:..uvwFv..y:..y)'
+    3. Huh: 'huh F G' or 'huh (..uxw:..uxwF..y:..y) (..uxw:..uxwG..y:..y)' for '(..u: some v is such that ..uxvF..y nor ..uxvG..y :x..y)' where 'v' is a new variable
+
+3. The denotative functional abbreviations are
+    1. Joint Denial: 'nor F G' for 'huh hem drop drop F hem drop drop G' i.e. '(..u:..uFx..y nor ..Gx..y:x..y)'
+    2. Negation: 'not F' for 'nor F F' i.e. '(..u: not ..uF..x:..x)'
+    3. Alternation: 'or F G' for 'not nor F G' i.e. '(..u:..uF..x or ..uG..x:..x)'
+    4. Converse Conditional: 'if F G' for 'or F not G'
+    5. Complementary Converse Conditional 'not-if F G' for 'not if F G'
+    6. Complementary Conditional: 'not-only-if F G' for 'not-if G F'
+    7. Conditional: 'only-if F G' for 'not not-only-if F G'
+    8. Alternative Denial: 'not-and F G' for 'only-if F not G'
+    9. Conjunction: 'and F G' for 'not not-and F G'
+    10. Exclusive Alternation: 'or-exclusively F G' or 'orx F G'and or F G not-and F G'
+    11. Biconditional: 'if-and-only-if F G' or 'iff F G' for 'not or-exclusively F G'
+    12. Repeat notation
+        1. '(0 ...)' for ''
+        2. '(1 ...)' for '...'
+        3. '(1+n ..)' for '... (n ...)'
+    13. Cedents: 'cede m n ..F ..G' for 'only-if (m and) ..F (n or) ..G'
+
+4. The remaining recombic abbreviations (in addition to 'drop' and 'hem'):
+    1. Push: 'push F' for 'not huh drop F drop F' i.e. '(..u:..uxF..y:x..y)'
+    2. Dush: 'dush F' for 'drop push F' i.e. '(..uv:..uFx..y:x..y)'
+    3. Prop: 'prop F' for 'push drop F' i.e. '(..u:..uF..y:x..y)'
+    4. Over: 'over F' for 'hem push F' i.e. '(..uvw:..uvwvF..x:..x)'
+    5. Oem: 'oem F' for 'over hem F' i.e '(..uvw:..uvwvFw..x:..x)'
+    6. Dup: 'dup F' for 'oem dush F' i.e. '(..uvw:..uvwwF..x:..x)'
+    7. Pop: 'pop F' for 'oem drop drop F' i.e. '(..uvw:..uvFw..x:..x)'
+    8. Nip
+        1. 'nip n F' for '(n pop) drop (n push) F' i.e. '(..uv..wa: ..u..waF..x:..x)'
+        2. 'nip F' for 'nip 1 F' i.e. '(..uvw:..uwF..x:..x)'
+    9. Dig: 'dig F' for 'hem nip F' i.e. '(..uvw:..uwFv..x:..x)'
+    10. Bury
+        1. 'bury n F' for '(n dig) (n push) F' i.e. '(..u..vw:..uw..vF..x:..x)'
+        2. 'bury F' for 'bury 1 F'
+    11. Unbury
+        1. 'unbury n F' for '(n bury n) F' i.e. '(..uw..va:..u..vawF..x:..x)'
+        2. 'unbury F' for 'unbury 1 F'
+    12. Roll (clockwise)
+        1. 'roll i m F' for '(m push) bury i+m (m pop) F' i.e. '(..u..wv:..uy..wFv..x..z:..xy..z)'
+        2. 'roll i F' for 'roll i 0 F'
+        3. 'roll F' for 'roll 1 F'
+    13. Unroll (counterclockwise):
+        1. 'unroll i m F' for '(m push) unbury i+m (m pop) F' i.e. '(..uw..v:..u..vxF..yw..z:x..y..z)'
+        2. 'unroll i F' for 'unroll i 0 F'
+        3. 'unroll F' for 'unroll 1 F'
+5. The quantificational abbreviations
+    1. Universal Cropping
+        1. 'each F' for 'not huh hem nip F hem nip F' i.e. '(..u: each v is such that ..uvFx..y:x..y)'
+        2. 'each i F' for '(i each) F'
+        3. 'each i m F' for 'each i+m (m pop) F'
+    2. Existential Cropping
+        1. 'some i m F' for 'not each i m not F'
+        2. 'some i F' for 'some i 0 F'
+        3. 'some F' for 'some 1 F'
+
+6. The Boolean abbreviations
+    1. Existential Closure: 'Some F' for 'some i m F' when 'F' is substituted for an (i,m) place predicate or schema
+    2. Universal Closure: 'Each F' for 'not Some not F'
+    3. Inclusion: 'includes F G' for 'Each if F G'
+    4. Converse Inclusion: 'included F G' for 'includes G F'
+    5. Coextension: 'coextensive F G' for 'and includes F G and included F G'
+    6. Proper Inclusion: 'properly-includes F G' for 'and includes F G not coextensive F G'
+    7. Proper Converse Inclusion: 'properly-included F G' for 'properly-includes G F'
+
+7. The sameness abbreviations
+    1. Simple Indiscernability
+        1. 'sind 0 i m F' for 'each i m (2 unburry i+2) iff drop F nip F'
+        2. 'sind 1+k i m F' for 'and sind 0 i m F sind k i m roll i m F'
+        3. 'sind F' for 'sind i+m i m F' when 'F' is substituted for an i m place predicate or schema
+    2. Complex Indiscernability
+        1. 'ind 1 F' for 'sind F'
+        2. 'ind 1+k F ..G' for 'and sind F ind k ..G'
+    3. Lexical Indiscernability
+        1. 'id' for the substitution in 'ind k ..F' of .., and 'F' for the k lexical predicates of the theory
+        2. 'id 0 i' for '(i nip) (i nip 2) id'
+        3. 'id 1+k i' for 'and id 0 i roll i id k i'
+        4. 'id i' for 'id i i\*2'
+    4. Lexical Discernability
+        1. 'nid i' for 'not id i'
+        2. 'nid' for 'nid 1' 
+    5. Item
+        1. 'item' for 'dup id'
+        2. 'item 0 i' for '(i nip) item'
+        3. 'item 1+k i' for 'and item 0 i roll i item k i'
+        4. 'item i' for 'item i i'
+    6. Void
+        1. 'void i' for 'not item i'
+        2. 'void' for 'void 0'
+
+
+## 2025 0906 2107
+
+Fragments of notes and two selections from Durant's 'The Pleasures of Philosophy'.
+
+1. Arguing is said to express reasoning, arguments to express reasons, and logic to study correct, appropriate, effective, faultless, proper, good, right, flawless, strict, errorless, infallible, impeccable, or accurate reasoning.
+
+2. Here are two selections from Durant's 1929 'The Mansions of Philosophy' (reprinted in 1952 as 'The Pleasures of Philosophy', the edition from which I quote)
+
+    > "Logic is a poor hors d'ourvre for the feast of philosophy; it dulls a thousand appetites for every one it whets. We suspect logic because we have learned that most reasoning is desire dressed in a little rationality; we pretend to be constructing edifices of impartial thought, when actually we are selecting only such facts and agreements as will give dignity to some personal or patriotic wish. We suspect logic because middle age has taught us that life is larger, surer, profounder than our syllogisms; logic is static, puffed up with 'invariable truths,' while life is fluent and changeful, and surprises all formulas. 'The number of things that reason at first refused to recognized, and yet had in the end to admit, is considerable.' Perhaps in our youth we memorized all the rules of perfect thinking, only to find that the pursuit of knowledge, the recognition of truth, and the wisdom of life, fell incalculably outside this elegantly ordered realm. How gladly we would leave to the end this lgoic that can make even philosophy dry and spiritless, rather than set it here as a barrier to problems less basic, possibly, but much more directly vital to our lives! And yet we must not; we cannot ride forth on our quest of truth without determining in advance what we are looking for, by what road we propose to seek it, and how we shall know it if we come upon it. Any other order would not be logical!" pg. 15-16
+
+    > "Where, then, shall be the place of reason in this ridiculously plebeian logic of ours, that confirms the prejudices of the commonest man in the street? Its function here, as elsewhere, is to coordinate-- sensations into ideas, ideas into knowledge, knowledge into wisdom, purposes into personality, individuals into society, societies into peace. The role of reason in the conquest of truth is secondary but vital: it must weave the chaos and contradictions of many sens into unified and harmonious conclusions which it shall hold subject to verification or rejection by subsequent sensation. It is not half so certain as sensation; for 'in transcending what is given by actual perception we without doubt make use of an inference'; and every inferential step awa from immediate sensation lowers the probability of our truth. But this, too, is a gamble that life must make; we must attempt the reconcilliation of discordant senses and partial views; if we are to extend our understanding and our mastery. Just as Kohler's chimpanzees reasoned best when they took in the entire situation, so for ourselves reasoned truth, like philosophy and wisdom, like morality and beauty, is total perspective, the harmonious union of the part with the whole. Through sensation we stand firmly with our feet on the earth; through reason we lift the mind's eye beyond the present scope of sense, and conceive new truths which some day the senses may verify. Sensation is the test of truth, but reason is its discoverer." pg. 20
+
+
 ## 2025 0905 2108
 
 1. Happened to catch an episode of Jude Judy's 'Justice on Trial' and enjoyed it quite a lot: I would enjoy seeing more mock trial shows.
@@ -8521,7 +8639,7 @@ let theEmptyPair={}
 , parentheticalOf = x => isEmpty(x) ? runesOf('()') : prependedListOf(runesOf('('),prependedListOf(x,runesOf(')')))
 , printListOf = list =>
  isEmpty(list) ? theEmptyPair
- : prependedListOf(printHelperOf(carOf(list)),printListOf(cdrOf(list)))
+ : prependedListOf( printHelperOf(carOf(list)), printListOf(cdrOf(list)))
 , printHelperOf = item =>
  isEmpty(item) ? runesOf('()')
  : isEmpty(carOf(item))? parentheticalOf(prependedListOf(runesOf('()'),cdrOf(item)))
@@ -8595,7 +8713,7 @@ let theEmptyPair={}
 , theCloseParen = consOf(theEmptyPair,theEmptyPair)
 , isSymbol = item => !isEmpty(item)&&isEmpty(carOf(item))
 , theSymbolPair = theEmptyPair
-, parenOf = runes => consOf(theOpenParen,prependOf(runes,singletonListOf(theCloseParen)))
+, parenOf = runes => consOf(theOpenParen, prependOf(runes, singletonListOf(theCloseParen)))
 , printListOf = list => isEmpty(list) ? theEmptyPair
  : prependOf(printOf(carOf(list)),printListOf(cdrOf(list)))
 , printOf = item => isSymbol(item)? parenOf(prependOf(printOf(theSymbolPair),cdrOf(item)))
@@ -8630,7 +8748,7 @@ let theEmptyPair={}
    : theEmptyPair
 , lettersOf = x =>
    isEmpty(x) ? theEmptyLetter
-   : concatenationOf(letterOf(carOf(x)),lettersOf(cdrOf(x)))
+   : concatenationOf(letterOf(carOf(x)), lettersOf(cdrOf(x)))
 
 // external read and print
 , read = letters => readOf(runesOf(letters))
@@ -10048,7 +10166,7 @@ let run=code=>console.log(code,'\n',eval(code)) // for examples
 // some basic javascript string functions
 , emptyString=''
 , isIdenticalString = (x,y) => x==y
-, isEmptyString = string => isIdenticalString(string,emptyString)
+, isEmptyString = string => isIdenticalString(string, emptyString)
 , concatenationOf = (...strings) => 
    strings.length ? strings.shift() + concatenationOf(...strings) : emptyString
 , firstCharOf = string => isEmptyString(string) ? emptyString : string[0]
@@ -10244,14 +10362,14 @@ let  dottedListPrintOf = dottedList =>
 , dotRune = runeOf('.')
 , dottedListPrintEachOf = dottedList =>
    isAtom(dottedList) ?
-     listOf(spaceRune,dotRune,spaceRune,atomicPrintOf(dottedList))
+     listOf(spaceRune, dotRune, spaceRune, atomicPrintOf(dottedList))
    : prependedListOf(spaceRune
      , prependedListOf(printOf(carOf(dottedList))
        , dottedListPrintEachOf(cdrOf(dottedList))));
 ```
 Now for the simplest example to check for (hopefully) easy to fix bugs:
 ```
-stringOf(printOf(consOf(closeParenthesis,openParenthesis))) 
+stringOf(printOf(consOf(closeParenthesis, openParenthesis))) 
  ( ^) . ^(,nil )
 ```
 Oh, wow, what an interesting mistake.
@@ -10262,7 +10380,7 @@ This should correct things.
 ```
 dottedListPrintEachOf = dottedList =>
    isAtom(dottedList) ? prependedListOf(
-     listOf(spaceRune,dotRune,spaceRune),atomicPrintOf(dottedList))
+     listOf(spaceRune, dotRune,spaceRune), atomicPrintOf(dottedList))
    : prependedListOf(spaceRune
      , prependedListOf(printOf(carOf(dottedList))
        , dottedListPrintEachOf(cdrOf(dottedList))));
@@ -11468,10 +11586,10 @@ isEmpty(concatenate(zero,emptyString,one,one))
 isZero(firstOf(concatenate(zero,one,one,emptyString)))
   true
 
-isOne(firstOf(restOf(concatenate(zero,one,one,emptyString))))
+isOne(firstOf(restOf(concatenate(zero, one, one, emptyString))))
   true
 
-concatenate(zero,one,zero)==restOf(concatenate(one,zero,one,zero))
+concatenate(zero, one, zero) == restOf(concatenate(one, zero, one, zero))
   true
 ```
 
@@ -11489,7 +11607,7 @@ let emptyStack = nil
 , topOf = stack => peek(stack)
 , secondOf= stack => peek(pop(stack))
 , pop2 = stack => pop(pop(stack))
-, pairUp=stack=>push(pop2(stack),pair(secondOf(stack),topOf(stack)));
+, pairUp = stack => push(pop2(stack), pair(secondOf(stack), topOf(stack)));
 ```
 > For those familiar with stack operations in other circumstances, it may be strange to take a functional view of stacks: popping a stack returns a stack without its top, it doesn't change the state of some stack accessible outside of the scope of the current executing function.
 
@@ -11512,9 +11630,9 @@ There are three things of note in the beta definition given:
 
 Here are some examples, but because we have no way of seeing the encoded tree I have to put it through the decoder--- this ends up being helpful because it should decode into a string that we could put back into the encoder to make the tree all over again.
 ```
-decode(encodeBeta(concatenate(zero,zero,one)))
+decode(encodeBeta(concatenate(zero, zero, one)))
   '..,'
-decode(encodeBeta(decode(encodeBeta(concatenate(zero,zero,one)))))
+decode(encodeBeta(decode(encodeBeta(concatenate(zero, zero, one)))))
   '..,'
 decode(encodeBeta(concatenate(zero,zero,one,zero,one)))
   '..,.,'
@@ -11531,7 +11649,7 @@ So we have a much shorter way of decoding this particular tree: we can write it 
 
 The following example shows why it is still called 'encoderBeta':
 ```
-decode(encodeBeta(concatenate(zero,zero,zero,zero)))
+decode(encodeBeta(concatenate(zero, zero, zero, zero)))
   '.'
 ```
 Where did all those other zeros go that we concatenated together?
@@ -11559,13 +11677,13 @@ let pairUpEverything = stack =>
 Everything on the stack gets paired up by repeatedly applying 'pairUp' to the stack until there is only one item left on it (this is checked by seeing if popping the stack leaves only the empty stack behind).
 Some examples:
 ```
-decode(encode(concatenate(zero,zero,one)))
+decode(encode(concatenate(zero, zero, one)))
   '..,'
-decode(encode(concatenate(zero,zero,zero,zero)))
+decode(encode(concatenate(zero, zero, zero, zero)))
   '....,,,'
-decode(encode(concatenate(one,zero,one,zero,zero,zero)))
+decode(encode(concatenate(one, zero, one, zero, zero, zero)))
   '..,.,...,,,'
-decode(encode(concatenate(zero,zero,one,zero,one,zero,zero,zero,one,one,one)))
+decode(encode(concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one)))
   '..,.,...,,,'
 ```
 The last two examples suggest a simple way of getting the shorter decoded string from the longer decoded string of an encoded tree without having to guess and check encoding and decoding:
@@ -11589,9 +11707,9 @@ let occursIn = (string, item) => string.includes(item)
 And, here are some examples:
 
 ```
-shorten(concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one))
+shorten( concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one))
   ',.,...'
-decode(encode(shorten(concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one))))
+decode( encode( shorten( concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one))))
   '..,.,...,,,'
 ```
 
@@ -11609,7 +11727,7 @@ Here's all the code I used to write this whole note:
 let pair=(leftPart,rightPart)=>({leftPart,rightPart})
 , leftPartOf=pair=>pair.leftPart
 , rightPartOf=pair=>pair.rightPart;
-let nil={get leftPart(){return this},get rightPart(){return this}};
+let nil={get leftPart(){return this}, get rightPart(){return this}};
 let run=code=>{console.log(code,'\n  ',eval(code));}
 run('nil == leftPartOf(nil) && nil == rightPartOf(nil)');
 
@@ -11646,10 +11764,10 @@ let emptyString=''
 , firstOf = string => isEmptyString(string) ? emptyString: string[0]
 , restOf = string => isEmptyString(string) ? emptyString : string.slice(1);
 run("isEmptyString(emptyString)");
-run("isEmpty(concatenate(zero,emptyString,one,one))");
-run("isZero(firstOf(concatenate(zero,one,one,emptyString)))");
-run("isOne(firstOf(restOf(concatenate(zero,one,one,emptyString))))")
-run("concatenate(zero,one,zero)==restOf(concatenate(one,zero,one,zero))");
+run("isEmpty(concatenate(zero, emptyString, one, one))");
+run("isZero(firstOf(concatenate(zero, one, one, emptyString)))");
+run("isOne(firstOf(restOf(concatenate(zero, one, one, emptyString))))")
+run("concatenate(zero, one, zero) == restOf(concatenate(one, zero, one, zero))");
 
 let pushNil=stack=>push(stack,nil);
 let emptyStack = nil
@@ -11657,17 +11775,17 @@ let emptyStack = nil
 , topOf = stack => peek(stack)
 , secondOf= stack => peek(pop(stack))
 , pop2 = stack => pop(pop(stack))
-, pairUp=stack=>push(pop2(stack),pair(secondOf(stack),topOf(stack)));
+, pairUp = stack => push(pop2(stack), pair(secondOf(stack), topOf(stack)));
 let encodeHelperBeta = (string, stack) =>
   isEmptyString(string) ? topOf(stack)
   : isZero(firstOf(string)) ? encodeHelperBeta(restOf(string), pushNil(stack))
   : isOne(firstOf(string)) ? encodeHelperBeta(restOf(string), pairUp(stack))
   : encodeHelperBeta(restOf(string),stack)
-, encodeBeta = string => encodeHelperBeta(string,emptyStack);
-run("decode(encodeBeta(concatenate(zero,zero,one)))");
-run("decode(encodeBeta(decode(encodeBeta(concatenate(zero,zero,one)))))")
-run("decode(encodeBeta(concatenate(one,one)))")
-run("decode(encodeBeta(concatenate(zero,zero,zero,zero)))");
+, encodeBeta = string => encodeHelperBeta(string, emptyStack);
+run("decode( encodeBeta( concatenate(zero, zero, one)))");
+run("decode( encodeBeta( decode( encodeBeta( concatenate(zero, zero, one)))))")
+run("decode( encodeBeta( concatenate(one, one)))")
+run("decode( encodeBeta(concatenate(zero, zero, zero, zero)))");
 
 let pairUpEverything = stack =>
   isEmptyStack(pop(stack)) ? topOf(stack)
@@ -11678,9 +11796,9 @@ let pairUpEverything = stack =>
   : isOne(firstOf(string)) ? encodeHelper(restOf(string), pairUp(stack))
   : encodeHelper(restOf(string),stack)
 , encode = string => encodeHelper(string,emptyStack);
-run("decode(encode(concatenate(zero,zero,one)))")
-run("decode(encode(concatenate(zero,zero,zero,zero)))")
-run("decode(encode(concatenate(one,zero,one,zero,zero,zero)))");
+run("decode( encode( concatenate(zero, zero, one)))")
+run("decode( encode( concatenate(zero, zero, zero, zero)))")
+run("decode( encode( concatenate(one, zero, one, zero, zero, zero)))");
 run("decode(encode(concatenate(zero, zero, one, zero, one, zero, zero, zero, one, one, one)))");
 
 let occursIn = (string, item) => string.includes(item)
