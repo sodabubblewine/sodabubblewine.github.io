@@ -151,6 +151,58 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0908 2144
+
+This continues notes from [#2025-0826-1635](#2025-0826-1635) on 2023 “The Earth and Its Peoples 8th ed.” (EP) by Richard Bulliet, Pamela Crossley, Daniel Headrick, Steven Hirsch, and Lyman Johnson.
+
+The fragments of notes from chapter 2 will come after I have finished notes on chapter one exhaustively.
+I shall start at number 19 of the notes on chapter one, leaving point 20 until after it and so on.
+Here it will begin anew as point 1.
+
+1. No later than 80-50k years ago did verbal communities of humans appear. It could be much earlier because the science of behavior has yet to be effectively applied to history outside of what similarities it shares with experimental anthropology.
+    - "currently approximately 7k languages spoken in the world, many of which are spoken by small numbers of people rapidly dying out" pg. 10
+    - "scientists investigating the ancestors of *Homo sapiens* have to use changes in the anatomy of mouth and throat, brain size, and cultural behaviors to determine when language began" pg. 10
+    - "Chomsky further argues that a genetic mutation occuring about 90k years ago in a single individual led to our ability to talk" pg. 10
+        - Obviously this is inconsistent with the science of behavior.
+    - "Some scholars are willing to place the origins of human language much further back in time, perhaps as far back as 2M years ago with *Homo erectus* .. Homo erectus was bipedal, made tools, cooperated wtih others in hunting large animals, traveled across the water in boats or rafts, produced simple forms of art, and organized its habitat into areas devoted to different functions .. However, homo erectus had the vocal appartus of a gorilla, so it could only make a few sounds." pg. 10
+    - "earliest speech may have primarily invovled gestures, something that apes do to communicate and are capable of learning, whereas they lack the anatomical equipment to speak (and bodily gestures and facial expressions are still part of how we communicate today)." pg. 11
+    - "Homo erectus was bipedal, these early hominins had their hands free to make such gestures. It is likely that this often involved miming the activity being - 'discussed' -. The next stage, freeing up the hands for other tasks like toomaking, was dependent on further anatomical development of the vocal apparatus." pg. 11
+    - "While there can be no record of language until the advent of writing (arising first in Mesopotamia in the fourth millennium BCE), scholars have been able to use indirect evidence to reconstruct the spread and differentiation of the Indo-European family of languages that are spoken in large parts of Europe and Asia today (as well ast he Americas and Australia/New Zealand)." pg. 11
+    - "Proto-Indo-European, the ancestral language from which all modern Indo-European langauges descend, was spoken in what si today Ukrain and souther Russia around 500BCE. By 400, peoples speaking this language began to migrate .. in an arc to the west, south, and east. The once-common langauge altered over time .. their ways of speaking differntiated into seperate languages." pg. 11
+    - "The whoel Indo-European family of languages can be subdivided into major sub-groups: Celtic, Germanic, Romance (descended from Latin), Slavic, Iranian and Indian. .. English is at root a Germanic language with a significant overlay of words from the Romance family due to the Norman French conquest of England in 1066 CE." pg. 11
+    - "It was noticed by teh late 18th centure CE taht many fundamental words in Greek, Latin, and Sanskrit are similar, and thus descend from a common ancestor; .. Scholars labor to use these words to reconstruct the original proto-Indo-European language" pg. 11
+    - I have included so many selections from this part because I am particularly interested in the evolution of social behavior into verbal behavior.
+
+2. Between 50-46k years ago humans migrated out of eastern and southern Africa throughout south Asia. Around 46k years ago they populated western and eastern Asia and Australia. Some 46-10k years ago they were in northeastern Asia and north and south America.
+
+3. 1-2: Technology and Culture in the Ice Age
+
+4. "Learned patterns fo action and expression constitute *culture*. .. Culture includes both material objects, such as dwellings, clothing, tools,a nd crafts, and nonmaterial values, beliefs, and languages. .. Among humans, instincts are less important thant he cultural traditions that each generation learns from its elders." pg. 13
+
+5. 1-2a: Food Gathering and Stone Tools
+
+6. "Because the tools that survive are mostly made of stone, the extensive period of history from the appearance of the first fabricated stone tools around 2.6M years ago until the appearance of metal tools around 6k years ago has been called the *Stone Age*." pg. 13
+
+7. The name is misleading: "Early humans also made useful objects out of bone, skin, wood, plant fibers, and other materials less likely than stone to survive the ravages of Time."
+
+8. "Early scholars recognized two phases of the Stone Age: the *Paleolithic* (pay-lee-oh-LITH-ik) (Old Stone Age), down to 8000 BCE, and the *Neolithic* (NEE-OH-LITH-IK) (New Stone Age), which is associated with the rise of agriculture. Modern scientists have developed more complex schemes with many subdivisions." pg. 13
+
+9. "early humans depended heavily on vegetable foods such as leaves, seeds, and grasses, but during the Ice Age the consumption of highly nutritious animal flesh increased. .. increased meat eating and toolmaking-- appear to be closely linked." pg. 13
+
+10. "Specimens of crude early tools found in the Great Rift Valley of eastern Africa reveal that *Homo habilis* made tools by chipping flakes off the edges of volcanic stones." pg. 13
+
+11. "Lacking the skill to hunt and kill large animals, *Homo habilis probably obtained animal protein by scavenging meat from kills made by animal predators or resulting from accidents. .. used large stone 'choppers' for cracking open bones to get at the nutritious marrow .. such tools are found far from the volcanic outcrops where they were quarried.. people carried them long distances for use at kill sittes and camps." pg 13.
+
+12. "Members of *Homo erectus* were also scavengers .. they made more tools for butchering large animals, including a hand ax formed by removing chips from both sides of a stone to produce a sharp outer edge. .. suitable for skinning and butchering animals, for scraping skins clean for use as clothing and mats, for sharpening wooden tools, and for digging up edible roots .. can also be hurled accurately for nearly 100 feet (30 meters), .. projectile to fell animals .. hunted elephants by driving into swamps .. trapped and died." pg. 13
+
+13. "*Homo sapiens* .. array of finely made tools, they tracked and killed large animals. Sharp stone flakes chipped from carefully prepared rock cores were used in combination with other materials. Attaching a stone point to a wooden shaft made a spear. Embedding seveer sharp stone flakes in a bone handle produced a sawing tool. .. may of caused ecological crises. between 10k and 13k years ago .. giant mastodons and mamoths .. disappeared from Africa, Southeast Asia, and northern Europe. In North america around 11k years ago, three-fourths of the large mammals became extinct .. giant camels, ground sloths, stag-moose, giant cats, mastodons, and mammoths .. In australia .. similar events .. the Ice age .. distinguish .. climate change and human predation." pg. 13-14
+
+14. "anthropologists do not believe that early humans depended primarly on meat for their food .. present-day *foragers* (hunter and food-gathering peoples) in Africa .. nourishment from wild vegetable foods, .. meat .. feasts, .. . The same .. true for Stone Age .. tools .. left few traces because they were .. perishable .. they .. used skins and mats woven from leaves for collecting fruits, berries, adn wild seeds .. dug edible roots out of the ground with wooden sticks." pg. 14-15
+
+15. ".. meat and vegetables .. easier to digets when .. cooked .. first cooked .. by accident .. wildfires. .. setting fires .. 1.4M years ago .. maintaining hearths .. 500k years ago. .. clay cooking pots some 18k years ago in East Asia .. hard evidence of cooking." pg.15
+
+
+
 ## 2025 0908 2134
 
 Collation of timeline from 'The Little Book of Big History' by Ian Crofton and Jeremy Black 2017
