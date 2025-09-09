@@ -151,6 +151,173 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0908 2134
+
+Collation of timeline from 'The Little Book of Big History' by Ian Crofton and Jeremy Black 2017
+
+- 13.8B years ago: the big bang
+4.6B years ago: the sun, Earth, and solar system form
+- 4.5B years ago: the moon appears (collision between Earth and Mars size planet?)
+- 4.2B years ago: oceans formed?
+- 4.1-3.8B years ago: astroids pepper inner planets including Earth
+- 4B years ago: appearence of rocks found to this day (proto-lifeforms e.g. metabolism or replicators?)
+- 3.7B years ago: organic molecules and proto-bacteria?
+- 3.4B years ago: photosynthesizing Cyanobacteria (blue-green algae)
+- 2.45B years ago: oxygen in atmosphere from photosynthesis
+- 600M years ago: multicellular organisms
+- 542-488M years ago: Cambrian period e.g. external skeletons (trilobites and brachiopods), vertebrates (notochord as proto-spinal column)
+- 488-444M years ago: Ordovician period e.g. diversity of trilobites, lamp shells, gastropods, and graptolites; appearence of sea urchins, starfishes, and ammonites; later, land plants and mass extinctions
+- 444-416M years ago: Silurian period e.g. marine life (e.g. cartilaginuous, latterly boney); invertebrates on land (e.g. scorpions andwingless insects); vascular plants (e.g. club mosses)
+- 416-359M years ago: Devonian period e.g. big coral reefs, ferns, early amphibians, four-legged animals, spread of land animals
+- 359-299M years ago: Carboniferous period e.g. flying insects, reptiles, land plants (e.g. conifers) spread (origin of modern coal deposits)
+- 299-251M years ago: Permian period e.g. diverse reptiles, mass extinction of many marine and land animals (e.g. trilobytes)
+- 251-200M years ago: Triassic period e.g. dinosaurs and small mammals
+- 200M-145M years ago: Jurassic period e.g. diverse dinosaurs, turltes, crocodiles, tropical forests, and birds
+- 145M-66M years ago: Creteous period e.g. flower plants, grasses, extinction of dinosaurs, survival of birds and mammals
+- 66-56M years ago: Palaeoscene epoch e.g. diverse mammals, primates
+- 56-34M years ago: Eocene epoch e.g. mammls spread (e.g. elephants, whales, rodents, carnivores and hoofed)
+- 34-23M years ago: Oligocene epoch e.g. grasslands, monkeys
+- 23-5.3M years ago: Miocene epoch e.g. horses, apes, frogs, snakes, rats
+- 7M years ago: common ancestor splits into ancestors of humans, chimps, and bonobos
+- 6M years ago: some early humans walk on hind legs
+- 5.3-2.6M years ago: Plioscene epoch e.g. mammoths, early humans walk upright
+- 2.6M years ago: human tool use
+- 2.6M-11.7k years ago: Pleistocene epoch e.g. ice ages and warmer interglacial periods
+- 2.4M years ago: Homo habilis
+- 1.9M-143k years ago: Homo erectus spreads
+- 200k years ago: Homo sapien in Africa
+- 150-50k years ago: language? 33 100k years ago: Homo sapien out of Africa, burials and graves
+- 75k years ago: pierced shell necklaces
+- 45k years ago: “fully modern” humans in Europe ???
+- 42k years ago: wood and bone flutes in Europe
+- 40-35k years ago: stone and ivory carved into human-animal shapes in Europe
+- 38-35k years ago: cave art
+- 22k years ago: peak of latest ice age
+- 19k years ago: foraging wild cereal in Middle East
+- 14k years ago: domestocation of dogs from wolves, grindstones in Middle East
+- 13k years ago: engraved antler in Longyn Cave of China
+- 12k years ago: European glaciers retreat
+- 11.7k-present: Holoscene epoch e.g. end of last ice age, extinction of many large land animals (by humans?), humans spread far and wide
+- 8k years ago: cultivation of wheat and barley from Middle East to Nile valley
+- 7k years ago: villages of hunters and fishers in Yangtze river delta of China cultivate rice, villages of western Europe farm cereal
+- 5.5-4k BCE: Sumerian culture in Mesopotamia (now Iraq)
+- 4.5k years ago: long-distance trade in South America
+- 3650-1400 BCE: Minoan and early Aegean cultures
+- 3100 BCE: Upper and Lower Egypt united by first pharaoh
+- 2600-1900 BCE: strong Indus valley cultures
+- 2580-2560 BCE: Great Pyramid of Giza
+- 2070 BCE: Xia dynasty of China
+- 2000 BCE: preclassic Mayan culture in Mesoamerica
+- 1754 BCE: Code of Hammurabi of Babylonian empire
+- 1650 BCE: Hittite kingdom of Turkie
+- 1600 BCE: Shang dynasty of middle valley of Yellow River of China
+- 1600-1500 BCE: Olmec culture in present day Mexico
+- 1550-1077 BCE: New Empire of Egypt controls Levant to Nubia
+- 1500-800 BCE: Vedic Age e.g. Hindu scripture of India
+- 1070 BCE: Kush Kingdom in present day Sudan
+- 1000 BCE: Strong Phoenician cultures, e.g., of Tyre and Sidon
+- 911-612 BCE: Neo-Assyrian culture of Tigris valley
+- 900-200 BCE: Chavin culture of present day Peru
+- 800-400 BCE: D’mt Kingdom of Ethiopia
+- c. 550 BCE: Cyrus the Great’s Achaemenid empire of Persia
+- 510-323 BCE: Classical Ancient Greece
+- 509 BCE: Roman Republic
+- 331 BCE: Alexander the Great of Macedon strengthens Hellenistic culture by controlling from the Adriatic Sea to the Indus River e.g. introducing Roman practcies into Achamenid culture of Persia
+- 321-185 BCE: Mauryan culture of India
+- 300 BCE: Library of Alexandria
+- 221 BCE: Qin then Han culture unites China
+- 212 BCE: Edict of Caracalla
+- 100 BCE: Rome is the biggest city
+- 100 BCE - 750 CE: Teotihuacan evolves and dies as the once biggest city of the mericas
+- 300-1200 CE: Ghana culture in present day Naurtania and Mali
+- 410 CE: Roman culture extinguished by Visigoths no later than 476 CE
+- 661-750 (CE) : Umayyad caliphate culture controls largest area including that of present day Georgia, Uzbekistan, Pakistan, Arabian penisula, North Africa, Spain, and Portugal
+- 1055: Seljuk Turks control Baghdad
+- c. 1200: Incas in Andean valley of Peru
+- 1200-1400: Mississippian culture of North America is strongest
+- 1206: Qutb al-Din Aibak is first controller of Delhi Sultante
+- 1211: Mongols start controlling Eurasia and northern China
+- 1368: Ming dynasty established in China
+- 1393: Timur (aka Tamerlane) sacks Baghdad.
+- 1405: Beginning of Zheng He’s voyages in Indian Ocean
+- 1438: Beginning of period of Inca conquests
+- 1453: Ottoman Turks control Constantinople
+- 1455: Gutenberg Bible from his printing press
+- 1492: Muslim control in Spain extinguished by Christians; Columbus in West Indies
+- 1498: Vasco da Gama of Portugal in India via South most tip of Africa
+- 1517: Protestant Reformation of Martin Luther
+- 1519-21: Spanish control Aztec culture
+- 1519-22: Magellan and Del Cano circumnavigate the world
+- 1526: Mughal controls India
+- 1532-5: Spanish control Inca
+- 1543: heliocentric theory of Copernicus
+- 1571: Ottoman control of Mediterranean ended at Lepanto by Holy League
+- 1607: English control Virginia
+- 1644: Machus set up Qing control of China
+- 1648: End of Thirty Years’s War
+- 1652: Dutch set up Cape Colony of southern Africa
+- 1683: Vienna countercontrols Turks
+- 1687: Newton’s of motion and universal gravitation
+- 1763: End of Seven Years’s War
+- 1776: US Declaration of Independence; ‘Wealth of Nations’ by Adam Smith
+- 1783: Human flight by baloon
+- 1785: Steam powered cotton mill
+- 1788: British in Australia
+- 1789: French Revolution
+- 1792-1815: French Revolutionary and Napoleonic wars
+- 1803: US buy part of North America from France
+- 1808-26: Spanish control of Amercas weakens
+- 1825: passenger steam railway in England, from Stockton to Darlington
+- 1830: Greece countercontrols Ottoman Turks
+- 1833: British culture abolishes slavery
+- 1844: Morse’s telegraph
+- 1848: ‘Communist Manifesto’ of Marx and Engles
+- 1848-9: revolutions extinguished in Europe
+- 1853: US countercontrols Japan: opens trade
+- 1857: India countercontrols British
+- 1859: ‘Origin of Species’ by Darwin
+- 1861: Italian Unification
+- 1861-5: American Civil War
+- 1868: Japan strengthens
+- 1869: transcontinental railway in USA; Suez Canal
+- 1871: German Unification
+- 1876: telephone
+- 1884: Europeans control Africa at Berlin Conference
+- 1895: wireless telegraphy from Marconi
+- 1903: Wright Flyer
+- 1905: Einstien’s special theory of relativity
+- 1911: Chinese revolution
+- 1914: First World War; Panama canal
+- 1917: Russian Revolution
+- 1918: End of First World War; Austrian, German, and Turkish cultures weaken
+- 1923: non-Mliky Way galaxies
+- 1928: penicillin
+- 1929: Great Depression
+- 1933: Nazi’s strengthen
+- 1937: Second Sino-Japanese War
+- 1939: Second World War
+- 1943: electronic computer
+- 1945: atomic bomb; End of Second World War; United Nations; Cold War
+- 1947: Indian Independence
+- 1949: Chinese Civil War; NATO
+- 1950-3: Korean War 62: 1955-75: Vietnam War
+- 1957: Sputnik 1; European Economic Community
+- 1960: 3B people
+- 1961: Human Space Flight
+- 1967: Human heart transplant
+- 1969: Human on Moon
+- 1976: Robot on Mars
+- 1978: Human invitro fertilization
+- 1979: Smallpox extinguished
+- 1989: World Wide Web
+- 1991: Soviet Union extinguished
+- 1997: cloned mammal
+- 1999: 6B people
+- 2003: Human Genome Project
+- 2011: 7B people
+- 2012: Higgs Boson
+
+
 ## 2025 0908 1633
 
 Although it can be time consuming, when I collect and collate past notes into present ones, as I shall do here, I often type them out rather than copy and paste.
