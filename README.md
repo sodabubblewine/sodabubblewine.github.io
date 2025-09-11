@@ -151,6 +151,27 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0911 1347
+
+1. Made some tiny edits to [#2025-0908-1633](#2025-0908-1633):
+    - added connected and strongly connected
+    - added antisymmetric
+    - changed 'total' to 'entire' to distinguish from 'total partial order' etc.
+
+2. Almost ready to introduce order abbreviations: still not sold on 'multigraph abbreviations' as name of these.
+
+## 2025 0910 1318
+
+1. An technology of teaching is effective when it constructs the terminal repertoire specified.
+
+2. A terminal repertoire is effective when it makes a person who responds appropriately to the world.
+
+3. A response is appropriate when it contributes to the survival of the culture which aided in its construction.
+
+4. Logical and scientific responses have contributed most to the survival of the cultures which aided in their construction.
+
+5. 
+
 ## 2025 0908 2144
 
 This continues notes from [#2025-0826-1635](#2025-0826-1635) on 2023 “The Earth and Its Peoples 8th ed.” (EP) by Richard Bulliet, Pamela Crossley, Daniel Headrick, Steven Hirsch, and Lyman Johnson.
@@ -507,24 +528,27 @@ Presumably, they are helpful enough that their tolerance and that of the difficu
     11. One-to-many: 'one-to-many i j F' for 'and injective i j F not functive i j F'
     12. Many-to-one: 'many-to-one i j F' for 'and not injective i j F functive i j F'
     13. Many-to-many: 'many-to-many i j F' for 'and not injective i j not functive i j F'
-    14. Total: 'total i j F' for 'each i some j F'
-    15. Surjective: 'surjective i j F' for 'total j i conv i j F'
+    14. Entire: 'entire i j F' for 'each i some j F'
+    15. Surjective: 'surjective i j F' for 'entire j i conv i j F'
     16. Functional: 'functional i j F' for 'and functive i j F total i j F'
     17. Injectional: 'injectional i j F' for 'and functional i j F injective i j F'
     18. Surjectional: 'surjectional i j F' for 'and functional i j F surjective i j F'
     19. Bijectional: 'bijectional i j F' for 'and and functional i j F injectional i j F surjectional i j F'
 
 9. The multigraph abbreviations
-    1. Symmetries: 'sym i F' for 'included F conv i F'
-    2. Nonsymmetries: 'nonsym i F' for 'not sym i F'
-    3. Asymmetries: 'asym i F' for 'included F not conv i F'
-    4. Transitivities: 'tran i F' for 'include iter 2 i F F'
-    5. Nontransitivities: 'nontran i F' for 'not tran F'
-    6. Intransitivities: 'intran i F' for incluced iter 2 i F not F'
-    7. Reflexivities: 'refl i F' for 'included iter 0 i F F'
-    8. Nonreflexivities: 'nonrefl i F' for 'not refl i F'
-    9. Irreflexivities: 'irrefl i F' for 'included F nid i'
-    10. Total Reflexivities 'trefl i F' for 'included id i F'
+    1. Symmetries: 'symmetric i F' for 'included F conv i F'
+    2. Nonsymmetries: 'nonsymmetric i F' for 'not symmetric i F'
+    3. Asymmetries: 'asymmetric i F' for 'included F not conv i F'
+    4. Antisymmetric: 'antisymmetric i F' for 'included and F conv i F id i'
+    5. Transitivities: 'transitive i F' for 'include iter 2 i F F'
+    6. Nontransitivities: 'nontransitive i F' for 'not transitive F'
+    7. Intransitivities: 'intransitive i F' for incluced iter 2 i F not F'
+    8. Reflexivities: 'reflexive i F' for 'included iter 0 i F F'
+    9. Nonreflexivities: 'nonreflexive i F' for 'not reflexive i F'
+    10. Irreflexivities: 'irreflexive i F' for 'included F nid i'
+    11. Total Reflexivities 'total-reflexive i F' for 'included id i F'
+    12. Connected: 'connected i F' for 'antisymmetric i not F'
+    13. Strongly Connected: 'strongly-connected i F' for 'asymmetric i not F'
 
 ## 2025 0906 2107
 
