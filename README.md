@@ -184,7 +184,7 @@ But, more of that when it comes.
 9. The notation of PM is that of Peano's 'Formulario Mathematico' along with additions carefully crafted by Russell and Whitehead from the deferred consequences of thier use.
 
 10. The first grand difference between Russell's outlook in PM and mine is with respect to the introductory explanations of the word 'variable'.
-    > "In ordinary mathematics, a variable generally stands for an undtermined number of quantity." pg.4
+    > "In ordinary mathematics, a variable generally stands for an undetermined number or quantity." pg.4
 
     > "In mathematical logic, any symbol whose meaning is not determinate is called a *variable*, and the various determinations of which its meaning is susceptable are called the *values* of the variables." pg. 4
 
