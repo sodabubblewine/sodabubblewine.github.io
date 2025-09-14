@@ -237,7 +237,7 @@ Something like such a theory is analyzed here as part of the proper paraphrasing
 
 27. Turning now to values of variables.
 Talk of values of variables is difficult for me to pin down precisely.
-In the sentences of English relative clauses do the work of binding pronouns, e.g. 'it such that it is red and it is round'.
+In the sentences of English, relative clauses do the work of binding pronouns, e.g. 'it such that it is red and it is round'.
 This is distinguished from the dangling pronouns of an otherwise complete sentence, e.g. 'It is red and it is round.'
 
 28. In the latter sentence with the dangling pronouns, the grammarian asks "Who or what is it?" or, better, "What does 'it' refer to in the sentence 'It is red and it is round.'?"
