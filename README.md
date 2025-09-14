@@ -151,7 +151,181 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0913 1705
+
+This continues ntoes from [#2025-0911-1654](#2025-0911-1654) on Whitehead and Russell's 'Principia Mathematica'.
+
+1. For lack of a better method of quoting the notation of Russell and Whitehead's 'Principia Mathematical Volume 1' (PM1), I shall use the notation from Landon's TeX package, but I shall drop the initial 'pm' attached to each command (it is only there to distinguish its commands from others native to tex and latex).
+    - <https://ctan.math.hamburg/macros/latex/contrib/principia/principia.pdf>
+
+2. Part I of PM1 is on mathematical logic which is to extend its symbolism into the propositions of mathematics.
+
+3. Propositions are presupposed by Russel as that which the symbolisms are about when the symbolic constructions are sensible.
+
+4. Point (2) of page 2 distinguishes symbolism from language. This distinction is no longer appropriate (why?).
+
+5. Point (3) reveals the broad commitment to a kind of mentalism:
+    > "aids the intuition in regions too abstract for the imagination readily to present to the mind the true relation between ideas employed." pg.2
+
+    > "And thus the mind is finally led to construct trains of reasoning in regions of thought in which the imagination would be entirely unable to sustain itself without symbolic help. ORdinary langauge yields no help. ITs grammatical structure does not represent uniquely the relations between the ideas involved." pg. 2
+
+    > "(a) Most mathematical investigation is concerned not with the analysis of the complete process of reasoning, but with the presentation of such and abstract of the proof as is sufficient to convince teh properly instructed mind." pg. 3
+
+6. My method, in contrast to Russell's, is to step back to grammar prior to logic: grammar being the method by which we distinguish logic as a language from languages such as English and German.
+Grammar does not tell us whether an item is true or false, only whether it is a grammatical compound of a logical language or not.
+
+7. Grammar is no starting or stopping point e.g. autoclitic behavior can be examined prior to grammatical behavior and grammatical behavior can be constructed from it (thanks to Skinner's work in 'Verbal Behavior').
+
+8. This is far more significant than it may seem.
+While Russell in, e.g., 'An Inquiry into Meaning and Truth', confronts the psychological origins of knowledge, he leaves them quite far out from his purportedly direct knowledge of the world through his personal experience.
+It shall come as no surprise that I trace the origins of his particular blend of explication, experience, and experiment to his carelessness with quotation marks.
+But, more of that when it comes.
+
+9. The notation of PM is that of Peano's 'Formulario Mathematico' along with additions carefully crafted by Russell and Whitehead from the deferred consequences of thier use.
+
+10. The first grand difference between Russell's outlook in PM and mine is with respect to the introductory explanations of the word 'variable'.
+    > "In ordinary mathematics, a variable generally stands for an undtermined number of quantity." pg.4
+
+    > "In mathematical logic, any symbol whose meaning is not determinate is called a *variable*, and the various determinations of which its meaning is susceptable are called the *values* of the variables." pg. 4
+
+11. In the traditional view, symbols symbolize or mean something other than whatever it is that a symbol presents itself as e.g. be it an assembly of marks on the page or those strange elements of Jung's archetypes that haunt images and our purported unconscious experiences with them.
+
+12. The link between a symbol and what it symbolizes is presented as a kind of puzzle, like that of more modern works on naming objects which emphasize a cosmic blessing of conspicuous contact between an utterance and an object.
+
+13. Presumably the meaning of a symbol can be different from what the symbol symbolizes: this much is made clear by Russell's definition of 'variable' as 
+'any symbol whose meaning is not determinate'.
+
+14. Variables are purportedly special symbols whose meanings are on the boundary of obscurity.
+The meanings of a variable can, purportedly in some cases, be determined from further scrutiny (perhaps by perfection of some perceptive apparatus along with some evolution of a reasoning organ), and as far as they can be so determined, such meanings are especially called 'values of the variables'.
+
+15. The phrase 'values of variables' and related articulations are legion in any realm of philosophy which leverages notation as a tool for thought.
+Quine is even known more for his principle 'To be is to be the value of a variable' than he is for his more profound 'To be is to be denoted by a one place predicate.' which follows from his work on predicate functor logic.
+
+16. For me, a variable is nothing more than a part of speech most closely aligned with that of pronouns i.e. variables are grammatical items of a grammatical cagtegory.
+In setting up the grammar of a logical theory, only one item belongs initially to the lexicon of the grammatical language and the grammatical category of variables e.g. the letter ex. 
+    - It has occurred to me multiple times that most people do not know the names of the letters of the English alphabet and that this is part of the origin of confusion like that of Russell's with respect to the passage back and forth between 'that'-clauses and outright quotations.
+    - A table which I reference often gives the names of letters (both their English name and their code names in the NATO phonetic alphabet):
+    <http://www.englishlessonsbrighton.co.uk/wp-content/uploads/2014/08/names-letters-english-alphabet.jpg>.
+
+17. The rest of the variables are ushered in by the grammatical construction of accentuation (which presumably involves a grammatical partical called an accent).
+
+18. Though this grammatical paraphrase of Russell's mystical definition of 'variable' appears weak it is spartan.
+It is strong enough to carry through the elaborate arguments involved in talk of bondage, freedom, quantification, substitution, etc.
+
+19. Talk of variables as more than bits of grammar has enhanced the hazy mist of not determinant, or indeterminate, meanings which carry with them a spirit of variability or variation.
+This plays itself out in PM (and almost everywhere else) as a problem of variables having sometime one meaning, sometimes another, and sometimes, as I have said twice before, a mystical haze or mass of indeterminate meaning that has some structural resemblance to a whole which is somehow distinct from the mereological sum of its propositional parts i.e. an indeterminate whole which is somehow distinct from the mereological sum of its determinate meanings.
+
+20. When compared to such talk of meanings my grammatical methods are hardly loaded with the heaps of history that we inherit through the etymology of the mentalistic phrases of our native language.
+Perception, judgement, reason, inference, and other mysterious operations of the thinking mind are profound when compared to the largely incomplete methods of modern sciences of behavior.
+Yet, there is now, more than ever, an alternative, provided largely by Skinner's works, to the experiential literature which floods the sciences of philosophy and psychology.
+
+21. I'm hopeful that further careful reading of Russell's work and those earlier and later works which pass through it shall reveal to me an effective way of freeing those like Russell and Carnap from their phenomenalism.
+
+22. How does talk of the meaning of variables come out in a predicate functor world i.e. when variables are properly eliminated from logic as they are Quine's predicate functor methods what is left of the problems posed by variables either with respect to Russell's definition or the grammatical definition?
+
+23. The lexicon of a predicate functor language is populated entirely of predicates as integral words or phrases such as 'red' and 'round' and 'atop'.
+The question as to whether there are intensional or extensional items named by, or, strictly, *designated by* these lexical elements is a question about the theory of the world in which such a language occurs.
+The items of the world are purportedly those which are *denoted by* the one place predicates of the predicate functor language.
+So, the question as to whether there exist items designated by the predicates of the lexicon of the language is a question about a special part of the theory of the world: the theory of denotation.
+
+24. Those familiar with PM will notice that something like a hierarchy of langauges is forced upon anyone examining truth or denotation as a result of Tarski's analysis of truth and that this is anticipated by Russell's type theory in PM and further emphasized in "An Inquiry into Meaning and Truth" (IMT).
+
+25. In both PM and IMT there is recourse to experiences and expressions which obscures an almost neutral analysis of the conclusions which link a theory of grammar, a theory of denotation, and a theory of the world.
+
+26. Presumably, the theory of the world must, in addition to being consistent, contain the theory of its language's grammar and its langauge's truth.
+Something like such a theory is analyzed here as part of the proper paraphrasing of the premises and conclusions of PM.
+
+27. Turning now to values of variables.
+Talk of values of variables is difficult for me to pin down precisely.
+In the sentences of English relative clauses do the work of binding pronouns, e.g. 'it such that it is red and it is round'.
+This is distinguished from the dangling pronouns of an otherwise complete sentence, e.g. 'It is red and it is round.'
+
+28. In the latter sentence with the dangling pronouns, the grammarian asks "Who or what is it?" or, better, "What does 'it' refer to in the sentence 'It is red and it is round.'?"
+If the immediately preceeding sentence is 'He dropped the block.' then may answer "'it' refers to 'the block'" or, perhaps, "'it' refers to the block"?
+How about "'it' refers back to 'the block'" or "'it' refers to the same thing as 'the block'"?
+Even if 'the block' refers to no thing?
+
+29. There is much more to be said about 'range of values of a variable' and its connection to 'significance'.
+
+30. I shall return to the preface and the introduction and the beginning of Chapter 1 "Preliminary Explanations of Ideas and Notation", but now wish to leap ahead, still in chapter one, to the primitive propositions that play such a central role in PM and as access points to the peculiarities of the phenomenology promoted by Russell's 'ideas and notation'.
+
+31. Translation of "primitive propositions employed in the calculus of propositions." pg. 13
+
+32. "(1) Anything implied by a true premise is true Pp" (pg.13) is paraphrased as
+    - each item is (x, y, and z such that x is true, z conditionalizes x with y, and z is true, only if y is true)
+
+33. The paraphrase reveals some of the predicates found in the language of a logical theory of the grammar and truth (better, denotation, but that shall be left for later) of a logical language.
+
+34. For those unfamiliar with a phrase such as 'each item is (x and y such that some item is (z such that z pairs x with y)' then read these hints:
+    - The phrase 'who loves Dick' is, as part of English grammar, a relative clause.
+    - Relative clauses are predicates e.g. the relative clause 'who loves Dick' is a one place predicate.
+    - Predication of a name, e.g. 'Tom', with a relative clause, e.g. 'who loves Dick' yields a complete sentence 'Tom is who loves Dick'.
+    - This complete sentence says the same thing as 'Tom loves Dick'.
+    - In math, where there are rarely 'who's, instead of 'who loves Dick' the 'such that' phrase, e.g. 'it such that it loves Dick' or 'x such that x loves Dick', turns up as a canonical method of paraphrasing relative clauses into a regimented sentence.
+    - Thus paraphrased, it is found that all the problems of the freedom and bondage of pronouns occurs without the complexity of quantification with respect to a pronoun (or, unhappily, variable).
+    - The sentence 'It is round and it is red.' is complete even though its pronouns dangle, and the relative clause 'it such that it is round and it is red' is an incomplete sentence since it is just a predicate.
+    - This distinction organizes a host of confused and conflicting methods which occur throughout PM and throughout most books on logic and mathematics e.g. the free pronouns in a sentence like 'It is round and it is red.' can play the part of dummy singular terms so that in a given argument we may safely contemplate the consequences of supposing 'it' does or does not designate (i.e. does or does not purport to name one and only one item) and the bound pronouns in a relative clause like 'it such that it is red and it is round' can play the part of, the unhapilly named, variables under the careful restrictions described by Quine as follows
+        1. "The variable comes to appear in its true light as purely a means of identifying and distinguishing the referential places in a sentence" pg 32 of "From Stimulus to Science" (FSS)
+        2. "As for the etymology of 'variable', it should be studiously ignored; it rests on a pernicious old mathematical metaphor that is happily fading." pg. 32 FSS
+        3. "Here the variable serves merely to mark places where the same thing is referred to, and single it out as denoted by the newly abstracted predicate." pg. 33
+
+35. The predicate 'x, y, and z such that x conditionalizes y with z' is a predicate in a logical theory of grammar where the grammatical construction of conditoinalization is either defined, e.g. with respect to negation and alternation or just alternative denial or perhaps just joint denial, or is part of the lexicon.
+In either case, it can be taken by those who are wedded to propositions as being "about them" even though they play no proper part in my paraphrase.
+
+36. Properly, Tarski's analysis of truth yields a heirarchy of theories of grammatical and truth predicates, though, until now, Quine has obscured the purely grammatical elements with his and Tarski's principle of disquotation.
+
+37. Though what I have said of my own work is perhaps obscure with respect to what has been quoted from PM, I can assure the intreped reader that each of the technical distinctions I've brought up appear in one form or another in PM (some explicitly).
+
+38. Back to the primitive propositions from page 13:
+    > (1) Anything implied by a true premise is true \pp
+    >
+    > this is the rule which justifies inference.
+    >
+    > (2) \thm \dott p \or p \dot \imp \dot p \pp
+    >
+    > i.e. if p or p is true, then p is true.
+    > 
+    > (3) \thm \dott q \dot \imp \dot p \or q \pp
+    >
+    > i.e. if q is true, then p or q is true.
+    >
+    > (4) \thm \dott p \or q \dot \imp \dot q \or p \pp
+    > 
+    > i.e. if p or q is true, then q or p is true.
+    >
+    > (5) \thm \dott p \or ( q \or r ) \dot \imp \dot q \or (p \or r) \pp
+    >
+    > i.e. if either p is true or "q or r" is true, then either q is true or "p or r" is true.
+    >
+    > (6) \thm \dottt q \imp r \dot \imp \dott p \or q \dot \imp \dot p \or r \pp
+    >
+    > if q implies r, then "p or q" implies "p or r".
+
+39. They are paraphrased as follows
+    1. each item is (x, y, and z such that x is true, z conditionalizes x with y, and z is true, only if y is true)
+    2. each item is (x and y such that y alternates x with x and y is true, only if x is true)
+    3. each item is (x, y, and z such that x is trueand z alternates y with x, only if z is true)
+    4. each item is (w, x, y, and z such that w alternates x with y, w is true, and z alternates y with x, only if z is true)
+    5. each item is (s, t, u, v, x, y, and z such that u alternates x with v, u is true, v alternates y with z, s alternates y with t, and t alternates x with z, only if s is true)
+    6. each item is (t, u, v, w, x, y, and z such that u conditionalizes v with w, u is true, x alternates y with v, z alternates y with w, and t conditionalizes x with z, only if t is true)
+
+40. Note Russell's use of quotations where I strongly recommend commas, or, if familiar methods of carrying over grouping into punctuation are to be entirely dropped, full parenthetical methods.
+
+41. The paraphrases can be broken into their grammatical and denotative parts e.g. number five can be written out as
+    - each item is (s, t, u, v, x, y, and z such that u alternates x with v, v alternates y with z, s alternates y with t, and t alternates x with z, and u is true, only if s is true)
+
+42. These paraphrases point up the versatility of these methods e.g. number five may be alternatively rendeder to look more like Russell's English paraphrase:
+    - each item is (u, v, x, y and z such that u alternates y with z, v alternates x with z, and x is true or u is true, only if y is true or v is true)
+
+43. Presumably, what Russell here calls 'primitive propositions' can be paraphrased as I have done and shown to be conclusions in a consistent theory of truth (or denotation) like that from Tarski's analysis of Quine's extension of it to denotation (where truth becomes degenerate denotation).
+
+44. By such paraphrasing it can perhaps be shown that something like Russell's hierarchy of langauges (as in the type theory of PM or its further elaboration in "An Inquiry into Meaning and Truth") fits smoothly into Tarski's analysis.
+
+45. Russell seems hell bent on introducing a hierarchy of predicates of grammar along with a hierarchy of predicates of denotation and perhaps he is right to do so and that the difference is made clear through the difference between the three different purported paraphrases of primitive proposition five.
+
 ## 2025 0911 1654
+
+This begins my notes on Whitehead and Russell's 'Principia Mathematica'.
 
 1. As much as my early history as a mathematician is involved with Bertrand Russell's writings, I never expected to be taking notes on his and Whitehead's 'Principia Mathematica'.
 Happily I got to read through it as an undergraduate, but my outlook has changed significantly since then.
