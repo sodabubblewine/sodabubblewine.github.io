@@ -151,9 +151,102 @@ Use a thermometer.
 
 # NOTES
 
+## 2025 0915 1331
+
+This continues notes from [#2025-0913-1705](#2025-0913-1705) on Whitehead and Russell's 'Principia Mathematica'.
+
+1. Quine more than anyone else emphasized that validitiy is the synthesis of grammar and denotation.
+In his "Principles of Philosophy Second Edition" (POL) he gives a preformal description of grammar and truth (truth is degenerated denotation as shown in Quine's "From Stimulus to Science" (FSS)).
+What Quine calls "Tarski's definition of truth" in POL is properly the presentation of a theory of truth.
+In FSS Quine takes greater care to emphasize that a consistent theory of denotation involves a hierarchy of theories of denotation.
+Neither in FSS nor in POL does Quine take the same kind of care he gives to the hierarchy of theories of denotation with his theory of grammar.
+
+2. Russell and Whitehead's type theory imposes restrictions upon what propositions are to be taken as meaningful.
+The meaning of meaning is mysterious, and, thankfully, it comes out as something amenable to paraphrase into grammar.
+
+3. For Russel, and almost anyone else, meaning is far more than anything that can be caught by grammar e.g. synonymy is more than can be read from a grammatical analysis.
+
+4. What Quine shows in POL is that grammar is as much 'about the world' as denotation.
+This is in harmony with Russell's repeated reminder in 'An Inquiry into Meaning and Truth' (IMT) that language is part of the same world that the nonlinguistic world is i.e. unlike the division of the world into, what some philosophers have mandated as seperate but equal, the mental and the material, the division of the world into linguistic and nonlinguistic is not as seperate or equal as it may seem.
+
+5. For Russell, experience is immediately self evident (at least in theory) and language is merely an expression of experience (as far as that goes).
+Hence, he distances himself from the logical positivists that permit their protocol sentences to be the raw material from which, following Mach, the mental and material worlds are logically constructed e.g. as in Carnap's 'Aufbau'.
+
+6. Russell's propositional methods in 'Principia Mathematica Volume One' (PM1) are under a similar control as to those he presents in IMT except perhaps that IMT is a much more careful consideration of all that propositional methods have to give all the sciences and not just mathematics in particular.
+
+7. My aim here is to give a more detailed explination of the parallels between theories of grammar and theories of denotation which bring Quine's methods closer to Russell's in PM and IMT.
+
+8. Beyond Quine and Russell's methods are the calculi and automata that set up grammars in modern works in theories of mathematical logic and computation.
+And yet, these are not so far from Quine's methods at the end of his 'Mathematical Logic' (ML) where a theory of protosyntax provides, a necessarily incomplete, explication of the formal methods from which grammar has benefited.
+
+9. My methods are the slightest generalization of Quine's protosyntax with an eye to accomodating the propositionalists who cannot let go of their nonextensional methods.
+Instead of building concatenation conspicuously into grammar as Quine does with his protosyntax and instead of building trees into grammar as abstract syntax trees do, I prefer to deal with grammar in the same way that Tarski deals with truth, and closer to how Quine describes grammar in POL and Russell describes it, indirectly, in PM (in the course of his explanation of his theory of types) and, similarly, in IMT.
+
+10. Although grammar is mentioned by Russell, it is so strongly distinguished from meaning that he misses those parts of his analysis of meaning which actually turn into analyses of grammar.
+Hopefully I can bring out those points more conspicuously.
+
+11. Thus, I would perhaps call my methods those of a logical theory of logical grammars.
+The grammars are logical in that they are constructed to accomodate logical practices as opposed to those of English, German, French, and other purportedly less formal languages.
+
+12. The theory is logical in that its compounds are composed from a list of basic predicates (as integral words or phrases such as 'fathered', 'red', 'is next to'), predicated of an appropriate string of varibles, and assembled by the grammatical construction of iterated existential joint denial (where the existential joint denial of grammatical compounds with a variable not occuring in them is the joint denial of them).
+
+13. The difference between my methods and those of Quine at the end of ML in the chapter on protosyntax is that rather than define the predicates of grammar from the predicates of a covert theory of concatenation I leave them undefined.
+
+14. In Tarski's analysis of truth, the predicate being analyzed is 'is true'.
+It is found that there can be no consistent theory of a predicate 'is true' when the disquotational principle is regimented with respect to the predicate 'is true'.
+The principle of diquotation is exemplified by the classic example: 'snow is white' is true if and only if snow is white.
+It is precisely on the matter of diquotation that Russell, and almost all others, have made their mistakes.
+
+15. The mistake is the result of mistaking the grammar of logical schema with the grammar of logical sentences e.g. predicate letters in a schema of quantificational and truth functional logic are not variables.
+Beyond mistaking letters of a schema for variables of a sentence, there is a partcularly tricky situation which confused both Russell and Wittgenstein and which is brought up in IMT: logical sentences about logical schema.
+
+16. To bring up the problem of theories of logical schema is premature, but points in the direction that my work on grammar shall go as I work over PM and IMT.
+
+17. A logical theory of grammar gives the premises which connect grammatical lexicon, construction, and categories: lexicon are the raw material from which different categories are constructed.
+
+18. It shall be seen from this particular example of a theory of a grammar of a logical theory that Quine's arguments that the predicate 'is grammatical' does not have a transcendent definition is further justified by the problems posed by, and solved by, specifying this theory.
+
+19. As with Tarski's theory of truth, the lexical elements are the trickiest.
+In the case of Tarski's analysis, disquotation comes through as a template upon which relevant premises are presented.
+In the case of my analysis of grammar, there is nothing quite like diquotation available because, and this is important, the subject of the theory is purely linguistic.
+
+20. Russell rightly makes much noise about the difference in how to treat the linguistic parts of our world and their links with the nonlinguistic parts of the world.
+What Russell says is a difference between a word, or sentence, and its quotation, is seen by Quine as a difference between a word, or a sentence, and spelling out words, or sentences.
+
+21. The first collection of premises which presente themselves to me are based in part upon the so called 'counting quantifiers' which may be defined in terms of the standard quantifiers (or, what is the same, the corresponding predicate functors applied to the appropriate predicate abstract, both of which I shall make free use) as follows:
+    1. 'just 0 items are (x such that Fx)' for 'each item is (x such that not Fx)'
+    2. 'just 1+n items are (x such that Fx)' for 'some item is (x such that Fx and just n items are (y such that Fy and not x is identical to y))'
+
+22. Note that the definition of the counting quantifiers is made with respect to the predicate 'is identical to' and that, in standard logical langauges, we can take any theory which does or does not have a predicate of identity as coextensive with or defined by (respectively) indiscernability with respect to that language's lexical predicates.
+
+23. I shall begin by giving the premises as they occurred to me and then contemplate them and their consequences with an aim at unearthing any missing premises.
+My past has primed me to begin with a fragmenetary collection of premises, no matter how weak or poorly considered they may later end up showing themselves as, rather than trying to capture each key premise from the haze of preformal contemplations up to that point.
+
+24. The premises of a logical theory of the grammar of a logical theory with pronminal variables (as contrasted with those logical theories set up without variables and with predicate functors):
+    1. just 1 item is (x such that x is lexically pronominal)
+    2. just m+..+n items are (x such that x is lexically predicable)
+    3. 'is lexical' for 'x such that x is lexically pronominal or x is lexically predicable'
+    4. each item is (x such that x is lexically pronominal only if x is pronominal)
+    5. each item is (x, y, and z such that such that x accents y and z accents y, only if x is identical to z)
+    6. each item is (x and y such that x accents y and x is pronominal if and only if y is pronominal)
+    7. The premises of many place predications:
+        1. just m items are (x such that each item is (y,.., and u such that y predicates x with .. and with u and x is lexically predicable, if and only if .., and u is pronominal)
+        2. ..
+        3. just n items are (x such that each item is (y, .., and v such that y predicates x with .. and with v and x is lexically predicable, if and only if .., and v is pronominal)
+    8. 'is predicational' for 'x such that some items are (y, .., and u such that y is lexically predicable and x predicates y with .. and with u) .., or some items are (y, .., and v such that y is lexically predicable and x predicates y with .. and with v))'
+    9. each item is (x such that x is a predication only if x is grammatical)
+    10. each item is (w, x, y, and z such that w existentially jointly denies x with y with respect to z and w is grammatical, if and only if y is grammatical and z is pronominal)
+
+25. Already as I wrote them it appeared to me that there were insufficient premises to proved for the unique decomposition of an existential joint denial into its binding pronoun (i.e. variable) and grammatical subcomponents.
+
+26. It also occurred to me that there is no guarentee that a lexical predicate is not predicable in more than one way e.g. schematically, 'Fx' and 'Fxy' are permitted by my premises and yet they are not common in logical practice.
+
+27. In the next note I shall make the appropriate corrections, as they occur to me, and perhaps subject them to further contemplation or perhaps go on to present premises of a logical theory of grammars of logical theories with predicate functors and without pronominal variables.
+
+
 ## 2025 0913 1705
 
-This continues ntoes from [#2025-0911-1654](#2025-0911-1654) on Whitehead and Russell's 'Principia Mathematica'.
+This continues notes from [#2025-0911-1654](#2025-0911-1654) on Whitehead and Russell's 'Principia Mathematica'.
 
 1. For lack of a better method of quoting the notation of Russell and Whitehead's 'Principia Mathematical Volume 1' (PM1), I shall use the notation from Landon's TeX package, but I shall drop the initial 'pm' attached to each command (it is only there to distinguish its commands from others native to tex and latex).
     - <https://ctan.math.hamburg/macros/latex/contrib/principia/principia.pdf>
