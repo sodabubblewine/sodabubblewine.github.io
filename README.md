@@ -151,6 +151,47 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-0919-1514
+
+## 2025-0917-1724
+
+> It took me this long to figure out that I can write the dashes which turn up in the hyperlinking anchors as part of the subsection title (or I could just smoosh all the numbers together, but I find that hard to read at a glance or while I'm scrolling quikckly back and forth in time).
+> I'm contemplating not even making each of these notes a subsection and just leaving them as their own sections under a top most section titled 'NOTES' which may or may not contain some short sentences on how notes work, though I've already explaiend that in the hint [#how-to-do-it](#how-to-do-it).
+>
+> It also occurred to me that I can put the pound at the front of the entry as well e.g. '\#2025-0917-1724' instead of '2025-0917-1724'.
+> This would make it even easier to copy and paste hyperlink anchors.
+> All of this has reignited by intense desire to present the page as a javascript snippet that you must manually copy and paste into your browser to effectively use.
+> Ah, they joys of obscurity.
+
+This continues notes from [#2025-0915-1331](#2025-0915-1331) on the first volume of Whitehead and Russell's 'Principia Mathematica'.
+
+1. In the last note I presented, at the end, the premises of a logical theory of the grammar of logical theories which did not depend upon concatenation, e.g. as in Quine's theory of protosyntax, nor trees, e.g. as in Feferman's theory of finitary inductively presented logics.
+
+2. I was quick to see that uniqueness of existential joint denials had not been guarenteed by this initial list of premisses.
+It was also apparent that a single predicate in the lexicon could potentially be predicated in more than one way.
+
+3. The predicates of predication, e.g. 'w, x, y, z such that w predicates x with y and with z' and 'u, v, w, x, y, and z such that u predicates v with w, x, y, and with z', are an example of a peculiarity of most grammars of logic which is often overlooked because of the general utility of concatenation or tupling: there is not a single gramamtical construction called 'predication', rather there are grammatical constructions of predication for each of the many places of each predicate in the lexicon e.g. 'is red' is traditionally predicated of just one pronoun (a better name than 'variable') and 'fathered' is traditionally predicate of just two pronouns (perhaps identically spelled out as when we write 'each item is (x such that not x fathered x)').
+
+4. So, first I shall write out the first iteration of the initial premises that I suspect are most likely to resolve the problems already pointed out.
+I've also collected the premises based more on the part they come to play when included in an analysis of truth like that of Tarski's disquotational methods.
+    1. pronominal premises
+        1. just 1 item is (x such that x is lexically pronominal)
+        2. each item is (x such that x is lexically pronominal only if x is pronominal)
+        3. each item is (x, y, and z such that x accents y and z accents y, only if x is identical to z)
+        4. each item is (x such that some item is (y such that x is pronominal only if y accents x))
+        5. each item is (x and y such that x accents y and x is pronominal, if and only if y is pronominal)
+    2. predicational premises
+        1. just ..+n items are (x such that x is lexically predicable)
+        2. .. and each item is (w, x, y, .., and z such that w predicates n place x with .., and with z and y predicates x with .., and with z, only if x is identical with y)
+        3. .. and just n items are (x such that 
+
+5. It's at this moment that I just jumped ahead to predicate functor logics like those I've contemplated lately, rather than go through the depths of shoehorning some theory of sequences and satisfaction into a theory like the one above.
+
+6. I am glad that I worked out some of the corrections along this direction because it indirectly forced me to finally give a definition of the counting quantifiers in a truth functional and quantificational logic (TQL) which then prompted me to render the appropriate abbreviation for the same in predicate functor logic.
+
+7. I have not done a good job of capturing all the notes that I've made, and all the reading that I've done, that have gone into this and other work e.g. it is only from reading in tandem Russell's "An Inquiry into Meaning and Truth", "Human Knowledge: its scope and limits", "Principles of Mathematics" and 'section B, theory of apparent variables. \*9. Extension of the theory of deduction from lower to higher types of propositions' starting on page 132 of PM1 along with chapters 2 and 3 of PM1 that I've seen some way of connecting some of Russell's more philosophical arguments with the tried and true methods of predicate logic like those in Quine's later works.
+
+
 ## 2025 0915 1331
 
 This continues notes from [#2025-0913-1705](#2025-0913-1705) on Whitehead and Russell's 'Principia Mathematica'.
