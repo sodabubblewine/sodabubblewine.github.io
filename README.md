@@ -151,7 +151,249 @@ Use a thermometer.
 
 # NOTES
 
-## \#2025-0919-1514
+## \#2025-0921-1542
+
+This continues notes from [#2025-0917-1724](#2025-0917-1724) on the first volume of Whitehead and Russell's 'Principia Mathematica'.
+
+1. Though what follows may still appear to be far from the contents of volume one of Russell and Whitehead's "Principia Mathematica", Russell's "Principles of Mathematics" and "An Inquiry into Meaning and Truth", I can assure the wary reader that these are solid steps in the direction of all these works and all that are related to them in their logical and scientific interests.
+
+2. Most importantly, to the notes here at least, the theories of grammar and denotation which follow, and the premises presented of them, are my only way of firmly grasping what Russell has to say about the hierarchy of languages that not only compose his method of types, but also the propositional methods which are so characteristic of his phenominalism e.g. where he takes sentences as instances of propositions and sentential utterances as instances of sentences, I shall take instances of verbal responses and verbal schema (which are purportedly a special kind of autoclitic).
+
+3. First, some missing abbreviations of predicate functor logic:
+    1. Counting Quantifiers
+        1. 'just 0 n F' for 'each n not F'
+        2. 'just 1+k n F' for 'some n and F just k n and (n nip n) F not id n'
+    2. 'singular n F' for 'just 1 n F'
+
+4. Such abbreviations have to be added to the growing list of waypoints through predicate functor logic.
+
+5. Just two lists of premises of logical theories of the grammar of predicate functor logics are needed: the constructive and the lexical.
+The constructive premises are the same for all theories of the grammar of predicate functor logics.
+The lexical premises are different for each such theory depending on the lexical predicates of each such theory.
+
+6. Following Russell and Quine, rather than Carnap, the lexical premises of each such theory share at least lexical predicates (what I shall call 'the singularly designative one place predicates of lexicality' or 'the predicates of lexical designation' or 'the lexical designators') which are part of each such theory i.e. 'designates-grammatical', 'designates-drops', 'designates-hems', and 'designates-huhs'.
+
+7. This is an important point which Russell urged in his earlier and later writings.
+It is also a point which is easier to appreciate after the relevant premises have been given as I shall now.
+
+8. The constructional premises
+    1. and functive 1 1 drops coextensive field drops grammatical
+    2. and functive 1 1 hems coextensive field hems grammatical
+    3. and functive 2 1 huhs coextensive field huhs grammatical
+
+9. The lexical premises
+    1.  and singular 1 designates-grammatical included designates-grammatical grammatical
+    2. and singular 1 designates-drops included designates-drops grammatical
+    3. and singular 1 designates-hems included designates-hems grammatical
+    4. and singular 1 designates-huhs included designates-huhs grammatical
+
+10. The constructional premises establish that each of the predicates 'drops', 'hems', and 'huhs' permit unambiguous methods of grammatical analysis and synthesis i.e. the grammatical methods of grade school students.
+The fields of 'drops', 'hems', and 'huhs' are that of 'grammatical' i.e. constructed compounds and their components are grammatical.
+Each constructed compound is unique in that no distinct constructions have corresponding components that are indistinct.
+This is the synthetic part of grammar e.g. from two grammatical sentences we compose their conjunction and it inherets its grammaticality from them through the construction.
+
+11. The constructional premises may lack the features required to guarentee a unique grammatical analysis.
+
+12. Oh!
+This may be more interesting than I thought.
+With just the constructive premises we may define 'lexical' as 'x such that x grammatical and not some (y and z such that x drops y, x hems y, or x huhs y with z)'
+
+13. Originally, I had collected in this point a number of quotes from the chapter 'The Object-Language' of Russell's 'An Inquiry into Meaning and Truth' (IMT) that I thought were about the predicate 'lexical'.
+After assembling the quotes and chasing down a reference to 'atomic forms' in the chpater 'Sentences, Syntax, and Parts of Speech' it occurred to me that the chapter 'The Object-Language' is actually about the denotative premises that are to follow, along with the quotes that once went here, and that 'Sentences, Syntax, and Parts of Speech' is more about the grammatical premises that have been given.
+
+14. The predicate 'lexical' has more to do with 'Sentences, Syntax, and Parts of Speech' than it does with 'The object-language'.
+Here are relevant quotes from that chapter.
+These quotes are to help round out my definition of 'lexical' with only the predicates in the constructive premises and without the predicates of singular designation in the lexical premises.
+Russell tends to mention problems that must be solved by anyone contemplating similar subjects.
+This alone is reason enough to quote from him lavishly.
+    > "Sentences can be interrogative, optative, exclamatory, or imperative; they may also be indicative. Throughout most of the remainder of our discussions, we may confine ourselves to indicative sentences, since these alone are true or false.
+In addition to be true or false, indicative sentences have two other properties which are of interest to us, and which they share with other sentences. The first of these is that they are composed of words, and have a meaning derivative from that of the words that they contain; the second is that they have a certain kind of unity, in vritue of which they are capable of properties not possessed by their constitutent words." pg. 34
+        - This classical classification of sentences from the kind of grammar taught to school children is a hold over, as much as the previous chapter on words, of the prescientific analyses of verbal behavior.
+        - The corresponding question posed by "What is a word?" is "What is a response?" or perhaps, more precisely, "What is a verbal response?".
+
+    > "A single sentence, for our purposes, must be one which says something that cannot be said in two separate simpler sentences." pg. 35
+
+    > "Consider next such a sentence as 'I should be sorry if you fell ill.' This cannot be divided into 'I shall be sorry' and 'you will fall ill'; it has the kind of unity that we are demanding of a sentence. But it has a complexity which some sentences do not have; neglecting tense, it states a relation between 'I am sorry' and 'you are ill'. We may interpret it as asserting that at any time when the second of these sentences is true, the first is also true. Such sentences may be called 'molecular' in relation to their constituent sentences, which, in the same relation may be called 'atomic'." pg. 35
+
+    > "Whether any sentences are 'atomic' in a nonrelative sense, may, for the present, be left an open question; but whenever we find a sentence to be molecular, we shall do well, while we are considering what makes a unity of sentences, to transfer our attention, in the first place, to its atoms. Roughly, an atomic sentence is one containing only one verb; but this would only be accurate in a strictly logical language." pg. 35
+
+    > "When we say "I said 'A'" what we really mean is "I made a noise closely similar to the noise I am now about to make: 'A'" This, however, is a digression." pg. 37
+
+    > "We will rever to the supposition that I say first 'A' and then 'B'. We will call the particular occurrence which was my first utterance 'Tom' and that which was my second utterance 'Harry'. Then we can say 'Tom preceded Harry.'. This was what we really meant to say when we said "The sound 'A' preceded the sound 'B'"; and now, at last, we seem to have reached an atomic sentence which does not merely classify." pg. 37
+
+    > "It might be objected that, when I say "Tom preceded Harry," this implies "Tom occurred" and "Harry occurred" just as when I said "The sound 'A' preceded the sound 'B'," that implied "'A' occurred" and "'B' occurred". This, I think, would be a logical error. When I say that an unspecified member of a class occurred, my statement is significant provided I know what class is meant; but in the case of a true proper name, the name is meaningless unless it names something, and if it names something, that something must occur. This may seem reminiscent of the ontological argument, but it is really only part of the definition of 'name'. A proper name names something of which there are not a plurality of instances, and names it by a convention ad hhoc, not by a description composed of words with previously assigned meanings. Unless, therefore, the name names something, it is an empty noise, not a word. And when I say "Tom preceded Harry," where "Tom" and "Harry" are names of particular noises, we do not presuppose "Tom occurred" and "Harry occurred," which are both strictly meaningless." pg. 37
+
+    > "In practice, proper names are not given to single brief occurrences, because most of them are not sufficiently interesting. When we have occasion to mention them, we do so by means of descriptions such as 'the death of Caesar' or 'the birth of Christ'. To speak for the momen in terms of physics, we given proper names to certain continuous stretches of spacetime, such as Socrates, France, or the moon. In former days, it would have been said that we given a proper name to a substance or collection of substances, but now we have to find a different phrase to express the object of a proper name." pg. 38
+        - I'm still unable to clearly articulate what stuff 'substances' or 'collections of substances' were to those like Aristotle, or are to those who speak of such stuff.
+        - The link that Russell is making is between chunks of spacetime and substances or collections of substances.
+        - The best I can do now is to follow that last sentence as say that substances or collections of substances are purportedly what are designated by proper names.
+        - But, if designation is denotation disguised then substances are as much items as anything like chunks of spacetime i.e. they are what one place predicates denote and, hence, have no special status whatsoever.
+
+    > "A proper name, in practice, always embraces many occurrences, but not as a class-name does: the separate occurrences are *parts* of what the name means, not *instance* of it. Consider, say, 'Ceasar died'. 'Death' is a generic word for a number of occurrences having certain resemblances to each other, but not necessarily any spatiotemporal interconnection; each of these is *a* death. 'Caesar', on the contrary, stands for a series of occurrences, collectively, not severally. When we say 'Caesar died," we say that one of the series of occurrences which was Caesar was a  member of the class of deaths; this occurrence is called "Caesar's death"." pg. 38
+        - The distinction "stands for a series of occurrences, collectively, not severally" is the key difference between designation and denotation that puzzles those who confuse a predicate (in my parlance, as in Quine's in "From Stimulus to Science" (FSS), an integral word or phrase which is traditionally confronted as predicated of its subject in the grammar of elementary schools) for a name of a purported class of each item it denotes or of a purported attribute of which each item it denotes may be attributed.
+        - The mistake made by Russell then is the passage from "'Death is a generic word for a number of occurrences having certain resemblances to each other ... each of these is *a* death" and "we say that one of the series of occurrences which was Caesar was a member of the class of deaths" as if the predicate 'death' is the name of its purported extension i.e. a class such that each item classed in it is denoted by the predicate 'death' and vice versa.
+         - In this case, perhaps the phrase 'a death' becomes contextually defined as with Russell's elimination of singular descriptions e.g. 'A death in the family caused him to leave' has the predicate 'x and y such that x caused y to leave' from which, contextually, 'some item is (x such that x died, x is in the family, and x caused him to leave)' where further details can be given to 'him' as context requires.
+        - The real puzzle presented here is about 'part' and 'instance'. When Russell speaks of the series of occurrences which is designated by 'Caeser' the occurrences have been assembled into a compound item classified as 'series' and each occurrence of Caeser is part of the series of occurrences designated by 'Caeser' and *not* an instance of the series of occurrences designated by 'Caeser'.
+        - There is an additional complexity entirely skipped over by Russell: each occurrence in the series of occurrences designated by 'Caeser' is a part of what is designated by 'Caeser', but so are each of the subseries of the series of occurrences designated by 'Caeser'. It is one of these subseries (as part of the thing designated by 'Caeser') which he says belongs to the class of each item denoted by 'death' and not an occurrence of the series designated by 'Caeser'.
+        - Now, 'instance' is taken as 'a death' to 'death', but not in the contextual way I just proposed, but rather under the purported existence of the class of each item denoted by 'Death'. Thus, fully, "is an instance of 'Death'" is short for 'x such that some item is y such that y is classed in the class of each item denoted by 'death'", at least as Russell uses it in this quotation (assuming elimination of singular descriptions as in Russell's contextual way or perhaps in Peano's way, where descriptions are given not by Quine's descriptional premises, but by a premise of coextension between 'is identical to the F' and 'x such that Fx and each item is y such that Fy if and only if x is identical to y').
+        - For me, 'instance' is so intimately wrapped up with von Neumann's schematic methods that its use in talk of classes is to be avoided.
+        - This makes phrases used by Skinner, such as 'instances of a response', interesting because Skinner spoke of instances of responses as Russell did, but also as Quine did. Perhaps Russell and Skinner both made this mistake. Russell spoke of propostions where I would speak of Schema, but Skinner would never admit propositions among his explanations of verbal behavior, especially that which might be said to occurre as true or false responses.
+
+    > "A proper name may be assigned to any continuous portion of spacetime, or to a quality, as I shall argue in Chapter VI. Two parts of one man's life may have different names; for instance, Abram and Abraham, or Octavianus and Augustus. "The universe" may be regarded as a proper name for the whole of spacetime. We *can* give a proper name to very small portions of spacetime, provided they are large enough to be noticed. If I say 'A' once at 6 P.M. on a given date, we can given a proper name to this noise, or, to be still more particular, to the auditory sensation that some one person present has in hearing me. But even when we have arrived at this degree of minuteness, we cannot say that we have named something destitute of structure. It may therefore be assumed, at least for the present, that every proper name is the name of a structure, not of something destitute of parts. But this is an empirical fact, not a logical necessity." pg. 39
+        - These comments only make sense to me in the context of Quine's elimination of singular terms by singular descriptions. The empirical fact which Russell refers to is then to be found in the existential premises that Quine calls 'Descriptional Premises' and which I often construct by way of the predicate functor 'singular'. A singular predicate (be it one or many places) is one that denotes just one item (properly, one tree of items, or one sequence of items, depending on considerations that have more to do with denotation than with these grammatical problems).
+        - Thus, the complexity of the item denoted by such a singular predicate turns on whether that singular predicate is lexical or not i.e. there are no absolutely structureless items, except with respect to a given lexicon, and, even then, each item of the lexicon is coextensive with the alternation of its conjunction with another predicate and its conjunction with the negation of that same predicate (by the all important equivalents involved in alternational development).
+        - So, the problem is then how to define, relative to the lexicon, the difference between items with or without parts. Partless things are presumably denoted by a predicate of the lexicon which is singular and where there is no predicate satisfying the premises of a theory of 'part of' such that some item is x such that x is part of y and y is denoted by the singular lexical predicate.
+        - In general, from a theory of 'part of' define 'is simple' as 'x such that each item is y such that not y is part of x' and 'is complex' as 'x such that not x is simple'.
+
+    > "If we are to avoid entanglement in questions that are not linguistic, we must distinguish sentences, not by the complexity which they may happen to have, but by that implied in their form. "Alexander preceded Caesar" is complex owing to the complexity of Alexander and Caesar; but 'x preceded y' does not, by its form, imply that x and y are complex. In fact, since alexander died before Caesar was born, every constituent of Alexander preceded every constituent of Caesar. We may thus accept 'x precedes y' as an atomic *form* of proposition, even if we cannot actually mention an x and a y which give an atomic proposition. We shall say, then, that a *form* of proposition is atomic if the fact that a proposition is of this form does not logically imply that it is a structure composed of subordinate propositions. And we shall add that it is not logically necessary that a proper name should name a structure which has parts." pg. 39
+
+15. The final quote gets at 'lexical' as 'atomic forms of propositions' in precisely those ways that I submit are captured by the definition:
+    - 'lexical' for 'x such that x grammatical and not some (y and z such that x drops y, x hems y, or x huhs y with z)'
+
+16. Lurking within my definition is subordinate definition:
+    - 'compound' for 'x such that some item is (y such that x drops y, x hems y, or some item is (z such that x huhs y with z))'
+
+17. Recast, 'lexical' for 'x such that x grammatical and not x compound'.
+
+18. Russell uses the terms 'atomic' and 'molecular' where I use 'lexical' and 'compound'.
+
+19. With this definition of lexical it may seem as if the premises of lexicality could be dropped entirely, except perhaps to say that 'some item is (x such that x lexical)'.
+
+20. This theory of grammar is anticipated by the more familiar methods of grammar involving calculi which contain construction rules that do not have antecedents i.e. the items of the lexicon are degenerate constructions.
+
+21. While there is still more to say about the chapter on 'Sentences, Syntax, and Parts of Speech' I prefer to move onto the premises of the theory of denotation.
+
+22. Just as with the theory of grammar, the premises are divded into two groups: the constructional and the lexical.
+
+23. Before leaving the grammatical premises, I must note that rather than the predicate functor 'functive' the predicate functor 'one-to-one' may be needed to guarentee a unique gramamtical analysis and synthesis.
+
+24. I give the premises of denotation in a truth functional and quantificational logic because I have yet to put them in their predicate functor form, and because it is easier for most humans to read at first sight than those who are not already familiar with predicate functors.
+
+24. The constructive premises of denotation are the universal closures of
+    1. x drops y and x denotes z, if and only if some items are (s, t, u, v, and w such that z pairs u with v, u pairs s with t, w pairs s with v, and y denotes w)
+    2. x hems y and x denotes z, if and only if some items are (p, q, r, s, t, u, v, and w such that z pairs u with v, u pairs s with t, s pairs q with r, w pairs u with p, p pairs r with v, and y denotes w)
+    3. w huhs x with y and w denotes z, if and only if some items are (f, g, q, r, s, t, u, and v such that z pairs u with v, v pairs s with t, q pairs r with t, r pairs f with g, f pairs u with s, and x denotes q nor y denotes q)
+
+25. For now, I must leave aside the question as to why there is suddenly a predicate 'x, y and z such that x pairs y with z' and simply say that the following extensional premise of ordered pairs is included among those of the theory of denotation:
+    1. each item is (u, v, w, x, and y such that w pairs u with v and w pairs x with y, if and only if u is identical to y and v is identical to y)
+
+26. Since it was already hinted at repeatedly in the chapter 'syntax, sentences, and parts of speech', I can say that the constructive premises are, for Russell, a step up from the lexical premises.
+
+27. First I shall give the lexical premises which are from the grammatical theory where 'lexical' was not first contemplated as being defined as 'x such that x grammatical and not x complex' i.e. with the predicates  'designates-drops', 'designates-hems', 'designates-huhs', and 'designates-grammatical'.
+
+28. First draft of the lexical premises: universal closures of
+    1. x designates-drops and x denotes y, if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u paris s with t, s pairs q with r, and t drops r)
+    2. x designates-hems and x denotes y if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, and t hems r)
+    3. x designates-huhs and x denotes y, if and only if some items are (f, g, q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, q pairs f with g, and t huhs r with g)
+    4. x designates-grammatical and x denotes y, if and only if some items are (s, t, u, and v such that y pairs u with v, u pairs s with t, and t grammatical)
+
+29. It just occurred to me that 'grammatical', like 'lexical', can probably be defined if the premises of the simplified theory of grammaticality are altered.
+
+30. First, an important abbreviation of predicate functor logic which generalizes exclusive alternation: one-hot.
+    1. 'one-hot 1 F' for 'F'
+    2. 'one-hot 1+k F .. G' for 'or and F (k or) .. not G and not F one-hot k .. G'
+
+31. 'one-hot k .. F' denotes something if and only if that something is denoted by one and only one of the predicates .. and 'F'.
+
+32. The amended premises of the theory of grammaticality are then
+    1. and and and one-to-one 1 1 drops one-to-one 1 1 hems one-to-one 2 1 huhs
+    2. 'compound' for 'or or proj 0 1 0 drops proj 0 1 0 hems proj 0 2 0 huhs'
+    3. included compound one-hot 3 proj 0 1 0 drops proj 0 1 0 hems proj 0 2 0 huhs
+    4. and coextensive field drops field hems coextensive field hems field huhs
+
+33. I went ahead and changed the predicate functor from 'functive' to 'one-to-one' because I submit that the previous premises did not guarentee unambiguous grammatical analyses and syntheses.
+I also had to add the one-hot premise for the same reason.
+
+34. The one-hot premise makes it so that the grammatical constructions each generate uniquely identifiable compounds i.e. a compound is either a drop, a hem, or a huh.
+
+35. No longer are the fields of the predicates of grammatical constructions 'drops', 'hems', and 'huhs' set to be coextensive with the predicate 'grammatical'.
+I have simply required that each component of one construction is also a component of the other constructions, so that, e.g., if some item is (y such that y drops x) then some item is (y such that y hems x) and some item is (y and z such that y huhs x with z).
+
+36. I have not yet introduced an abbreviation of predicate functor logic which corresponds to the now familiar definition of 'domain' and 'codomain', 'range', 'image', or the presumably more general 'source' and 'cosourse' or 'target' (though 'source' is technically coextensive with 'item').
+For predicates generally, I speak only of projections.
+
+37. From these premises, 'grammatical' is short for 'field drops' or 'field hems' or 'field huhs'.
+They are each coextensive with the others.
+And, specifically, 'grammatical' is equivalent to 'proj 1 1 0 drops', 'proj 1 1 0 hems', 'proj 1 2 0 huhs', or 'proj 2 2 0 huhs'.
+
+38. Now 'lexical' is short for 'and grammatical not compound'.
+
+39. This shows that, yes, 'grammatical' can be define in a theory of grammar with only three predicates 'drops', 'hems', and 'huhs' which correspond to the grammatical constructions in any theory with a predicate functor logic.
+
+40. Note, the predicate functor abbreviations I've used here can be given as abbreviations in a truth functional and quantificational logic as in note [#2025-0908-1633](#2025-0908-1633).
+
+41. With this simplified theory of grammar in hand, the second draft of the lexical premises of denotation (still with the primitive predicates of designation for 'drops', 'hems', and 'huhs') are the universal closures of
+    1. x designates-drops and x denotes y, if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u paris s with t, s pairs q with r, and t drops r)
+    2. x designates-hems and x denotes y if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, and t hems r)
+    3. x designates-huhs and x denotes y, if and only if some items are (f, g, q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, q pairs f with g, and t huhs r with g)
+
+42. The problem posed by eliminating the predicates of designation is whether such .. wait.
+
+43. It just occurred to me that 'designates' is not accurate.
+I'm not looking for the name of a predicate, I'm looking for the predicate as the integral word or phrase i.e. "'drops'" purportedly designates 'drops' and 'drops' *is* the primitive predicate i.e. the premises are not 'premises of designation' they are what I called them first: the lexical premises of denotation. Thus, better rendering is
+    1. x is-drops and x denotes y, if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u paris s with t, s pairs q with r, and t drops r)
+    2. x is-hems and x denotes y if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, and t hems r)
+    3. x is-huhs and x denotes y, if and only if some items are (f, g, q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, q pairs f with g, and t huhs r with g)
+
+44. The folllowing sentences are true in a theory of denotation whose subtheory of grammar has appropriate lexical premises for 'is-drops', 'is-hems', and 'is-huhs':
+    1. some item is (x such that each item is (y such that x denotes y, if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u paris s with t, s pairs q with r, and t drops r))
+    2. some item is (x such that each item is (y such that x denotes y if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, and t hems r))
+    3. some item is (x such that each item is (y such that x denotes y, if and only if some items are (f, g, q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, q pairs f with g, and t huhs r with g))
+
+45. There is a way to sidestep all of this: singular descriptions.
+    1. 'is-drops' for 'x such that x is identical to the (e such that each item is (y such that e denotes y, if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u paris s with t, s pairs q with r, and t drops r)))'
+    2. 'is-hems' for 'x such that x is identical to the (e such that each item is (y such that e denotes y if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, and t hems r)))'
+    3. 'is-huhs' for 'x such that x is identical to the (e such that each item is (y such that e denotes y, if and only if some items are (f, g, q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, q pairs f with g, and t huhs r with g)))'
+
+46. The lexical premise of the theory of denotation is then a cross back to the subtheory of grammar:
+    - included or or is-drops is-hems is-huhs lexical
+
+47. Whether this analysis solves the problems presented by Russell in the following quotations and how far they go in seperating what he calls the object words from the logical words will have to wait for some other day, perhaps tomorrow even.
+
+48. Relevant quotes from the chapter 'The object-language' that are relevant to all that has been set up thus far:
+    > "the hierarchy must extend upwards indefinitely, but not downwards, since, if it did, language could never get started. There must therefore, be a language of lowest type. I shall define one such language, not the only possible one (My hierarchy of languages is not identical with Carnap's or Tarski's.). I shall call this sometimes the 'object language', sometimes the 'primary language.' My purpose, in the present chapter, is to define and describe this basic language. the languages which followin the hierarchy I shall call secondary, tertiary, and so on; it is to be understood that each language contains all its predecessors.
+    >
+    > The primary language, we shall find, can be defined both logically and psychologically; but before attempting formal definitions it will be well to make a preliminary informal exploration." pg.76
+
+    > "we can now partially define the primary or object-language as a language consisting wholly of 'object-words' (There must be syntax, but it need not be rendered explict by the use of syntactical words, such as 'is'.), where 'object-words' are defined, logically, as words having meaning in isolation, and psychologically, as words which have been learnt without its being necessary to have previously elarnt any other words. These two definitions are not strictly equivalent, and where they conflict the logical definition is to be preferred. They would become equivalent if we were allowed to suppose an indefinite extension of our perceptive faculties. We could not, in fact, recognize a chiliagon by merely looking at it, but we can easily imagine beings capable of this feat. On teh other hand, ti is clearly impossible that any being's knowledge of langauge should begin wtih an understanding of 'or,' alothough the maning of this word is not learnt from a formal definition. Thus in addition to the class of actual object-words, there is a class of possible object-words. For many purposes the class of actual and possible object-words is more important than the class of actual object-words." pg. 79-80
+
+    > "In the learning of an object-word, there are four things to be considered: the understanding of the heard word in the presence of the object, the understanding of it in the absence of the object, the speaking of the word in the presence of the object, and the speaking of it in the absence of the object. Roughly speaking, this is the order in which a child acquires these four capacities." pg. 80-81
+
+    > "The meaning of an object-word can only be learnt by hearing it frequently pronounced in the presence of the object. The association between word and object is just like any other habitual association, e.g., that between sight and touch. When the association has been established, the object suggests the word, and the word suggests the object, just as an object seen suggests sensations fo touch, and an object touched in the dark suggests sensations fo sight. Association and habit are not specially connected wtih language; they are characteristics of psychology and physiology generally. ..
+    >
+    > As soon as the association between an object-word and what it means has been established, the word is 'understood' in the absence of the object, that is to say, it 'suggests' the object in exactly the same sense in which sight and touch suggest one another" pg. 81-82
+
+    > "Generally, when you hear an object-word which you understand, your beahviour is, up to a point, that which teh object itself would have caused. this may occur without any 'mental' intermediary, by the ordinary rules of conditioned reflexes, since the word has become associated with the object." pg. 82-83
+
+    > "We learn, by direct association with what the word means, not only proper names of the people we know, class-names such as 'man' and 'dog,' names of sensible qualities such as 'yellow,' 'hard,' 'sweet,' and names of actions such as 'walk,' 'run,' 'eat,' 'drink,' but also such words as 'up' and 'down', 'in' and 'out,' 'before' and 'after,' and even 'quick' and 'slow'. But we do not learn in this way either complicated words such as 'dodecahedron' or logical words such as 'not,' 'or,' 'the,' 'all,' 'some.' Logical words, as we have seen, presuppose language; in fact, they presuppose what, in an earlier chapter we spoke of as 'atomic forms." pg. 83
+
+    > "One of the things that have seemed puzzling about language is that, in ordinary speech, sentences are true or false, but single words are neither. in the object-language this distinction does not exist. Every single word of this language is capable of standing alone, and, when it stands alone, means that it is applicable to the present datum of perception." 92
+
+    > "Let us now re-state the whole matter of the object-language.
+    > 
+    > An *object-word* is a clas of similar noises or utterances such that, from habit, they have become associated with a class of mutually similar occurrences frequently experienced at teh saem tiem as one fo the noises or utterances in question. That is to say, let A1, A2, A3, .. be a set of similar occurrences, and let a1, a2, a3, .. be a set of similar noises or utterances; and suppose that when A1 occurred you heard the noise a1, when A2 occurred you heard the noise a2, and so on. After this happened a great many times, you notice an occurrence An which is like A1, A2, A3, .. and it cuases you, by association, to utter or imagine a noise an which is like a1, a2, a3, .. . If, now, A is a class of mutually similar occurrences of which A1, A2, A3, .. An are members, and a is a class of mutually similar noises or utterances of which a1, a2, a3, .. an are members, we may say that a is a word which is the name of the class A, or 'means' the class A. This is more or less vague, since there may be several classes which satisfy teh above conditions for A and a. A child learning the object-language applies Mill's Canons of Induction, and gradually corrects his mistakes." pg. 92-93
+
+
+49. Reading around IMT revealed the following quote which supports the predicate functor outlook (in addition to the quote above where I omitted the last sentence of the paragraph "But in the object-language, upon which all others are based, every single word is an assertion." pg. 92:
+    > "At the lowest level of speech, the distinction between sentences and single words does not exist. At thsi level, single words are used to indicate teh sensible presence of what they designate. It is throught his form of speech that object-words acquire their meaning, and in this form of speech each word is an assertion. Anything going beyond assertions as to what is sensibly present, and even some assertions which do not do so, can only be effected by means of sentences; but if sentences contain object-words, what they assert depends upon the meaning of the ojbect words. There are sentences containing no object-wrods; they are those of logic and matheamtics. But all empirical statements contain object-words, or dictionary words defined in terms of them. Thus the meaning of object-words is fundamental in the theory of empirical knowledge, since it is thruogh them that language is connected with nonlinguistic occurrences in the way that makes it capable of expressing empirical truth or falsehood." pg. 32-33
+
+50. Instead of 'single-words' I adopt Quine's slight generalization to 'integral words or phrases' and instead of 'designate' (which I reserve, following Quine again, for singular terms) the generalization to 'denotes' e.g. 'red' denotes each red item one by one and is entirely divorced from 'red' designating the purported attribute named 'redness' or the purported extension named 'the class of red items'.
+
+## \#2025-0920-1701
+
+1. Went to 'Beautiful: The Carole King Musical' and loved each one of the songs.
+
+2. Link to Cormac McCarthy's tips on writing about science: <https://gwern.net/doc/science/2019-savage.pdf>
+
+3. I know that somehwere inside me is a writer. He got covered up a long time ago. When I was young I used to tell stories to my friends. They'd hang on every one of my words. We'd all be on the adventure together. Whether it was on the jungle gym or the bus ride home we had the best of times exploring my imagination. I feared that power.
+
+4. It came back to me for a bit during college. It was always there. Something like that never really goes away. Even if you get stuck on logic and science like me, there's always a piece of you that keeps the power of story telling alive.
+
+5. A poem I wrote for a college credit gave me a glimpse at what it would be like to have stuck with telling stories instead of doing science. It's only recently that I figured out I can do both. Or, better, I can do it all. Or, best, I can do whatever I set out to do. The limit of what I can do is what I set for myself.
+
+6. Most of the time I stick to the 'personal score card' method of Warren Buffett. My score card has been a bit too personal as of late. It's probably a good thing to compare and contrast with how others keep score just in case you might find something you like. Not that you have to worry about the scores they've got relative to yours.
+
+7. I know that I can write better.
 
 ## 2025-0917-1724
 
@@ -989,7 +1231,7 @@ Presumably, they are helpful enough that their tolerance and that of the difficu
     13. Many-to-many: 'many-to-many i j F' for 'and not injective i j not functive i j F'
     14. Entire: 'entire i j F' for 'each i some j F'
     15. Surjective: 'surjective i j F' for 'entire j i conv i j F'
-    16. Functional: 'functional i j F' for 'and functive i j F total i j F'
+    16. Functional: 'functional i j F' for 'and functive i j F entire i j F'
     17. Injectional: 'injectional i j F' for 'and functional i j F injective i j F'
     18. Surjectional: 'surjectional i j F' for 'and functional i j F surjective i j F'
     19. Bijectional: 'bijectional i j F' for 'and and functional i j F injectional i j F surjectional i j F'
