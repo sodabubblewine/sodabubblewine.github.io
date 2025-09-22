@@ -151,6 +151,13 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-0922-1646
+
+1. The notes
+    1.
+    2.
+    3. 
+
 ## \#2025-0922-1511
 
 This continues notes from [#2025-0921-1542](#2025-0921-1542) on the first volume of Whitehead and Russell's 'Principia Mathematica'.
@@ -194,7 +201,7 @@ Here are some of those parts:
 
     - This, along with some of the next quotes, strongly suggest that Russell was well aware that predicates (that is, predicates in my and Quine's sense, that is integral words or phrases such as relative clauses, verbs, etc.) are primitive in an important way.
     - What Russel calls 'predicates' are what I and Quine call one place predicates, and what Russell calls 'relations' are what I and quine call many place predicates.
-    - But, warning, there is a subtlety to what I just said. Russell's predicates and relations are like propositions i.e. they are, for him, something more than the predicate of a sentence as we are taught in elementary school grammar. I have previously addressed the problem of extensional and nonextensional contexts by weaving Carnap's explanations with Quine's in [#2025-0911-1654](#2025-0911-1654) where a mistake by Goldfarb in his "Deductive Logic" is corrected.
+    - But, warning, there is a subtlety to what I just said. Russell's predicates and relations are like propositions i.e. they are, for him, something more than the predicate of a sentence as we are taught in elementary school grammar. I have previously addressed the problem of extensional and nonextensional contexts by weaving Carnap's explanations with Quine's in [#2025-0820-1850](#2025-0820-1850) where a mistake by Goldfarb in his "Deductive Logic" is corrected.
     - I have yet to grasp Quine where Russell is coming from with his world of propositions, predicates, and relations, and this is something that I leave for later.
 
     > "Everything has the arrangement it has, and is incapable of re-arrangement." pg. 43
@@ -848,7 +855,7 @@ After great effort I have found that the following threefold distinction is key 
     >
     > 2b. Sentential constants. It is often burdensome to work with sentences that are entirely written out like 'Pa' or 'Rac', esxpecially if they are even longer or are repeated frequently in the same connection. We therefore use on occasion the letters 'A', 'B', 'C' as abbreviations for any sentences whatever of the symbolic language. These letters are called *sentential constants* (or: propositional constants). E.g. in a certain case 'A' might be taken as an abbreviation for 'Pa'; as soon as 'P' and 'a' are interpreted, 'A' is also interpreted. In our use of a sentential constant we will for the most part leave open what particular sentence it stands for as an abbreviation." pg. 4-6 ISA
 
-9. More examples from Carnap shall be forthcoming, but first, if the distinctions being raised, e.g. that between Quine and Carnap, are not clear or do not clearly present themselves as consequential, then a much more detailed explanation of the problems and solutions has already been given in the following entry on Goldfarb's "Deductive Logic" where a use and mention mistake is made in the very section on use and mention.
+9. More examples from Carnap shall be forthcoming, but first, if the distinctions being raised, e.g. that between Quine and Carnap, are not clear or do not clearly present themselves as consequential, then a much more detailed explanation of the problems and solutions has already been given in the following entry on Goldfarb's "Deductive Logic" where a use and mention mistake is made in the very section on use and mention: [#2025-0820-1850](#2025-0820-1850).
 
 10. Note, Carnap gets away with his symbolic methods in a way that Goldfarb does not: as long as Carnap does not claim anything more than symbolic logic as his subject then he is fine to carelessly deploy designations and names with impunity, but symbolic logic is not to be confused with schematic logic or pure logic (Carnap does make this confusion, but it is forgivable because it is a mistake in name and not a mixture of methods: his methods are strictly symbolic and do not rise to the schematic).
 
