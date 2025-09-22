@@ -151,6 +151,102 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-0922-1511
+
+This continues notes from [#2025-0921-1542](#2025-0921-1542) on the first volume of Whitehead and Russell's 'Principia Mathematica'.
+
+1. The last note was big and deep.
+My aim here is to summarize the conclusions.
+
+2. The new abbreviations of predicate functor logic introduced were:
+    1. counting quantifiers
+        1. 'just 0 n F' for 'each n not F'
+        2. 'just 1+k n F' for 'some n and F just k n and (n nip n) F not id n'  2. 'singular n F' for 'just 1 n F'
+    3. one-hot
+        1. 'one-hot 1 F' for 'F'
+        2. 'one-hot 1+k F .. G' for 'or and F (k or) .. not G and not F one-hot k .. G'
+
+3. The amended premises for the theory of grammar were:
+    1. and and and one-to-one 1 1 drops one-to-one 1 1 hems one-to-one 2 1 huhs
+    2. 'compound' for  ‘or or proj 0 1 0 drops proj 0 1 0 hems proj 0 2 0 huhs’
+    3. included compound one-hot 3 proj 0 1 0 drops proj 0 1 0 hems proj 0 2 0 huhs
+    4. and coextensive field drops field hems coextensive field hems field huhs
+
+4. In addition to the definition of 'compound' given above the following definitions are considered part of the theory of grammar:
+    1. 'grammatical' for 'field drops'
+    2. 'lexical' for 'and grammatical not compound'
+
+5. The constructional premises of the theory of denotation are the universal closures of
+    1. w pairs u with va nd w pairs x with y, if and only if u is identical to x and v is identical to y
+    2. x drops y and x denotes z, if and only if some items are (s, t, u, v, and w such that z pairs u with v, u pairs s with t, w pairs s with v, and y denotes w)
+    3. x hems y and x denotes z, if and only if some items are (p, q, r, s, t, u, v, and w such that z pairs u with v, u pairs s with t, s pairs q with r, w pairs u with p, p pairs r with v, and y denotes w)
+    4. w huhs x with y and w denotes z, if and only if some items are (f, g, q, r, s, t, u, and v such that z pairs u with v, v pairs s with t, q pairs r with t, r pairs f with g, f pairs u with s, and x denotes q nor y denotes q)
+
+6. The lexical premise of the theory of denotation follows the three abbreviations:
+    1. 'is-drops' for 'x such that x is identical to the (e such that each item is (y such that e denotes y, if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u paris s with t, s pairs q with r, and t drops r)))'
+    2. 'is-hems' for 'x such that x is identical to the (e such that each item is (y such that e denotes y if and only if some items are (q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, and t hems r)))'
+    3. 'is-huhs' for 'x such that x is identical to the (e such that each item is (y such that e denotes y, if and only if some items are (f, g, q, r, s, t, u, and v such that y pairs u with v, u pairs s with t, s pairs q with r, q pairs f with g, and t huhs r with g)))'
+    4. included or or is-drops is-hems is-huhs lexical
+
+7. There are still parts of the chapter 'Syntax, Sentences, and Parts of Speach' in Russell's "An Inquiry into Meaning and Truth" (IMT) which are relevant, e.g., to the introduction of the predicate 'x, y, and z such that x pairs y with z' and they are directly related with an otherwise confusing digression on the difference between symmetric, asymmetric, and non-symmetric predicates (non-symmetric predicates are asymmetric or not symmetric or asymmetric for Russell).
+Here are some of those parts:
+    > "Thus classifcatory propositions, or such as assign predicates, would seem to be really propositoins asserting similarity. If so, the simplest propositions are relational." pg. 40
+
+    - This, along with some of the next quotes, strongly suggest that Russell was well aware that predicates (that is, predicates in my and Quine's sense, that is integral words or phrases such as relative clauses, verbs, etc.) are primitive in an important way.
+    - What Russel calls 'predicates' are what I and Quine call one place predicates, and what Russell calls 'relations' are what I and quine call many place predicates.
+    - But, warning, there is a subtlety to what I just said. Russell's predicates and relations are like propositions i.e. they are, for him, something more than the predicate of a sentence as we are taught in elementary school grammar. I have previously addressed the problem of extensional and nonextensional contexts by weaving Carnap's explanations with Quine's in [#2025-0911-1654](#2025-0911-1654) where a mistake by Goldfarb in his "Deductive Logic" is corrected.
+    - I have yet to grasp Quine where Russell is coming from with his world of propositions, predicates, and relations, and this is something that I leave for later.
+
+    > "Everything has the arrangement it has, and is incapable of re-arrangement." pg. 43
+
+    - This is a nontrivial remark which comes at the end of a long digression into the problems related to 'types and tokens' as well as to the problems posed and solve by the recombic predicate functors. What exactly these problems are, in hindsight, and how exactly they are solved by predicate functors is something which I have yet to make clear. The following quote comes before this one.
+
+    > "When we observe that the order of words can be changed, and that we can say 'Caesar killed Brutus' just as easily as 'Brutus killed Caesar,' we are apt to think that the words are definite things which are capable of different arrangements. This is a mistake: the words are abstractions, and the verbal utterances can only have whichever order they do have." pg. 43
+
+    - Most of the book mixes the grammatical with the denotational and it is apt to since it is aimed at uncovering the origins of both, but it also makes it hard to separate concerns when he writes as in that last quote.
+
+    > "In a language like English, in which the order of the words is essential to the meaning of the sentence, we can put the matter of non-symmetrical relatoins as follows: Given a set of words which is capable of forming a sentence, it often happens that it is capable of forming two or more sentences of which one is true while the others are false, these sentences differing as tot he order of the words. Thus the meaning of a sentence, at any rate in some cases, is determined by the *series* of words, not by the *class*. IN such cases, the meaning of the wentence is not obtainable as an aggregate of the meanings of the several words. When a person knows who Brutus was, who Caesar was, and what killing is, he still does not know who killed whome when he hears the sentence 'Brutus killed Caesar'; to know this he requires syntax as well as vocabulary, since the form of the sentence as a whole contributes to the meaning." pg. 45
+
+    - Such considerations as those are essential to explaining the origins of the recombic predicate functors and the following quotes are part of that as well.
+    - I must mention that Russell, Carnap, and Quine's work is only half of the puzzle. The other half is firmly in Skinner's "Verbal Behavior".
+
+    > "The importance of atomic forms and their contradictories is that-- as we shall see-- all propositions, or at least all non-psychological propositions, justified by observation without inference, are of these forms. That is to say, if due care is taken, all teh sentences which embody empiral physical data will assert or deny propositions of atomic form. All other physical sentences can theoretically be either proved or disproved (as the case may be), or rendered probably or improbable, by sentences of these forms; and we ought not to include as a datum anything capable of logical proof or disproof by means of other data. But this is merely by way of anticipation.
+
+    - This is largely my conclusion as well, though probably and improbability are part of the theory and have no part to play in logic.
+    - Skinner has done more to make clear the behaviors that compose scientific repertoires and hence the practices that build and maintain them. Though Russell spends a great deal of time in 'Human Knowledge' attempting to cover similar scope, he does as he has done and makes inaccurate reports of what people do in the circumstances he describes.
+    - Quine fails to accomodate something like Russell's early reliance on thoughts and feelings and that is a shame because Skinner's work shows just how to get the best of both worlds while also given a plausible access point to their origins in precisely the ways that Russell demands e.g. preverbal knowledge and perception.
+
+    > In a sentence of atomic form, expressed in a strictly logical language, there are a finite number of proper names (any finite number from one upwards), and there is one word which is not a proper name. .. We can distinguish proper names from other words by the fact that a proper name can occur in every form of atomic sentence, whereas a word which is not a proper name can only occur in an atomic sentence which has the appropriate number of proper names. .. Sometimes for the sake of uniformity, predicates are called monadic relation words." pg. 53-54
+
+    - Had the last sentence gone the other way, had relations been recast as many place predicates instead of predicates as one place (monadic) relations, then there would be far greater identity between my explanations and Russell's (and Quine's).
+    - Proper names are not a part of predicate functor logic and they are replaced, rightly or wrongly (though I think rightly), by one place predicates which denote one and only one thing, this being the origin of talk of proper names (aka singular terms) purporting to designate one and only one item. The gains to this transition from singular terms to general terms, from names to predicates, opens up new avenues for analyzing just what it is that 'purporting to designate one and only one thing' can be paraphrased as in a logical language e.g. the descriptional premises of Quine's elimination of singular terms, the consequences of the same to so called free logics, and the comparison of such methods with Peano's method of introducing singular descriptions as undefined notation.
+    - Quine uses something like this method of sortign out singular terms from pronouns in the chapter on elimination of singular terms in "Methods of Logic 4th edition". I have been inclined to distinguish between free and bound pronouns, or, if terminology more familiar is appropriate, the difference between dangling pronouns and proper, or perhaps firm or even full, pronouns.
+    - Thankfully all such problems are purportedly eliminated by predicate functor logic e.g. predication with a pronoun is defined contextually as the appropriate existential cropping of a conjunction with a singular predicate from a supplemented lexicon as is consistent with Quine's grammatical definition of validity.
+
+    > "I come now to the parts of speech, other than conjunctions, that cannot occur in atomic forms. Such are 'a', 'the', 'all', 'some', 'many', 'none'. To these, I think 'not' should be added; but this is analogous to conjunctions." pg. 54
+
+    - This is a critical part of the chapter and of Principia Mathematica which I have not yet fully dealt with: the predicate functors are not part of the primary language, and the primary langauge is to be identified entirey with the lexicon in my interpretation. The abbreviations of 'is-drops', 'is-hems', and 'is-huhs' are bound up with Russell's theory of types and with his definition of classes in terms of the hierarchy of languages.
+    - This will take me some more time to untangle.
+
+    > "Propositions containing 'all' or 'none' can be disproved by empirical data, but not proved except in logic and mathematics." pg. 55
+
+    - A controversial and strong sentence. One that must be further reflected upon relative to Quine's 'intersubjective agreement betwee qualified witnesses'.
+
+    > "Until we have examined everything, we cannot be sure but that something unexamined is human but immortal. Since we cannot examine everything, we cannot *know* general propositions empirically." pg. 55
+
+    - This is precisely the kind of problem that is better seen through Skinner's analysis of verbal behavior than through Russell's. There's just not much to go on in Russell's explanations beyond what he assumes you share in common with him e.g. his similar phenominological convictions. I do not personally have any more connection with his reports of perceiving and knowing than I do with those who speak with me about their contact with gods or ghosts.
+
+    > "No proposition containing *the* (in the singular) can be strictly proved by empirical evidence. .. To prove that Scott was the author, we should have to survey the universe and find that everything in it either did not write 'Waverly' or was Scott. This is beyond our powers." pg. 55
+
+    > "Empirical evidence can prove propositions containing 'a' or 'some', and can disprove propositions containing 'the', 'all', or 'none'. It cannot prove propositions containing 'a' or 'some', and cannot prove propositions containing 'the', 'all', or 'none'. If emprical evidence is to lead us to disbelieve propositions about 'some' or to believe propositions about 'all', it must be in virtue of some principle of inference other than strict deduction-- unless, indeed, there should be propositions containing the word 'all' among our basic propositions." pg. 55-56
+
+    - These are strong claims and are again the kind that are better put through Skinner's alternative analysis in 'Verbal Behavior'. It is so easy to speak of 'believing this or that' without having shown that anything more than what you have done has occurred. I am no more a mind reader than any human has the power to survey the universe as Russell says.
+
+8. A final remark before I end this note.
+Though I have been quoting from IMT, I am only doing so as much as Principia Mathematica (PM) is an application of the methods of IMT to mathematics.
+IMT was written after PM but was anticipated in large part by Russell's earlier work "The Principles of Mathematics".
+There is no way to tackle these things without testing them on mathematics: it is the simplest of the sciences to subject to a logical analysis and its many linguistic problems are characteristic of problems which are missed by the other sciences which are more focused on the nonverbal world.
+
 ## \#2025-0921-1542
 
 This continues notes from [#2025-0917-1724](#2025-0917-1724) on the first volume of Whitehead and Russell's 'Principia Mathematica'.
@@ -279,7 +375,7 @@ In addition to be true or false, indicative sentences have two other properties 
     3. w huhs x with y and w denotes z, if and only if some items are (f, g, q, r, s, t, u, and v such that z pairs u with v, v pairs s with t, q pairs r with t, r pairs f with g, f pairs u with s, and x denotes q nor y denotes q)
 
 25. For now, I must leave aside the question as to why there is suddenly a predicate 'x, y and z such that x pairs y with z' and simply say that the following extensional premise of ordered pairs is included among those of the theory of denotation:
-    1. each item is (u, v, w, x, and y such that w pairs u with v and w pairs x with y, if and only if u is identical to y and v is identical to y)
+    1. each item is (u, v, w, x, and y such that w pairs u with v and w pairs x with y, if and only if u is identical to x and v is identical to y)
 
 26. Since it was already hinted at repeatedly in the chapter 'syntax, sentences, and parts of speech', I can say that the constructive premises are, for Russell, a step up from the lexical premises.
 
