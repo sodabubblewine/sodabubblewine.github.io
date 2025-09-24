@@ -151,12 +151,212 @@ Use a thermometer.
 
 # NOTES
 
-## \#2025-0922-1646
+## \#2025-0923-2200
 
-1. The notes
-    1.
-    2.
-    3. 
+1. A new attempt to write on the logic of my programming environment.
+
+2. The basic items are ordered pairs.
+In my current implementation I tame an array into a few basic functions for allocating fresh ordered pairs and collecting any of the garbage ones every so often.
+
+3. The way I do that is complicated and not important in the beginning.
+It's easier to build everything ontop of a programming language that takes care of its own garbage.
+
+4. There are many programming langauges.
+I'm picking javascript because you can play with it in any modern browser that lets you mess with their console.
+
+5. Everything starts with a special pair that happens to have itself as its left and right part.
+We call it 'Nil'.
+    ```
+    var Nil;
+    ```
+
+6. There are three basic functions: Pair, Left, and Right.
+Pair takes two arguments named 'l' and 'r' and returns a javascript array whose zeroth item is l and whose first item is r.
+    ```
+    function Pair(l,r){return [l,r];}
+    ```
+
+7. Left takes one argument named 'p' that returns Nil if p is identical to Nil and otherwise returns the zeroth item of p.
+The argument to the function named 'Left' may not have a zeroth item.
+In that case, it return something unexpected.
+Since everything is built from Nil there is no need to worry about the unexpected.
+    ```
+    function Left(p){if(p==Nil)return Nil; else return p[0];}
+    ```
+
+8. Right is like Left but returns the first item:
+    ```
+    function Right(p){if(p==Nil)return Nil; else return p[1];}
+    ```
+
+9. To save space, 'P' is short for 'Pair', 'L' is short for 'Left', and 'R' is short for 'Right'.
+    ```
+    function P(l,r){return Pair(l,r);}
+    function L(p){return Left(p);}
+    function R(p){return Right(p);}
+    ```
+
+10. There are a few common abbreviations that save even more space and make it easy to get at common parts of binary trees e.g. the Left part of the Left part of a Pair.
+    ```
+    function LL(p){return L(L(p));}
+    function LR(p){return L(R(p));}
+    function RL(p){return R(L(p));}
+    function RR(p){return R(R(p));}
+    function LLL(p){return L(LL(p));}
+    function LRL(p){return L(RL(p));}
+    function RLL(p){return R(LL(p));}
+    function RRL(p){reutrn R(RL(p));}
+    ```
+
+11. Actually, everything introduced thus far is really all just helper functions for defining the tiny set of basic functions from which everything is actually defined.
+I have been able to get the basic functions down to only three in number, but they are very hard to understand without first getting familiar with a larger number of basic functions.
+No two of the larger number of basic functions can be defined in terms of the others (the same is true of the smaller number).
+
+12. All the basic functions take no arguments.
+The all operate on the tree, named 'T' for short.
+The tree starts as Nil and is grown from there.
+    ```
+    var T=Nil;
+    ```
+
+13. The Left part of the tree is called 'the stack' or 'the pile', and the Right part of the tree is called 'the list'.
+The Right part of the pile is called 'the top'.
+So executing 'L(T)' returns the pile and executing 'R(T)' returns the list.
+Executing 'RL(T)' returns the top and executing 'LR(T)' returns the item that begins the list.
+
+14. The first basic op is 'drop'.
+It gets rid of the top of the tree.
+It does this by building the tree anew from the rest of the pile and the entirety of the list.
+    ```
+    function drop(){T=P(LL(T),R(T));}
+    ```
+
+15. The second basic op is 'push'.
+It pushes the item that begins the list onto the top of the pile.
+    ```
+    function push(){T=P(P(L(T),LR(T)),RR(T));}
+    ```
+
+16. The third is 'pop' and it pops the top onto the beginning of the list.
+    ```
+    function pop(){T=P(LL(T),P(RL(T),R(T)));}
+    ```
+
+17. The fourth is 'dup' and it duplicates the top.
+    ```
+    function dup(){T=P(P(L(T),RL(T)),R(T));}
+    ```
+
+18. The fifth is 'swap' and it swaps the top two items on the pile.
+    ```
+    function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+    ```
+
+19. Any number of copies of any item in the tree can be put anywhere in the tree with just drop, push, pop, dup, and swap.
+Together they are called a recombically complete set of operations because they can recombine the tree into any other tree that has exactly the same items as it does.
+
+20. The smallest recombically complete set of operations I've uncovered has only three ops.
+If you find a smaller set then tell someone about it (hopefully it gets back to me one way or another).
+It would be a really big deal if you can find fewer.
+I'll reveal my smallest set later on.
+As a hint, two of them are drop and push, and the third is almost like the operation named 'over' that is introduced next.
+
+21. The next two operations are called 'pair' and 'part', note that 'pair' has a lowercase 'p'.
+The new op named 'pair' does what Pair does, but now only with the top two items on the tree.
+There are two ways that it could be defined.
+The first way pairs the top with the second from the top, and the other pairs the second from top with the top.
+They are the same except for a swap.
+
+22. I've found it useful to use the other way, pair the second from the top with the top, but if you find the other way more useful then go for it but make sure to keep track of your lefts from your rights.
+    ```
+    function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+    ```
+
+23. Part takes apart the top pair by putting its left part under its right part at the top of the pile.
+    ```
+    function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+    ```
+
+24. The next is named 'nil' that puts Nil onto the top of the pile.
+    ```
+    function nil(){T=P(P(L(T),Nil),R(T));}
+    ```
+
+25. Last, but not least, is 'mux' which is short for 'multiplexor' which is a scary word for 'selector'.
+It replaces the top three items with one item depending on whether the top is Nil or not.
+If the top is Nil then the top three are replaced by the second from top, otherwise they are replaced by the third from top.
+    ```
+    function mux(){T=P(P(L(LLL(T)), RL(T)==Nil ? RLL(T) : R(LLL(T))), R(T));}
+    ```
+
+26. The definition of mux looks a lot worse than it is.
+It does showcase the number of parentheses that are saved by the little abbreviations made earlier.
+
+27. Together pair, part, nil, and mux are the nonrecombic operations.
+Everything that they do can be done by just one basic op.
+That single op can be absorbed into any recombically complete collection of ops.
+The trick is to just do everything that pair, part, nil, and mux do and then sort through it all to get at only the things you want using the recombically complete set.
+
+28. All together, the helper functions and the basic ops are defined as follows:
+    ```
+    function P(l,r){return Pair(l,r);}
+    function L(p){return Left(p);}
+    function R(p){return Right(p);}
+
+    function LL(p){return L(L(p));}
+    function LR(p){return L(R(p));}
+    function RL(p){return R(L(p));}
+    function RR(p){return R(R(p));}
+    function LLL(p){return L(LL(p));}
+    function LRL(p){return L(RL(p));}
+    function RLL(p){return R(LL(p));}
+    function RRL(p){reutrn R(RL(p));}
+
+    function drop(){T=P(LL(T),R(T));}
+    function push(){T=P(P(L(T),LR(T)),RR(T));}
+    function pop(){T=P(LL(T),P(RL(T),R(T)));}
+    function dup(){T=P(P(L(T),RL(T)),R(T));}
+    function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+    function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+    function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+    function nil(){T=P(P(L(T),Nil),R(T));}
+
+    function mux(){T=P(P(L(LLL(T)), RL(T)==Nil ? RLL(T) : R(LLL(T))), R(T));}
+    ```
+
+29. As strange as these basic operations may seem, they are actually designed from the basic building blocks of logic.
+Specifically, they are designed from predicate functor logic which is the same as truth-functional and quantificational logic but without any variables.
+This is significantly different from, e.g., Moses Schönfinkel and Haskel Curry's combinators (which are sadly coupled with the unhappy phrase 'combinatory logic' which is actually not logic but a theory of function application).
+Elsewhere in these notes I've developed predicate functor logic from multiple starting points, and shall not go into it any further here.
+
+30. The rest of my programming environment is built from these simple operations.
+Hopefully I get a chance to explain how in future notes.
+
+## \#2025-0923-1940
+
+1. The following notes set up a theory of pinhole cameras (aka camera obscuras):
+    1. [#2025-0828-1649](#2025-0828-1649)
+    2. [#2025-0829-1227](#2025-0829-1227)
+    3. [#2025-0830-1425](#2025-0830-1425)
+    4. [#2025-0902-1648](#2025-0902-1648)
+
+2. They are part of my work on going through programs I wrote and subjecting them to a logical analysis with an aim to porting them to a predicate functor logic programming language based on Quine's main method.
+
+3. All the way back in [#2025-0707-1949](#2025-0707-1949), I started to explain what I there called 'my stack based programming language'.
+It's a bit strange to call it 'stack based' when the basic items are ordered pairs.
+While the raw material are ordered pairs, the methods are like those of stack based langauges descendant from Charles Moore's Forth.
+
+4. The ordered pairs are dealt with uniformly by way of K. P. Lee's 1980 'A Linear Algorithm for Copying Binary Trees Using Bounded Workspace'.
+I mentioned it in note already mentioned, and again when it came up among a list of papers related to garbage collection in LISP.
+That note is [#2025-0904-1549](#2025-0904-1549).
+
+5. Lee's algorithm is delightful and appears to be almost as perfect as one can hope when it comes to copying binary trees.
+
+6. It turns into a garbage collection algorithm in my programming language because everything there part of a single binary tree that need only be copied every once and a while.
+If the orderd pairs are stored in an array then you can only use half of the array at any one time, though there are some access points to better methods which are not of interest to me now.
+
+7. The entire problem of garbage collection is an important one.
 
 ## \#2025-0922-1511
 
