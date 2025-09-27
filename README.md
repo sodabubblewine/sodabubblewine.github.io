@@ -211,25 +211,27 @@ This continues my explanation of my programming environment from [#2025-0923-220
     13. `function Right(p){return isNil(p) ? Nil : p[1];}`
     14. The functions Left and Right are defined with respect to Nil because it is special in that it is identical to its left and right parts.
     15. The functions 'P', 'L', and 'R' are abbreviations for 'Pair', 'Left', and 'Right'.
-    16. ```
-        function P(l,r){return [l,r];}
-        function L(p){return Left(p);}
-        function R(p){return Right(p);}
-        ```
+    16. 
+    ``` 
+    function P(l,r){return [l,r];}
+    function L(p){return Left(p);}
+    function R(p){return Right(p);} 
+    ```
+
     17.  The next abbreviations help get at important parts of binary trees e.g. 'LRL(p)' returns the left part of the right part of the left part of p:
-        - ```
-          function LL(p){return L(L(p));}
-          function LR(p){return L(R(p));}
-          function RL(p){return R(L(p));}
-          function RR(p){return R(R(p));}
-          function LLL(p){return L(LL(p));}
-          function LRL(p){return L(RL(p));}
-          function RLL(p){return R(LL(p));}
-          function RRL(p){return R(RL(p));}
-          function LLLL(p){return L(LLL(p));}
-          function RLLL(p){return R(LLL(p));}
-          ```
-    
+    ```
+    function LL(p){return L(L(p));}
+    function LR(p){return L(R(p));}
+    function RL(p){return R(L(p));}
+    function RR(p){return R(R(p));}
+    function LLL(p){return L(LL(p));}
+    function LRL(p){return L(RL(p));}
+    function RLL(p){return R(LL(p));}
+    function RRL(p){return R(RL(p));}
+    function LLLL(p){return L(LLL(p));}
+    function RLLL(p){return R(LLL(p));}
+    ```
+
     18. Those are all the helper functions that are needed to set up the basic operations of my programming environment.
     19. My programming environment is a single tree called 'the tree', or 'Tree', or, just, 'T'.
     20. The left part of Tree is called 'the stack' or, better, 'the pile', or, just, 'Pile'. The right part of Pile is called 'the top' or, just, 'Top'. The left part of Pile is called 'the rest of the pile' and the right part of the rest of the Pile is called 'the second from top'.
