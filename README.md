@@ -151,6 +151,261 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-0926-1511
+
+I'm a closeted storyteller. When I was young I used to tell everyone stories. Sometimes my younger sister would ask me to tell her a bedtime story. We'd get under the covers with a flashlight and I'd make up a story about a princess who could fly and talk to dragons. Somehow I made it so that everyone was part of the story. If my sister wanted the princess to explore a cloud city then that became part of the dream world.
+
+Not many of those early stories stuck with me. Everything gets forgotten eventually.
+
+As I grew up, fewer people listened to my stories. They told me that they didn't have time to listen or that I was beign weird for weaving fantasy and fiction into the real problems of the world. THe chores, the homework, the stuff that we all have to do. It's that last one. The stuff that we have to do that alwasy got me into trouble. I didn't see what it was that we had to do. What we were doing was all that we had to do. This moment was the one to live in. The next one hasn't happened. The old ones have made their contribution and are gone. WE're here now and we're living in a story world. At least I was. 
+
+It's really hard for me to write about losing touch with my storyteller. Letting go of the world that is right in front of me is now something I struggle to do. It's strange to look back and see a boy that ran with the wind and smiled even when he fell down.
+
+That storyteller never died. He just got gobbled up by a world that he didn't understand. He grew into a life where a new kind of story could be told, at least for a while. Science, math, logic, and all those great things are stories. They're the best stories as far as I'm concerned. Logic is the best story I've ever heard, and it's one that I keep telling myself over and over again. There's always something new to it. But, there has also always been something missing from it. Well, it's not logic that was missing something, it was me.
+
+When you tell stories at the wrong time or in the wrong way you start to think that the stories are wrong or that their timing is wrong. The people around you are the ones who are wrong. Well, they're not wrong, so much as they are unprepared for the strengths of a scintillating storyteller. My powers of distraction are still profound to this day. That's all from my fabled roots.
+
+Now I know that I let the world tell me my stories were wrong without thinking it over for myself first. It's not as if I could when I was young. No one taught me how to think for myself so soon. By the time I was taught to think for myself I had lost something of the spark. If there is one thing I could tell my younger self it's that it's never too late to be what you could have been. You don't ever really lose those sparks, you just lose sight of them. They're off in the distance or tucked somewhere you haven't been for a long while. Maybe you've even forgotten they were ever there. But, that still doesn't stop you from being and becoming who you could have been. It's almost magical. It is if you let it be.
+
+It feels embarassing for me to write like this, but I know that this is how I have to write. I don't meant that this is the way to write. That's a different problem entirely. E. B. White and the Olgilvey folks can tell you how to do that. Anyone can read them and work on writing well. What I'm talking about is how to write like I write. Not like I write when I'm worried about who might be looking over my shoulder or who might tell me that I'm being weird for tellign stories this way or that now is not the time for this because there are much more important things to do than doddle.
+
+Let me go back to those earlier days. Those are teh days where the world crept in before I was ready to fight it off with with whatever I had on hand. Every teacher I ever had knew that I was a talker. If you were one of my teachers then I'm so sorry for what I must have done. There wasn't a moment that I would burst into some seemingly endless story about whatever it was that we were working on. I'd just ask questions "So is it like this? blah blah blah..." as if I was the only one in the room who was seeing this new part of the world that was just being revealed to us.
+
+Even now I see how silly it was. The principle knew me by name, I was outside their office more often than I can recall much less count. I wasn't even there to 'see the principle'. My poor teachers sent me there just for a moment of silence. There wasn't a moment that I didn't have a book in my hand. My back against the wall outside the principle's office blocking the hallway. Even when I was out of the way I couldn't help but get in the way. That's how it goes for storytellers. I know that now. I don't know how I could have known that then.
+
+It's confusing to me now that the people of the world haven't figured out how to deal well with each other. Given how old the human species is, and how many children that have been born and raised throughout history, I'd expect at least some of the basics to be firmly figured out. This whole discovering how to deal wtih each other, whether young or old, as if there only started being grandparents and grandchildren is outrageous. It's not irrational to expect that humanity should have made some progress since we slipped and felled our nearest ancestors into extinction. Here's to the next few millennia.
+
+But, forget all that. Let's get back to me, me, and me. That's all a storyteller cares about. Are you, the listener, attending to me? Are you listening? Are you with me? Are you laughing, smiling, frowning, crying or cackling? Are you responding in any way at all to me? If not, why not? Why not!
+
+
+
+
+## \#2025-0924-2109
+
+This continues my explanation of my programming environment from [#2025-0923-2200](#2025-0923-2200).
+
+1. Sumarizing and correcting the last note:
+    1. If you can access the console of your internet browser then you can play with my javascript programs.
+    2. Everything is an ordered pair. Ordered pairs are identical if and only if their left parts are identical and their right parts are identical. Ordered pairs are also called binary trees because they have a left branch and a right branch.
+    3. The function named 'Pair' takes an argument named 'l', short for 'left part', and an argument named 'r', short for 'right part', and returns an array whose zeroth item is l and whose first item is r.
+    4. `function Pair(l,r){return [l,r];}`  
+    5. There is a special ordered pair called 'Nil'. It is special because it is identical to its left part and its right part. To get it to work in this special way in javascript, it is defined as a new object that is empty. In a language other than javascript, Nil just has to be a unique item so that nothing else accidentally ends up identical to it for some other reason.
+    6. `var Nil = new Object();`
+    7. The function named 'isNil' takes an argument named 'p', short for 'ordered pair', and returns true if p is identical to Nil otherwise it returns false. I neglected to introduce this function in the previous note. It rarely makes a big difference, but because Nil is special it sometimes takes a special function to check whether something is identical to Nil or not.
+    8. `function isNil(p){return p==Nil;}`
+    9. The function named 'Left' takes one argument named 'p' and returns Nil if isNil(p) is identical to true and otherwise returns the zeroth item of p. If p does not have a zeroth item it returns something unexpected, but since everything is built from Nil nothing unexpected ever happens.
+    10. The definition of Left uses the 'conditional (ternary) operator'. It looks like this `x ? y : z`. When it's executed, if x is true it returns y, otherwise it returns z. It's helpful because you can put it places where `if(x) y; else z;` doesn't work. Find more details elsewhere.
+    10. `function Left(p){return isNil(p) ? Nil : p[0];}
+    11. The function 'Right' is like Left but returns the first item rather than the zeroth one.
+    12. `function Right(p){return isNil(p) ? Nil : p[1];}`
+    13. The functions Left and Right are defined with respect to Nil because it is special in that it is identical to its left and right parts.
+    14. The functions 'P', 'L', and 'R' are abbreviations for 'Pair', 'Left', and 'Right'.
+    15. ```
+        function P(l,r){return [l,r];}
+        function L(p){return Left(p);}
+        function R(p){return Right(p);}
+        ```
+    16.  The next abbreviations help get at important parts of binary trees e.g. 'LRL(p)' returns the left part of the right part of the left part of p:```
+        function LL(p){return L(L(p));}
+        function LR(p){return L(R(p));}
+        function RL(p){return R(L(p));}
+        function RR(p){return R(R(p));}
+        function LLL(p){return L(LL(p));}
+        function LRL(p){return L(RL(p));}
+        function RLL(p){return R(LL(p));}
+        function RRL(p){return R(RL(p));}
+        function LLLL(p){return L(LLL(p));}
+        function RLLL(p){return R(LLL(p));}
+        ```
+    17. Those are all the helper functions that are needed to set up the basic operations of my programming environment.
+    18. My programming environment is a single tree called 'the tree', or 'Tree', or, just, 'T'.
+    19. The left part of Tree is called 'the stack' or, better, 'the pile', or, just, 'Pile'. The right part of Pile is called 'the top' or, just, 'Top'. The left part of Pile is called 'the rest of the pile' and the right part of the rest of the Pile is called 'the second from top'.
+    20. The right part of Tree is called 'the list', or, just, 'List'. 
+    21. There are probably better names for all of these things but I really haven't worked on that yet.
+    22. Tree starts out identical to Nil.
+    23. `var T=Nil;`
+    20. Everything can be done with nine basic operations that change and grow the tree. Elsewhere I've shown that at most three operations are needed to do everything, but they are obscure at first.
+    21. The nine are divided into two collections: the recombic and the nonrecombic.
+    22. There are five recombic operations: drop, dup, push, pop, and swap.
+    23. They are called 'recombic' because each of them 'recombines' the items in the tree e.g. dup puts a duplicate of the top of the pile onto the pile.
+    24. The five recombic operations are recombically complete: the can be used to change one tree into any other that has exactly the same fruit.
+    25. I've not yet said what the fruit of a tree are exactly. It's a bit technical, and I'm trying to avoid being technical because most people don't like technical explanations.
+    26. The right part of the Pile, i.e. the top of the tree, is a fruit. The right part of the rest of the pile is a fruit too. The right part of the left part of the rest of the pile is an fruit as well, and so on. If you go down the left parts of the tree and then look at a right part then you're looking at a fruit. These are not all the fruits of the tree.
+    27. The left part of List is an fruit. The left part of the right part of the list is an fruit. The left part of the right part of the right part of the list is an fruit, and so on. If you go down the right parts of the tree and then look at a left part then you're looking at an fruit.
+    28. All together, the fruits of the tree are the fruits of the left part and the fruits of the right part.
+    29. Fruits can be confusing because all of the items in my programming environment (at least the idealized pure version) are the same stuff as the tree is made of.
+    30. Everything can be built from nine basic ops. Elsehwere I've shown that everything can be built from at most three basic ops. The nine are easier to start with than the three.
+    31. There are five operations called 'the recombic ops' because with them you can make any tree from any other tree that has exactly the same kinds of fruit.
+    32. The first is called 'drop': it drops the top from the tree.
+    33. `function drop(){T=P(LL(T),R(T));}`
+    34. The second is called 'dup': it puts a duplicate of the top onto the pile.
+    35. `function dup(){T=P(P(L(T),RL(T)),R(T));}`
+    36. The third is called 'pop': it pops the top of the tree off of the pile and onto the beginning of the list.
+    37. `function pop(){T=P(LL(T),P(RL(T),R(T)));}`
+    38. The fourth is called 'push': it undoes pop by pushing the fruit at the beginning of the list onto the top of the pile.
+    39. `function push(){T=P(P(L(T),LR(T)),RR(T));}`
+    40. The fifth, and last basic recombic operation, is called 'swap': it swaps the top two fruits on the pile.
+    41. `function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}`
+    42. There are four nonrecombic operations: nil, pair, part, and mux. Although mux is entirely new, this is not the case for nil, pair, and part. They do what P, L, and R do, but on the tree.
+    43. The first nonrecombic operation is called 'nil': it puts Nil atop the pile.
+    44. `function nil(){T=P(P(L(T),Nil),R(T));}`
+    45. The second is called 'pair': it pairs the second from top of the pile with the top of the pile.
+    46. `function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}`
+    47. The third is called 'part': it takes apart the pair at the top of the pile and puts its left part underneath its right part which is now the new top.
+    48. `function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}`
+    49. The last operation is called 'mux': it replaces the top three fruits of the pile with the second from top if the top is identical to Nil and otherwise with the third from top.
+    50. `function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}`
+    51. As I go on explaining things as simply as I can, it may end up that mux is too complicated to introduce as part of the entry level basic operations. I will do my best to make such a simplifying change if it occurs.
+
+2. All together, the code that has been written thus far is as follows:
+    ```
+function Pair(l,r){return [l,r];}
+
+var Nil = new Object();
+function isNil(p){return p==Nil;}
+
+function Left(p){return isNil(p) ? Nil : p[0];}
+function Right(p){return isNil(p) ? Nil : p[1];}
+
+function P(l,r){return Pair(l,r);}
+function L(p){return Left(p);}
+function R(p){return Right(p);}
+
+function LL(p){return L(L(p));}
+function LR(p){return L(R(p));}
+function RL(p){return R(L(p));}
+function RR(p){return R(R(p));}
+function LLL(p){return L(LL(p));}
+function LRL(p){return L(RL(p));}
+function RLL(p){return R(LL(p));}
+function RRL(p){return R(RL(p));}
+function LLLL(p){return L(LLL(p));}
+function RLLL(p){return R(LLL(p));}
+
+var T=Nil;
+function drop(){T=P(LL(T),R(T));}
+function dup(){T=P(P(L(T),RL(T)),R(T));}
+function pop(){T=P(LL(T),P(RL(T),R(T)));}
+function push(){T=P(P(L(T),LR(T)),RR(T));}
+function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+function nil(){T=P(P(L(T),Nil),R(T));}
+function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+
+function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}
+```
+
+3. The rest of the operations are defined from these basic ones.
+
+4. This is not entirely true. At the end, when we must leave our pure world of pairs, we must find a way to link back up with reality. Such operations as deal with input and output are not too complicated e.g. some versions of Charles Moore's Forth work with just two such functions called 'key?' (which returns true if there is a key press from the programmer waiting to be dealt with and if there is it puts the name of the key pressed somewhere convenient, otherwise it returns false) and 'emit' (which sends a character to the host system). Another minimal input and output method is that of Paul Grahams bel <https://www.paulgraham.com/bel.html> with one operation that sends a bit and another that gets a bit if there's one waiting at the door.
+
+5. Some of first defined operations are helpful recombic ones: nip and over.
+
+6. The op called 'nip' drops the second from top fruit from the tree.
+
+7. `function nip(){pop(); drop(); push();}`
+
+8. The op called 'over' duplicates the second from top of the pile and puts it ontop of the pile.
+
+9. `function over(){pop(); dup(); push(); swap();}`
+
+10. Next is an op named 'dig': it moves the second from top of the pile to the beginning of the list.
+
+11. `function dig(){over(); pop(); nip();}`
+
+12. Next, 'bury': it buries the top of the pile under the two fruit below it.
+
+13. `function bury(){dig(); dig(); push(); push();}`
+
+14. Next, 'unbury': it undoes 'bury'.
+
+14. `function unbury(){bury(); bury();}`
+
+15. Who knew that two buries makes an unbury? What this means is that if you bury three times in a row then you get right back to where you started. There's a name for that.
+
+16. Next 'nop': short for 'no op' as in 'an operation that appears to do nothing at all'. It's not really used except when you want to mention that you're wasting time doing nothing.
+
+17. `function nop(){bury(); unbury();}`
+
+18. So, all together, the defined recombic operatoins are:
+    ```
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function nop(){bury(); unbury();}
+    ```
+
+19. Next are the defined nonrecombic operations e.g. left, right, enlist, and enpile.
+
+20. Just like 'pair', the op named 'left' does what Left does but to the top of the tree i.e. it replaces the top of the tree with its left part.
+
+21. `function left(){part(); drop();}`
+
+22. The op called 'right' does the similar.
+
+23. `function right(){part(); nip();}`
+
+24. Since everything in the tree is made from Nil, then if you go down the right parts of the tree you'll eventually hit Nil. This means that the end of the list is Nil. Similarly, if you go down the left parts of the tree you'll eventually hit Nil, and this means that Nil is the end of the pile.
+
+25. From this happy accident, we make a convention: lists end down their right parts with Nil and piles (aka stacks) end down their left parts with Nil.
+
+26. The definitions of enlist and enpile follow this convention and put the top into a new list or a new pile.
+
+27. `function enlist(){nil(); pair();}`
+
+28. `function enpile(){nil(); swap(); pair();}`
+
+29. The sequence of two operations, 'swap(); pair();', at the end of the definition of enpile is sometimes given a special name: cons. This comes down from the programming language LISP.
+
+30. It might be better to put the definitions of enlist and enpile later because they are really only interesting when you start prepending and appending things, which is not so easy when all you have is mux.
+
+31. Next is the all important truth-value operations. They are all derived from 'nor'. Nil is truth i.e. the truth-value of true. Everything other than Nil is falsehood i.e. the truth-value of false. So, the op named 'nor' is Nil if the top nor the second from top is Nil.
+
+32. `function nor(){dup(); mux();}`
+
+33. The rest of the truth-value operations are defined as follows
+    ```
+function nor(){dup(); mux();} // joint denial
+function not(){dup(); nor();} // negation
+function or(){nor(); not();} // alternation
+function IF(){not(); or();} // converse conditional
+function nif(){IF(); not();} // complementary converse conditional
+function nfi(){swap(); nif();} // complementary conditional
+function fi(){nfi(); not();} // conditional
+function nand(){not(); fi();} // alternative denial
+function and(){nand(); not();} // alternation
+function xor(){over(); over(); nand(); bury(); or(); and();} // exclusive alternation
+function iff(){xor(); not();} // biconditional
+```
+
+34. Technically, those operations are better described as some of the bit operations, where Nil is treated as the bit named '1' and everything else is treated as the bit named '0'. Even better, they are some of the remainders of polynomials divided by two. For more on that read R. L. Goodstein's 1962 "Fundamental Concepts of Mathematics".
+
+35. That's it for the simplest of the defined operations. I could define the rest of the bit operations, e.g. half adder, but that isn't really important right now.
+
+36. I have reached the point where I must either double down on sticking with mux or allowing for another primitive. What I'll do is go ahead with the shim and then go through why it seems natural at first but breaks all the rules.
+
+37. I just spent about twenty minutes thinking this all over and it occurred to me that mux was not what I planned it to be. That's not a problem though because an operation like mux helps anyway.
+
+38. Now that all of the basic operations and the basic definitions have been assembled the problem to solve is this: how do we make these operations run themselves?
+
+39. So far, the operation of defining operations has been offloaded onto the native environment i.e. javascript. Every time we want to define a new operation from old ones we have to write `function` followed by the defined operations name and then a list of the basic operations it is made from.
+
+40. There's another even more important operation that we've offloaded onto the native environment: the operation of choosing what operation to execute next!
+
+41. I thought I defined mux so that it could let us define these operations, but I was mistaken. In my attempt to simplify everything, I over simplified. No matter. An appropriate operation is likely to occur to me and if it doesn't then there is always the slightly obscure way that already works. I'm pretty sure the obscure way can be replaced by a more accessible way.
+
+42. In order for the tree to run itself it has to be able to look at part of itself and decide what to do next based on what it sees. This requires, at least, that one of the basic operations of the tree is that it does one thing when it sees one thing and does another thing when it sees another thing.
+
+43. Mux does one thing when it sees one thing and another thing when it sees another thing, but neither of the things it does leads to doing *a next thing*.
+
+44. So in order for the tree to run itself it has to do things based on what it sees and then plan on doing something after that. I find a nice way of making this clear and showing how it can be done with basic operations.
+
+
 ## \#2025-0923-2200
 
 1. A new attempt to write on the logic of my programming environment.
