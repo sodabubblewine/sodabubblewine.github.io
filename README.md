@@ -217,6 +217,7 @@ This continues my explanation of my programming environment from [#2025-0923-220
         function R(p){return Right(p);}
         ```
     17.  The next abbreviations help get at important parts of binary trees e.g. 'LRL(p)' returns the left part of the right part of the left part of p:
+
         ```
         function LL(p){return L(L(p));}
         function LR(p){return L(R(p));}
