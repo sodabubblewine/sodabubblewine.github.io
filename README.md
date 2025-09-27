@@ -273,6 +273,7 @@ This continues my explanation of my programming environment from [#2025-0923-220
     56. As I go on explaining things as simply as I can, it may end up that mux is too complicated to introduce as part of the entry level basic operations. I will do my best to make such a simplifying change if it occurs.
 
 2. All together, the code that has been written thus far is as follows:
+
 ```
 function Pair(l,r){return [l,r];}
 
