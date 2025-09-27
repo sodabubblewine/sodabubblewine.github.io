@@ -259,42 +259,42 @@ This continues my explanation of my programming environment from [#2025-0923-220
 
 2. All together, the code that has been written thus far is as follows:
     ```
-function Pair(l,r){return [l,r];}
+    function Pair(l,r){return [l,r];}
 
-var Nil = new Object();
-function isNil(p){return p==Nil;}
+    var Nil = new Object();
+    function isNil(p){return p==Nil;}
 
-function Left(p){return isNil(p) ? Nil : p[0];}
-function Right(p){return isNil(p) ? Nil : p[1];}
+    function Left(p){return isNil(p) ? Nil : p[0];}
+    function Right(p){return isNil(p) ? Nil : p[1];}
 
-function P(l,r){return Pair(l,r);}
-function L(p){return Left(p);}
-function R(p){return Right(p);}
+    function P(l,r){return Pair(l,r);}
+    function L(p){return Left(p);}
+    function R(p){return Right(p);}
 
-function LL(p){return L(L(p));}
-function LR(p){return L(R(p));}
-function RL(p){return R(L(p));}
-function RR(p){return R(R(p));}
-function LLL(p){return L(LL(p));}
-function LRL(p){return L(RL(p));}
-function RLL(p){return R(LL(p));}
-function RRL(p){return R(RL(p));}
-function LLLL(p){return L(LLL(p));}
-function RLLL(p){return R(LLL(p));}
-
-var T=Nil;
-function drop(){T=P(LL(T),R(T));}
-function dup(){T=P(P(L(T),RL(T)),R(T));}
-function pop(){T=P(LL(T),P(RL(T),R(T)));}
-function push(){T=P(P(L(T),LR(T)),RR(T));}
-function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
-
-function nil(){T=P(P(L(T),Nil),R(T));}
-function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
-function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
-
-function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}
-```
+    function LL(p){return L(L(p));}
+    function LR(p){return L(R(p));}
+    function RL(p){return R(L(p));}
+    function RR(p){return R(R(p));}
+    function LLL(p){return L(LL(p));}
+    function LRL(p){return L(RL(p));}
+    function RLL(p){return R(LL(p));}
+    function RRL(p){return R(RL(p));}
+    function LLLL(p){return L(LLL(p));}
+    function RLLL(p){return R(LLL(p));}
+    
+    var T=Nil;
+    function drop(){T=P(LL(T),R(T));}
+    function dup(){T=P(P(L(T),RL(T)),R(T));}
+    function pop(){T=P(LL(T),P(RL(T),R(T)));}
+    function push(){T=P(P(L(T),LR(T)),RR(T));}
+    function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+    
+    function nil(){T=P(P(L(T),Nil),R(T));}
+    function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+    function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+    
+    function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}
+    ```
 
 3. The rest of the operations are defined from these basic ones.
 
@@ -369,7 +369,7 @@ function nop(){bury(); unbury();}
 32. `function nor(){dup(); mux();}`
 
 33. The rest of the truth-value operations are defined as follows
-    ```
+```
 function nor(){dup(); mux();} // joint denial
 function not(){dup(); nor();} // negation
 function or(){nor(); not();} // alternation
