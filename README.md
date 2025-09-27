@@ -273,44 +273,43 @@ This continues my explanation of my programming environment from [#2025-0923-220
     56. As I go on explaining things as simply as I can, it may end up that mux is too complicated to introduce as part of the entry level basic operations. I will do my best to make such a simplifying change if it occurs.
 
 2. All together, the code that has been written thus far is as follows:
+    ```
+    function Pair(l,r){return [l,r];}
 
-```
-function Pair(l,r){return [l,r];}
+    var Nil = new Object();
+    function isNil(p){return p==Nil;}
 
-var Nil = new Object();
-function isNil(p){return p==Nil;}
+    function Left(p){return isNil(p) ? Nil : p[0];}
+    function Right(p){return isNil(p) ? Nil : p[1];}
 
-function Left(p){return isNil(p) ? Nil : p[0];}
-function Right(p){return isNil(p) ? Nil : p[1];}
+    function P(l,r){return Pair(l,r);}
+    function L(p){return Left(p);}
+    function R(p){return Right(p);}
 
-function P(l,r){return Pair(l,r);}
-function L(p){return Left(p);}
-function R(p){return Right(p);}
-
-function LL(p){return L(L(p));}
-function LR(p){return L(R(p));}
-function RL(p){return R(L(p));}
-function RR(p){return R(R(p));}
-function LLL(p){return L(LL(p));}
-function LRL(p){return L(RL(p));}
-function RLL(p){return R(LL(p));}
-function RRL(p){return R(RL(p));}
-function LLLL(p){return L(LLL(p));}
-function RLLL(p){return R(LLL(p));}
-
-var T=Nil;
-function drop(){T=P(LL(T),R(T));}
-function dup(){T=P(P(L(T),RL(T)),R(T));}
-function pop(){T=P(LL(T),P(RL(T),R(T)));}
-function push(){T=P(P(L(T),LR(T)),RR(T));}
-function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
-
-function nil(){T=P(P(L(T),Nil),R(T));}
-function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
-function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
-
-function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}
-```
+    function LL(p){return L(L(p));}
+    function LR(p){return L(R(p));}
+    function RL(p){return R(L(p));}
+    function RR(p){return R(R(p));}
+    function LLL(p){return L(LL(p));}
+    function LRL(p){return L(RL(p));}
+    function RLL(p){return R(LL(p));}
+    function RRL(p){return R(RL(p));}
+    function LLLL(p){return L(LLL(p));}
+    function RLLL(p){return R(LLL(p));}
+    
+    var T=Nil;
+    function drop(){T=P(LL(T),R(T));}
+    function dup(){T=P(P(L(T),RL(T)),R(T));}
+    function pop(){T=P(LL(T),P(RL(T),R(T)));}
+    function push(){T=P(P(L(T),LR(T)),RR(T));}
+    function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+    
+    function nil(){T=P(P(L(T),Nil),R(T));}
+    function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+    function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+    
+    function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}
+    ```
 
 3. The rest of the operations are defined from these basic ones.
 
@@ -345,16 +344,16 @@ function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}
 17. `function nop(){bury(); unbury();}`
 
 18. So, all together, the defined recombic operatoins are:
-```
-function nip(){pop(); drop(); push();}
-function over(){pop(); dup(); push(); swap();}
+    ```
+    function nip(){pop(); drop(); push();}
+    function over(){pop(); dup(); push(); swap();}
 
-function dig(){over(); pop(); nip();}
-function bury(){dig(); dig(); push(); push();}
-function unbury(){bury(); bury();}
+    function dig(){over(); pop(); nip();}
+    function bury(){dig(); dig(); push(); push();}
+    function unbury(){bury(); bury();}
 
-function nop(){bury(); unbury();}
-```
+    function nop(){bury(); unbury();}
+    ```
 
 19. Next are the defined nonrecombic operations e.g. left, right, enlist, and enpile.
 
@@ -385,19 +384,19 @@ function nop(){bury(); unbury();}
 32. `function nor(){dup(); mux();}`
 
 33. The rest of the truth-value operations are defined as follows
-```
-function nor(){dup(); mux();} // joint denial
-function not(){dup(); nor();} // negation
-function or(){nor(); not();} // alternation
-function IF(){not(); or();} // converse conditional
-function nif(){IF(); not();} // complementary converse conditional
-function nfi(){swap(); nif();} // complementary conditional
-function fi(){nfi(); not();} // conditional
-function nand(){not(); fi();} // alternative denial
-function and(){nand(); not();} // alternation
-function xor(){over(); over(); nand(); bury(); or(); and();} // exclusive alternation
-function iff(){xor(); not();} // biconditional
-```
+    ```
+    function nor(){dup(); mux();} // joint denial
+    function not(){dup(); nor();} // negation
+    function or(){nor(); not();} // alternation
+    function IF(){not(); or();} // converse conditional
+    function nif(){IF(); not();} // complementary converse conditional
+    function nfi(){swap(); nif();} // complementary conditional
+    function fi(){nfi(); not();} // conditional
+    function nand(){not(); fi();} // alternative denial
+    function and(){nand(); not();} // alternation
+    function xor(){over(); over(); nand(); bury(); or(); and();} // exclusive alternation
+    function iff(){xor(); not();} // biconditional
+    ```
 
 34. Technically, those operations are better described as some of the bit operations, where Nil is treated as the bit named '1' and everything else is treated as the bit named '0'. Even better, they are some of the remainders of polynomials divided by two. For more on that read R. L. Goodstein's 1962 "Fundamental Concepts of Mathematics".
 
@@ -501,15 +500,15 @@ I'm picking javascript because you can play with it in any modern browser that l
 
 5. Everything starts with a special pair that happens to have itself as its left and right part.
 We call it 'Nil'.
-```
-var Nil;
-```
+    ```
+    var Nil;
+    ```
 
 6. There are three basic functions: Pair, Left, and Right.
 Pair takes two arguments named 'l' and 'r' and returns a javascript array whose zeroth item is l and whose first item is r.
-```
-function Pair(l,r){return [l,r];}
-```
+    ```
+    function Pair(l,r){return [l,r];}
+    ```
 
 7. Left takes one argument named 'p' that returns Nil if p is identical to Nil and otherwise returns the zeroth item of p.
 The argument to the function named 'Left' may not have a zeroth item.
@@ -702,7 +701,7 @@ My aim here is to summarize the conclusions.
 
 2. The new abbreviations of predicate functor logic introduced were:
     1. counting quantifiers
-1. 'just 0 n F' for 'each n not F'
+        1. 'just 0 n F' for 'each n not F'
         2. 'just 1+k n F' for 'some n and F just k n and (n nip n) F not id n'  2. 'singular n F' for 'just 1 n F'
     3. one-hot
         1. 'one-hot 1 F' for 'F'
