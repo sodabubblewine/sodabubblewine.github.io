@@ -157,23 +157,34 @@ I'm a closeted storyteller. When I was young I used to tell everyone stories. So
 
 Not many of those early stories stuck with me. Everything gets forgotten eventually.
 
-As I grew up, fewer people listened to my stories. They told me that they didn't have time to listen or that I was beign weird for weaving fantasy and fiction into the real problems of the world. THe chores, the homework, the stuff that we all have to do. It's that last one. The stuff that we have to do that alwasy got me into trouble. I didn't see what it was that we had to do. What we were doing was all that we had to do. This moment was the one to live in. The next one hasn't happened. The old ones have made their contribution and are gone. WE're here now and we're living in a story world. At least I was. 
+As I grew up, fewer people listened to my stories. They told me that they didn't have time to listen. That I was being weird for weaving fantasy and fiction into the real problems of the world. The real world was full of chores, homework, and the stuff that we all have to do. It's that last one. The stuff that we have to do that always got me into trouble. I didn't see what it was that we had to do. What we were doing was all that we had to do. This moment was the one to live in. The next one hasn't happened. The old ones have made their contribution and are gone. We're here now and we're living in a story world. At least I was. 
 
 It's really hard for me to write about losing touch with my storyteller. Letting go of the world that is right in front of me is now something I struggle to do. It's strange to look back and see a boy that ran with the wind and smiled even when he fell down.
 
-That storyteller never died. He just got gobbled up by a world that he didn't understand. He grew into a life where a new kind of story could be told, at least for a while. Science, math, logic, and all those great things are stories. They're the best stories as far as I'm concerned. Logic is the best story I've ever heard, and it's one that I keep telling myself over and over again. There's always something new to it. But, there has also always been something missing from it. Well, it's not logic that was missing something, it was me.
+That storyteller never died. He just got gobbled up by a world that he didn't understand. He grew up. He got a life where a new kind of story could be told, at least for a while. Science, math, logic, and all those great things are just stories. They're the best stories as far as I'm concerned. Logic is the best story I've ever heard. It's one that I keep telling myself over and over again. There's always something new to it. But, there has always been something missing from it. Well, it's not logic that was missing something. It was me.
 
-When you tell stories at the wrong time or in the wrong way you start to think that the stories are wrong or that their timing is wrong. The people around you are the ones who are wrong. Well, they're not wrong, so much as they are unprepared for the strengths of a scintillating storyteller. My powers of distraction are still profound to this day. That's all from my fabled roots.
 
-Now I know that I let the world tell me my stories were wrong without thinking it over for myself first. It's not as if I could when I was young. No one taught me how to think for myself so soon. By the time I was taught to think for myself I had lost something of the spark. If there is one thing I could tell my younger self it's that it's never too late to be what you could have been. You don't ever really lose those sparks, you just lose sight of them. They're off in the distance or tucked somewhere you haven't been for a long while. Maybe you've even forgotten they were ever there. But, that still doesn't stop you from being and becoming who you could have been. It's almost magical. It is if you let it be.
+When people repeatedly tell you that you're telling stories at the wrong time or in the wrong way then you start to think that it's your stories that are wrong. Eventually you even start to think that the storyteller within you is wrong. Maybe even you are the one who is wrong. Maybe the people are right. No. That can't be right.
 
-It feels embarassing for me to write like this, but I know that this is how I have to write. I don't meant that this is the way to write. That's a different problem entirely. E. B. White and the Olgilvey folks can tell you how to do that. Anyone can read them and work on writing well. What I'm talking about is how to write like I write. Not like I write when I'm worried about who might be looking over my shoulder or who might tell me that I'm being weird for tellign stories this way or that now is not the time for this because there are much more important things to do than doddle.
+The people around you are the ones who are wrong. Well, they're not wrong, so much as they are unprepared for the strengths of a scintillating storyteller. My powers of distraction are still profound to this day. That's all thanks to my fabled roots.
 
-Let me go back to those earlier days. Those are teh days where the world crept in before I was ready to fight it off with with whatever I had on hand. Every teacher I ever had knew that I was a talker. If you were one of my teachers then I'm so sorry for what I must have done. There wasn't a moment that I would burst into some seemingly endless story about whatever it was that we were working on. I'd just ask questions "So is it like this? blah blah blah..." as if I was the only one in the room who was seeing this new part of the world that was just being revealed to us.
+I still have doubts though.
 
-Even now I see how silly it was. The principle knew me by name, I was outside their office more often than I can recall much less count. I wasn't even there to 'see the principle'. My poor teachers sent me there just for a moment of silence. There wasn't a moment that I didn't have a book in my hand. My back against the wall outside the principle's office blocking the hallway. Even when I was out of the way I couldn't help but get in the way. That's how it goes for storytellers. I know that now. I don't know how I could have known that then.
+I had let the world tell me my stories were wrong without thinking it over for myself first. It's not as if I knew how to think for myself when I was young anyway.
 
-It's confusing to me now that the people of the world haven't figured out how to deal well with each other. Given how old the human species is, and how many children that have been born and raised throughout history, I'd expect at least some of the basics to be firmly figured out. This whole discovering how to deal wtih each other, whether young or old, as if there only started being grandparents and grandchildren is outrageous. It's not irrational to expect that humanity should have made some progress since we slipped and felled our nearest ancestors into extinction. Here's to the next few millennia.
+By the time I was taught to think for myself I had lost something of the storytelling spark. If there is one thing I could tell my younger self it's that it's never too late to be what you could have been.
+
+Actually, you don't ever really lose your sparks, you just lose sight of them. They're off in the distance or tucked away somewhere you haven't been for a long while. Were they ever there to begin with? None of this stops you from being and becoming who you could have been. It's magical. At least, it is if you let it be.
+
+It feels embarassing for me to write like this, but I know that this is how I have to write. I don't meant that this is the way to write. That's a different problem entirely. E. B. White and the Olgilvey folks can tell you how to do that. Anyone can read them and work on writing well. What I'm talking about is how to write like *I* write. I mean like the way I write when I'm not worried about who might be looking over my shoulder, or who might say my stories are weird, or that now is not the time for storytelling because there are so many much more important things to do than "ruin the signal to noise ratio".
+
+Let me go back to those earlier days. Those are the days where the world crept in before I knew to fight it off with with whatever I had on hand. All my teachers knew that I was a talker. If you were one of my teachers then I'm so sorry. My mouth never shut. I had to talk about what we were working on. I had to ask questions "So is it like this? blah blah blah..." as if I was the only other person in the room. I was the only one who was seeing this new part of the world for the first time. No one else saw it how I saw it. What an ego.
+
+Even now I see how silly I was. It makes me smile.
+
+The principle of the school knew me by name. I was outside their office almost every day, sometimes multiple times a day. I wasn't even there to 'see the principle'. My poor teachers sent me away so they could have a moment of silence. There was always a book in my hand. I'd sit with my back against the wall to the principles office, right next to the door, with my little legs out blocking the hallway. Even when I was supposed to be out of the way I couldn't help but get in the way. That's how it goes for storytellers. I know that now. I don't know how I could have known that then.
+
+It's confusing to me that the people of the world haven't figured out how to deal well with each other. Given how old the human species is, and how many children were born and raised throughout history, I'd expect at least some of the basics to be firmly figured out. It's as if we only just started having grandparents and grandchildren. As if we're figuring it all out for the first time. As if all the other times are different. Or as if this time it's different. It's outrageous. I'm not crazy for expecting that humanity should have made *some* progress since we slipped and felled our nearest ancestors into extinction. Here's to the next few millennia I guess.
 
 But, forget all that. Let's get back to me, me, and me. That's all a storyteller cares about. Are you, the listener, attending to me? Are you listening? Are you with me? Are you laughing, smiling, frowning, crying or cackling? Are you responding in any way at all to me? If not, why not? Why not!
 
@@ -195,17 +206,18 @@ This continues my explanation of my programming environment from [#2025-0923-220
     8. `function isNil(p){return p==Nil;}`
     9. The function named 'Left' takes one argument named 'p' and returns Nil if isNil(p) is identical to true and otherwise returns the zeroth item of p. If p does not have a zeroth item it returns something unexpected, but since everything is built from Nil nothing unexpected ever happens.
     10. The definition of Left uses the 'conditional (ternary) operator'. It looks like this `x ? y : z`. When it's executed, if x is true it returns y, otherwise it returns z. It's helpful because you can put it places where `if(x) y; else z;` doesn't work. Find more details elsewhere.
-    10. `function Left(p){return isNil(p) ? Nil : p[0];}
-    11. The function 'Right' is like Left but returns the first item rather than the zeroth one.
-    12. `function Right(p){return isNil(p) ? Nil : p[1];}`
-    13. The functions Left and Right are defined with respect to Nil because it is special in that it is identical to its left and right parts.
-    14. The functions 'P', 'L', and 'R' are abbreviations for 'Pair', 'Left', and 'Right'.
-    15. ```
+    11. `function Left(p){return isNil(p) ? Nil : p[0];}
+    12. The function 'Right' is like Left but returns the first item rather than the zeroth one.
+    13. `function Right(p){return isNil(p) ? Nil : p[1];}`
+    14. The functions Left and Right are defined with respect to Nil because it is special in that it is identical to its left and right parts.
+    15. The functions 'P', 'L', and 'R' are abbreviations for 'Pair', 'Left', and 'Right'.
+    16. ```
         function P(l,r){return [l,r];}
         function L(p){return Left(p);}
         function R(p){return Right(p);}
         ```
-    16.  The next abbreviations help get at important parts of binary trees e.g. 'LRL(p)' returns the left part of the right part of the left part of p:```
+    17.  The next abbreviations help get at important parts of binary trees e.g. 'LRL(p)' returns the left part of the right part of the left part of p:
+        ```
         function LL(p){return L(L(p));}
         function LR(p){return L(R(p));}
         function RL(p){return R(L(p));}
@@ -217,45 +229,45 @@ This continues my explanation of my programming environment from [#2025-0923-220
         function LLLL(p){return L(LLL(p));}
         function RLLL(p){return R(LLL(p));}
         ```
-    17. Those are all the helper functions that are needed to set up the basic operations of my programming environment.
-    18. My programming environment is a single tree called 'the tree', or 'Tree', or, just, 'T'.
-    19. The left part of Tree is called 'the stack' or, better, 'the pile', or, just, 'Pile'. The right part of Pile is called 'the top' or, just, 'Top'. The left part of Pile is called 'the rest of the pile' and the right part of the rest of the Pile is called 'the second from top'.
-    20. The right part of Tree is called 'the list', or, just, 'List'. 
-    21. There are probably better names for all of these things but I really haven't worked on that yet.
-    22. Tree starts out identical to Nil.
-    23. `var T=Nil;`
-    20. Everything can be done with nine basic operations that change and grow the tree. Elsewhere I've shown that at most three operations are needed to do everything, but they are obscure at first.
-    21. The nine are divided into two collections: the recombic and the nonrecombic.
-    22. There are five recombic operations: drop, dup, push, pop, and swap.
-    23. They are called 'recombic' because each of them 'recombines' the items in the tree e.g. dup puts a duplicate of the top of the pile onto the pile.
-    24. The five recombic operations are recombically complete: the can be used to change one tree into any other that has exactly the same fruit.
-    25. I've not yet said what the fruit of a tree are exactly. It's a bit technical, and I'm trying to avoid being technical because most people don't like technical explanations.
-    26. The right part of the Pile, i.e. the top of the tree, is a fruit. The right part of the rest of the pile is a fruit too. The right part of the left part of the rest of the pile is an fruit as well, and so on. If you go down the left parts of the tree and then look at a right part then you're looking at a fruit. These are not all the fruits of the tree.
-    27. The left part of List is an fruit. The left part of the right part of the list is an fruit. The left part of the right part of the right part of the list is an fruit, and so on. If you go down the right parts of the tree and then look at a left part then you're looking at an fruit.
-    28. All together, the fruits of the tree are the fruits of the left part and the fruits of the right part.
-    29. Fruits can be confusing because all of the items in my programming environment (at least the idealized pure version) are the same stuff as the tree is made of.
-    30. Everything can be built from nine basic ops. Elsehwere I've shown that everything can be built from at most three basic ops. The nine are easier to start with than the three.
-    31. There are five operations called 'the recombic ops' because with them you can make any tree from any other tree that has exactly the same kinds of fruit.
-    32. The first is called 'drop': it drops the top from the tree.
-    33. `function drop(){T=P(LL(T),R(T));}`
-    34. The second is called 'dup': it puts a duplicate of the top onto the pile.
-    35. `function dup(){T=P(P(L(T),RL(T)),R(T));}`
-    36. The third is called 'pop': it pops the top of the tree off of the pile and onto the beginning of the list.
-    37. `function pop(){T=P(LL(T),P(RL(T),R(T)));}`
-    38. The fourth is called 'push': it undoes pop by pushing the fruit at the beginning of the list onto the top of the pile.
-    39. `function push(){T=P(P(L(T),LR(T)),RR(T));}`
-    40. The fifth, and last basic recombic operation, is called 'swap': it swaps the top two fruits on the pile.
-    41. `function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}`
-    42. There are four nonrecombic operations: nil, pair, part, and mux. Although mux is entirely new, this is not the case for nil, pair, and part. They do what P, L, and R do, but on the tree.
-    43. The first nonrecombic operation is called 'nil': it puts Nil atop the pile.
-    44. `function nil(){T=P(P(L(T),Nil),R(T));}`
-    45. The second is called 'pair': it pairs the second from top of the pile with the top of the pile.
-    46. `function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}`
-    47. The third is called 'part': it takes apart the pair at the top of the pile and puts its left part underneath its right part which is now the new top.
-    48. `function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}`
-    49. The last operation is called 'mux': it replaces the top three fruits of the pile with the second from top if the top is identical to Nil and otherwise with the third from top.
-    50. `function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}`
-    51. As I go on explaining things as simply as I can, it may end up that mux is too complicated to introduce as part of the entry level basic operations. I will do my best to make such a simplifying change if it occurs.
+    18. Those are all the helper functions that are needed to set up the basic operations of my programming environment.
+    19. My programming environment is a single tree called 'the tree', or 'Tree', or, just, 'T'.
+    20. The left part of Tree is called 'the stack' or, better, 'the pile', or, just, 'Pile'. The right part of Pile is called 'the top' or, just, 'Top'. The left part of Pile is called 'the rest of the pile' and the right part of the rest of the Pile is called 'the second from top'.
+    21. The right part of Tree is called 'the list', or, just, 'List'. 
+    22. There are probably better names for all of these things but I really haven't worked on that yet.
+    23. Tree starts out identical to Nil.
+    24. `var T=Nil;`
+    25. Everything can be done with nine basic operations that change and grow the tree. Elsewhere I've shown that at most three operations are needed to do everything, but they are obscure at first.
+    26. The nine are divided into two collections: the recombic and the nonrecombic.
+    27. There are five recombic operations: drop, dup, push, pop, and swap.
+    28. They are called 'recombic' because each of them 'recombines' the items in the tree e.g. dup puts a duplicate of the top of the pile onto the pile.
+    29. The five recombic operations are recombically complete: the can be used to change one tree into any other that has exactly the same fruit.
+    30. I've not yet said what the fruit of a tree are exactly. It's a bit technical, and I'm trying to avoid being technical because most people don't like technical explanations.
+    31. The right part of the Pile, i.e. the top of the tree, is a fruit. The right part of the rest of the pile is a fruit too. The right part of the left part of the rest of the pile is an fruit as well, and so on. If you go down the left parts of the tree and then look at a right part then you're looking at a fruit. These are not all the fruits of the tree.
+    32. The left part of List is an fruit. The left part of the right part of the list is an fruit. The left part of the right part of the right part of the list is an fruit, and so on. If you go down the right parts of the tree and then look at a left part then you're looking at an fruit.
+    33. All together, the fruits of the tree are the fruits of the left part and the fruits of the right part.
+    34. Fruits can be confusing because all of the items in my programming environment (at least the idealized pure version) are the same stuff as the tree is made of.
+    35. Everything can be built from nine basic ops. Elsehwere I've shown that everything can be built from at most three basic ops. The nine are easier to start with than the three.
+    36. There are five operations called 'the recombic ops' because with them you can make any tree from any other tree that has exactly the same kinds of fruit.
+    37. The first is called 'drop': it drops the top from the tree.
+    38. `function drop(){T=P(LL(T),R(T));}`
+    39. The second is called 'dup': it puts a duplicate of the top onto the pile.
+    40. `function dup(){T=P(P(L(T),RL(T)),R(T));}`
+    41. The third is called 'pop': it pops the top of the tree off of the pile and onto the beginning of the list.
+    42. `function pop(){T=P(LL(T),P(RL(T),R(T)));}`
+    43. The fourth is called 'push': it undoes pop by pushing the fruit at the beginning of the list onto the top of the pile.
+    44. `function push(){T=P(P(L(T),LR(T)),RR(T));}`
+    45. The fifth, and last basic recombic operation, is called 'swap': it swaps the top two fruits on the pile.
+    46. `function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}`
+    47. There are four nonrecombic operations: nil, pair, part, and mux. Although mux is entirely new, this is not the case for nil, pair, and part. They do what P, L, and R do, but on the tree.
+    48. The first nonrecombic operation is called 'nil': it puts Nil atop the pile.
+    49. `function nil(){T=P(P(L(T),Nil),R(T));}`
+    50. The second is called 'pair': it pairs the second from top of the pile with the top of the pile.
+    51. `function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}`
+    52. The third is called 'part': it takes apart the pair at the top of the pile and puts its left part underneath its right part which is now the new top.
+    53. `function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}`
+    54. The last operation is called 'mux': it replaces the top three fruits of the pile with the second from top if the top is identical to Nil and otherwise with the third from top.
+    55. `function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}`
+    56. As I go on explaining things as simply as I can, it may end up that mux is too complicated to introduce as part of the entry level basic operations. I will do my best to make such a simplifying change if it occurs.
 
 2. All together, the code that has been written thus far is as follows:
     ```
@@ -330,14 +342,14 @@ This continues my explanation of my programming environment from [#2025-0923-220
 
 18. So, all together, the defined recombic operatoins are:
     ```
-function nip(){pop(); drop(); push();}
-function over(){pop(); dup(); push(); swap();}
+    function nip(){pop(); drop(); push();}
+    function over(){pop(); dup(); push(); swap();}
 
-function dig(){over(); pop(); nip();}
-function bury(){dig(); dig(); push(); push();}
-function unbury(){bury(); bury();}
+    function dig(){over(); pop(); nip();}
+    function bury(){dig(); dig(); push(); push();}
+    function unbury(){bury(); bury();}
 
-function nop(){bury(); unbury();}
+    function nop(){bury(); unbury();}
     ```
 
 19. Next are the defined nonrecombic operations e.g. left, right, enlist, and enpile.
@@ -369,19 +381,19 @@ function nop(){bury(); unbury();}
 32. `function nor(){dup(); mux();}`
 
 33. The rest of the truth-value operations are defined as follows
-```
-function nor(){dup(); mux();} // joint denial
-function not(){dup(); nor();} // negation
-function or(){nor(); not();} // alternation
-function IF(){not(); or();} // converse conditional
-function nif(){IF(); not();} // complementary converse conditional
-function nfi(){swap(); nif();} // complementary conditional
-function fi(){nfi(); not();} // conditional
-function nand(){not(); fi();} // alternative denial
-function and(){nand(); not();} // alternation
-function xor(){over(); over(); nand(); bury(); or(); and();} // exclusive alternation
-function iff(){xor(); not();} // biconditional
-```
+    ```
+    function nor(){dup(); mux();} // joint denial
+    function not(){dup(); nor();} // negation
+    function or(){nor(); not();} // alternation
+    function IF(){not(); or();} // converse conditional
+    function nif(){IF(); not();} // complementary converse conditional
+    function nfi(){swap(); nif();} // complementary conditional
+    function fi(){nfi(); not();} // conditional
+    function nand(){not(); fi();} // alternative denial
+    function and(){nand(); not();} // alternation
+    function xor(){over(); over(); nand(); bury(); or(); and();} // exclusive alternation
+    function iff(){xor(); not();} // biconditional
+    ```
 
 34. Technically, those operations are better described as some of the bit operations, where Nil is treated as the bit named '1' and everything else is treated as the bit named '0'. Even better, they are some of the remainders of polynomials divided by two. For more on that read R. L. Goodstein's 1962 "Fundamental Concepts of Mathematics".
 
@@ -404,6 +416,70 @@ function iff(){xor(); not();} // biconditional
 43. Mux does one thing when it sees one thing and another thing when it sees another thing, but neither of the things it does leads to doing *a next thing*.
 
 44. So in order for the tree to run itself it has to do things based on what it sees and then plan on doing something after that. I find a nice way of making this clear and showing how it can be done with basic operations.
+
+45. Here's everything coded up thus far:
+
+```
+function Pair(l,r){return [l,r];}
+
+var Nil = new Object();
+function isNil(p){return p==Nil;}
+
+function Left(p){return isNil(p) ? Nil : p[0];}
+function Right(p){return isNil(p) ? Nil : p[1];}
+
+function P(l,r){return Pair(l,r);}
+function L(p){return Left(p);}
+function R(p){return Right(p);}
+
+function LL(p){return L(L(p));}
+function LR(p){return L(R(p));}
+function RL(p){return R(L(p));}
+function RR(p){return R(R(p));}
+function LLL(p){return L(LL(p));}
+function LRL(p){return L(RL(p));}
+function RLL(p){return R(LL(p));}
+function RRL(p){return R(RL(p));}
+function LLLL(p){return L(LLL(p));}
+function RLLL(p){return R(LLL(p));}
+
+var T=Nil;
+function drop(){T=P(LL(T),R(T));}
+function dup(){T=P(P(L(T),RL(T)),R(T));}
+function pop(){T=P(LL(T),P(RL(T),R(T)));}
+function push(){T=P(P(L(T),LR(T)),RR(T));}
+function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+function nil(){T=P(P(L(T),Nil),R(T));}
+function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+
+function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function nop(){bury(); unbury();}
+
+function left(){part(); drop();}
+function right(){part(); nip();}
+
+function nor(){dup(); mux();} // joint denial
+function not(){dup(); nor();} // negation
+function or(){nor(); not();} // alternation
+function IF(){not(); or();} // converse conditional
+function nif(){IF(); not();} // complementary converse conditional
+function nfi(){swap(); nif();} // complementary conditional
+function fi(){nfi(); not();} // conditional
+function nand(){not(); fi();} // alternative denial
+function and(){nand(); not();} // alternation
+function xor(){over(); over(); nand(); bury(); or(); and();} // exclusive alternation
+function iff(){xor(); not();} // biconditional
+```
 
 
 ## \#2025-0923-2200
