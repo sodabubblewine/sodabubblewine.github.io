@@ -151,6 +151,208 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-0928-1421
+
+I came here to tell you about my programming language, but because I'm impatient and don't like explaining myself I might not. There isn't a day that goes by when I'm not fighting myself to get things done. Most people are this way. Probably all people are this way. I'd not want to meet someone who gets everything done that they planned on doing. Or who gets everything done whether they planned it or not. What would a person like that even be like?
+
+There was a character in the Batman cartoons I watched when I was young who looked at his watch all the time and one day lost his papers while out to lunch. I'll call him watch man. That's not his name. He's got a proper Batman villian name, but I don't remember what it is now.
+
+The wind blows away his papers and he runs after them and a bird poops on his lunch all while he's somehow late for the most important meeting of his life. He misses the meeting, and misses out on that future promotion. He misses out on an entire life of luxury, at least to his mind. This drives him mad. He's down, out, and constantly looking at his watch. It's all that keeps him tickity-boo (I heard that once on a British show and it still sounds like a well wound clock clicking along like a cosmic timekeeper).
+
+Watch guy, or man, or whatever, didn't notice that in addition to loosing his papers, his lunch, his job, and almost losing his watch, he lost his mind. Somewhere between the bird taking a shit and that shit landing on his lunch he went one hundred percent wackadoo. This is how all good Batman villians start up.
+
+Causality screwed Dr. Clock and he was happy to screw his courage to the sticking place. It was super sticky. He stuck it to the world and vowed to beat those thugs in their office suits with their smarmy smiles. Those thin lips that tightened like an untuned piano string. They just loved to take it out on the little guy. The guy who couldn't make it to the boardroom on time. How was this tiny man going to make it in life if he couldn't make it to work? 
+
+I think Mr. Cuckcoo put someone between the largest pair of minute and hour hands he could find. Wait, maybe this was a Superman villian. Maybe he put Louis Lane on the Metropolis equivalent of Big Ben. Either way it was comically huge. There has to be a book on "Knots for Villians" because they all seem to know how to tie the same unbreakable-until-it-isn't knot.
+
+Anyway, where was I. Oh, yeah! I was going to talk about my programming language. It has nothing to do with Tick-Tock McClock. Honestly. I just had to get that out there.
+
+Here's how my programming language works. First, I don't have any cool way of explaining it. It's not like Star Trek where a robot comes out and dances until you lose track of all the plot's loose ends and the credits roll and a beer comercial reminds you how thirsty you are for a cold one and that there's only one beer cold enough for you and it's Ocho Equis a beer from a company founded in Mexico and owned by an international Dutch brewing conglomerate you have to Google because its name is deliberately designed to be hard to remember.
+
+My programming environment is really an environment though. When I think about it I go to a forest in my mind. I don't believe in minds, but never mind. That's something for another mind. I mean another time.
+
+There's a forest in the dark place of my mind. I've mentioned this dark place elsewhere, but not here. It's a really not scary place. It's dark yes, but in a "anything could happen beyond that shadow" kind of way. Really warm and full of opportunity and surprises.
+
+So I go to my dark forest and come upon a tree. It's white, obviously. I think its a white oak. Is there such a thing as a white oak? Let me look that up. One second. Ok. It's called a white oak but its bark is actually "light gray". Lets agree that it is early white with like darker gray lines between the bits of bark. Also, it's not glowing, but it's white enough that in the pitch blackness of my dark place it almost looks like it's glowing. Oh, and it's nighttime. That doesn't really matter, but it is.
+
+You can talk to the tree. But before we start talking to it, I forget to describe its shape. Later you'll find out that this one tree is part of a forest and that the trees are talking to each other. I may have already mentioned the forest thing, but I made the specific tree I walked up on seem a lot bigger than it was. It's not really a 'tree' tree yet. It's more like a sapling. It's more like a stick in the ground. Like a nub really. I'm tempted to dig around and see if it isn't still sticking out of its nut.
+
+The stick was a lie. It's actually just a leaf sorta sticking out of the ground. I'm not sure if the leaf is silver or what. I am sure of one thing, and it is only something you can see to yourself in your own dark place: the leaf has two parts and each of them is identical to itself. When you look at it, there's no mistaking it as a whole leaf, but at the same time you know it has two parts, a left part and a right part, and that when you focus on them, or try to, you somehow see the whole leaf all over again. It's not an optical illusion either. Something about it just makes sense.
+
+If you happen to look around at any of the other trees in the forest, maybe catch one of them out of the corner of your eye, you'd see that all the leaves on all the trees are like this. All the leaves on all the trees are somehow made of two parts, a left part and a right part, and are somehow identical to each of their parts. Don't ask me to draw this for you because I can only see it to myself and wouldn't know how to make you see it to yourself. I don't know if it's even safe to look at it for too long.
+
+Ok. So we've got a weird leaf sticking out of the ground. Now there's another even weirder thing: the trees are listening. It's straight out of "The Wizard of OZ" but, rather than the trees being alive, these trees are just really good listeners. If you can get past the weird leaves then you can get on board with the weird listening trees.
+
+There's a whisper. You turn in the direction it's coming from and see nothing. When you turn back to the leaf you find a tiny but proper sapling. From the ground, two branches grow out away from each other. In a way just as weird as how the leaf is identical to its left and right parts, whenever you look at the tree you always see the whole thing as having a unique left part and a unique right part. It's like when old video games use two dimensional sprites to fake a three dimensional object e.g. like the original DOOM's pickup sprites.
+
+If you notice a difference between what I was writing before and what I'm writing now it's because I wrote this part a day later. Rather than break everything up into multiple notes, I really want to just give this one a good enough ending to be somewhat complete.
+
+Something about that whisper changed the tree. When you turn around, instead of seeing a strange leaf popping out of the ground, you see a 'V' shape. It's milky white, mercurial, and, if you touch it, warm.
+
+At the end of the right branch of the 'V' is a leaf, and at the end of the left branch is another 'V' shape. Now that you notice it, there's a faint smell of oak in the air and maybe even a low hum, but you can't tell if you're hearing it or feeling it within you.
+
+So, up the left branch from the ground you run into a 'V' that splits into its own left and right part. The right part ends in a leaf. The left part ends in another 'V' both branches of which end in leaves.
+
+All together it looks something like this
+
+```
+ \/ 
+  \/ 
+   \/
+```
+
+but everything isn't as straight as it looks there. All those left parts stretch out from the ground like a skelatal spine. There right parts are like leafy ribs.
+
+You blink and catch a haste of whispers in the wind. By the time your eyes open, your little tree has grown and changed. Maybe it even groaned? It looks like this
+
+```
+       \/
+\/    \/
+ \ \/ /
+  \/ /
+   \/
+```
+
+and you can still see a strange substances swirling on or beneath the surface of the tree. Maybe it even glitters a bit. It's too strange to say for sure. What can clearly be said, is that there is a left spine and a right spine.
+
+You happen to be right in the path of the latest whisper and clearly here 'dup' and watch as the tree shutters, shifts, and slips into this shape:
+
+```
+\/
+ \ \/    \/
+  \/    \/
+   \ \/ /
+    \/ /
+     \/
+```
+
+Stunned, you compose yourself, and shout 'DUP'. Sensing your urgency, the tree appears to change faster than it ever has before:
+
+```
+\/
+ \ \/
+  \/
+   \ \/    \/
+    \/    \/
+     \ \/ /
+      \/ /
+       \/
+```
+
+As anyone would, you shout 'DUP' again and again, and watch as the left spine grows to what you suppose must be a sky. If there was a moon here, it certainy would have reached beyond it by now. 
+
+The next logical thing is to grab onto to left spine and yell 'DUP' a few times to see if it can carry you up. It has to doesn't it? If it supports all those duplicates you sent up earlier, then of course it will support your weight. You jump up and reach for the the second limb from the ground. Your hands pass through it like its made of water. It's warm. Your hands are dry. You're butt is on the ground. Peculiar.
+
+A thought flashes before you "Did that tree just drop me?" and the tree wooshed. What? "DROP" you yell. Woosh. Without opening your mouth or saying a thing aloud, you yell "drop" to yourself and the tree moves again. As fast as you can, you repeat it to yourself. You're so focused you shut your eyes and when you open them again you see the tree like this:
+
+```
+\/
+ \ \/
+  \/
+   \ \/
+    \/
+     \ \/    \/
+      \/    \/
+       \ \/ /
+        \/ /
+         \/
+```
+
+Well, now you look bored. Oh, yeah, I've been with you this whole time. It was kinda awkward watching you yell "DUP" alot and then you just closed your eyes for half an hour. I'm tired too. Let's get something to eat and come back to this later. Deal?
+
+
+## \#2025-0927-1559
+
+This continues my notes on the first volume of Russell (and Whitehead's) "Principia Mathematica" from [#2025-0922-1511](#2025-0922-1511).
+
+1. While many of the past notes have probably contained more quotes from Russell's "An Inquiry into Meaning and Truth" (IMT), this note deals squarely with volume one of "Principia Mathematica" (PM1).
+
+2. My logical analyses of 'grammatical' and 'denotes' in the previous note from this series are put on the shelf for a moment. They do more to show my response to Russell's theory of types than to show Russell's theory of types.
+
+3. This has more to do with the inscrutibility of Russell's explanations than with Russell's work in PM1. Like Frege's 'Begriffsschrift', PM1's commentaries (or 'summaries' as they are called there) are to be entirely ignored when it comes to accurately interpretign the text.
+
+4. I know that some people, most people probably, dislike this method that ignores the commentary. It is simple enough to justify it. I no more know what I'm saying here than Russel knew when he said things there. We discover what we he to say. This never ends. This also explains why books like IMT and 'Human Knowledge: it's scope and limits' were written by Russell. This also explains why early Russell and late Russell don't always agree.
+
+5. We don't express what we mean, we discover what we have to say.
+
+6. With that little diatribe out of the way (I can not promise that more may not come), I move into a more technical interpretation of Chapter II 'The Theory of Logical Types'. This is preliminary to a detailed examination of section C on the general theory of classes, and, prior to that, those parts of section B that deal with the axiom of reducibility and its application in the parts on identity.
+
+7. Chappter 2 'The Theory of Logical Types' starts with a lie. It is a carefully constructed lie i.e. it is heavy-laden with confessionals and testimonials.
+    > "The theory of lgoical types, .., recommended itself to us in the first instance by its ability to solve certain contradictions. .. But the theory in question is not wholly dependent upon this indirect recommendation: it has also a certain consonance with common sense which makes it inherently credible." pg. 39 PM1
+
+8. Whatever recommendation there is from common sense is out the window once it is emphasized that such common sense is after the fact. The admission that the common sense is after the fact does not make whatever it is that is being called common sense common sense. This is an example of a subtle trick where history is cast as developmentalistic or progressive e.g. 'the arc of the universe bends toward justice'.
+
+9. Beyond this literary dodge, there are the consequences of the theory which Russell proposed. The axiom of reducibility renders his work on logical types impotent. The theory of logical types, and the axiom of reducibility which appears from it, are presented as if they properly tame intensional contexts into extensional ones where the extensional ones merely abbreviate some intensional context with which we are directly (mentally) connected as perceiving, judging, thinking, or reasoning beings.
+
+10. But, what is said is said of the commentary and not of the work itself. The work which includes the axiom of reducibility is, just as the notation of Frege's 'Begriffsschrift', impeccable. Its contributions to science are a consequence of this impeccability, not the 'peccable' commentary on the impeccable.
+
+11. I'll do my best to render Russell's commentary impeccably. I'll avoid predicate functor logic for now. It eliminates all talk of variables outright, and yet almost all of what Russell has to say is about variables.
+
+12. The first section is "The Vicious Circle Principle."
+    > "See the last section of the present Chapter. Cf. also H. Poincare, "Les mathematiques et la logique," Revue de Metaphysique et de Morale, Mai 1906, pg. 307" pg. 39 pm1
+
+    > "More generally, given any set of objects such that, if we suppose the set to have a total, it will contain members which presuppose this total, then such a set cannot have a total. By saying that a set has 'no total', we mean, primarly, that no significant statement can be made about 'all its members'. Propositions, as teh above illustration shows, must be a set having no total. The same is true, as we shall shortly see, of propositional functions, even when these are restricted to such as can significantly have as argument a given object *a*. In such cases, it is necessary to break up our set into smaller sets, each of which is capable of a total. This is what the theory of types aims at effecting." pg. 39 PM1
+
+13. What Russell says as 'suppose the set to have a total' is said by Bourbaki as 'collectivizing relation', though the link is not so tight except that they are vaguely about yet another way of talking that appeared later from von Neumann: that between classes and sets where sets are defined as classes which are members of some class and proper classes are defined as class which are the members of no class.
+
+14. The quote demonstrates a problem that I have with Russell's writing generally. He allows himself to be wildly imprecise. So imprecise in fact that whatever accuracy he has aimed at is entirely obscured except for those who read him forwards and backwards. That is, you must read on and return from where you began with what he later has to say freshly in your recent history.
+
+15. I have to linger here because this gets at a general method of obscurity that is common among those who write as if the reader is not changed by what they read i.e. as if the reader can intervene on their own behalf and choose not to be changed by their exposure to such writings.
+
+16. Bluntly, the writer controls the reader. For those who reject the accuracy of this description, I can only hope that they will accept the following: the reader has far less control over the writer than the writer does the reader.
+
+17. Russell writes as if he has not already reached his destination. As if he is uncovering new discoveries upon the page. That is, as if he is discovering what he has to say. But he is not. He has already told us this multiple times. The writer who plays at impartiality or objectivity is a surrepticious controller. They are also a controller who does not deal well with control.
+
+18. The difference between what Russell writes in PM1 and what history preceeded the printing on the page is that between the notes written here and the memos which have yet to appear here. These notes record occurrences which purportedly lack the purpose of 'expressing ideas' or 'communicating thoughts'. They are, from a literary point of view, a mess. To the surrepticiously controlling writer, these notes are noise. Somewhere within these notes is a signal, a meaning, or a point. While I admit that I may, or may have already, written something like 'my point is' I can, at least here, make it clear that such sentences are inaccurate.
+
+19. I can also now submit the past few points as evidence the relevance of my earlier warning that I can not promise more diatribes shall not come.
+
+20. Onto a clearing up of 'sets having or not having a total'.
+
+21. The notation used here in my interpretation is mostly that of Quine's "Methods of Logic 4th Edition". The fourth edition is profoundly different from the prior editions, and it must be carefully studied by those who might otherwise reject it as idiosyncratic.
+
+22. Talk of sets obscures the verbal practices which are at work when speaking of classification. Classifying classes supplants talk of 'belongingness' or 'membership' or 'this set is in that set'. The key is classification. This is where the constraint on extensionality comes from. A classification which is beyond intersubjective agreement between qualified witness is bankrupt. If two scientists on different sides of the world can't agree on their classifications then their correspondance is corrupted beyond repair. A new classification must be established.
+
+23. Such vague talk is replaced by logical schema:
+    - 'F extensionally classifies' for 'each item is (x, y, and z such that each item is (w such that Fwx if and only if Fwy) and Fxz, only if Fyz)'
+
+24. An extentionally classificatory predicate such as that of Zermelo and Frankel's set theory is typically what mathematicians who analyze their activity into the shuffling of sets hither and thither (I say it that way so it sounds as mystical as it seems to me) is oddly mixed with an irrelevant theory of identity. This continues to cause great confusion on the role of identity in logic as opposed to its role in theories of identity (what Bourbaki calls 'equalitarian theories', or what is analyzed by 'univalence' by homotopy type theorists).
+
+25. A brief side note on the differences between classification and categorification. In English, and not mathematical English, a category is "a specifically defined division in a system of classification: a class" and reaches back through Aristotle's Organon. A world with different kinds of things may have among its things kinds. Kinds, sorts, traits, essences, natures, and all such stuff looms. That's all I have to say about that for now.
+
+26. As a reminder for those who are not familiar with schematic methods in logic, the 'F' in 'F extensionally classifies' is a predicate letter, not a predicate. The predicates 'is a member of' or 'belongs to' or 'is classed as'
+are not to be confused with the predicate letter 'F'. Each of those prediates purports to, when substituted for the predicate letter 'F' in 'F extensionally classifies', be a part of a truth e.g. each item is (x, y, and z such that each item is (w such that w is classed as x if and only if w is classed as y) and x is classed as z, only if y is classed as z, i.e. is classed as extensionally classifies. I know that 'is classed as extensionally calssifies' is not proper English and would, if spoken to an English speaker, would turn heads. Yet, it is precisely on this strange matter that Russell's summaries turn.
+
+27. The problem of the totality of a set is then cast as follows:
+    - 'is F total' as 'x such that F extensionally classifies and some item is (y such that Fxy)'
+    - for those unfamiliar with predicate abstracts, an inadequate rendering of the definition just given is 'x is F total' as 'F extensionally classifies and some item is (y such that Fxy)'
+    - the inadequacy of this method is among those pesky problems posed by a world wed to variables
+
+28. Now, the questions of totality comes as
+    - some item is (x such that x is F total and each item is (y such that Gy if and only if Fyx)
+
+29. An instance of that schema is one where 'G' is replaced by 'u such that not Fuu' i.e. 'some item is (x such that x is F total and each item is (y such that (u such that not Fuu)y if and only if Fyx)'. 
+
+30. By concretion, such an instance is equivalent to
+    - some item is (x such that x is F total and each item is (y such that not Fyy, if and only if Fyx)
+
+31. Supposing there is some such item, let us call it 'u', then
+    - u is F total and each item is (y such that not Fyy, if and only if Fyu
+
+32. which implies
+    - u is F total and, not Fuu, if and only if Fuu
+
+33. 'not Fuu if and only if Fuu' is a truth functional inconsistency, therefore 'some item is (x such that x is F total and each item is (y such that not Fyy, if and only if Fyx)' is an inconsistency.
+
+34. Thus, 'not some item is (x such that x is F total and each item is (y such that not Fyy, if and only if Fyx)' is a validity and equivalent to
+    - each item is (x such that not x is F total or some item is (y such that not Fyy, or exclusively Fyx)
+
+35. So, 'u is F total' and the validity imply that 'some item is (y such that not Fyy, or exclusively Fyu)'.
+
+36. Said another way 'some item is (x such that x is F total)' implies 'some item is (y such that not Fyy, or exclusively Fyx)'. So that if there is any 'F' totality (call it a set if you want to) then there is something, call it 'u', such that not ...
+
+37. Hi, this is John from the next day. I don't know where this note was going, and while I could figure it out, I'm not going to because this looks boring right now and I've got something else I want to write on before I come back to this later. Sorry for anyone on the edge of their seat. I'm on the edge of mine too, but I'd rather fall off than end this note properly (note there is no proper way to end notes, they just end and there's nothing you can do about that, it's in the past, you can look at what is left over and say "whoa, why didn't I just push through my thinking and get it out on the page", but that's not going to change the fact that it ended somewhere other than where you had hoped, your hopes and dreams are dead, but maybe this isn't a dead end, maybe it's just a place to take a rest, maybe sleep a little, gather yourself, your thougths and feelings, and ready them for the next note, there won't be too many next notes, there will eventually be a last one, you're gonna be fine kid).
+
 ## \#2025-0926-1511
 
 I'm a closeted storyteller. When I was young I used to tell everyone stories. Sometimes my younger sister would ask me to tell her a bedtime story. We'd get under the covers with a flashlight and I'd make up a story about a princess who could fly and talk to dragons. Somehow I made it so that everyone was part of the story. If my sister wanted the princess to explore a cloud city then that became part of the dream world.
