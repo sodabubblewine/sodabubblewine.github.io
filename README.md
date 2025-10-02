@@ -151,6 +151,45 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1002-1451
+
+There is so much that I now must do that I can't sort through it all and organize it into a plan without writing about it here. Most of the time when I make plans I don't write them out. I see them to myself and can go from there. It's a pleasing thing to close your eyes and see yourself doing the things that you need to in order to get things done. Sometimes its a frustrating thing. You see how easy it was in your head and then when you go to do it you long for that ease of imagination.
+
+I've not spoken much about my imagination because it was so far from the language that I was permitted to use while I was solving the problems of logic that had presented themselves to me over the past decade. It's hard to look back and accept that I have spent a whole decade working on something that I only really just began to understand. The moment I understood what I was woriking on, the solution was practically there.
+
+This is not unfamiliar. When I showed that all compactly supported real valued functions have a finitely n refinable extension there was a lot of time spent just understand what the hell I was actually trying to do. The most profound thing that I figrued out to myself was that the countable union of countable sets is countable. This is a rudimentary problem in any regular real analysis course, but for me it was part of a class run by the Moore Method.
+
+Now it's called "The discovery method" or something else which is a bit more politically neutral. R. L. Moore apparently rubbed some people the wrong way with the intensly confrontational style of his teaching. He would construct a synthetic mathematical environment in the classroom and get people in front of an evolving mathematical audience in order to make a mathematician.
+
+Before I was in my first Moore method class I was just a physicist. After a Moore method set theory course I was a mathematician. You're given a list of definitions and theorems. That's all. There are some mild threats about having to take a test on anything that you get wrong in front of the rest of the class, or on anything that they class lets slip by in any purported proof you present to them.
+
+Later, as I began to learn more about the experimental analysis of behavior, it would become clear just how lucky I was to have a Moore method class. That I had multiple courses led this way was a boon. It is also clearer to me now more than ever just how difficult it would be for anyone without my accidental chain of mutually reinforcing teachers to surmount the particular obstacles set up by that book length list of definitions and theorems.
+
+The effectiveness of the Moore or Discovery method in mathematics, and in any other subject for that matter, is in its accidental arrangement of an effective program of instruction. Such a program can be made much more effective than it was, but the logic of mathematics is such that there's very little difference between what you can prove and what you can know (and when you can know it).
+
+As much as the premises and conclusions of a logical theory are beyond any temporal ordering (even though those like Russel and Poincare presented their principle as a vicious circle or cycle as if sets evolved as in Godel's constructive hierarchy) there is no way to teach a person but in this world of spacetime chunks, or so common sense would have us say.
+
+Already, in an indirect way, which is the only way I really know how to go sometimes, I've laid out some of the aims of any plan I may have had the mind to construct here. Mathematics is a collection of reinforcing practices of a verbal community. Logic is even more decidedly verbal and grammar, upon which a repertoire of logic is based, is perhaps the most strictly verbal subject there is outside the science of verbal behavior itself (of which grammar is merely a small derivative of the far more profound autoclitic behavior).
+
+To collect everything mentions thus far among the aims of any effective plan that may come from these contemplations: logic, math, science of verbal behavior, and an effective technology of teaching.
+
+Not each of these is represented entirely in what I've written thus far. That's okay. There isn't a sure fire plan for making plans. Some people, like George Polya or Ray Dalio present their principles for solving problems, but those are their ways and not the ways of a science of problem solving. Yes, there is such a science and it is not some cognitive myth or mysticism of the modeling mind or the mind as processor. I may have dropped the strictures of a technical vocabulary under the control of an experimental analysis of behavior, but the conclusiosn from such a science still hold me in check. That is one of the crazy good things about science. You don't have to be wedded to it in order to benefit from everything that it gives the world.
+
+This is also one of its weaknesses. Some people, those who know very little about how science works, can slip into some pretty strange beliefs if they aren't shown the links from what they can do today with their machines and the laboratory conditions those technologies appeared from. Take the Newcomen atmospheric engine. It is presented as an invention of necessity. There was water in a mine and someone with money wanted that water out so they could mine more money.
+
+At little dig into history reveals that there was a tapestry of past discovery that propped up the practices and behaviors that gave the world a Newcomen and his engine. When we turn a key and turn on an engine today, we aren't reminded of that tapestry any more than Newcomen was when he fired up his boiler.
+
+This is the primary reason that people continue to say "Those who don't learn from history are doomed to repeat it." If you're the kind of person that thinks human behavior is beyond scientific control then it is easy to tell me I'm wrong about that. It was certianly hoped by B. F. Skinner, among all the other experimental analysts of behavior, that there wouldn't be so much work wasted on bringing the public up to speed with the kind of control available from such a science.
+
+On one hand it is simple for people to see that something is at work when the protogambler finds themselves satisfied sitting at the slot machine for hours on end. Or when you walk into a bingo hall and find the most fastideous dabbers. Still, those unfamiliar with the sciences, especially the laboratory control of human and nonhuman organisms, see something more at work. They see something of themselves in what others are doing. It can't possibly be that there is something uncertain about *my* contact with the world. I know myself as well, if not better, than anyone else. What I experience is true, or at least it must count as knowledge. If I can't trust my eyes, my nose, or my skin, then where do I begin? I can't possibly begin outside myself, although there may very well be some all knowing entity of which I amonly a part and which exists outside of all of us.
+
+The history of psychology is largely the history of philosophy. Especially the further you go back. You'll find Plato writing of a Socrates who spoke of memory like a glob of wax. Some people have a firm block, others have a soft one, some have a big ball, others a small one. Whatever they have, the world, we are told, imprints itself upon our wax and there are only so many places ripe for the stamping. They overlap, they break down, and, generally, the globs are fallable impressions of the world which we hold within us and which limit what we may ever know about the imprinting world.
+
+What goes as common sense is really the consequences of a verbal community. The way we talk about the world and how it works is something that we are taught by the people we listen and speak to. Sure, the world is still out there whether we talk about it, at least the consequences come whether we speak of them or not. But, when people speak of common sense being common or uncommon, it is a question of the kind of control that one verbal community has with respect to another.
+
+Damn, I have to shift gears to woodoworking right now. I'll leave this as it is, look back at it later today and collect together some of the points to aim at in my evolving "post logic" plans.
+
+
 ## \#2025-0930-1737
 
 Finally, months after starting and stopping, I am back to woodwork. A while ago I made plans with my dad to make a clock out of wood. That means cutting the gears and assembling everything only and solely with wood. The first step was to clean up some junk in the garage to make room for a workbench. This turned into far more of a challenge than I expected.
