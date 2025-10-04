@@ -151,6 +151,53 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1003-1852
+
+I'm somewhat surprise at how good it has felt to write this way. In the past I couldn't let a single sentence sit upon the page unless I saw its interlocking connections with the basic principles that I picked to govern my behavior. I'd get stuck talking about behavior rather than about all those mental things, e.g. beleiving, that becloud any effective methods of dealing with the world.
+
+It all spoke towards what I might call an insecurity in my own philosophical foundations. There were doubts which I have eliminated. Since they are doubts about the nature of logic, there was practically nothing I could speak of that wouldn't bring them up. Doubt can be crippling. It can spiral. You can doubt you're doubting (contrary to anything Descrates may have said). There's so much uncertainty. So little credibility. Yet, "Act with vigor without absolute certainty" was always looming since I'd read Russell's words.
+
+As my grasp of what I call "the metaphysical trichotomy" strengthens, I have found myself rarely paralyzed by the precision that was once necessary to get my stories straight. The metaphysical trichotomy is a division of metaphysical methods into
+
+1. predicating predicates,
+2. classing classes, and
+3. attributing attributes.
+
+Among these three, the two which have occurred most throughout history are the classing of classes and the attributing of attributes. This is surprising since Aristotle wrote of subjects and predicates as if they were some common sense starting point of a rigorous analysis. Though, anything that is said of Aristotle is perhaps subject to ammendation as much as anything that is said of any fragmentary source of historical record.
+
+Perhaps what has survived of Aristotle is nothing like what he said to his inner circle. The difference between the exoteric and the esoteric is largely a measure of the size of the community. As much as Aristotle's private thoughts from his esoteric works bleed into his public presentations in his exoteric works, we are stuck with what has survived when peicing him together. He is no more special than anyone else from history in this regard and the challenge is ever present.
+
+The predicates of Aristotle were, until quite recently, the predicates of the modern world. There really has been so little progress in philosophy that most of what Aristotle had to say is still relevant to today. The same can be said of almost all the well known philosopher's contributions to their subject.
+
+Aristotles predicates are attributes. They are one place relations. Whether they are relations in extension or intension is somewhat obscure, but, being a philosopher, we can err on the side of intension. I for one have no grasp of 'intension' except as another way of saying 'not extensional'.
+
+Presumably the division of complete sentences into their subjects and predicates are somehow responsible for the mirror world of attributes and particulars that pervade speaking of the intensional.
+
+The word 'attributes' and 'attribution' are a catch all for intensional stuff. Intensionalists will not like such a broad restriction. Further work can be done to set up better methods of dealing with intensional context. This is easy enough to admit. But, there's not much more to be gained from the trichotomy so early in an introduction of it.
+
+A skip back to Aristotle to clear up the correspondance between his talk of substance and my talk of attributes. Aristotle's substances are what attributes are attributed of. Paralle, following the trichotomy, names or singular terms are what predicates are predicated of, and items are what classes are classed of. Though it is more familiar these days to speak of pure class theories or pure set theories, there is nothing to be gained from mathematical methods which do not link up with the rest of the world.
+
+Properly, I take items only and solely as what one place predicates denote. There is reason to suspect a difference between items so defined and items as that which are classed by classes.
+
+Attributes are elsewhere called properties, intensions, concepts, qualities, aspects, natures, characters, features, types, exemplifiables, essences, meanings, and any other stuff that is somehow only mentioned in nonextensional conversations and contexts.
+
+There are parallels along the trichotomy throughout the history of philosophy that I submit are so helpful they can scarcely be ignored. An example is the difference between atomic and compound particulars parallel to Aristotle's difference between substance and matter.
+
+Because I am reading over a lot of articles at once I'm taking notes that do not flow, but I would rather record what is occurring as it occurs then try to reconstruct such occurrences from memory.
+
+Properties are universals, though there are some who may say that they are particulars and there such properties are called tropes, and substances are purportedly particulars. Properties are said to be exemplified or to be instantiated.
+
+I didn't get out as much as I may have hoped, but this is a starting point.
+Here is a list of the pages I happened to have open before I dropped this line of inquiry:
+
+1. <https://plato.stanford.edu/entries/natural-kinds/>
+2. <https://plato.stanford.edu/entries/properties/#UnivVersTrop>
+3. <https://plato.stanford.edu/entries/universals-medieval/>
+4. <https://plato.stanford.edu/entries/aristotle-metaphysics/#SubjMattArisMeta>
+5. <https://plato.stanford.edu/entries/substance/>
+
+
+
 ## \#2025-1002-1451
 
 There is so much that I now must do that I can't sort through it all and organize it into a plan without writing about it here. Most of the time when I make plans I don't write them out. I see them to myself and can go from there. It's a pleasing thing to close your eyes and see yourself doing the things that you need to in order to get things done. Sometimes it's a frustrating thing. You see how easy it was in your head and then when you go to do it you yearn for that ease of imagination.
