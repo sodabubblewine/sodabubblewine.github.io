@@ -151,6 +151,143 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1004-1611
+
+This continues my notes on volume 1 of Russel and Whitehead's "Principia Mathematica" from here [#2025-0927-1559](#2025-0927-1559).
+
+1. The end of Quine's "Set Theory and its Logic" is a brilliant panorama of set theories including Russell's and Quine's own New Foundations. As with almost everything Quine wrote, there is something subtle yet profoundly new to his presentation of Zermelo-Frankel set theory. By passing through stages from Russell's theory he lands firmly in Zermelo-Frankel's set theories as a result of a theory of cumulative types. This is accomplished in a way that is abhored by modern type theorists: by basic predicate logic. General variables replaced the adornments of so called 'typed variables' and all that goes as type theory is treated deftly by predicates appropriate to the type theory of interest.
+
+2. Why type theorists reject the methods of predicate logic is clear enough from anyone sufficiently familiar with the methods of predicate logic: there is no room for myth or mysticism in the extensional contexts of a theory with a predicate logic. It is much like the brash requirement that an objector "put up or shut up". It is not so confrontational, but this is the sense that I get from reading type theorists. There is a similr kind of fear of predicate logic in the methods of category theorists. Ask one to give you the predicate logic of their category theory and they scatter or loosely mention something about Lawvere. How mathematicians and logicians have come to accept such weak methods given what was learned through Frege is beyond me. It is so far beyond me that I almost take it as a personal attack on the profession.
+
+3. Unlike Quine's method of analyzing set theories, including Russell's, most modern type theorists are working in a secondary theory. The primary theory is something like Quine's protosyntax, or what is now most often called bit theory or binary tree theory. The difference between bit theory and binary tree theory is how you order their items.
+
+4. I aim to deal with the origins of Russell's theories of types in this note. They result from his own work and from Frege's analysis of judgement.
+
+5. Russell's theory of judgement and perception together with Poincare's vicious-circle principle are the access points proffered to the reader as proto type theorist.
+
+6. The vicious circle principle is an example of a geometrical metaphor of misdirection. The geometric metaphors, especially those which mention circles, cyclical motion, or spirals are among the spatial metaphors that misdirect an effective analysis of behavior and its origins. Instead of saying that, e.g., that history occurs in cycles as if what has happened before is happening again, it is much more accurate to speak of schedules.
+
+7. "An analysis of the paradoxes to be avoided shows that they all result from a certain kind of vicious circle. The vicious circles in question arise from supposing that a collection of objects may contain members which can only be defined by means of the collection as a whole." pg. 38 PM1
+
+8. Thanks to hindsight, we now know that Russell's paradox is not a paradox, and that the vicious circle principle is not a principle. Other than in remote places in Quine's work, I have not seen sources that give appropriate attention to these gems of hindsight so I'll give them some time here.
+
+9. Russell's paradox is most often presented as follows: is the class of classes not classed as themselves classed as itself? The argument goes that if such a class is classed as itself then it is one of the classes not classed as themselves, a contradiction. From whence, if such a class is not classed as itself then it is one of the classes not classed as themselves and hence is classed as itself, a contradiction. To emphasize the eroneous hint of paradox, the conclusion of this argument is often presented as "If it is classed as itself then it's not and if it's not it is." as if it is in some fluxuating state of selfclasshood and nonselfclasshood. This way of dealing with the history of classes obscures not only the logic but also the theory.
+
+10. First, a key distinction which was not available to Russell is that between the copula 'is' of predication and the predicate 'in' of classification (or what is more often known as membership, belongingness, etc.). I emphasize a predicate of classification rather than one of membership or belongingness because I wish to make it clear where among my metaphysical trichotomy of predicating predicates, classing classes, and attributing attributes I am speaking. It is crossing these methods that is as dangerous as crossing the streams in Ghostbusters.
+
+11. The copula 'is' is a grammatical connective, it is also called a grammatical atom. The grammatical construction of predication pairs a predicate with variables (better to call them pronouns and to later distinguish between free and bound pronouns than to get stuck speaking of names). We mark predication with copuli. One place predication pairs a one place predicate with a single pronoun e.g. 'it is red' predicates the one place predicate 'red' of the pronoun 'it' and 'it' is free in the predication 'it is red'.
+
+12. The predicate 'in' or, better 'classed', is a two place predicate. It is predicated of two pronouns. Two place predications are usually marked with 'is' and a new grammatical atom 'to' e.g. 'x is classed to y' predicates 'classed' of 'x' with 'y' and 'x' and 'y' are free in the predication 'x is classed to y'.
+
+13. Russell's paradox is now cast as bad grammar i.e. sometimes mistaking a predicate for a copula (as an inert grammatical atom that happens to aid in a grammatical analysis of a predication into its purportedly grammatical parts) and sometimes mistaking a copula for a predicate. When I use the two place predicate 'classed' it is harder to make this mistake but there is still a good enough explanation as to why such mistakes occurred in the first place.
+
+14. So to put Russell's paradox in my metaphysical trichotomy: it is crossing the boundary between predicating predicates and classing classes without passing through immigration. On the predicate side there is no paradox: there is only a validitiy of predicate logic. On the class side there is no paradox: there is only a conclusion of class theories.
+
+15. Predicate abstraction is needed in order to vividly reveal the metaphysical mistake. Predicate abstraction is the logical import of the relative clause of English e.g. 'who loved Dick', 'which is uptown from here', or 'that was late'. If you look up the definition of 'relative clause' you'll get something like "A relative clause is a clause that modifies a noun or noun phrase and uses some grammatical device to indicate that one of the arguments in the relative clause refers to the noun or noun phrase." from <https://en.wikipedia.org/wiki/Relative_clause>.
+
+16.  In logic, relative clauses are predicates. This is not obscure since, in English grammar, a complete simple sentence which contains a relative clause is analyzed into its subject and predicate such that the predicate is identified as the relative clause.
+
+17. There is a slight hitch here since in English the copula, e.g. 'is', can often be found as part of what comes out as the predicate of a sentence. Such nonuniformities are carried over to the uniform regimentation characteristic of logical (and grammatical) methods by dropping the copula from English predicates e.g. The predicate of the sentence "It is red" is the clause "is red" in English and is "red" in a logical theory with the one place predicate 'red'.
+
+18. In english, the pronouns 'who', 'which', and 'that' in the relative clauses "who loved Dick", "which is uptown from here", and "that was late" are often shuffled into some special grammatical category e.g. relative pronouns. The pronouns of logic (historically known by the misleading name 'variables') are of a singular sort. They can later be classified as bound or free depending on whether they occur within a predicate abstract or not, but I'll get to that in a second.
+
+19. Quine's method of regimentation of relative clauses into predicate abstracts embraces a verbal practice familiar to mathematicians and marked in English sentences by the phrase "such that" as in "x such that x is even and x is greater than twenty". Examples: "who loved Dick" is regimented as "x such that x loved Dick", "which is uptown from here" is regimented as "x such that x is uptown from here", and "that was late" is regimented as "x such that x was late". Any pronoun other than 'x' will do in each of these cases, though when substituting in and out of predicate abstracts for the sake of generating validities from validities more care must be taken to preserve validity across instances either by restricting grammatical constructions or by restricting substitution.
+
+20. Having regimented the English relative clause into the strict 'such that' clause of matheamtical English a final step of regimentation is introduced to finally paraphrase the relative clause of English as a predicate abstract of logic. It eases the grammatical analysis of the *scope* of a predicate abstract.
+
+21. Quine chooses the somewhat radical route of paraphrasing "who loves Dick" as "{x: x loves Dick}" which can be read aloud in Mathematical English as "x such that x loves Dick" though, here, it is obvious that something of the scope that can be analyzed by pairing off left and right curly brackets is lost to some other context in both the English and its mathematical variant. This notation is radical because historically curly brackets have been associated with what some called "class builder notation" e.g. "{x: x loves Dick}" is read as "the class of x such that x loves Dick". Further emphasizing this association, Quine goes so far as to use the epsilon of class-membership that is most familiar to modern students rather as the copula of predication. Interestingly, he draws the line at letting "=" be short for the grammatical connective of coextension!
+
+22. My personal preference has evolved into a further plying of mathematical English into that which is easily seen to be as formal as any effective grammar of logic. The relative clause "who loves Dick" is paraphrased as the predicate abstract "(x such that x loves Dick)" where the parenthesis set up the scope of the pronoun 'x' bound by the context "(x such that ... )". This is largely inspired by the familiar method of function abstraction in theories of lambda calculi and programming languages descending from McCarthy's LISP.
+
+23. All at once, the predicate abstract '(x such that x is red)' abstracts the predciation 'x is red' by binding the free occurrence of 'x' in 'x is red' with the binder "(x such that ...)" so that 'x' is bound in the predicate abstract '(x such that x is red)'.
+
+24. Schematically, with the predicate letter 'F', "(x such that x is F)" abstracts the predication "x is F" which is sometimes written as just "Fx" but which I shall not write as such here because I am emphasizing the difference between the copula 'is' and the two place predicate 'classed'. 
+
+25. One last uniform method of regimentation is helpful when dealing with predicating and abstracting many place predicates. The two place predication "x is classed to y" of the two place predicate 'classed' with the pronouns 'x' and 'y' is paraphrased as "x with y is classed". This is terrible English, be it mathematical or not. A better method has yet to evolve. Continuing, the three placed predication "x stole y from z" of the three place predicate 'stole' with the pronouns 'x', 'y', and 'z' is paraphrased as "x, y, with z is stole". This suggests that "x, y, with z is stole" is short for the somewhat more acceptable "x with y with z is stole".
+
+26. The general problem of 'with' is subject to a similar problem as that with the copula 'is'. Here, the use of 'with' along with the commas ',' is just a use of grammatical atoms to clearly indicate which of the many grammatical constructions of predication are participating in predication examined (often for the sake of simplifying grammatical analysis).
+
+27. Now that predicate abstracts are firmly planted as part of predicate logic, that is as the logical import of the English relative clause (thanks to Quine), there is just a bit more to do to get back to Russell. Quine stopped at presenting predicate abstraction as a mere huerustic. He said so in the final chapter to "Methods of Logic 4th edition" on "Axiomatic Set Theory". This was misleading of him though, as he had gone much further than a mere heuristic when invoking the same notation under the name of "the virtual theory of classes" in "Set Theory and its Logic" and the earlier work "O Sentido da nova logica" section 51 of 1942.
+
+28. I must also make it clear that Quine is not unqiue in his recognition of the importance of something like predicate abstraction. He is responsible for clearly and exactly linking it up with the relative clause of English. He showed how predicate abstraction is burdened with the whole business of bondage and freedom. Others mixed it with quantification. We can be sure that Quine made this link in a special way by looking at how it interlocks with his method of predicate functors and the elimination of pronouns.
+
+29. There is further uniqueness that went unmentioned by Quine in the ways that predicate abstracts permit a smooth flowing exposition of so called 'free logics' where free pronouns come to play the part of dummy singular terms.
+
+30. This all is not as obscure as it might seem since the entirety of Russell's type theoretic distinctions are derived from mishandling names. Schofinkel (1924) and Curry's combinators, Tarski's cylindrical algebra (1952), Bernay's modification of Tarski (1959), and Halmos's polyadic algebras (1956) deal in their own way with predicate abstraction but only indirectly because they are aimed just at eliminating variables and only do so within a given theory whereas Quine's methods of predicate functors eliminate variables from logical methods entirely.
+
+31. A bit more history. The epsilon as copula is Peano's and it is also Peano who, notationally, did most of what goes as predicate abstraction, as Peano used a flipped epsilon as short for 'such that' though Peano was closer to Russell and closer still to the theories of function application and combinator application in letting the right way epsilon go as 'classed' which is the 'application' of class theories. Peano and Russell both adopted the methods of class and relation abstraction. Russell used a hat over variables and let the alphabetical order of the variables indicate the arrangement of items that may be so related, and peano used the backwards epsilon, though I think only with one variable, I'm not quite sure about that.
+
+32. This is all a horrible way of saying that Quine's methods are not unfounded or unanticipated. They are presented as distinct methods though and this is often an essential ingrediant in any effect method.
+
+33. Back to predicate abstracts and their part in the grammatical constructions of logic. In a truth functional and quantificational logic, predicate abstraction is an abbreviation. The variable bound by a predicate abstract comes to be bound by a quantifier. Technically, the truth functional and quantification logic must be a truth functionl and quantificational theory of identity. This comes from the fact that Wang's premise of identity theory is the machinery which permits the quantificational abbreviation of predicate abstraction to yield the premises of concretion that I am now to explain.
+
+34. Truth functional and quantificational logic is peculiar on theories of identity (and equivalently adequate logical methods such as predicate functor logic, equivalent adequacy can be established by supplementing the one with the other and proving the grammatical category of the other equivalent to some grammatical category of the one, and then vice versa). A given logical theory has only finitely many items in its lexicon and from these a predicate of indiscernability can be constructed such that it is always coextensive with any predicate of identity that may be already among the lexical predicates. Such a predicate of lexical indiscernabiltiy can be investigated by way of the methods of schematic theories. Schematic theories are contrasted from their instances by predicate letters which are reserved as schematically lexical. This means that unlike the other predicate letters in a schema, lexical letters (as they may now be called) may only be substituted by predicates of a contemplated lexicon when generating instances of schema in which they occur. Sometimes a special alphabet is reserved for such work, but that is rarely needed in practice. Marks can be attached to the familiar predicate letters rendering them newly lexical.
+
+35. As a consequence of all that I have just said, the quantificational abbreviation of predicate abstraction can be introduced into any such logical theory since Wang's schematic premise of identity is a validity of logical theories. The only reason it is not a validity of logic is because the methods of logic proper are independent of lexicon (and theory).
+
+36. I now come to explain where concretion is among these preliminary remarks. The schematic premises of concretion are the theoretical import of a profound principle called 'predicational completeness'. It was identified by Quine and explained as follows. Each sentence in which a given name occurs is equivalent to a one place predication of a one place predicate with that name.
+
+37. In simple cases this seems silly e.g. 'It is red' is already in a form where one place predication of the one place predicate 'red' with 'it' is equivalent to, identical in fact, 'It is red'. Where things go strange is when there are multiple subjects e.g. 'He stole it from her' is equivalent to 'He is who stole it from her' which, paraphrased as a one place predicate of a one place predicate abstract with 'he', is equivalent to 'he is (x such that x stole it from her)'. Predicate abstracts bestow a language with this precious property of predicational completeness. Upon reflection we may see that much of what goes as philosophy is the result of this almost pedestrian analysis of the relative clause into predicate abstraction.
+
+38. Independent of the coextension of identity with lexical indiscernability, predicate abstraction can be introduced as basic grammar and put to work in any theory with the aid of the premises of concretion (each instance of the schematic premises of concretion). Concretion is the principle which generalizes the equivalence between "he stole it from her" and "he is who stole it from her".
+
+39. The one place schematic premise of concretion is
+     - x is F if and only if x is (y such that y is F)
+
+40. The two place schematic premise of concretion is
+    - x with y is F if and only if x is (z such that z with y is F)
+
+41. Technically, there may need to be a second two place schematic premise of concretion depending on how abundant are the predicates generated by a given grammar of logic:
+    - x with y is F if and only if y is (z such that x with z is F)
+
+42. The remaining schematic premises follow on with each of the many grammatical constructions of predication.
+
+43. I have presented the premises without presenting the grammatical category of predicate abstracts. I shall do that now. An n place predicate abstract pairs a zero place predicate (sentence) with n pronouns and is usually marked by the grammatical atom 'such that', and perhaps even with parentheses.
+
+44. So, in a language like LISP, an example of a schematic predicate abstract with predicate letters "F" and "G" is
+    - ('such that' (x y z) ('and' ('is' (x u) F) ('is' (v y z) G)))
+
+45. Such 'tagged' trees are frequently useful as they aid in any grammatical analysis. When tagged as in the example, that is when tagged by the name of the gramamtical category into which they are constructed, such trees are called "abstract syntax trees". The word 'syntax' comes from an unhappy time before the distinction between what were once called 'syntax and semantics' was untangled. Technically, they were put back together again, like Humpty Dumpty after his fall.
+
+46. Having introduced the grammatical category of predicate abstracts, each instance of the schematic premise of concretion is part of any theory in such a logic. In almost all cases, these premises are redundant. It is also an appealing part of logical methods generally sice what are sadly called 'extra-logical axioms' (as if there are 'nonlogical premises' and hence 'logical premises'), like those premises which are instances of a the schematic premise of concretion, are dispensible i.e. there is nothing gained from adding a grammatical category of predicate abstracts to the grammar of truth functional and quantificational logic, especially when a further restriction is placed on the premises of any theory which includes such predicate abstracts.
+
+47. The explanation for the redundancy just mentioned is to show that the premises of concretion are conclusions from Wang's premises of identity. In fact, concretion is equivalent to an instance of Wang's schematic premise of identity which substitutes its predicate letter for another instance of Wang's schematic premise of identity. (Technically, if Wang's schematic premise is presented as a universal closure then some care must be taken when explicating the definition of quantificational validity e.g. to segregate the vacuous validities of a vacuous universe from the others as in Quine's methods of "free variable logics").
+
+48. Now, with predicate abstracts and concretion in hand, the validity present in Russell's purported paradox is an instance of the premise of concretion:
+    - each item is (x such that x is (y such that not y with y is F) if and only if not x with x is F)
+
+49. There is nothing left to explain since this really is just an abbreviation for a valid schema of truth functional and quantificational logic and, hence, its instance in a class theory is valid:
+    - each item is (x such that x is (y such that not y with y is classed) if and only if not x with x is classed)
+
+50. The conclusion present in Russell's purported paradox starts with a schematic singular description in a theory with a lexical two place predicate 'classed':
+    - 'the class of (x such that x is G)' for 'the (y such that each item is (x such that x with y is classed if and only if x is G))'
+
+51. The lexical status of 'classed' permits the contextual elimination of any instance of the schematic singular description built up from only the two place predicate 'classed'.
+
+52. Singular desriptions prompt contemplation of their descriptional premises i.e. speaking of 'the such and such' tends to proceed from tacit premises that there is at least one such and such and that there is at most one such and such. It is the first of these descriptional premises (called "the descriptional premise of existence" and the other is called "the descriptional premise of uniqueness" though they can be combined into one like the schema "some item is (x such that Fx and each item is (y such that Fy if and only if x is identical to y))").
+
+53. The descriptional premise of existence of Russell's one place predicate '(x such that  not x with x is classed)' is
+    - some item is (y such that y with y is classed and each item is (x such that x with y is classed if and only if x is (z such that not z with z is classed)))
+
+54. It can be show that the descriptional premise of existence of Russell's one place predicate is an inconsistency. For suppose y is some such item i.e. 
+    - each item is (x such that not y with y is classed, and x with y is classed if and only if x is (z such that not z with z is classed))
+
+55. Then, in particular,
+    - not y with y is classed, and y with y is classed if and only if y is (z such that not z with z is classed)
+
+56. which is implies, by concretion and interchange of equivalents, 
+    - not y with y is classed and y with y is classed
+
+57. an inconsistency outright. So, by an augmentation of Quine's main method that accomodates interchange of equivalents, the descriptional premise of existence of Russell's one place predicate of nonselfclassification is an inconsistency. Therefore, its negation is a conclusion in any theory whose lexicon includes the two place predicate 'classed'. Careful attention must be paid to the wording of my conclusion.
+
+58. Since no other premise invovling 'classed' is part of this proof, there is a validity that can be unearth from the descriptional premise of existence of Russell's predicate, but I hesitate to emphasize it above and beyond its instance in a theory with a two placed predicate 'classed' since absent the singular description I do not see it on par with the schematic premises of concretion which then are shown as validities. There is more that can be done to demystify this all, but first I'll just give the validity outright:
+    - each item is (x such that not x with x is F or some item is (y such that not y with x is F or exclusively x with x is F))
+
+59. As far as I can tell, this validity is the logical basis of proofs by diagonalization. So, for now, the schema of diagonalization is
+    - each item is (x such that not x with x or some item is (y such that not y with x is F or exclusively x with x is F)).
+
+60. As a consequence of so dismantling Russell's paradox, the vicious circle principle is a non sequitur.
+
 ## \#2025-1003-1852
 
 I'm somewhat surprise at how good it has felt to write this way. In the past I couldn't let a single sentence sit upon the page unless I saw its interlocking connections with the basic principles that I picked to govern my behavior. I'd get stuck talking about behavior rather than about all those mental things, e.g. beleiving, that becloud any effective methods of dealing with the world.
