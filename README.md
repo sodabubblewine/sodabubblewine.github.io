@@ -151,6 +151,320 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1007-1413
+
+This continues work on my programming environment. I'm not going to link it back to other stuff because that's boring. I might do it later if what I end up writing here matters at all.
+
+I was writing a story about about how my programming environment is made of a forest of programmable trees. They purportedly listen for mands (a technical term from Skinner's "Verbal Behavior") and reinforce the speaker/programmger accordingly.
+
+I made the mistake of taking 'mux' as a primitive as if it made it possible to write an executer from it. The executer reads a binary tree and takes a corresponding action based on what it reads. This lets the tree command itself. This is how you get automatic rather than manual programming. It's the difference between cruse control and manual.
+
+In the code for the forest, the function that manages mands is called 'act'. There is a special list called 'mand' that holds a list of mands to be executed cyclically. Technically, 'act' is composed of two functions 'fetch' and 'next'. The function 'fetch' pops the top item of the list of mands and appends it to the bottom of the list. The function 'next' checks input/output conditions and if they are appropriate plans the next action.
+
+The three functions 'act', 'next', and 'fetch' can be put into one that is more organized and may yield even simpler functions if later factored into parts. The key step is 'next'. In one of the earlier notes on my programming environment, I showed that a tree needs to not only be able to execute a command/instruction, but it also has to schedule, in some way, the execution of the next command. It has to choose what to do next (to put it in democratic terms).
+
+Wrapping everything up into 'next' encapsulates the thinking that goes into setting up the 'fetch-execute' or 'instruction' cycle familiar to hardware designers.
+
+I'll go ahead and setup the input/output stuff too just to really get the ball rolling. Also, I'll simplify the logic of following instructions to avoid some endless loops. The list of mands will just get shorter each step rather than having the top of the list append to the end of the list after the relevant action has been taken. The reason to avoid this right now is because the operation of appending is primitive recursive and as a supplementary operation it is not helpful to include any kind of recursion except in the controlling environment. I have not made this clear here, but hopefully I'll find a good way of making it clear. It is most important when it comes to stepping away from a single tree and programming with a whole forest of trees that speak and listen to each other.
+
+This is quick code. This is not quality code. Some say that you should never write quick code. I know of no other way to start writing quality code.
+
+```
+var mands=Nil; // instructions
+var tx=Nil; // transmitting
+var rx=Nil; // receiving
+
+function next(){ // follow next instruction
+  let mand=L(mands); // next instruction
+  mands=R(mands); // ready the next mand
+  function check(){ // instructions are coded as the length of a list
+    if(isNil(mand))return true; // reached the end of mand?
+    mand=R(mand); // drop the top of the list
+    return false; // haven't reached the end of mand
+  }
+
+  switch(true){ // decode instruction
+    case check(): drop(); break; // a length zero list encodes drop
+    case check(): dup(); break; // a length one list encodes dup
+    case check(): pop(); break; // and so on
+    case check(): push(); break;
+    case check(): swap(); break;
+    case check(): nil(); break;
+    case check(): pair(); break;
+    case check(): part(); break;
+    case check(): mux(); break;
+    default: break;
+  }
+
+  if(rx||tx)return; // if receiving or transmitting wait
+  next(); // plan to do the next thing
+}
+```
+
+As the comments say each command is encoded as the length of a list. So the list of commands, called 'mands', is a list of lists each length of which corresponds to a basic operation on the tree. It is customary to grab the first command and then immediately set up the list of commands so that it is ready for the next command to be grabbed the next time around. There are various reasons for delaying this set up, but I've not done that here.
+
+The function 'check' is just a local (and trashy) way to check if the length of the current mand is zero or not. If it's not then it shortens the list by removing its first item and then that shorter list is checked to see if it is length zero. Eventually, since we've made a prior agreement, this checking process will reach the end of the length of mand and when it does we do the corresponding basic operation e.g. if the mand is initially of length zero then drop is executed, and if the mand is initially of length one then the first check is false and the next check is true so that dup is executed. If instead of lengths of lists I was using numbers then '0' would encode drop, '1' would encode dup, and so on.
+
+This encoding and decoding is the crux of stored programming and is made possible by a fact first uncovered by Godel in his incompleteness proofs. The general method is called 'the arithmetization of syntax' but it's really a fancy name for an old method that is familiar to anyone who reads a newspaper: quoting. Codes are just obscure ways of quoting something that we said e.g. I said 'drop' and quoted it as a length zero list. When we quote people we tend to do so in a way that makes it relatively easy to reconstruct what they might have said on the spot, but since I've decided that everything is a binary tree (aka ordered pair) then my only way of making quotations is with ordered pairs rather than letters of the alphabet.
+
+After the relevant basic operation is done, 'next' checks to see if the tree is transmitting or receiving. None of the basic operations I've introduced thus far change whether the tree is transmitting or receiving (speaking or listening). I'll change 'transmitting' and 'receiving' as 'rx' and 'tx' into 'speaking' and 'listening' because those are better names for what is going on. I'll also give below the supplementary code that sets up the basic operations on the tree that are included in the switch statement of 'next'.
+
+```
+function Pair(l,r){return [l,r];}
+
+var Nil = new Object();
+function isNil(p){return p==Nil;}
+
+function Left(p){return isNil(p) ? Nil : p[0];}
+function Right(p){return isNil(p) ? Nil : p[1];}
+
+function P(l,r){return Pair(l,r);}
+function L(p){return Left(p);}
+function R(p){return Right(p);}
+
+function LL(p){return L(L(p));}
+function LR(p){return L(R(p));}
+function RL(p){return R(L(p));}
+function RR(p){return R(R(p));}
+function LLL(p){return L(LL(p));}
+function LRL(p){return L(RL(p));}
+function RLL(p){return R(LL(p));}
+function RRL(p){return R(RL(p));}
+function LLLL(p){return L(LLL(p));}
+function RLLL(p){return R(LLL(p));}
+
+var T=Nil;
+function drop(){T=P(LL(T),R(T));}
+function dup(){T=P(P(L(T),RL(T)),R(T));}
+function pop(){T=P(LL(T),P(RL(T),R(T)));}
+function push(){T=P(P(L(T),LR(T)),RR(T));}
+function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+function nil(){T=P(P(L(T),Nil),R(T));}
+function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+
+function mux(){T=P(P(LLLL(T), RL(T)==Nil ? RLL(T) : RLLL(T)), R(T));}
+
+var mands=Nil; // instructions
+var speaking=Nil; // transmitting
+var listening=Nil; // receiving
+
+function next(){ // do next instruction
+  let mand=L(mands); // get next instruction
+  mands=R(mands); // set up getting next instruction
+
+  function check(){ // instructions are quoted as the length of a list
+    if(isNil(mand))return true; // reached the end of mand?
+    mand=R(mand); // drop the first item of the list
+    return false; // haven't reached the end of mand
+  }
+  
+  switch(true){ // disquote instruction
+    case check(): drop(); break; // a length zero list quotes drop
+    case check(): dup(); break; // a length one list quotes dup
+    case check(): pop(); break; // and so on
+    case check(): push(); break;
+    case check(): swap(); break;
+    case check(): nil(); break;
+    case check(): pair(); break;
+    case check(): part(); break;
+    case check(): mux(); break;
+    default: break;
+  }
+
+  if(speaking||listening)return; // if receiving or transmitting wait
+  next(); // plan to do the next instruction
+}
+```
+
+In general, it is better to speak of quoting and disquoting than it is coding and decoding. Codes suggest a cryptic mysticism that quotations don't.
+Also, quotatoin is more cryptic than most people suspect. And yet, we find many instances of the phrase "You misquoted me!" or "You're quote was out of context!". I'd rather people see codes and quotes as similar than as different even in casual conversation.
+
+Programmers familiar with programming, e.g. in javascript as above, will notice that there is something very wrong with the definition of 'next'. It ends with a call to itself! Naively this is ok. But, if you plan on running this code for any length of time then you'll get the classic "stack overflow" error. This stack is much like the list of the tree. It is part of how the 'flow of control' is managed. When a stack overflow error is thrown, it means that the machine has no more room to for keeping track of what it has to do next. Specifically, after it finishes doing what this function is telling it to do, it won't know what function to do next. Everything has to be written down because it has no clue what it's doing or what it's going to do next.
+
+One of the solutions that people are familiar with is also needlessly complicated. It's called "tail recursion" and involves what is called a "tail call". It's an obscure way of saying that if the last thing a function tells a machine to do is to 'call' another function, then it's just as well to 'jump' directly to that function rather than complete 'the call' by coming back to the previous function and doing nothing.
+
+This has got me off on a rant. I'm going to rant. We used to just call things routines and subroutines. These words are much stronger than 'function'. Now we are forced to speak about the differences between functions and routines. Not every routine is a function. Whether a subroutine is a function or not is sometimes obviously true and most of the time a technical thornbush. Now we have methods, procedures, functions, routines, and programs. The word 'program' is the best. Better than routine.
+
+We can give a program a name. A program is just a special kind of quotation. Programs go hand in hand with schedules. Scheduling a program does not guarentee that the consequences of executing the program are going to occur. They are planned to occur, but that doesn't promise us any more than when a phycisist says there will be an eclipse at this time on this day.
+
+Oh, we also have macros, macros in addition to functions. Goodness help me. Goodness help us!
+
+I have a general way that I like to set up scheduling operations.
+
+```
+var scheduled=[];
+var going=false;
+function schedule(it){
+    scheduled.push(it);
+    if(going)return;
+    going=true;
+    while(scheduled.length) scheduled.shift()();
+    going=false;
+}
+
+```
+
+For now the scheduler is just implemented in javascript. It expects you to schedule the name of a function without any variables and it runs through everything that's been scheduled and executes it. Usually I separate out the planning phase and the 'going' phase, but, in this case, the 'plan' function would just push the name of a function onto the end of the list named 'scheduled' and then call another function, I usally call it 'go', which has the single while loop that runs everything. 
+
+Scheduling is something that I first take as exterior to the language I'm designing. I've also been a bit misleading in my implementation of 'next', but first I'll go ahead and revise it with the scheduler in mind:
+
+```
+function next(){ // do next instruction
+  let mand=L(mands); // get next instruction
+  mands=R(mands); // set up getting next instruction
+
+  function check(){ // instructions are coded as the length of a list
+    if(isNil(mand))return true; // reached the end of mand?
+    mand=R(mand); // drop the first item of the list
+    return false; // haven't reached the end of mand
+  }
+  
+  switch(true){ // disquote instruction
+    case check(): drop(); break; // a length zero list quotes drop
+    case check(): dup(); break; // a length one list quotes dup
+    case check(): pop(); break; // and so on
+    case check(): push(); break;
+    case check(): swap(); break;
+    case check(): nil(); break;
+    case check(): pair(); break;
+    case check(): part(); break;
+    case check(): mux(); break;
+    default: break;
+  }
+  if(speaking||listening)return; // if receiving or transmitting wait
+  schedule(next);
+}
+```
+
+Since I've allowed myself to use javascript without first implementing everything in my own language (something which isn't hard, but it has to start somewhere, usually on a host system, and while the hardware may mirror the design of the programming environment, it may not, and there is nothing to do but submit to hegemony for now, but hopefully not forever).
+
+Those familiar with LISP will recognize much of what is going on thus far. The bulk of 'next' is what a LISPer would call 'apply'. The other component in a LISP interpreter is 'eval'. Apply applies primitive operations to arguments, or, if the operation being applied is not primitive, it looks for its definition and sends it over to eval. Eval evaluates commands before picking what to apply. Eval is where macros come in. Macros are just an elaborate way for a machine to pick what to do based on what it sees before it goes and does it.
+
+In my programming environment there are single words, and each of them is of one color: red, green, blue, and gray. Gray words are primitive words. Hence, the part of 'next' that has all those 'case check()' statements is really just the way of dealing with gray words.
+
+I usually factor working with gray words out into its own function, just as LISP people factor out application from evaluation. Here is one way I might factor out executing gray words:
+
+```
+function gray(word){ // gray words are primitive words
+  function check(){ // instructions are coded as the length of a list
+    if(isNil(word))return true; // reached the end of mand?
+    word=R(word); // drop the first item of the list
+    return false; // haven't reached the end of mand
+  }
+  
+  switch(true){ // disquote instruction
+    case check(): drop(); break; // a length zero list quotes drop
+    case check(): dup(); break; // a length one list quotes dup
+    case check(): pop(); break; // and so on
+    case check(): push(); break;
+    case check(): swap(); break;
+    case check(): nil(); break;
+    case check(): pair(); break;
+    case check(): part(); break;
+    case check(): mux(); break;
+    default: break;
+  }
+}
+```
+
+So then, the definition of 'next' can be written just
+
+```
+function next(){ // do next instruction
+  let mand=L(mands); // get next instruction
+  mands=R(mands); // set up getting next instruction
+  gray(mand);
+  if(speaking||listening)return; // if receiving or transmitting wait
+  schedule(next);
+}
+```
+
+Here it is now clear that each mand in the list of mands must be a gray word. Setting up the appropriate gray words is what other programming langauges call 'compiling'. But, everything doesn't need to be gray words. That would make it impossible to define new words.
+
+A note on colors. There are a few ways to deal with them. One way is to separate out how a word is spelled from the color it is spelled with. Directly, words have a color and a spelling.
+
+I'll get right to it. Programs are a list of words. When you see a gray word you do what it says to do. When you see a green word you mark your place in the program and search back word by word for the nearest red word that is spelled the same as the green one. If you find such a matching red word then you start going forward and follow on with the program from there. If you don't find one then usually everything is designed to crash so that you know you've done something very wrong. An alternative is you can have the machine silently return back to where you left off i.e. the place you marked right after the green word whose matching red you failed to find.
+
+Blue words are special. They are like green words, but they make things happen the moment you're done typing them. There are a few different ways to deal with blue words. Each way is something you have to be careful about because blue words do things NOW and not later.
+
+In my programming environment there is no difference between programming and editing and executing. It's all just programming. The moment you finish typing a blue word it gets treated like you just ran into a green word spelled the same way. That means, everything stops and you go looking backwards word by word for the first red word spelled the same as the blue word you just finished typing.
+
+Blue words only do anything the moment after you type them. Otherwise, they are treated just like when you run into a red word: nothing happens.
+
+So green and blue words are alike except that if you run into a blue word while running a program nothing happens and when you finish typing a blue word it gets treated as if you just ran into a green word spelled the same as the blue word.
+
+When green words mark where they were at so that you can return to them aftwards this all happens on the list of the tree. Yes, the tree is still here, doing all these things. Also, red words don't work exactly the way that I said. Neither do programs.
+
+A program is really like a list of red words followed by a list of green, blue, and gray words. Let us agree that the right part of an ordered pair is where we're going to put the color of a word and the left part is going to be where we spell out.
+
+Sadly, that's all I have time for today. Just as things were getting juicy.
+
+
+## \#2025-1006-1311
+
+Hey, we need to talk about behavior. Why don't you take a seat next to me right here. I know it feels a bit like being sent to the principle's office. No one wants to talk about behavior who isn't a bit afraid of what that might entail. In the past I've scared some people off just by talking about behavior the way that I do. Is there really something so frightening about the way I talk about behavior as opposed to the ways that others talk about it? Or, is it just a difficult topic to deal with?
+
+I take the responsibility for the discomfort I've caused people when speaking of behavior and, specifically, when telling them about the control of human behavior. That phrase, "the control of human behavior", is certainly weighty. It's like something you'd hear in a monologue by a James Bond villian. "And now Mr. Bond once I flip this switch and activate my brain ray satellite all the people of Earth will be under my control."
+
+There's no good way to start on the control of human behavior. This is probably a good thing. It probably helps to make people uncomfortable when discussing something so profoundly consequential. At the same time it makes the whole topic seem much larger and overbearing than it actually is. It's no more overwhelming than talking about physics, but it is immediately personal in a way physics may never be.
+
+One way of approaching the science of behavior is through the history of psychology. Something about starting way off makes people feel in control of subject. It has to do with how foolish the ancient theories are compared to the common sense of today. But, once the march through history arrives at our front door, it is far more unsettling than it has any right to be.
+
+The history of pschology is a no go. It would take too long to get started on the stuff that matters most and the urgent demands of daily events leaves little room for dottling. Though, I wouldn't want to sound self important. As if the only way to save the world is with the science of behavior. This is certainly my opinion, belief, or conviction, but it's no more my aim "to control the world for good" than it is to follow the Bond villian and "controlt he world for bad".
+
+Rather than continue to fumble for a place to start talking about behavior, I'll go straight to the single paragraph summary of the first chapter of B. F. Skinner's "Beyond Freedom and Dignity" (BFD) as it is better than anything I might have to say:
+
+> "Almost all our major problems involve human behavior, and they cannot be solved by physical and biological technology alone. What is needed is a technology of behavior, but we have been slow to develop the science from which such a technology might be drawn. One difficulty is that almost all of what is called behavioral science continues to trace behavior to states of mind, feelings, traits of chacter, human nature, and so on. Physics and biology once followed similar practices and advanced only when they discarded them. The behavioral sciences have been slow to change partly because the explanatory entities often seem to be directly observed and partly because other kinds of explanations have been hard to find. the environment is obviously importgant, but its role has remained obscure. It does not push or pull, it *selects*, and this function is difficult to discover and analyze. The role of natural selection in evolution was formulated only a little more than a hundred years ago, and the selective role of the environment in shaping and maintaining the behavior of the individual is only beginning to be recognized and studied. As the interaction between organism and evnironment has come to be understood, however, effects once assigned to states of mind, feelings, and traits are beginning to be trace to accessible conditions, adn a technology of behavior may therefore become available. It will not solve our problems, however, until it replaces traditional prescientific views, and these are strongly entrenched. Freedom and dignity illustrate the difficulty. They are the possessions of the autonomous man of traditional theory, and they are essential to practices in which a person is held responsible for his conduct and given credit for his achievements. A scientific analysis shifts both the responsibility and the achievement to the environment. It also raises questions concerning "values." Who will use a technology and to what ends? Until these issues are resolved, a technology of behavior will continue to be rejected, and with it possibly the only way to solve our problems." pg. 24-25 BFD
+
+If you made it through that paragraph then you are among the few. Heck, if you're reading anything I'm writing here, then you are among the very few. I once thought of building a culture entirely based around that single word "few". When you say it aloud it sounds like "phew", a sigh of relief, and often the first and only way to impose a calming kind of self control. 
+
+But, having gotten through that paragraph and having become one of the few people that reads what I write here, what is there to do about it? Or, said another way, what is our problem? There must be something wrong if we are all here now reading this. It is not as if I'm writing this because I enjoy hearing myself talk. I do, but that's not why I'm writing this.
+
+Something about the way the world works is not working. If, like me, you have some history with the sciences, then there appears to be promise in any practices brought under scientific control. Most people fear this. Control of any kind is to be obliterated. Controllers are to be dismantled. They are seen as an over threat to our freedom and dignity as people who are otherwise in control of their life and work. I can do what I want to do, can't I?
+
+So much has been said about behavior that is prescientific that it is hard to get to where the science starts. All that I can say is that it helps to start with some other science, e.g. I started with physics and math, and carefully extend their experimental and theoretical practices to the subject of behavior. Why behavior? Why not mind? I have no short answer to that.
+
+If you go to a psychologist they are going to talk with you about what you think and feel, and, if they are good, may only indirectly approach your behavior as a seperate subject. Even then, the approach to behavior is going to be remote from the places where it actually occurs (unless you are exceptionally rich and the psychologist comes to you, even then, what can be seen by the psychologists eyes can easily be shown to be inadequate to dealing with behavior scientifically).
+
+Your reports on what you have done, the occasions on which you did them, and the consequences are sketchy at best. We do not yet live in a world where the experimental practices characteristic of a science, specifically a science of behavior, are present in everyday life. To even suggest something like that is to flame fires of revolt as an escape from controlling interference over everyday life. Records of your behavior in everyday life are almost never used to help you e.g. your search history is sold to the highest bidder because it can be used to present you with advertisements that are designed to take your money without you feeling as if it has been stolen.
+
+As long as we proceed in a prescientific way, the cultures of the world are to be stuck in a diabolical equilibrium. Controllers continue to give people what they want, and, if they can, to control what you want so that they can give you what they have in exchange for what *they* want. This battle of wants is an example of Skinner's "traditional prescientific views, and these are strongly entrenched".
+
+To start by telling someone that there common sense explanations for behavior are bankrupt is to end the conversation before it has even begun. This is where it helps to start with some other science, like physics or chemistry or biology, and creep up on a science of behavior. There are problems with that method too and they are somewhat new problems. The sciences of physics, chemistry, and biology are presently stuck on experimental and theoretical practices which test or evluate hypotheses. Modern students of science are taught "the scientific method" and it is a step by step guide to how to deal with hypotheses. It is as if science starts with an idea and the rest follows from there.
+
+To even contend something other than that science starts with ideas is foreign to most people. To tell them that science starts in the laboratory not in the library is to condemn those dedicated to scientific theories. It isn't, but that is the feeling that comes from suggesting such an alternative. Maybe you're more sophistocated than the average student of science or more enlightened than the professional scientist. Maybe you've seen some shit, and know your way around this world of uncertainty. Maybe you've been snowed in by a few blizzards of data and lived to tell the tale.
+
+I'm going to stop here because this note doesn't seem to be working. I don't want to delete it or pretend that it didn't happen. It's important to me, for the sake of accuracy if not completeness, to leave the mistakes on the page for all to see. Before I can know something I have to start by not knowing it already. If I knew it already then I'd be a fool. Even the things that I seem to know already often yield upon further reflection.
+
+Maybe I'll switch gears and reflect on why this entry isn't working. I wanted to talk about the science and technology of behavior. I have tried many times to start such a talk. Each time I end up getting stuck in the weeds well before getting to any kind of proper introduction. This time I thought that if I started with something that someone else wrote, in this case Skinner, then I might see how to go on from there. It's possible that is still a helpful way to begin, but that the conditions today are not ripe for effective writing.
+
+In the past I kept a cumulative record of my keyboard. I could look at each key press and see the shape of the curve of responses. I had to drop that because I spent more time thinking about how to program it than responding to it as an experimental analysis of behavior. That is, I worried about setting up the aparatus rather than uncovering what it revealed about my own behavior. This happens so easily with such things. It occurs to me that I may just be manufacturing excuses.
+
+Ugh, this has definitely devolved into something going nowhere.
+
+So, the problem is to start talking about the science of behavior. If that was the real problem then stating it would give me some hint as to how to solve it. As stated I see no hint. So what is the real problem?
+
+The real problem has to be something closer to the conditions underwhich I'm writing right now. Whatever words are coming are not the ones that I had planned on when I started out writing about the science of behavior. I'm stuck in a place that I seem to get stuck often. Writing about writing rather than writing about what it is I started writing about.
+
+I could stop writing right now. I could get up and walk around and perhaps do something else. After doing that something else for a while I might be ready to come back and write about the things I set out to write about. That also might not happen. It might be better for me to sit here and write my way through this obstacle.
+
+Is this an obstacle? Is this verbal behavior obstructing the other verbal behavior that is more appropriate to the topic at hand? Am I still steadfastly discovering what it is that I have to say by sitting here and writing like this, or am I simply responding by spinning my wheels?
+
+There are still fragments of what I wanted to say that are strong enough that I can almost feel them on my finger tips. Some decaf coffee might help. A few sips of the good stuff can get things moving in the right direction. A little bit of momentum can carry me through the toughest of spots.
+
+Ah, it occurred to me that what I have set out to write on is too large as a single problem. Breaking it into pieces is what I'm forgeting to do. Most of the time I can take on the whole thing all at once details and all. That's one of my strenths and also translates into a weakness when it comes to writing to those who are not already familiar with the whole that I have in mind. This is certainly an example of that error at work.
+
+It's not enough to break down "write on the science and technology of behavior" into "write on an introduction to the science and technology of behavior". Both are, in my lights, clearly not what I am aiming to write about, nor are they what I am likely to write about effectively. This writing here is evidence of the present insurmountability. A different line of attack is needed to get from here to a better vantage point.
+
+I haven't floundered like this in a long while. Usually I'm away from the keyboard when I get 'lost in thought' like this. It's kinda cool that I'm able to make a record of my thinking as it's happening. Later, if I read this later that is, I should be able to see more clearly where I went wrong and what I got stuck on. There's always something I'm stuck on, behind, or something like that. When I write in circles like this it comes down to something simple and obvious but which I only see with the power of hindsight.
+
+It's possible to leave biology and enter into behavior by focusing on how cells produce forces.
+
+This is future John. That's where past John left it, and I think he did all that he could. Good job past John. Sorry I'll never be able to complement you myself. Here's to future future John doing better than past John!
+
+
 ## \#2025-1004-1611
 
 This continues my notes on volume 1 of Russel and Whitehead's "Principia Mathematica" from here [#2025-0927-1559](#2025-0927-1559).
