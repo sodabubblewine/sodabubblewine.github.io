@@ -151,6 +151,803 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1008-1920
+
+(you can skip this first paragraph if you want)
+
+Yesterday I wrote more than I ever have before on the exact details of my programming environment. Since I've never done that outside of a purely technical and overly precise way, it has taken me a while to find a good way of explaining how everything works that's accessible. When I explain things to myself, I can reference everything that I already know. Because of my unique history, there is little that I share with a lot of people. There's more that I share with other people than the little that it takes to explain how my programming environment works, but none of that majority of similar stuff is sufficiently close to a technical and precise explanation. I've probably already lost some people. That's okay. This is how I figure out how not to lose people. I have to start by losing people before I can bring people along with me. I wasn't born a ringleader.
+
+It occurred to me last night that a way of getting a self sustaining interpreter for my language, and for any language, is to start by implementing it in some other language and then push out its purportedly autonomous interpreter from there.
+
+So, there are two ways to combine operations to form compound operations: compositionally and contingently. Composing one operation with another returns an operation that does the one and then the other. Conditionalizing one operation with another returns an operation that does the one if the top of the stack is Nil and does the other one otherwise. Here are the definitions of composition and conditionalization in javascript:
+
+```
+function comp(first, second){
+    return function(){
+        first();
+        second();
+    };
+}
+
+function cond(ifnil, ifnot){
+    return function(){
+        if(isNil(RL(T)))
+            ifnil();
+        else
+            ifnot();
+    }
+}
+```
+
+So, all together, the native functions, followed by the functions for the basic operations (drop, dup, pop, push, swap, nil, pair, part) and the basic constructions of new functions from old ones (comp, cond) are
+
+```
+function Pair(l,r){return [l,r];}
+
+var Nil = new Object();
+function isNil(p){return p==Nil;}
+
+function Left(p){return isNil(p) ? Nil : p[0];}
+function Right(p){return isNil(p) ? Nil : p[1];}
+
+function P(l,r){return Pair(l,r);}
+function L(p){return Left(p);}
+function R(p){return Right(p);}
+
+function LL(p){return L(L(p));}
+function LR(p){return L(R(p));}
+function RL(p){return R(L(p));}
+function RR(p){return R(R(p));}
+function LLL(p){return L(LL(p));}
+function LRL(p){return L(RL(p));}
+function RLL(p){return R(LL(p));}
+function RRL(p){return R(RL(p));}
+function LLLL(p){return L(LLL(p));}
+function RLLL(p){return R(LLL(p));}
+
+var T=Nil;
+function drop(){T=P(LL(T),R(T));}
+function dup(){T=P(P(L(T),RL(T)),R(T));}
+function pop(){T=P(LL(T),P(RL(T),R(T)));}
+function push(){T=P(P(L(T),LR(T)),RR(T));}
+function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+function nil(){T=P(P(L(T),Nil),R(T));}
+function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+
+function comp(first, second){
+    return function(){
+        first();
+        second();
+    };
+}
+
+function cond(ifnil, ifnot){
+    return function(){
+        if(isNil(RL(T)))
+            ifnil();
+        else
+            ifnot();
+    }
+}
+```
+
+With comp and cond it is possible to easily define mux i.e. it is no longer a basic operation.
+
+```
+var mux = cond(comp(drop, comp(pop, comp(drop, push))),
+            comp(drop, drop));
+```
+
+Two of these parts of mux occur often enough to be given their own names:
+
+```
+var drop2 = comp(drop, drop);
+var nip = comp(pop, comp(drop, push));
+```
+
+so that then 'mux' is defined simply by
+
+```
+mux = cond(comp(drop, nip), drop2);
+```
+
+Ok. With that example out of the way, here is everything reprogrammed with these new constructions of comp and cond in mind:
+
+function Pair(l,r){return [l,r];}
+
+var Nil = new Object();
+function isNil(p){return p==Nil;}
+
+function Left(p){return isNil(p) ? Nil : p[0];}
+function Right(p){return isNil(p) ? Nil : p[1];}
+
+function P(l,r){return Pair(l,r);}
+function L(p){return Left(p);}
+function R(p){return Right(p);}
+
+function LL(p){return L(L(p));}
+function LR(p){return L(R(p));}
+function RL(p){return R(L(p));}
+function RR(p){return R(R(p));}
+function LLL(p){return L(LL(p));}
+function LRL(p){return L(RL(p));}
+function RLL(p){return R(LL(p));}
+function RRL(p){return R(RL(p));}
+function LLLL(p){return L(LLL(p));}
+function RLLL(p){return R(LLL(p));}
+
+var T=Nil;
+function drop(){T=P(LL(T),R(T));}
+function dup(){T=P(P(L(T),RL(T)),R(T));}
+function pop(){T=P(LL(T),P(RL(T),R(T)));}
+function push(){T=P(P(L(T),LR(T)),RR(T));}
+function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+function nil(){T=P(P(L(T),Nil),R(T));}
+function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+
+function comp(first, second){
+    return function(){
+        first();
+        second();
+    };
+}
+
+function cond(ifnil, ifnot){
+    return function(){
+        if(isNil(RL(T)))
+            ifnil();
+        else
+            ifnot();
+    }
+}
+
+var drop2 = comp(drop, drop);
+var push2 = comp(push, push);
+
+var nip = comp(pop, comp(drop, push));
+var over = comp(pop, comp(dup, comp(push, swap)));
+var over2 = comp(over, over);
+
+var dig = comp(over, comp(pop, nip));
+var dig2 = comp(dig, dig);
+var bury = comp(dig2, push2);
+var unbury = comp(bury, bury);
+
+var left = comp(part, drop);
+var right = comp(part, nip);
+
+var mux = cond(comp(drop, nip), drop2); // multiplexer
+var nor = comp(dup, mux); // joint denial
+var not = comp(dup, nor); // negation
+var or = comp(nor, not); // alternation
+var IF = comp(not, or); // converse conditional
+var nif = comp(IF, not); // complementary converse conditional
+var nfi = comp(swap, nif); // complementary conditional
+var fi = comp(nfi, not); // conditional
+var nand = comp(not, fi); // alternative denial
+var and = comp(nand, not); // conjunction
+var xor = comp(over2, comp(nand, comp(bury, comp(or, and)))); // exclusive alternation
+var iff = comp(xor, not); // biconditional
+
+```
+
+Instead of needing to say 'function' everywhere and have all those empty parenthesies, just a few comps and conds are needed. Sadly, because of the direct way that I've taken this, the definition of an actually recursive function involves an unfortunate notation particular to javascript. It is demonstrated in the definition of identity, which goes as follows (don't be scared):
+
+```
+var partunbury = comp(part, unbury);
+var partunbury2 = comp(partunbury, partunbury);
+var id = function f(){
+  return cond(drop, comp(swap, cond(drop, comp(partunbury2, comp(f, comp(bury, comp(f, and)))))))();
+}
+```
+
+First, let me just describe in plane English how to check if two binary trees are identical. They are identical if and only if their left parts are identical and their right parts are identical.
+
+Since all of our binary trees eventually end in leafs of Nil, it is easy enough to deal with the simple cases where one or the other pair is already Nil. Both the pairs are ontop of the stack. If the top tree is Nil, then it matches the second from top tree if and only if that tree is Nil also. It just so happens that Nil is what we've been using for true. So if the top tree is Nil, we just need to drop it and then if the second from top tree is Nil we are left with true, which is what we want. But, if the second from top tree is not Nil then we are also left with what we need: a non-Nil tree is false and it is false that a non-Nil tree is identical to a Nil tree.
+
+This basic case is setted by the first part of the definition 'cond(drop'.
+
+Now, if the top tree is non Nil, then either the second from top of the tree is Nil or non-Nil. We swap the top and second from top and check everything the same way that we did in the previous basic case i.e. these two basic cases are basically swaps of each other.
+
+All together the basic cases are settled by 'cond(drop, comp(swap, cond(drop, ...'.
+
+The next part of the definition just breaks each of the trees into their left parts and their right parts and then checks if those corresponding parts are identical. This is where the specifics of defining recursive functions in javascript come in. I would like to write the definition as follows:
+
+```
+var id = cond(drop, comp(swap, cond(drop, comp(partunbury2, comp(id, comp(bury, comp(id, and)))))))
+```
+
+This doesn't work because the moment javascript hits the first 'id' on the right hand side of the equality it replaces it with whatever 'id' has already been defined as, and it hasn't been defined yet because that's what we're doing at that exact moment. So, it effectively replaces each occurrence of 'id' on the right hand side with 'undefined' which is not a function. The console will tell you as much if you try to execute 'id()'.
+
+So we have to tell javascript that we're making a recursive function (a function that repeats part of itself), and it's going to tentatively be called 'f' and we'll be able to reference 'f' appropriately.
+
+Another way the definition of 'id' could have been given is as follows (and this should have been the one I started with):
+
+```
+function id(){
+    cond(drop, comp(swap, cond(drop, comp(partunbury2, comp(id, comp(bury, comp(id, and)))))))();
+}
+```
+
+Either way, such definitions are trivial in the language being constructed (just make the appropriate green word and it goes back to the nearest matching red and goes forth from there).
+
+The functions being defined now are to build up the interpreter, compiler, and executer of my programming environment. Programs are stacks. The last word coded is pushed atop the stack. We manipulate where we are when executing a program by spliting it into a stack and a list. This is accomplished by two operations: back and fore.
+
+A program mid execution is an ordered pair whose left part is the stack of the program up to the word that is currently being executed. It's right part is a list of everything that it will do next assuming the current word being executed doesn't change that. Back and fore manage the movement back and forth through the program.
+
+```
+var back = comp(part, comp(pop, comp(part, comp(push, comp(pair, pair)))));
+var fore = comp(part, comp(part, comp(pop, comp(pair, comp(push, pair)))));
+```
+
+The next 'big' function is called 'find'. It goes back through a program and looks for the first matching red word that it can find by going deeper into the stack half of the currently executing program.
+
+(As a side note, it just occurred to me that I can go ahead and use the latest definition of 'id' that I made and avoid having to go through the stuff about recursion because people are unlikely to notice that there is even a problem to be solved with that notation, and it is a bit closer to how my programming environment works. Sorry for putting you through that recursive talk.)
+
+Find works on more than just red words. It expects a pair whose left part is a stack and whose right part is a list and it will search down the stack, going 'back' each step, until it finds a tree that matches the one at the second from top of T.
+
+```
+var lr = comp(left, right); // notice this is ***backwards*** from 'LR(x)'
+function find(){
+  comp(over2, comp(lr, comp(eq, cond(comp(drop, nip), comp(drop, comp(back, find)))))))();
+}
+```
+
+A few things to note. The first is very important and the second not so much. The first is that this is the second time we've seen 'comp(drop, nip)'. This happens a lot and the more it happens the more it needs its own name. I call it 'dip'. You can (and should) call it what you want. Maybe you'll call it 'drip'.
+
+```
+var dip = comp(drop, nip);
+```
+
+It's worth it to go back and update everything with 'dip' in mind. The reason this is true is interesting. There are only a hand full of secondary words that keep turning up again and again. If there were always new ones then I'd say don't bother going back over everything replacing anything like 'comp(drop, nip)' with 'dip' or 'comp(drop, comp(nip, ..))' with 'comp(dip, ..)'. Anyway, this is something that is only uncovered by solving problems like we are right now.
+
+Here's everything written again (since I already know that 'dip' comes up, it only saves us a very tiny bit, but it's never a bad time to look over all the code again and see if there's something there that shouldn't be because teh best thing you can do when programming is to eliminate eliminate eliminate! There can't be problems in parts of the program that no longer exist, and as long as the program gets shorter and shorter there are fewer places where any problems whatsoever can occur).
+
+```
+function Pair(l,r){return [l,r];}
+
+var Nil = new Object();
+function isNil(p){return p==Nil;}
+
+function Left(p){return isNil(p) ? Nil : p[0];}
+function Right(p){return isNil(p) ? Nil : p[1];}
+
+function P(l,r){return Pair(l,r);}
+function L(p){return Left(p);}
+function R(p){return Right(p);}
+
+function LL(p){return L(L(p));}
+function LR(p){return L(R(p));}
+function RL(p){return R(L(p));}
+function RR(p){return R(R(p));}
+function LLL(p){return L(LL(p));}
+function LRL(p){return L(RL(p));}
+function RLL(p){return R(LL(p));}
+function RRL(p){return R(RL(p));}
+function LLLL(p){return L(LLL(p));}
+function RLLL(p){return R(LLL(p));}
+
+var T=Nil;
+function drop(){T=P(LL(T),R(T));}
+function dup(){T=P(P(L(T),RL(T)),R(T));}
+function pop(){T=P(LL(T),P(RL(T),R(T)));}
+function push(){T=P(P(L(T),LR(T)),RR(T));}
+function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+function nil(){T=P(P(L(T),Nil),R(T));}
+function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+
+function comp(first, second){
+    return function(){
+        first();
+        second();
+    };
+}
+
+function cond(ifnil, ifnot){
+    return function(){
+        if(isNil(RL(T)))
+            ifnil();
+        else
+            ifnot();
+    }
+}
+
+var drop2 = comp(drop, drop);
+var push2 = comp(push, push);
+var pair2 = comp(pair, pair);
+var part2 = comp(part, part);
+
+var nip = comp(pop, comp(drop, push));
+var dip = comp(drop, nip);
+var over = comp(pop, comp(dup, comp(push, swap)));
+var over2 = comp(over, over);
+
+var dig = comp(over, comp(pop, nip));
+var dig2 = comp(dig, dig);
+var bury = comp(dig2, push2);
+var unbury = comp(bury, bury);
+
+var left = comp(part, drop);
+var right = comp(part, nip);
+var lr = comp(left, right); // notice this is ***backwards*** from 'LR(x)'
+
+var mux = cond(dip, drop2); // multiplexer
+var nor = comp(dup, mux); // joint denial
+var not = comp(dup, nor); // negation
+var or = comp(nor, not); // alternation
+var IF = comp(not, or); // converse conditional
+var nif = comp(IF, not); // complementary converse conditional
+var nfi = comp(swap, nif); // complementary conditional
+var fi = comp(nfi, not); // conditional
+var nand = comp(not, fi); // alternative denial
+var and = comp(nand, not); // conjunction
+var xor = comp(over2, comp(nand, comp(bury, comp(or, and)))); // exclusive alternation
+var iff = comp(xor, not); // biconditional
+
+var partunbury = comp(part, unbury);
+var partunbury2 = comp(partunbury, partunbury);
+function id(){cond(drop, comp(swap, cond(drop, 
+  comp(partunbury2, comp(id, comp(bury, comp(id, and)))))))();}
+
+var back = comp(part, comp(pop, comp(part, comp(push, pair2))));
+var fore = comp(part2, comp(pop, comp(pair, comp(push, pair))));
+function find(){
+  comp(over2, comp(lr, comp(eq, cond(dip, comp(drop, comp(back, find))))))();
+}
+```
+
+The second important thing was to notice that the definition of 'lr' is backwards from the upper case definition of 'LR' in that the one executes left then right, and the other takes the left of the right of its argument. This is unavoidable. It is the mathematical equivalent of knowing which right turn you have to take to make a left at the stop sign.
+
+There are only two pieces missing from this clockwork programming environment: how to deal with words of a given color and how to edit a program.
+
+The first color words to deal with are the gray ones. Now, unlike in the last note, there is a bit of artistry that must be introduced to keep a tight ship.
+
+The assumption is that the top of the stack of the tree spells out the gray word. This means that what is to be done is seen by looking through the length of the top as if it was a list. There's no easy way to creep up on this, so I'll just say before hand that the way I do it right now is not the way that it will be done later.
+
+```
+var gray = cond(drop2, comp(right,
+    cond(comp(drop, dup), comp(right,
+    cond(comp(drop, pop), comp(right, 
+    cond(comp(drop, push), comp(right, 
+    cond(comp(drop, swap), comp(right, 
+    cond(comp(drop, nil), comp(right, 
+    cond(comp(drop, pair), comp(right,
+    cond(comp(drop, part), drop)))))))))))))));
+```
+
+First, remember, this isn't how it will stay. But, there are only two things that may need to change later: the occurences of 'pop' and 'push'. Note that before executing the quoted operation a drop must be executed so that it doesn't get in the way of dropping, dupping, popping, pushing, swaping, nil-ing, pairing, or parting the appropriate items!
+
+Now the next color to deal with is green. The assumption is that the top of the tree spells out a green word. Assuming the color of red is marked by a Nil, and that a word is an ordered pair whose right part is its color and whose left part spells it out, all that needs to be done is to put a nil atop the stack and pair it with the spelling of the green word so that we can go find it.
+
+We have what we want to find, but the question is where we're going to go looking for it. The assumption is that the top of the list of the tree is where the green word just came from i.e. that the first item of the list is a running program, that is a pair whose left part is everything before the green word and the right part is everything after the green word.
+
+We push the program to the top of the stack, duplicate it, move it fore so that when we return to it we're ready to get on where the green word left off, pop that baby back up to the front of the list, and then find our way through the duplicate we just made. It's that simple.
+
+```
+var green = comp(nil, comp(pair, comp(push, comp(dup, comp(fore, comp(pop, find))))));
+```
+
+Now, there needs to be a way of geting the next word and doing the right thing if its gray or green (if it's red or blue then there's nothing that needs to be done). Let's assume the word is on top of the stack. It just occurred to me that if we make nil stand for gray and the pair whose left and right part is nil stand for green then this dispatch based on color can be short and simple. Let's make that the new convention. Here's the function first and then we'll go back and make all the edits with this new convention in mind. 
+
+```
+var hue = comp(part, cond(comp(drop, gray), comp(right, cond(comp(drop, green), drop2))));
+```
+
+Then, 'green' has to be redefined, we can write a helper to simplify this if further changes occur:
+
+```
+function Pair(l,r){return [l,r];}
+
+var Nil = new Object();
+function isNil(p){return p==Nil;}
+
+function Left(p){return isNil(p) ? Nil : p[0];}
+function Right(p){return isNil(p) ? Nil : p[1];}
+
+function P(l,r){return Pair(l,r);}
+function L(p){return Left(p);}
+function R(p){return Right(p);}
+
+function LL(p){return L(L(p));}
+function LR(p){return L(R(p));}
+function RL(p){return R(L(p));}
+function RR(p){return R(R(p));}
+function LLL(p){return L(LL(p));}
+function LRL(p){return L(RL(p));}
+function RLL(p){return R(LL(p));}
+function RRL(p){return R(RL(p));}
+function LLLL(p){return L(LLL(p));}
+function RLLL(p){return R(LLL(p));}
+
+var T=Nil;
+function drop(){T=P(LL(T),R(T));}
+function dup(){T=P(P(L(T),RL(T)),R(T));}
+function pop(){T=P(LL(T),P(RL(T),R(T)));}
+function push(){T=P(P(L(T),LR(T)),RR(T));}
+function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+function nil(){T=P(P(L(T),Nil),R(T));}
+function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+
+function comp(first, second){
+    return function(){
+        first();
+        second();
+    };
+}
+
+function cond(ifnil, ifnot){
+    return function(){
+        if(isNil(RL(T)))
+            ifnil();
+        else
+            ifnot();
+    }
+}
+
+var drop2 = comp(drop, drop);
+var push2 = comp(push, push);
+var pair2 = comp(pair, pair);
+var part2 = comp(part, part);
+
+var nip = comp(pop, comp(drop, push));
+var dip = comp(drop, nip);
+var over = comp(pop, comp(dup, comp(push, swap)));
+var over2 = comp(over, over);
+
+var dig = comp(over, comp(pop, nip));
+var dig2 = comp(dig, dig);
+var bury = comp(dig2, push2);
+var unbury = comp(bury, bury);
+
+var left = comp(part, drop);
+var right = comp(part, nip);
+var lr = comp(left, right); // notice this is ***backwards*** from 'LR(x)'
+
+var mux = cond(dip, drop2); // multiplexer
+var nor = comp(dup, mux); // joint denial
+var not = comp(dup, nor); // negation
+var or = comp(nor, not); // alternation
+var IF = comp(not, or); // converse conditional
+var nif = comp(IF, not); // complementary converse conditional
+var nfi = comp(swap, nif); // complementary conditional
+var fi = comp(nfi, not); // conditional
+var nand = comp(not, fi); // alternative denial
+var and = comp(nand, not); // conjunction
+var xor = comp(over2, comp(nand, comp(bury, comp(or, and)))); // exclusive alternation
+var iff = comp(xor, not); // biconditional
+
+var zero = nil;
+var succ = comp(nil, comp(swap, pair));
+var one = comp(zero, succ);
+var two = comp(one, succ);
+var three = comp(two, succ);
+
+var partunbury = comp(part, unbury);
+var partunbury2 = comp(partunbury, partunbury);
+function id(){cond(drop, comp(swap, cond(drop, 
+  comp(partunbury2, comp(id, comp(bury, comp(id, and)))))))();}
+
+var back = comp(part, comp(pop, comp(part, comp(push, pair2))));
+var fore = comp(part2, comp(pop, comp(pair, comp(push, pair))));
+function find(){
+  comp(over2, comp(lr, comp(eq, cond(dip, comp(drop, comp(back, find))))))();
+}
+
+var gray = cond(drop2, comp(right,
+    cond(comp(drop, dup), comp(right,
+    cond(comp(drop, pop), comp(right, 
+    cond(comp(drop, push), comp(right, 
+    cond(comp(drop, swap), comp(right, 
+    cond(comp(drop, nil), comp(right, 
+    cond(comp(drop, pair), comp(right,
+    cond(comp(drop, part), drop)))))))))))))));
+
+var redify = comp(two, pair);
+var green = comp(redify, comp(push, comp(dup, comp(fore, comp(pop, comp(find, pop))))));
+
+var hue = comp(part, cond(comp(drop, gray), comp(right, cond(comp(drop, green), drop2))));
+```
+
+Another change got made to green because the last version didn't put the place found back onto the front of the list.
+
+The next operation is 'next'. It expects the currently executing program to be at the front of the list. Gets the next word and moves the program fore one step so that it's ready for the next next. Then it does whatever is next. But, the question is this: what if there is no next word? Well, it will just stop.
+
+```
+var fetch = comp(push, comp(dup, comp(fore, comp(pop, lr))));
+function next(){ comp(fetch, cond(drop, comp(hue, next)))();}
+```
+
+Now, all that is left is editing, but before getting to that, there is a problem that I've ignored. Gray words don't work right. If you think through a push or a pop there will be a problem. The problem is that there is no place we're keeping the currently running program that won't get mixed up by a push or a pop from executing a gray word. I already mentioned this before, the way to avoid this is to redefine what push and pop do when they are read as gray words so that they don't move the currently executing instructions from the front of the list where fetch, next, AND green expect them to be (that 'pop' at the end of the definition of 'green' makes it so everything gets going when 'next' is executed).
+
+```
+var graypop = comp(push, comp(swap, pop2));
+var graypush = comp(push2, comp(swap, pop));
+var gray = var gray = cond(drop2, comp(right,
+    cond(comp(drop, dup), comp(right,
+    cond(comp(drop, graypop), comp(right, 
+    cond(comp(drop, graypush), comp(right, 
+    cond(comp(drop, swap), comp(right, 
+    cond(comp(drop, nil), comp(right, 
+    cond(comp(drop, pair), comp(right,
+    cond(comp(drop, part), drop)))))))))))))));
+```
+
+So, all together we have this:
+
+```
+function Pair(l,r){return [l,r];}
+
+var Nil = new Object();
+function isNil(p){return p==Nil;}
+
+function Left(p){return isNil(p) ? Nil : p[0];}
+function Right(p){return isNil(p) ? Nil : p[1];}
+
+function P(l,r){return Pair(l,r);}
+function L(p){return Left(p);}
+function R(p){return Right(p);}
+
+function LL(p){return L(L(p));}
+function LR(p){return L(R(p));}
+function RL(p){return R(L(p));}
+function RR(p){return R(R(p));}
+function LLL(p){return L(LL(p));}
+function LRL(p){return L(RL(p));}
+function RLL(p){return R(LL(p));}
+function RRL(p){return R(RL(p));}
+function LLLL(p){return L(LLL(p));}
+function RLLL(p){return R(LLL(p));}
+
+var T=Nil;
+function drop(){T=P(LL(T),R(T));}
+function dup(){T=P(P(L(T),RL(T)),R(T));}
+function pop(){T=P(LL(T),P(RL(T),R(T)));}
+function push(){T=P(P(L(T),LR(T)),RR(T));}
+function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+function nil(){T=P(P(L(T),Nil),R(T));}
+function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+
+function comp(first, second){
+    return function(){
+        first();
+        second();
+    };
+}
+
+function cond(ifnil, ifnot){
+    return function(){
+        if(isNil(RL(T)))
+            ifnil();
+        else
+            ifnot();
+    }
+}
+
+var drop2 = comp(drop, drop);
+var push2 = comp(push, push);
+var pair2 = comp(pair, pair);
+var part2 = comp(part, part);
+
+var nip = comp(pop, comp(drop, push));
+var dip = comp(drop, nip);
+var over = comp(pop, comp(dup, comp(push, swap)));
+var over2 = comp(over, over);
+
+var dig = comp(over, comp(pop, nip));
+var dig2 = comp(dig, dig);
+var bury = comp(dig2, push2);
+var unbury = comp(bury, bury);
+
+var left = comp(part, drop);
+var right = comp(part, nip);
+var lr = comp(left, right); // notice this is ***backwards*** from 'LR(x)'
+
+var mux = cond(dip, drop2); // multiplexer
+var nor = comp(dup, mux); // joint denial
+var not = comp(dup, nor); // negation
+var or = comp(nor, not); // alternation
+var IF = comp(not, or); // converse conditional
+var nif = comp(IF, not); // complementary converse conditional
+var nfi = comp(swap, nif); // complementary conditional
+var fi = comp(nfi, not); // conditional
+var nand = comp(not, fi); // alternative denial
+var and = comp(nand, not); // conjunction
+var xor = comp(over2, comp(nand, comp(bury, comp(or, and)))); // exclusive alternation
+var iff = comp(xor, not); // biconditional
+
+var zero = nil;
+var succ = comp(nil, comp(swap, pair));
+var one = comp(zero, succ);
+var two = comp(one, succ);
+var three = comp(two, succ);
+
+var partunbury = comp(part, unbury);
+var partunbury2 = comp(partunbury, partunbury);
+function id(){cond(drop, comp(swap, cond(drop, 
+  comp(partunbury2, comp(id, comp(bury, comp(id, and)))))))();}
+
+var back = comp(part, comp(pop, comp(part, comp(push, pair2))));
+var fore = comp(part2, comp(pop, comp(pair, comp(push, pair))));
+function find(){
+  comp(over2, comp(lr, comp(eq, cond(dip, comp(drop, comp(back, find))))))();
+}
+
+var graypop = comp(push, comp(swap, pop2));
+var graypush = comp(push2, comp(swap, pop));
+var gray = cond(drop2, comp(right,
+    cond(comp(drop, dup), comp(right,
+    cond(comp(drop, graypop), comp(right, 
+    cond(comp(drop, graypush), comp(right, 
+    cond(comp(drop, swap), comp(right, 
+    cond(comp(drop, nil), comp(right, 
+    cond(comp(drop, pair), comp(right,
+    cond(comp(drop, part), drop)))))))))))))));
+
+var redify = comp(two, pair);
+var green = comp(redify, comp(push, comp(dup, comp(fore, comp(pop, comp(find, pop))))));
+
+var hue = comp(part, cond(comp(drop, gray), comp(right, cond(comp(drop, green), drop2))));
+
+var fetch = comp(push, comp(dup, comp(fore, comp(pop, lr))));
+function next(){ comp(fetch, cond(drop, comp(hue, next)))();}
+```
+
+All that's left now is to get the editor working. The editor is where blue words get everything started. It's also where programs are constructed word by word. A word is constructed by spelling it out and then by coloring it. If it was the other way around then blue words wouldn't work as simply as they can. That is, you first spell out the blue word and then after spelling it you color it blue and that starts everything off running.
+
+So the editor expects the top of the stack to be the next letter to add to the spelling of the word under construction or the color of the word that is then done being constructed.
+
+If the top of the stack is not a color then it is a letter and gets paired with spelling that has been made thus far. If the top of the stack is a color then it also gets paired with the spelling form a complete word whose spelling is its left part and whose color is its right part. Then the word has to be put onto the end of the program under construction. If the word is colored blue then we treat it like a green word.
+
+```
+var rr = comp(right, right);
+var r3 = comp(rr, r);
+var r4 = comp(r3, r);
+var isLetter = comp(r4, not);
+var isBlue = comp(r3, not);
+
+var cons = comp(swap, pair);
+
+var compile = comp(over2, comp(pair, comp(push, comp(cons, pop))));
+
+var edit = comp(dup, comp(isLetter, cond(comp(drop, pair), 
+    comp(compile, comp(isBlue, comp(cond(comp(drop, green), drop2), nil))))));
+```
+
+Sadly, I don't have time to test everything, but here it all is after looking over everything I've done here and making a few little changes e.g. 'cons' was not defined where it otherwise would be e.g. after 'pair'.
+
+```
+function Pair(l,r){return [l,r];}
+
+var Nil = new Object();
+function isNil(p){return p==Nil;}
+
+function Left(p){return isNil(p) ? Nil : p[0];}
+function Right(p){return isNil(p) ? Nil : p[1];}
+
+function P(l,r){return Pair(l,r);}
+function L(p){return Left(p);}
+function R(p){return Right(p);}
+
+function LL(p){return L(L(p));}
+function LR(p){return L(R(p));}
+function RL(p){return R(L(p));}
+function RR(p){return R(R(p));}
+function LLL(p){return L(LL(p));}
+function LRL(p){return L(RL(p));}
+function RLL(p){return R(LL(p));}
+function RRL(p){return R(RL(p));}
+function LLLL(p){return L(LLL(p));}
+function RLLL(p){return R(LLL(p));}
+
+var T=Nil;
+function drop(){T=P(LL(T),R(T));}
+function dup(){T=P(P(L(T),RL(T)),R(T));}
+function pop(){T=P(LL(T),P(RL(T),R(T)));}
+function push(){T=P(P(L(T),LR(T)),RR(T));}
+function swap(){T=P(P(P(LLL(T),RL(T)),RLL(T)),R(T));}
+
+function nil(){T=P(P(L(T),Nil),R(T));}
+function pair(){T=P(P(LLL(T),P(RLL(T),RL(T))),R(T));}
+function part(){T=P(P(P(LL(T),LRL(T)),RRL(T)),R(T));}
+
+function comp(first, second){return function(){
+    first(); second(); };}
+
+function cond(ifnil, ifnot){return function(){
+    if(isNil(RL(T))) ifnil(); else ifnot();}}
+
+var drop2 = comp(drop, drop);
+var pop2 = comp(pop, pop);
+var push2 = comp(push, push);
+var pair2 = comp(pair, pair);
+var part2 = comp(part, part);
+
+var nip = comp(pop, comp(drop, push));
+var dip = comp(drop, nip);
+var over = comp(pop, comp(dup, comp(push, swap)));
+var over2 = comp(over, over);
+
+var dig = comp(over, comp(pop, nip));
+var dig2 = comp(dig, dig);
+var bury = comp(dig2, push2);
+var unbury = comp(bury, bury);
+
+var left = comp(part, drop);
+var right = comp(part, nip);
+var rr = comp(right, right);
+var r3 = comp(rr, r);
+var r4 = comp(r3, r);
+var lr = comp(left, right); // notice this is ***backwards*** from 'LR(x)'
+var cons = comp(swap, pair);
+
+var mux = cond(dip, drop2); // multiplexer
+var nor = comp(dup, mux); // joint denial
+var not = comp(dup, nor); // negation
+var or = comp(nor, not); // alternation
+var IF = comp(not, or); // converse conditional
+var nif = comp(IF, not); // complementary converse conditional
+var nfi = comp(swap, nif); // complementary conditional
+var fi = comp(nfi, not); // conditional
+var nand = comp(not, fi); // alternative denial
+var and = comp(nand, not); // conjunction
+var xor = comp(over2, comp(nand, comp(bury, comp(or, and)))); // exclusive alternation
+var iff = comp(xor, not); // biconditional
+
+var zero = nil;
+var succ = comp(nil, comp(swap, pair));
+var one = comp(zero, succ);
+var two = comp(one, succ);
+var three = comp(two, succ);
+
+var party = comp(part, unbury);
+var party2 = comp(party, party);
+function id(){cond(drop, comp(swap, cond(drop, 
+  comp(party2, comp(id, comp(bury, comp(id, and)))))))();}
+
+var back = comp(part, comp(pop, comp(part, comp(push, pair2))));
+var fore = comp(part2, comp(pop, comp(pair, comp(push, pair))));
+function find(){
+  comp(over2, comp(lr, comp(eq, cond(dip, comp(drop, comp(back, find))))))();
+}
+
+var graypop = comp(push, comp(swap, pop2));
+var graypush = comp(push2, comp(swap, pop));
+var gray = cond(drop2, comp(right,
+    cond(comp(drop, dup), comp(right,
+    cond(comp(drop, graypop), comp(right, 
+    cond(comp(drop, graypush), comp(right, 
+    cond(comp(drop, swap), comp(right, 
+    cond(comp(drop, nil), comp(right, 
+    cond(comp(drop, pair), comp(right,
+    cond(comp(drop, part), drop)))))))))))))));
+
+var redify = comp(two, pair);
+var green = comp(redify, comp(push, comp(dup, comp(fore, comp(pop, comp(find, pop))))));
+
+var hue = comp(part, cond(comp(drop, gray), comp(right, cond(comp(drop, green), drop2))));
+
+var fetch = comp(push, comp(dup, comp(fore, comp(pop, lr))));
+function next(){ comp(fetch, cond(drop, comp(hue, next)))();}
+var isLetter = comp(r4, not);
+var isBlue = comp(r3, not);
+
+var compile = comp(over2, comp(pair, comp(push, comp(cons, pop))));
+var edit = comp(dup, comp(isLetter, cond(comp(drop, pair), 
+    comp(compile, comp(isBlue, comp(cond(comp(drop, green), drop2), nil))))));
+```
+
+That's it. That's the logic. There's some io stuff that I didn't do and there may be some big gap I don't see right now, but one day at a time.
+
 ## \#2025-1007-1413
 
 This continues work on my programming environment. I'm not going to link it back to other stuff because that's boring. I might do it later if what I end up writing here matters at all.
