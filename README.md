@@ -255,6 +255,7 @@ mux = cond(comp(drop, nip), drop2);
 
 Ok. With that example out of the way, here is everything reprogrammed with these new constructions of comp and cond in mind:
 
+```
 function Pair(l,r){return [l,r];}
 
 var Nil = new Object();
