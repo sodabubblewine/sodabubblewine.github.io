@@ -151,6 +151,129 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1010-1254
+
+Rather than introduce the two constructions of composition and contingency as functions of functions in the javascript code that simulates my programming environment, I'm just going to make everything as boring and pedestrian as possible.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){
+  T=Pair(Pair(Pair(Left(Left(Left(T))), 
+      Right(Left(T))), Right(Left(Right(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){
+  T=Pair(Pair(Left(Left(Left(T))), 
+      Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){
+  T=Pair(Pair(Pair(Left(Left(T)), 
+      Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function drop2(){drop(); drop();}
+function pop2(){pop(); pop();}
+function push2(){push(); push();}
+function pair2(){pair(); pair();}
+function part2(){part(); part();}
+
+function pup(){push(); dup();}
+function dush(){drop(); push();}
+function nip(){pop(); dush();}
+function dip(){drop(); nip();}
+function over(){pop(); dush(); swap();}
+function over2(){over(); over();}
+
+function dig(){over(); pop(); nip();}
+function dig2(){dig(); dig();}
+function bury(){dig2(); push2();}
+function unbury(){bury(); bury();}
+
+function party(){part(); unbury();}
+function party2(){party(); party();}
+
+function l(){part(); drop();}
+function r(){part(); nip();}
+function r2(){r(); r();}
+function r3(){r(); r2();}
+function r4(){r2(); r2();}
+function lr(){l(); r();}
+
+function cons(){swap(); pair();}
+function cons2(){cons(); cons();}
+function snoc(){part(); swap();}
+function snoc2(){snoc(); snoc();}
+
+function select(){if(isNilTop()) dip(); else drop2();}
+
+function nor(){dup(); select();} // joint denial
+function not(){dup(); nor();} // negation 
+function or(){nor(); not();} // alternation
+function IF(){not(); or();} // converse conditional
+function nif(){IF(); not();} // complementary converse conditional
+function nfi(){nfi(); not();} // complementary conditional
+function fi(){nfi(); not();} // conditional
+function nand(){not(); fi();} // alternative denial
+function and(){nand(); not();} // conjunction 
+function xor(){over2(); nand(); bury(); or(); and();} // exclusive alternation
+function iff(){xor(); not();} // biconditional
+
+function zero(){nil();}
+function succ(){nil(); cons();} // natural sucessor
+function one(){zero(); succ();}
+function two(){one(); succ();}
+function three(){two(); succ();}
+
+function id(){if(isNilTop()){ drop(); }else{
+  swap(); drop(); party2(); id(); bury(); id(); and(); }}
+
+function back(){snoc(); part(); bury(); pair2();}
+function fore(){part2(); bury(); pair(); cons();}
+function find(){over2(); lr(); id(); 
+  if(isNilTop()){ dip(); }else{ drop(); back(); find(); }}
+function graypop(){push(); swap(); pop2();}
+function graypush(){push2(); swap(); pop();}
+function gray(){drop2(); right();
+  if(isNilTop()){ drop(); dup(); }else{ right();
+  if(isNilTop()){ drop(); graypop(); }else{ right();
+  if(isNilTop()){ drop(); graypush(); }else{ right();
+  if(isNilTop()){ drop(); swap(); }else{ right();
+  if(isNilTop()){ drop(); nil(); }else{ right();
+  if(isNilTop()){ drop(); pair(); }else{ right();
+  if(isNilTop()){ drop(); part(); }else{ drop();}}}}}}}}
+function redify(){two(); pair();}
+function green(){redify(); pup(); fore(); pop(); find(); pop();}
+function hue(){part(); if(isNilTop()){ drop(); gray(); }else{ right();
+  if(isNilTop()){ drop(); green(); }else{ drop2(); }}}
+function word(){pup(); fore(); pop(); lr();}
+function next(){word(); if(isNilTop()){ drop(); }else{ hue(); next(); }}
+function isABC(){r4(); not();}
+function isBlue(){r3(); not();}
+function compile(){over2(); pair(); push(); part(); bury(); cons2();}
+function edit(){dup(); isABC(); if(isNilTop()){ drop(); pair(); }else{
+  compile(); isBlue(); if(isNilTop()){ drop(); green(); }else{ drop2() } nil(); }}
+```
+
+## \#2025-1009-1451
+
+As crazy as it sounds I'm going to start writing about my programming environment from the beginning all over again. I'm trying to tell a new story like it's an old story. The only thing I can do is at least make this new story old for me.
+
+Ah, but, before I do that, I have to straighten out some mistakes I saw that I made in the last note with the javascript code for my programming environment.
+
+Programs are tapes of words that can be shifted back and fore. You can edit programs by moving them back or fore and splicing in new words or deleting old ones. Some people like to do it live and others like to do it in post.
+
+I didn't implement the compiler correctly in the last note. There are also some little simplifications that need to be made to clean everything up a bit.
+
+Oops, future John here again. Past John had to go to a spooky play and didn't get to finish this note.
+
 ## \#2025-1008-1920
 
 (you can skip this first paragraph if you want)
