@@ -239,22 +239,24 @@ function back(){snoc(); part(); bury(); pair2();}
 function fore(){part2(); bury(); pair(); cons();}
 function find(){over2(); lr(); id(); 
   if(isNilTop()){ dip(); }else{ drop(); back(); find(); }}
+
 function graypop(){push(); swap(); pop2();}
 function graypush(){push2(); swap(); pop();}
-function gray(){drop2(); right();
-  if(isNilTop()){ drop(); dup(); }else{ right();
-  if(isNilTop()){ drop(); graypop(); }else{ right();
-  if(isNilTop()){ drop(); graypush(); }else{ right();
-  if(isNilTop()){ drop(); swap(); }else{ right();
-  if(isNilTop()){ drop(); nil(); }else{ right();
-  if(isNilTop()){ drop(); pair(); }else{ right();
+function gray(){drop2(); r();
+  if(isNilTop()){ drop(); dup(); }else{ r();
+  if(isNilTop()){ drop(); graypop(); }else{ r();
+  if(isNilTop()){ drop(); graypush(); }else{ r();
+  if(isNilTop()){ drop(); swap(); }else{ r();
+  if(isNilTop()){ drop(); nil(); }else{ r();
+  if(isNilTop()){ drop(); pair(); }else{ r();
   if(isNilTop()){ drop(); part(); }else{ drop();}}}}}}}}
 function redify(){two(); pair();}
 function green(){redify(); pup(); fore(); pop(); find(); pop();}
-function hue(){part(); if(isNilTop()){ drop(); gray(); }else{ right();
+function hue(){part(); if(isNilTop()){ drop(); gray(); }else{ r();
   if(isNilTop()){ drop(); green(); }else{ drop2(); }}}
 function word(){pup(); fore(); pop(); lr();}
 function next(){word(); if(isNilTop()){ drop(); }else{ hue(); next(); }}
+
 function isABC(){r4(); not();}
 function isBlue(){r3(); not();}
 function compile(){over2(); pair(); push(); part(); bury(); cons2();}
