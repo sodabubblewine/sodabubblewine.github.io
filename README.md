@@ -151,6 +151,761 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1012-1202
+
+This continues work on my programming environment.
+
+There are a few bugs in the last implementation of the core logic to my programming environment e.g. the definition I gave to 'nor' actually made it into 'or', the definition of 'nfi' accidentally repeated the definition of 'fi', the method of introducing the truth functions was wrong (based on the 'nor' mistake), and there was a problem with the compiler (as far as I can recall).
+
+Here are some of the inspiring programming languages that went into my programming environment:
+
+- SectorLISP by Justine <https://justine.lol/sectorlisp2/>
+- JonesForth <https://raw.githubusercontent.com/nornagon/jonesforth/refs/heads/master/jonesforth.S>
+- milliForth <https://raw.githubusercontent.com/fuzzballcat/milliForth/refs/heads/master/sector.asm>
+- tinyForth <https://github.com/173duprot/tinyforth>.
+- C. H. Ting's eForth <http://www.exemark.com/FORTH/eForthOverviewv5.pdf>
+- Chuck Moore's Forth <http://www.exemark.com/FORTH/ChuckMooreBook.pdf>
+- Chuck Moore's ColorForth <https://colorforth.github.io/cf.htm>
+- Chuck Moore's etherforth <http://www.etherforth.org/>
+- Chuck Moore's uhdForth: this is probably the one closest to my work, but you have to recreate it from fragmentary presentations that Chuck gave over a few fireside chats. This is probably one of the best ways of knowing that you've designed the right programming environment i.e. when you can recreate it just from seeing a presentation of how it works. Perhaps the main similarity is that uhdForth and my environment only use four colors.
+- jeforth (Ting, Brad Nelson, etc.) <https://github.com/flagxor/jeforth>
+- circleForth by Brad Nelson <https://github.com/flagxor/ueforth/tree/main/attic/circleforth>
+    
+Ultimately, the inspiration for the present design of my programming environment is my further work on Quine's predicate functor logic.
+
+The next step in work is input and output. Input and output is actually not the kind of problem it seems to be when you're taught it. It is closer to a big problem lurking in the way I've implemented everything. Remember, the goal is simplicity, and one feature of that is that any implementation must automatically mirror the way it would be implemented *in* my programming environment.
+
+The looming problems are of two similar kinds: conditional execution and recursive definition. The function defining 'id' replaces the top two items on the stack with Nil if they are identical and something not Nil if they are not identical. Identity is indiscernibility with respect to a predicate of ordered pairing i.e. ordered pairs are identical if and only if their left parts are identical and their right parts are identical.
+
+The recursion part interests me the most. There are only three defined functions that execute themselves: id, find, and next. The idea is to get all this down to a single while loop. The method is what is commonly called 'a virtual machine'. I don't like that phrase, but it is the one that people are familiar with. I already started making the virtual machine in [#2025-1007-1413](#2025-1007-1413).
+
+It ends up that the heart of the virtual machine is just the function 'gray'.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Right(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function graypop(){push(); swap(); pop(); pop();}
+function graypush(){push(); push(); swap(); pop();}
+function gray(){
+  part(); nip(); if(isNilTop()){ drop(); dup(); }else{
+  part(); nip(); if(isNilTop()){ drop(); graypop(); }else{
+  part(); nip(); if(isNilTop()){ drop(); graypush(); }else{
+  part(); nip(); if(isNilTop()){ drop(); swap(); }else{
+  part(); nip(); if(isNilTop()){ drop(); nil(); }else{
+  part(); nip(); if(isNilTop()){ drop(); pair(); }else{
+  part(); nip(); if(isNilTop()){ drop(); part(); }else{ drop();}}}}}}}}
+```
+
+Now, using defined functions must be as simple as replacing the defined function with its definition i.e. there can be no mention of the function in its definition as we are trying to make that operation possible rather than assume it is there already. This is called 'unrolling' and is much like what people do when they learn to program in assembly.
+
+The function gray is only used in one place: inside the definition of 'hue'. So rather than introduce 'gray' as a separately defined function we will just put the code directly where it goes in 'hue'. I've put some of the other functions in this clump of code to help me see the next step more clearly to myself.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Right(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function graypop(){push(); swap(); pop(); pop();}
+function graypush(){push(); push(); swap(); pop();}
+
+function zero(){nil();}
+function succ(){nil(); cons();} // natural sucessor
+function one(){zero(); succ();}
+function two(){one(); succ();}
+
+function redify(){two(); pair();}
+function green(){redify(); pup(); fore(); pop(); find(); pop();}
+
+function hue(){
+  part();
+  if(isNilTop()){ // do gray word
+    drop();
+    part(); nip(); if(isNilTop()){ drop(); dup(); }else{
+    part(); nip(); if(isNilTop()){ drop(); graypop(); }else{
+    part(); nip(); if(isNilTop()){ drop(); graypush(); }else{
+    part(); nip(); if(isNilTop()){ drop(); swap(); }else{
+    part(); nip(); if(isNilTop()){ drop(); nil(); }else{
+    part(); nip(); if(isNilTop()){ drop(); pair(); }else{
+    part(); nip(); if(isNilTop()){ drop(); part(); }else{ drop();}}}}}}}}
+  }else{
+    part(); nip(); if(isNilTop()){ drop(); green(); }else{ drop(); drop();}}}
+```
+
+Green is something to worry about later. Now, 'hue' only occurs in 'next' which is great! So we can put its definition there.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Right(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function id(){
+  if(isNilTop()){
+    drop();
+  }else{
+    swap(); drop();
+    part(); unbury();
+    part(); unbury();
+    id();
+    bury();
+    id(); 
+    and();
+}}
+
+function back(){
+  part();
+  swap(); part();
+  bury(); 
+  pair(); pair();
+}
+
+function fore(){
+  part(); part();
+  bury(); 
+  pair();
+  swap(); pair();
+}
+
+function find(){
+  over(); over();
+  part(); drop(); // left
+  part(); nip(); // right
+  id();
+  if(isNilTop()){ 
+    drop(); nip();
+  }else{ 
+    drop();
+    back(); 
+    find();
+}}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); // redify
+  push();
+  dup();
+  fore();
+  pop();
+  find();
+  pop();
+}
+
+function graypop(){push(); swap(); pop(); pop();}
+function graypush(){push(); push(); swap(); pop();}
+
+function next(){
+  // get next word
+  push();
+  dup();
+  fore();
+  pop();
+  part(); drop(); // left
+  part(); nip(); // right  
+  if(isNilTop()){ // no next word
+    drop();
+  }else{ // do color
+    part();
+    if(isNilTop()){ // do gray word
+      drop();
+      part(); nip(); if(isNilTop()){ drop(); dup(); }else{
+      part(); nip(); if(isNilTop()){ drop(); graypop(); }else{
+      part(); nip(); if(isNilTop()){ drop(); graypush(); }else{
+      part(); nip(); if(isNilTop()){ drop(); swap(); }else{
+      part(); nip(); if(isNilTop()){ drop(); nil(); }else{
+      part(); nip(); if(isNilTop()){ drop(); pair(); }else{
+      part(); nip(); if(isNilTop()){ drop(); part(); }else{ drop();}}}}}}}}
+    }else{ // do green word
+      part(); nip();
+      if(isNilTop()){
+        drop();
+        green();
+      }else{ 
+        drop(); drop();
+    }}
+    next();
+}}
+
+function isABC(){
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right  
+  not();
+}
+
+function isBlue(){
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right  
+  not();
+}
+
+function compile(){
+  over(); over();
+  pair();
+  push();
+  part(); bury();
+  swap(); pair();
+  swap(); pair();
+}
+
+function edit(){
+  dup();
+  isABC();
+  if(isNilTop()){
+    drop();
+    pair();
+  }else{
+    compile();
+    isBlue();
+    if(isNilTop()){
+      drop();
+      green();
+      next();
+    }else{
+      drop(); drop();
+    }
+    nil();
+}}
+
+```
+
+A lot of little edits there to bring things together. Also a showcase of an extremely important practice: replacing definitions with comments. Factoring a routine into subroutines, which is what programming well used to entail, was done first by way of effective commenting (well, that and basic operations that controlled what was executed when).
+
+A hint about how this all works: gray words are what other programming languages would call literals or machine code. 
+
+There is another big hint that isn't here: every recursion can be turned into an iteration. This is of foundational importance to the practices of mathematics, but it also has the practical effect of giving hope that there is a way to replace recursively defined functions with while loops of appropriate operations.
+
+Now some further substitution of definitions:
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Right(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function id(){
+  if(isNilTop()){
+    drop();
+  }else{
+    swap(); drop();
+    part(); unbury();
+    part(); unbury();
+    id();
+    bury();
+    id(); 
+    and();
+}}
+
+function back(){
+  part();
+  swap(); part();
+  bury(); 
+  pair(); pair();
+}
+
+function fore(){
+  part(); part();
+  bury(); 
+  pair();
+  swap(); pair();
+}
+
+function find(){
+  over(); over();
+  part(); drop(); // left
+  part(); nip(); // right
+  id();
+  if(isNilTop()){ 
+    drop(); nip();
+  }else{ 
+    drop();
+    back(); 
+    find();
+}}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); // redify
+  push();
+  dup();
+  fore();
+  pop();
+  find();
+  pop();
+}
+
+function graypop(){push(); swap(); pop(); pop();}
+function graypush(){push(); push(); swap(); pop();}
+
+function next(){
+  // get next word
+  push();
+  dup();
+  fore();
+  pop();
+  part(); drop(); // left
+  part(); nip(); // right  
+  if(isNilTop()){ // no next word
+    drop();
+  }else{ // do color
+    part();
+    if(isNilTop()){ // do gray word
+      drop();
+      part(); nip(); if(isNilTop()){ drop(); dup(); }else{
+      part(); nip(); if(isNilTop()){ drop(); graypop(); }else{
+      part(); nip(); if(isNilTop()){ drop(); graypush(); }else{
+      part(); nip(); if(isNilTop()){ drop(); swap(); }else{
+      part(); nip(); if(isNilTop()){ drop(); nil(); }else{
+      part(); nip(); if(isNilTop()){ drop(); pair(); }else{
+      part(); nip(); if(isNilTop()){ drop(); part(); }else{ drop();}}}}}}}
+    }else{ // do green word
+      part(); nip();
+      if(isNilTop()){
+        drop();
+        green();
+      }else{ 
+        drop(); drop();
+    }}
+    next();
+}}
+
+function edit(){
+  dup();
+  // is letter
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right  
+  not();
+  if(isNilTop()){
+    drop();
+    pair();
+  }else{
+    // compile word
+    over(); over();
+    pair();
+    push();
+    part(); bury();
+    swap(); pair();
+    swap(); pair();
+    
+    // is blue
+    part(); nip(); // right  
+    part(); nip(); // right  
+    part(); nip(); // right  
+    not();
+
+    if(isNilTop()){
+      drop();
+      green();
+      next();
+    }else{
+      drop(); drop();
+    }
+    nil();
+}}
+```
+
+Let's work on 'find' for now. The aim is to get the function
+
+```
+function find(){
+  over(); over();
+  part(); drop(); // left
+  part(); nip(); // right
+  id();
+  if(isNilTop()){ 
+    drop(); nip();
+  }else{ 
+    drop();
+    back(); 
+    find();
+}}
+```
+
+into a form that doesn't use 'find' in its own definition (again, this is because we are trying to 'push out' the implicit recursions permitted by the native language). Doing this also presented me with a missing condition!
+
+```
+function find(){
+  // match?
+  over(); over();
+  part(); drop(); // left
+  part(); nip(); // right
+  id();
+  // no more?
+  over();
+  part(); drop(); // left
+  or(); // match or no more?
+  if(isNilTop()){ 
+    drop(); nip();
+  }else{ 
+    drop();
+    back(); 
+    find();
+}
+```
+
+Ok, so now how to flip this around so that it's a 'while'. First, an overt convention: we find backwards from the current word, that means the current word is not eligible to be "found". Here is a quick and dirty way to flip things around:
+
+```
+function find(){
+  nil(); not(); // prime the pump
+  while(isNilTop()){
+    // setup this iteration
+    drop();
+    back(); 
+    // match?
+    over(); over();
+    part(); drop(); // left
+    part(); nip(); // right
+    id();
+    // no more?
+    over();
+    part(); drop(); // left
+    or(); // match or no more?
+    not();
+  }
+  drop();
+  nip();
+```
+
+While this could be shortened with a 'do while' I'm going to stick with 'while'.  It seems it would be regrettable to lose the independently defined function of 'find', but the problem to solve is starting everything up from the minimally mutaliting foundation. In any effective programming environment it will be found that the primitive operations have a double life if they are to be part of the hierarchy of langauges constructed in such an environment.
+
+So now the state of affairs is as follows:
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Right(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function select(){
+  if(isNilTop()){
+    drop();
+    nip();
+  }else{
+    drop(); drop();
+}}
+
+function not(){
+  nil();
+  nil(); nil(); pair();
+  unbury();
+  select();
+}
+
+function or(){
+  dup();
+  select();
+}
+
+function and(){
+  not();
+  swap();
+  not();
+  or();
+  not();
+}
+
+function id(){
+  if(isNilTop()){
+    drop();
+  }else{
+    swap(); drop();
+    part(); unbury();
+    part(); unbury();
+    id();
+    bury();
+    id(); 
+    and();
+}}
+
+function back(){
+  part();
+  swap(); part();
+  bury(); 
+  pair(); pair();
+}
+
+function fore(){
+  part(); part();
+  bury(); 
+  pair();
+  swap(); pair();
+}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); // redify
+  push();
+  dup();
+  fore();
+  pop();
+
+  // find
+  nil(); not(); // prime the pump
+  while(isNilTop()){
+    // setup this iteration
+    drop();
+    back(); 
+    // match?
+    over(); over();
+    part(); drop(); // left
+    part(); nip(); // right
+    id();
+    // no more?
+    over();
+    part(); drop(); // left
+    or(); // match or no more?
+    not();
+  }
+  drop();
+  nip();
+
+  pop();
+}
+
+function graypop(){push(); swap(); pop(); pop();}
+function graypush(){push(); push(); swap(); pop();}
+
+function next(){
+  // get next word
+  push();
+  dup();
+  fore();
+  pop();
+  part(); drop(); // left
+  part(); nip(); // right  
+  if(isNilTop()){ // no next word
+    drop();
+  }else{ // do color
+    part();
+    if(isNilTop()){ // gray
+      drop();
+      part(); nip(); if(isNilTop()){ drop(); dup(); }else{
+      part(); nip(); if(isNilTop()){ drop(); graypop(); }else{
+      part(); nip(); if(isNilTop()){ drop(); graypush(); }else{
+      part(); nip(); if(isNilTop()){ drop(); swap(); }else{
+      part(); nip(); if(isNilTop()){ drop(); nil(); }else{
+      part(); nip(); if(isNilTop()){ drop(); pair(); }else{
+      part(); nip(); if(isNilTop()){ drop(); part(); }else{
+      drop();}}}}}}}
+    }else{
+      part(); nip(); // right
+      if(iNilTop()){ // green
+        drop();
+        green();
+      }else{ 
+        drop(); drop();
+    }}
+    next();
+}}
+
+function edit(){
+  dup();
+  // is letter
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right  
+  not();
+  if(isNilTop()){
+    drop();
+    pair();
+  }else{
+    // compile word
+    over(); over();
+    pair();
+    push();
+    part(); bury();
+    swap(); pair();
+    swap(); pair();
+    
+    // blue?
+    part(); nip(); // right  
+    part(); nip(); // right  
+    part(); nip(); // right  
+    not();
+
+    if(isNilTop()){ // blue
+      drop();
+      green();
+      next();
+    }else{
+      drop(); drop();
+    }
+    nil();
+}}
+```
+
+Now the next function to fix up into an interation is 'id'. Starting from 
+
+```
+function id(){
+  if(isNilTop()){
+    drop();
+  }else{
+    swap(); drop();
+    part(); unbury();
+    part(); unbury();
+    id();
+    bury();
+    id(); 
+    and();
+}}
+```
+
+Identity is established here by a method called 'tree recursion'. This checks the right branchs first, then the left branchs, and then if they're both correspondingly identitcal the whole thing is. We can stop checking a pair if both left parts are nil (in which case they are identical) or if one of them is nil and the other isn't (in which case they are not identical), but if they're both non-nil then we can't stop checking. So the condition for 'going on' is 'they're both not nil'. 
+
+Now, we must confront an important problem when dealing with trees: iterating with a stack. While it's funny, we're going to put a stack on the stack (so we can stack while we stack).
+
+```
+function id(){
+  nil();
+  bury();
+  pair(); pair();
+  nil();
+  while(isNilTop()){ // the stack is not nil
+    drop();
+    part(); swap(); part(); bury(); // pop top two subtrees
+    pop(); // put stack out of the way
+    over(); over(); and(); // are they both nil?
+    if(isNiltop()){ // yes
+      drop();
+      drop();
+    }else{
+      drop();
+      // is one nil and the other not?
+      over(); over(); or();
+      if(isNilTop()){ // yes
+        drop();
+        push();
+        swap(); pair();
+        swap(); pair();
+        dup();
+        pop();
+      }else{// they're both not nil
+        drop();
+        part();
+        unbury();
+        part();
+        unbury();
+        push();
+        swap(); pair();
+        swap(); pair();
+        swap(); pair();
+        swap(); pair();
+        pop();
+        nil();
+      }
+    }
+  drop();
+  push();
+}
+
+```
+
+That is more or less the solution, but I'm tired and will have to take a rest before I can see through it all.
+
+
 ## \#2025-1010-1254
 
 Rather than introduce the two constructions of composition and contingency as functions of functions in the javascript code that simulates my programming environment, I'm just going to make everything as boring and pedestrian as possible.
