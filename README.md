@@ -626,7 +626,7 @@ Ok, so now how to flip this around so that it's a 'while'. First, an overt conve
 
 ```
 function find(){
-  nil(); not(); // prime the pump
+  nil(); // prime the pump
   while(isNilTop()){
     // setup this iteration
     drop();
@@ -741,7 +741,7 @@ function green(){
   pop();
 
   // find
-  nil(); not(); // prime the pump
+  nil(); // prime the pump
   while(isNilTop()){
     // setup this iteration
     drop();
