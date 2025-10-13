@@ -873,6 +873,11 @@ function id(){
     if(isNiltop()){ // yes
       drop();
       drop();
+      drop();
+      push();
+      dup();
+      pop();
+      not();
     }else{
       drop();
       // is one nil and the other not?
