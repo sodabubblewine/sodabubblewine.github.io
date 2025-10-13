@@ -853,7 +853,7 @@ function id(){
 }}
 ```
 
-Identity is established here by a method called 'tree recursion'. This checks the right branchs first, then the left branchs, and then if they're both correspondingly identitcal the whole thing is. We can stop checking a pair if both left parts are nil (in which case they are identical) or if one of them is nil and the other isn't (in which case they are not identical), but if they're both non-nil then we can't stop checking. So the condition for 'going on' is 'they're both not nil'. 
+Identity is established here by a method called 'tree recursion'. This checks the right branchs first, then the left branchs, and then if they're both correspondingly identitcal the whole thing is. We can stop checking a pair if both are nil (in which case they are identical) or if one of them is nil and the other isn't (in which case they are not identical), but if they're both not nil then we can't stop checking. So the condition for 'going on' is 'they're both not nil'. 
 
 Now, we must confront an important problem when dealing with trees: iterating with a stack. While it's funny, we're going to put a stack on the stack (so we can stack while we stack).
 
