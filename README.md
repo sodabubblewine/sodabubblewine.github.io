@@ -336,7 +336,7 @@ function find(){
 }}
 
 function green(){
-  nil(); nil(); nil(); pair(); pair(); // redify
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
   push();
   dup();
   fore();
@@ -502,7 +502,7 @@ function find(){
 }}
 
 function green(){
-  nil(); nil(); nil(); pair(); pair(); // redify
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
   push();
   dup();
   fore();
@@ -734,7 +734,7 @@ function fore(){
 }
 
 function green(){
-  nil(); nil(); nil(); pair(); pair(); // redify
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
   push();
   dup();
   fore();
