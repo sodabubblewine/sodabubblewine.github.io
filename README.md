@@ -151,6 +151,304 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1013-1419
+
+Here's an updated version of 'id' that uses a list instead of a stack to do the tree traversal.
+
+```
+function id(){
+  // make a new empty list  
+  nil();
+  // put the trees at the front of it
+  pair(); pair(); 
+  // prime the pump
+  nil();
+  // while the list is not empty
+  // and the top two items are not nil
+  while(isNilTop()){
+    drop();
+    // get the top two trees from the list
+    push();
+    part(); part(); 
+    pop();
+    // are they both nil?
+    over(); over(); and();
+    // if they're both nil
+    if(isNilTop()){
+      drop();
+      // drop them: they're identical
+      drop(); drop();
+      // is the list nil?
+      push();
+      dup();
+      pop();
+    // if they're not both nil
+    }else{
+      drop();
+      // is one of them nil?
+      over(); over(); or();
+      // if one is nil
+      if(isNilTop()){
+        drop();
+        // then the other one isn't
+        // they're not identical
+        // put them back on the list
+        push();
+        pair(); pair();
+        // the list is not nil! It's over.
+        dup();
+        pop();
+      // if they're both not nil
+      }else{
+        drop();
+        // break into their left and right parts
+        part(); unbury(); part(); unbury();
+        // put them on the list
+        push();
+        pair(); pair(); pair(); pair();
+        pop();
+        nil();
+  }}}
+  drop();
+  push();
+}
+```
+
+Since, 'id' only appears in 'find' then I'll go ahead and put that code there where it goes:
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Right(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function select(){
+  if(isNilTop()){
+    drop();
+    nip();
+  }else{
+    drop(); drop();
+}}
+
+function not(){
+  nil();
+  nil(); nil(); pair();
+  unbury();
+  select();
+}
+
+function or(){
+  dup();
+  select();
+}
+
+function and(){
+  not();
+  swap();
+  not();
+  or();
+  not();
+}
+
+function back(){
+  part();
+  swap(); part();
+  bury(); 
+  pair(); pair();
+}
+
+function fore(){
+  part(); part();
+  bury(); 
+  pair();
+  swap(); pair();
+}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
+  push();
+  dup();
+  fore();
+  pop();
+
+  // find
+  nil(); not(); // prime the pump
+  while(isNilTop()){
+    // setup this iteration
+    drop();
+    back(); 
+    // match?
+    over(); over();
+    part(); drop(); // left
+    part(); nip(); // right
+
+    // id
+    // make a new empty list  
+    nil();
+    // put the trees at the front of it
+    pair(); pair(); 
+    // prime the pump
+    nil();
+    // while the list is not empty
+    // and the top two items are not nil
+    while(isNilTop()){
+      drop();
+      // get the top two trees from the list
+      push();
+      part(); part(); 
+      pop();
+      // are they both nil?
+      over(); over(); and();
+      // if they're both nil
+      if(isNilTop()){
+        drop();
+        // drop them: they're identical
+        drop(); drop();
+        // is the list nil?
+        push();
+        dup();
+        pop();
+      // if they're not both nil
+      }else{
+        drop();
+        // is one of them nil?
+        over(); over(); or();
+        // if one is nil
+        if(isNilTop()){
+          drop();
+          // then the other one isn't
+          // they're not identical
+          // put them back on the list
+          push();
+          pair(); pair();
+          // the list is not nil! It's over.
+          dup();
+          pop();
+        // if they're both not nil
+        }else{
+          drop();
+          // break into their left and right parts
+          part(); unbury(); part(); unbury();
+          // put them on the list
+          push();
+          pair(); pair(); pair(); pair();
+          pop();
+          nil();
+    }}}
+    drop();
+    push();
+    // end of id
+
+    // no more?
+    over();
+    part(); drop(); // left
+    or(); // match or no more?
+    not();
+  }
+  drop();
+  nip();
+  // end of find
+
+  pop();
+}
+
+function graypop(){push(); swap(); pop(); pop();}
+function graypush(){push(); push(); swap(); pop();}
+
+function next(){
+  // get next word
+  push();
+  dup();
+  fore();
+  pop();
+  part(); drop(); // left
+  part(); nip(); // right  
+  if(isNilTop()){ // no next word
+    drop();
+  }else{ // do color
+    part();
+    if(isNilTop()){ // gray
+      drop();
+      part(); nip(); if(isNilTop()){ drop(); dup(); }else{
+      part(); nip(); if(isNilTop()){ drop(); graypop(); }else{
+      part(); nip(); if(isNilTop()){ drop(); graypush(); }else{
+      part(); nip(); if(isNilTop()){ drop(); swap(); }else{
+      part(); nip(); if(isNilTop()){ drop(); nil(); }else{
+      part(); nip(); if(isNilTop()){ drop(); pair(); }else{
+      part(); nip(); if(isNilTop()){ drop(); part(); }else{
+      drop();}}}}}}}
+    }else{
+      part(); nip(); // right
+      if(iNilTop()){ // green
+        drop();
+        green();
+      }else{ 
+        drop(); drop();
+    }}
+    next();
+}}
+
+function edit(){
+  dup();
+  // is letter
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right  
+  not();
+  if(isNilTop()){
+    drop();
+    pair();
+  }else{
+    // compile word
+    over(); over();
+    pair();
+    push();
+    part(); bury();
+    swap(); pair();
+    swap(); pair();
+    
+    // blue?
+    part(); nip(); // right  
+    part(); nip(); // right  
+    part(); nip(); // right  
+    not();
+
+    if(isNilTop()){ // blue
+      drop();
+      green();
+      next();
+    }else{
+      drop(); drop();
+    }
+    nil();
+}}
+```
+
+Next to do is to turn 'next' into its iterative form.
+
 ## \#2025-1012-1202
 
 This continues work on my programming environment.
