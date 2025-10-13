@@ -860,11 +860,13 @@ Now, we must confront an important problem when dealing with trees: iterating wi
 ```
 function id(){
   nil();
-  bury();
-  pair(); pair();
+  swap(); pair();
+  swap(); pair();
+  pop();
   nil();
   while(isNilTop()){ // the stack is not nil
     drop();
+    push();
     part(); swap(); part(); bury(); // pop top two subtrees
     pop(); // put stack out of the way
     over(); over(); and(); // are they both nil?
