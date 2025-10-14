@@ -151,6 +151,414 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1014-1237
+
+Oops, I forgot to record my work I was doing on my programming environment. This happens from time to time and when it happens I usually lose some potentially valuable records of the kind of thinking that matters most.
+
+I'm going over the program now that I've got most of the logic where I want it. What this means is that I have pinned down how I expect each part of the program to operate when executed. This does not mean that each part actually operates in this way. When you set up a calendar or schedule of events, there are always other things that happen that you didn't take into account, or errors that you made which are revealed to you once the programmed events actually occur.
+
+The design of the programming environment makes it easy to debug. Probes from the javascript environment are constructed that let me examine the state of my programming environment. Here they are:
+
+```
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz '
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lprog(p){return isNil(p)?'':lprog(Left(p))+' '+letters(Right(p));}
+function rprog(p){return isNil(p)?'':letters(Left(p))+' '+rprog(Right(p));}
+function prog(){
+  return lprog(Left(Left(Right(T))))
+    +' [ '+letters(Right(Left(T)))+' ] '
+    +rprog(Right(Left(Right(T))));
+}
+
+onkeydown=e=>{
+  e.preventDefault();
+  //console.log(e.key);
+  switch(e.key){
+    case'Shift':
+    case'Enter':
+    case'Control':
+    case'Alt':
+    case'Tab':
+    case'CapsLock':return;
+    default:
+      T=Pair(Pair(Left(T), list(e.key)), Right(T));
+      edit();
+      console.log(prog());
+      break;
+  }
+
+};
+```
+
+An alphabet is set up in the javascript environment so that keypresses are quoted in my programming environment as the length of a list. Lists of these lists are then quoted in the javascript environment as javscript strings and these are manipulated so that the compiled program is shown with the word currently being edited enclosed in square brackets where it will occur in the program if compiled.
+
+Here are some bugs that I found and fixed prior to starting this note here:
+
+1. 'swap' was defined incorrectly. I uncovered this when I pressed one of the color keys, e.g. ',', and saw that the word being constructed was not compiled into the program being constructed. Testing of 'not' revealed that it was part of the problem. I then examined each step of execution that goes into 'not' and looked at the output of 'T' in the javascript console to see that 'unbury' did not work as expected. Since the definition of 'unbury' was as it should be (in my judgement), I went straight to the basic operations. There was a 'Right' where there neededed to be a 'Left' in the definition of 'swap'.
+
+2. 'isNilTop' instead of 'isTopNil': I permuted the name and solving this problem was a matter of a simple find and replace.
+
+Now I'm all caught up with what I did without taking notes.
+
+Here is the sequence of events that occurred while I debugged the program:
+
+1. I run the javascript as a script snippet in a Chrome browser on the page 'about:blank' by opening the 'developer tools' and pressing 'Control' and 'Enter' after left clicking into the specific snippet. Cursor focus is then moved to the console. I then left click onto the window presented by having navigated alreayd to 'about:blank'. Once cursor focus is on the window, I type on they keyboard and can see the output from 'onkeypress' event firing in the console.
+
+2. After pressing the 'a' key, I then press the comma ',' key. The expected output is `a, [ ]` but the output a get is `[ ]`. This means that there is something wrong with the compile part of 'edit' or with my method of viewing the program and word under construction.
+
+3. I shall press 'a' and then ',' after having restarted everything and then directly examine 'T' in the console. It is presented as nested arrays whose depths can be explored by clicking on little triangles that drop down the object notation for the indexed items of an array (with further triangles for compound objects that are not Nil).
+
+4. My method of viewing the program and word under construction is consistent with what the console shows me of T. The list of T is empty and hence there are no letters to the left of '[' or to the right of ']' in the string printed to the console. The top of T is also Nil, and this is consistent with the empty space between '[' and ']' in the output to the console.
+
+5. So, now I strongly suspect that 'compile' is where the problem has occurred. But, I'll have to examine T further in order to see if that is the case. I shall do that now and report on what I did after.
+
+6. Everything seems to be good up to the point in the compile code after which 'over(); over();' is executed then it looks like the program doesn't reflect what I saw to myself when I first programmed it.
+
+7. As I mentioned earlier, I have the logic straightened out even if the program doesn't reflect that. At least, I would bet on having the logic straightened out. I'll describe how it should work now. The description is of a contingency. That is what programmable machines mediate: contingencies as consequences from responses on occasions. The occasion here is one where the top item of T is the color of the word to be compiled and the second from top is how to spell that word.
+
+8. They are needed in their present relationship for when I check to see if the word just compiled is blue or not (and hence whether they need to be executed as if they were a green word). Thus, 'over(); over();' creates duplicates of them that are to be part of compilation. The top two items are 'pair();' -ed because a compiled word is a pair whose left part spells it out and whose right part is its color.
+
+9. The program under construction is 'push();' -ed from the front of the list to the top of the stack. It must then be 'part();' -ed so that the word being compiled can be put atop the stack *of* the program under construction. So far so good.
+
+10. The top of the stack is the list of the program being edited and must be 'bury();' -ed to get at both the stack of the program and the word to be put atop it.
+
+11. Now, the top of the stack is the stack of the program and the second from top is the word to be compiled. They are 'swap();' -ed and 'pair();' -ed which pushes the word onto the stack of the program. Now the stack and list of the program are put back together by another 'swap();' and 'pair();'.
+
+12. Aha! This is where the bug is. The next step, in what I saw to myself, is that the program is popped so that if the word compiled is blue then all that stuff can happen next. I did not put a 'pop();'! I'll put it there now and run the same test that started me off on this bug search.
+
+13. Hurray! I pressed 'a' and then ',' keys and the output to the console was `a, [ ]`. I haven't included any leading or trailing spaces in my quotation of the console output because they are not relevant to the bug hunt.
+
+14. Now, I'm going to continue testing compilation by checking that each key which corresponds to a color produces a compiled word. The order of '.;:.' at the beginning of the definition of the alphabet shows that '.' should be gray, ';' should be green, ':' should be red, and '.' should be blue. Notice that the colors are treated as punctuation in this situation.
+
+15. I pressed the following sequence of keys: 'a,b;c:d.f0'. The output was ` a, b; c: d. [ f0 ] ` (now I have included the surrounding spaces just in case) and is as expected. This output shows that pressing the key '0' does not start compilation but pressing the key '.' does. This is a boundary that has to be carefully tested as all boundaries do because they often cause 'boundary problems'. Most boundary problems are solved when dealing with the logic of a program by forcing every boundary to be clopen.
+
+16. Now, typing 'd.' should have been treated like compiling a blue word.
+
+17. Oh, I forgot to present the program that I was correcting. Well, that program is gone. So I can show the program that I am examining at this moment:
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function select(){
+  if(isTopNil()){
+    drop(); nip();
+  }else{
+    drop(); drop();
+}}
+
+function not(){
+  nil(); nil(); nil(); pair();
+  unbury(); select();
+}
+
+function or(){
+  dup(); select();
+}
+
+function and(){
+  not(); swap(); not();
+  or(); not();
+}
+
+function back(){
+  part();
+  swap(); part();
+  bury(); 
+  pair(); pair();
+}
+
+function fore(){
+  part(); part();
+  bury(); 
+  pair();
+  swap(); pair();
+}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
+  push();
+  dup();
+  fore();
+  pop();
+
+  // find
+  nil(); // prime the pump
+  while(isTopNil()){
+    // setup this iteration
+    drop();
+    back(); 
+    // match?
+    over(); over();
+    part(); drop(); // left
+    part(); nip(); // right
+
+    // id
+    // make a new empty list  
+    nil();
+    // put the trees at the front of it
+    pair(); pair(); 
+    // prime the pump
+    nil();
+    // while the list is not empty
+    // and the top two items are not nil
+    while(isTopNil()){
+      drop();
+      // get the top two trees from the list
+      push();
+      part(); part(); 
+      pop();
+      // are they both nil?
+      over(); over(); and();
+      // if they're both nil
+      if(isTopNil()){
+        drop();
+        // drop them: they're identical
+        drop(); drop();
+        // is the list nil?
+        push();
+        dup();
+        pop();
+      // if they're not both nil
+      }else{
+        drop();
+        // is one of them nil?
+        over(); over(); or();
+        // if one is nil
+        if(isTopNil()){
+          drop();
+          // then the other one isn't
+          // they're not identical
+          // put them back on the list
+          push();
+          pair(); pair();
+          // the list is not nil! It's over.
+          dup();
+          pop();
+        // if they're both not nil
+        }else{
+          drop();
+          // break into their left and right parts
+          part(); unbury(); part(); unbury();
+          // put them on the list
+          push();
+          pair(); pair(); pair(); pair();
+          pop();
+          nil();
+    }}}
+    drop();
+    push();
+    // end of id
+
+    // no more?
+    over();
+    part(); drop(); // left
+    or(); // match or no more?
+    not();
+  }
+  drop();
+  nip();
+  // end of find
+
+  pop();
+}
+
+function edit(){
+  dup();
+  // is letter?
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right
+  not();
+  if(isTopNil()){
+    drop();
+    pair();
+  }else{
+    drop();
+    // compile word
+    over(); over();
+    pair();
+    push();
+    part(); bury();
+    swap(); pair();
+    swap(); pair();
+    pop();
+    
+    // blue?
+    part(); nip(); // right  
+    part(); nip(); // right  
+    part(); nip(); // right  
+    not();
+    if(isTopNil()){
+      drop();
+      green();
+
+      // next
+      // get first word
+      push();
+      dup();
+      fore();
+      pop();
+      part(); drop(); // left
+      part(); nip(); // right 
+      dup();
+      not();
+      // while next word isn't nil
+      while(isTopNil()){
+        drop();
+        // get color of word
+        part();
+        // if color is gray
+        if(isTopNil()){ // gray
+          drop();
+          part(); nip(); part(); nip(); part(); nip(); part(); nip();
+          part(); nip(); if(isTopNil()){ drop(); dup(); }else{
+          part(); nip(); if(isTopNil()){ drop(); drop();}else{
+          part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{
+          part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{
+          part(); nip(); if(isTopNil()){ drop(); swap(); }else{
+          part(); nip(); if(isTopNil()){ drop(); nil(); }else{
+          part(); nip(); if(isTopNil()){ drop(); pair(); }else{
+          part(); nip(); if(isTopNil()){ drop(); part(); }else{
+          drop();}}}}}}}}
+        // if color is not gray
+        }else{
+          // if color is green
+          part(); nip(); // right
+          if(iNilTop()){ // green
+            drop();
+            green();
+          // if color is not green
+          }else{ 
+            drop();
+            drop();
+        }}
+        // get next word
+        push();
+        dup();
+        fore();
+        pop();
+        part(); drop(); // left
+        part(); nip(); // right 
+        dup();
+        not();
+      }
+      drop();
+      // end of next      
+
+    }else{
+      drop(); drop();
+    }
+    nil();
+}}
+
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz '
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lprog(p){return isNil(p)?'':lprog(Left(p))+' '+letters(Right(p));}
+function rprog(p){return isNil(p)?'':letters(Left(p))+' '+rprog(Right(p));}
+function prog(){
+  return lprog(Left(Left(Right(T))))
+    +' [ '+letters(Right(Left(T)))+' ] '
+    +rprog(Right(Left(Right(T))));
+}
+
+onkeydown=e=>{
+  e.preventDefault();
+  //console.log(e.key);
+  switch(e.key){
+    case'Shift':
+    case'Enter':
+    case'Control':
+    case'Alt':
+    case'Tab':
+    case'CapsLock':return;
+    default:
+      T=Pair(Pair(Left(T), list(e.key)), Right(T));
+      edit();
+      console.log(prog());
+      break;
+  }
+
+};
+```
+
+18. The gray word `0,` is 'dup' and pressing the sequence of keys 'a:0,a.' is expected to execute a dup on the stack of T. From a full restart this should add a Nil onto T so that the left part of T is a stack of two Nils.
+
+19. While I know from past consequences that starting with 'a:0,a.' is not as good a test as starting from something like 'abc,d;f:a:0,a.' because the latter tests the discrimination of the finding, I'll keep it simple for now and just start with 'a:0,a.'.
+
+20. The consequence expected did not occur and since everything up to and including the compilation has checked out thus far, I'll start by examining the program from there.
+
+21. First, a description of the contingency I saw to myself when writing the program. The occasion is post compilation. The front of the list of T is the compiled program and the top of the stack of T is the color of the word just compiled and the second from the top is the spelling of the word.
+
+22. Since the top is already known to be a color and since the color of blue is a list of length 4 then it can be detected as distinct from gray, red, and green by the fact that if you go down its right part three times (?) it will not be Nil. This is another boundary problem. It conforms to the clopen convention since what is being tested is if the top of the stack is not in '[gray, blue)'. Since it is already known that the top is not in and '[0, ..)' this means it is in the intersection of their complements  which is just '[blue]' i.e. the top is blue. Note, the order with which these clopen intervals are contemplated is that of the alphabet.
+
+23. It seems like that the problem is going down the right part three times. I'll write out the steps in detail using a LISP like notation for the binary trees. Gray is '()', i.e. the empty list Nil, green is '(())', i.e. the list with one item Nil, red is '(() ())', i.e. the list with two items both Nil, and blue is '(() () ())', i.e. the list with three items each Nil. And, already, I can see that I need two rather than three 'right();' -s since if '(() () ())' is atop the stack then 'part(); nip()' changes it into '(() ())' and another 'part(); nip();' turns it into '(())' which, after a 'not()', makes it Nil where as starting with any of the other colors the same procedure will make the top not Nil.
+
+24. I'll make that change and run the test again.
+
+25. Ok, that definitely got things going, and now I am stuck in an endless loop. This is a key characteristic of crash based programming. Sadly an endless loop is just a very slow crash e.g. it won't go on forever because eventually there will be no electricty to supply the machine either because the machien falls apart or the electricity is disconnected for some other reason.
+
+26. Oh! I forgot to note that because the test I ran begins with ':a' then I also checked the boundary of detecting a blue atop the stack since red is right before blue alphabetically.
+
+27. My computer is very slow. This is kinda on purpose. But, I do not want to wait very long to restart the browser window and script that run my javascript. This happens often enough when working on such things that a general method presented itself to me. I make a global counter and have it count down to zero every time any while loop goes through an iteration. I'll call it 'limit' and set it to 100. When the value of 'limit' hits zero this means the program crashed.
+
+28. I'll have the value of 'limit' printed in the console after everything else. I find and replace each 'while(isTopNil())' with 'while(isTopNil() && --limit)' to achieve the desired consequence.
+
+29. Because of how I've unraveled everything, there are only three occurrences of 'while(isTopNil())' to even replace. These are also the only places where something is going wrong.
+
+30. Since adding the parts involving 'limit' may have introduced their own bugs, I'll now debug this new program based on what the previous version actually did i.e. I expect the value of limit to go to 0 and for everything to stop.
+
+31. Something completely unexpected happened. The console printed out 'uncaught reference error' in the definition of 'edit'. I apparently wrote 'iNilTop' instead of 'isTopNil' inside a conditional. But, this is unexpected in that I thought such an error would have appeared before setting up the code involving limit. It didn't, and this is probably because before the code that prints the error could be executed, the while loops where spinning out of control. This is obviously metaphor, but I have no interest in chasing down how javascript is executed by the browser.
+
+32. I restarted everything from scratch and input 'a:0,a.' and was further surprsied by the output. The value of limit is negative two and not zero as I expected. It occurred to me immediately that I had not forseen the consequences of the conditional execution of '&&'. To make sure that '--limit' is executed on every step of each while loop, I have to put it first and then the other conditions after that i.e. substitute 'while(isTopNil() && --limit)' with 'while(--limit && isTopNil)'.
+
+33. Having done that I'll now run the same test input from scratch. I do not know what to expect.
+
+34. Ha, now the value of limit is negative four. I'm going to avoid tracing down what is going on by going straight to a strict inequality '0<--limit'.
+
+35. Ok, did that, and now the value of 'limit' is negative two. I can interpret this to mean that execution went through two while loops *after* the value of limit was zero.
+
+36. Now, debugging can turn to an examination of the definition of 'green'.
+
+37. I'll have to pick this up after I eat some lunch.
+
 ## \#2025-1013-2130
 
 The hardest function is probably 'id' so 'next' should be easier. Starting from 
