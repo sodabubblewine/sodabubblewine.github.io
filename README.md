@@ -151,6 +151,451 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1014-1701
+
+Well, going to lunch turned into going to stores and doing other chores. This is often how it goes. A thirty minute lunch turns into a chore fest. Back to debugging.
+
+Here is the current state of the program:
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function select(){
+  if(isTopNil()){
+    drop(); nip();
+  }else{
+    drop(); drop();
+}}
+
+function not(){
+  nil(); nil(); nil(); pair();
+  unbury(); select();
+}
+
+function or(){
+  dup(); select();
+}
+
+function and(){
+  not(); swap(); not();
+  or(); not();
+}
+
+function back(){
+  part();
+  swap(); part();
+  bury(); 
+  pair(); pair();
+}
+
+function fore(){
+  part(); part();
+  bury(); 
+  pair();
+  swap(); pair();
+}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
+  push();
+  dup();
+  fore();
+  pop();
+
+  // find
+  nil(); // prime the pump
+  while(0<--limit && isTopNil()){
+    // setup this iteration
+    drop();
+    back(); 
+    // match?
+
+    // get top of program
+    over(); over();
+    part(); drop(); // left
+    part(); nip(); // right
+
+    // id
+    // make a new empty list  
+    nil();
+    // put the trees at the front of it
+    pair(); pair(); 
+    // prime the pump
+    nil();
+    // while the list is not empty
+    // and the top two items are not nil
+    while(0<--limit && isTopNil()){
+      drop();
+      // get the top two trees from the list
+      push();
+      part(); part(); 
+      pop();
+      // are they both nil?
+      over(); over(); and();
+      // if they're both nil
+      if(isTopNil()){
+        drop();
+        // drop them: they're identical
+        drop(); drop();
+        // is the list nil?
+        push();
+        dup();
+        pop();
+      // if they're not both nil
+      }else{
+        drop();
+        // is one of them nil?
+        over(); over(); or();
+        // if one is nil
+        if(isTopNil()){
+          drop();
+          // then the other one isn't
+          // they're not identical
+          // put them back on the list
+          push();
+          pair(); pair();
+          // the list is not nil! It's over.
+          dup();
+          pop();
+        // if they're both not nil
+        }else{
+          drop();
+          // break into their left and right parts
+          part(); unbury(); part(); unbury();
+          // put them on the list
+          push();
+          pair(); pair(); pair(); pair();
+          pop();
+          nil();
+    }}}
+    drop();
+    push();
+    // end of id
+
+    // no more?
+    over();
+    part(); drop(); // left
+    or(); // match or no more?
+    not();
+  }
+  drop();
+  nip();
+  // end of find
+
+  pop();
+}
+
+function edit(){
+  dup();
+  // is letter?
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right
+  not();
+  if(isTopNil()){
+    drop();
+    pair();
+  }else{
+    drop();
+    // compile word
+    over(); over();
+    pair();
+    push();
+    part(); bury();
+    swap(); pair();
+    swap(); pair();
+    pop();
+    
+    // blue?
+    part(); nip(); // right  
+    part(); nip(); // right  
+    not();
+    if(isTopNil()){
+      drop();
+      green();
+
+      // next
+      // get first word
+      push();
+      dup();
+      fore();
+      pop();
+      part(); drop(); // left
+      part(); nip(); // right 
+      dup();
+      not();
+      // while next word isn't nil
+      while(0<--limit && isTopNil()){
+        drop();
+        // get color of word
+        part();
+        // if color is gray
+        if(isTopNil()){ // gray
+          drop();
+          part(); nip(); part(); nip(); part(); nip(); part(); nip();
+          part(); nip(); if(isTopNil()){ drop(); dup(); }else{
+          part(); nip(); if(isTopNil()){ drop(); drop();}else{
+          part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{ // gray pop
+          part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{ // gray push
+          part(); nip(); if(isTopNil()){ drop(); swap(); }else{
+          part(); nip(); if(isTopNil()){ drop(); nil(); }else{
+          part(); nip(); if(isTopNil()){ drop(); pair(); }else{
+          part(); nip(); if(isTopNil()){ drop(); part(); }else{
+          drop();}}}}}}}}
+        // if color is not gray
+        }else{
+          // if color is green
+          part(); nip(); // right
+          if(isTopNil()){ // green
+            drop();
+            green();
+          // if color is not green
+          }else{ 
+            drop();
+            drop();
+        }}
+        // get next word
+        push();
+        dup();
+        fore();
+        pop();
+        part(); drop(); // left
+        part(); nip(); // right 
+        dup();
+        not();
+      }
+      drop();
+      // end of next      
+
+    }else{
+      drop(); drop();
+    }
+    nil();
+}}
+
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz '
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lprog(p){return isNil(p)?'':lprog(Left(p))+' '+letters(Right(p));}
+function rprog(p){return isNil(p)?'':letters(Left(p))+' '+rprog(Right(p));}
+function prog(){
+  return lprog(Left(Left(Right(T))))
+    +' [ '+letters(Right(Left(T)))+' ] '
+    +rprog(Right(Left(Right(T))));
+}
+
+var limit=100;
+
+onkeydown=e=>{
+  e.preventDefault();
+  //console.log(e.key);
+  switch(e.key){
+    case'Shift':
+    case'Enter':
+    case'Control':
+    case'Alt':
+    case'Tab':
+    case'CapsLock':return;
+    default:
+      T=Pair(Pair(Left(T), list(e.key)), Right(T));
+      edit();
+      console.log(prog());
+      console.log('limit: ', limit);
+      break;
+  }
+
+};
+```
+
+1. I left off debugging the definition of 'green'.
+
+2. I just looked at the code to see exactly where I left off and I'm glad that I did becuase 1) it is not in the definition of 'green' and 2) I would have missed it for a while if I had made the assumption that 'green' is where the problem was.
+
+3. The problem is right after compilation where it is checked if the word compiled is blue. The test keypresses are 'a:0,a.' which should duplicate the top of the stack. Right now it goes off into an endless loop that is only tamed by introducing a limit on the number of times, globally, the bodies of while loops can be executed.
+
+4. I'm missing a 'drop();' after the conditional that checks for blue. Right now, it leaves the color blue as the top of the stack. The problem is that the definition of 'green' expects the top of the stack to spell out the matching red word to be found. I'll add the missing drop and run the same test case to see what happens.
+
+5. Oops! I totally forgot that the color isn't duplicated before it is checked to see if it is blue. This means that one drop is good enough to get rid of the Nil at the top and leave the spelling of the red word whose match is to be found.
+
+6. There are two ways to approach debugging the problem that presents itself: a) continue carefully reading through the operations and double checking that they do what I expected, and b) setting up some more probes on the javascript side so that I can see the whole state of the tree after each of the basic operations.
+
+7. Side note entirely unrelated to debugging: I just got my diamond sharpening blocks! Now I can set up my sharpening system and start making some boxes.
+
+8. I'll avoid making new probes until I look over the program and see if I can spot where I went wrong.
+
+9. The definition of green starts as follows:
+    ```
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
+  push();
+  dup();
+  fore();
+  pop();
+    ```
+
+10. I'll start by replacing 'fore()' with its basic operations
+    ```
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
+  push();
+  dup();
+  part(); part(); bury(); pair(); swap(); pair(); // fore
+  pop();
+    ```
+
+11. Redify works in that it takes the top of the stack as the spelling of a word and colors it red by pairing the spelling with '(() ())' the list of two items each of which is Nil.
+
+12. The 'push();' brings down the program from the front of the list.
+
+13. 'dup();' makes a copy of where the program is right now. This is where the search will proceed from. For some reason there is a 'fore()' here, expanded to "part(); part(); bury(); pair(); swap(); pair(); // fore", which, as far as I can see, serves no purpose. In the regular course of execution, that is through the 'next' part of 'edit', the program is already shifted to the next word when it's searching for the last matching red. Notice that this wastes a step i.e. it will check if the red word is identical to the green word but we already know it isn't. This is yet another example of boundary value problems.
+
+14. So, the 'fore' can be removed entirely. This leaves only two occurrences of 'fore'. They are both part of the 'next' part of 'edit'. The first one can probably be eliminated, but I don't know how yet.
+
+15. Now to test the same code after making this little change: 'a:0,a.'. That still didn't work.
+
+16. the code for 'back' is wrong. Instead of a bury it should have an unbury so that it is like this:
+    ```
+    part(); swap(); part(); unbury(); pair(); pair(); //back
+    ```
+
+17. This makes me suspect that 'fore' may be defined incorrectly as well. No it's ok.
+
+18. Okay, time to try the test case again. Hurray, it's still wrong but now it's closer to being right than it has eve been. Here is the output after the test case:
+    ```
+     a: 0, a., 9 [  ] 
+    limit:  -2
+    ```
+
+19. The clump of code after 'back' is 
+    ```
+    // get top of program
+    over(); over();
+    part(); drop(); // left
+    part(); nip(); // right
+    ```
+
+20. It does what the comments say it should. Though, it doesn't quite explain why there is an 'over(); over();' before getting the top of the program. The explanation is that after this comparison between the red word and the top of the program is over the program is turned back and checked from there. 
+
+21. Next is the beginning of 'id'. OH, gosh. I have forgotten to mention something important that has been lurking for a long long while. Every program in my environment has a beginning a middle and an end. Usually the middle is repeated until some condition is met. The beginning is the set up, the end is the break down. This makes programming more story like. It happens naturally when you're solving problems that they turn into stories with a beginning middle (that often repeats) and an end. That they are complete stories is kinda a cool unexpected side effect of factoring things this way.
+
+22. Ok, the beginning if 'id'
+    ```
+    // id
+    // make a new empty list  
+    nil();
+    // put the trees at the front of it
+    pair(); pair(); 
+    // prime the pump
+    nil();
+    // while the list is not empty
+    // and the top two items are not nil
+    ```
+
+23. Well, I can spot the error immediately: I do not pop the list of trees to be tested for identity onto the front of the list of T, as follows:
+    ```
+    // id
+    // make a new empty list  
+    nil();
+    // put the trees at the front of it
+    pair(); pair(); 
+    pop();
+    // prime the pump
+    nil();
+    // while the list is not empty
+    // and the top two items are not nil
+    ```
+
+24. Now to test everything again. And, it's a pint of Guiness time. So smooth.
+
+25. Wonderful! Things appear to be stable in a way that they weren't before. Here's the output:
+    ```
+     a: [  ] 0, a. 
+    limit:  85
+    ```
+
+26. Hopefully a little Guiness won't mess me up while debugging.
+
+27. I went ahead and checked the value of 'T' in the console to see if a dup was executed or not. Happily it was!  The problem seems to be something about getting to the next operation. Though, since I haven't implemented a 'return' command, there's nothing surprising there.
+
+28. I'm uncertain if execution occurred in the 'next' loop or not. I'll put a 'console.log' in there and see if it gets there (after starting from scratch and using the same test string).
+
+29. And I have sadly demonstrated that it does not reach the middle of 'next'. This is consistent with what I'm seeing e.g. the Nil atop the stack is probably from an error later in the definition of 'edit'.
+
+30. Ah! This is a place where the simplicity of my definition does not show whether or not 'id' was successful or not. The new example is '0;a:0,a.'. The result shows that my guess was right:
+    ```
+     0; [  ] a: 0, a. 
+    limit:  80
+    ```
+
+31. Now to narrow down where the problem might be. It is probably in 'id' since that is the more complex part of the program. Ah, there is a missing 'not'
+    ```
+     while(0<--limit && isTopNil()){
+      console.log('beginning of middle of id');
+      drop();
+      // get the top two trees from the list and pop it out of the way for later
+      push();
+      part(); part(); 
+      pop();
+      // are they both nil?
+      over(); over(); and();
+      // if they're both nil
+      if(isTopNil()){
+        drop();
+        // drop them: they're identical
+        drop(); drop();
+        // is the list nil?
+        push();
+        dup();
+        pop();
+      // if they're not both nil
+      }else{
+    ```
+
+32. There should be a 'not' after that last 'pop();' so that the loop continues if the list of subtrees to visit and compare is nonempty. Right now, if it is nonempty it stop checking for identity and pushes that non empty list onto the top fo the list.
+
+33. That seems to have worked, here is the output:
+    ```
+     b; a: 0, a.   [  ] 
+    limit:  42
+    ```
+
+34. There is a mysterious space before the '[ ]' that suggests an empty word got into the program. My guess is that an empty word would stop the execution of the program. I should be able to test this by running 'a.' again at the end of the program under construction. Doing so made it clear that I need to make the value of 'limit' larger. I'll put it on a 'power of two' scale i.e. 'limit=1<<8'. The output (after pressing the sequence of keys '0;a:0,a.a.' is
+    ```
+     0; a: 0, a.   [  ] a. 
+    limit:  95
+    ```
+
+35. I'll have to stop there. I need some dinner!
+
+
 ## \#2025-1014-1237
 
 Oops, I forgot to record my work I was doing on my programming environment. This happens from time to time and when it happens I usually lose some potentially valuable records of the kind of thinking that matters most.
