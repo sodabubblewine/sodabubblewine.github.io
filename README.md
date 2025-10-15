@@ -593,7 +593,280 @@ onkeydown=e=>{
     limit:  95
     ```
 
-35. I'll have to stop there. I need some dinner!
+35. I'll have to stop there. I need some dinner! Here is where I left off:
+    ```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function select(){
+  if(isTopNil()){
+    drop(); nip();
+  }else{
+    drop(); drop();
+}}
+
+function not(){
+  nil(); nil(); nil(); pair();
+  unbury(); select();
+}
+
+function or(){
+  dup(); select();
+}
+
+function and(){
+  not(); swap(); not();
+  or(); not();
+}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
+  push();
+  dup();
+  pop();
+
+  // find
+  nil(); // prime the pump
+  while(0<--limit && isTopNil()){
+    // setup this iteration
+    drop();
+    part(); swap(); part(); unbury(); pair(); pair(); //back
+    // match?
+
+    // get top of program
+    over(); over();
+    part(); drop(); // left
+    part(); nip(); // right
+
+    // id
+    // make a new empty list  
+    nil();
+    // put the trees at the front of it
+    pair(); pair();
+    // pop it out of the way for later
+    pop();
+    // prime the pump
+    nil();
+    // while the list is not empty
+    // and the top two items are not nil
+    while(0<--limit && isTopNil()){
+      console.log('beginning of middle of id');
+      drop();
+      // get the top two trees from the list and pop it out of the way for later
+      push();
+      part(); part(); 
+      pop();
+      // are they both nil?
+      over(); over(); and();
+      // if they're both nil
+      if(isTopNil()){
+        drop();
+        // drop them: they're identical
+        drop(); drop();
+        // is the list nil?
+        push();
+        dup();
+        pop();
+        not();
+      // if they're not both nil
+      }else{
+        drop();
+        // is one of them nil?
+        over(); over(); or();
+        // if one is nil
+        if(isTopNil()){
+          drop();
+          // then the other one isn't
+          // they're not identical
+          // put them back on the list
+          push();
+          pair(); pair();
+          // the list is not nil! It's over.
+          dup();
+          pop();
+        // if they're both not nil
+        }else{
+          drop();
+          // break into their left and right parts
+          part(); unbury(); part(); unbury();
+          // put them on the list
+          push();
+          pair(); pair(); pair(); pair();
+          pop();
+          nil();
+    }}}
+    drop();
+    push();
+    // end of id
+
+    // no more?
+    over();
+    part(); drop(); // left
+    or(); // match or no more?
+    not();
+  }
+  drop();
+  nip();
+  // end of find
+
+  pop();
+  console.log('end of green')
+}
+
+function edit(){
+  dup();
+  // is letter?
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right
+  not();
+  if(isTopNil()){
+    drop();
+    pair();
+  }else{
+    drop();
+    // compile word
+    over(); over();
+    pair();
+    push();
+    part(); bury();
+    swap(); pair();
+    swap(); pair();
+    pop();
+    
+    // blue?
+    part(); nip(); // right  
+    part(); nip(); // right  
+    not();
+    if(isTopNil()){
+      drop();
+      green();
+
+      // next
+      // get first word
+      push();
+      dup();
+      part(); part(); bury(); pair(); swap(); pair(); // fore
+      pop();
+      part(); drop(); // left
+      part(); nip(); // right 
+      dup();
+      console.log(letter(Right(Left(T))))
+      not();
+      console.log('in the beginning of next');
+      // while next word isn't nil
+      while(0<--limit && isTopNil()){
+        console.log('in the middle of next')
+        drop();
+        // get color of word
+        part();
+        // if color is gray
+        if(isTopNil()){ // gray
+          drop();
+          part(); nip(); part(); nip(); part(); nip(); part(); nip();
+          part(); nip(); if(isTopNil()){ drop(); dup(); }else{
+          part(); nip(); if(isTopNil()){ drop(); drop();}else{
+          part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{ // gray pop
+          part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{ // gray push
+          part(); nip(); if(isTopNil()){ drop(); swap(); }else{
+          part(); nip(); if(isTopNil()){ drop(); nil(); }else{
+          part(); nip(); if(isTopNil()){ drop(); pair(); }else{
+          part(); nip(); if(isTopNil()){ drop(); part(); }else{
+          drop();}}}}}}}}
+        // if color is not gray
+        }else{
+          // if color is green
+          part(); nip(); // right
+          if(isTopNil()){ // green
+            drop();
+            green();
+          // if color is not green
+          }else{
+            console.log('the next word was red or blue')
+            drop();
+            drop();
+        }}
+        // get next word
+        push();
+        dup();
+        part(); part(); bury(); pair(); swap(); pair(); // fore
+        pop();
+        part(); drop(); // left
+        part(); nip(); // right 
+        dup();
+        not();
+      }
+      drop();
+      // end of next      
+
+    }else{
+      drop(); drop();
+    }
+    nil();
+}}
+
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz '
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lprog(p){return isNil(p)?'':lprog(Left(p))+' '+letters(Right(p));}
+function rprog(p){return isNil(p)?'':letters(Left(p))+' '+rprog(Right(p));}
+function prog(){
+  return lprog(Left(Left(Right(T))))
+    +' [ '+letters(Right(Left(T)))+' ] '
+    +rprog(Right(Left(Right(T))));
+}
+
+var limit=1<<9;
+
+onkeydown=e=>{
+  e.preventDefault();
+  //console.log(e.key);
+  switch(e.key){
+    case'Shift':
+    case'Enter':
+    case'Control':
+    case'Alt':
+    case'Tab':
+    case'CapsLock':return;
+    default:
+      T=Pair(Pair(Left(T), list(e.key)), Right(T));
+      edit();
+      console.log(prog());
+      console.log('limit: ', limit);
+      break;
+  }
+
+};
+```
 
 
 ## \#2025-1014-1237
