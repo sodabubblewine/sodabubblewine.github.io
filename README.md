@@ -33,7 +33,7 @@ Conclude from contemplation on templates:
 
 ## HOW TO WRITE IT WELL THE OTHER 1% OF THE TIME
 
-Journal your thoughts and feelings.
+Journal your thinking and feeling.
 
 ## HOW TO MAKE IT LOGICAL
 
@@ -150,6 +150,324 @@ Use a thermometer.
 - A predicate is not a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
 
 # NOTES
+
+## \#2025-1014-2137
+
+Belly full. Time to debug. Starting from the end of last note.
+
+1. Step one. Make some decaf coffee. Step two. Read where I left off.
+
+2. OK, hot water is ready to boil.
+
+3. Two things occurred to me the moment I looked back on where I left off in the last note: a) should "not finding" a word stop execution? b) the operation of execution is 'pop' and the operation of exit is a 'push' followed by a 'drop'.
+
+4. While I was writting that, it occurred to me that I haven't ested a green word in the process of execution (though the blue words already use the same green code, so the only problem that could occur is in the design of the 'next' part of the definition of 'edit').
+
+5. Yet another thing occurred to me: I would like to evolve the design of everything up to this point so that I do not need so many foreign probes to check that everything has been set up well.
+
+6. Ok, first things first. Oh, 'pop' is actually 'call' then 'exit' is a gray push followed by call. Ok, I'll put 'return' as a gray word for now and then deal with all the more complicated stuff later.
+    ```
+    // if color is gray
+        if(isTopNil()){ // gray
+          drop();
+          part(); nip(); part(); nip(); part(); nip(); part(); nip();
+          part(); nip(); if(isTopNil()){ drop(); dup(); }else{ // gray dup
+          part(); nip(); if(isTopNil()){ drop(); drop();}else{ // gray drop
+          part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{ // gray pop
+          part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{ // gray push
+          part(); nip(); if(isTopNil()){ drop(); swap(); }else{ // gray swap
+          part(); nip(); if(isTopNil()){ drop(); nil(); }else{ // gray nil
+          part(); nip(); if(isTopNil()){ drop(); pair(); }else{ // gray pair
+          part(); nip(); if(isTopNil()){ drop(); part(); }else{ // gray part
+          part(); nip(); if(isTopNil()){ drop(); push(); drop(); }else{ // gray return
+          drop();}}}}}}}}}
+    ```
+
+7. The reason to put a return in is to see if everything works out as expected when execution doesn't abruptly end.
+
+8. I tried '0:test:0,6,8,test.' as the test input. This didn't work as expected and it appears as if there is one more 'part();nip()' in the beginning of 'gray'.
+
+9. Oh! I put some 'console.log's in the 'gray' part to see if that part of the code was reached. It was. Then it occurred to me that 'part(); nip()' was from an earlier version where I was thinking that words were spelled as lists of letters. This would make sense, but makes as much sense as spelling out words as stacks. So, 'part(); nip();' must be replaced by 'part(); drop();'.
+
+10. Oh. Gosh, I'm glad I tried to see this all to myself. So there is a bit of a tricky thing going on and that is part of how I got everything confused. The primitive gray words contemplated here are spelled out by a stack with a single item on it which is a list whose length quotes one of the letters in the string '012345678'. So the first, 'part(); nip();' gets that letter off the stack.
+
+11. A deeper analysis of the way 'next' works revealed to me that there must be an extra. Here is what is now
+    ```
+     }
+      drop();
+      // end of next 
+    ```
+12. This only drops the result of 'not' and does not then drop the empty word itself. This may account for all of the Nils atop the stack (and also for why I shouldn't test just the gray-dup).
+
+13. Hurray! It worked as expected. While I haven't tested green words yet, I want to work on the end of 'next' still. It stops after it has already moved an empty word onto the stack of the program as a side effect of how parting a Nil works.
+
+14. Oh! Ha. The space is from the program I use to view the state of the tree.
+
+15. So one of the spaces is from the view program but the others are from Nils atop the program stack.
+
+16. Gotta go. Here is the state of the program thus far.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function select(){if(isTopNil()){drop(); nip();}else{drop(); drop();}}
+function not(){nil(); nil(); nil(); pair(); unbury(); select();}
+function or(){dup(); select();}
+function and(){not(); swap(); not(); or(); not();}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
+  push();
+  dup();
+  pop();
+
+  // find
+  nil(); // prime the pump
+  while(0<--limit && isTopNil()){
+    // setup this iteration
+    drop();
+    part(); swap(); part(); unbury(); pair(); pair(); //back
+    // match?
+
+    // get top of program
+    over(); over();
+    part(); drop(); // left
+    part(); nip(); // right
+
+    // id
+    // make a new empty list  
+    nil();
+    // put the trees at the front of it
+    pair(); pair();
+    // pop it out of the way for later
+    pop();
+    // prime the pump
+    nil();
+    // while the list is not empty
+    // and the top two items are not nil
+    while(0<--limit && isTopNil()){
+      drop();
+      // get the top two trees from the list and pop it out of the way for later
+      push();
+      part(); part(); 
+      pop();
+      // are they both nil?
+      over(); over(); and();
+      // if they're both nil
+      if(isTopNil()){
+        drop();
+        // drop them: they're identical
+        drop(); drop();
+        // is the list nil?
+        push();
+        dup();
+        pop();
+        not();
+      // if they're not both nil
+      }else{
+        drop();
+        // is one of them nil?
+        over(); over(); or();
+        // if one is nil
+        if(isTopNil()){
+          drop();
+          // then the other one isn't
+          // they're not identical
+          // put them back on the list
+          push();
+          pair(); pair();
+          // the list is not nil! It's over.
+          dup();
+          pop();
+        // if they're both not nil
+        }else{
+          drop();
+          // break into their left and right parts
+          part(); unbury(); part(); unbury();
+          // put them on the list
+          push();
+          pair(); pair(); pair(); pair();
+          pop();
+          nil();
+    }}}
+    drop();
+    push();
+    // end of id
+
+    // no more?
+    over();
+    part(); drop(); // left
+    or(); // match or no more?
+    not();
+  }
+  drop();
+  nip();
+  // end of find
+
+  pop();
+}
+
+function edit(){
+  dup();
+  // is letter?
+  part(); nip(); // right  
+  part(); nip(); // right  
+  part(); nip(); // right
+  not();
+  if(isTopNil()){
+    drop();
+    pair();
+  }else{
+    drop();
+    // compile word
+    over(); over();
+    pair();
+    push();
+    part(); bury();
+    swap(); pair();
+    swap(); pair();
+    pop();
+    
+    // blue?
+    part(); nip(); // right  
+    part(); nip(); // right  
+    not();
+    if(isTopNil()){
+      drop();
+      green();
+
+      // next
+      // get first word
+      push();
+      dup();
+      part(); part(); bury(); pair(); swap(); pair(); // fore
+      pop();
+      part(); drop(); // left
+      part(); nip(); // right 
+      dup();
+      not();
+      // while next word isn't nil
+      while(0<--limit && isTopNil()){
+        drop();
+        // get color of word
+        part();
+        // if color is gray
+        if(isTopNil()){ // gray
+          console.log('gray')
+          drop();
+          part(); nip(); // get letter quoting gray word
+          part(); nip(); part(); nip(); part(); nip(); 
+          part(); nip(); if(isTopNil()){ drop(); dup(); console.log('dup') }else{ // gray dup
+          part(); nip(); if(isTopNil()){ drop(); drop();}else{ // gray drop
+          part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{ // gray pop
+          part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{ // gray push
+          part(); nip(); if(isTopNil()){ drop(); swap(); }else{ // gray swap
+          part(); nip(); if(isTopNil()){ drop(); nil(); }else{ // gray nil
+          part(); nip(); if(isTopNil()){ drop(); pair(); console.log('pair')}else{ // gray pair
+          part(); nip(); if(isTopNil()){ drop(); part(); }else{ // gray part
+          part(); nip(); if(isTopNil()){ drop(); push(); drop(); console.log('ret')}else{ // gray return
+          drop();}}}}}}}}}
+        // if color is not gray
+        }else{
+          // if color is green
+          part(); nip(); // right
+          if(isTopNil()){ // green
+            drop();
+            green();
+          // if color is not green
+          }else{
+            drop();
+            drop();
+        }}
+        // get next word
+        push();
+        dup();
+        part(); part(); bury(); pair(); swap(); pair(); // fore
+        pop();
+        // get top of program stack
+        part(); drop(); // left
+        part(); nip(); // right 
+        dup();
+        // is it empty?
+        not();
+      }
+      drop();
+      // drop empty word atop stack of T
+      drop();
+      // drop the two empty words atop program stack
+      console.log('here')
+      //push(); part(); swap(); part(); part(); drop(); drop(); swap(); pair(); pop();
+      // end of next      
+
+    }else{
+      drop(); drop();
+    }
+    nil();
+}}
+
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz '
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lprog(p){return isNil(p)?'':lprog(Left(p))+' '+letters(Right(p));}
+function rprog(p){return isNil(p)?'':letters(Left(p))+' '+rprog(Right(p));}
+function prog(){
+  return lprog(Left(Left(Right(T))))
+    +' [ '+letters(Right(Left(T)))+' ] '
+    +rprog(Right(Left(Right(T))));
+}
+
+var limit=1<<9;
+
+onkeydown=e=>{
+  e.preventDefault();
+  //console.log(e.key);
+  switch(e.key){
+    case'Shift':
+    case'Enter':
+    case'Control':
+    case'Alt':
+    case'Tab':
+    case'CapsLock':return;
+    default:
+      T=Pair(Pair(Left(T), list(e.key)), Right(T));
+      edit();
+      console.log(prog());
+      console.log('limit: ', limit);
+      break;
+  }
+
+};
+```
 
 ## \#2025-1014-1701
 
