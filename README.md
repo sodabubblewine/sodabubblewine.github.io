@@ -151,6 +151,526 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1014-1659
+
+Another debugging session. Time is not always easy to get, but when I've got it I try to put it to use as best I can. But, in the end, I do not want to be the best john, I just want o be the accurate John.
+
+I went ahead and eliminated the separate definition of 'edit' and put it inside the definition of the javascript 'onkeydown' property of the window.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function select(){if(isTopNil()){drop(); nip();}else{drop(); drop();}}
+function not(){nil(); nil(); nil(); pair(); unbury(); select();}
+function or(){dup(); select();}
+function and(){not(); swap(); not(); or(); not();}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify
+  push();
+  dup();
+  pop();
+
+  // find
+  nil(); // prime the pump
+  while(0<--limit && isTopNil()){
+    // setup this iteration
+    drop();
+    part(); swap(); part(); unbury(); pair(); pair(); //back
+    // match?
+
+    // get top of program
+    over(); over();
+    part(); drop(); // left
+    part(); nip(); // right
+
+    // id
+    // make a new empty list  
+    nil();
+    // put the trees at the front of it
+    pair(); pair();
+    // pop it out of the way for later
+    pop();
+    // prime the pump
+    nil();
+    // while the list is not empty
+    // and the top two items are not nil
+    while(0<--limit && isTopNil()){
+      drop();
+      // get the top two trees from the list and pop it out of the way for later
+      push();
+      part(); part(); 
+      pop();
+      // are they both nil?
+      over(); over(); and();
+      // if they're both nil
+      if(isTopNil()){
+        drop();
+        // drop them: they're identical
+        drop(); drop();
+        // is the list nil?
+        push();
+        dup();
+        pop();
+        not();
+      // if they're not both nil
+      }else{
+        drop();
+        // is one of them nil?
+        over(); over(); or();
+        // if one is nil
+        if(isTopNil()){
+          drop();
+          // then the other one isn't
+          // they're not identical
+          // put them back on the list
+          push();
+          pair(); pair();
+          // the list is not nil! It's over.
+          dup();
+          pop();
+        // if they're both not nil
+        }else{
+          drop();
+          // break into their left and right parts
+          part(); unbury(); part(); unbury();
+          // put them on the list
+          push();
+          pair(); pair(); pair(); pair();
+          pop();
+          nil();
+    }}}
+    drop();
+    push();
+    // end of id
+
+    // no more?
+    over();
+    part(); drop(); // left
+    or(); // match or no more?
+    not();
+  }
+  drop();
+  nip();
+  // end of find
+
+  pop();
+}
+
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz '
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lprog(p){return isNil(p)?'':lprog(Left(p))+' '+letters(Right(p));}
+function rprog(p){return isNil(p)?'':letters(Left(p))+' '+rprog(Right(p));}
+function prog(){
+  return lprog(Left(Left(Right(T))))
+    +' [ '+letters(Right(Left(T)))+' ] '
+    +rprog(Right(Left(Right(T))));
+}
+
+var limit=1<<9;
+
+onkeydown=e=>{
+  e.preventDefault();
+  //console.log(e.key);
+  switch(e.key){
+    case'Shift':
+    case'Enter':
+    case'Control':
+    case'Alt':
+    case'Tab':
+    case'CapsLock':return;
+    default:
+      // input
+      T=Pair(Pair(Left(T), list(e.key)), Right(T));
+
+      // edit
+      dup();
+      // is letter?
+      part(); nip(); // right  
+      part(); nip(); // right  
+      part(); nip(); // right
+      not();
+      if(isTopNil()){
+        drop();
+        pair();
+      }else{
+        drop();
+        // compile word
+        over(); over();
+        pair();
+        push();
+        part(); bury();
+        swap(); pair();
+        swap(); pair();
+        pop();
+        
+        // blue?
+        part(); nip(); // right  
+        part(); nip(); // right  
+        not();
+        if(isTopNil()){
+          drop();
+          green();
+
+          // next
+          // get first word
+          push();
+          dup();
+          part(); part(); bury(); pair(); swap(); pair(); // fore
+          pop();
+          part(); drop(); // left
+          part(); nip(); // right 
+          dup();
+          not();
+          // while next word isn't nil
+          while(0<--limit && isTopNil()){
+            drop();
+            // get color of word
+            part();
+            // if color is gray
+            if(isTopNil()){ // gray
+              console.log('gray')
+              drop();
+              part(); nip(); // get letter quoting gray word
+              part(); nip(); part(); nip(); part(); nip(); 
+              part(); nip(); if(isTopNil()){ drop(); dup(); console.log('dup') }else{ // gray dup
+              part(); nip(); if(isTopNil()){ drop(); drop();}else{ // gray drop
+              part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{ // gray pop
+              part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{ // gray push
+              part(); nip(); if(isTopNil()){ drop(); swap(); }else{ // gray swap
+              part(); nip(); if(isTopNil()){ drop(); nil(); }else{ // gray nil
+              part(); nip(); if(isTopNil()){ drop(); pair(); console.log('pair')}else{ // gray pair
+              part(); nip(); if(isTopNil()){ drop(); part(); }else{ // gray part
+              part(); nip(); if(isTopNil()){ drop(); push(); drop(); console.log('ret')}else{ // gray return
+              drop();}}}}}}}}}
+            // if color is not gray
+            }else{
+              // if color is green
+              part(); nip(); // right
+              if(isTopNil()){ // green
+                drop();
+                green();
+              // if color is not green
+              }else{
+                drop();
+                drop();
+            }}
+            // get next word
+            push();
+            dup();
+            part(); part(); bury(); pair(); swap(); pair(); // fore
+            pop();
+            // get top of program stack
+            part(); drop(); // left
+            part(); nip(); // right 
+            dup();
+            // is it empty?
+            not();
+          }
+          drop();
+          // drop empty word atop stack of T
+          drop();
+          // drop the two empty words atop program stack
+          console.log('here')
+          //push(); part(); swap(); part(); part(); drop(); drop(); swap(); pair(); pop();
+          // end of next      
+    
+        }else{
+          drop(); drop();
+        }
+        nil();
+      }      
+      // end of edit
+      
+      console.log(prog());
+      console.log('limit: ', limit);
+      break;
+  }
+
+};
+```
+
+1. There is a way to make only a single place where 'green' is executed. It involves making an edited version of the executing program that uses an empty word before the relevant green word that corresponds to the blue one. Then, this can be dropped or edited out. There are surely some restrictions on how this might work which I have yet to contemplate. Before I do anything like this I'm going to finish debugging the present version of the program.
+
+2. First, I have to look back on the last note to see where I left off.
+
+3. I was testing a string like '0:test:0,6,8,test.'.
+
+4. I must have been sleepy when I was debugging last night. It is clear to me today that there should not be a space character in the alphabet. This may reveal something about where the problem is becuase I have to javascript side of things print a question mark whenever there is a list whose length doesn't quote a letter of the alphabet.
+
+5. That didn't change the output from the test keypresses 'a:0,6,8,a.'. I'm going to get rid of any spaces in the program that prints the javascript string that quotes the state of the program.
+
+6. I went ahead and eliminated all spaces and made it so that instead of using an empty string whenever it hits Nil, now everything returns a pound sign. Now what is displayed is consistent with what I see upon examining T in the console.
+
+7. By adding 'console.log(limit, prog());' to the end of the 'next' loop, I am able to see exactly where in the program the execution is. I avoided doing this earlier because I have, in the back of my mind, the aim of avoiding these intrusive probes as part of the debugging process that goes into setting up a new programming environment like this one. Here is the output. The number on the left is the value of 'limit'.
+    ```
+    512 "{#[#a]#}"
+    512 "{##a:[#]#}"
+    512 "{##a:[#0]#}"
+    512 "{##a:#0,[#]#}"
+    512 "{##a:#0,[#6]#}"
+    512 "{##a:#0,#6,[#]#}"
+    512 "{##a:#0,#6,[#8]#}"
+    512 "{##a:#0,#6,#8,[#]#}"
+    512 "{##a:#0,#6,#8,[#a]#}"
+    402 "{##a:#0,[#]#6,#8,#a.#}"
+    401 "{##a:#0,#6,[#]#8,#a.#}"
+    400 "{##a:#0,#6,#8,[#]#a.#}"
+    399 "{##a:#0,#6,#8,#a.[#]#}"
+    398 "{##a:#0,#6,#8,#a.#[#]#}"
+    397 "{##a:#0,#6,#8,#a.##[#,]#}"
+    396 "{##a:#0,#6,#8,#a.##[#]#}"
+    ```
+
+8. Notice that I have not gone the full length to show the intermediate state of the rest of the tree. This reveals conspicuously that the bug is in the loop of 'next'.
+
+9. Because it was so hard to copy and paste what was printed into the console, I went ahead and made a small printer for the document body so that when the script is run it turns 'about:blank' into almost the same thing as the console. This is what I introduced:
+    ```
+    document.body.style.font='12pt monospace';
+    document.body.style.whiteSpace='pre';
+    document.body.style.color='white';
+    document.body.style.background='gray';
+    function show(s=''){document.body.textContent+=`${limit} ${prog()} ${s}\n`;}
+    ```
+
+10. Here is the output from the latest test that isolates the problem in the next loop just as the last lines I copied and pasted from the console did.
+    ```
+    512 {##a:#0,#6,#8,[#a]#} 
+    402 {##a:#0,[#]#6,#8,#a.#} before next
+    401 {##a:#0,#6,[#]#8,#a.#} end of next loop
+    400 {##a:#0,#6,#8,[#]#a.#} end of next loop
+    399 {##a:#0,#6,#8,#a.[#]#} end of next loop
+    398 {##a:#0,#6,#8,#a.#[#]#} end of next loop
+    397 {##a:#0,#6,#8,#a.##[#,]#} end of next loop
+    396 {##a:#0,#6,#8,#a.##[#]#}
+    ``` 
+
+11. My first response upon reading the code near the end of the loop anew was that perhaps I should get the next word before moving the program fore to the next word after that. This would also eliminate the occurrence of the fore prior to the 'next' while loop. Here's what that looked like:
+    ```
+	512 {##a:#0,#6,#8,[#a]#} 
+	402 {##a:[#]#0,#6,#8,#a.#} before next
+	401 {##a:#0,[#]#6,#8,#a.#} end of next loop
+	400 {##a:#0,#6,[#]#8,#a.#} end of next loop
+	399 {##a:#0,#6,#8,[#]#a.#} end of next loop
+	398 {##a:#0,#6,#8,#a.[#]#} end of next loop
+	397 {##a:#0,#6,#8,#a.#[#,]#} end of next loop
+	396 {##a:#0,#6,#8,#a.#[#]#}
+    ```
+
+12. So that got rid of one of the Nils. The correct way to deal with this is check if the rest of the program is Nil or if the current word is nil. That is, first check if the current word is nil... wait.
+
+13. I can leave halts in the program without messing anything up. I'll do that. Now to test that greens work as expected (after making a few formatting changes: i hate the problem of formatting but javascript doesn't have uniform methods).
+    ```
+    512 {##a:#0,#8,#b:#a;#a;#8,[#b]#} 
+	371 {##a:#0,#8,#b:#a;[#]#a;#8,#b.#} end of next loop
+	370 {##a:#0,#8,#b:#a;#a;[#a]#8,#b.#} going to run green
+	215 {##a:[#]#0,#8,#b:#a;#a;#8,#b.#} end of next loop
+	214 {##a:#0,[#]#8,#b:#a;#a;#8,#b.#} end of next loop
+	213 {##a:#0,#8,[#]#b:#a;#a;#8,#b.#} end of next loop
+	212 {##a:#0,#8,#b:#a;#a;[#]#8,#b.#} end of next loop
+	211 {##a:#0,#8,#b:#a;#a;#8,[#a]#b.#} going to run green
+	19 {##a:[#]#0,#8,#b:#a;#a;#8,#b.#} end of next loop
+	18 {##a:#0,[#]#8,#b:#a;#a;#8,#b.#} end of next loop
+	17 {##a:#0,#8,[#]#b:#a;#a;#8,#b.#} end of next loop
+	16 {##a:#0,#8,#b:#a;#a;#8,[#]#b.#} end of next loop
+	15 {##a:#0,#8,#b:#a;#a;#8,#b.[#]#} end of next loop
+	14 {##a:#0,#8,#b:#a;#a;#8,#b.#[#,]#} end of next loop
+	13 {##a:#0,#8,#b:#a;#a;#8,#b.#[#]#}
+    ```
+
+14. Hurray! Everything appears to be working pretty pretty .. pretty good.
+
+15. This means that the only parts which need to be check are the execution of gray words. I'll save that until next time. Here is the state of the javascript:
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+
+function select(){if(isTopNil()){drop(); nip();}else{drop(); drop();}}
+function not(){nil(); nil(); nil(); pair(); unbury(); select();}
+function or(){dup(); select();}
+function and(){not(); swap(); not(); or(); not();}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify();
+  push(); dup(); pop(); // get program to search
+  // find
+  nil(); // prime the pump
+  while(0<--limit && isTopNil()){
+    drop();
+    part(); swap(); part(); unbury(); pair(); pair(); // back();
+    over(); over(); part(); drop(); part(); nip(); // over2();left();right();
+    // identical?
+    nil(); pair(); pair(); pop(); // put trees in new list
+    nil();// prime the pump
+    while(0<--limit && isTopNil()){
+      drop();
+      push(); part(); part(); pop(); // get trees to check
+      over(); over(); and(); // both nil?
+      if(isTopNil()){
+        drop();
+        drop(); drop();// nils are identical
+        push(); dup(); pop(); not(); // more to check?
+      }else{
+        drop();
+        over(); over(); or(); // is one nil?
+        if(isTopNil()){
+          drop();
+          push();pair();pair();dup();pop(); // not identical
+        }else{
+          drop();
+          // break into their left and right parts and put on list
+          part(); unbury(); part(); unbury();
+          push(); pair(); pair(); pair(); pair(); pop();
+          nil();}}} // may be identical
+    drop(); push();
+    // end of id
+    over(); part(); drop(); or(); not();} // match or no more?
+  drop();
+  nip();
+  // end of find
+  pop();}
+
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz'
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'#':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lprog(p){return isNil(p)?'#':lprog(Left(p))+letters(Right(p));}
+function rprog(p){return isNil(p)?'#':letters(Left(p))+rprog(Right(p));}
+function prog(){return '{'+lprog(Left(Left(Right(T))))
+  +'['+letters(Right(Left(T)))+']'+rprog(Right(Left(Right(T))))+'}';}
+
+var limit=1<<9;
+
+onkeydown=e=>{
+  e.preventDefault();
+  switch(e.key){
+    case'Shift': case'Enter': case'Control':
+    case'Alt': case'Tab': case'CapsLock':return;
+    default: T=Pair(Pair(Left(T), list(e.key)), Right(T)); // input
+      // is letter?
+      dup();
+      part(); nip(); part(); nip(); part(); nip(); // right();right();right();
+      not();
+      if(isTopNil()){
+        drop(); pair();
+      }else{
+        drop();
+        // compile word
+        over(); over();
+        pair(); push(); part(); bury();
+        swap(); pair(); swap(); pair();
+        pop();
+        // blue?
+        part(); nip(); part(); nip(); // right(); right();  
+        not();
+        if(isTopNil()){
+          drop();
+          green();
+          push(); dup(); pop(); part(); drop(); part(); nip(); // get first word
+          dup(); not(); // not empty word?
+          while(0<--limit && isTopNil()){
+            drop();
+            // move program fore
+            push();
+            part(); part(); bury(); pair(); swap(); pair(); // fore
+            pop();
+            part(); // gray?
+            if(isTopNil()){
+              drop();
+              part(); nip(); // get letter quoting gray word
+              part(); nip(); part(); nip(); part(); nip(); // left();left();left();
+              part(); nip(); if(isTopNil()){ drop(); dup();}else{ // gray dup
+              part(); nip(); if(isTopNil()){ drop(); drop();}else{ // gray drop
+              part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{ // gray pop
+              part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{ // gray push
+              part(); nip(); if(isTopNil()){ drop(); swap(); }else{ // gray swap
+              part(); nip(); if(isTopNil()){ drop(); nil(); }else{ // gray nil
+              part(); nip(); if(isTopNil()){ drop(); pair();}else{ // gray pair
+              part(); nip(); if(isTopNil()){ drop(); part(); }else{ // gray part
+              part(); nip(); if(isTopNil()){ drop(); push(); drop();}else{ // gray return
+              drop();}}}}}}}}}
+            }else{
+              part(); nip(); // green?
+              if(isTopNil()){
+                drop(); green();
+              }else{
+                drop(); drop();}}
+            push();dup();pop(); part(); drop(); part(); nip(); // get next word
+            dup(); not();} // not empty word?
+          drop(); drop(); // drop the not-Nil and the empty word
+          // end of next     
+        }else{
+          drop(); drop();}
+        nil();}      
+      show();break;}}
+      
+document.body.style.font='12pt monospace';
+document.body.style.whiteSpace='pre';
+document.body.style.color='white';
+document.body.style.background='gray';
+function show(s=''){document.body.textContent+=`\t${limit} ${prog()} ${s}\n`;}
+```
+
 ## \#2025-1014-2137
 
 Belly full. Time to debug. Starting from the end of last note.
