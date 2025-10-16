@@ -151,6 +151,279 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1016-1420
+
+More debugging and rearranging. Here is where things are starting from, they are a bit different than where they eneded yesterday.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+function select(){if(isTopNil()){drop(); nip();}else{drop(); drop();}}
+function not(){nil(); nil(); nil(); pair(); unbury(); select();}
+function or(){dup(); select();}
+function and(){not(); swap(); not(); or(); not();}
+
+function green(){
+  nil(); nil(); nil(); pair(); pair(); pair(); // redify();
+  push(); dup(); pop(); // get program to search
+  nil(); // prime the pump  // find
+  while(0<--limit && isTopNil()){ drop();
+    part(); swap(); part(); unbury(); pair(); pair(); // back();
+    over(); over(); part(); drop(); part(); nip(); // over2();left();right();    
+    nil(); pair(); pair(); pop(); // put trees in new list // identical?
+    nil();// prime the pump
+    while(0<--limit && isTopNil()){ drop();
+      push(); part(); part(); pop(); // get trees to check
+      over(); over(); and(); // both nil?
+      if(isTopNil()){ drop();
+        drop(); drop();// nils are identical
+        push(); dup(); pop(); not(); // more to check?
+      }else{ drop();
+        over(); over(); or(); // is one nil?
+        if(isTopNil()){ drop();
+          push();pair();pair();dup();pop(); // not identical
+        }else{ drop();          
+          part(); unbury(); part(); unbury();// break into their left and right parts 
+          push(); pair(); pair(); pair(); pair(); pop(); // put on list
+          nil();}}} // may be identical
+    drop(); push(); // end of id
+    over(); part(); drop(); or(); not();} // match or no more?
+  drop(); nip(); // end of find
+  pop();}
+onkeydown=e=>{
+  e.preventDefault();
+  switch(e.key){
+    case'Shift': case'Enter': case'Control':
+    case'Alt': case'Tab': case'CapsLock':return;
+    default: T=Pair(Pair(Left(T), list(e.key)), Right(T)); // input
+      dup(); part(); nip(); part(); nip(); part(); nip(); not(); // is letter?
+      if(isTopNil()){ drop(); pair();
+      }else{ drop();
+        over(); over(); pair();
+        push(); part(); bury(); swap(); pair(); swap(); pair(); pop(); // compile word
+        part(); nip(); part(); nip(); not(); // blue?
+        if(isTopNil()){ drop();
+          green();
+          push(); dup(); pop(); part(); drop(); part(); nip(); // get first word
+          dup(); not(); // not empty word?
+          while(0<--limit && isTopNil()){ drop();
+            push(); part(); part(); bury(); pair(); swap(); pair(); pop();  // fore
+            part(); // gray?
+            if(isTopNil()){ drop();
+              part(); nip(); // get letter quoting gray word
+              part(); nip(); part(); nip(); part(); nip(); // left();left();left();
+              part(); nip(); if(isTopNil()){ drop(); dup();}else{ // gray dup
+              part(); nip(); if(isTopNil()){ drop(); drop();}else{ // gray drop
+              part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{ // gray pop
+              part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{ // gray push
+              part(); nip(); if(isTopNil()){ drop(); swap(); }else{ // gray swap
+              part(); nip(); if(isTopNil()){ drop(); nil(); }else{ // gray nil
+              part(); nip(); if(isTopNil()){ drop(); pair();}else{ // gray pair
+              part(); nip(); if(isTopNil()){ drop(); part(); }else{ // gray part
+              part(); nip(); if(isTopNil()){ drop(); push(); drop();}else{ // gray return
+              drop();}}}}}}}}}
+            }else{ part(); nip(); // green?
+              if(isTopNil()){ drop(); green();
+              }else{ drop(); drop();}}
+            push();dup();pop(); part(); drop(); part(); nip(); // get next word
+            dup(); not();} // not empty word?
+          drop(); drop(); // drop the not-Nil and the empty word // end of next     
+        }else{ drop(); drop();}
+        nil();}      
+      show();break;}}
+
+var limit=1<<9;
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz'
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'#':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lprog(p){return isNil(p)?'#':lprog(Left(p))+letters(Right(p));}
+function rprog(p){return isNil(p)?'#':letters(Left(p))+rprog(Right(p));}
+function prog(){return '{'+lprog(Left(Left(Right(T))))
+  +'['+letters(Right(Left(T)))+']'+rprog(Right(Left(Right(T))))+'}';}
+document.body.style.font='12pt monospace';
+document.body.style.whiteSpace='pre';
+document.body.style.color='white';
+document.body.style.background='gray';
+function show(s=''){document.body.textContent+=`\t${limit} ${prog()} ${s}\n`;}
+```
+
+1. A beautiful solution to the problem of there being two places where the green code was called occurred to me in the shower. Because of the way that I've set up the 'next' loop the spelling of the blue word is still atop the stack before the loop begins and the loop exepects the next word (color and spelling) to be atop the stack. Thus I can color the spelling green and let the 'next' loop take care of it without having to insert anything new into the program being run.
+
+2. This simplifies this part
+    ```
+        part(); nip(); part(); nip(); not(); // blue?
+        if(isTopNil()){ drop();
+          green();
+          push(); dup(); pop(); part(); drop(); part(); nip(); // get first word
+          dup(); not(); // not empty word?
+    ```
+    to this
+    ```
+            part(); nip(); part(); nip(); not(); // blue?
+        if(isTopNil()){ drop();
+          nil(); nil(); pair(); pair(); //greenify
+          dup(); not(); // not empty word?
+    ```
+
+3. Now to test everything and see if it works. I tested the following keypresses "a:0,6,8,a.b:a;a;8,b." and 
+    ```
+   	-2 {##a:#0,[#]#6,#8,#a.##b:#a;#a;#8,#b.##} 
+    ```
+    was output. So either it didn't work or the value of limit was just too small. I'll start by increasing limit and try everything again.
+
+4. That seemed to work! Here is the output now:
+    ```
+	191 {##a:#0,#6,#8,#a.##b:#a;#a;#8,#b.#[#]#} 
+    ```
+
+5.  Now to eliminate the definition of green. This is one of the better moments in the debugging and programming procedure:
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+function select(){if(isTopNil()){drop(); nip();}else{drop(); drop();}}
+function not(){nil(); nil(); nil(); pair(); unbury(); select();}
+function or(){dup(); select();}
+function and(){not(); swap(); not(); or(); not();}
+
+onkeydown=e=>{
+  switch(e.key){
+    case'Shift': case'Enter': case'Control': case'Alt': case'Tab': case'CapsLock':return;
+    default: T=Pair(Pair(Left(T), list(e.key)), Right(T)); // input
+      dup(); part(); nip(); part(); nip(); part(); nip(); not(); // is letter?
+      if(isTopNil()){ drop(); pair();
+      }else{ drop();
+        over(); over(); pair();
+        push(); part(); bury(); swap(); pair(); swap(); pair(); pop(); // compile word
+        part(); nip(); part(); nip(); not(); // blue?
+        if(isTopNil()){ drop();
+          nil(); nil(); pair(); pair(); //greenify
+          dup(); not(); // not empty word?
+          while(0<--limit && isTopNil()){ drop();
+            push(); part(); part(); bury(); pair(); swap(); pair(); pop();  // fore
+            part(); // gray?
+            if(isTopNil()){ drop();
+              part(); nip(); // get letter quoting gray word
+              part(); nip(); part(); nip(); part(); nip(); // left();left();left();
+              part(); nip(); if(isTopNil()){ drop(); dup();}else{ // gray dup
+              part(); nip(); if(isTopNil()){ drop(); drop();}else{ // gray drop
+              part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{ // gray pop
+              part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{ // gray push
+              part(); nip(); if(isTopNil()){ drop(); swap(); }else{ // gray swap
+              part(); nip(); if(isTopNil()){ drop(); nil(); }else{ // gray nil
+              part(); nip(); if(isTopNil()){ drop(); pair();}else{ // gray pair
+              part(); nip(); if(isTopNil()){ drop(); part(); }else{ // gray part
+              part(); nip(); if(isTopNil()){ drop(); push(); drop();}else{ // gray return
+              drop();}}}}}}}}}
+            }else{ part(); nip(); // green?
+              if(isTopNil()){ drop();
+                nil(); nil(); nil(); pair(); pair(); pair(); // beginning of green //redify();
+                push(); dup(); pop(); // get program to search
+                nil(); // prime the pump  // beginning of find
+                while(0<--limit && isTopNil()){ drop();
+                  part(); swap(); part(); unbury(); pair(); pair(); // back();
+                  over(); over(); part(); drop(); part(); nip(); // over2();left();right();    
+                  nil(); pair(); pair(); pop(); // put trees in new list // beginning of id
+                  nil();// prime the pump
+                  while(0<--limit && isTopNil()){ drop();
+                    push(); part(); part(); pop(); // get trees to check
+                    over(); over(); and(); // both nil?
+                    if(isTopNil()){ drop();
+                      drop(); drop();// nils are identical
+                      push(); dup(); pop(); not(); // more to check?
+                    }else{ drop();
+                      over(); over(); or(); // is one nil?
+                      if(isTopNil()){ drop();
+                        push();pair();pair();dup();pop(); // not identical
+                      }else{ drop();          
+                        part(); unbury(); part(); unbury();// break into their left and right parts 
+                        push(); pair(); pair(); pair(); pair(); pop(); // put on list
+                        nil();}}} // may be identical
+                  drop(); push(); // end of id
+                  over(); part(); drop(); or(); not();} // match or no more?
+                drop(); nip(); // end of find
+                pop(); // end of green
+              }else{ drop(); drop();}}
+            push();dup();pop(); part(); drop(); part(); nip(); // get next word
+            dup(); not();} // not empty word?
+          drop(); drop(); // drop the not-Nil and the empty word // end of next     
+        }else{ drop(); drop();}
+        nil();}      
+      show();break;}}
+
+var limit=1<<10;
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz'
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'#':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lprog(p){return isNil(p)?'#':lprog(Left(p))+letters(Right(p));}
+function rprog(p){return isNil(p)?'#':letters(Left(p))+rprog(Right(p));}
+function prog(){return '{'+lprog(Left(Left(Right(T))))
+  +'['+letters(Right(Left(T)))+']'+rprog(Right(Left(Right(T))))+'}';}
+document.body.style.font='12pt monospace';
+document.body.style.whiteSpace='pre';
+function show(s=''){document.body.textContent+=`\t${limit} ${prog()} ${s}\n`;}
+```
+
+Time for some lunch. Then either debugging gray words (they seem to work, but do they?) or reducing the three while loops into one (this is also called virtualization).
+
 ## \#2025-1014-1659
 
 Another debugging session. Time is not always easy to get, but when I've got it I try to put it to use as best I can. But, in the end, I do not want to be the best john, I just want o be the accurate John.
