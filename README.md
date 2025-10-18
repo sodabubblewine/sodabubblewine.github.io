@@ -151,6 +151,392 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1017-1413
+
+Yesterday and today a number of things occurred to me with respect to the construction fo my programming environment in javascript:
+
+1. how to deal with conditional execution (forward and backwards) without breaking the lattice structure i.e. without introducing graph theoretic cycles into the 'data structure' (perhaps one of my least favorite technical terms since it combines my hatred for 'data' and 'structures', not that they weren't helpful stepping stones, but we are beyond all that junk).
+
+2. By changing the method of compilation I can shorten everything about the implementation wtihout changing its shape. I will go into detail on this point because there is a lot to be learned from it.
+
+3. I can use the notation I've adopted (where words end with ',;:.') to explain things now that it has kinda settled down.
+
+4. I've been so focused on this that I've neglected the other things that I'm working on e.g. woodworking (I got my sharpening stones) and my modern analysis of Russell and Whitehead's "Principia Mathematica".
+
+5. I'm not looking for "maxwell's equations of computing". I'm looking for "the lathe of computing".
+
+6. I can include the slow steps from the javascript that is more on the javascript side than my programming environments side and vice versa inside the single 'coin operated' definition of 'onkeydown' and perhaps make further simplifications that tend to appear when you put everything together.
+
+I'll just push through as I always do. So staring with simplifying compilation of a word and going on to simplify the rest of the program. Starting from the definition of 'onkeydown':
+
+```
+onkeydown=e=>{
+  switch(e.key){
+    case'Shift': case'Enter': case'Control': case'Alt': case'Tab': case'CapsLock':return;
+    default: T=Pair(Pair(Left(T), list(e.key)), Right(T)); // input
+      dup(); part(); nip(); part(); nip(); part(); nip(); not(); // is letter?
+      if(isTopNil()){ drop(); pair(); // append to spelling
+      }else{ drop();
+        over(); over(); pair(); // make word
+        push(); part(); bury(); swap(); pair(); swap(); pair(); pop(); // compile word
+        part(); nip(); part(); nip(); not(); // blue?
+        if(isTopNil()){ drop();
+          nil(); nil(); pair(); pair(); //greenify
+          dup(); not(); // not empty word?
+          while(0<--limit && isTopNil()){ drop();
+            push(); part(); part(); bury(); pair(); swap(); pair(); pop();  // fore
+            part(); // gray?
+            if(isTopNil()){ drop();
+              part(); nip(); // get letter quoting gray word
+              part(); nip(); part(); nip(); part(); nip(); // left();left();left();
+              part(); nip(); if(isTopNil()){ drop(); dup(); }else{ // gray dup
+              part(); nip(); if(isTopNil()){ drop(); drop(); }else{ // gray drop
+              part(); nip(); if(isTopNil()){ drop(); push(); swap(); pop(); pop(); }else{ // gray pop
+              part(); nip(); if(isTopNil()){ drop(); push(); push(); swap(); pop(); }else{ // gray push
+              part(); nip(); if(isTopNil()){ drop(); swap(); }else{ // gray swap
+              part(); nip(); if(isTopNil()){ drop(); nil(); }else{ // gray nil
+              part(); nip(); if(isTopNil()){ drop(); pair();}else{ // gray pair
+              part(); nip(); if(isTopNil()){ drop(); part(); }else{ // gray part
+              part(); nip(); if(isTopNil()){ drop(); push(); drop(); }else{ // gray return
+              drop();}}}}}}}}}
+            }else{ part(); nip(); // green?
+              if(isTopNil()){ drop();
+                nil(); nil(); nil(); pair(); pair(); pair(); //redify();
+                push(); dup(); pop(); // get program to search
+                nil(); // prime the pump  // beginning of find
+                while(0<--limit && isTopNil()){ drop();
+                  part(); swap(); part(); unbury(); pair(); pair(); // back();
+                  over(); over(); part(); drop(); part(); nip(); // over2();left();right();    
+                  nil(); pair(); pair(); pop(); // put trees in new list // beginning of id
+                  nil();// prime the pump
+                  while(0<--limit && isTopNil()){ drop();
+                    push(); part(); part(); pop(); // get trees to check
+                    over(); over(); and(); // both nil?
+                    if(isTopNil()){ drop();
+                      drop(); drop();// nils are identical
+                      push(); dup(); pop(); not(); // more to check?
+                    }else{ drop();
+                      over(); over(); or(); // is one nil?
+                      if(isTopNil()){ drop();
+                        push();pair();pair();dup();pop(); // not identical
+                      }else{ drop();          
+                        part(); unbury(); part(); unbury();// break into their left and right parts 
+                        push(); pair(); pair(); pair(); pair(); pop(); // put on list
+                        nil();}}} // may be identical
+                  drop(); push(); // end of id
+                  over(); part(); drop(); or(); not();} // match or no more?
+                drop(); nip(); // end of find
+                pop();
+              }else{ drop(); drop();}}
+            push();dup();pop(); part(); drop(); part(); nip(); // get next word
+            dup(); not();} // not empty word?
+          drop(); drop(); // drop the not-Nil and the empty word // end of next     
+        }else{ drop(); drop();}
+        nil();}      
+      show();break;}}
+```
+
+In this version of the lathe I've paired up the back and fore of the program into a left and right part which mirror the organization of the entire tree itself. This seems to have aided me in completing this design, but it can be simplified. The simplification followed from taking a look at how 'compile' is defined
+
+```
+        push(); part(); bury(); swap(); pair(); swap(); pair(); pop(); // compile word
+```
+
+That entire line can be transformed into just three basic operations:
+
+```
+push(); pair(); pop(); // compile word
+```
+
+This is easily accomplished by breaking apart the back and fore of the program so that they are simply two different items on the list. How to break them apart is revealed by following through from this simplest of definitions of compilation.
+
+Since `push, pair, pop,` are all that it takes to compile a word to the program then the item at the front of the list is the back of the program and, presumably, the item second from front of the list is the fore of the program. This also sets the orientation of the back of the program: the further you go down the right hand side of the back of a program the further back into the program you go i.e. each word of the program is a left part of the item at the front of the list of the tree.
+
+This is all so complicated only because such a simplification didn't occur to me from the beginning. That is the problem with selection by consequences from variation as a principle: it just doesn't work in the ways you'd expect based on how science tends to explain the world. Is science wrong? No, it's just what you get when you "act with vigor without absolute certainty".
+
+This simplification leaves the orientation of the fore of the program unconstrained. The two operations which firmly fix that orientation are 'back' and 'fore'. Since they only appear at one point in the entire program, there are only their two contexts that need to be contemplated when picking an orientation of the fore of a program.
+
+The definition of 'fore' is
+```
+            push(); part(); part(); bury(); pair(); swap(); pair(); pop();  // fore
+```
+the beginning 'push()' and the end 'pop()' are not technically part of the definition of 'fore'. They follow the general pattern I've mentioned once or twice before: every program has a beginning, a middle, and an end, just like a good story, and often the middle repeats itself depending on what problem is being solved.
+
+In this case, the middle can be changed to
+```
+part(); pop(); swap(); pair(); push();
+```
+that is, assuming the top two items on the stack are the program, the top being the fore of the program and the second from top being the back of the program. All together the new line reads
+```
+push(); push(); part(); pop(); swap(); pair(); pop(); // fore
+```
+which may not be exactly what was expected. Notice it is wonderfully simple in comparison to the previous one, being not only made entirely out of primitive operations but also one less operation overall.
+
+A similar simplification occurs when examining 'back'. It starts as
+```
+part(); swap(); part(); unbury(); pair(); pair(); // back();
+```
+but, is transformed into the opposite of the newly defined 'fore' as
+```
+pop(); part(); swap(); push(); pair(); // back()
+```
+The reason that 'back' is so much shorter than 'fore' is because it isn't. It just so happens that at the point where 'back' occurrs it doesn't need a beginning or an end.
+
+To be clear, the definitions of fore and back can be sketched as
+```
+fore: part, pop, swap, pair, push,
+back: pop, part, swap, push, pair,
+```
+and here the symmetry is clear enough.
+
+There is then a simplification for getting the top word of the program. This is carried throughout. This also requires a change in how gray pushes, pops, and returns work.
+
+Oops. I solved a lot of problems that I didn't record solving e.g. changing the definitions of the javascript probe functions that show the current state of the program being edited, eliminating the occurrence of 'over(); over();' in the beginning of the definition of 'green'. Here is the current state of things:
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function nip(){pop(); drop(); push();}
+function over(){pop(); dup(); push(); swap();}
+function dig(){over(); pop(); nip();}
+function bury(){dig(); dig(); push(); push();}
+function unbury(){bury(); bury();}
+function select(){if(isTopNil()){drop(); nip();}else{drop(); drop();}}
+function not(){nil(); nil(); nil(); pair(); unbury(); select();}
+function or(){dup(); select();}
+function and(){not(); swap(); not(); or(); not();}
+
+onkeydown=e=>{
+  switch(e.key){
+    case'Shift': case'Enter': case'Control': case'Alt': case'Tab': case'CapsLock':return;
+    default: T=Pair(Pair(Left(T), list(e.key)), Right(T)); // input
+      dup(); part(); nip(); part(); nip(); part(); nip(); not(); // is letter?
+      if(isTopNil()){ drop(); pair(); // append to spelling
+      }else{ drop();
+        over(); over(); pair(); // make word
+        push(); pair(); pop(); // compile word
+        part(); nip(); part(); nip(); not(); // blue?
+        if(isTopNil()){ drop();
+          nil(); nil(); pair(); pair(); //greenify
+          dup(); not(); // not empty word?
+          while(0<--limit && isTopNil()){ drop();
+            push(); push(); part(); pop(); swap(); pair(); pop();  // fore
+            part(); // gray?
+            if(isTopNil()){ drop();
+              part(); nip(); // get letter quoting gray word
+              part(); nip(); part(); nip(); part(); nip(); // left();left();left();
+              part(); nip(); if(isTopNil()){ drop(); dup(); }else{ // gray dup
+              part(); nip(); if(isTopNil()){ drop(); drop(); }else{ // gray drop
+              part(); nip(); if(isTopNil()){ drop();
+                push(); swap(); push(); swap(); pop(); pop(); pop(); }else{ // gray pop
+              part(); nip(); if(isTopNil()){ drop(); 
+                push(); push(); push(); swap(); pop(); swap(); pop(); }else{ // gray push
+              part(); nip(); if(isTopNil()){ drop(); swap(); }else{ // gray swap
+              part(); nip(); if(isTopNil()){ drop(); nil(); }else{ // gray nil
+              part(); nip(); if(isTopNil()){ drop(); pair();}else{ // gray pair
+              part(); nip(); if(isTopNil()){ drop(); part(); }else{ // gray part
+              part(); nip(); if(isTopNil()){ drop(); 
+                push(); push(); drop(); drop(); }else{ // gray return
+              drop();}}}}}}}}}
+            }else{ part(); nip(); // green?
+              if(isTopNil()){ drop();
+                nil(); nil(); nil(); pair(); pair(); pair(); //redify
+                push(); dup(); push(); dup(); pop(); swap(); pop(); // program to find in
+                pop(); pop(); nil(); // prime the pump  // beginning of find
+                while(0<--limit && isTopNil()){ drop();
+                  dup(); // word to find
+                  push(); part(); swap(); push(); pair(); // back
+                  pop(); dup(); pop(); part(); drop(); // get next word
+                  nil(); pair(); pair(); pop(); // put trees in new list // beginning of id
+                  nil();// prime the pump
+                  while(0<--limit && isTopNil()){ drop();
+                    push(); part(); part(); pop(); // get trees to check
+                    over(); over(); and(); // both nil?
+                    if(isTopNil()){ drop();
+                      drop(); drop();// nils are identical
+                      push(); dup(); pop(); not(); // more to check?
+                    }else{ drop();
+                      over(); over(); or(); // is one nil?
+                      if(isTopNil()){ drop();
+                        push();pair();pair();dup();pop(); // not identical
+                      }else{ drop();          
+                        part(); unbury(); part(); unbury();// break into their left and right parts 
+                        push(); pair(); pair(); pair(); pair(); pop(); // put on list
+                        nil();}}} // may be identical
+                  drop(); push(); // end of id
+                  push(); dup(); pop(); or(); not();} // match or no more?
+                drop(); drop(); // end of find                
+              }else{ drop(); drop();}}
+            push(); dup(); pop(); part(); drop(); // get next word
+            dup(); not();} // not empty word?
+          drop(); drop(); // drop the not-Nil and the empty word // end of next     
+        }else{ drop(); drop();}
+        nil();}      
+      show();break;}}
+
+var limit=1<<10;
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz'
+function ln(p){return isNil(p)?0:1+ln(Right(p));}
+function ls(n){return n<0?ls(abc.length):n?Pair(Nil,ls(n-1)):Nil;}
+function n(a){return abc.indexOf(a);}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function list(a){return ls(n(a));}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'#':letters(Left(p))+letter(Right(p));}
+function lists(s){return s==''?Nil:Pair(lists(s.slice(0,-1)),list(s.at(-1)));}
+function lwords(p){return isNil(p)?'#':lwords(Right(p))+letters(Left(p));}
+function rwords(p){return isNil(p)?'#':letters(Left(p))+rwords(Right(p));}
+function prog(){return '{'+lwords(Left(Right(T)))
+  +'['+letters(Right(Left(T)))+']'+rwords(Left(Right(Right(T))))+'}';}
+document.body.style.font='12pt monospace';
+document.body.style.whiteSpace='pre';
+function show(s=''){document.body.textContent+=`\t${limit} ${prog()} ${s}\n`;}
+```
+
+Somewhere while doing all this two things occurred to me that can further simplify everything: a) by quoting letters as the depth of a stack rather than the length of a list I can eliminate 'nips' in favor of 'drops' which are primitive and can eliminate the definition of 'nip' entirely without it being entirely arbitrary, and b) I should be able to eliminate unbury without making things too complicated. The benefits are huge in that they minimize the number of auxiliary terms that must even be spoken of when getting everything started.
+
+I was able to eliminate nip, dig, bury, and unbury without simply replacing their later occurences by their definition. I was also able to program the input process as iterated execution of nils and pairs. I am too tired to do the same for the output, and the output has to be done differently anyway when it comes to dealing with that part inside my programming environment rather than half in and half out of javascript.
+
+Here is the further simplified code. Note, this is what I could have started with if I had the foresight of all the experiments up to this point.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+
+function over(){pop(); dup(); push(); swap();}
+function select(){if(isTopNil()){drop(); swap(); drop();}else{drop(); drop();}}
+function not(){pop(); nil(); nil(); nil(); pair(); push(); select();}
+function or(){dup(); select();}
+function and(){not(); swap(); not(); or(); not();}
+
+var limit=1<<10;
+var abc = ',;:.0123456789abcdefghijklmnopqrstuvwxyz'
+onkeydown=e=>{
+  switch(e.key){
+    case'Shift': case'Enter': case'Control': case'Alt': case'Tab': case'CapsLock':return;
+    default: var k=abc.indexOf(e.key); if(k<0)k=abc.length;
+      nil(); while(k--){nil(); pair();}; // input
+      dup(); part(); drop(); part(); drop(); part(); drop(); not(); // is letter?
+      if(isTopNil()){ drop(); pair(); // append to spelling
+      }else{ drop();
+        over(); over(); pair(); // make word
+        push(); pair(); pop(); // compile word
+        part(); drop(); part(); drop(); not(); // blue?
+        if(isTopNil()){ drop();
+          nil(); nil(); pair(); pair(); //greenify
+          dup(); not(); // not empty word?
+          while(0<--limit && isTopNil()){ drop();
+            push(); push(); part(); pop(); swap(); pair(); pop();  // fore
+            part(); // gray?
+            if(isTopNil()){ drop();
+              part(); drop(); // get letter quoting gray word
+              part(); drop(); part(); drop(); part(); drop(); // left();left();left();
+              part(); drop(); if(isTopNil()){ drop(); dup(); }else{ // gray dup
+              part(); drop(); if(isTopNil()){ drop(); drop(); }else{ // gray drop
+              part(); drop(); if(isTopNil()){ drop();
+                push(); swap(); push(); swap(); pop(); pop(); pop(); }else{ // gray pop
+              part(); drop(); if(isTopNil()){ drop(); 
+                push(); push(); push(); swap(); pop(); swap(); pop(); }else{ // gray push
+              part(); drop(); if(isTopNil()){ drop(); swap(); }else{ // gray swap
+              part(); drop(); if(isTopNil()){ drop(); nil(); }else{ // gray nil
+              part(); drop(); if(isTopNil()){ drop(); pair();}else{ // gray pair
+              part(); drop(); if(isTopNil()){ drop(); part(); }else{ // gray part
+              part(); drop(); if(isTopNil()){ drop(); 
+                push(); push(); drop(); drop(); }else{ // gray return
+              drop();}}}}}}}}}
+            }else{ part(); drop(); // green?
+              if(isTopNil()){ drop();
+                nil(); nil(); pair(); nil(); pair(); pair(); //redify
+                push(); dup(); push(); dup(); pop(); swap(); pop(); // program to find in
+                pop(); pop(); nil(); // prime the pump  // beginning of find
+                while(0<--limit && isTopNil()){ drop();
+                  dup(); // word to find
+                  push(); part(); swap(); push(); pair(); // back
+                  pop(); dup(); pop(); part(); drop(); // get next word
+                  nil(); pair(); pair(); pop(); // put trees in new list // beginning of id
+                  nil();// prime the pump
+                  while(0<--limit && isTopNil()){ drop();
+                    push(); part(); part(); pop(); // get trees to check
+                    over(); over(); and(); // both nil?
+                    if(isTopNil()){ drop();
+                      drop(); drop();// nils are identical
+                      push(); dup(); pop(); not(); // more to check?
+                    }else{ drop();
+                      over(); over(); or(); // is one nil?
+                      if(isTopNil()){ drop();
+                        push();pair();pair();dup();pop(); // not identical
+                      }else{ drop();          
+                        part(); pop(); swap(); part(); push();// break into their left and right parts 
+                        push(); pair(); pair(); pair(); pair(); pop(); // put on list
+                        nil();}}} // may be identical
+                  drop(); push(); // end of id
+                  push(); dup(); pop(); or(); not();} // match or no more?
+                drop(); drop(); // end of find                
+              }else{ drop(); drop();}}
+            push(); dup(); pop(); part(); drop(); // get next word
+            dup(); not();} // not empty word?
+          drop(); drop(); // drop the not-Nil and the empty word // end of next     
+        }else{ drop(); drop();}
+        nil();}      
+      show(); break;}}
+
+function ln(p){return isNil(p)?0:1+ln(Left(p));}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'#':letters(Left(p))+letter(Right(p));}
+function lwords(p){return isNil(p)?'#':lwords(Right(p))+letters(Left(p));}
+function rwords(p){return isNil(p)?'#':letters(Left(p))+rwords(Right(p));}
+function prog(){return '{'+lwords(Left(Right(T)))
+  +'['+letters(Right(Left(T)))+']'+rwords(Left(Right(Right(T))))+'}';}
+document.body.style.font='12pt monospace';
+document.body.style.whiteSpace='pre';
+function show(s=''){document.body.textContent+=`\t${limit} ${prog()} ${s}\n`;}
+```
+
+
+## \#2025-1016-2022
+
+I'm really happy with all the work that I've gotten done on explaining how my programming environment works as of late. THere are two things to do next. One is to write a new probe that shows the state of the whole tree so that I can test the execution of gray words to make sure they work correctly. The other is to work on putting everything into a single loop that, as far as I can see, is like running a virtual machine.
+
+I'm going to go with the second of these options because it is the one that is most interesting to me right now. It also just so happens to be the one that involves the other essentially. The general principle is to expand the method of dealing with gray words and to supply the appropriate gray words to accomplish all that has been programmed in javascript thus far.
+
+The method of programming the javascript that I've undertaken thus far is designed to aid in this significant step. The only thing that is missing from the operations that have been included as basic thus far is the gray operations that correspond to the javascript code 'if(isTopNil()) xxx; else yyy;' and 'while(isTopNil()) xxx;'.
+
 ## \#2025-1016-1420
 
 More debugging and rearranging. Here is where things are starting from, they are a bit different than where they eneded yesterday.
