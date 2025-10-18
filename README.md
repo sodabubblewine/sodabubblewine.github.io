@@ -11,7 +11,7 @@ My life and work are reported, changed, and governed by these [notes](#notes), [
     - mathematics, e.g. calculi, collections, categories;
     - physics, e.g. quantum, thermodynamic, gravitional;
     - chemistry, e.g. phyiscal, biophysical, biological;
-    - biology, e.g. oranelles, organisms, environments;
+    - biology, e.g. organelles, organisms, environments;
     - behavior, e.g. biological, biosocial, social; and
     - culture, e.g. history, science, technology).
 
@@ -150,6 +150,74 @@ Use a thermometer.
 - A predicate is not a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
 
 # NOTES
+
+## \#2025-1018-1449
+
+The work I can do on the javascript implementation of my programming environment is not as clear to me today as it has been in the past few days. Thankfully, I'm more willing today to give up on the precision that has crippled me when dealing with things outside the narrow worlds of predicate logic and behavior science.
+
+The most interesting thing that occurred to me that solves a problem present when transitioning from the largely native methods of control by javascript to something more akin to the control simulated by a virtual machine, is conditional execution of this but not that part of a program.
+
+In a past note I described this problem as making a machine that can choose what it does next based on what it is presented with now. I also said, perhaps somewhat earlier than that, that the operation of 'mux' which is now called 'select' and which selects one or the other of two items below the top of the stack depending on whether it is Nil or not, is inadequate to set up the kinds of conditional execution that makes programming so much easier than its nonconditional alternatives. Perhaps it was not so.
+
+Something about the shift from a single item on the list containing the program to be executed (recall that it is like a tape that can be moved back and fore and that there is a top word such that each word before it is part of the back part of the tape and each word after it is part of the fore part of the tape) to the two item method that not only simplified compilation but also the rest of the basic operations like 'find' and 'blue', unlocked a clean enough way of implementing conditional execution precisely as this kind of metaphorical choice.
+
+I'm so compelled by this method, that I may as well rename 'select' as 'choose' in a hope that it might eliminate 'choice' from its nasty use as a hallmark of autonomous humans.
+
+Recall, while mediating a key press, my programming environment has the back of the current program at the front of the list and the fore of the program at the second from front of the list. The method I propose for dealing with conditional execution is to select one from two programs each of which ends in a return to the original program it was just compiled from.
+
+I'll go ahead, out on a limb, and take precisely those fragmentary note which occur to me while writing things with pad and pen. These notes do not always make sense outright and have to be edited at some later time to form that level of precision that a computer can work on.
+
+What is needed are a few blue words. This is how all conditionals are actually implemented. The construction of a conditional is going to, for now, start with the blue 'if' i.e. with 'if.'.  This word has to set up a new blank program that words are going to be compiled into. Thus it has to invovle something like `nil(); nil(); pop(); pop();' but note that now the 'pop's are primitive operations and not the gray pops that pair with the gray pushes and the gray return that are needed in order to assure that schedule of words to be executed are not garbled by stack manipuations. And, yet, it is careful garbling of that very sort which is called for here now.
+
+I'll sort out 'if.' soon. It appears to come with another important step in the evolution of these things: bringing compilation under programmable control.
+
+If there is an 'else.' this sets up a new blank program with something similar to when 'if.' is input i.e. something again like 'nil(); nil(); pop(); pop();'. Then 'then.' has to seal everything up back into the program from whence these conditional digressions came.
+
+There is a general solution to problems posed by introducing programs like this: slotted instructions. The design of everything up to this point has been such that one word is taken at a time and the appropriate action is taken with respect to it without making a distinction between the program being executed and the program that was compiled.
+
+In the standard design fo modern computers these distinctions are made by speaking of the instruction register and the program pointer and main memory. The way things are set up right now, there's just a program pointer. Technically there are two: one points to the back of the program and the other points to the fore of the program. All the logic involved in setting up an instruction register is offloaded to the javascript environment. It is implicit in the way that functions are called and return when writing as, e.g., 'push(); pop();'.
+
+The method of slotted instructions makes overt the microinstruction pointer and microinstructions that make up most modern machines. Since there are no variables though, the kinds of microinstructions that can be constructed are often surprisingly powerful for how tiny they may other be. Effective microinstructions make it so that the fetch cycle of cpu operation can often been entire avoided. They are often expensive, relatively so. But, here I am uncovering them as a method of making complex primitive operations, primitive relative to the instructions of the machine and not relative to the microinstructions of the machine.
+
+If this doesn't make sense, that's because it doesn't yet make complete sense to me. I can see how it works to myself but it is not snappy like a carefully designed LEGO set.
+
+Making way for such microinstructions without leaving the basic operations on the tree that have been set up thus far is easy enough. It continues the method of gray pushes and gray pops except that now gray words are themselves composed of a microprogram. In this case, something like a gray push is implemented by a microprogram as follows:
+
+```
+push, push, push, push,
+swap, pop, swap, pop, swap, pop,
+```
+
+Note, that I'm only half imagining these as operations of a digital machine. It is helpful to do this, for me, and much of where it came from was studying the design of the F18A Technology Reference from GreenArrays <https://www.greenarraychips.com/home/documents/greg/DB001-221113-F18A.pdf>. 
+
+These things are neglected by modern chip designers who descend from the standard CMOS traditions because simplicity and programmatic countercontrol are rarely profitable. Metaphorically, computer chips are the APIs of hardware. The only difference, and it is a big deal, is that it was once harder for chip makers to know how people were using their API.
+
+These micro programs give the programmer control over the execution of the machine as if each of its commands are coming from an external programmer and not from consulting some local record of a program to be executed.
+
+An interesting way of implementing this just occurred to me. The key ',' is the color gray, but it can just as well be the spelling of a blue word which is a micro compile (or something like that). Microcompilation would occur only with respect to gray words, but in this case, gray words would be only and solely the basic operations, they would not be a secondary definition as they are in the current state of the implementation of my programming environment.
+
+This new method can be interpreted as defining 'execute list' where each item of the list is a primitive operation, which is now firmly a gray word. This is not unfamiliar to LISP programmers or FORTH programmers as they both have their own version of 'execute a sequence of primitive operations'. In the FORTH case it is dropping into machine code, and in the LISP case it is evaluating a list of expressions.
+
+Need a snack.
+
+
+## \#2025-1018-1434
+
+My methods of taking notes here has evolved as everything does. I used to spend a lot more time connecting together what I have already done here with what I'm doing in any given note. This has gone extinct recently. I've been working almost exclusively on implementing my programming environment in javascript.
+
+It's still not entirely clear to me why this is, but when I get hooked on something in this way I usually give it all I can. This is a consequence of my personal history with solving problems. You go with what grabs you because at that moment it is perhaps all that you are likely to ever contribute to the world. That moment of excitment and endurance is priceless. It can fuel you for years.
+
+The edits I've been making to the implementation that has evolved thus far are tiny. If you are insensitive to such itty bitty things then it looks like I'm repeating the same things over and over again. So be it. I repeat many things. Usually the things repeated are the only things that sorta work e.g. I add things with the same results I've gotten since I was taught my addition and multiplication tables as a young lad.
+
+One thing I'm unhappy with in these latest notes is that they only record a certain kind of work that I do. It is the work that has prevailed throughout my life. It is work which requires a kind of careful precision that is otherwise debilitating. It is also work which appears unavoidably necessary when it occurs. These are all very dangerous things, but the worse is not recording the other kinds of work that I do. These paragraphs are part of that other kind of work.
+
+In the past few months I have been lucky enough to have a surprisingly comfortable wooden rocking chair from an Amish community. When I was younger I had time to dream. That time got stolen by the cultures that maintain this world filled with slavery, be it by the whip or wage. This new rocking chair has brought back the better parts of those early dreams. The whip and the wage are far from me now. I'm unable to articulate how much I am helped by things which are far beyond my control.
+
+By putting on my noise canceling earmuffs and rocking in that Amish chair, I've gotten back some of what was lost in my youth. It is no surprise to me that William Wordsworth's "Ode On Intimitations from Early Childhood" spoke to me even as a high school student. I didn't know then just how strange a thing it is to believe in the beauty of your dreams.
+
+But, I notice that my belief is not delusional in the same way that others are. As if they must convince themselves of the beauty of their dreams rather than that beauty simply occuring to them. This is my ego speaking now, surely. I'll let myself speak of egos, dreams, beauty, and all that stuff that naive behaviorists and those who condemn psychology as a science of behavior say are entia non grata. These are my notes after all. They merely report on my as yet unnoticed mistakes.
+
+Notes are as much for "streams of consciousness" as they are for that hard work that makes real things happen now.
 
 ## \#2025-1017-1413
 
