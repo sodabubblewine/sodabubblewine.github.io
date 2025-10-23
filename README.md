@@ -149,7 +149,125 @@ Use a thermometer.
 
 - A predicate is not a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
 
+
 # NOTES
+
+## \#2025-1021-1340
+
+These are fragmentary notes and do not appear to make complete sense. I'm leaving them here as I've left others. I just want people to see my thinking as accurately as possible.
+
+The programmable program. Programs are lists of words. Words have spellings and colors. Spellings are lists of letters and colors are gray, red, green, or blue. A word is made by spelling it out and then coloring it. A program is edited by inserting words in it or deleting words from it.
+
+When a word is colored blue the program executes in the following way. Starting from the blue word and going back word by a word a search begins. The search stops when a red word with the same spelling as the blue word is found. If no matching red word is found then exectution stops.
+
+Coloring a word blue is like pressing play on the program. A search begins. It starts with the blue word and goes backwards word by word. It stops when a red word with the same spelling as the blue word is found, or when there are no more words left to search through. If no matching red word is found then execution stops and the programmer is free to edit the program as they see fit. Otherwise, execution begins from the matching red word and goes forwards word by word.
+
+What happens when a word is executed depends on the color of the word. If a word is red or blue then nothing happens i.e. red and blue words do nothing.
+
+If no matching red word is found then execution stops and the programmer is free to edit the program further.
+
+If a matching red word is found, then execution 
+
+If the matching red word is found then execution moves forward word by word from there. 
+
+A program is made by navigating through the list of words to where you want to make edits and then inserting or deleting words from there. When a word is colored blue 
+
+## \#2025-1020-1555
+
+I've got to sharpen my chisels. They have not been sharpened since they were bought by my father some years ago. I'm quite fond of Paul Seller's websites and videos. They can all be accessed from his main one <https://paulsellers.com/other-websites/>.
+
+Why chisels? Somehow I got it into my head that I needed to make a clock out of wood. Like a dope, I want to do it without power tools. Humans have been working with wood much longer than they've been working with electricity. My general interest in the history of technology has brought me closer to the problems solved by new technologies, and I want to be brought closer still.
+
+## \#2025-1020-1523
+
+A schedule is a list of things to do in a specific order. Once a schedule is made it may be changed depending on what turns up on it or depending on a change in circumstances. Programs are schedules of action. First do this, then do that, and if this other thing happens to this other other thing.
+
+The general method of following a schedule is to do the next thing on the list until the list is empty. In javascript, functions describe actions to take. If the name of a function is 'act' then you make a program that takes that action by appending a closed pair of parentheses 'act()'. If a schedule is a list of actions, i.e. functions, then following the schedule means taking each action in the list until the list is empty.
+
+In javascript, the schedule is defined first as an empty list:
+```
+var scheduled= new Array();
+```
+
+To schedule something, we push it onto the end of the list e.g.
+```
+scheduled.push(it);
+```
+
+The first item of the list can be shifted off by
+```
+scheduled.shift()
+```
+
+So if the first item on the schedule is an action, taking that action is accomplished with
+```
+scheduled.shift()()
+```
+
+The two pairs of parentheses can be confusing but you can get rid of the confusion by introducing an intermediate variable like this
+```
+var act = scheduled.shift();
+act();
+```
+This shows clearly enough that the first item on the schedule is shifted off the list and assigned to the variable named 'act' so that 'act()' takes the action shifted off the list.
+
+All together, a schedule is followed by taking all the actions on the list from first to last until there are no more actions in the list. This is accomplished with a while loop as follows:
+```
+while(scheduled.length) scheduled.shift()();
+```
+
+If that's too cryptic, details can be added to make it crystal clear:
+
+```
+while(scheduled.length > 0 ){
+  var act = scheduled.shift();
+  act();
+}
+```
+
+The phrase "scheduled.length > 0" can be eliminated since shifting from the top of the list shortens the length by one and when the condition in a while loop is not zero it keeps going and stops when it is zero.
+
+The only thing missing from our scheduler is a method of adding actions to the schedule. There is something else that needs to be considered: actions which schedule new actions! This is an important part of any effective plan that can be scheduled. You schedule a meeting to make a decision based on what is known at that time and usually schedule new things for a later time based on conclusions made during that meeting.
+
+As we know all to well, there's always a next meeting until the company folds at some unknown future date. So we have to leave open the possibility of new actions being added to the schedule at any time, even a time after which the schedule has already been emptied. This happens when a committee meets for a short time, comes to all the conclusions it can, and need not meet again, until suddenly something happens and the committee is suddenly brought into existence again.
+
+So the action of scheduling has to work well with following the actions already scheduled. This is accomplished by making a flag that is raised when a schedule is being followed, and lowered when the schedule is empty. If the flag is up and you schedule a new action it gets added to the end of the list of actions scheduled and returns to following what was scheduled. If the flag is down and you schedule an action then after pushing the newly scheduled act onto the end of the list you start following the schedule.
+
+This is accomplished as follows
+```
+var scheduled = [];
+var following = false;
+function schedule(it){
+  scheduled.push(it);
+  if(following) return;
+  following = true;
+  while(scheduled.length) scheduled.shift()();
+  following = false;
+}
+```
+
+The flag named 'following' lets everone who wants to schedule things know that the schedule is being followed and that it doesn't have to be started anew.
+
+All together, this code is called a scheduler. It is the simplest of schedulers. Nothing is done to compare the action about to be scheduled with the actions that are already scheduled. If you work in a registrars office at a college then you're constantly having to check how a schedule might be better designed to make sure everything gets done that can get done across the entire college e.g. making sure the students and teachers are free to be where they want to be when they need to be.
+
+Most people think that the program of the scheduler has to be changed when these more sophistocated methods of scheduling are contemplated. This is just not true. The simple scheduler is all that is ever needed no matter how complex the method of scheduling is to be. This is accomplished by setting up actors whose actions are coordinated by scheduling actors as speakers and listeners that are part of complete verbal episodes.
+
+Such verbal episodes of speaking and listening are scheduled just like any other acts, and as long as each actor can raise or lower a speaking or listening flag the problem of effective scheduling can be entirely offloaded onto the person writing the actors's scripts.
+
+## \#2025-1020-1331
+
+I have done a lot of thinking over the past few days and have not done a good job of recording it here. This seems to be a pattern, and one which I would like to extinguish as soon as possible. The more thinking I do off the record the less likely I am to uncover better ways of thinking and doing.
+
+One of the reasons that I haven't recorded much is because the thinking has been weak. I have not seen to myself the path that takes me from where I was at to where it appears to me that I'm going. This is a general problem when planning, deciding, and solving problems.
+
+My programming environment is set up with javascript for now. The transition from a monolithic interpreter to a miniature virtual machine looms. The change is to be the result of what I've called 'slotted instructions'. These are what others call 'microinstructions'. They are a key part of how modern computers work. A single instruction is composed of a sequence of microinstructions. The program pointer is used to fetch an instruction, that instruction is then decoded into a sequence of microinstructions. Those microinstructions are then executed by a process that almost completely mirrors the larger machines fetch-execute cycle.
+
+A microinstruction pointer goes through each of the microinstructions and this orchestration ultimately controls the dance of electrons that make up the operations of the machine. As a very concrete example, most hardware has a main line that is connected to all the places where different electrical potentials are set up as in the classic 8 bit registers. A register is just a storage place whose contents can be rearranged to match those of another storage place or can be copied by the rearrangement of some other storage place to match its contents.
+
+The main line is also called 'the bus'. Places linked by the bus and open to its influence tend to end up with similarly arranged potentials. Technically, most of the storage places have an input side and an output side. When you connect one output to the input of another across the bus then the input place ends up matching the output place. This schedule of outputs to inputs across the bus is coordinated by microinstructions and these microinstructions are packed into machine instructions.
+
+This packing process is actually a part of any effective programming environment. It is often treated as if it is only and solely a hardware problem, as if in an ideal world there would be no use for such complex or compound instructions. This is no more apparent than when introducing 'control flow' operations that change what operation is going to occur next based on something else changing for some other reason.
+
 
 ## \#2025-1018-1449
 
