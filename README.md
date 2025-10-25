@@ -152,6 +152,222 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1025-1644
+
+Among the things that I think people should know are the methods of logic. Anyone who can be taught up to and including Quine's main method of proof is ready to deal with the rest of science in a profoundly more effective way than anyone who does not know the same.
+
+Technically, you need to know a bit more than Quine's main method. Once you know how Quine's main method works it becomes very easy to show that other methods of proof that are more familiar are also effective. The reason I do not put any emphasis on the more familiar methods of proof is that their familiarity is a distraction. Quine's main method of proof is as 'natural' as the more familiar methods of natural deduction that are popular among modern mathematical logicians (I dare not give 'computer science' a name because those who fly under that flag would rather be called mathematical logicians or outright programmers).
+
+For the life of me, I do not know why Quine's main method is not well known. Even Goldfarb's book on "deductive logic" includes Quine's main method without naming it as such! What's perhaps most startling: Quine's main method corresponds to the oldest method of arguments on display in Plato's Socratic dialogues. It goes like this. You say that such and such is true of something. Then, let 'x' be the name of such a thing. Now you also say that such and such is true of everything. So it must also be true of x in particular. This method proceeds until a contradiction is reach. Upon reaching such a contradiction it asserted that what we started with was inconsistent and that something has to be wrong with our premises.
+
+Now, there is a technical bit to Quine's main method that makes it not correspond precisely to Socrate's method. It is the problem of taking what is said and getting all of its 'everythings' and 'somethings' out to the front of each premise. I believe it was Dreben who showed that this 'prenex form', as it is called, is unnecessary. Socrates's method is enough.
+
+Socrates's method is a bit larger than I've sketched out. What I described is really the second half of his method. That is, once premises have been uncovered, it is our job to look for their ultimate inconsistency. The first half of Socrate's method (perhaps we should properly call it Plato's method because it is clear enough that Plato is speaking through the dialogues he wrote in which Socrates stars) is uncovering the premises to the theories that people have left unexamined.
+
+It has been a while since I read all of Plato's dialogues and I am uncertain if Socrates noticed that if the negation of a premise is inconsistent then that means the premise itself is valid. Valid premises can be dropped from any theory: they are 'purely logical' in that there is no conclusion which is lost from dropping a valid premise in a logical argument.
+
+For better or worse I'm leaving more scraps here than ever. I'm just going to let more things hang out there without resolution. The world is unresolved.
+
+## \#2025-1025-1356
+
+I'm going to introduce a new implementation of my programming environment that decouples the io from the vm. It starts with the scheduler:
+
+```
+var scheduled = [];
+var following = false;
+function schedule(it){
+  scheduled.push(it);
+  if(following) return;
+  following = true;
+  while(scheduled.length) scheduled.shift()();
+  following = false;
+}
+```
+
+Scheduled actions are pushed onto the end of a list and if there isn't already some function following the schedule, then the following flag is raised and while there are still actions scheduled the the item at the front of the list is shifted off and executed. When there are no more scheduled items the following flag is lowered.
+
+The method of pushing new items onto the end of the schedule and shifting them off the front of the schedule occurs in so many different contexts that it is given an abstract name: queue. People queue in lines at a theme park. The first person in is also the first person out of the queue. Instead of 'push' and 'shift', we say 'queue' and 'dequeue' to emphasize the name for the abstract methods of queuing.
+
+It just so happens that saying the letter 'q' sounds like 'queue' and saying the letters 'dq' sounds like 'dequeue'. These are abbreviations I often use because there is also another abbreviation that answers a question commonly asked of items that may or may not be in a queue: are they queued? The abbreviation being 'qd'. I won't use these abbreviations here, but I've used them often enough elsewhere that I felt like I need to explain myself somewhere.
+
+A terminal is a keyboard with a screen. A keyboard works a keypress at a time. When a key is pressed, its name is put on a queue. I'll call this queue 'keyspressed'.
+
+```
+var keyspressed=[];
+```
+
+In a modern internet browser the javascript function 'onkeydown' is executed when focus is on a browser window and a key is pressed on the keyboard. It is executed with an argument called 'a keydown event'. Such events are complicated because they are built to accomodate the entire operation of the browser with respect to a given website. Thankfully, all this complexity can be avoided by knowing that if the argument variable of the function onkeydown is set to is 'e' then the name of the key pressed is 'e.key'.
+
+Whenever I set up a keyboard thing with javascript I always end up writing something like this
+```
+onkeydown = function(e){
+  console.log(e.key);
+}
+```
+
+This makes it so that if I put this code into a script and open to 'about:blank' and run the script then the name of each key I press after navigating to the window is logged into the javascript console. I end up doing this because I often forget the names of the modifier keys like 'Shift' or 'Enter'. Just as often, I forget that they are sent through the onkeydown event handler. There are more formal ways of dealing with events, that's where the phrase 'event handler' comes from, but I just go straight to 'onkeydown =' and then set it equal to a function I've defined. It is quick, short, simple, and gets things moving without having to dig into javascript lore.
+
+A good language works without its lore.
+
+For reasons that are beyond me, it is often necessary to include the following code if you want to intercept all of the keys that you might press on the keyboard e.g. 'F1', 'F2', and so on.
+```
+onkeydown = function(e){
+  e.preventDefault();
+  console.log(e.key);
+```
+
+I am told that adding '.preventDefault()' to the onkeydown event stops the browser from sending the key pressed to the operating system (or some other program). Usually, pressing function keys does something with the browser like open a new tab. Preventing default actions stops this from happening. Stuff like pressing the key labeld 'NumLock' seems to still do what it always does. There are a lot of weird inconsistencies with input and output methods that I am told are largely beyond the control of us mere mortals.
+
+The next thing that almost every keyboard program I've written does is to put the 'e.key' into a switch statement and then list the cases where a modifier key like Shift, Control, or Alt are pressed so that they immediately return out of the onkeydown function and nothing happens.
+
+```
+onkeydown = function(e){
+  e.preventDefault();
+  switch(e.key){
+    case'Shift':
+    case'Enter':
+    case'Control': 
+    case'Alt':
+    case'Tab':
+    case'CapsLock': return;
+  }
+  console.log(e.key);
+}
+```
+
+Note, pressing 'shift' still works to capitlize letters. For reasons that are beyond me, capital letters are sent as the name of the key pressed while holding down shift. Similar things are true in general in a way that I find fundamentally confusing. Instead of using a switch statement as I often do, there is another method I've been using that is growing on me. It starts by establishing an alphabet and returning if the result of 'e.key' does not belong to the alphabet. Here is a concrete example of what I mean:
+
+```
+var abc = '.;:,0123456789abcdefghijklmnopqrstuvwxyz '
+onkeydown = function(e){
+  e.preventDefault();
+  var abcIndex = abc.indexOf(e.key);
+  if( abcIndex < 0) return;
+  console.log(e.key);
+}
+```
+
+This tends to work out well because setting up your own alphabetical order often simplifies the programming environment. Since not every language has a procedure like 'indexOf' it can be implemented with a while loop as follows:
+
+```
+var abcIndex = abc.length;
+while( abcIndex-- && abc[abcIndex] != e.key);
+```
+
+There are some alternatives that do the same thing:
+
+```
+var abcIndex = abc.length;
+while(abcIndex >= 0){
+  if(abc[abcIndex] == e.key) break;
+  --abcIndex;
+}
+```
+
+```
+var abcIndex = 0;
+while(abcIndex < abc.length){
+  if(abc[abcIndex] == e.key) break;
+  ++abcIndex;
+}
+```
+
+```
+var abcIndex = abc.length; 
+while(abcIndex--)
+  if(abc[abcIndex]==e.key) break;
+```
+
+Whichever way works.
+
+The basic operations: dup, drop, push, pop, swap, nil, pair, part, get, set, mand. I'll allow them to be input at the keyboard in native javascript strings.
+
+```
+var ops=['dup', 'drop', 'push', 'pop', 'swap', 'nil', 'pair', 'part', 'get', 'set', 'mand']
+code.split(' ').map(w=>ops.indexOf(w))
+```
+
+I was unable to finish the thinking that started here. It wasn't moving anything forward. It was just rehashing things I've done before but in a worse way. I can really only work on something old if there is something new that I have to say about it, even if it is really sublte, as long as it's new I can usually get myself to finish what I started.
+
+In some rare cases I can get myself to paint a clearer picture of what I've already done before, but this is not an example of that.
+
+My plan is to think about this in my wonderful rocking chair and see if there isn't something that requires me to finish this in order to figure it out. Otherwise I'll keep looking for something newly simplifying to add here.
+
+
+## \#2025-1024-1133
+
+What should everyone know? Is there such a thing as "what everyone should know"? Maybe a similar question is easier to answer: what are the fewest things that someone needs to know in order to live a good life? Rather than focusing on the problem of specifying "good" like the philosophers of days yore, let us focus on the stuff that people do that helps them out the most throughout their life and work.
+
+Should work be included in this contemplation? A lot of work doesn't seem to really be about doing well in life. Anyone who has had a job when they were younger knows just how dumb work can be. Talk to enough people and you start to get the idea that jobs are really just the only thing they know how to do in order to live in the world. Are jobs the only things that make it possible to live in this world?
+
+What is "this world"? Someone who lives in India may seem to be in a different world from someone who lives in Japan or Argentina. The Germany of years ago is not the Germany of today. They are practically different worlds.
+
+History seems to be an important part of living well. If you don't know about the history of Germany, Argentina, Scotland, Iran, and all the other parts of the surface of the Earth that fought to name, then how are you going to know the ways that people have lived and if you're living well relative to that?
+
+I'm not aiming here to write some self contained exposition or argument. I'm writing here to discover what I have to say about the things I rarely speak about publicly. It's a shame that I haven't spent more time explaining my thinking about the world in this public way. So much time has been spent on explaining what I've uncoverd about logic and programming. What a narrow slice.
+
+To make this problem even more concrete I can ask "What would I want my kids to know?" or "What do I want my nephews to know?". I have a lot of nephews, and they don't have access to the same kind of education that I had when I was their age. It's important to remember that I had no choice in what family I was born into. There was no me to be born, much less a me that could choose to be born here rather than Tibet, now rather than the middle ages.
+
+There is something helpful about being born here and now. This being my only access point to effective action really limits what I have to contemplate. Even if I take all of history into account, there is nothing I can do to change the past. I can in a way change the past by perhaps uncovering something about it that is inconsistent with what we knew of the past in the past. Such details only becloud the problem to solve.
+
+I've already listed in the first hint the major divisions of the world as I've uncovered them. They are logical, mathematical, physical, chemical, biological, behavioral, and cultural. The behavioral parts of the world are the ones that we are most often in contact with. We are always in the presence of a behaving organism, our self. The people around us behave. What we are likely to do is effected by tons of people whose behavior can have consequences for whole populations of people. War on any scale pits people against people, behavior against behavior.
+
+I'd like for everyone in the world to avoid war as often as possible. It's not even clear if war is a necessary part of a world filled with meaningful life and work.
+
+One relevant problem here is that I only have my contact with the world to draw upon when examining the scope of what people are more or less likely to do. I may read a book written to report on how one person lived an exceptional life, be it autobiography or biography. But my contact with this reports is not independent of my personal history. It is a sliver of a sliver of the events behing reported. Who knows what is accurate and what is inaccurate? As history slips away our grasp of the moment is lost. We scratch marks on stones and throw them into the sea of time. The wash up, or some of them do, and then fewer still are picked up, even fewer still are examined and shared with the world.
+
+The internet was suppose to connect us with worlds of knowledge that were nothing like the world we had come to know before the internet. Did this happen? Is the world we are in touch with that different from the one we once knew before there were portals to every person in our pocket?
+
+While I may say that logic and math have helped me live a meaningful life, how do I know that? An uncontemplated life is worse than an unexamined one.
+
+These disorganized thoughts do not self assemble. They have to be put together. Collected, organized, and revised.
+
+One thing the internet has helped more and more people to understand is that there is more to know than can be known. Our lives are shaped more by what we do not know than by what we know. There is no preperation that will tame the detailed knowledge that has been accumulated by even the tiniest of the sciences, much less all the other things that go on unseen on the surface of the Earth.
+
+This state of affairs is not new. Throughout history there has been more to know than could ever be known. The question looms as to whether it is worth knowing this thing rather than that thing. How do we pick and choose what to know and what not to know? Do we even do that? Can we pick and choose what we know and what we don't know? How would we know?
+
+Most people who read whatever this note has become should be rolling their eyes. These are the kind of questions that are basically nonsense. We don't have time to think about such things. There's more to do than contemplate what we might otherwise do. Effective action happens now, not after some protracted contemplation.
+
+It is strange that I can write about these things without having any specific part of my educational history that hash dealt directly with these problems. Education is supposed to make a better person. The educated person's behavior is more effective than the uneducated person's behavior in almost every way. (Is this true?)
+
+This is where people tend to find religion as far as I've been able to see from reading on history. Philosophy was supposed to help answer questions like those brought up here. It doesn't seem to have made much progress or come to any helpful conclusions. There is that old story that it is supposed to help us doubt that we have come to the conclusions presented by past people. A sort of generational hint that settling for a way of life is a fast way to living a sad life.
+
+Crack open a religoius text and you'll find stories about people living and working together. You'll learn about how they dealt with disagreement and how they came to blows or bonded over shared agreeement. The world intervened through gods or through people under the control of gods. The things we didn't know about the world were things that the gods knew and we coudln't know the gods as we might know each other. Philosophy doubted that we even knew ourselves. Later, the behaviorist showed us just how little we know of ourselves. The one may have preceeded the other, but was it knowledge?
+
+Back to the concrete question: what do my nephews need to know in order to live a good life? I can weaken it a bit by saying "What do I wish my nephews knew?" or keep it self contained by asking "What do I wish I knew when I was their age?" or perhaps even "What do I wish I knew now?". Perhaps a simpler yet still complex question is "What do I know?" Can I answer that question and some how get at an answer to the question "What do I wish I knew?" or "What do I want to know?" or "What can I know?" or "What am I likely to know?". After enough of these questions a common one appears: why does any of this matter? What do any of these questions about knowledge have to do with my daily life or the life and work of my nephews?
+
+Why should I care? Why do I care? Do I care? These questions are all expressions of doubt, if they are expressions at all.
+
+I don't think that there is anything wrong with fumbling like this in public. The world is like a blizzard. Its like a foggy hailstorm. Things are pelting me from all directions, they are what we call thoughts and feelings.
+
+Looming behind all of this are the scientific methods that I have been taught e.g. logic and radical behaviorism. These social practices have taught me to approach all these questions in an entirely different way than how I've approached them thus far.
+
+Logic aims me at the basic predicates which are compounded into the premises of a theory of knowledge, a theory of the good life, a theory of teaching and learning.
+
+The problem with the methods of logic and radical behaviorism is that they are not familiar to most people. If I am writing for soemone other than myself then I can not take logic and radical behaviorism as going concerns. My nephews don't know much about logic and radical behaviorism besides whatever I've brought up whenever they visit. Sometimes they listen with interest to what I have to say, but most of the time they just laugh it off as "mean" uncle John being "mean" uncle John. It is a term of endearment that I'm pretty proud of. Nothing is funnier than getting a heartfelt hug while being told "I love you mean uncle John."
+
+If I start writing about what can be known about logic, math, or physics, then I'll never answer the bigger question about what my nephews need to know in order to live and work well in this ever changing world. Why does anything I might have to say about living and woroking well in the world even matter. I don't live or work well in the world!
+
+I may know some things that not many people know, but that doesn't translate into living and working well. I'm puzzled by the mere question "How are you doing?" or "Are things going well for you?" I don't interpret the things that occur to me in ways that lend themselves to quick, simple, and accurate answers to such questions. My writing here is itself clear enough evidence of that.
+
+I forgot to put on socks and now my feet are cold.
+
+
+## \#2025-1023-1528
+
+I've been thinking a lot about my programming environment over the past few days and haven't had any time to sit down and write about it. Sadly, this means that some of what I've thought may have been lost. I don't have a perfect memory and I don't wish to have one. My memory is already good enough to get me in trouble. The less trouble that comes my way the happier I'll be.
+
+There are two directions I can proceed with my thinking: down and up. Thinking down gets me closer to what is the "virtual machine" or "abstract engine" running each of the little mechanisms that make up my programmable environment. Thinking up takes me closer to the realm of "metacircular evaluators" or writing an interpreter that can interpret itself (as far as that actually goes, more on this later).
+
+Both of these directions are informative. Going down simplifies one way and going up simplifies in another way. Strangely, these two ways are complementary or are perhaps even two perspectives on one way. Going down uncovers what basic operations are most effective, and these basic operations contribute greatly to how an interpreter that interprets itself is designed.
+
+To say "an interpreter that interprets itself" is to say that you can write a program that runs itself as a program. How it runs itself is ultimately explained by the abstract engine churning away either as a concrete instance in the real world or as some computational essence (of which I have nothing to say).
+
+The large single function that I keep working on is what most people would call the interpreter of my programming environment. It takes a key press at a time and based on whether it is a letter or punctuation does the appropriate thing. The punctuation is treated abstractly by me as 'color'. Words have a spelling and a color. I could just have well say that words have a spelling and a punctuation, but that doesn't get at the abstraction I'm aiming at.
+
+I found a better way of putting it all together that hopefully simplifies everything.
+
+
 ## \#2025-1021-1340
 
 These are fragmentary notes and do not appear to make complete sense. I'm leaving them here as I've left others. I just want people to see my thinking as accurately as possible.
@@ -180,7 +396,7 @@ Why chisels? Somehow I got it into my head that I needed to make a clock out of 
 
 ## \#2025-1020-1523
 
-A schedule is a list of things to do in a specific order. Once a schedule is made it may be changed depending on what turns up on it or depending on a change in circumstances. Programs are schedules of action. First do this, then do that, and if this other thing happens to this other other thing.
+A schedule is a list of things to do in a specific order. Once a schedule is made it may be changed depending on what turns up on it or depending on a change in circumstances. Programs are schedules of action. First do this, then do that, and if this other thing happens do this other other thing.
 
 The general method of following a schedule is to do the next thing on the list until the list is empty. In javascript, functions describe actions to take. If the name of a function is 'act' then you make a program that takes that action by appending a closed pair of parentheses 'act()'. If a schedule is a list of actions, i.e. functions, then following the schedule means taking each action in the list until the list is empty.
 
