@@ -152,6 +152,118 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1028-1217
+
+I have drastically changed the formatting to make it easier to read. I fixed a few bugs, but it still does not work as expected.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+function select(){if(isTopNil()){drop(); swap(); drop();}else{drop(); drop();}}
+
+var abc = '.;,:0123456789abcdefghijklmnopqrstuvwxyz', limit=1<<10;
+onkeydown=e=>{switch(e.key){
+case'Shift': case'Enter': case'Control': case'Alt': case'Tab': case'CapsLock':return;
+default: var k=abc.indexOf(e.key); if(k<0)k=abc.length; nil(); while(k--){nil(); pair();}; // input
+dup(); part(); drop(); part(); drop(); part(); drop(); // not letter?
+if(isTopNil()){ drop(); // not letter
+  pair(); dup(); pop(); pair(); // compile letter and word
+  push(); part(); // blue?
+  if(isTopNil()){// blue
+    nil(); pair(); pair(); // greenify
+    swap(); pop(); swap(); nil(); //prime the pump
+    while(--limit && isTopNil()){ drop(); // execute
+      part(); push(); swap(); pair(); pop(); pop(); // fore
+      part(); // blue?
+      if(isTopNil()){ drop(); drop(); } // blue
+      else{ part(); drop(); // not blue, green?
+        if(isTopNil()){ // green
+          nil(); pair(); nil(); pair(); nil(); pair(); pair(); // redify
+          dup(); push(); dup(); push(); dup(); pop(); swap(); pop(); // pull program
+          nil(); // prime the pump
+          while(--limit && isTopNil()){ drop();
+            part(); swap(); pop(); pair(); dup(); pop(); // back
+            part(); swap(); drop(); // next word
+            nil(); dup(); pop(); // id? prime the pump
+            while(--limit && isTopNil()){ drop();
+              if(isTopNil()){ drop(); // is other nil?
+                if(isTopNil()){ drop(); push();// both nil, empty rest?
+                  if(isTopNil()){ dup(); pop(); dup(); pair(); }// empty rest means id
+                  else{ part(); part(); pop(); nil(); }} // rest id?
+                else{ push(); drop(); dup(); pop(); }} // not both nil means not id
+              else{ swap(); // not nil, is other?
+                if(isTopNil()){ drop(); push(); drop(); dup(); pop(); }// nil means not id
+                else{ part(); push(); pair(); pop(); swap(); 
+                  part(); push(); pair(); pop(); nil(); }}} // parts id?
+            drop(); push(); // match found?
+            if(isTopNil()){ drop(); } // match found
+            else{ drop(); dup(); push(); // not a match, more?
+              if(isTopNil()){ pop(); drop(); }}}  // no more.
+          drop(); drop();}
+        else{ part(); drop(); // not green, gray?
+          if(isTopNil()){ drop(); part(); drop(); part(); drop(); // gray, dup?
+            part(); drop(); part(); drop(); part(); drop(); // dup?
+            if(isTopNil()){ drop(); dup();} // dup
+            else{ part(); drop(); // not dup, drop?
+              if(isTopNil()){ drop(); drop(); } // drop
+              else{ part(); drop(); // not drop, pop?
+                if(isTopNil()){ drop(); // pop
+                  push(); swap(); push(); swap(); pop(); pop(); pop();} 
+                else{ part(); drop(); // not pop, push?
+                  if(isTopNil()){ drop(); // push
+                    push(); push(); push(); swap(); pop(); swap(); pop();}
+                  else{ part(); drop(); // not push, swap?
+                    if(isTopNil()){ drop(); swap(); } // swap
+                    else{ part(); drop(); // not swap, nil?
+                      if(isTopNil()){ drop(); nil(); } // nil
+                      else{ part(); drop(); // pair?
+                        if(isTopNil()){ drop(); pair(); } // pair
+                        else{ part(); drop(); // not pair, part?
+                          if(isTopNil()){ drop(); part(); } // part
+                          else{ part(); drop(); // not part, select?
+                            if(isTopNil()){ drop(); sel(); } // select
+                            else{ part(); drop(); // not select, return?
+                              if(isTopNil()){ drop(); push(); push(); drop(); drop();} // return
+                              else{ drop(); }}}}}}}}}}} // not return.
+          else{drop(); drop();}}} // not gray.
+      push(); // next word?
+      if(isTopNil()){ push();} // no next word
+      else{ dup(); part(); swap(); drop(); swap(); }}}// next word
+  else{ drop(); drop(); } // not blue
+  nil();} // new empty word
+else{ drop(); pair();}// is letter, compile it.
+show(); break;}}
+
+function ln(p){return isNil(p)?0:1+ln(Left(p));}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'#':letters(Left(p))+letter(Right(p));}
+function lwords(p){return isNil(p)?'#':lwords(Left(p))+letters(Right(p));}
+function rwords(p){return isNil(p)?'#':letters(Right(p))+rwords(Left(p));}
+function prog(){return '{'+lwords(Right(Left(Left((T)))))
+  +'['+letters(Right(Left(T)))+']'+rwords(Right(Left(Left(Left(T)))))+'}';}
+document.body.style.font='12pt monospace';
+document.body.style.whiteSpace='pre';
+function show(s=''){document.body.textContent+=`\t${limit} ${prog()} ${s}\n`;}
+```
+
 ## \#2025-1027-1401
 
 It should be no secret that all of this work on my programming environment is aimed at setting up an interlocking system of hardware and software that simplify the work of any programmer. I see my work as making the lathe of programming. It gets at the perfect balance between what can be acheived through those less than human parts of the world. It is designed to extend the reach of human behavior.
