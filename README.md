@@ -152,6 +152,143 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1027-1401
+
+It should be no secret that all of this work on my programming environment is aimed at setting up an interlocking system of hardware and software that simplify the work of any programmer. I see my work as making the lathe of programming. It gets at the perfect balance between what can be acheived through those less than human parts of the world. It is designed to extend the reach of human behavior.
+
+This iteration of the javascript for my programming environment eliminates all defined operations e.g. over, not, and, or. It has not been debugged and is unlike to work as expected in its current state.
+
+```
+var Nil = new Object();
+function isNil(p){return Object.is(p, Nil);}
+function Pair(l,r){return new Array(l,r);}
+function Left(p){if(isNil(p)) return Nil; else return p[0];}
+function Right(p){if(isNil(p)) return Nil; else return p[1];}
+
+var T=Nil;
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+function select(){if(isTopNil()){drop(); swap(); drop();}else{drop(); drop();}}
+
+var limit=1<<10;
+var abc = '.;:,0123456789abcdefghijklmnopqrstuvwxyz'
+onkeydown=e=>{switch(e.key){
+case'Shift': case'Enter': case'Control': case'Alt': case'Tab': case'CapsLock':return;
+default: 
+var k=abc.indexOf(e.key); if(k<0)k=abc.length; nil(); while(k--){nil(); pair();}; // input
+dup(); part(); drop(); part(); drop(); part(); drop(); // not letter?
+if(isTopNil()){ drop();
+  pair(); dup(); pop(); pair(); // compile letter and word
+  push(); part(); part(); // blue?
+  if(isTopNil()){// blue
+    nil(); pair(); pair(); // greenify
+    swap(); pop(); swap(); nil(); //prime the pump
+    while(isTopNil()){ drop(); // execute
+      part(); push(); swap(); pair(); pop(); pop(); // fore
+      part(); // blue?
+      if(isTopNil()){ drop(); drop(); // blue
+      }else{ // not blue
+        part(); drop(); // green?
+        if(isTopNil()){ drop(); // green
+          nil(); nil(); pair(); nil(); pair(); nil(); pair(); pair(); // redify
+          dup(); push(); dup(); push(); dup(); pop(); swap(); pop(); // pull program
+          nil(); // prime the pump
+          while(isTopNil()){ drop();
+            part(); swap(); pop(); pair(); dup(); pop(); // back
+            part(); swap(); drop(); // next word
+            nil(); dup(); pop(); // id? prime the pump
+            while(isTopNil()){ drop();
+              if(isTopNil()){ drop(); // is other nil?
+                if(isTopNil()){ drop(); // both nil
+                  push(); // empty rest?
+                  if(isTopNil()){ // empty rest means id
+                    dup(); pop(); dup(); pair(); 
+                  }else{ // rest id?
+                    part(); part(); pop(); nil();
+                  }
+                }else{ // not both nil means not id
+                  push(); drop(); dup(); pop();
+                }
+              }else{ // not nil
+                swap(); // is other not nil?
+                if(isTopNil()){ drop(); // nil means not id
+                  push(); drop(); dup(); pop();
+                }else{ // parts id?
+                  part(); push(); pair(); pop(); 
+                  swap(); 
+                  part(); push(); pair(); pop();
+                  nil();
+                }
+              }
+            }
+            drop(); push(); // match found?
+            if(isTopNil()){ drop(); // match found
+            }else{ drop(); // not a match
+              dup(); push(); // more?
+              if(isTopNil()){ // no more.
+                pop(); drop();
+              }
+            }
+          }
+          drop(); drop();
+        }else{ // not green
+          part(); drop(); // gray?
+          if(isTopNil()){ drop() // gray
+            part(); drop(); part(); drop(); part(); drop(); 
+            part(); drop(); part(); drop();  if(isTopNil()){ drop(); // dup?
+            dup();  }else{ part(); drop(); if(isTopNil()){ drop(); // drop?
+            drop(); }else{ part(); drop(); if(isTopNil()){ drop(); // pop?
+            push(); swap(); push(); swap(); pop(); pop(); pop();
+                    }else{ part(); drop(); if(isTopNil()){ drop(); // push?
+            push(); push(); push(); swap(); pop(); swap(); pop();
+                    }else{ part(); drop(); if(isTopNil()){ drop(); // swap?
+            swap(); }else{ part(); drop(); if(isTopNil()){ drop(); // nil?
+            nil();  }else{ part(); drop(); if(isTopNil()){ drop(); // pair?
+            pair(); }else{ part(); drop(); if(isTopNil()){ drop(); // part?
+            part(); }else{ part(); drop(); if(isTopNil()){ drop(); // select?
+            sel();  }else{ part(); drop(); if(isTopNil()){ drop(); // return?
+            push(); push(); drop(); drop(); 
+                    }else{ drop(); }}}}}}}}}}
+          }else{drop(); drop();}}}
+      push(); // next word?
+      if(isTopNil()){ // no next word
+        push();
+      }else{ 
+        dup(); part(); swap(); drop(); swap(); // next word
+      }
+    }
+  }else{ // not blue
+    drop(); drop();
+  } 
+  nil(); // new empty word
+}else{ drop(); // is letter
+  pair(); // compile letter
+}
+show(); break;}}
+
+function ln(p){return isNil(p)?0:1+ln(Left(p));}
+function a(n){return abc.length<=n?'?':abc.at(n);}
+function letter(p){return a(ln(p));}
+function letters(p){return isNil(p)?'#':letters(Left(p))+letter(Right(p));}
+function lwords(p){return isNil(p)?'#':lwords(Right(p))+letters(Left(p));}
+function rwords(p){return isNil(p)?'#':letters(Left(p))+rwords(Right(p));}
+function prog(){return '{'+lwords(Right(Left(Left((T)))))
+  +'['+letters(Right(Left(T)))+']'+lwords(Right(Left(Left(Left(T)))))+'}';}
+document.body.style.font='12pt monospace';
+document.body.style.whiteSpace='pre';
+function show(s=''){document.body.textContent+=`\t${limit} ${prog()} ${s}\n`;}
+```
+
 ## \#2025-1025-1644
 
 Among the things that I think people should know are the methods of logic. Anyone who can be taught up to and including Quine's main method of proof is ready to deal with the rest of science in a profoundly more effective way than anyone who does not know the same.
