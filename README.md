@@ -152,6 +152,148 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1029-1601
+
+I now have the javascript implementation of my programmable environment logically debugged. Here it is:
+```
+// Native Helper Functions (without explicit garbage collection)
+var Nil = new Object(); // the empty pair
+function isNil(p){return Object.is(p, Nil);} // empty pair?
+function Pair(l,r){return new Array(l,r);} // allot pair
+function Left(p){if(isNil(p)) return Nil; else return p[0];} // the left part of
+function Right(p){if(isNil(p)) return Nil; else return p[1];} // the right part of
+var T=Nil; // the tree
+function isTopNil(){return isNil(Right(Left(T)));} // top of tree nil?
+// basic tree operations
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+function select(){if(isTopNil()){drop(); swap(); drop();}else{drop(); drop();}}
+// editer = interpreter + compiler + executor
+var abc = '.;,:0123456789abcdefghijklmnopqrstuvwxyz'; // the alphabet
+onkeydown=e=>{switch(e.key){
+case'Shift': case'Enter': case'Control': case'Alt': case'Tab': case'CapsLock':return;
+default: var k=abc.indexOf(e.key); if(k<0)k=abc.length; nil(); while(k--){nil(); pair();}; // input
+dup(); part(); drop(); part(); drop(); part(); drop(); // not letter?
+if(isTopNil()){ drop(); // not letter
+  pair(); dup(); pop(); pair(); // compile letter and word
+  push(); part(); // blue?
+  if(isTopNil()){// blue
+    nil(); pair(); pair(); // greenify
+    swap(); pop(); swap(); nil(); //prime the pump
+    while(--limit && isTopNil()){ drop(); // execute
+      part(); push(); swap(); pair(); pop(); pop(); // fore
+      part(); // blue?
+      if(isTopNil()){ drop(); drop(); } // blue
+      else{ part(); drop(); // not blue, green?
+        if(isTopNil()){ // green
+          nil(); pair(); nil(); pair(); nil(); pair(); pair(); // redify
+          dup(); push(); dup(); push(); dup(); pop(); swap(); pop(); // pull program
+          nil(); // prime the pump
+          while(--limit && isTopNil()){ drop(); // find match
+            part(); swap(); pop(); pair(); dup(); pop(); // back
+            part(); swap(); drop(); // next word
+            nil(); dup(); pop(); // prime the pump
+            while(--limit && isTopNil()){ drop(); // id
+              if(isTopNil()){ drop(); // is other nil?
+                if(isTopNil()){ drop(); push();// both nil, empty rest?
+                  if(isTopNil()){ dup(); pop(); dup(); pair(); }// empty rest means id
+                  else{ part(); part(); pop(); nil(); }} // rest id?
+                else{ push(); drop(); dup(); pop(); }} // not both nil means not id
+              else{ swap(); // not nil, is other?
+                if(isTopNil()){ nil(); }// nil means not id
+                else{ part(); push(); pair(); pop(); swap(); 
+                  part(); push(); pair(); pop(); nil(); }}} // parts id?
+            drop(); push(); // match found?
+            if(isTopNil()){ drop(); } // match found
+            else{ drop(); dup(); push(); push(); // not a match, more?
+              if(isTopNil()){ drop(); drop(); drop();} // no more
+              else{ nil(); }}}  // more
+          drop();}
+        else{ part(); drop(); // not green, gray?
+          if(isTopNil()){ drop(); part(); swap(); drop(); // gray, get op
+            part(); drop(); part(); drop(); part(); drop(); part(); drop(); // dup?
+            if(isTopNil()){ drop(); dup(); } // dup
+            else{ part(); drop(); // not dup, drop?
+              if(isTopNil()){ drop(); drop(); } // drop
+              else{ part(); drop(); // not drop, pop?
+                if(isTopNil()){ drop(); // pop
+                  push(); swap(); push(); swap(); pop(); pop(); pop();} 
+                else{ part(); drop(); // not pop, push?
+                  if(isTopNil()){ drop(); // push
+                    push(); push(); push(); swap(); pop(); swap(); pop();}
+                  else{ part(); drop(); // not push, swap?
+                    if(isTopNil()){ drop(); swap(); } // swap
+                    else{ part(); drop(); // not swap, nil?
+                      if(isTopNil()){ drop(); nil(); } // nil
+                      else{ part(); drop(); // pair?
+                        if(isTopNil()){ drop(); pair(); } // pair
+                        else{ part(); drop(); // not pair, part?
+                          if(isTopNil()){ drop(); part(); } // part
+                          else{ part(); drop(); // not part, select?
+                            if(isTopNil()){ drop(); sel(); } // select
+                            else{ part(); drop(); // not select, return?
+                              if(isTopNil()){ drop(); push(); push(); drop(); drop(); } // return
+                              else{ drop(); }}}}}}}}}}} // not return.
+          else{drop(); drop();}}} // not gray.
+      push(); // next word?
+      if(isTopNil()){ push();} // no next word
+      else{ dup(); part(); swap(); drop(); swap(); nil();}}}// next word
+  else{ drop(); drop(); } // not blue
+  nil();} // new empty word
+else{ drop(); pair();}// is letter, compile it.
+show(); break;}}
+
+function ln(p){return isNil(p)?0:1+ln(Left(p));} // length (or height) of stack
+function a(n){return abc.length<=n?'?':abc.at(n);} // nth letter of abc
+function letter(p){return a(ln(p));} // letter of stack height
+function letters(p){return isNil(p)?'#':letters(Left(p))+letter(Right(p));} // letters of stack
+function lwords(p){return isNil(p)?'#':lwords(Left(p))+letters(Right(p));} // words stacked last top
+function rwords(p){return isNil(p)?'#':letters(Right(p))+rwords(Left(p));} // words stack first top
+function prog(){return '{'+lwords(Right(Left(Left((T))))) 
+  +'['+letters(Right(Left(T)))+']'+lwords(Right(Left(Left(Left(T)))))+'}';}// edited program
+document.body.style.font='12pt monospace';document.body.style.whiteSpace='pre';
+var limit=1<<10; // loop limit
+function show(s=''){document.body.textContent+=`\t${limit} ${prog()} ${s}\n`;}
+function bin(p){return isNil(p)?'0':bin(Left(p))+bin(Right(p))+'1';} // bitree -> bistring
+function par(p){return isNil(p)?'()':'('+par(Left(p))+' '+par(Right(p))+')';} // bitree -> parens
+function lbin(p){return isNil(p)?'':bin(Right(p))+'\n'+lbin(Left(p));} // bistring stack
+function rbin(p){return isNil(p)?'':rbin(Right(p))+'\n'+bin(Left(p));} // bistring list
+function bins(p,s=''){return rbin(Right(p))+'\n-'+s+'\n'+lbin(Left(p));} // bistring tree
+```
+
+This newest version is special in a number of ways. The most important is that it uses only the primitive operations of dup, drop, push, pop, swap, nil, pair, and part. It includes 'select' at the end of the list of primitive operations because 'select' is implicit in the use of the 'if', 'else', and 'while's of javascript. This will be easier to explain once I elminated all 'if', 'else', and 'while' for a single javascript 'while' (that of the scheduler).
+
+While there are comments, they are not final. They do not strongly suggest what is going on, or why it is happening. This is a problem with any well made machine that has ultimately lost touch with the environments from which its key components were selected.
+
+Although I claim that the program is debugged, I have not given a clear and exact definition of just what debugging entails. It is a common word among programmers. The question is what consequences come from it?
+
+I often say "I've got the logic right but the code may be wrong." How can this be? Or, what does this mean? For some time I have felt that I've got the logic of my little programmable environment 'right' or 'worked out'. The moment I put the finishing touches on my first description of what I then called "the interpreter algorithm" and what I now call "the programmable program" I knew I had got the logic right.
+
+Only a fool can be so certain of anything, and while it may take a fool to finish anything, it only furthers foolishness to leave what the fool finished undisturbed or unexamined.
+
+So, what could it mean to say that I've got the logic right? It can mean that if I was prompted to write out the predicate logic of the theory within which my programmable program is designated by a singular description, then I am very likely to do just that.
+
+Perhaps I would do better to say "I've got the science right" or perhaps even "I've got the experiments right". Perhaps even better still to say "I've go the right equipment" or "I'm in the right laboratory."
+
+Perhaps I can only say "What I've said points up relevant contingencies." For, what I've said does not point at or to them: they may be part of spacetime but they can never be here and now. Perhaps I can say they 'point out' rather than 'point up'.
+
+I must leave an examination of the practice of programming for another time. This present speculation is weak and amounts to an excuse or escape.
+
+What's next?
+1. automated testing
+2. virtual machining i.e. one while loop
+3. long term storage and retrieval
+
+
 ## \#2025-1028-1217
 
 I have drastically changed the formatting to make it easier to read. I fixed a few bugs, but it still does not work as expected.
