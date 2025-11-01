@@ -152,6 +152,344 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1031-1440
+
+My implementation of the programmable program, i.e. my programmable environment, in javascript is in a stable state. Having put all the pieces together into a single monolithic javascript definition, I'll now go about factoring them back into their pieces and then move onto the so called 'internal operations'.
+
+I expect to find that the defined javascript functions are just an elaborate way of saying the same things that can be learned from simply reading the comments. Only this little experiment will reveal that to me.
+
+The beginning definitions are the same. I still have delegated control over allocation to javascript and not made it explicit.
+
+```
+// Native Helper Functions (without explicit garbage collection)
+var Nil = new Object(); // the empty pair
+function isNil(p){return Object.is(p, Nil);} // empty pair?
+function Pair(l,r){return new Array(l,r);} // allot pair
+function Left(p){if(isNil(p)) return Nil; else return p[0];} // the left part of
+function Right(p){if(isNil(p)) return Nil; else return p[1];} // the right part of
+
+var T=Nil; // the tree
+function isTopNil(){return isNil(Right(Left(T)));} // top of tree nil?
+
+// basic operations on the tree
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+function select(){if(isTopNil()){drop(); swap(); drop();}else{drop(); drop();}}
+```
+
+The next function that can be factored out is 'id' which replaces the top two items on the stack with nil if they are identical and with something not nil if they aren't.
+
+```
+function id(){ nil(); dup(); pop(); // prime the pump
+  while(isTopNil()){ drop();
+    if(isTopNil()){ drop(); // is other nil?
+      if(isTopNil()){ drop(); push();// both nil, empty rest?
+        if(isTopNil()){ dup(); pop(); dup(); pair(); }// empty rest means id
+        else{ part(); part(); pop(); nil(); }} // rest id?
+      else{ push(); drop(); dup(); pop(); }} // not both nil means not id
+     else{ swap(); // not nil, is other?
+       if(isTopNil()){ nil(); }// nil means not id
+       else{ part(); push(); pair(); pop(); swap(); 
+         part(); push(); pair(); pop(); nil(); }}} // parts id?
+  drop(); push();
+}
+```
+
+The next function is 'find'. Call the top item on the stack 'the back stack' and the second from top 'teh fore stack'. The function named 'find', searches through the back stack for an item that matches the item presented to 'find' as third from the top. It searches by popping the top of the back stack, pushing it onto the fore stack while duplicating it and then comparing it to the search item. It does this until a matching item is found or until the back stack is empty.
+
+```
+function find(){
+  pop(); pop(); dup(); push(); push(); nil(); // prime the pump
+  while(isTopNil()){ drop();
+    part(); swap(); pop(); pair(); dup(); pop(); // back
+    part(); swap(); drop(); // next item
+    id();
+    if(isTopNil()){ drop(); } // match found
+    else{ drop(); dup(); push(); push(); // not a match, more?
+      if(isTopNil()){ pop(); pop(); drop(); } // no more
+      else{ nil(); }}}
+  drop(); push(); push();
+}
+```
+
+Here it is already clear that a handful of fiddling operations are required to extricate 'find' from its tight fit in the context of the programmable program (that is if you include the details of 'id' that are obscured by the 'id()').
+
+In the past I've also factored out 'back' and 'fore' as follows:
+
+```
+function back(){ part(); swap(); pop(); pair(); push();}
+function fore(){ pop(); part(); push(); swap(); pair();}
+```
+
+Which, if so factored, would change the definition of 'find' to
+
+```
+function find(){
+  pop(); pop(); dup(); push(); push(); nil(); // prime the pump
+  while(isTopNil()){ drop();
+    back();
+    pop(); dup(); pop();
+    part(); swap(); drop(); // next item
+    id();
+    if(isTopNil()){ drop(); } // match found
+    else{ drop(); dup(); push(); push(); // not a match, more?
+      if(isTopNil()){ pop(); pop(); drop(); } // no more
+      else{ nil(); }}} // more
+  drop(); push(); push();
+}
+```
+
+In fact, the entire design of 'find' would be changed if it was contemplated on its own e.g. the item being searched for would probably be thought to be the item at the top of the stack so that 'find might look like this
+
+```
+function find(){ pop(); nil(); // prime the pump
+  while(isTopNil()){ drop();
+    dup(); part(); swap(); drop(); // next item
+    push(); dup(); pop(); // pull
+    id();
+    if(isTopNil()){ drop(); push();} // found
+    else{ drop(); back();
+      if(isTopNil){ push(); } // no more
+      else{ nil() }}} // more
+  drop();
+}
+```
+
+I go through this all to make the point that factoring things out into separate functions doesn't simplify things in the way that people are told or commonly think. Hasty conclusions have been made in many directions and it is only in following Knuth's metamachine methods that anyone can really start to pin down what counts as simplification or complexification.
+
+In general, factoring out into a function introduces complexity into the pre and post script encompassing the context within which the defined function is invoked. This goes unnoticed in most modern programming languages because using variables, like using roman numerals to do arithmetic, obscures the recombic operations which are ultimately called for to accomplish the full crossreferential recurrence of variables.
+
+Note, the costs can be obscured in a language like the one contemplated here as well. Simply introduce operations that make make local red words and green words as needed. I'll have to explain this more later, but it comes out to stuff like LISP's 'let'. To get at the logic of it all requires predicate abstracts as these are the method by which variables may dealt with systematically as an addition to a predicate functor logic. Predicate abstracts are the logical origin of all problems of scope in programming and in any theories with a predicate logic.
+
+The next function to be defined is 'green' which is what hapens when a green word is come upon while executing a program. The green word is colored red, and that word is looked for in a duplicate of the current program. It is tempting to name this function 'call' because it does something like calling an instruction.
+
+This function is where I see much less value in 'factoring it out' rather than simply introducing effective comments. It is easy to make simplifying assumptions that later shoot you in the foot e.g. I'll assume that the spelling of a word is atop the stack as a list of letters. Then 'green' forms the red word, pulls down a duplicate of the curretn program, finds the matching red word in the program (if there is one). As defined in the larger program, if a match is not found, execution just returns to where it left off.
+
+```
+function redify(){nil(); nil(); pair(); nil(); pair(); nil(); pair(); pair();}
+function pull2(){push(); dup(); push(); dup(); pop(); swap(); pop();}
+function green(){
+  redify();
+  pull2(); // pull program
+  find();
+  if(isTopNil()){ drop(); drop();} // not found continue
+  else{ pop(); pop();} // found, "call"
+}
+```
+
+The next function to define then is 'gray'. It is like a dispatcher, it looks at the top item and if it is the letter of a gray operation then that operation is taken. These are the words that are primitive to the programmable program.
+
+```
+function gray(){
+  part(); drop(); part(); drop(); part(); drop(); part(); drop(); // dup?
+  if(isTopNil()){ drop(); dup(); } // dup
+  else{ part(); drop(); // not dup, drop?
+    if(isTopNil()){ drop(); drop(); } // drop
+    else{ part(); drop(); // not drop, pop?
+      if(isTopNil()){ drop(); // pop
+        push(); swap(); push(); swap(); pop(); pop(); pop();} 
+      else{ part(); drop(); // not pop, push?
+        if(isTopNil()){ drop(); // push
+          push(); push(); push(); swap(); pop(); swap(); pop();}
+        else{ part(); drop(); // not push, swap?
+          if(isTopNil()){ drop(); swap(); } // swap
+          else{ part(); drop(); // not swap, nil?
+            if(isTopNil()){ drop(); nil(); } // nil
+            else{ part(); drop(); // pair?
+              if(isTopNil()){ drop(); pair(); } // pair
+              else{ part(); drop(); // not pair, part?
+                if(isTopNil()){ drop(); part(); } // part
+                else{ part(); drop(); // not part, select?
+                  if(isTopNil()){ drop(); sel(); } // select
+                  else{ part(); drop(); // not select, return?
+                    if(isTopNil()){ drop(); push(); push(); drop(); drop(); } // return
+                    else{ drop(); }}}}}}}}}} // not the letter of a gray word
+}
+```
+
+While I've included 'return' as one of the gray words, it is not necessary. Such an operation can be defined and used as a green word. I've just avoided doing that here because it adds complexity that doesn't pay its way yet.
+
+The next word is then 'blue'. This might be called 'execute' in another language. It expects the top item to spell out a word and below that is the back and then the fore of the program the matching green word is going to start execution within. That is, the top is colored green, and then executed as a green word. The second and third item from the top are the back and fore of the program the green word is executed within.
+
+```
+function greenify(){ nil(); nil(); pair(); pair();}
+function blue(){
+  greenify();
+  swap(); pop(); swap(); push(); nil(); // prime the pump
+  while(isTopNil){
+    fore(); pop(); pop();
+    part(); // is blue?
+    if(isTopNil()){ drop(); drop();}
+    else{ part(); drop() // not blue, green?
+      if(isTopNil()){ green(); }
+      else{ part(); drop(); // not green, gray?
+        if(isTopNil()){ drop(); part(); swap(); drop(); gray(); } // gray, get op
+        else{ drop(); drop();}}}          
+    push(); // no next word?
+    if(isTopNil()){ push(); } // no next word
+    else{ dup(); pop(); part(); swap(); drop(); nil();}}}}} // next word
+```
+
+Finally comes the editor (which is hardly what it is, since it doesn't even include "backspace").
+
+```
+function edit(){ dup(); part(); drop(); part(); drop(); part(); drop(); // not letter?
+  if(isTopNil()){ drop(); // not letter
+    pair(); dup(); pop(); pair(); // compile letter and word
+    push(); part(); // blue?
+    if(isTopNil()){ blue(); } // blue
+    else{ drop(); drop(); } // not blue
+    nil();} // new empty word
+  else{ drop(); pair(); }} // is letter, compile it
+```
+
+But this not quite everything. Input comes first. This is about the limit of the abstract model that has been adopted here. One which lets the javascript event system take care of scheduling when to do what based on which key is pressed.
+
+It takes the name of a key pressed and finds its location in "the alphabet" and then uses that location to construct a binary tree corresponding to it.
+
+```
+var abc = '.;,:0123456789abcdefghijklmnopqrstuvwxyz'; // the alphabet
+function input(key){var k = abc.length; while(k-- && abc[k]!=key); // where in abc?
+  if(k<0) return; // not in abc
+  nil(); while(k--){nil(); pair();}} // quote/construct as tree
+```
+
+In past programs I have gone further and linked up everything to the 'onkeydown' event handler. It would look just like this:
+
+```
+onkeydown = function(e){ input(e.key); }
+```
+
+But I'll leave that out because I'm also leaving out the all the elaborate methods I have used in the past to view the state of "the tree" after a key press has been tumbled through all the above mechanisms.
+
+In the next note I'll explain the 'internal operations' which do for the top of the tree what each basic operation does for "the tree". This begins the move to abstract virtual machines.
+
+Here is all the code together in a program that has not been debugged:
+
+```
+// Native Helper Functions (without explicit garbage collection)
+var Nil = new Object(); // the empty pair
+function isNil(p){return Object.is(p, Nil);} // empty pair?
+function Pair(l,r){return new Array(l,r);} // allot pair
+function Left(p){if(isNil(p)) return Nil; else return p[0];} // the left part of
+function Right(p){if(isNil(p)) return Nil; else return p[1];} // the right part of
+
+var T=Nil; // the tree
+function isTopNil(){return isNil(Right(Left(T)));} // top of tree nil?
+
+// basic operations on the tree
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+function select(){if(isTopNil()){drop(); swap(); drop();}else{drop(); drop();}}
+
+function id(){ nil(); dup(); pop(); // prime the pump
+  while(isTopNil()){ drop();
+    if(isTopNil()){ drop(); // is other nil?
+      if(isTopNil()){ drop(); push();// both nil, empty rest?
+        if(isTopNil()){ dup(); pop(); dup(); pair(); }// empty rest means id
+        else{ part(); part(); pop(); nil(); }} // rest id?
+      else{ push(); drop(); dup(); pop(); }} // not both nil means not id
+     else{ swap(); // not nil, is other?
+       if(isTopNil()){ nil(); }// nil means not id
+       else{ part(); push(); pair(); pop(); swap(); 
+         part(); push(); pair(); pop(); nil(); }}} // parts id?
+  drop(); push();}
+
+function back(){ part(); swap(); pop(); pair(); push();}
+function find(){ pop(); pop(); dup(); push(); push(); nil(); // prime the pump
+  while(isTopNil()){ drop();
+    back();
+    pop(); dup(); pop(); part(); swap(); drop(); // next item
+    id();
+    if(isTopNil()){ drop(); } // match found
+    else{ drop(); dup(); push(); push(); // not a match, more?
+      if(isTopNil()){ pop(); pop(); drop(); } // no more
+      else{ nil(); }}} // more
+  drop(); push(); push();}
+
+function redify(){nil(); pair(); nil(); pair(); nil(); pair(); pair();}
+function pull2(){push(); dup(); push(); dup(); pop(); swap(); pop();} // pull program
+function green(){ redify();  pull2(); find();
+  if(isTopNil()){ drop(); drop();} // not found continue
+  else{ pop(); pop();}} // found, "call"
+
+function gray(){
+  part(); drop(); part(); drop();
+  part(); drop(); part(); drop(); // dup?
+  if(isTopNil()){ drop(); dup(); } // dup
+  else{ part(); drop(); // not dup, drop?
+    if(isTopNil()){ drop(); drop(); } // drop
+    else{ part(); drop(); // not drop, pop?
+      if(isTopNil()){ drop(); // pop
+        push(); swap(); push(); swap(); pop(); pop(); pop();} 
+      else{ part(); drop(); // not pop, push?
+        if(isTopNil()){ drop(); // push
+          push(); push(); push(); swap(); pop(); swap(); pop();}
+        else{ part(); drop(); // not push, swap?
+          if(isTopNil()){ drop(); swap(); } // swap
+          else{ part(); drop(); // not swap, nil?
+            if(isTopNil()){ drop(); nil(); } // nil
+            else{ part(); drop(); // pair?
+              if(isTopNil()){ drop(); pair(); } // pair
+              else{ part(); drop(); // not pair, part?
+                if(isTopNil()){ drop(); part(); } // part
+                else{ part(); drop(); // not part, select?
+                  if(isTopNil()){ drop(); sel(); } // select
+                  else{ part(); drop(); // not select, return?
+                    if(isTopNil()){ drop(); push(); push(); drop(); drop(); } // return
+                    else{ drop(); }}}}}}}}}}}
+
+function greenify(){ nil(); nil(); pair(); pair(); }
+function fore(){ pop(); part(); push(); swap(); pair();}
+function blue(){ greenify();
+  swap(); pop(); swap(); push(); nil(); // prime the pump
+  while(isTopNil){ // execute
+    fore(); pop(); pop(); // set up for next word
+    part(); // is blue?
+    if(isTopNil()){ drop(); drop();}
+    else{ part(); drop() // not blue, green?
+      if(isTopNil()){ green(); }
+      else{ part(); drop(); // not green, gray?
+        if(isTopNil()){ drop(); part(); swap(); drop(); gray(); } // gray, get op
+        else{ drop(); drop();}}}          
+    push(); // no next word?
+    if(isTopNil()){ push(); } // no next word
+    else{ dup(); pop(); part(); swap(); drop(); nil(); }}} // next word
+
+function edit(){ dup(); part(); drop(); part(); drop(); part(); drop(); // not letter?
+  if(isTopNil()){ drop(); // not letter
+    pair(); dup(); pop(); pair(); // compile letter and word
+    push(); part(); // blue?
+    if(isTopNil()){ blue(); } // blue
+    else{ drop(); drop(); } // not blue
+    nil(); } // new empty word
+  else{ drop(); pair(); }} // is letter, compile it
+
+var abc = '.;,:0123456789abcdefghijklmnopqrstuvwxyz'; // the alphabet
+function input(key){var k = abc.length; while(k-- && abc[k]!=key); // where in abc?
+  if(k<0) return; // not in abc
+  nil(); while(k--){nil(); pair();}} // quote/construct as tree
+```
+
+
 ## \#2025-1029-1601
 
 I now have the javascript implementation of my programmable environment logically debugged. Here it is:
