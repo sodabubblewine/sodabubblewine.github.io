@@ -152,6 +152,88 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1102-1259
+
+The heterological paradox inspires the conclusion that there is no consistent theory of truth, or, better, denotation. It does so in ways that have already been explained here (the proof demonstrates the logical utility of Quine's principle of concretion for predicate abstracts and combines instructively with the principle of disquotation which is itself the crux of inconsistency). While it has been clear to me for some time that Hilbert and Bernay's completeness proof is the passage through which incompleteness follows from a proof of inconsistency of a disquotational theory of denotation, I have not made it clear.
+
+I shall not make it clear here either, but leave a link to this paper which can be used to triangulate with the remarks I've made in this note and others.
+
+- 2010 Walter Dean "Incompleteness via paradox and completeness"
+- <https://scispace.com/pdf/incompleteness-via-paradox-and-completeness-4waltvevq3.pdf>
+
+## \#2025-1101-1514
+
+This begin a series of notes on the following links (mostly to YouTube videos) about Forth, colorForth, and uhdForth. I'm writing them because there is not much out there which takes all these threads of history and ties them to their logical origins in Quine's predicate functor analysis of the crossreferential mechanics of variables. Here are the links:
+- 2021-11-20 - Fireside Chat --- Chuck Moore <https://www.youtube.com/watch?v=BpsXyB2WsUw>
+- Forth Day 2022 -- Fireside Chat -- Chuck Moore <https://www.youtube.com/watch?v=YjTDfYAPCbo>
+- Fireside Chat 2023 -- Chuck Moore -- 2023-11-18 <https://www.youtube.com/watch?v=3jJkyc-raJQ>
+- You should care about colorForth! -- Brad Nelson 2024-03-23 <https://www.youtube.com/watch?v=4SOLeRegAqg>
+- Bootstrapping colorForth -- Brad Nelson 2024-05-25 <https://www.youtube.com/watch?v=4SOLeRegAqg>
+- More Colors, More Forth -- Brad Nelson 2024-07-27 <https://www.youtube.com/watch?v=maNCITALEJc>
+- <http://mynor.org/my4th_xs.htm>
+
+These are notes on how Chuck Moore's uhdForth works. Perhaps the most informative explanation of how Moore's uhdForth works is in a video that has severe audio issues. I shall first explain what is covered in that video.
+
+The video is from 2021. It is one of Moore's annual "Fireside Chats". The video can be watched at the following link, but on that day Chuck's microphone makes it almost impossible to hear him clearly enough to know what he is saying: <https://www.youtube.com/watch?v=BpsXyB2WsUw>.
+
+The entire presentation is framed around solving the problem of drawing each character of the alphabet of uhdForth to the screen: "It's the biggest 'OK' I've ever drawn". It is not introduced as "the newest version of Forth" because Chuck has a thing about solving problems rather than selling solutions. He also doesn't call it 'the alphabet' but rather 'the character set'.
+
+The character set is drawn in three different sizes: normal, six times larger, and ten times larger. Chuck groups them as follows:
+1. '0' to '9'
+2. 'a' to 'f'
+3. 'g' to 'z'
+4. '0' to 'f' superscripts
+5. and special characters: period, minus sign, plus sign, semicolon, subscript '1', the at sign, exclimation point, multiplication sign, forwardslash, subscript '2', subscript '4', and the back tick.
+
+Though he does not say it yet, these groupings and their ordered are an essential part of how parsing and interpretation work in uhdForth.
+
+"My goal in designing this character set is to make best use of similarities between characters." 2:10
+
+"These characters are made up of three kinds of elements: rectangles, slanted lines, and ellispes." 2:44
+
+What Moore neglects to mention is that he's summarizing the practice of technical lettering, which, until recently, was the prevailing method by which technical drawings were marked up to be read. Today, if you search for 'technical lettering' you may struggle to find a simple and complete description of what people were doing for decades before computer aided design flooded the world (for better and for worse).
+
+To learn about technical drawing and technical lettering, look for books on 'descriptive geometry'. There you will find that letters are taught by pointing up similiarities between their shapes in precisely the way that Moore goes on to describe.
+
+Where Moore's method deviates from those of earlier draftsman is that instead of drawing with pen and paper he draws with pixels using Bresenham's algorithm(s). The best explanation that gets you going immediately with the simplest code can be found here <http://members.chello.at/~easyfilter/bresenham.html>.
+
+The logic behind the construction of Bresenham's algorithm is far more important than the algorithm itself and is completely explained in Bresenham's original paper here: <https://web.archive.org/web/20080528040104/http://www.research.ibm.com/journal/sj/041/ibmsjIVRIC.pdf>. It is an important example of what has largely been lost from our rapid change from a largely analoge to digital world.
+
+Like Moore' I've contemplated the simplest methods for drawing with a programmable machine like a computer. The only method of technical lettering that may be simpler than Bresenham's is the method of ray marching signed distance functions. Since this is beyond the scope of the video, I shall not mention it further.
+
+Moore breaks the drawing of ellipses into those that are the result of a horizontal or vertical dilation of a circle. Thus, he does not need to implement Bresenham's algorithm for drawing ellipses. He starts with the much simpler algorithm of drawing Bresenham circles, which have an eight fold radial symmetry, and scaling along the horizontal or verticle axis.
+
+For those familiar with graphical algorithms, this method of scaling is immediately evident when you look at how each character with a rounded part gets drawn: the curved lines are thin at the top and bottom of the curve in a character and fat around their midsection. This is one of many artifacts that the intreped graphics programmer discovers as they begin to implement everything from scratch on their own and are faced with reliving the errors of graphics programmers past. There should be a gallary somewhere of classical graphic errors and their implementation.
+
+Moore calls a horizontally scaled Bresenham circle an oblate ellipse and a vertically scaled one a prolate ellipse.
+
+At 4:40 he shows the first screen of uhdForth code publicly seen. It is profound in the most subdued way possible. My writing such things may appear as hyperbole (and perhaps there is a bit of it in there), but the number of consequential things on display is astounding.
+
+Following a pattern set way back in the origins of Forth, code is displayed in blocks. Rather than navigating the short or long term memory of a machine by using the metaphor of a filing system, as if there were folders within folders and documents down at the bottom, the block system breaks memory into equal sized chunks whose size tends to depend on that of the whole memory.
+
+I do not know what the size of blocks are in the version of uhdForth that Chuck is showing.
+
+The code for drawing the characters from '0' to 'o' (a lowercase o) is displayed by typing in what I'm going to call the 'command line'. The command line is at the top of the screen and a red period is used to show where the next character keyed in will show on screen. Moore types '1', '4', and '3', and it shows '143' in white in the upper left hand corner of the screen.
+
+A space is put between the '3' and the next white word typed 'list'. I'm pretty sure that a space is inserted when Chuck presses the space bar on his keyboard, but he has been known to make neat one handed keyboards that function contextually like modern iPhone keyboards. When you press the space bar (or whatever corresponding button Chuck uses) after writing a white word, that word is executed immediately. This is only true of white words that are typed in the command line.
+
+When white words are placed within a block of code they are executed as they are hit upon by the interpreter/compiler.
+
+We get a glimpse at how a white word typed can fail to be executed. After typing '143' which is the number of the block of code he plans to show, he types 'list', presses the space bar (or perhaps enter), and then the word 'list' is spelled out again but this time in red.
+
+One of the reasons that I was able to understand all that was happening in Moore's presentation is because we are both working on a similar kind of problem: the search for timeless simplicity. The moment I saw that red 'list' I knew what was going on even though there was no way I could really know for sure. The white word 'list' had sent the interpreter off on a search for a red 'list' in one of the blocks of code that has already been compiled. If it is not found, when executed from the command line, the red word is appended to the end of what is already shown on the command line.
+
+If this did not happen, then you would not know that the word you've typed was not found and thus not executed. This silent failure would be problematic for any program which when executing does not change any pixels on the screen and hence has no effect that you can readily see and respond appropriately to.
+
+There is also one other subtle thing that can be learned from what Chuck types to show the first block of uhdForth code. After the red 'list' appears, the red dot is already a space away from the end of the red 'list'. He types 'editor' and we hear the sound of him pressing the spacebar (by this time I'm almost certain it must be the space bar because it is the loudest of the keyboard keys and he hits it triumphantly). After he is heard pressing the space bar, the red dot is still at the end of the white word 'editor'. After a very brief moment, the block of code finally displays. At that moment, the red dot that was next to the white 'editor' moves a space away. So that red dot gives the programmer a bit of feedback: if it is still next to the white word last ended with a press of the space bar then the machine has not released control to the command line.
+
+Given how I would do things, I can make an educated guess that typing the white word '143' executes the decimal numeral parser and puts the corresponding machine word onto the data stack. Typing a white 'editor' in the command line probably compiles and executes the code which composes the editing application. It expects the top of the data stack to be the number of the block of code to be edited.
+
+The reason I very strongly suspect that a white 'editor' in the command line *compiles* then executes code is because it takes longer to open the fist block than it does any subsequent blocks shown by typing the number of the block and executing 'link'.
+
+While I have not yet made it to the five minute mark in this video, I am not discouraged. I have watched all of these videos enough times to have the big picture in view. The big picture is that just as there was a great reduction in work that must be done to complete arithmetical tasks by shifting from roman numeral methods to place value methods, there is a similar reduction in work got from shifting from methods that use variables and those that use predicate functors. The only thing confusing about this description of the big picture is that few people know what Quine's predicate functors are, what they do, and how they are different from the method of combinators (and the methods of cylindrical algebras and algebraic logics). I am as yet unable to eliminate this confusion from the world.
+
+
 ## \#2025-1031-1440
 
 My implementation of the programmable program, i.e. my programmable environment, in javascript is in a stable state. Having put all the pieces together into a single monolithic javascript definition, I'll now go about factoring them back into their pieces and then move onto the so called 'internal operations'.
