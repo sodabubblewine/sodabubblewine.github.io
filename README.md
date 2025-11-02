@@ -46,8 +46,8 @@ Journal your thinking and feeling.
 ## HOW LOGIC WORKS
 
 1. Predicates denote or don't (are true or false of) where they occur (Aristotle); 
-2. grammars generate categories from recurrent connective construction on itemized atomic lexicons (Frege, Hilbert, von Neumann);
-3. supplemented lexical substitutions (SLS) of validities denote everywhere (Quine); and 
+2. grammar generates categories from constructions on lexicons (Frege, Hilbert, von Neumann);
+3. substitutions of lexicon for (supplemented) lexicon in validities denote everywhere (Quine); and 
 4. denotata are inherited (Tarski) alethically, i.e.
     1. joint denials denote where and only where (waow) each of their components don't (Peirce, Sheffer),
     2. existential closures denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
@@ -154,7 +154,9 @@ Use a thermometer.
 
 ## \#2025-1102-1259
 
-The heterological paradox inspires the conclusion that there is no consistent theory of truth, or, better, denotation. It does so in ways that have already been explained here (the proof demonstrates the logical utility of Quine's principle of concretion for predicate abstracts and combines instructively with the principle of disquotation which is itself the crux of inconsistency). While it has been clear to me for some time that Hilbert and Bernay's completeness proof is the passage through which incompleteness follows from a proof of inconsistency of a disquotational theory of denotation, I have not made it clear.
+The heterological paradox inspires the conclusion that there is no consistent theory of truth, or, better, denotation. It is implied by Quine's principle of concretion for predicate abstracts and the principle of disquotation (which is the crux of inconsistency).
+
+While it has been clear to me for some time that Hilbert and Bernay's completeness theorem is the passage through which incompleteness follows from the inconsistency of a disquotational theory of denotation, I have not made it clear.
 
 I shall not make it clear here either, but leave a link to this paper which can be used to triangulate with the remarks I've made in this note and others.
 
