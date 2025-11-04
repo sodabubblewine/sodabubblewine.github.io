@@ -152,6 +152,207 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1103-1456
+
+This is hopefully going to be a fun entry. I've been trying to see the clearest way of introducing conditional execution to the programmable program. It is available because of the gray word 'select' which is a primitive word which drops the top and third from top item from the stack if the top is nil and drops the top two items from the stack otherwise.
+
+Conditional execution remains one of those pesky problems that has yet to be properly resolved. Its connections with partial, general, and primitive recursion are often poorly illustrated when it comes to proper programming languages. Some of the only concrete examples which deal with the realities of modern programming while bringing in some of the mathematics that comes along with it are still those written by the ancients, e.g. Meyer and Richie's "Complexity of Loop Programs" <https://people.csail.mit.edu/meyer/meyer-ritchie.pdf> or Uwe Schöning's "Theoretische Informatik – kurz gefasst (5th edition)" which introduces 'While Programs' and 'Goto Programs' in Chapter 2 (notes on which can be found here <https://ai.dmi.unibas.ch/_files/teaching/fs16/theo/slides/theory-d03.pdf>).
+
+It should infuriate modern programmers that less has been done to bring math, and, most importantly, predicate logic to the problems of programming. It is clear enough that the practices of programming are human practices, that programmers have a repertoire of programming selected and maintained by a language as the reinforcing practices of a verbal community, but, for reasons that escape me, it is not equally clear that the practices of math and logic are equally human practices and are just as immediately relevant to the problems of programming in the most practical of realms. The belief is that logic and math are abstract and the practices of programming are concrete. This is naive and shallow.
+
+A few things occurred to me so I will start by listing them and then look at the list to see which one I should write my way through first:
+
+1. swapping out the space bar for the comma key so that pressing space constructs a compound name that can then be compiled as a compound gray word by pressing comma
+
+2. make every key press a blue word and thus eliminate colors from the interpreter so that every keypress is run as code e.g. pressing the 'a' button sends off a search for the matching red word and, as part of the definition of the interpreter, pushes the tree quotation of an 'a' atop the top item of the stack. This would make buttons for 'coloring' programmable as well. This is something to seriously consider because it is very like what I imagined programming would be like when I was a five or six year old playing pretend.
+
+3. the list can be organized so that the item at the top of the list is a list of mands, the items second and third from the top can be the program that is currently being played by the machine, and the space above that is mostly reserved for paused programs.
+
+4. is there a way to get the keys for coloring things to be at the end of the alphabet without making it so hard to hand compile the interpreter?
+
+5. Just how important is the op that compiles an op that compiles an op? Introducing it before introducing conditionals is really helpful. Compare and contrast with Brad Nelson's methods.
+
+6. What about the internal operations and programming up a forrest of trees?
+
+7. What about introducing compound gray words, slotted instructions, and introducing things that way?
+
+8. What about the elimination of the basic command 'mand' for 'set' and 'get' to self?
+
+The maxim of minimum mutilation suggests that I start by discovering how to introduce conditionals with 'if.', 'else.', and 'then.' words. I'll start here because it leads into defining a word that compiles a word that compiles a word.
+
+Since the programs that I'm now contemplating are in my programming environment, I can write the code as I do when I think about the things I've only shown thus far in javascript. I must emphasize that the design of my programming environment is such that there should be little difference between what it ultimately looks like to program in the native language and what it looks like to program in my language. This can not be entirely accurate ever because few languages permit the kind of overt control afforded by mine and those like mine.
+
+Before programming conditionals, I shall start with a simpler word that thus far I have gone ahead and introduced as a gray word i.e. 'return'. And, before that, let me do a once over the monolithic version of my interpreter.
+
+```
+var Nil = new Object(); // the empty pair
+function isNil(p){return Object.is(p, Nil);} // empty pair?
+function Pair(l,r){return new Array(l,r);} // allot pair
+function Left(p){if(isNil(p)) return Nil; else return p[0];} // the left part of
+function Right(p){if(isNil(p)) return Nil; else return p[1];} // the right part of
+var T=Nil; // the tree
+function isTopNil(){return isNil(Right(Left(T)));}
+function dup(){T=Pair(Pair(Left(T), Right(Left(T))), Right(T));}
+function drop(){T=Pair(Left(Left(T)), Right(T));}
+function pop(){T=Pair(Left(Left(T)), Pair(Right(Left(T)), Right(T)));}
+function push(){T=Pair(Pair(Left(T), Left(Right(T))), Right(Right(T)));}
+function swap(){T=Pair(Pair(Pair(Left(Left(Left(T))), 
+  Right(Left(T))), Right(Left(Left(T)))), Right(T));}
+function nil(){T=Pair(Pair(Left(T), Nil), Right(T));}
+function pair(){T=Pair(Pair(Left(Left(Left(T))), 
+  Pair(Right(Left(Left(T))), Right(Left(T)))), Right(T));}
+function part(){T=Pair(Pair(Pair(Left(Left(T)), 
+  Left(Right(Left(T)))), Right(Right(Left(T)))), Right(T));}
+function select(){if(isTopNil()){drop(); swap(); drop();}else{drop(); drop();}}
+onkeydown=e=>{nil();for(let k=0; // prime the pump 
+ e.key!='.;,:0123456789abcdefghijklmnopqrstuvwxyz'[k++]; // key not k-th char of abc?
+ nil(), pair())if(k==40)return drop(); // yes. no.
+dup(); part(); drop(); part(); drop(); part(); drop(); // not letter?
+if(isTopNil()){ drop(); // not letter
+  pair(); dup(); pop(); pair(); // compile letter and word
+  push(); part(); // blue?
+  if(isTopNil()){// blue
+    nil(); pair(); pair(); // greenify
+    swap(); pop(); swap(); nil(); //prime the pump
+    while(--limit && isTopNil()){ drop(); // execute
+      part(); push(); swap(); pair(); pop(); pop(); // fore
+      part(); // blue?
+      if(isTopNil()){ drop(); drop(); } // blue
+      else{ part(); drop(); // not blue, green?
+        if(isTopNil()){ // green
+          nil(); pair(); nil(); pair(); nil(); pair(); pair(); // redify
+          dup(); push(); dup(); push(); dup(); pop(); swap(); pop(); // pull program
+          nil(); // prime the pump
+          while(--limit && isTopNil()){ drop(); // find match
+            part(); swap(); pop(); pair(); dup(); pop(); // back
+            part(); swap(); drop(); // next word
+            nil(); dup(); pop(); // id? prime the pump
+            while(--limit && isTopNil()){ drop(); 
+              if(isTopNil()){ drop(); // is other nil?
+                if(isTopNil()){ drop(); push();// both nil, empty rest?
+                  if(isTopNil()){ dup(); pop(); dup(); pair(); }// empty rest means id
+                  else{ part(); part(); pop(); nil(); }} // rest id?
+                else{ push(); drop(); dup(); pop(); }} // not both nil means not id
+              else{ swap(); // not nil, is other?
+                if(isTopNil()){ nil(); }// nil means not id
+                else{ part(); push(); pair(); pop(); swap(); 
+                  part(); push(); pair(); pop(); nil(); }}} // parts id?
+            drop(); push(); // match found?
+            if(isTopNil()){ drop(); } // match found
+            else{ drop(); dup(); push(); push(); // not a match, more?
+              if(isTopNil()){ drop(); drop(); drop();} // no more
+              else{ nil(); }}}  // more
+          drop();}
+        else{ part(); drop(); // not green, gray?
+          if(isTopNil()){ drop(); part(); swap(); drop(); // gray, get op
+            part(); drop(); part(); drop(); part(); drop(); part(); drop(); // dup?
+            if(isTopNil()){ drop(); dup(); } // dup
+            else{ part(); drop(); // not dup, drop?
+              if(isTopNil()){ drop(); drop(); } // drop
+              else{ part(); drop(); // not drop, pop?
+                if(isTopNil()){ drop(); // pop
+                  push(); swap(); push(); swap(); pop(); pop(); pop();} 
+                else{ part(); drop(); // not pop, push?
+                  if(isTopNil()){ drop(); // push
+                    push(); push(); push(); swap(); pop(); swap(); pop();}
+                  else{ part(); drop(); // not push, swap?
+                    if(isTopNil()){ drop(); swap(); } // swap
+                    else{ part(); drop(); // not swap, nil?
+                      if(isTopNil()){ drop(); nil(); } // nil
+                      else{ part(); drop(); // pair?
+                        if(isTopNil()){ drop(); pair(); } // pair
+                        else{ part(); drop(); // not pair, part?
+                          if(isTopNil()){ drop(); part(); } // part
+                          else{ part(); drop(); // not part, select?
+                            if(isTopNil()){ drop(); sel(); } // select
+                            else{ part(); drop(); // not select, return?
+                              if(isTopNil()){ drop(); push(); push(); drop(); drop(); } // return
+                              else{ drop(); }}}}}}}}}}} // not return.
+          else{drop(); drop();}}} // not gray.
+      push(); // no next word?
+      if(isTopNil()){ push();} // no next word
+      else{ dup(); part(); swap(); drop(); swap(); nil();}}}// next word
+  else{ drop(); drop(); } // not blue
+  nil();} // new empty word
+else{ drop(); pair();}}// is letter, compile it.
+```
+
+I've gone ahead and left 'return' in as a gray word. When a gray word spelled by the single letter '9' is hit upon by the executor it executes two pushes followed by two drops. This has the result of eliminating the program that is currently being played by the executer and playing the most recently paused program.
+
+The simplest way to eliminate return as a gray word and add it as a defined word that can be used as a green word in all future definitions is to carefully consider what the paused programs look like when a green 'return' is confronted by the executer.
+
+When any green word is hit, in this case it's a green 'return', the program that is currently playing is paused and duplicated. It is this duplicate that is search through by going back one word at a time.
+
+Note, the paused program is paused *after* it has been moved one step foreward and *before* the next word to be executed has been extracted from it. So, technically, a step of searching is wasted by checking that the word we already know is a green 'return' is not a matching red 'return'.
+
+Once the matching red 'return' is found in the duplicate of the paused program it is then played.
+
+Alas, here is a problem that I did not foresee: there does not appear to be any way of programming 'return' since the gray 'push' does not do the same thing as the 'push();' of javascript.
+
+It is not entirely accurate for me to say that I did not foresee this. I've been stressing the importance of implementing the virtual machine or implementing complex gray words. Here I am forced to introduce complex gray words if I wish to introduce 'return' and other execution control words as defined rather than primitive.
+
+Compound gray words work like a little interpreter within the interpreter but with a little difference. There is a local place which is inaccessible anywhere else and which holds onto a list of gray words that are to be executed all together before anything else happens. When dealing with bitstrings rather than binary trees, this local place is called a register and this particular register has enough room for multiple graywords to fit within it in a list.
+
+Since I'm not working with bits right now, I'm able to make arbitrarily long compound gray words. One way of carrying this back over to bitstrings is that when slotted instructions are 'well packed' they function as if they were all packed into one big bitstring. This isn't quite true, but it's true enough.
+
+Complex gray words also explain why there is that strange operation at the beginning of executing gray words which 'gets the op name' as a single letter. The way I've implemented execution of gray words is the degenerate case of complex gray words with only one instruction per gray word. These instructions are often called microinstructions when talking about the design of digital machines.
+
+Interestingly, I plan on getting away with something like the scheme I've already shown fails when introducing 'return' as a defined word. I'm going to use the top of the list to keep the current state of the complex gray word to be executed and make it so that gray 'push' and 'pop' are not the same as 'push();' and 'pop();'. I emphasize that this is planned, but may not work out.
+
+So, almost all of the same code for executing gray words can be kept but must now be wrapped in yet another while loop (making the total number of while loops four, or five if you count the for loop which is technically an external input tool).
+
+```
+if(isTopNil()){drop(); // gray.
+  pop(); nil(); // prime the pump
+  while(isTopNil()){
+    push(); part(); pop(); // get next gray
+    part(); drop(); part(); drop(); 
+    part(); drop(); part(); drop(); // dup?
+    if(isTopNil()){ drop(); dup(); } // dup
+    else{ part(); drop(); // not dup, drop?
+      if(isTopNil()){ drop(); drop(); } // drop
+      else{ part(); drop(); // not drop, pop?
+        if(isTopNil()){ drop(); push(); swap(); pop(); pop();} // pop
+        else{ part(); drop(); // not pop, push?
+          if(isTopNil()){ drop(); push(); push(); swap(); pop();} // push
+          else{ part(); drop(); // not push, swap?
+            if(isTopNil()){ drop(); swap(); } // swap
+            else{ part(); drop(); // not swap, nil?
+              if(isTopNil()){ drop(); nil(); } // nil
+              else{ part(); drop(); // pair?
+                if(isTopNil()){ drop(); pair(); } // pair
+                else{ part(); drop(); // not pair, part?
+                  if(isTopNil()){ drop(); part(); } // part
+                  else{ part(); drop(); // not part, select?
+                    if(isTopNil()){ drop(); sel(); } // select
+                    else{ drop(); }}}}}}}}}
+    push(); // more?
+    if(isTopNil()){nil(); pair();} // no more.
+    else{ pop(); nil(); }} // more.
+  drop();}
+```
+
+That should be all that is needed (though it will need to be debugged as all things do).
+
+Next is changing the interpreter so that it can compile compound gray words. It is here that the idea of letting key presses all be like blue words comes forward. I shall replace the comma with the space character. I'm going to also do an experiment which is half way to testing what it would be like for each key to execute as a blue word and solving the problem of assembling compound gray words.
+
+When a space is put atop the stack and the editor is playing then it drops the space letter and checks to see if the top is nil or not. If it is nil then it pairs that nil to the second from top (coloring it gray) and pairs (compiles) this gray word to the program being edited. Otherwise it pairs the top two (compiles a slot of the compound gray word being edited) and pushes a nil atop the stack.
+
+```
+if(isTopNil()){ // space.
+  drop();
+  if(isTopNil()){ pair(); pair(); } // compile gray word
+  else{ pair(); nil(); }} // compile slot, new slot
+```
+
+This way of doing things adds a lot of strange behavior to the whole setup. It does make it possible to edit and compile subprograms within programs, but this is not its intended effect. I will stick with how I'm doing things at this moment and then worry about simplifying later.
+
+Oh! It just occurred to me that I do not need to add anything about this space bar stuff to the code. Complex gray words can already be compiled using the same method I've been using this whole time. Since each gray word is spelled by a single letter, then spelling out a complex gray word is just a list of letters i.e. it's just a gray word with more than one letter in its name. The only thing that needs to be changed is the little gray interpreter.
+
+I also needt to add some sort of mechanism for 'rewinding' because compiling gray words by this method, or perhaps any method consistent with the monolithic implementation, collects them in the reverse of the order they need to be executed in.
+
+This may be a fundamental problem of any slotted methods. There is probably a way to use the operations of 'finding' to automatically compile the 'rewinded' complex gray word. But, since this is the first thing that occurred to me I'd not bet on it being the best way of doing things.
+
 ## \#2025-1102-1259
 
 The heterological paradox inspires the conclusion that there is no consistent theory of truth, or, better, denotation. It is implied by Quine's principle of concretion for predicate abstracts and the principle of disquotation (which is the crux of inconsistency).
