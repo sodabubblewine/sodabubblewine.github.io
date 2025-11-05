@@ -147,10 +147,47 @@ Use a thermometer.
 
 - The conditional connective 'only if' is a grammatical partical and 'implies' is a predicate.
 
-- A predicate is not a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
+- A predicate is NOT a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
 
 
 # NOTES
+
+## \#2025-1104-1401
+
+These are notes on Quine's 1954 "Interpretations of Sets of Conditions". They are inspired by the recent popularity of Terrance Tao's 2009 note on completeness and (sequential) compactness: <https://terrytao.wordpress.com/2009/04/10/the-completeness-and-compactness-theorems-of-first-order-logic/>.
+
+It gives the step from Lowenheim and Skolem's theorem that each consistent set of quantificational schema has a (true) numerical interpretation, i.e. each set of schema of predicate logic which has a true interpretation has an interpretation of its predicate letters in a theory of natural numbers, to the construction of such an interpretation (which is Hilibert and Bernay's accomplishment).
+
+"The case of finite S can be accommodated by supposing repetition, say with arbitrary reletter of bound variables, from the last schema onward." 
+
+Simplifying assumptions are made to leverage the following principle: any conjunction of closed and prenex schema with distinct quantifiers is equivalent to the concatenation of their quantificational parts with the conjunction of their nonquantificational parts. (Generality is kept by universal closure equivalence and interchange of equivalents of alphabetization and passage.)
+
+Two definitions are needed:
+1. the prime power product of a sequence of n+1 numbers is the product of the n-th prime to the power of the n-th item of the sequence with the prime power product of the first n numbers of the sequence. The prime power product of the empty sequence is one.
+2. each existential of a Kleene (substitution) sequence of a list of quantifiers is assigned the prime power product of the count of its prior existentials concatenated with the sequence of values assigned to its prior universals. The values of universals index Kleene sequences lexicographically.
+
+Assume the first schema begins with a universal quantifier so that appropriate Kleene sequences exist.
+
+
+## \#2025-1104-1340
+
+This is an administrative entry.
+
+Hilbert-Bernay's completeness, or its Lowenheim part, is found in volume 2 pages 234-253 of their 'Grundlagen'. It has yet to be translated into English, and is one of the main reasons that I must learn German. As Quine says in the 4th edition of "Methods of Logic": "a strengthened version, more simply proved, see Kleene, 1952, pg. 394, theorem 35". This is Kleene's famous "Introduction to Metamathematics".
+
+What Quine neglects to mention on that page is that an even more readable version can be found in his own poorly named paper "Interpretations of Sets of Conditions" from 1954. The title is not inaccurate. It is poorly named because unless you know exactly what he's talking about, 'interpretation' is the crux, it does not give a hint as to what is to be shown. It is perhaps a consequence of merely exposing an old argument to a newer crowd that he gave it this drab title. Whatever his reasons, we still live in a world that has yet to embrace the import of Hilbert and Bernay's work even a century later.
+
+B. F. Skinner made great use of the history of the cure to scurvy whenever he mentioned the metaphorical distance between discovering and adoption e.g. 200 years from citrus curing scurvy being recorded on captains books to requiring that ships sail with citrus.
+
+I must show how Hilbert-Bernay's completeness works. At the same time I must also complete two other projects that have appeared here lately (not to mention all the others that are in the works but which I always planned to take a very long time in between the emergence of relevant projects such as these). The first is the notes on Brad Nelson's colorForth bootstrapped with C and Moore's uhdForth. The second is the contingencies of mathematics for the design of a program of instruction in math (and logic).
+
+I can simplify the colorForth and uhdForth tasks by first completing the introduction of compound gray words to my programming environment (aka the programmable program) and by reducing all loops to the one loop of the scheduler. This is because the logic of Brad and Chuck's methods are bound up with the same problems and it is easier to interpret their work when I've done more of my own.
+
+Hilbert and Bernay's completeness has come up because an old post of Terry Tao's <https://terrytao.wordpress.com/2009/04/10/the-completeness-and-compactness-theorems-of-first-order-logic/> stumbled upon what he calls 'sequential compactness' and which is substantially Quine's 'law of infinite conjucntion'. They are both about the existance of interpretations of schema of predicate logic. My contribution is to be that the shift from Hilbert and Bernay's completeness in terms of the arithmetic of natural numbers to the arithmetic of ordered pairs may greatly simplify the links between compactness, completeness, and the scope and limits of consistency i.e. validity.
+
+Finally, there is the extension of all of these results to predicate functor logic.
+
+Since I am most interest in Hilbert and Bernays completeness at this moment, I shall begin by taking notes on Quine's "Interpretation of Sets of Conditions".
 
 ## \#2025-1103-1456
 
