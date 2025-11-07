@@ -47,7 +47,7 @@ Journal your thinking and feeling.
 
 1. Predicates denote or don't (are true or false of) where they occur (Aristotle); 
 2. grammar generates categories from constructions on lexicons (Frege, Hilbert, von Neumann);
-3. substitutions of lexicon for (supplemented) lexicon in validities denote everywhere (Quine); and 
+3. substitutions of lexicon for (supplemented) lexicon in validities denote everywhere (Quine, Hilbert & Bernays); and 
 4. denotata are inherited (Tarski) alethically, i.e.
     1. joint denials denote where and only where (waow) each of their components don't (Peirce, Sheffer),
     2. existential closures denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
@@ -126,6 +126,14 @@ Journal your thinking and feeling.
     9. i-irreflexivities are inclusions of their component with i-nonidentities.
     10. i-totalreflexivities are inclusions of i-identities with their component
 
+## HOW VALIDITY, CONSISTENCY, IMPLICATION, AND EQUIVALENCE WORK
+
+Predicates are 
+1. valid, recall, waow each substitution of lexicon for supplemented lexicon in them, i.e. suplemented lexical substitution (SLS), denotes everywhere,
+2. consistent waow their negation is nonvalid (some of their SLSs denote somewhere), 
+3. implied by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) is nonconsistent (each of their SLSs denotes where the same of the other does), and
+4. equivalent to others waow they are mutually implicative (each of their SLSs denotes waow the same of the other does).
+
 ## HOW PREDICATE ABSTRACTS WORK
 
 1. The English relative clause 'who loves Dick' and the pidgin 'x such that x loves Dick' are uniformly paraphrased by the *predicate abstract* '{x: x loves Dick}'.
@@ -151,6 +159,135 @@ Use a thermometer.
 
 
 # NOTES
+
+## \#2025-1106-1532
+
+Don't forget the Boolean Prime Ideal theorem: it appears to be the most effective access point to compactness results. <https://en.wikipedia.org/wiki/Boolean_prime_ideal_theorem>
+
+## \#2025-1106-1427
+
+Added hint on how consistency, implication, and equivalence work. All it does is to give their definitions from a restatement of the definition of validity as each supplemented lexical substitution denoting everywhere. This was done in response to writing my notes on Quine's 1954 "Interpretation of Sets of Conditions" because there is, in general, a great deal of confusion over terminology throughout logic and mathematical logic. The problem is twofold: 1) people do not know about the grammatical definition of validity, 2) people do not know the consequences of Hilbert and Bernays completeness theorem.
+
+In particular, modern texts in mathematical logic are obsessed with proofs and models as if they are the only methods by which logic proceeds. The assumption of a surrounding set theory is also so prevelant that it precludes itself almost overtly, but in the end it sadly does not. While some are able to deftly distinguish between internal and external concepts (or whatever they are calling them today), this is not the same as a distinction between logic and mathematical logic which is where the error has occurred in their methods.
+
+## \#2025-1106-1315
+
+These continue notes on Quine's 1954 "Interpretations of Sets of Conditions" which shows how to construct an interpretation of a consistent set of quantificational schema in the theory of natural numbers as in Hilbert and Bernay's Grundlagen and later as in Kleene's Metamathematics and elsewhere. 
+
+The reason this is significant to me is because consistency is nonvalidity of negation and while Lowenheim and Skolem showed that there is some arithmetic interpretation of a consistent schema this does not imply or even suggest that such an interpretation can be constructed!
+
+To say that an arithmetic interpretation can be constructed is to say that for each predicate letter in a consistent schema there is a predicate in the theory of natural numbers (whose canonical lexicon contains just "sums" and "multiplies" as in "It sums this with that." and "It multiplies this with that.") which when each substituted for their corresponding predicate letter yields a compound predicate that denotes everywhere.
+
+I must emphasize that I say 'denotes everywhere' rather than "denotes each appropriate tuple of natural numbers" because it is a logical mistake to suppose there are items called 'natural numbers' above and beyond what is denoted by a given theory of arithmetic.
+
+This warning must be made overtly because its neglect has wasted the work of many lives. Whatever contempt some may have of Quine's simple definition "To be is to be denoted by a one place predicate" or his much more well known "to be is to be the value of a variable" (variables are where the problem started and their elimination eliminates all these problems outright), there is nothing to be gained from flatly rejecting his advice without providing a full supplement for what is subsequently lost from its denial. Much more is lost than most think, and I advise those who would deny it to act with vigor.
+
+Technically, Hilbert and Bernays constructed an arithmetic interpretation of *a* consistent schema and yet Lowenheim and Skolem say more: there is an arithmetic interpretation for any *set* of consistent schema. To be even more technical, Lowenheim showed that *a* consistent schema has an arithmetic interpretation and Skolem showed that any *set* of such had such. Note, Lowenheim implies that finite sets of consistent schema (what should more properly be called perhaps "itemized" sets) have an arithmetic interpretation since a conjunction is consistent if and only if each of its components are.
+
+Now the result Quine explains is a later generalization of Hilbert and Bernay's construction of an arithmetical interpretation of *a* consistent schema to the construction of an arithmetical interpretation of *a set of* consistent schema by Kleene (just as Skolem generalized Lowenheim from a consistent schema to a set of the same). It is not entirely like Kleene's (which is presented in his 1952 "Introduction to Metamathematics" i.e. Quine's paper was published two years later) in that it includes some of the methods of Godel's completeness theorem.
+
+More on Godel's completeness theorem can be found here <https://en.wikipedia.org/wiki/Original_proof_of_G%C3%B6del's_completeness_theorem>. The relevant events are these:
+1. Godel worked in Hilbert and Ackerman's 1928 texts "Grundzüge der theoretischen Logik" which is itself derived from Hilbert's lectures and notes. This text shaped how the rest of the world came into contact with the work of Frege and Russell e.g. von Neumann's 1927 response introduced schematic methods overtly to Hilbert's methods and these are the same we use to this day.
+2. Hilbert and Ackerman's 1928 text asked "Does validity imply provability?" to which Godel's completeness theorem is a positive response. Here, validity can be taken as truth under each interpretation of predicate letters, and proof can be taken as the existence of an item in the theory of proof (as a theory of, e.g., protosyntax or calculus) of Hilbert and Ackerman's book. It is important to recall that Tarski's model theory did not appear until 1954 as a theory of interpretation which limits the substitution of predicate letters in a schema to a predicate in a theory of classes/sets.
+3. Quine's exact method of proof in this paper is inspired by Godel's use of Skolem's implicit invocation of the compactness theorem as a lemma *to* the completeness proof. I believe it was as part of the extension of completeness to countable sets of formula.
+
+Now a note on compactness and completeness. Under Quine's main method, compactness and completeness are made as close as their equivalence appears to allow (thus far). In the 4th edition of "Methods of Logic" Quine presents compactness as 'the law of infinite conjunction': "an infinite class of truth functional schemata is consistent if each of its finite subclasses is." In other words, if for each finite subset of schemata there is an interpretation which makes each of them true, then there is an interpretation which makes each of the schemata in their union true.
+
+Since any collection of schemata is at most countably infinite in a regular language (one with a finite lexicon) it is a bit over exuberant to say "infinite class", but, in fact it is not. Quine's proof of the law of infinite conjunction makes clear how the law is indifferent to langauges with a potentially infinite language. Whereas Quine's proof assumes an at most countably infinite lot of sentence letters, any language with a well ordered set of predications (that is concatenation of a predicate letter with a fixed number of variables, here we may say tuples of a well ordered set of variables and use the methods of a free logic like Quine advocates for, or contemplate only those predications of a predicate letter with tuples of constants the set of which is well ordered as well) admits of a similar construction as Quine's by transfinite induction.
+
+What does all of this have to do with Hilbert and Bernay's completeness? All of these problems are sidestepped in that one way or another they end up working in a way equivalent to mechanical substitution (as much as mechanical substitution fits in their theory of arithmetic, which if it doesn't then there are bigger problems to solve). The reasoning is a bit remote because it requires that you trace your work through the theory whose predicate logic gives you definitions of terms like 'finite', 'countably infinite', 'uncountably infinite', 'transfinite induction' etc. This is something that is rarely if ever done except perhaps by Hilbert and Bernay's. I am told that this is actually done often in automated proof systems, but I have yet to find an explanation of such that I can grasp.
+
+Quine's exposition ends with a proof of Hilbert Bernay's completeness as a special case of the construction of an arithmetic interpretation for any countably infinite class of consistent schemata. In this form it happens to be a proof of completeness of Quine's main method that is "constructive".
+
+---
+
+The principle that
+
+- any conjunction of closed and prenex schema with distinct quantifiers is equivalent to the concatenation of their quantificational parts with the conjunction of their nonquantificational parts
+
+primes these preliminary steps of Quine's proof:
+
+1. if the set of schemata is finite then it is extended to a countably infinite set by including redundantly equivalent reletterings of their quantifiers
+
+2. each schemata is interchanged with its equivalent universal closure
+
+3. each schemata is interchanged with its equivlaent prenex form (where all quantifiers are out infront of a truth function of its component predications)
+
+4. each schemata is interchanged by its equivalent alphabetized relettering so that no two quantifiers of any such schemata are identical.
+
+The last step imposes an overt order upon the schemata: two appropriately relettered schema are such that the letters of the quantifiers of the one are all alphabetically prior to those of the other. If the first schema does not begin with a universal quantifier then interchange it with an equivalent one that does and reletter each of the subsequent schema appropriately i.e. so that the newly introduced schema remains the first even after the relettering (e.g. prepend the universal quantifier whose variable is a letter alphabetically after each of the letters of the other quantifiers in it and reletter the second, third, fourth, .. schema accordingly).
+
+Supplemental definitions:
+
+1. The *prime power product* of a sequence of n+1 numbers is the product of the n-th prime to the power of the n-th item of the sequence with the prime power product of the first n numbers of the sequence. The prime power product of the empty sequence is one.
+
+2. Each existential of a *numeric substitution sequence* (NSS) of a concatenation of quantifiers is assigned the prime power product of the count of its prior existentials concatenated with the sequence of values assigned to its prior universals. The values of universals index NSSs lexicographically.
+
+3. The *n-th numeral substitution of the first m schema* is the substitution, in the conjunction of their nonquantificational parts, of its variables for the corresponding numerals of the n-th numeric substitution sequence of the concatenation of its quantificational parts. The *n-th numeral conjunction* of the same is the conjunction of their first n numeral substitutions.
+
+4. A *numeral predication* is the concatenation of an n place lexical predicates with n numerals. An ordering of the lexical predicates together with the lexicographic ordering of concatenations of numerals orders the numeral predications.
+
+5. Each numeral conjunction is a truth function of numeral predications.
+
+6. An assignment of truth values to the first n numeral predications is *dirty* if some numeral conjunction reduces to falsity under it, otherwise it's *clean*.
+
+7. The n-th numeral predication is assigned truth if and only if there is an earliest clean assignment that assigns truth to it.
+
+8. Numeral predications are assigned truth under the *numeral interpretation* if and only if there is an earliest clean assignment that assigns truth to them.
+
+Each schema in a consistent set is assigned truth under the numeral interpretation.
+
+## \#2025-1105-1732
+
+It is definitely well past the time when I should have written about the fundamental contingencies of mathematics. These are the things that you have to worry about if you're trying to make an effective program of instruction in mathematical behavior. This is not a program of instruction though. This is just a description of the contingencies. So what are contingencies and what is a program of instruction (because the way that I've used them seems to have a formal or special meaning, because they do!).
+
+A contingencie is a consequence from a response on an occasion. The simplest and most classic example is a door opening from a push on a button or, to get even more ancient and classical, food from a tap on a disc. More complex examples are
+1) an electron from a photon on an atom
+2) an increased heart rate from a kiss on a cheek
+3) metabolism from sunlight on a plant
+
+and so on. These are way more complex than they might seem. Contingencies are everywhere and they happen on all sorts of time scales e.g. in nanoseconds or eons! The contingencies of mathematics that are relevant to an effective program of instruction are just those that shape up mathematical behavior (and all the thinking and feeling that go into it).
+
+I don't want to spend too much time on the abstract principles of contingency analysis, but I do want to make it clear that a program of instruction is just a collection of contingencies of reinforcement. The things that we do when we do math are responses the fit into the contingencies of mathematics.
+
+Almost all of the fundamental contingencies of mathematics can be organized from the contingencies of counting. Broadly, the responses in the contingencies of mathematics are constructed verbal behavior. Counting is the canonical example of a repertoire of constructing effective verbal behavior under the control of the contingencies of mathematics.
+
+It is difficult, if not impossible, to explain the contingencies of mathematics without assembling the definitions of the contingencies of verbal behavior generally. Mathematical behavior is often, if not exclusively, a very special kind of verbal behavior on par, if not inseperable from, scientific and logical behavior.
+
+Verbal behavior is a special kind of social behavior. Social behavior is a special kind of operant behavior and operant behavior is behavior whose response rates are changed by their consequences. There are more detailed and technical definitions for each of these terms. These technical definitions take into account the contributions of natural, operant, and social selection by consequences. A bit of behaving biology is the result of natural selection. Operant and social selection are special consequences of natural selection. The contingencies of survival do the selecting on biological scales and the contingencies of reinforcement do the selecting on behavioral scales. There are not so many technical terms for the social scale because social behavior and the practices they compose have hardly undergone an experimental analysis.
+
+Social behavior, like any other behavior, can be analyzed with respect to the ontogenic and phylogenic contingencies that selected it. When we distinguish between operant and respondent behavior where respondant behavior is such that its responses almost always follow their characteristic occassion (e.g. a kick of the leg from a tap on the knee) we are making a distinction between the contributions of operaent and phylogenic contingencies. Pavlov showed that the stimulus characteristic of a response in respondent behavior can be pair with another which was not present during the evolution of the bit of biology behaving respondently. A full description of the respondent behavior of an organism thus includes the history of consequences during the life time of the organism and the life time of the species.
+
+Since there is little within the vernacular to rely upon when making the distinctions necessary to deal well with behavior, there is little to be gained from leaning on metaphors. This is especially the case when solving those problems which seem to be most pressing at the moment. There are two options available to the expositor: be sufficiently vague, that is sufficiently imprecise, so that there is no mistake made in the descriptions provided, or assemble a carefully constructed and interlocking system of technical terms for making the exact distinctions uncovered by an experimental analysis.
+
+My methods have always tended to emphasize the technical terms because these are the sharp lines which sketch out the boundary between our best science and our worst pseudoscience. While I am now allowing myself to be woefully imprecise, I am still ultimately only able to do so after constructing the tight technical terms that interlock into a network of logical strength.
+
+While I have collected such technical terms elsewhere, I have not collected them in these notes, and that is a sadness that must be corrected before I can deal well with a public presentation of the contingencies of mathematics.
+
+As with almost every other note there, it will take some time to ultimately accumulate what is necessary to make a short and punchy memo.
+
+I still have yet to write a single memo. This is not because they are not forthcoming, it is rather because they set a high bar that is worthy of their status. When people read a memo they only want to know what they need to know to deal with the problems which presently present themselves. There is no time nor no interest in anything more elaborate or discursive. These notes are the last thing that anyone looking for a memo wants to read.
+
+I continue the work I do here because I have a history of finally assembling exactly what is needed in order to deal with the problems that consume me. These are sometimes problems that other people have solved, but they are now almost exclusively problems for which there are not yet any effective solutions (though many have made clean claims otherwise).
+
+As a last comment, these notes are the hack and slash of an adventure. This is the jungle. This is the blizzard. This is the hurricane of trouble that one gets into when facing the world and its pains.
+
+## \#2025-1104-2321
+
+It occurred to me that I can solve the 'rewind' problem with complex gray words and include another key effect of slotted instructions utilized by Moore in the design of the GA144 and its individual chiplet computers.
+
+```
+push(); // more?
+if(isTopNil()){ // no more, rewind
+  nil(); // prime the pump
+  while(isTopNil()){ drop();
+    push(); part(); swap(); pop(); pair(); push();
+    if(isTopNil()){ nil(); pair() }
+    else{ nil(); }}
+  drop(); pop(); pop();}
+```
+
+But this starts to get a bit heavy handed when inserted into the monolithic implementation of the programming environment. It also may not solve the problem I'm actually having. But something like it seems likely to be part of the solution I'm looking for.
 
 ## \#2025-1104-1401
 
