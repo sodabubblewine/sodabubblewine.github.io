@@ -160,6 +160,238 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1109-1335
+
+Some neat notes on the model theory of arithmetic by Tin Look Wong from 2014/2015 at the Kurt Gödel Research Center
+
+- <https://blog.nus.edu.sg/matwong/teach/modelarith/>
+
+In the third lecture Wong mentions that arithmetic and finite set theory are biinterpretable (the same as Quine in a theory of concatenation and arithmetic).
+
+- <https://bpb-us-w2.wpmucdn.com/blog.nus.edu.sg/dist/4/10956/files/2022/06/3_wkl.pdf>
+
+This is all relevant because the weak konigs lemma over the base theory of RCA (recursive comprehension axiom) is equivalent to the arithmetized completeness theorem (the standardized version of Hilbert and Bernay's completeness). This is discussed in the fourth lecture:
+
+- <https://bpb-us-w2.wpmucdn.com/blog.nus.edu.sg/dist/4/10956/files/2019/01/4_act-rox33b.pdf>
+
+I need to write down all the sources I've been stumbling upon while trying to figure out the details of a simplified and accessible version of the arithmetic completeness theorem.
+
+Metamathematics of first order arithmetic
+<https://projecteuclid.org/ebooks/perspectives-in-logic/metamathematics-of-first-order-arithmetic/toc/pl/1235421926>
+
+## \#2025-1108-1258
+
+These are notes on chapter 14 of Kleene's "Introduction to Metamatheamtics" (IM). Specifically, they are on section 72 "Godel's completeness theorem" and are aimed at uncovering all the moving parts involved in the proof of Hilbert and Bernay's completeness.
+
+With the help of Quine's "Interpretations of Sets of Conditions" (ISC) I have been able to read Kleene with a new kind of clarity. It has revealed that Quine's proof of completeness does not reach the result now known as "arithmetized completeness".
+
+A direct and simple proof of Arithemtized Completeness has not yet appeared in the literature that I have access to (and I must mention this because there is only so much that I can get at from my self imposed isolation). Quine's proof of the law of infinite conjunction in "Methods of Logic 4th ed." (MOL) carries out the proof from his ISC. In MOL he emphasizes that the method of proof is "not constructive". He does not do the same in ISC.
+
+The phrase "constructivity" is like "formalism" in that it does not yet have a canonical theory with a canonical predicate logic. I support something like Fefferman's "Finitary Inductively Presented Logics" (FIPL). In particular, I support the introduction of a theory of formalism that is indistinguishable from an appropriate theory of arithmetic.
+
+This is something like Kleene's "metamathematics as a generalized arithmetic" (the title of section 50 of chapter 10 of IM). Hilbert and Bernay's enhanced Godel's numbering into a general method of numeric interpretation. Kleene's "generalized arithmetic" abstracts from strictly numeric methods. It is what we might now call a multiple successor arithmetic with multiple zeros. In that way it is as Kleene says "Herme's 1938 considers an arithmetic with the empty expression as the zero, and the operations of suffixing one of the formal symbols as the successor operations" (IM pg. 246).
+
+Goodstein mentions multiple successor arithmetics in his "Introduction to Mathematical Logic" (IML) in his chapter on primitive recursive arithmetic. Whether we look to Hereme, Kleene, Goodstein, or more directly to Skolem, it is through Rózsa Péter's "Rekursive Funktionen" that the life blood of Hilbert and, mostly, Bernay's "Grundlagen der Mathematik" (GM) and Hilbert and Ackermann's "Grundzüge der theoretischen Logik", Herbrand and Godel, and, dare I say, Frege's "Begriffsschrift" made its way into our world full of programmable machines. The role of Russell (and Whitehead) in all of this is the reminder that whatever is done in logic through mathematics is subject to the theory of mathematics we do it in and, most importantly, *its* logic.
+
+While MOL makes it methodologically clear that predicate logic is *the* logic (in that cooperation and coordination of action is unavoidably intertwined with the methods of logic), he does a much better job of dealing with the general problem of logic in "Philosophy of Logic 2nd ed." (POL). For those who know of Quine only as that snob who said all was set theory and the rest of the world of mathematics be damned, I strongly recommend they read the later parts of POL and the later part of the introductory chapter to MOL. Quine was stubburn, but where he disagreed with Carnap he was onto something fundamental. That fundamental thing was in front of him and he sometimes noticed it, but never quite got it. It is the role of the science of verbal behavior in logic and science (or, concretely, theory and experiment, or, even more concretely, libraries and laboratories).
+
+Kleene's work is governed by the swirl of history that surrounded him, and he worked hard to slather himself in honey and roll around the floor of the jungle that is mathematical logic.
+
+Kleene's generalized arithmetic is essentially that of Feferman's FIPL. The difference is that Kleene didn't have the history of conspicuous consequences uncovered by LISP programmers to lean upon. All he had were Rózsa Péter's results (he had Hilbert and Bernay's too, and Godel and Herbrand's). The difference between them is largely the inclusion of what is substantially Godel-Bernay's set theory. The introduction of set theoretic simulations in FIPL is seen by me as a misstep. Well founded trees are made of sturdier stuff.
+
+---
+
+My ultimate reasons for diving deep into the thickets of these often complex theorems is to unearth the origins of their complexity and to eliminate it as much as possible. I see the complexity as a pain which is alerting the world to a learning opportunity. What I submit we shall learn is that our canonical principles of arithmetic are to be conditioned on completeness and not on our first touch with, e.g., counting. I submit that counting is obviously included in such an arithmetic, and point to the strengths of a programming language like LISP as a concrete example. The strength of LISP comes from its arithmetic of binary trees. We have already seen how much stronger is a world where bit strings prevail. I would like to see a world where binary trees supercede bit strings. It is no secret that I submit that the arithmetic which comes from simplifying completeness is that like the primitive recursive arithmetic of binary trees.
+
+The theorems, lemmas, and corollaries of Kleene's IMT are marked by notation which distinguish whether the result holds in an intuitionistic logic or "classically":
+
+1. "In terms of the derived rules of Theorem 2, this means replacing negation elimination by weak negation elimination. When we wish to consider this system also, we call the original system with Postulate 8 the *classical system*, and teh system with Postulate 8[superscript I] instead the (*corresponding*) *intuitionistic system*. Our results are marked with teh symbol "[supersctipt circle]" in every case when the demonstration we give is not valid for both systems, but only for the classical (and no demonstration which the reader is expected to discover for himself is available for the intuitionistic system)." IMT 101
+
+2. "For later reference, we summarize our present conclusions in a theorem and corollary, which we mark with the letter "[superscript C]" to show that they do not belong to our sequence of metamathematical theorems, but are only established here by use of non-finitary classical methods. Although we are using 'set-theoretic' for the present kind fo predicate logic, some of teh results are only on the level of classical number-theory;" IMT 176
+
+The distinctions made are critical. In light of Quine's later work, it is important to make these distinctions more sharply and simply. When we speak of predicate logic we do so in the same way that the radical behaviorist speaks of verbal behavior. The practices of predicate logic are special kinds of verbal practices. When we speak of "intuitionistic (theoretic) predicate logic" or "number theoretic predicate logic" or "set theoretic predicate logic" we are speaking through the the science of verbal behavior of the science of verbal behavior.
+
+It is a mistake to speak of 'meta' as 'self-referential'. That is the mistake of the modern world. The original Greek is "beyond" or "after". Aristotle spoke of 'metaphysics' (if he ever spoke of it as such at all) as in "after physics" i.e. after introducing physics this is the next thing.
+
+Said another way, rather than think of 'speaking thru the science of verbal behavior of the science of verbal behavior' as 'speaking of the science of verbal self-referentially' (whatever that may come out to for you) think of it as "speaking of an even more narrow kind of verbal behavior that is even more narrow than scientific verbal behavior and is entirely limited to only that science which has as its subject verbal behavior". The way in which we come to the science of verbal behavior is not the same as the way we come to the science of the science of verbal behavior. The latter has a history which the former entirely lacks.
+
+The key, in any case, is "beyond" or "after" and NOT "above" or "within". I must admit that the English language is so heavy laden with phrases that make mention of 'feedback' and 'self-reference' that I can not often avoid making metaphorical mistakes myself.
+
+I have found it helpful to point up the methods by which we are taught predicate logic as a way of getting at the difference between speaking under the control of predicate logic and speaking otherwise.
+
+We can speak of a theory without speaking of its predicate logic, and this is most often what we do on our initial approach to predicate logic (because we are unable to speak other than what our history has already selected and predicate logic is not an overt part of that history in this contemplation). What Kleene calls "metamathematics" is a theory of predicate logic which is sometimes supplied with its predicate logic and sometimes not. When specifying "number theoretic predicate logic" we know that the predicates of this theory of logic include "adds" and "multiplies" as in "This adds it to that" or "It multiplies this with that." When specifying "set theoretic predicate logic" we know that the predicates of this theory includes "classes" as in "This classes that.", or, more familiarly but more obliquely, "in" or "belongs to" or "is a member of" as in "This is in that.", "This belongs to that.", and "It is a member of this."
+
+I hope these things are made clearer to me from this work.
+
+The theorem of Hilbert and Bernay's is given on page 394:
+
+"Theorem 36[superscript circle]. The addition to the postulate list for the predicate calculus of an unprovable predicate letter formula G for use as an axiom schema would cause the number-theoretic system as based on the predicate calculus and Postulate Group B( section 19) to become omega-inconsistent (section 42). (In fact, a certain formula would become refutable which expresses a true proposition of the form (y)D(y) where D(y) is an effectively decidable predicate.) (Hilbert-Bernay's Completeness theorem, 1939)." IMT 395.
+
+Omega-inconsistency is something which Quine was suspicious of e.g. in "Omega-Inconsistency and the Infinite". The inspiration in that paper was due to a lack of proof that the empty set was not a member of the Frege numerals in Quine's Natural Foundation. It was later proved, but the comments on the terminology of "omega-consistency" and "omega-inconsistency" remain relevant. The term Quine substitutes for "omega-inconsistency" is "numerical insegregativity": 
+
+"The property of numerical insegregativity may be restated intuitively thus: *every sentence phi which is demonstrably true of all natural numbers (i.e. numerically general) is also demonstrably true of something else (i.e. 'some item is (x such that x is phi and x is not psi)' is demonstrable for some numerically general psi).* In such a system there is no proper translation of 'is a natural number', but only an infinite series of better and better approximations." Quine's "Selected Logic Papers Enlarged Edition" pg. 118-119
+
+The term Quine picked is terrible. Even reading it on the page is a chore. It's also unclear if there is anything to his claim about the predicate 'is a natural number'. His invocation of it is an echo of Russell's "Introduction to Mathematical Philosophy". There is at least some tiny thing to his talk: 'non-standard model' is not to be accepted as a kind of final judgement.
+
+Back to articulating Kleene's statement of Hilbert-Bernay's completeness with greater self-sufficiency. First, what is "the number-theoretic system as based on the predicate calculus and POstulate group B (section 19)"?
+
+Section 19 is title "Transformation Rules". These are common to anyone familiar with calculi and so called "deductive" systems. Their origin is in Hilbert's work on Frege's logic. While Kleene goes out of his way to make some distinction between the methods of logic and the particular methods presented in this chapter titled "A Formal System", there remains great confusion among modern matheamtical logicians (and especially those who call themselves "computer scientists" or "computational theorists") between math and logic.
+
+The items contemplated, the ones subject to transformation rules, are concatenations. They are better taken as in Quine's later editions of "Mathematical Logic" or in his paper "Concatenation as a Basis for Arithmetic". What is here called 'a formal system' is a theory of what Quine called 'protosyntax', and what we can now simply call "a theory of concatenation".
+
+The lexicon of a theory of a concatenation puports to have a single predicate 'concatenates' as in "This concatonates it with that." As Quine shows most clearly in "Concatenation as a Basis for Arithmetic" predicates which are true of finitely many concatenations can be quoted by a single concatenation (what is familiar to programmers as the method of "comma-seperated values" or "CSVs" and is a well worn plain-text way of dealing with tables of values) in a theory of concatenation with at least two non-empty items (a concatenation is empty if it concatenates itself with itself). Such theories of concatenation are rightfullly called bit string theories after the zeros and ones of an information theoretic outlook on computation with registers as concatenations of fixed length.
+
+The transformation rules of such a formal system are then predicates which compose what some modern mathematical logicians call "the consequence relation". It is not a relation, it is, most often, a complex predicate of a theory of concatenation i.e. it is a truth functional and quantificational combination of the three place predicate 'concatenates'. The consequence predicate is usually written using notation descendent from Frege's turnstile and Russell's adaptation of the same. For this reason it is to be deplored. Both Russell and Frege were unable to adequatly distinguish between use and mention in their commentary. Both Russell and Frege are redeemed for this mistake in that dropping their commentary (Frege's in Begriftshrift and Russell's in Principia) leaves a presentation which respects the methods of semantic ascent (Quine's term for the generalization of the methods of quotation and disquotation i.e. semantic ascent and descent).
+
+But, there is nothing we can do about it now except to always take time to warn future readers of the pitfalls of the turnstile. The double turnstile is then introduced as a kind of semantic parallel to the syntactic commitments of consequence. That there is even a consequential distinction between the term 'syntax' and 'semantics' is brought into question by the very theorem under investigation here. Hilbert and Bernay's completeness purports to dismantle "constructively" any such distinction: they are interconvertable and logically indistinguishable methodologies. Walter Dean's 2017 "Bernays and the Completeness Theorem" goes into this more deeply. MOL takes it to heart and is presented with respect to such a disollution. POL goes into much greater detail on the most general consequences.
+
+So to get to it.
+
+> "Postulates for the formal system.
+>
+> Dramatis Personae. For Postulates 1-8, A, B, and C are formulas. For Postulates 9-13, x is a variable, A(x) is a formula, C is a formula which does not contain x free, and t is a term which is free for x in A(x).
+>
+> Group A. Postulates for the predicate calculus.
+> 
+> Group A1. Postulates for the propositional calculus.
+>
+> 1a) A only if (B only if A)
+>
+> 1b) (A only if B) only if ((A only if (B only if C)) only if (A only if C))
+> 
+> 2) B is an immediate consequence of A with (A only if B)
+> 
+> 3) A only if (B only if (A and B))
+>
+> 4a) (A and B) only if A
+>
+> 4b) (A and B) only if B
+>
+> 5a) A only if (A or B)
+>
+> 5b) B only if (A or B)
+>
+> 6) (A only if C) only if ((B only if C) only if ((A or B) only if C))
+>
+> 7) (A only if B) only if ((A only if not B) only if not A)
+> 
+> 8[superscript circle]) (not not A) only if A
+>
+> Group A2. (Additional) Postulates for the predicate calculus.
+>
+> 9) (C only if each x is such that A(x)) is an immediate consequence of (C only if A(x))
+>
+> 10) (each x is such that A(x)) only if A(t)
+>
+> 11) A(t) only if some x is such that A(x)
+>
+> 12) ((some x is such that A(x)) only if C) is an immediate consequence of (A(x) only if C)
+>
+> Group B. (Additional) Postulates for number theory.
+> 
+> 13) A(0) and ((each x is such that (A(x) only if A(x'))) only if A(x))
+> 
+> 14) a'=b' only if a=b
+>
+> 15) not a'=0
+>
+> 16) a=b only if (a=c only if b=c)
+>
+> 17) a=b only if a'=b'
+>
+> 18) a+0=a
+>
+> 19) a+b'=(a+b)'
+>
+> 20) a.0=0
+>
+> 21) a.b'=(a.b)+a
+
+
+
+
+
+
+## \#2025-1108-1249
+
+I like to see how it's all going to end. More than that, I want to see how it gets there. What happens between now and later that makes all the pieces fit together? What makes it click?
+
+I start taking notes and end up reading and reading and reading. Maybe I'll come back later and take some more notes. The moment I do, the moment I flip to that page, I make a few remarks and then I'm off to reading and reading and reading.
+
+Reading for me is a lot like thinking through soemone else. When you read math, you're in touch with the same things the thinker touched. Its right there on the page. You're on the adventure with them even though they may be half a word away or half a millenia dead. It is the best of fiction and the best of matters of fact. The laboratory of the mind is before you.
+
+Religions are no better than governments or economic systems. We the hints we get from science more than anything. Logic and science are both the most well known access points to truth. Revelation, law, and utility are mists. They becloud the interconnected network of theory and experiment that leverage and release human potential.
+
+Leaders and followers are both locked into a culture of control which looms beyond them both. That we can take control of the controlling environment is the closest thing to a blessing bestowed upon us. We may thank natural selection though it is indifferent to our praise in precisely those ways which made us us.
+
+## \#2025-1107-1831
+
+Upon flipping back and forth between Quine's "Interpretation of Sets of Conditions" and the chapter on the completeness of his main method from his "Methods of Logic 4th Edition", *and* the later chapter of Kleene's "Introduction to Metamathematics" which contains an outline of the proof of Hilbert and Bernay's completeness, I am no longer convinced that Quine's presentation establishes anything like Hilbert and Bernay's completeness as I had hoped.
+
+## \#2025-1107-1123
+
+R. L. Goodstein's Theory of Constructive Formalism has not yet been given a proper logical analysis. Although one of his students wrote their thesis on the metamathematical properties of multiple sucessor arithmetics as they were called then, there has not been much of a modern approach to it all.
+
+Goodstein's Constructive Formalism is presented as what he calls an equation calculus. It is a calculus in that if it were formlized without further reflection it would be, as with any other calculus, a subtheory of Quine's protosyntax. That is, appropriate predicates in a theory of concatenation with at least two distinct atoms is sufficient and necessary for dealing with the "constructions", i.e. the equations, that he presents.
+
+For a long time I was stuck with his methods as a calculus and saw the methods of logic as something derivative from that. This is the outlook promoted by modern type theorists. They are unable to see the difference between logic and mathematical logic, and thus can substitute mathematical logic for logic wherever logic itself doesn't fit their intuition. This is a dangerous road to walk down. It misled me far longer than I would like to admit.
+
+First let me present Goodstein's methods as he gave them. The entirety of his program is layed out in 1951 "Constructive Formalism: Essays on the Foundation of Mathematics". As a publication it is a collection of his conclusions from earlier papers. I am not in the mood to search each of his papers out and list them here. It should be easy to do so with today's technology, but it isn't. Like every other bit of science that was written down and scanned into the computers of the internet, there are an endless number of hoops, traps, and detours that one must take before reaching the most basic data. I hope future generations look up on these times as the dark ages because of how foolishly destructive are our self imposed social practices.
+
+Though he revised the exact 'inference rules' which generate the equations of his calculus over time, they are substantially what he presented in 1957 "Recursive Number Theory". Chapter 5 of that book is titled "Formalisms of Primitive Recursive Arithmetic" and there the materials of his calculus are assembled.
+
+Before quoting the set up, some context may help to explain the significance of Goodstein's work. Goodstein was Wittgenstein's student. He was greatly influence by Wittgenstein's philosophy and his later philosophy in particular. The later philosophy had more to do with verbal behavior than the earlier work of the Tractatus. Wittgenstein's earlier works are to linguistics as his later works are to the science of verbal behavior.
+
+This confusion, between between language as the reinforcing practices of a verbal community and language as syntax and semantics, is largely responsible for the confusion between logic and mathematical logic. The confusion can be made overt by examining the arguments that are meant to support the mathematical logician. If they are not logical then they lack the appropriate properties of extensionality to support effective coordination and collaboration (that is, by their own standards).
+
+Goodstein's work follows immediately from Skolem's and very likely would have been strengthend by Herbrand's work had he not died from that ski accident. Without further ado, Goodstein's introduction to his equation calculus on page 104 of "Recursive Number Theory":
+
+"In this chapter we consider a codification of primitive recursive arithmetic in which the only axioms are explicit and recursive function definitions, and the only inference rules are the substitution schemata
+```
+F(x)=G(x)
+--------- Sb1
+F(A)=G(A)
+
+   A=B
+--------- Sb2
+F(A)=F(B)
+
+A=B
+A=C
+--- T
+B=C
+```
+where *F(x)*, *G(x)* are recursive functions and *A, B, C* are recursive terms, and the primitive recursive uniqueness rule
+```
+F(Sx)=H(x,F(x))
+--------------- U
+ F(x)=H^x(F(0))
+```
+where the iterative function *H^x(t)* is defined by the primitive recursion *H^0(t)=t*, *H^(Sx)(t)=H(x, H^x(t))*; in the schema U, *F* may contain additional parameters but *H* is a function of not more than two variables. In Sb1, the function *G(x)* may be replaced by a term *G* independent of *x*, provided that *G(A)* is also replaced by *G*." Goodstein, Recursive Number Theory pg. 104
+
+All of this appears to be largely independent of the methods of logic e.g. without mentioning truth functional connectives like 'and' or 'not' or the quantifier 'something is x such that' or a lexicon of basic predicates like 'sums' as in 'It sums this with that', it appears that Goodstein has set up something mathematical. In fact, he goes on to *define* the truth functional connectives within his calculus, and to even prove *the deduction theorem* (which states that if one schema can be proved from another with the axioms then their conditional can be proved from the axioms alone).
+
+This is all a mistake of use versus mention e.g. the grammatical atoms 'and' and 'not' and the grammatical compounds constructed from them are not identical to an item like a truth function or its values (which when applied to tuples of truth values are identical to a unique truth value). Whatever notational expedience there is to calculating with tables of truth values (or, better, truth trees) is only as effective as it ultimately is shown to correspond to a method of logic e.g. in a consistent theory of truth predicates which also contains truth functions, following Russell and Tarski (and Quine), it is expected that the truth function said to correspond to the grammatical construction of conjunction assigns the value of truth to the truth values of components of a true conjunction. Without an argument that such is the case, there is no effective exchange between arguments in a theory of truth functions and arguments in a theory of truth predicates.
+
+Note, it is possible to construct "truth sets" which do the work of truth values, truth value assignments, and truth functions (and more!) which are made out of items from grammatical categories, but there you'll find a similar problem linking up use with mention. Now, there is a significant method which confronts this problem head on and it is outlined in Quine's paper "Immanence and Validity" where he contrasts the transcendent metatheoretic methods with immanent metatheoretic methods. While it is not entirely inappropriate to enter upon a further exposition on these differing methods, it is also not something I'm prepared to undertake at this moment.
+
+By way of concrete example, let me take the formalism as Goodstein has presented it and make overt its covert logic. Quine is the most vicious when it comes to repremanding those who confuse "is inferred by rules from' with 'is implied by' e.g. in the somewhat cryptic chapter 13 of "Methods of Logic 4th edition" titled "Axioms". To quote
+
+> "Lukasiewicz swore by axiomatic truth-function logic as a training ground for axiomatic method in more demanding domains. I swear rather by the sufficinecy, unto the day, of the evil thereof. Axiomatic logic, with its schemata and its specific rules of inference, is very unlike postfoundational axoim systems. Trainin in the latter , if wanted, is best sought as such. Its main component is training in the recognition or proof o implication, since implication is what relates postfoundational axioms to theorems; and such training is a pervading purpose of this book. There will be some specific notice of postfoundational axioms in Chapter 42 and 48. Meaningwhile I have included this brief account of axiomatic truth-function logic partly for contrast an dpartly because of the prominence of the subject in earlier literature." (pg. 88-89)
+
+where
+
+> "Axiomatic logic is one thing; the application of full-blown logic to extralogical axioms is another. The contrast between them is the contrast between what Sheffer called *foundational* and *postfoundational* systems. Foundational systems have their autonomous rules of inference; postfoundational systems just infer their theorems from their axioms by logical implication, deferring to logic for the analysis and the technology of that relation." (pg. 87).
+
+It is precisely on this point that I was lost and confused when I first confronted Goodstein's constructive formalism without having yet read Quine's "Methods of Logic 4th edition". Now I expressly speak of "premises" as sorta short for "postfoundational axioms". It is not appropriate, in my eyes, to speak of "postfoundational axioms". Let axiomatists keep their word. A word which Quine uses repeatedly, and which suggets the nature of axiomatic rules of inference, is "generation". It is a bit wider than "construction" and emphasizes the difference between "generating validities" establishing by logical methods if a schema (better, a sentence) is valid.
+
+So, to get concrete. What is a rule of inference? I can speak of a rule of inference within a theory of concatenation (such as Quine's theory of protosyntax) or, more specifically, a theory of bit strings. Alternatively, theories of ordered pairing or specifically theories of binary trees are where rules of inference are revealed to be special predicates which, when added to a consistent theory of truth of the theory said to be axiomatized, interlocks instructively with the reachable predicates of implication.
+
+Theories of axiomatization are ways of setting up the logic of formalism i.e. saying just exactly what it is that we're dealing with when we speak of formalisms. As long as the formalist avoids speaking in a predicate logic, there is little that can be said for or against what they claim except for the overt issues of extensionality e.g. we have no way of agreeing when two things are identical, we may substitute a true sentence for a true sentence in a compound and the latter may turn true when the former was false, or coextensive predicates may not denote each of the same items! It can be difficult to teach those unfamiliar with the methods of logic that extensionality is helpful and that it is lost when predicate logic is avoided or dropped. For those mathematical logicians who should know better, it should be enough to point to Lowenheim's theorems, but this does not often have the effect expected for the very reasons that are given by it!
+
+
+
+
 ## \#2025-1106-1532
 
 Don't forget the Boolean Prime Ideal theorem: it appears to be the most effective access point to compactness results. <https://en.wikipedia.org/wiki/Boolean_prime_ideal_theorem>
