@@ -160,6 +160,204 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1119-1214
+
+New diction of the history of ideas <https://ia601604.us.archive.org/35/items/NewDictionaryOfTheHistoryOfIdeas/New%20Dictionary%20of%20the%20History%20of%20Ideas%202005.pdf>
+
+Such a dictionary provides a testing ground for any effecitve theory of (social) behavior.
+
+## \#2025-1117-1445
+
+These are notes and quotes on theories and experiments of the science of behavior. One of the aims is to get out publicly the definition of verbal behavior as a special kind of social behavior in a way that solves the problems of Skinner's idiosyncratic (and ultimately necessary) definitions in "Verbal Behavior".
+
+1. Just like a sewing machine selects teh practices of sewing so do cumulative recorders, or their digital analog click-tickers, select the practices of science.
+
+2. A clickticker is a gray box with two buttons, one white and the one black, filled with a spool of gray tape such that when the buttons are pushed correspondingly colored dots are stamped onto the gray tape that ejects from the box.
+
+3. A dot on some tape comes out of a box from a tap on a key of matching hue.
+
+4. Colored dots on tape appear from taps on keys of matching hue.
+
+5. Trace a sequence of responses with a sequence of dots.
+
+6. Behavior appears on occasion. What is the probability that this behavior appears on this occasion?
+
+7. Calculate probabilities from rates and collect rates from records of repeated occurrences.
+
+8. Rates are a ratio of clicks over ticks.
+
+9. "We tend to say, often rashly, that if one thing follows another, it was probably caused by it-- following the ancient principle of post hoc, ergo propter hoc (after this, therefore because of this)" About Behaviorism (AB) pg. 10 by B.F. Skinner
+
+10. "many of the things we observe just before we behave occur within our body, and it is easy to take them as the causes of behavior" AB 10-11
+
+11. "We assume that other people feel as we feel when they behave as we behave." AB 11
+
+12. "what is felt or introspectively observerd is not some nonphysical world of consciousness, mind, or mental life, but the observer's own body" AB 18-19
+
+13. "It does not insist upon truth by agreement and therefore considers events taking place in the private world within the skin." AB 18
+
+14. How does the verbal community solve the problem of privacy? Science.
+
+15. "A natural datum in a science of behavior is the probability that a given bit of be3havior will occur at a given time." Contingencies of Reinforcement (COR) pg. 75 by B. F. Skinner
+
+16. "Social behavior may be defined as the behavior of two or more people with respect to one another or in concert with respect to a common environment." Science and Human Behavior (SAHB) pg. 297 B. F. Skinner
+
+17. "Behavior reinforced through the mediation of other persons" Verbal Behavior (VB) pg. 2 by B. F. Skinner
+
+18. "behavior reinforced through the mediation of other persons [who] must be responding in ways which have been conditioned precisely in order to reinforce the behavior of the speaker" VB 225
+
+19. "Verbal behavior is behavior that is reinforced throught eh mediation of other people, but only when the other people are behaving in ways that have been shaped and maintained by an evolved verbal environment, or language." Upon Further Reflection pg. 90 by B. F. Skinner
+
+20. "Verbal behavior is operant behavior whose properties are selected by the reinforcing action of a mediator on teh basis of their correspondence to the conventions of a community." Maria De Lourdes R. Da F. Passos "Skinner's definition of verbal behavior'
+
+21. "In the history of logic and science we can trace the development of a verbal community especially concerned with verbal behavior which contributes to successful action." VB 418 ch.18 logical and scientific behavior
+
+22. "The scientific community encourages the precise stimulus control under which an object or property of an object is identified or characterized in such a way that practical action will be most effective." VB 419
+
+23. "The scientific and logical community sharpens the discriminative control of verbal responses with classificatory schemes." VB 419
+
+24. "Generic extensions are tolerated in scientific practice, but metaphorical, metonymical, and solecist extensions are usually extinguished or punished." VB. 419
+
+25. "The contingencies of reinforcement which create a special scientific repertoire and sharpen its stimulus control provide for a kind of behavior which serves the listerner as (1) an optimally effective *discriminative stimulus* in evoking any behavior he may possess with respect to a situation and (2) a fruitful source of *instruction* in altering his behavior with respect to new situations." VB 420
+
+26. "The logical and scientific verbal community has slowly accumulated a set of techniques for the construction of effective verbal behavior. The speaker moves from one set of responses to a possibly more useful set." VB 422
+
+27. "Logical and scientific verbal behavior, as well as the practices of the community which shape and maintain it, have been analyzed in *logical and scientific methodology*. .. Three steps appear to lead to this sort of methodological inquiry: (1) some kind of verbal behavior, including appropriate relation and quantifying autoclitics, prove to have important practical consequences for both speaker and listner, (2) the community discovers and adopts explicit practices which encourach such behavior" VB 430
+
+28. The voluptuary (sybartic) solution: "Reinforcement is maximaized while the unfortunate consequences are either disregarded-- on the principle of eat, drink and be merry for tomorrow we die-- or prevented." COR 51
+
+29. "It is not difficult to promote the sybaritic solution. Men readily subscribe to a way of life in which primary reinforcers are abundant, for the simple reason tha tsubscribing is a form of behavior susceptable to reinforcement." COR 52
+
+
+Here are some paragraphs I wrote in an attempt to disentangle verbal behavior from non-verbal social behavior.
+
+Verbal behavior is a special kind of social behavior. Social behavior may include the behavior of an other organism vacuously. Verbal behavior involves the other organism essentially. There is non-verbal social behavior that involves an other organism essentially e.g. breast feeding. The other organism behaves socially perhaps without having been conditioned by a social environment e.g. breast feeding.
+
+An organism may behave in ways it otherwise wouldn't but for the social behavior of others. These mild forms of constructive collaboration are touched with that feature which distinguishes verbal behavior from non-verbal social behavior. The other organism may be conditioned by the social behavior of others so that they are likely to reinforce the social behavior of others e.g. as when teaching teachers. Behavior selected by such reinforcing practices is verbal.
+
+It may be that there is more to verbal behavior than what has already been mentioned e.g. there may be an intermediate categorification of collaborative social behavior which is appropriately placed between social behavior widely and verbal behavior narrowly.
+
+The distinction between socializers and socializees in a social episode. Verbal episodes as social episodes.
+
+water, food, sex, and violence
+
+
+## \#2025-1117-1425
+
+Abbreviation of itemized binary pairs.
+
+A change to the infix notation for ordered pairs, e.g. '(x,y)', to postfix notation (or prefix notation in a mirrored presentation), e.g. 'xy,', yields a method of introducing itemizations of finite trees as abbreviations for complex predicates.
+
+The two place predicate of indistinguisability is designated by '=' (note, I only contemplate languages with finite lexicon, and here, indistinguishability is coextensive with identity).
+
+The '{(x,y)}' for '{uvw: x=u, y=v, and w=w}' by reading '(x,y)' as 'xy,'.
+
+Then '{(x,(y,z))}', i.e. 'xyz,,', for '{stuvw: x=s, y=t, z=u, v=v, and w=w}' and '{((x,y),z)}', i.e. 'xy,z,', for '{stuvw: x=s, y=t, u=u, z=v, and w=w}'.
+
+Then, writing 'is' for the copula of predication, it appears as if '(x,(y,z)) is F' for '{stuvw: x=s, y=t, u=u, z=v, w=w, and stuvw is F}'.
+
+Furthermore, given 'F' is of shape '0' and 'G' is of shape '(0,0)', i.e. '00,', then '(F,G)', i.e. 'FG,', for '{stuvw: s is F and (t,u) is G}' so that '(x,(y,z)) is (F,G) if and only if x is F and (y,z) is G'.
+
+Obviously, other than, e.g., 'w=w' such a component of a conjunction can be dropped entirely within the appropriate predicate abstract.
+
+This would then require the introduction of the kind of notation that Quin'e used with his virtual theory of classes and, as such, there is a cleaner way of dealing with this.
+
+This is related to the fundamental problem of universalization algorithms investigated by Herbrand. Why did he have to die in that ski accident.
+
+## \#2025-1117-1408
+
+I've been away from the computer a lot over the past two weeks. More than in the past month. Less than in general.
+
+Looking up papers and their references has been a headache. It used to be that you could click through things and, bam, there's the source.
+
+Now there's more broken links than ever. This frustration was mentioned in a past note. It's mentioned here because it has once again blocked me from digging into an important topic: (finite) trees and their logic.
+
+Maher's 1988 paper on axiomtizations of algebras of finite trees (and others) is not accessible anywhere and yet it is referenced in a large enough number of papers to make its inaccessibility a frustration.
+
+I also have a question about the transitive closure of each predicate of a logical theory (with finite lexicon). The transtiive closure theory of a given theory includes the schematic premises which amount to saying that the new predicate playing the part of the transitive closure of some predicate in the initial theory is transitive (not a schema) and the schema that any predicate of the theory that includes the initial predicate and which is transitive is included in the predicate playing the part of the transitive closure.
+
+Well founded predicates are part of what I'm reaching for.
+
+Kleene-Brouwer order <https://en.wikipedia.org/wiki/Kleene%E2%80%93Brouwer_order> is relevant. It gives the logic of post order traversal in a way that generalizes beyond the obvious. It also yields the following result: "For trees over a well-ordered set, the Kleene–Brouwer order is itself a well-ordering if and only if the tree has no infinite branch."
+
+There is no other general way to deal with this all than to continue work on the abbreviations of predicate logic e.g. the tree abbreviations as part of the graph abbreviations?
+
+## \#2025-1115-1810
+
+Some notes on trees. I'm trying to get a good feel for the standard terminology and the various ways that predicates purportedly about trees are not easy (impossible?) to introduce in predicate logic.
+
+- <http://builds.openlogicproject.org/content/sets-functions-relations/relations/trees.pdf>
+
+Perhaps a good starting point is:
+
+- <https://www.researchgate.net/publication/2256522_A_First-Order_Axiomatization_of_the_Theory_of_Finite_Trees>
+
+Some of its references are
+
+- Courcelle 1983 "An Axiomatic Approach to the Korenjack-Hopcroft algorithms
+    - <https://www.semanticscholar.org/paper/An-axiomatic-approach-to-the-Korenjak-Hopcroft-Courcelle/06845cb105cd146a559cc99efd57d81e0a44a845>
+- Djelloul, Dao, Fruhwirth 2007 Theory of Finite or Infinite Trees Revisited
+    - <https://www.researchgate.net/publication/1896513_Theory_of_Finite_or_Infinite_Trees_Revisited>
+
+
+## \#2025-1112-1547
+
+These continue notes from [#2025-1108-1258](#2025-1108-1258) on Kleene's proof of Hilbert-Bernay's completeness in "Introduction to Metamathematics" (IM).
+
+The last note ended with a list of what Kleene called "the postulates of the formal system" and, in the context of the proof of Hilbert-Bernay's completeness, they are the system through which the nonconstructive part of the completeness theorem is to be formalized. The formalism is given only in outline. It is not carried out. Kleene and almost all others refer to Hilbert and Bernays rather than present something like their proof again. This strange avoidance is an alarm bell to me that there is something painful about it and that there is something that can be learned from it.
+
+Like most text on mathematical logic, the methods of logic are erroneously divided into propositional and predicate. At best they can be divided between the truth functional and the quantificational. Furthermore, there is no distinction made between the methods of logic and the methods of mathematics through which the methods of logic are to be analyzed. The so called 'propositional calculus' and 'predicate calculus' are calculi, they are not methods of logic. They are theories of calculi/protosyntax/concatenation which are beholden to the methods of (predicate) logic. If this distinction is not maintained then the methods of logic are often lost and it is thought that theories of sets, categories, arithmetics can be taken as going concerns when examining the methods of logic.
+
+So, what of the relationship between theories of concatenation and the methods of logic? A theory of concatenation is governed by the methods of logic. That it just so happens to be applied in the analysis of logical method is of little consequence to the logician except in that metaphorical methods are often involved in discovery. How ever strong the metaphor may be, that is, however strong the corner of the theory of concatenation may be, to the logician there is only the interveining theory to be eliminated. A theory of concatenation may have pointed up a metaphorical conclusion about some part of logical method, but the logical method must be dealt with directly rather than some metaphor which might otherwise be a phantom.
+
+Quine made all of this far more aparent by metaphorically describing logic as the vector sum of grammar and truth, better grammar and denotation. Denotation is where the limits of theories of logic in the investigation of logical methods are often found wanting. The response of matheamtical logicians has been to introduce more elaborate calculi as if they are strong logical methods. It goes unnoticed by most that they have only made a more elaborate theory and have not repudiated the logical methods they find wanting.
+
+This problem of logic and theory is made all the more difficult by the lack of general knowledge about the science of verbal behavior. The methods of grammar and the part they play in the science of linguistics is well enough apprecaited by anyone working on "natural language methods" in logic, but the linguist's prescription to distinguish between performance and competence breaks apart the cumulative analysis of logical behavior as specialized verbal behavior and verbal behavior as specialized social behavior and social behavior as specialized operant behavior. The autoclitics of Skinner's science of verbal behavior provide a graduated analysis of the verbal behavior that ultimately supports and explains the logical methods written about, e.g., in Quine's "Methods of Logic 4th edition" (MOL).
+
+All of this is made clearer by properly and uniformly regimenting logical methods relative to, e.g., MOL. While theories of concatenations are popular because they most conspicuously match the analysis of records of marks made by those behaving verbally, it is now widely accepted that the method of binary trees is far more effective at dealing with grammatical analyses of concatenations. And, since concatenations can be simulated in a theory of binary trees as lists of symbols (both lists and symbols are binary trees in this analysis), it is better to dispose of concatenations outright.
+
+What Kleene calls 'postulates' shall be here mentioned for what they are: components in the definition of the complex predicate that kleene calls 'immediate consequence' and that is more often simply called 'consequence'. In what theory is this compound predicate of consequence defined? It is a theory with a single three place lexical predicate 'pairs' as in "This pairs it with that." The premises (premises are not axioms, but axioms are frequently governed by premises) of this theory of pairs are assembled as needed.
+
+The most basic premise is the extensional one i.e. the one which says when two order pairs are indistinguishable:
+
+1. x pairs y with z and x pairs w with v, if and only if y is indistinguishable from w and z is indistinguishable from v
+
+better, the universal closure of 1. The next assures us that whatever there is, there is an ordered pair of such things:
+
+2. each item is (x and y such that some item is (z such that z pairs x with y))
+
+This is sometimes called the law of formation since it says that given this and that we can form an ordered pair from them. Which reminds me that the 'order' in 'order pair' is got from the following conclusion:
+
+3. each item is (x, y, and z such that x pairs y with z and x pairs z with y, only if y is indistinguishable from z)
+
+Though I have not said it explicitly, the methods of logic require that the lexicon of the language of the theory be finite (beter "itemized") and can be limited entirely to many place predicates (so that constants and function letters are nothing more than abbreviations for appropriate predicates as in Russell's method of contextual elimination of singular description). Consequently, the two place predicate of indistinguishability is taken as relative to the lexicon unless otherwise noted (note that methods of inner models are an example of where 'indistinguishability' is not to be taken only and solely as relative to the lexicon but rather either with respect to the lexicon or with respect to the compound predicates of the language of the inner model). I've written extensively on identity and indistinguishability in other notes and shall not say more about it here and now.
+
+The premises of extensionality and formation link up cooperatively with the premise of the empty tree:
+
+5. some item is (x such that each item is (y and z such that not x pairs y with z))
+
+Which says that there is an empty tree, i.e. one that does not have parts. I have not given exact definitions of 'part of', 'left part of', and 'right part of', but shall do so now:
+
+6. 'is (a) part of' is short for 'x and y such that some item is (z such that y pairs x with z or y pairs z with x)'
+
+7. 'is (the) left part of' is short for 'x and y such that some item is (z such that y pairs x with z)'
+
+8. 'is (the) right part of' is short for 'x and y such that some item is (z such that y pairs z with x)'
+
+The importance of the predicate 'is part of' can not be under emphasized by me. The later chapters of Russell's "An Inquiry into Meaning and Truth" go much deeper into the the relevance of such a predicate in any effective theory of logic.
+
+The premise of extensionality and the premise of empty tree give that any two items purporting to be an empty tree are indistinguishable:
+
+9. each item is (x and y such that x is empty and y is empty, only if x is idistinguishable from y)
+
+where 'is empty' is short for 'x such that each item is (y and z such that not x pairs y with z)'.
+
+Thus, the description 'the empty tree' is singular and there exists an item named by it.
+
+Remaining premises are usually introduced under a schema of induction.
+
+
+
 ## \#2025-1109-1335
 
 Some neat notes on the model theory of arithmetic by Tin Look Wong from 2014/2015 at the Kurt Gödel Research Center
