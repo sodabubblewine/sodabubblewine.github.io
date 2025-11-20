@@ -49,17 +49,17 @@ Journal your thinking and feeling.
 2. grammar generates categories from constructions on lexicons (Frege, Hilbert, von Neumann);
 3. substitutions of lexicon for (supplemented) lexicon in validities denote everywhere (Quine, Hilbert & Bernays); and 
 4. denotata are inherited (Tarski) alethically, i.e.
-    1. joint denials denote where and only where (waow) each of their components don't (Peirce, Sheffer),
+    1. joint denials denote where and only where (waow) their left nor right component does (Peirce, Sheffer),
     2. existential closures denote waow there is some where denoted by their component (Boole, Quine, Hailperin), and
-    3. existential croppings denote the left part of waow their compound does with some item, with the right part of the same whereabouts (Frege, Russell, Quine), and
-5. recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
+    3. existential croppings denote the left part of waow their component does with some item, with the right part of the same whereabouts (Frege, Russell, Quine), and
+5. or recombically (Russell, Schönfinkel, Curry, Bernays, Tarski, Quine, Charles H. Moore), i.e.
     1. components of drops denote the left part of the left part of waow their comopund does with the right part of the same whereabouts,
     2. components of pushes denote the left part of waow their comopund does with the left part of the right part of the same whereabouts, with the right part of the right part of the same whereabouts, and
     3. components of hems denote the left part of waow their compound does, with the right part of the left part of the left part of the same whereabouts with the right part of the same whereabouts.
 
 ## HOW THE ABBREVIATIONS OF LOGIC WORK
 
-1. The truth-functional, better 'denotative-functional', abbreviations are
+1. The (denotative) functional abbreviations are
     1. negations are self joint denials,
     2. alternations are negations of joint denials,
     3. converse conditionals are alternations of their consequent with the negation of their antecedent,
@@ -159,6 +159,91 @@ Use a thermometer.
 
 
 # NOTES
+
+## \#2025-1120-1213
+
+How denotative functional logic works.
+
+Grammatical constructions are (denotative) functional when each like compound exclusively denotes or not where and only where (waow) each like component exclusively denotes or not. Examples:
+
+1. joint denials denote waow each of their components don't (definition of 'joint denial')
+2. negations denote waow their component doesnt:
+    1. negations are self joint denials i.e. they denote waow the joint denial of their component with itself does (definition of 'negation')
+    2. the joint denial of their component with itself denotes waow each of their components don't (definition of 'joint denial')
+    3. each component of the joint denial of negation is identical (definition of 'negation')
+    4. therefore, they denote waow their component doesn't
+3. alternations denote waow some of their components do
+    1. alternations are negations of joint denials (definition of 'alternation')
+    2. negations of joint denials denote waow their joint denials don't (2)
+    3. therefore, alternations denote waow the joint denial of their components don't
+    4. joint denials denote waow each of their components don't (definition of 'joint denial)
+    5. therefore, joint denials don't denote waow it is not the case that each of their components don't
+    6. therefore, alternations denote waow it is not the case that each of their components don't
+    7. it is not the case that each of their components don't denote waow some of their components do
+    8. therefore, alternations denote waow some of their components do 
+4. converse conditionals denote waow their consequent does or their antecedent doesn't
+    1. converse conditionals are alternations of their consequent with the negation of their antecedent (defininition of 'converse conditional')
+    2. such alternations denote waow their consequent does or the negation of their antecedent does (3)
+    3. therefore, converse conditionals denote waow their consequent does or the negation of their antecdent does
+    4. the negation of their antecedent denotes waow the antecedent doesn't (2)
+    5. therefore, converse conditionals denote waow their consequence does or their antecedent doesn't
+
+Introducing joint denials by saying "joint denials denote waow each of their components don't" may be ineffective. The alternative way is with "joint denials denote waow (neither) their left (component) nor right (component) does", or, better, "joint denials denote waow (neither) their left does nor their right does". Then alternations denote waow their left or right does and conjunctions waow their left and right does.
+
+The bigger reason to do things with 'nor' rather than 'each not' is to avoid the problem of 'infinite conjunction' as some endless conjunction. So, beginning anew.
+
+Grammatical constructions are (denotative) functional when, like compounds denote or exclusively don't, where and only where (waow) their like components denote or exclusively don't. Examples:
+
+1. joint denials denote waow each of their components don't (definition of 'joint denial')
+2. negations denote waow their component doesnt:
+    1. negations are self joint denials i.e. they denote waow the joint denial of their component with itself does (definition of 'negation')
+    2. the joint denial of their component with itself denotes waow each of their components don't (definition of 'joint denial')
+    3. each component of the joint denial of negation is identical (definition of 'negation')
+    4. therefore, they denote waow their component doesn't
+3. alternations denote waow some of their components do
+    1. alternations are negations of joint denials (definition of 'alternation')
+    2. negations of joint denials denote waow their joint denials don't (2)
+    3. therefore, alternations denote waow the joint denial of their components don't
+    4. joint denials denote waow each of their components don't (definition of 'joint denial)
+    5. therefore, joint denials don't denote waow it is not the case that each of their components don't
+    6. therefore, alternations denote waow it is not the case that each of their components don't
+    7. it is not the case that each of their components don't denote waow some of their components do
+    8. therefore, alternations denote waow some of their components do 
+4. converse conditionals denote waow their consequent does or their antecedent doesn't
+    1. converse conditionals are alternations of their consequent with the negation of their antecedent (defininition of 'converse conditional')
+    2. such alternations denote waow their consequent does or the negation of their antecedent does (3)
+    3. therefore, converse conditionals denote waow their consequent does or the negation of their antecdent does
+    4. the negation of their antecedent denotes waow the antecedent doesn't (2)
+    5. therefore, converse conditionals denote waow their consequence does or their antecedent doesn't
+5.
+complementary converse conditionals are negations of converse conditionals,
+complementary conditionals are swapped complementary converse conditionals,
+conditionals are negations of complementary conditionals,
+alternative denials are conditionals with negated consequents,
+conjunctions are negations of alternative denials,
+exclusive alternations are conjunctions of alternative denials with matching alternations,
+biconditionals are negations of exclusive alternations, and
+cedents are conditionals of conjunctions with alternations.
+
+Functional constructions on lexicon generate chains (a grammatical category).
+
+## \#2025-1119-1900
+
+I have still yet to take notes on methods of unification e.g. from the youtube series on "artificial intelligence: knowledge representation and reasoning":
+
+- <https://youtube.com/playlist?list=PLyqSpQzTE6M-t-Qr2Z0Gf_KP5RC97uOKC&si=08qpVdUiKkdTtJu6>
+
+My question is what does unification look like in predicate logic (i.e. "standard" predicate logic with a finite lexicon of predicates) and how are the more familiar methods inherited from there?
+
+At best, substitutions give singular descriptions for each variable i.e. 'x = the {y: ..stuvw..}'.
+
+Or, in general, the general problem is an itemization of indiscernabilities like 'the {x: ..abcd..} = the {y: ..stuvw..}' to some substitution.
+
+The general problem is where the predicates are functional in their top place and an equation like 'f(x,y,z)=g(s,t,u)' is "Func F, Func G, Fwxyz and Gwstu".
+
+Well now I'm really confused. It seems that Herbrand already dealt with this but in some different way.
+
+Now I'm trying to figure out the solution to a simpler problem: is there any way to know for sure that the prefix normal form of two schema are variants?
 
 ## \#2025-1119-1214
 
@@ -260,9 +345,9 @@ Furthermore, given 'F' is of shape '0' and 'G' is of shape '(0,0)', i.e. '00,', 
 
 Obviously, other than, e.g., 'w=w' such a component of a conjunction can be dropped entirely within the appropriate predicate abstract.
 
-This would then require the introduction of the kind of notation that Quin'e used with his virtual theory of classes and, as such, there is a cleaner way of dealing with this.
+This would then require the introduction of the kind of notation that Quine used with his virtual theory of classes and, as such, there is a cleaner way of dealing with this.
 
-This is related to the fundamental problem of universalization algorithms investigated by Herbrand. Why did he have to die in that ski accident.
+This is related to the fundamental problem of unification algorithms investigated by Herbrand. Why did he have to die in that ski accident.
 
 ## \#2025-1117-1408
 
