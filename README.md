@@ -129,7 +129,7 @@ Journal your thinking and feeling.
 ## HOW VALIDITY, CONSISTENCY, IMPLICATION, AND EQUIVALENCE WORK
 
 Predicates are 
-1. valid, recall, waow each substitution of lexicon for supplemented lexicon in them, i.e. suplemented lexical substitution (SLS), denotes everywhere,
+1. valid waow each substitution of lexicon for supplemented lexicon in them, i.e. suplemented lexical substitution (SLS), denotes everywhere,
 2. consistent waow their negation is nonvalid (some of their SLSs denote somewhere), 
 3. implied by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) is nonconsistent (each of their SLSs denotes where the same of the other does), and
 4. equivalent to others waow they are mutually implicative (each of their SLSs denotes waow the same of the other does).
@@ -192,31 +192,40 @@ Introducing joint denials by saying "joint denials denote waow each of their com
 
 The bigger reason to do things with 'nor' rather than 'each not' is to avoid the problem of 'infinite conjunction' as some endless conjunction. So, beginning anew.
 
+Oh, another efficiency is to show that these examples all reduce to combinations of alternations, conjunctions, and negations so that the decision procedure (the compound predicate version of truth trees) comes out quickly.
+
 Grammatical constructions are (denotative) functional when, like compounds denote or exclusively don't, where and only where (waow) their like components denote or exclusively don't. Examples:
 
-1. joint denials denote waow each of their components don't (definition of 'joint denial')
-2. negations denote waow their component doesnt:
-    1. negations are self joint denials i.e. they denote waow the joint denial of their component with itself does (definition of 'negation')
-    2. the joint denial of their component with itself denotes waow each of their components don't (definition of 'joint denial')
-    3. each component of the joint denial of negation is identical (definition of 'negation')
-    4. therefore, they denote waow their component doesn't
-3. alternations denote waow some of their components do
-    1. alternations are negations of joint denials (definition of 'alternation')
-    2. negations of joint denials denote waow their joint denials don't (2)
-    3. therefore, alternations denote waow the joint denial of their components don't
-    4. joint denials denote waow each of their components don't (definition of 'joint denial)
-    5. therefore, joint denials don't denote waow it is not the case that each of their components don't
-    6. therefore, alternations denote waow it is not the case that each of their components don't
-    7. it is not the case that each of their components don't denote waow some of their components do
-    8. therefore, alternations denote waow some of their components do 
-4. converse conditionals denote waow their consequent does or their antecedent doesn't
-    1. converse conditionals are alternations of their consequent with the negation of their antecedent (defininition of 'converse conditional')
-    2. such alternations denote waow their consequent does or the negation of their antecedent does (3)
-    3. therefore, converse conditionals denote waow their consequent does or the negation of their antecdent does
-    4. the negation of their antecedent denotes waow the antecedent doesn't (2)
-    5. therefore, converse conditionals denote waow their consequence does or their antecedent doesn't
-5.
-complementary converse conditionals are negations of converse conditionals,
+1. Joint denials denote waow their left nor right (component) does (definition of 'joint denial').
+2. Negations denote waow their component doesn't.
+    1. Negations are self joint denials i.e. negations denote waow the joint denial of their component with itself does (definition of 'negation').
+    2. The joint denial of their component with itself denotes waow their component nor their component does (definition of 'joint denial').
+    3. Therefore, negations denote waow their component nor their component does.
+    4. Their component nor their component dentoes waow their component doesn't.
+    5. Therefore, negations denote waow their component doesn't.
+3. Alternations denote waow their left or right does.
+    1. Alternations are negations of joint denials (definition of 'alternation').
+    2. Negations of joint denials denote waow their joint denials don't (2).
+    3. Therefore, alternations denote waow the joint denial of their components don't.
+    4. Joint denials denote waow their left nor right does (definition of 'joint denial).
+    5. Therefore, joint denials don't denote waow their left nor right doesn't.
+    6. Their left nor right doesn't denote waow their left or right does.
+    7. Therefore, alternations denote waow their left or right does.
+4. Converse conditionals denote waow their consequent does or their antecedent doesn't.
+    1. Converse conditionals are alternations of their consequent with the negation of their antecedent (defininition of 'converse conditional').
+    2. Such alternations denote waow their consequent does or the negation of their antecedent does (3).
+    3. Therefore, converse conditionals denote waow their consequent does or the negation of their antecdent does.
+    4. The negation of their antecedent denotes waow the antecedent doesn't (2).
+    5. Therefore, converse conditionals denote waow their consequence does or their antecedent doesn't.
+5. Complementary converse conditionals denote waow their consequent doesn't and their antecedent does.
+    1. Complementary converse conditionals are negations of converse conditionals.
+    2. Negations of converse conditionals denote waow their converse conditional doesn't.
+    3. Therefore, complementary converse conditionals denote waow their converse conditional doesn't.
+    4. Converse conditionals don't denote waow it is not the case that their consequent does or their antecedent doesn't.
+    5. It is not the case that their consequent does or their antecedent doesn't waow their consequent doesn't and their antecedent does.
+    6. Therefore, complementary converse conditionals denote waow their consequent doesn't and their antecedent does.
+6. 
+
 complementary conditionals are swapped complementary converse conditionals,
 conditionals are negations of complementary conditionals,
 alternative denials are conditionals with negated consequents,
