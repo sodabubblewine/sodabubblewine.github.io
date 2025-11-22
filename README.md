@@ -160,6 +160,94 @@ Use a thermometer.
 
 # NOTES
 
+## \#2025-1122-1531
+
+I was reading through Patrick Suppes's "Axiomatic Set Theory" (a delightful dover book) for the second or third time and it finally occurred to me that I'd never really written down the Tarski-Peirce definition of 'finite set'.
+
+One of each subset of a family from a *finite set* is not a proper superset of the others.
+
+I also have not tried to produce the corresponding schema appropriate to the predicate functor 'finite'.
+
+The 'family of subsets' part is just a two place predicate, e.g. take it as F. To say "there is one subset of the family that is not a proper superset of the others" is to say "some item is (x such that each item is (y such that not y=x, only if some item is (u such that Fyu only if not Fxu)))".
+
+Then a one place predicate F is finite when each instance of the schema
+    - each item is (u such that Fu if and only if some item is (v such that Gvu)) and some item is (x such that each item is (y such that not y=x, only if some item is (z such that Gyz only if not Gxz)))
+
+is true (where 'G' is a (schematic) predicate letter). It may be better to say 'F itemizes'. It is interesting to note that since 'F itemizes' is not short for a schema or an instance of a schema, then it can not be used as a component in a grammatical construction. For this reason, it is probably inappropriate to speak of 'itemizes' as a predicate functor.
+
+But, this happens often and the solution is often enough (always?) the introduction of an appropriate predicate functor e.g. 'F itemizes with respect to G' is a schematic predicate functor (here 'F' no longer designates a one place predicate and is now a predicate letter on par with 'G') each instance of which is a complex predicate and hence may be a component of further complex predicates or schema.
+
+
+## \#2025-1121-1313
+
+I was unable to finish the note I started yesterday. The aim was to show that each of the denotative functional abbreviations of logic were denotative functional according to the provided definition.
+
+I'm reminded of the benefits of the methods of logic over the methods pursued in
+
+Lehman, Leighton, Meyer 2018 "Mathematics for Computer Science"
+- <https://courses.csail.mit.edu/6.042/spring18/mcs.pdf>
+
+So much of what is presented as if it was set theory, number theory, or type theory is purely logical and the benefits to presenting it as such is uniformaty of methodological contemplation e.g. the application of the methods of logic to mathematics and the other sciences obscured by neglecting logic.
+
+There is an arithmetic theory which presents itself as epistomologically prior to the theory of natural arithmetic. It is the theory of binary trees. Among its premises are
+
+1. Extensionality: Each item is (u, v, w, x, and y such that w pairs u with v and w pairs x with y, if and only if u is indistinguishable from x and v is indistinguishable from y).
+2. Formation: Each item is (x and y such that some item is (w such that w pairs x with y)).
+3. Emptiness: Some item is (x such that each item is (y and z such that it is not the case that x pairs y with z)).
+
+Write 'empty' for 'x such that each item is (y and z such that it is not the case that x pairs y with z' so that the premise of emptiness is equivalent to 'There are empty pairs'. Exstentionality implies indistinguishability of empty pair. Therefore, extensionality and emptiness imply the singular description 'the empty pair' designates. Write '0' for 'the empty pair'.
+
+Similarly, extensionality and formation imply the singular description 'the pair of x with y' designates. Write '(x,y)' for 'the pair of x with y'.
+
+Then perhaps the most important premises are those which are instances of the schema of induction:
+
+4. Induction Schema: 0 Fs and each item is (x and y such that x Fs and y Fs, only if (x,y) Fs), only if each item is (z such that z Fs).
+
+The methods of logic are purportedly reported by conclusions of this theory of the arithmetic of ordered pairs. Such a theory is not categorical in that it has multiple modesl. If you do not like that then provide additional premises which are relevant to your interests. Alternatively, you can take advantage of the noncategoricity 
+Those who submit that the theory is 'not categorical' in that it has 'multiple models' need only supply the premises they submit are missing or take advantage of such noncategoricity.
+
+The induction schema given is not yet enough for all of mathematics. All of mathematics is presumably realized by introducing precisely those principles of induction that permit the construction of Conway's surreal numbers.
+
+I'm collecting references to assemble the logic of such an arithmetic outlook on mathematics.
+
+- Alling 1987 Foundations of Analysis Over Surreal Number Fields
+    - <https://dl.booksee.org/genesis/392000/4aa580e0c8021787e4dc5fb71f4ee819/_as/%255BNorman_L._Alling%255D_Foundations_of_Analysis_over_Su%28BookSee.org%29.pdf>
+
+It has come to my attention that the order that Conway gives in the construction of the surreal numbers may be the order upon which the stronger form of induction may be based.
+
+This appears to correspond to the order established via the operation of transitive closure described by Feferman in 1989 "Finitary inductively presented logics" and, depending on how the operation of transitive closure is defined, this appears to correspond to the Kleene-Brouwer order.
+
+First, the definition of Kleene-Brouwer order.
+
+The pair of sequences, indexed by '<', x with y of items linearly ordered by '<.' are denoted by the *postorder* '<:' derived from '<.' when there is an index i such that j<i only if x(j)=y(j) and, either
+    1. x(i) exists and y(i) does not 
+    2. or x(i) <. y(i) (i.e. they both exist).
+
+Post order is left subtree, right subtree, tree.
+
+Wait, there's a lot more going on here than these stupid wikipedia sources suggest.
+
+The first thing is a prefix order. A two place predicate is a prefix order if it is antisymmetric, transitive, reflexive, and downward total.
+
+A two place predicate F is downward total when
+     - Fac and Fbc, only if Fab or Fba.
+
+A history of an item x in the field of a prefix order F is the predicate {y: Fyx}, and its future is {y: Fxy}.
+
+<https://en.wikipedia.org/wiki/Prefix_order>
+
+Oh, okay, so "trees" in set theory are defined as follows.
+
+A two place predicate F is a tree if each item is (x such that x in the field of F only if (y such that Fyx) is well ordered).
+
+A two place predicate < is well ordered if each instance of the following schema is true:
+    - F is included in the field of < and some item is (x such that Fx), only if some item is (y such that y is indistinguishable from the (z such that Fz and each item is (u such that u is indistinguishable from z or, Fu only if <zu)))
+
+
+OH a generally helpfull book on lattices and order:
+    - Davey, Priestley 2002 Introduction to Lattices and Order 2nd Edition
+
+
 ## \#2025-1120-1213
 
 How denotative functional logic works.
