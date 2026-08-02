@@ -1,4 +1,4 @@
-My life and work are reported, changed, and governed by these [notes](#notes), [memos](#memos), and [hints](#hints).
+These [notes](#notes), [memos](#memos), and [hints](#hints) report, change, and govern my behavior.
 
 # HINTS
 
@@ -75,7 +75,7 @@ Journal your thinking and feeling.
     1. universal closures are negations of existential closures of negations,
     2. inclusions are universal closures of conditionals,
     3. converse inclusions are swapped inclusions,
-    4. proper inclusions are conjunctions of inclusions with the negation of  their converse, and
+    4. proper inclusions are conjunctions of inclusions with the negation of their converse, and
     5. coextensions are conjunctions of inclusions with their converse.
 3. The quantificational abbreviation is
     - universal croppings are negations of existential croppings of negations.
@@ -160,6 +160,684 @@ Use a thermometer.
 
 # NOTES
 
+## \#2026-0801-1112
+
+The introduction to Goldfarb's "Deductive Logic" begins by comending the earlier editions of Quine's "Methods of Logic" and condemning the later editions.
+I submit that Goldfarb's condemnation is the result of misapprehension.
+My plan to reveal this is to bring out Quine's later methods through a personalized translation of results from Shoenfield, and perhaps also in tandem from Ebbinghaus, Flum, and Thomas.
+Vaguely, my plan is to extend Quine's methods so as to cover the traditionally obfuscated paths through mathematical logic.
+
+Perhaps the most significant difference between Quine's methods and those of Shoenfield or EFT is that Quine inserts the intermediate methods of what he calls Boolean term schema.
+These comprise, towards the end of the second part of "Methods of Logic Fourth Edition", the monadic, or one place predicate, schema.
+They issue forth from the previous part on truth functional logic as accomodating what was first Aristotle's syllogistic and later, vaguely, Boole's logic of terms.
+What Quine calls "Boole's logic of terms" is the logic of one place predicates.
+In a previous note I link to a more recent paper which explaisn in greater detail that the abstract algebra preseneted by Boole (or what we come to translate from his writings as an abstract algebra) is not what is commonly called "Boolean Algebra".
+
+A fantastic book on Boolean algebras a they are traditionally conceived is R. L. Goodstein's thin text "Boolean Algebra" which is available as an inexpensive Dover book.
+It encompases only indirectly the logical methods of one place predicates in as much as there is a correspondence between Boolean algebras of sets and validities of monadic logic.
+Problems arise, as we well know from the paradoxes, when each one place predicate letter is substituted not with by a one place predicate, but by the purported name of a class as the extension of each item true of some apporpriate one place predicate.
+In the latter case, the grammatical construction of predication is naively interpreted as a two place predicate of set membership.
+Elsehwere I have mentioned that it is better to speak of "classing classes" than "beloning to sets" or "set membership" because the vernacular of "classifcation" is closest to modern theories of sets which are special cases of theories of classes.
+Classes obtain the kind of ultimate status attributed to classifications in the Aristotilean tradition when they are themselves classed in no class.
+Sets are then a special case of classes which are classed in some, not necessarily distinct, class.
+
+From afar, that is prior to embarking on this verbal discovery expedition, there should be a dual version of Shoenfield's proof of Hebrand's theorem that provides a finitary proof of the completeness of Quine's main method.
+
+I can not be even remotely sure if my guess is right because there is a great deal of confusion in texts like Shoenfield's and EFT's over the boundary between logic and mathematics.
+The result is that Shoenfield and EFT make distinctions, as almost all mathematical logicians do, between syntactic methods and semantic methods which do not arise in Quine's work because, unlike them, he finds no firmer basis for speaking of such objects beyond what is provided by, e.g., the main method itself.
+
+Where I come in is in finding the harmony between Quine's definition of validity in terms of grammar and truth, which I generalize to validity in terms of grammar and denotation (true of) and his main method.
+More than that, I have narrowed down the home of this harmony in a pure predicate logic whose grammatical constructions are those of Quine's predicate functors (in Carnap's sense and not in the category theoretic sense).
+
+It is not clear to me that Quine's proof of completeness of the main method is directly translatable into the broken worlds of syntax and semantics.
+There is something critical in Shoenfield's use of "special constants" in making Henkin theories and subsequent use of them in teh Hilbert-Ackermann consistency theory which is a finitary solution to the characterization problem for the consistency of open theories, and then the finitary solution fo the charcterization problem for theories generally.
+
+In EFT, Zorn's lemma is invoked to cover what they call "Satisfiability of consistent sets of formuas (the general case)", and rather than use the terminology of 'special constants' from Schoenfield, EFT uses the terminology of "Witnesses" (and negational completeness).
+
+It is these disperate kinds of terminology which have caused me the most trouble, that and the obscurity of the methods of logic amongst the mathematical methods.
+Specifically, the methods of logic have been pasted onto mathematical methods in both EFT and Shoenfield and the confusion is itself justification for Quine's strict distinction between logic and mathematics.
+
+The method of 'witnessse' or 'special constants' is suspiciously like Quine's elimination of singular terms by singular descriptions with their accompanying descriptional premises.
+
+How does Quine avoid the problems caused by breaking the world into two where one is made of syntax and the other made of semantics?
+He follows Carnap and Russell in speaking only of interpretations.
+Vaguely, Quine hints at what you might call syntactic interpretations and semantic interpretations, where semantic interpretations are the closest thing to set theoretic models you can get.
+He avoids all of this ultimately from his work on the definition of validity in terms of grammar and truth, and from the methedological import of what he calls "Lowenheim-Hilbert-Bernay's completeness".
+
+In general, I find it better to speak of the grammar and interpretation of schematic theories of logic.
+Grammar cover vaguely what is narrowly construed as syntax, and interpretations cover vaguely what is narrowly construed as semantics.
+The emphasis is on 'schematic' since interpretations of actual logical languages is as nonsensical as talk of meanings, propositions, information, etc.
+This is where Quine's methods are starkly distinct from those of most mathematical logicians.
+Quine's elimination of singular terms by singular descriptions is at peace with his more general rejection of talk of items beyond what can be true of a one place predicate in a language of predicate logic.
+
+This troubles the mathematical logician who already knows, in some way which is beyond me and was beyond Quine, the mathematical objects of which he speaks without any appeal whatsoever to the ultimately logical langauges by which others come to tell me of their contact with them.
+It is important that I mention the difference between nongrammatical verbal behavior and grammatical verbal behavior.
+Quine insists, because he must, that talk goes on smoothly with short sentence whose, often, single word later comes to play the part of a general term without invoking reified entities.
+Russell accepts this somewhat as well when he mentions the surprising role which substances still appear to play in the primitive vernacular of early speakers.
+
+Such insistence on Quine's part is less absurd sounding when we contemplate an early native of language more smoothly translatable into a pure predicate (functor) logic, a langauge, that is, without singular terms or what might be called "proper names" in English and sufficiently similar nonlogical languages.
+The free wheeling use of function letters in presentations of mathematical logic like Shoenfield and EFT mask these alarming issues under the guise of 'constants' where a constant is a degenerate zero place function letter.
+Mathematician's talk of functions and sets is beset with trouble most familiar to scientists who eliminate the metaphorical control of vernacular term by introducing technical terms which do not harbor collateral miscarriages of such prescientific metaphors e.g. as from 'rat' to 'rodent'.
+Though, it is hard to get across the point that mathematician's talk of sets and functions is prescientific when such terms are already treated as technical to the vernacular of the public.
+Here we find how it came that Frege is compared with Aristotle.
+
+Whisked away again.
+
+
+
+## \#2026-0731-2134
+
+Quine's main method of proof is the simplest and most important method of proof that I know of.
+It can be put into a single short sentence if you know the jargon (which you already must to even begin talking about proofs): make a truth functional inconsistency from instances with new variables for existentials of the prenex form of a sentence to prove it inconsistent.
+
+Each key phrase brings up an important part of the methods of logic.
+Truth functions are grammatical constructions such that any two identical constructions are jointly true or exclusively false when and only when their like components are jointly true or exclusively false.
+Compounds and components that are jointly true or jointly false are said to have the same truth value.
+This excludes the case where compounds or compounents are simultaneously true and false, or neither.
+These cases are excluded by excising them from a strict definition of logic.
+As far as we are free to make those distinctions which contribute the most to the survival of our species and its practices, we are free to accept the consequences of acting "with vigor without absolute certainty".
+Those who would argue that there are meaningful or significant constructions which are not restricted to the truth functional as defined here are not without their reasons and there reasons are not without merit.
+For now, and, I submit, for a very long time, it is best to set aside such deviations as deviations from a strictly defined logic.
+If a more persuasive argument is needed then I need only point to Lindstrom's theorem that truth functional and quantification logic is, vaguely, characterized among alternatives by its completeness and compactness.
+For more see "Jörg Flum, Characterizing Logics , chap. III of Barwise, Feferman (eds.), Model-theoretic Logics , Springer Heidelberg 1985" here: <https://projecteuclid.org/ebook/Download?urlId=pl%2F1235417268&isFullBook=False&isResultClick=False>.
+How far Lindstrom's theorem(s) go in reinforcing the distinction between logic strictly and logic loosely is not without its vague boundaries.
+
+In truth functional and quantificational logic, inconsistency of schema is validity of negation and validity is commonly given as truth under all interpretations of the sentence letters for sentences, predicate letters for predicates, and free variables as designators of one and only one item in the universe of discourse which is assumed to be nonempty.
+Often, the utility of free variables is cut short by beginning with schematic function letters whose degenerate case is counted as so called 'constants'.
+Under such, often mathematical, methods, constants are nothing more than reserved variables, those reserved for use in positions where singular terms or, better, singular descriptions might fit.
+The nonemptiness of the universe of discourse is a minor convenince, but not a trivial one.
+Contemplation of the empty universe has led some to introduce so called 'free logics'.
+Whatever they may be, they go in the deviation bin.
+
+The contextual elimination of singular descriptions as the replacement for any purportedly singular term (by, minamally, the use of relative clauses 'the x such that x is identical to y' where 'y' is the free variable of interest gives that 'x such that x is identical to y' is a one place predicate and we replace it everywehre by a newly minted one place predicate, say 'Y', subject to the premises 'some item is Y' and 'each item is u with v such that u is Y and v is Y, only if u is identical to v') renders the schema in which free variables occur as one devoid of free variables and subject to the simple test of vacuous validity which interprets existentials as false and universals as true.
+I appreciate that this expedient can be troublesome to those who wish to entertain a strict distinction between general and singular terms, but such distincts are a hold over from pre predicate functor methods which do away with variables all together by way of the so called recombic constructions which usher in compound predicates from component ones and which do the work once done by variables.
+
+It can still be said that something is lost by starting with logical methods whose grammatical components do not include anything deemed a singular term, but this becomes a problem of translation which is already pervasive and it is only from a consideration of the history of translational issues that we even come to speak of grammars and other such precise instruments of effective analysis.
+A native of a pure predicate logic, one devoid of variables free or bound, is not one devoid of designation as reference by a singular term which purports to name one and only one item.
+Designation is defined in such a pure predicate logic culture as denotation by a one place singular predicate where a singular predicate is just another name for a one place functional predicate i.e. where, for the quantificational native, 'F is singular' is short for 'some item is F and each item is x with y such that Fx and Fy, only if x is identical to y'.
+The mystery of designation as it is traditionally explained through, e.g., theories of knowledge is left as a problem of paraphrasing into appropriate predicates and premises.
+
+This is all to say, by way of introduction, that truth functional inconsistency is a special case of inconsistency as validity of negation where validity is first taken specifically as truth of each interpretation of a truth functional and quantificational schema.
+
+Schema are like escrow accounts in that they guarentee that validity projects through them to concrete sentences as instances of the schema when in fact such schema are valid.
+
+Schema are truth functionally valid if they are grammatical substitutions in valid sentential schema where sentence letters and truth functional compounds of sentential schema are sentential schema.
+What makes a substitution grammatical is that they are substitutions of sentence letters or schematic predications for sentence letters and n place predicate schema for predicates in n place predications subject to appropriate restrictions on component variables that are best dealt with using the principles of predicate abstraction and concretion.
+
+That truth functional inconsistency enjoys a decision procedure is not clear from the definition of truth functional inconsistency from quantificational validity.
+
+Here I note that if you are a casual reader, then I am sorry for the headache this must all give you if you ever happen to read through this note to this point.
+There is so much that I have yet to say that I must say and sadly this is how I am saying it.
+
+My general method of establishing the truth functional inconsistency of a quantificational schema is derived from a generalization of the alternational normal form method of deciding truth functional inconsistency of sentential compounds.
+My presentation is very much unlike that of Quine's which begins with the truth functional and carries on step by step as new problems are confronted but not prior to their confrontation.
+This is a consequence of his definition of vagueness from "Word and Object": "A singular term naming a physical object can be vague in point of the boundaries of that object in space-time while a general term can be vague in point of the marginal hangers-on of its extension." pg. 126.
+And, "Commonly a general term true of physical objects will be vague in two ways: as to the several boundaries of all its ojbects and as to the inclusion or exclusion of marginal objects." pg. 126.
+And, finally, "Also, vagueness is an aid to coping with the linearity of discourse. An expositor finds that an understanding of some matter A is necessary preparation for an understanding of B, and yet that A cannot itself be expounded in correct detail without, conversely, noting certain exceptions and distinctions which require prior understanding of B. Vagueness, then to the rescue. The expositor states A vaguely, proceeds to B, and afterward touches up A, without ever having to call upon his reader to learn adn unlearn any outright falsehood in the preliminary statement of A." pg. 127
+
+Whether there is always an appropriate path of vagueness for that of linear discourse under the adverse conditions just quoted is a question whose answer is as elusive to me as that of an equally appropriate paraphrase into a logical language.
+
+For my own sake, I am going to go a bit further into Quine's theory of vagueness.
+The setences I have quoted just two paragraphs ago make it seems as if only physical terms are contemplated as vague.
+This is not true, but I have been vague in my introduction of vagueness.
+Quine begins section 26 on vagueness with the somewhat cryptic literary description of what goes on that brings us to even speak of vagueness:
+
+"Vagueness is a natural consequence of the basic mechanisms of word learning (cf. section 18). The penumbral objects of a vague term are the objects whose similarity to ones for which the verbal response has been rewarded is realtively slight. Or, the learning process being an implicit induction on the subject's part regarding society's usage, the penumbral cases are the cases for which that induction is most inconclusive for want of evidence. The evidence is not there to be gathered, society's members having themselves had to accept similarly fuzzy edges when they were learning. Such is the inevitability of vagueness on the part of terms learned in the primitive way; and it tends to carry over to other terms defined on the basis of these." pg. 125-126
+
+Quine's literary dint shows in his phrase 'penumbral objects'.
+When I first read that phrase I saw to myself some of the examples of ray marching rendering algorithms for the penumbra of shadows cast by objects and their edges in a given arrangement of lights about a room.
+This seeing was helpful at first, but far too strong for me to respond appropriately to the role of the phrase 'penumbral objects' in the vague introduction to vagueness.
+A key consequence of what Quine has said which escaped me at first is that vagueness is to be contrasted with the indeterminacy of reference as demonstrated by his puzzles of radical translation.
+Such indeterminacy is felt from the task of translation, but remains unsettled even after having been felt and acted upon where as vagueness is a matter already settled by the practices of a given verbal community.
+I say settled, but perhaps it is better to say that vagueness remains under the control of the purported indeterminacy of reference and never the other way around.
+
+Whether the practices of verbal communites are actually subject to the effects of indeterminacy of reference or independent of their fancied existence is a question to which I have no good answer yet.
+I'm inclined to say that Skinner's analysis of verbal behavior reveals that only upon introducing autoclitic verbal behavior is the possibility of such indeterminacy raised, and that it is perhaps only properly inflicted upon grammatical behavior as a special kind of autoclitic behavior.
+From which such indeterminacy of reference is a pathological consequence of linguistic precision which looms larger than it is when set out as a spurious consequence of this or that formal description of a response in isolation from its occasion or consequence.
+
+I find myself traveling down these paths which appear to diverge from that set out by my first steps from my starting point without worry that I am actually lost.
+Those first steps suggest a straight line where I see none.
+Rather than make a big deal as to where these first steps seem to lead I prefer to take further steps and look back from there.
+
+Thus I look back and see that I left my generalization of the alternational normal form decision procedure for sentential schema (what Quine calls merely 'truth functional schema' given his method of presentation in the first three parts of "Methods of Logic Fourth Edition") unexplained.
+
+My generalization is a tiny one which takes advantage of the rules of passage allowing quantifiers to pass up and down the truth functional subcompounds of a schema without disrupting equivalence.
+I must note that equivalence here is "nonvacuous" in that we remain warned to check our original schema in the vacous case as a special or trivial concern.
+Some of the rules of passage do not survive in a vacuum.
+
+My generalization takes the classical grammatical constructions and paraphrases them into appropriate compounds of a strict form: prenex alternational normal forms.
+Just as we can take the grammatical constructions of joint denial or alternative denial as basic and give the other truth functions by appropriate paraphrase, so too can we paraphrase each truth functional construction into ones belonging to a strict category that eases mechanical calculation.
+
+Free variables are marked so that they do not get mangled by the relettering which newly alphabetizes the prenexed quantifiers of the compounds to be constructed.
+Alternatively, the method of taking all free variables as dummy singular terms eliminable by a newly minted one place predicate subject to the appropriate existence and functionality premises could be instituted without imposing the full elimination of variables by predicate functor methods (though it is the elaboration of such methods which govern almost all of my work here).
+
+The prenex-alternational-normal-form-conjunction of two components in prenex alternational normal form is constructed by first substituting each quantified variable in the second component with those which continue on the alphabetized order of the quantified variables from the first component.
+The quantificational part of the constructed compound is then just that of the first part concatenated with the reletterd second part.
+A predetermined method of distributing the alternations of the matrices of the first component over that of the relettering of the second as with the classical equivalence of alternation over conjunction is applied.
+Then inconsistent clauses (a clause of a schema in alternational normal form is the subcompounds of conjunction, though it occurs to me that I have generalized to alternations and conjunctions of other than just two components by way of associative equivalence) are crossed out.
+Inconsistent clauses can be identified by the occurrence of a predication and its negation among its components.
+If all clauses are crossed out then the compound may be taken as some canonical inconsistency which displays whatever clauses seem to help most in the degenerate case.
+Otherwise the remaining clauses are put in some sort of lexicographic order and appended to the block of quantifiers in an alternation.
+
+
+
+
+
+## \#2026-0731-1626
+
+One of the benefits of dialogue, in Plato's sense, is that it produces intermediate products which the public can somewhat interpret.
+This partial passage between the vernacular and the technical is helpful to those who are not already familiar with the technical aspects of dialogues from times past.
+
+This is also unforunate because it reveales how weak are our methods of teaching that we are having dialogues which reoccur throughout millenia without anything like an eternal conclusion.
+Eternal conclusions are the kinds of sentences that make science a going concern as part of prevailing social practices.
+Had the sentences of scientists not been marked out by their almost endless standing then there would no longer be talk of science outside those peculiar communites that stay on like a vestigial limb to the rest of our evolving social worlds.
+
+Hence the significance of Liebniz's many projects which called for some universal methods meant to unify, regiment, and marshal the disperate methods of science and logic so that fewer pieces might slip through the cracks in history.
+How much capital has been spent as of late on scanning old books in order to extract something from them that individual scientists may leave unnoticed because they are committed to some institutionalized timesink?
+Over and over again we have probably scanned the same book into relatively similar sequences of ones and zeros that have been replicated at what may seem like a low economic cost, but which hits basic productivity right in its boldest bits.
+
+The theory that capital controls will sort out these inefficiencies is supported by little more than wishful thinking taped together with slam pow prose and pointed graphs with highlighted midsections for greater emphasis.
+The experimental analysis of behavior reveals that the probability of a response occurring on a given occasion is a theoretical conclusion from experimental records of changes in rates of conspicuous consequences from categorical responses on carefully controlled occasions.
+Anything less than such vivid reports from the lab and through it into the field are scientifically bankrupt.
+Anything else is less than a 'fact in the bag'.
+The slightest bit of predigested data is suspect to the experimental scientist.
+The strong experimentalist is always in the 'show me' state.
+
+I shall surprise myself if anything I have written in these past two notes comes together coherently upon further reflection.
+
+## \#2026-0731-1549
+
+Unsurprisingly I have been unable to update my notes publicly where my earlier notes are on display.
+This is largely because the internet as it was known no longer works as expected.
+It is also because I tend to have a stricter control over my contact with machine mediated social and verbal contingencies than other people.
+Such nonsense is easy to excuse by pointing to my weaknesses, e.g. general anxiety.
+This would not be inappropriate, but it is more than likely to be followed by a general kind of contemplte, e.g. for those things that make me different from the majority of people who live in our shared, yet divided, digital world.
+
+I will find a solution to this problem of posting, but wish it was not just one thing after another when it comes to dealing well with computers and the people who vaguely control them.
+
+The term 'vague' was once one that I avoided because it had no definite role to play in my writing.
+Upon rereading Quine's "Word and Object" over the past few days I have finally grasped what he was getting at in the chapter on 'vagueness'.
+I do not have complete control over the contingencies in which 'vague' now plays a part, but responses in which it occurs are stronger than they have ever been.
+The similar appears to be tentatively true of 'ambiguous'.
+
+Quine's method of vagueness is one that I had already noticed from my extremely close readings of "Methods of Logic Fourth Edition".
+Vagueness is the only passage from the vernacular to the technical that seems to be open to me given my sensitivity to truth e.g. I can not stand sentences in the vernacular which purport to be true or false when all I can see of such predicates is their application to the items of a theory of the grammar of logical languages.
+Vagueness permits me to speak in the vernacular without purporting anything like truth, denotation (of each item true of a general term as opposed to designation of one and only one item by a purportedly singular term), or, worse, propositions.
+I say worse because the science of behavior points clearly beyond such ancient ruminations whose origins seem to pass through 'substances' or its modern update as 'stuff'.
+
+While such terms may hold up nicely when only the vernacular is at play, the moment technical terms pass through such literary boundaries, we come to the benefits of experimental control in laboratory environments.
+These benefits are largely that of effective action.
+
+Now that I have entirely forgotten what it was that set me down to write this note in the first place, I am lost.
+Such verbal discovery expeditions as these are not all downers.
+Heading out from basecamp is always something of a risk.
+The jungle is thick.
+The blades are dull.
+There is much that we do not command or control.
+It is wild out here in the world of words and things.
+
+Ah, something is coming to me now.
+I had sat down originally to say a few things about Mark Twain.
+His writing inspires me to write as I wish as much as I want as long as I am saying what I would if I was trying to make a friend laugh or at least share in the joys of talking.
+For all that we do not control about our complex and interconnected social environments, we have profound control over our immediate verbal environment.
+We have less control that we used to, but more in other ways.
+There are more microphones than ever, and these are all access points to crippling kinds of control over verbal behavior.
+As verbal machines grown in strength they come to mediate complex contingencies which were once rare or nonexistant and which mediate the speaking and listening of others we otherwise would have never met or been in any contact with whatsoever.
+
+I am not so much concerned by prying eyes or ears, there is nothing I have to say that is of any kind of threat to anyone who might ever be interested in such snooping, rather I am worried about the new kinds of verbal behavior that can be freshly extinguished or reinforced and which was once beyond the reach of even the most fastidious teacher of a language.
+As long as the public continues to speak of languages in the ways set out by linguists we are doomed to come under the control of half baked verbal machines.
+
+The science of linguistics is as important a science as any other, but it does not reach the limits of language as the reinforcing practices of verbal communities.
+This is unfortunate because grammatical behavior is far beyond where the science of verbal behavior begins and those like Russell and Quine have already gone out of their way to show what are the logical and epistomological (and ontological) grounds for doubting the supremacy of grammar in daily life.
+Quine vividly describes the problem of radical translation which has its roots in unavoidable errors of reference when terms come to stand for more than globs of events as part of the passing show which bombards the ends of our sensory nerves on the boundary between the exterior and interior of our bodies.
+Russell vividly describes his inability to justify the premises of any workable theory of the world which must make due with our limit contact with the external world and our knowledge of it through this pinprick of one off experiences, beliefs, and other such ultimately mystical and mythical things.
+
+Back to Mark Twain.
+He encourages me to be the imp that I am.
+I would say 'gadfly' if others were not so quick to pin Socratese on me.
+He was certainly a memorable character, but what I see of him is more myth than man.
+His purported mastery of rhetoric and logic, though he would appeal to some innate uncertainty as to either claim, is beyond anything that I have seen evidence to acknowledge beyond the spritely part in the dialogues of Plato.
+They are synthetic dialogues, and though I have seen and heard great debates thanks to the modern methods of audiovisual recorders, I have seen nor heard anything like the repeated triumph of Plato's Socrates, more like 'Socra-tease'.
+
+What a waste of words this has been, or so it seems to me.
+Unlike when I compose memos, these sentences and phrases will not get a sharpening.
+They will be left like fat and grissle.
+Perhaps an aid to flavor but not to the eating.
+
+Shall I move on to a new note?
+
+
+## \#2026-0730-2334
+
+The previous note is very important as it contains much of the updated material to be found in the latest draft of the memo on logic.
+I am not going to finish here what I started there.
+It is late and I must write something or feel the small death which comes from leaving the page unmarked.
+
+Since I began the note I started yesterday I have reread much of Russell's "An Inquiry into Meaning and Truth" and "Human Knowledge" as well as Quine's "Word and Object.
+I return to these texts again and again each time I come to a problem which I do not yet have the words to solve.
+
+Russell's method of philosophy links vernacular phrases to technical ones.
+He acts innocent when he writes his way towards the kind of conclusions which have already occurred to him.
+This feigned ignorence is purportedly to the benefit of the reader who does not yet know all that Russell has previously contemplated, much less what exactly he has written in the book in their hands.
+This is not a critique of Russell.
+It is a fact which all writers must wrestle with, and it is the problem of teaching beyond the vernacular of the reader.
+
+The reader is part of an audience and the audience is part of a language, though we allow that audiences be composed of perhaps members of different languages.
+The problem of translation is hardly dealt with well in a book composed by a speaker who belongs to the same langauge as the reader.
+Such belonging is always a matter of degree, and this is made clear when we take languages as the reinforcing practices of verbal communities and ask to what extent an individual is under the control of a langauge.
+
+Such contemplations are beyond those like Russell who wed themselves to the vernacular where speaking is nothing more than a byproduct of thinking in that what is said expresses what is felt, thought, believed, or some such other operation of the soul as the mental self or process of the brain or whatever modernization of the Platonic is popular these days.
+
+Why have I spent hours reading Russell and Quine yesterday and today?
+When I stopped the note from yesterday it was because I did not know what names were best for dealing with the distinction between items categorized by the following:
+
+- denote or misdenote somewhere
+- denote or misdenote everywhere
+- denote and misdenote somewhere
+- denote and misdenote everywhere
+
+Finally, in Quine, I found supplementary terms to 'bivalent' and 'contradiction' that are tentatively appropriate as follows.
+
+- Occasional bivalents denote or misdenote somewhere.
+- Eternal bivalents denote or misdenote everywhere.
+- Occasional contradictions denote and misdenote somewhere.
+- Eternal bivalents denote and misdenote everywhere.
+
+These are only of importance to those who are more like Russell or Carnap and less like Quine in that they want to contemplate entities that, in the degenerate case of denotation, are not true or false somewhere or everywhere, or that are true and false somewhere or everywhere.
+What is to be gained from my accomodation of these digressions is simply to satisfy those who bring them up but are unable to carry through the consequences of their convictions.
+
+I tire and yet I can not sleep.
+
+
+## \#2026-0729-1253
+
+My work on my memo on logic has been done here in much earlier notes and, lately, has been done with pen and paper over the past few months.
+The return to these public notes is prompted by repeated shifts in public opinion away from the methods of science and logic.
+The strengths of science and logic are the greatest of human practices, and if they are lost or broken apart then so may be the survival of the species and its practices.
+
+Without further ado I shall type up the most recent revisions into the initial fragment of the most recent draft of the memo on logic.
+
+WARNING! This is a draft, and I do not have all the details of duality (between 'denotes' and 'misdenotes' as in "Contradictions denote and misdenote everywhere.") worked out e.g. there is more I must say about nonimplication and nonequivalence, and the denotative functional constructions are sometimes only half defined. Quine fails to address the consequences of his theory of stimulus meaning, from "Word and Object" in terms of assent and dissent, and thus fails to meet Russell's legitimate concerns over 'believes' and 'disbelieves' as related to his definitons of 'fact', 'belief', 'truth' (and 'knowledge') in "An Inquiry into Meaning and Truth" and "Human Knowledge: Its Scope and Limits". Surprisingly, B. F. Skinner's theory of qualifying autoclitic verbal behavior in "Verbal Behavior" addresses Quine and Russell (and Carnap and many others) prior to and in anticipation of his analysis of scientific and logical behavior. Skinner shows that both Quine and Russell are accurately describing parts of a bigger picture uncovered from the experimental analysis of human behavior.
+
+SUPER WARNING! The words 'denote' and 'designate' were divided into distinct methods of reference (or naming) by J. S. Mill, and Quine's predicate functor methods of logic hinge on this critical distinction. Singular terms purport to designate one and only one item. One place general terms denote each item they are true of. N place general terms denote each N-tuple of items they are true of, and so on through ever more complex shapes of general terms. Since my logic descends from Quine's predicate functor logic ('predicate' is just another way of saying 'general term'), I have avoided Quine's dodge of "denotes" with "is true of" to emphasize that truth is, at best, "degenerate denotation" by a zero place predicate. This must be done to properly address many problems related to propositions, meanings, facts, and information as, somehow, the things with respect to which zero place predicates are true (or false).
+
+202607241505 Grammatical constructions of logical languages denote each of their compounds with its components.
+Compounds are also components.
+Lexicals are only so.
+Constructions of categoricals match.
+Only categoricals with matching like components match.
+
+Each interchange of each interchangee for each interchanger at each locator in each interchangeand matches its interchangeand and its locator is lexical; or matches its interchanger, its interchangee matches its interchangeand, and each component of its locator is lexical; or is categorical with its locator and its interchangeand, and each of its components matches the same at the like component of its locator in the like component of its interchangeand.
+
+Each interchange matches its interchangeand and its interchangee matches its interchanger at each locator of its interchangee in its interchangeand.
+Substitutions are interchanges at largest such locators.
+Lexsubs are substitutions of lexicals for perhaps extra lexicals.
+
+Lexsubs in validities/consistencies denote everywhere/somewhere, and in conclusions of implications they denote where the same in its premises do.
+Equivalence is mutual implication.
+Equichanges are interchanges for equivalents.
+
+Equichange keeps validity, consistency, implication, and equivalence.
+Equichanges in equivalents are equivalent since each lexsub is lexical or matches the categorical of the same in each component.
+
+Subsitution for lexicals keeps validity, implication, and equivalence since lexsubs of substitutions for lexicals are lexsubs-- take the component substituted for as an extra lexical.
+
+When there are lexicals, validities are consistencies.
+Components are self equivalent; and imply themselves, validities, and what their conclusions do.
+Only validities are implied by and equivalent to validities.
+Equivalents are mutually equivalent.
+
+Other than where grammatical constructions denote, they misdenote.
+Lexsubs in invalidities/inconsistencies misdenote somewhere/everywhere, and in conclusions of nonimplications they misdenote where the same in their premises denote.
+Nonequivalents are mutually nonimplicative.
+
+Equichange keeps invalidity, inconsistency, nonimplication, and nonequivalence.
+Substitution for lexicals keeps inconsistency.
+When there are lexicals, inconsistencies are invalidities.
+Components are implied by inconsistencies.
+Only inconsistencies imply and are equivalent to inconsistencies.
+More on nonimplication and nonequivalence is needed here!
+
+Matching compounds of denotative functional constructions jointly denote or exclusively misdenote, where and only where (waow) each of their like components jointly denotes or exclusively misdenotes. For example,
+
+- Joint denials denote waow each of their components misdenotes, and misdenote waow some of its components denote.
+- Negations, self joint denials, denote waow their component misdenotes, and vice versa.
+- Alternations, negations of joint denials, denote waow one or more of their components do, and misdenotes waow each of their components does.
+- Converse conditionals, alternations of the negation of their consequent with their antecedent, denote waow their consequent misdenotes or their antecedent denotes, elsewhere they misdenote.
+- Complementary converse conditionals, negations of con. cond.s, denote waow their consequent does and their antecedent misdenotes, elsewhere they misdenote.
+- Complementary conditionals, com. con. cond.s with swapped components, denote waow their antecedent does and their consequent misdenotes, elsehwere they misdenote.
+- Conditionals, negations of com. cond.s, denote waow their antecedent misdenotes or their consequent denotes, elsewhere they misdenote.
+- Alternative denials, conditionals with negated consequents, denote waow one or more of their components misdenotes, elsewhere they misdenote.
+- Exclusive alternations, alternations of each conjunction of one of their components with the negations of the rest, denote waow one of their components does and the others misdenote, elsewhere they misdenote.
+- Mutual conditionals, negations of exclusive alternations, denote waow each or none of their components do, elsewhere they misdenote.
+- Cedents, conditionals of conjunctions with alternations, denote waow one or more of their antecedents misdenotes or one or more of their consequents denotes, elsewhere they misdenote.
+
+Validity is inconsistency of negation and vice versa.
+The following need further contemplation relative to contradictions, bivalents, and etc.:
+- Denotation is misdenotation of negation and vice versa.
+- Ditto for validity and inconsistency, and for invalidity and consistency.
+- (Equivalence) Implication is validity of (mutual) conditionalization.
+
+Here I am unable to go forth with the edits outlined in pen on the paper I have copied here.
+The problem is that denotation is not obviously misdenotation of negation as I had felt.
+This may occur first from a deviant lexical which happens to neither denote nor misdenote somewhere.
+Secondly it comes from deviant constructions which are similarly constrained.
+
+I had hoped to have this resolved before typing up my notes here, but it is a happy accident to find that I had not.
+
+Validity, and inconsistency, have been defined as in Quine's "Philosophy of Logic Second Edition".
+While Quine admits that there may be occassions where ...
+
+I leave this note undone as it was when I was wisked away from writing here.
+The rest of this is fragmentary responses which may not even be complete sentences, but I very much wish to leave them as they were so that there is no mystery as to what goes on when you make notes.
+
+Contradictions denote and misdenote somewhere, in bivalents denote or misdenote everywhere, 
+Contradictions denote and misdenote somewhere.
+Bivalents denote or misdenote everywhere.
+Noncontradictions denote and misdenote nowhere.
+Validities, inconsistencies, and denotative functionals are bivalent.
+
+Each alternation of each bivalent with its negation is valid: it denotes waow its bivalent denotes or misdenotes, hence each lexsub in it denotes everywhere.
+Each conjunction of each nocontradiction with its negation is inconsistent: it denotes waow its noncontradiction denotes and misdenotes, hence each lexsub in it denotes nowhere.
+
+
+Existential closures denote waow there is somewhere denoted by their component.
+
+Existential croppings denote part of waow their component does.
+
+## \#2026-0728-1106
+
+Notes on the 8th lecture of "A History of Philosophy" by Arthur Holmes on the ethics of Plato.
+
+Out of nothing more than habit, I tend to take notes when I watch lectures, but have found myself doing so when watching something as casually as a documentary by Ken Burns.
+
+The tripartite theory of souls by Plato, better the three elements of the theory of the soul by Plato:
+
+1. intellect
+2. spirited
+3. appetitive
+
+By spirited he means something like vavoom or ambition or vim or pep or vigor or vitality or initiative or etc.
+
+Each element is identified with a corresponding part of the body:
+
+1. intellect is in the head
+2. spirit is in the chest
+3. appetite is in the stomach
+
+Souls are gods of individual behavior in that they are the initiators, originators, or creators of the behaviors said to be mediated by the appropriate parts of the body.
+Plato would not have said as much as I have just, but what I have said ties his work into the long and persistent history of prescientific explanations of human behavior.
+
+Holmes mentions the similarities between the three elements of the theory of souls by Plato and the three elements of the theory of psyches or minds by Freud.
+Even the word 'psyche' was manufactured by the Greeks and Romans as the personifcation of the soul: Psyche was the wife of Cupid, otherwise known by "Eros" an etymological ancestor of "erotic".
+
+Specifically, the theories of behavior from the 1800 divides the origins of behavior into 
+1. intellect
+2. will
+3. emotion
+
+Loosely these map onto the elements of the theory of Freud as
+1. ego as the origin of self and self-control
+2. superego as the origin of moral self-management in accordance with social norms
+3. id as the origin of unconscious desires as in the pleasure principle
+
+and these are handed down into modern cognitive-behavioral psychologists by the metaphors of 
+1. adult
+2. parent
+3. child
+
+The proliferation of purported explanations of behavior thorugh various alchemical interventions are one of the largest threats to an effective science of behavior because they make it hard for the new scientist to escape the various controls imposed by their vernacular upon their experimental analyses.
+
+Corresponding to each of elements in the theory of Plato are its activities or goals or "telos" or the good of it:
+1. wisdom
+2. courage
+3. temperance/self-control
+
+These emerge parallel to the classic Greek cardinal virtues (prudence, justice, fortitude, and temperance) conditioned on cosmic justice like that on display in the Homeric epics.
+
+Plato's ethics appears then as the claim that the just person is one who obtains these telos harmonously so that the intellect controls the spirit and the spirit controls the appetite.
+
+It is unfortunate that this philosophy still governs prevailing social practices.
+The science of behavior is the appropriate alternative, even though it may be young and not have the same pedigree as the popularized theories in our earliest and latest literature.
+
+The myth of the charioteer pits two horses against the driver in a dynamic metaphor of the life of the human soul where the charioteer is the intellect, the lead hours is the spirit, and the other hourse is the appetite.
+
+Teleological is "goal oriented": "telos" means "end", "goal", or "purpose".
+Natural, operant, and social selection by consequences from variation replaces the theoretical role of a telos in explaining the origins of species, behavior, and practices, but it has been hard to overcome the millenia of prescientific stories which continue to overwhelm prevailing practies.
+
+Plato uses "eros" like "desire" as in "What do you want?" from which the question follows "What are you going to do to get it?" or "What is the highest life?".
+
+The soul's love moves the individual.
+"The good life is one inspired by love and guided by reason." Bertrand Russell.
+
+How do you get people to know and love the good?
+What are values and how do they work?
+Values are ideals we are said to pursue.
+
+The life of the soul is abundantly practical in its wonder for knowledge.
+The highest kind of thought, invocation of the soul, is contemplation, as that which is beyond logic and rhetoric and identifying the good, to delighting in, pondering, reflecting on, absorbing, looking at, wondering at, admire, etc. it.
+
+Wisdom results from the contemplative delight in the acquisition of knowledge.
+It becomes a practiced capacity for making sound judgements in particular cases with moral or aesthetic convictions.
+Naturally guides the spirit and controls the appetite.
+
+"Rhetoric without dialetic is a tool of the appetites."
+We need knowledge of ideals from dialectic.
+
+The Pythagoras coined "philosophy" as "the love of wisdom."
+
+Eros vs. Phileo: two types of love, where phileo is a love for the things own sake.
+The four classic loves are agape, storge, eros, and phileo.
+
+Blind fate gave way to cosmic justice in the epics, and it is cosmic justice which primed Plato.
+
+Intrinsic v. instrumental goods of Aristotle: good in itself v. good as means.
+
+The improvement of the soul is valued because it is eternal and the body is not, thus it must be liberated continuously to be like the form of the good i.e. to be like god where god is the form of the good.
+Good souls immitate god.
+
+What is a virtue, "arete", quality, excellence, full realization of potential, moral vitue?
+To have virtue is to be the good.
+Good acts are by the way.
+To be good is what the soul must reach through improvement as pursuit of the telos.
+
+Justice is the ordered unity of the virtues.
+
+Pleasure: the Gorgious and Philebus dialogues.
+Pleasure is not the highest good, but it is a good.
+Satisfying the appetites, hedonism, is not the highest good because the soul is composed of the higher elements of intellect and spirit.
+But pleasures are part of, by products of, higher activities such as contemplation.
+Pleasures crown the good life.
+
+It is easy to get caught up in all this wishful thinking because it has become our vernacular.
+The history of philosophy, like any other history, is gathered as an empirical checkpoint, however odd the term may seem when applied to such unreliable reports from field work of such ancient provenance, on theories of behavior and their specialization to human behavior.
+
+
+## \#2026-0726-1407
+
+Though my memo on logic has been a very long time coming, it must continue to await completion as the longer I contemplate it the stronger it becomes. Just yesterday I solved a big problem with the dual words 'denote' and 'misdenote' which are a sorta neutral version of Quine's 'assent' and 'dissent' and Russell's 'belief' and 'disbelief'. Mine are technical terms, 'misdenote' isn't even a generally recognized English word. As always, Russell's 'belief' and 'disbelief' are the most comforting access point to anyone not already familiar with teh problems posed and solved by their duality.
+
+The problem is this: how to define the negation of a sentence without the definition including the negation of a sentence. The traditional definition is this: The negation of a sentence is true if and only if the sentence is false and vice versa. This appears, at first to avoid including the negation of a sentence as a subcomponent, but we fall into trouble when we ask what the definition of 'false' is. The traditional definition is this: A sentence is false if and only if it is not true and vice versa.
+
+You can try to slip out of the error by playing around with negation and falsity as much as you want but will always find yourself in a similar pickle. Russell's way out is to appeal to abstract entities such as facts, propositions, and beliefs. His line is that of the vernacular. Most people accept without doubt that there are facts and beliefs. They can easily be made to accept that there are propositions by talking about the meaning of sentences in different languages being the same. Propositions come out then as what sentences mean when they are true or false. He leaves the signification of sentences wider than might be reached by truth or falsehood following Frege and his ilk.
+
+A proper synthesis of the work of Quine and Skinner eliminates the problems posed by meaningfulness. Sentences fall away as mere records of certain kinds of verbal responses, grammatical ones at that. Meaningfulness is found to be a restriction, one which we are freed of from an experimental analysis of behavior. As much as scientific practice is taken as vernacular to the speculative philosopher, there is no doubt that Quine and Skinner are meandering in a helpful direction. Whether we arrive anywhere like where they point is still to be seen, though if I must bet I would bet on them more than any others.
+
+This has been such a delightful few paragraphs that I shall include it in the newest note of my cumulative record.
+
+## \#2026-0725-1531
+
+Most of my work on the memo on logic has continued with pen and paper and without any computer mediated word processing.
+This is the first note where I plan to write out the latest evolution of the memo.
+Work done prior to the long interval between these latest notes and earlier notes has brought greater clarity and exactness to the methods I previously championed in the hints which are, at this moment, enshrined in the few hints on logic given above.
+
+The memo which has evolved is one which covers similar grounds with paths whose routes are well charted and well worn.
+The entierty of my logical methods derive almost exclusively from Quine's definition of validity from grammar and truth in his 1986 "Philosophy of Logic Second Edition".
+When dealing with logical languages generally it is best to follow Quine's grammatical definition since it does not depend on the peculiarities of the grammatical constructions of a given logical language.
+
+This mixes well with von Neumann's schematic methods. Quine more than any other that I have read does the most to articulate the full strength of schema, but, there remains a further use of schema which von Neumann pointed up and Quine more or less avoided except when its passing necessity occurred.
+It is a practice which mixes von Neumman's "axiom schema" each instance of which is to be counted as a theorem in the axiomatization presented with respect to it, and Quine's predicate functors which fully generalize the syntactic practices of Carnap in his "Logical Syntax of Language" and even more so in his "Introduction to Symbolic Logic".
+
+A concrete example of the practice I have only hinted at is at the end of the present edition of my memo on logic:
+
+    "F is wellfounded" is short for each substitution for 'G' in "Each item is F if each item is x such that x is G if each item is y such that y is G if y is F to x."
+
+I do not yet submit that I have articulated the practice with sufficient clarity and exacteness to give it the same status as that of Quine's predicate functors.
+Predicate functors are clearly grammatical constructions each of whose compounds and components are only and solely predicates.
+
+The introduction of a sorta generalized predicate functor of the sort shown in "F is wellfounded" is that its occurrence in a dialogue carries the effects of not one schemata but rather a purportedly endless accumulation of instances each of which is itself not a predicate but a predicate schema.
+
+Just now, two paragraphs ago, I mentioned predicates as the only and sole compounds and components of grammatical constructions in the logical languages of predicate functors, but what was said there is not limited to predicates. It includes predicate schema and hence predicate letters.
+
+Methods which smear the contributions of predicates and predicate schema are called schematic methods by me. The schematic theories of indiscernibility are my go to examples. Logical langauges with finite lexicon include their predicate of indiscernibility and it is coextensive with what is otherwise identified as a predicate of identity in theories of identities like those of Godel or Wang.
+
+My choice of wellfoundedness as an example of the schematic methods I am advocating for is picked because it encapsulatesd the entirety of the inductive methods characteristic of formal theory and its logic.
+
+I think of Quine's proof of his law of infinite conjunction. It follows from a purportedly endless list of lemma each of whose proofs follows in part from those prior to it. It is problematic in that it depends on an endless schedule of consequences which can not be exhausted decisively.
+
+Since this note has become its own thing rather than merely turning out as an introduction to the latest draft of my memo on logic, I shall begin a new note for it. Before that I shall meditate briefly.
+
+## \#2026-0722-2105
+
+The calculus of variations is the second most important missing piece to an effective high school education in mathematics. The first such missing piece is actually a missing method. It is the method of the uniform calculus, from which the point calculus is confronted only upon meeting Maclaurin and Taylor series.
+
+An online text for the caluculus of variations can be found here: <https://liberzon.csl.illinois.edu/teaching/cvoc/node59.html>.
+
+A canononical text which does not reach into the complexities of functional analysis is Gelfand and Fomin's 1963 "Calculus of Variations": <https://archive.org/details/gelfand-fomin-calculus-of-variations>.
+
+Again, the uniform calculus of variations is likely a simpler starting point than the traditional methods.
+
+The last chapter of Gelfand and Fomin is on "Direct Methods in the Calculus of Variations".
+These are to be found as a result of primitive recursive analysis.
+
+For now Gelfand and Fomin is the most elementary yet rigorous presentation of the calculus of variations that I have found.
+More work must be done to compare and contrast it to other texts.
+
+## \#2026-0722-2058
+
+While I have studied philosophy since the summer of my sophomore year in high school, I have not had a formal course on its history.
+I finally corrected this error by watching Artuhur Holmes' History of Philosophy: <https://www.youtube.com/playlist?list=PL9GwT4_YRZdBf9nIUHs0zjrnUVl-KBNSM>.
+
+The text used in that course is Walter Kaufmann's "Philosophic Classics, in two volumes: I. Thales to Ockham II. Bacon to Kant". I have not yet found a link to the text, but there may be something from the wiki: <https://en.wikipedia.org/wiki/Walter_Kaufmann_(philosopher)>.
+
+## \#2026-0722-1205
+
+The memo on logic is coming along quickly.
+It has divided into two alternatives which are difficult to contemplate concurrently.
+The one is traditional in that it follows the evolved methods of logic admited under Quine's strict analysis which eliminates meaning.
+The other is equally traditional in that it follows the methods admited by Russell which embrace meaning.
+The difference is starkly contrasted by their respective terms for dealing with the origins of their methods: Quine's 'ascent' is to Russell's 'belief' as Quine's descent' is to to Russell's 'disbelief'.
+Quine ascents to public science and Russell believes in private sensations.
+Neither denies they other outright, but both contend their one is the better starting and stoping point i.e. Quine begins and ends with science where Russell, earlier more than later, starts and stops with sensation.
+
+Skinner covers the convictions of both Russell and Quine without relinquishing any of their key articulations.
+The contingencies characteristic of Skinner's science unify the methods of Quine and Russell uniformly.
+Ordered pairs exemplify this unity in their social efficacy, their concrete expedience, and their abstract economy.
+
+## \#2026-0714-1931
+
+It is better that I record my thinking here or with pen and paper than to leave it unrecorded.
+However ridiculous my thinking may get, it is not as ridiculus as it might otherwise be had I not at least been taught by so many talented teachers.
+Perhaps I am not in a proper position to judge the effectiveness or appropriateness of their teaching as their student.
+Though I might say "I am more effective from having been taught by them than I might otherwise be" this may not contribute to a firm conclusion like "I am more effective because they taught me."
+Such self doubts suggest themselves as a consequence of my teachers's teachings.
+
+...
+
+During the large gap between these latest notes and those much earlier than that, I have made great strides in my work on logic.
+The memo on logic has appeared in a far more complete form than it has hitherto.
+This comes in part from the realization that if I were to spend the rest of my life looking for stronger logical methods I am unlikely to find better than what I have already found.
+The extent to which these methods were found or created is irrelevant since I can point to the books the strengthed them and my explanations of them.
+
+
+## \#2026-0714-1843
+
+It reamains to be seen if I shall return to writing here at semiregular intervals.
+It also remains to be seen if I shall ever share this updated version of my notes, memos, and hints with the public.
+As it stands, I see myself sharing more again, though what may come of it remains unknown.
+
+For a brief time I had succeeded in reading my way ferociously through some of the best books from the best writers I could get my hands on.
+This petered off a week or so ago as the rate at which unexpected interruptions increased for reasons which remain largely beyond my control.
+When the conditions that maintain unfortunate events are largely beyond my control, I tend to change what I do so as to minimize the deleterious effects of that which is beyond my control by changing that which is within my control.
+
+Such obvious methods of dealing with the less than happy parts of life and work are much more difficult to execute in practice than they are in principle.
+This appears as a generality in that practices may be governed by principles.
+A similar projection of a similar principle is that advice may govern behavior.
+To change the behavior of someone by giving them advice requires that they already have a history which has taught them the kind of self control that activates advice as a governer of behavior.
+Who among us really has such a wonderfully effective personal history?
+
+...
+
+The internet suggests that "Calculus of Variations" of 1963 by Gelfand and Fomin gives the proofs of the main consequences which compose the theory of the calculus of variations as it extends the most familiar methods of the derivative and integral calculus popularly taught in a scientific education.
+A version can be read online here <https://archive.org/details/gelfand-fomin-calculus-of-variations>.
+
+It is an English translation of a Russian text.
+Liberties in the loose constraints on any translation are exercised by the translator to include problem sets which were not part of the original text as well as explanations which are tempered by the evolved practices in the field.
+
+It is strange that there is no logically tight presentation of what Newton and Liebniz handed down to us so many years ago.
+Real analysis, and its big brother Functional Analysis, do not achieve the generality of method which is otherwise introduced to those more focused on the calculations required to set up strong laboratory environments.
+I find no more comfort in the set theoretic methods of Cantor than I do in the category theoretic methods of Louis D. Nel of Carleton University described briefly here <https://arxiv.org/pdf/math/0504565>.
+
+
+## \#2026-0624-1046
+
+I am having great difficulty reading David Deutsch's "The Beginning of Infinity". Why? Because it presents just enough of what David knows about the history of science and logic to support his outlook. It takes advantage of what the reader does not know, e.g., about those who objected to the methods he promotes.
+
+Who cares if *I* am having difficulty? Perhaps I am as self-aggrandizing in my selective history as I claim Deutsch to be. Yet, here it is that I diverge from Deutsch and so many others. I have begun by questioning my authority as a writer. Who am I? Who am I to tell you the reader what is true and what is not? Do effective methods of science and logic work upon readers by surrepticiously taking advantage of prevailing social practices and presumed authority?
+
+
+## \#2026-0624-0924
+
+Forgive me reader for wasting your past life with my words. I was a fool to think that you might care for what I said. Fortuitously, you are not me and need not be burdened by the trivia and tedium that make my past writings intelligable. I now know that it is best to avoid making an ass of you.
+
+It is not good enough to tell you what I have read that has changed me as a writer over the past three months. Who gives a damn what someone says when you can see what they do? Thanks James Baldwin.
+
+No one cares about science and logic because no one is taught to care. No one writes well enough about science and logic to be read by children and adults alike. Everyone likes a good story, and, purportedly, science and logic are the best stories in history, but they are not told like the little engine that could or sung like the itsy bitsy spider. Science and logic are not a luliby to the world yet. Who is going to make them so? Why are so many mystics hell bent on making science and logic into an imaginarium rather than into what it is that intelligent people use to deal well with the world?
+
+What is it about pseudo science that makes it indistinguishable from science for most people throughout history?
+
+Why do we hate smarty pantses who prop themselves up on a stage and say "look at me!" when it is really the world that science and logic look at with an all consuming intensity that burns brighter than the most brilliant nuclear blast?
+
+What am I going to do about it? Nothing? Am I going to just wait for the world to unwind while I delude myself into thinking I can do something to stop it? Or, am I going to try to stop it and truly discover where my delusions begin and end? The delusion of ambition frightens me when I see it in others. Does it do the same when I see it in myself? Whose problem is that?
+
+
+So what if I want to write about science and logic. If I do not do it well then nothing I write matters. It might feel good to me to see my words on the page, like a bit of candy to a diabetic.
+
+Self indulgent writers die of a self administered overdose.
+
+...
+
+Forgive me reader for robbing you of life with my wasteful words in the past. I was a fool. There is no other reason for me to write than to be read by you. Anything less is soil on the grave of a slow death.
+
+These words are all that you have to judge me by and if you are to judge me well then it is only because I have recently read those who are better writers than I shall ever be.
+
+
+I am still a fool, but not the same one I once was. Only my words can save me from being the fool I once was.
+
+I stopped writing here last November because it kept reinforcing the kind of writing that is only helpful for those who already know something about what I have to say. It is a poor thing to leave the reader so alone without any other help than saying "as you know" or "recall" or "continuing from where I left off here" where 'here' begins itself with the same message leading back, message through message, to the beginning of these notes until all interest has been fully expunged from the wayward reader.
+
+That I have started writing here again can not be taken as indicating some sort of literary accomplishment on my part. I have yet to learn how to write well for the reader which does not yet know something about what I have to say, but I am certainly better equipped to do so now than I was months ago.
+
+I want reading my writing to feel like sipping a smooth cup of warm coffee. If you do not like coffee, then think of tea instead. If you don't like coffee or tea, then you are helpless.
+
+In the interim I have read far more than ever before with the explicit aim of assembling sentences that read like a smooth cup of coffee. of picking up the tricks of the writing trade that make for smooth and satisfying reading, even if it is of a stupifyingly technical sort. There is no reason that technical things must be tiring. They are not tiring for me and I like to think that this is more than just that I have had such wonderful teachers in the past. If that ends up being the only reason I am fond of the technical things that delight me, then I must at least be something like a teacher to you, my reader.
+
+I know how to teach you in person but not how to teach you in writing. It hit me that I can write as if we are here together. Our shared language links us remotely accross time and space. The worse I write the further apat we feel. If you trip over this carpet of words it is because I either wove it wrong or let it bunch up when I rolled it out.
+
+More fiction has been cast upon my reading eye over the past three months than over any other interval of time in my life. Young me read everything he saw, but even so it never added up to all that I have consumed as of late. I could list all that I have read but that would be boring and nothing is worse than boring writing.
+
+
+
+## \#2025-1126-1402
+
+There are a number of results involving Conway's surreal numbers that I would like to collect here, but each time I sit down to collect them I am reminded that I have not yet collected together in a single place the methods of logic as I find them.
+
+The hints that I have collecte thus far are aimed at predicate logic generally and begin there with the definition of validity with respect to supplemental lexical substitutions. The denotative functional validity is not limited to the supplemental lexical substitution. It admits substitutions of non denotative functional components.
+
+Here then the definition of denotative functionally valid is needed. To say that a predicate is denotative functionally valid is to say that each substitution of like predicates for like non-denotative functional components.
+
+The main difference between the denotative functional compounds and the quantificational compounds is that the quantificational compounds denote or not with respect to occasions other than the present one. That is, the component of an existential closure may not denote on this occasion but its existential closure might if there is an occasion where it denotes.
+
 ## \#2025-1122-1531
 
 I was reading through Patrick Suppes's "Axiomatic Set Theory" (a delightful dover book) for the second or third time and it finally occurred to me that I'd never really written down the Tarski-Peirce definition of 'finite set'.
@@ -195,7 +873,7 @@ There is an arithmetic theory which presents itself as epistomologically prior t
 2. Formation: Each item is (x and y such that some item is (w such that w pairs x with y)).
 3. Emptiness: Some item is (x such that each item is (y and z such that it is not the case that x pairs y with z)).
 
-Write 'empty' for 'x such that each item is (y and z such that it is not the case that x pairs y with z' so that the premise of emptiness is equivalent to 'There are empty pairs'. Exstentionality implies indistinguishability of empty pair. Therefore, extensionality and emptiness imply the singular description 'the empty pair' designates. Write '0' for 'the empty pair'.
+Write 'empty' for 'x such that each item is (y and z such that it is not the case that x pairs y with z' so that the premise of emptiness is equivalent to 'There are empty pairs'. Exstentionality implies indistinguishability of empty pairs. Therefore, extensionality and emptiness imply the singular description 'the empty pair' designates. Write '0' for 'the empty pair'.
 
 Similarly, extensionality and formation imply the singular description 'the pair of x with y' designates. Write '(x,y)' for 'the pair of x with y'.
 
