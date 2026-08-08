@@ -9,8 +9,8 @@ These [notes](#notes), [memos](#memos), and [hints](#hints) report, change, and 
 4. from the sciences (of 
     - logic, e.g. denotative, Boolean, functor;
     - mathematics, e.g. calculi, collections, categories;
-    - physics, e.g. quantum, thermodynamic, gravitional;
-    - chemistry, e.g. phyiscal, biophysical, biological;
+    - physics, e.g. quantum, thermodynamic, gravitational;
+    - chemistry, e.g. physical, biophysical, biological;
     - biology, e.g. organelles, organisms, environments;
     - behavior, e.g. biological, biosocial, social; and
     - culture, e.g. history, science, technology).
@@ -160,6 +160,947 @@ Use a thermometer.
 
 # NOTES
 
+## \#2026-0808-1519
+
+The consequences of science and logic are inconspicuous and remote to every day experience, but that does not mean that they are absent nor that they are weak.
+
+The amount of time that I spend justifying the strengths of science and logic to people is troubling.
+
+## \#2026-0808-1459
+
+It occurs to me that the word problem for recombic predicate functors (or permutation problems with two stacks) is the core of the undecidability of predicate logic.
+
+## \#2026-0808-1450
+
+Is love more than the residue of survival?
+
+## \#2026-0808-1417
+
+Quine's method of taking free variables as dummy singular terms and then eliminating singular terms as singular descriptions paves the way for a new proof, and I would say logically coherent proof, about Skolem Normal Forms and similarly arguments involving in Shoenfield's case 'special constants' and in Ebbinghaus, Flum, and Thomas's (EFT) case "witnesses".
+
+The supplementary axioms of Shoenfield's special constants are then just the appropriate descriptional premise and substitutional premise.
+The substitutional premise is substantially what Peano once used for his descriptional analysis of singular terms.
+
+Thses 'substitutional premises' are what would otherwise be called a definitional premise in EFT's case, and either the same or similar in Shoenfield's case.
+
+In EFT's case, the definitional extension theorem is a consequence of results on syntactic interpretations.
+Unfortunately the methods of EFT are model theoretic.
+
+If I did not have the three books-- Shoenfield's, EFT's, and Avigad's-- then I would not so easily see that they are all circling around, what appears to me now, as passage between singular terms and singular descriptions, and, most importantly, between singular terms and their elimination.
+
+What is interseting, is that rather than speak of the elimination of singular terms, I am interested in their introduction!
+A pure predicate logic has no singular terms, and has no variables to boot!
+
+The descriptional premises are the universal closures of the existential cropping of the collective relate of identity with a singular description (open or closed).
+
+The definitional premises are the universal closure of the biconditional of the collective relate of identity with the singular description and its descriptional predicate (the relative clause, predicate abstract, which the descriptinoal premise otherwise states is functional).
+
+Aside, Herbrandization is the dual of Skolemization.
+No, this is not just an aside.
+After reading <https://en.wikipedia.org/wiki/Herbrandization> it is clear that Herbrandization is the method by which singular terms are introduced from a pure predicate logic.
+
+It appears that Herbrandization is the method Dreben used when Quine references his method in the chapter on functional normal forms.
+
+The appropriate analogy is that Herbrandization is to Skolemization as validity is to inconsistency.
+It is erroneously reported that they are as validity to consistency, but these are not duals of each other.
+
+Descriptional premises are of the form "Each item is ..x such that some item is y such that y is identical to the z such that z is F to ..x." where 'F' is in the position where a descriptional predicate goes.
+A descriptional predicate is nothing more than a total functional predicate and this is the origin of the elimination of descriptions via equivalence of the descriptional premise to "Each item is ..x such that some item is y such that each item is z such that z is F to ..x if and only if z is identical to y."
+Which can be broken into premises of existence and uniqueness:
+1) Each item is ..x such that some item is y such that y is F to ..x
+2) Each item is x, y, ..z such that x is F to ..z and y is F to ..z, only if x is identical to y.
+
+Modern methods stress the existence and uniqueness without mentioning descriptive predicates or total functional predicates.
+
+without  
+
+## \#2026-0808-1344
+
+Alternational normal form of truth functional schemata gives a proof procedure for truth functional logic (unhappily called 'propositional logic' by most modern mathematical logicians) which includes no axioms.
+
+I am uncertain if this is already known or not.
+It is certainly not a method of natural deduction, about which cuts and such are fawned over (which only makes sense in a world without Quine's main method).
+Natural deduction is characterized by the rules of inference keeping implication.
+That is, natural deduction gives a proof procedure for implication, whereas Herbrand's method, in his axiomatic form, gives a proof procedure for validity, and Quine's main method gives a proof procedure for inconsistency.
+
+Validity remains of primary interest to logicians only and solely as an economical starting point for the rest of their science.
+With the advent of Quine's main method we now have good reason to reinterpret Aristotle's logical methods with respect to the high praise he placed on his principle of noncontradiction or, what I would call, the law of inconsistency i.e. validity is inconsistency of negation.
+That these are similar principles is not exactly clear to see at first glance, but there is enough of a hint that such a regimintation is possible that I shall not linger.
+Ultimately, there is not much to be said about vague phrases in the vernacular other than to present an appropriate paraphrase in a logical language.
+
+The proof procedure for truth functional logic which I present is one which does not branch and, under appropriate constraints, only one step of which can be taken at any stage.
+
+The basic operations are:
+1. Elimination of conditionals and biconditionals (by their appropriate alternational normal forms, if you want to save time, or by your favorite compounding of negation, alternation, and conjunction of their components)
+2. Purification of negation
+3. Right association of alternation and conjunction
+4. Left (? right) distribution of conjunction over alternation
+5. Elimination of inconsistent clauses
+
+They are given in order of their priority, or if they are taken as their multistep generalizations (that is, their fixed point forms, e.g. where purification of negation is applied iteratively until its input is identical to its output) in the order of their application.
+
+This method can be used on the postfix (matrix) of the prenex form of a quantificational schemata to prove it truth functionally inconsistent.
+
+Why a proof procedure for inconsistency instead of validity (the validity method is just the dual of the one given here, that is it follows from conjunctional normal form)?
+It is a matter of space and examples.
+When the procedure ends with an empty schemata it is concluded that each earlier truth functional schema is inconsistent.
+That is, each of the operations keeps inconsistency (back and forth if we allow the empty schemata as a degenerate inconsistency).
+This follows from the rules of equivalence that permit each of one way halves of the equichanges behind each basic operation.
+
+Proofs of inconsistency first balloon and then, as outright inconsistencies are eliminated, they shrink.
+If space is at a premium, then the basic operations can be tried in prefix or postfix order rather than on the prescribed infix order which I prefer.
+
+Various speedups can be obtained by early identification of appropriate validities and inconsistencies which fall out from the appropriate equivalences and corresponding equichanges.
+
+Here is an inscrutable implementation I cooked up in JavaScript which does not clearly factor out the basic operations as I have above (and which includes the appropriate methods for producing the prenex form).
+```
+function A(...x){return x.every(Array.isArray);} // is Array
+function C(x,y){return D(x).concat(D(y));} // concat arrays
+function D(x){return A(x)?F(x,D):x;} // deep dup arrays
+function E(x,y){return A(x,y)?L(x)==L(y)&&x.every((e,i)=>E(e,y[i])):x===y;} // identically equal
+function F(x,f){return x.map(f);} // map
+function IJ(x,y,f){x.forEach(i=>y.forEach(j=>f(i,j)));} // 2d iterate
+function L(x){return x.length;}
+function M(x,y){return y.some(e=>E(x,e));} // member?
+function S(a){return `[${F(a,x=>!A(x)?x:S(x)).join('')}]`} 
+
+function wh(x,y,i=L(y)){while(i--)if(E(x,y[i]))return 1+i;return y.push(x);}
+let s=[];function sn(x){return wh(x,s);}
+function pr(p,...v){return [[],[[[sn(p),F(v,sn)]]]];}
+function n(e){return [-e[0],D(e[1])];}
+function d(i,j,w){return j.every(e=>!M(n(e),i)&&(M(e,i)||w.push(D(e))));}
+function nd(x,y,z=[],w){IJ(x,y,(i,j)=>d(i,j,w=D(i))&&!M(w.sort(),z)&&z.push(w));return z;}
+function m(x,f){return F(x[1],i=>F(i,([p,v])=>[p,F(v,f)]));}
+function and(x,y){return [C(x[0],y[0]),nd(x[1],m(y,e=>0<e?e:e-L(x[0])))];}
+function ot(x,y=[[]]){x.forEach(i=>y=nd(F(i,e=>[n(e)]),y));return y;}
+function not(x){return[F(x[0],e=>-e),ot(x[1])];}
+function exi(x,y){return [C(x[0],1),m(x,e=>e==y?-L(x[0]):e)];}
+```
+
+## \#2026-0808-1308
+
+As much as I possible can I have opted to include as much of personal letters to others as I can publicly share without causing them harm or without their direct permission.
+Since much of what I say to others is what I would say to anyone, and often do, in a public arena, there is little that must be left unsaid here, yet.
+
+I must say 'yet' because there is no reason for what I say to ever go unsaid. This is absurd to most people. It is "playing life on hard mode" for me.
+
+Without further ado, here is a good example of how I write to people individually. It is clear that I could learn a lot from myself. You, after all fare reader, are yet another individual I, perhaps, have yet to meet or know. Perhaps, and this is ego, I am no longer here to respond as I would if you could speak with me at this exact moment. These are the only artefacts of my behavior which remain from this wonderful moment.
+
+"That we live in a world made to be beyond our understanding is clearly a grand weakness and one which shall end us if we do not end it first. Public opinion has been warped by economic practices to make it appear as if paying for things to be done is somehow more noble than knowing how to do them and having the time to do them yourself. It is not as if I am saying we should all do everything for ourselves, as if on some isolated island estate. I am saying that we must have effective countercontrol over our immediate social environments which does not automatically involve an unnecessary third part inserting themselves into every moment of our life.
+
+If the people who built the phones in my pocket or the computers on my desk or the television in front of my couch were as close to me as their products were then it would be obvious that they need to get out of my house and that what they are doing is generally creepy and needs to stop now.
+
+...
+
+I have to go to a different computer in order to update my website now. This is probably the main thing that has stopped me from entirely leaving twitter, that and I am kinda excited to watch all the new ways that it breaks so that I can get a feel for the future that everyone will be living in if they do not make the changes I mentioned above to the world.
+
+My technology is mostly ten years old, and the internet just doesn't work. What is funny is that you really understand what I am talking about. You are living through the same thing with your music stuff. Americans are so isolated from teh state of the world outside their dumb borders.
+
+What is it with borders and boundary lines that makes people go wacko. The wind blows over them without a care, and earthquakes do not say "oh, no, forgot my passport". Imagine a virus needing to apply for a green card before entering the U.S.A.
+
+I find that none of what I have to say about teh world is profoundly new outside of what I might say about it with respect to the science of behavior. Otherwise Plato's Republic is as up to date as any other book you might pick up from a living expert on politics and government.
+
+...
+
+Having to put my cumulative record onto a single usb drive and run it over to another computer to update it publicly has made me lazy. I have now written over ten notes (or so, I tend to exaggerate a little, as you may have noticed :) ) that are just waiting to be sent to the public. This used to only happen between my handwritten notes and my typing them up. Now I hand write a bit less and update  about as often as I used to type up important notes.
+
+...
+
+Reunions are exhausting, but so very important in this modern world with littel social Chernobyles everywhere. Family are a line of defense against "the dark arts" unlike any other. Friends are sometimes better, but a good friend is hard to find. There is no substitute for time shared together, and like planting a tree, you would always have done better to do it twenty years ago.
+
+...
+
+I am still learning how to write better from all the fiction I have been reading. I recently got my first Ian Fleming book "casino royale". I was told by more than one person that Roald Dahl (children's author of "Willy Wonka", "James and the giant peach", etc.) is the template for James Bond. Ian Fleming reported to the head of the british navy and ended up digesting all the messages sent through to him. This gave him access to reports on Dahl's missions. Dahl's adult writing, I am told, is also highly erotic and very often involves seducing ladies much like Bond, James Bond, or shoudl I say Dahl, Roald, Dahl?
+
+...
+
+Now I get to toot my own horn. I had a friend call me who works with all this AI stuff that of all the people he has met who talk about how to deal with AI he keeps thinking about teh things that I say. I actually got told "Your values are the only ones I have heard that actually make sense". I was over the moon.
+
+I am going to try to do more to put together these nonmathematical things in my notes, but so much of what I am working on is mathematical, logical, or programmatic that I just haven't gotten around to writing on social and ethical things.
+
+But, I have taken some good notes on a beautiful sequence of lectures on the history of philosophy by a Dr. Arthur Holmes that you can find on youtube, adn that I woudl highly recommend. He is a grand speaker and knows a lot about what he is saying because you can tell he has taught the class for deacdes (he mentions a story from his world war II days that gives you a sense of his purpose, which is clearly not to do another world war two if we can avoid it, if).
+
+Taking notes on his lectures has showed me that the message boards of the old dead internet were a recapitulation of the entire history of philosophic discourse. This is not a good thing, it is a bad thing: it means that we just keep saying the same shit over and over again and expect something differnt to happen. I already mentioned this when I said that Plato's Republic is as up to date as the m ost recent textbook on government and politics. This is exaggeration but all the same..."
+
+## \#2026-0808-1242
+
+"The Long Road" by Steven King is "The Wizard of Oz" if only Dorothy made it to the Emerald City alive.
+
+## \#2026-0807-1315
+
+Two notes ago I concluded that the reference in Shoenfield's "Mathematical Logic" to Hilbert and Ackermann in his theorem "The Consistency Theorem (Hilbert and Ackermann)" was certainly to the proof in their "Principles of Mathematical Logic".
+Since then, I went ahead and started reading their book from the very beginning.
+Last time I read it I must not have read the preface, but now I have and this theorem gets curious.
+Not only did Quine have to insert a supplemental paragraph into their book to correct a non sequitor (section 8 pg. 87 used to end having only established that a formula and its Skolem normal form are jointly provable or not provable as the case may be but then go on to rely on having established that they are jointly valid or not valid, Quine noted that the same argument with respect to provability works with respect to validity but that though a proof exists which is almost exactly the same as the one for provability, it is a distinct endeavor), but Church had to fix the exact part of the proof of completeness that I am convinced is the one being referenced by Shoenfield.
+
+Now, it occurred to me that I might have only searched for "Hilbert and Ackermann" and not gone all the way to "Hilbert and Ackerman Consistency Proof".
+Having searched for the latter, I am almost certain that I did not do this exact search earlier because the result which pops up is one that I would remember: Edward Nelson's notes from Fall 2004 Lecture at Princeton for Mat 503.
+
+<https://web.math.princeton.edu/~nelson/503/cons.pdf>
+
+Upon reading some of the paper, I am now convinced, as much as I was previous in what I see as an error, that the "Hilbert-Ackermann" consistency proof referenced by Shoenfield is from a paper of Ackermann's prior to the publication of their "Principles of Mathematical Logic".
+
+If someone wanted to know more about it I would point them to Nelson's paper.
+
+As a result of reading Nelson's paper, I turned my attention to the first few chapters of Jeremy Avigad's "Mathematical Logic and Computation" which gives a delightful presentation on free-variable equational theories.
+These were used to great effect by R. L. Goodstein in his "Constructive Formalism", "Recursive Number Theory", and "Recursive Analysis".
+They were also presented in his "Development of Mathematical Logic".
+
+I was once under Goodstein's spell because I had not yet met Quine's methods of logic and seen profound consequences of mistaking use for mention.
+Almost all matheamtical logicians prefer to speak of the "autonmous use" of their formula (the word 'formula' is strange to me, 'sentence' does so well, similarly for 'abstract syntax tree' versus 'grammatical analysis' or just 'grammar tree').
+The autonomous use of a formula is defended by emphasizing that the writer is speaking in their native language when they are talking about mathematical logic and, hence, there can be no confusion that they are mentioning the formula when they use it in their natural language.
+
+There is nothing wrong with this, except that if the distinction between use and mention is not taught, then it goes unnoticed and we have generations of mathematical logicians who take a truth-functional and quantificational schema as if each sentence letter, predicate letter, and free variable was more than a dummy, and on par with its bound variables, as if you could form the generalization of a sentence with respect to one or more of its sentences or predicates.
+
+Alas I am pissing in the wind.
+
+The benefit of Jeremy Avigad's text is that he does a much better job of emphasizing the part well-foundedness plays in the exposition/explanation of logical methods.
+
+This is something that Quine failed to do in his "Methods of Logic Fourht Edition".
+You can see the fragments of his vision from his early books "Mathematical Logic" and "Set Theory and its Logic" (both revised or second editions, the earlier ones contained interesting errors that spawned a lot of great papers, and you can read more about them in the introductions to the later editions of each book respectively).
+
+At the end of "Mathematical Logic" Quine has a grand chapter on "Protosyntax" and in it he slides from the logical language for his theory of sets to the logical language for the theory of the logical langauge of his theory of sets.
+In the beginning of "Set Theory and its Logic" he introduces the virtual theory of classes which goes on to turn into a full blown logic of predicate abstraction and concretion in his Methods.
+The origins of the relative clause as the logical import of the predicate abstract can be found in his "Word and Object" where much more time is taken to cover the ground between the reader's vernacular and the foreign logical languages and the technical terms with which they are talked about in the vernacular.
+
+Thus, the end of Quine's methods could have included, rather than just a fragment of set theory, the theory of concatenation which formed, substantially, his theory of protosyntax and thereby addressed undecidability and incompleteness which he only mentions in a chapter for omission soon after the chpater on the main method, as he otherwise did at the end of his "Mathematical Logic" (though there, if I recall accurately, he only demonstrated incompleteness).
+
+Also, he might have gone out of his way to include the arguments which form the crux of his roundrobin analysis of validity in equivocal terms of proof, models, valid schema, and, finally, grammar and truth.
+
+I shall have much more to say on well-founded predicates as they are, like schemata of equality, not purely schematic: they have strictly lexical predicate letters in addition to predicate letters.
+It has just occurred to me that "lexical predicate letters" are probably the proper phrase, and that he methods are lexical methods i.e. they are schematic relative to a given lexicon of predicates. 
+Here I am speaking, as I must, of (pure) predicate (functor) logic and not of truth-functional and quantificational logic (though they are, as is well known to anyone who knows me, easily paraphrased between each other by mechanical methods).
+
+
+## \#2026-0806-1714
+
+Continuing where I left off in the last note.
+
+I shall only allow myself the luxury of diverting to Quine's methods.
+Otherwise, I shall aim to stick firmly to grasping Shoenfield's proof of
+
+> "Herbrand's Theorem. Let T be a theory with no nonlogical axioms, and let A be a closed formula in prenex form in T.
+> Then A is a theorem of T iff there is a quasi-tautology which is a disjunction of instances of the matrix of A_H" pg. 54
+
+First, to trace down what Shoenfield means by 'theory':
+
+> "A *first-order theory*, or simply a *theory*, is a formal system T such that
+> 1. the language of T is a first-order language;
+> 2. the axioms of T are the logical axioms of L(T) and certain further axioms called *nonlogical axioms*;
+> 3. the rules of T are the expansion rule, the contraction rule, the associative rule, the cut rule,a dn the E-introduction rule." pg. 22
+
+Now to get after 'formal system':
+
+> "the first part of a formal system is its language ... this should be chosen so that, as far as possible, the structure of the sentences reflects their meaning" pg. 3
+
+> "The next part of a formal system consists of its *axioms*." pg. 4
+
+> "We need a third part of a formal system which will enable us to conclude theorems from the axioms. This is provided by the *rules of inference*, which we often call simply *rules*." pg. 4
+
+Where 'language' is 
+
+> "We consider a language to be completely specified when its symbols and formulas are specified ... We shall designate the language of a formal system F by L(F)." pg. 4
+
+and 'symbol' is
+
+> "In English, the symbols would be the letters, the digits, and the punctuation marks. Most of our artificial languages will have infinitely many symbols." pg. 3
+
+and 'formula' is
+
+> "certain expressions of the language are designated as *formulas* of teh language; it is inteded that these be the expressions which assert some fact." pg. 4
+
+with 'expression' as
+
+> "Any finite sequence of symbols of a language is called an *expression* of that language ... a symbol may appear several times in an expression; each such appearance is called an *occurrence* of that symbol in the expression. The number of occurreences of symbols in an expression is called the *length* of that expression ... allow the empty sequence of symbols as an expression; it is the only expression of length 0. ... one expression to appear within another expression ... called an occurrence of the first expression in the second expression" pg. 3
+
+Axioms are 
+
+> "Our only requirement on these is that each axiom shall be a formula of the language of the formal system." pg. 4
+
+rules are
+
+> "Each rule of inference states that under certain conditions, one formula, called the *conclusion* of the rule, can be *inferred* from certain other formulas, called the *hypotheses* of the rule." pg. 4
+
+and theorems
+
+> "satisfy the two laws: i) the axioms of a formal system are theorems; ii) if all of the hypotheses of a rule are theorems, then the conclusion of the rule is a theorem. ... Define a theorem to be a formula which is a theorem on teh basis of laws (i) and (ii).
+>
+> .. explicit description of the theorems. Let S0 be the set of axioms; .. Let S1 be teh set of formulas which are conclusiosn of rules whose hypothese are all in S0; .. Let S2 be the set of formulas which are conclusions of rules whose hypotheses are all in S0 and S1; .. let Sw be teh set of formulas which are conclusions of rules whose hypotheses are all in at least one of S0, S1, ...; ... continue in this way until no new theorems can be obtained by (ii);" pg. 4
+
+Thus a theory is a special sort of formal system to Shoenfield, but there is more to formal systems than has been said thus far.
+It is unfortunate that the method of vagueness which is so important to Quine in both his theory and practice is not also invoked by Shoenfield, alas, there is only one life to live and not everyone accumulates wisdom.
+
+As an aside, and I know this breaks my rule of only going aside to Quine, R. L. Goodstein's "Constructive Formalism" can be synthesized with Solomon Feferman's "Finitary Inductively Presented Logics" to give the logic of a theory of ordered pairs (contemplated as binary trees) which, more or less, captures, in one instance or another, what many matheamtical logicians have mentioned as formal systems.
+There is much more to say about this all at a much later date (though I hope not too late) with respect to logic programming.
+
+Symbols are to expressions as expressions are to arguments, but, for some unknown reason, most do not call a sequence of expressions an argument and then pick out, among arguments, the formal ones as those each expression of which is a formula of a formal theory, and then pick out among the formal arguments the logical ones as those each formula of which is either an axioms or a theorem of its priors in the theory.
+
+I submit that there is even more to be got from paraphrasing a logical argument as the conjunction of its formula (negate the last and apply the main method to prove that the rest imply it and you can repeat this dropping each last one until they are all gone to learn that the earliest ones imply the rest).
+
+The word which is preferred to 'argument' in mathematical logic is 'proof', but before getting ot proof
+
+> "A rule in a formal system is *finite* if it has only finitely many hypotheses." pg. 5
+
+then 
+
+> "Let F be a formal system in which all the rules are finite. By a *proof* in F, we mean a finite sequence of formulas, each of which either is an axiom or is the conclusion fo a rule whose hypothese precede that formula in the proof. If A is the last formula in a proof P, we say that P is a proof of A." pg. 5
+
+from which yet another characterization of thereomhood is given
+
+> "a formula A of F is a theorem if and only if there is a proof of A" pg. 5
+
+Having exhausted the definition of 'formal system' it is time to narrow in to
+
+> "A *first-order* language has as symbols the following: a) the variables, b) for each n, the *n-ary function symbols* and the *n-ary predicate symbols*, c) the symbols 'not', 'or', and 'some'.
+>
+> For each n, the number of n-ary function symbols may be zero or nonzero, finite or infinite. The same holds for predicate symbols, except that among teh binary predicate symbols must be the *equality symbol* '='.
+>
+> A 0-ary function symbol is called a *constant*. A function symbol or a predicate symbol other than '=' is called a *nonlogical* symbol; other symbols are called *logical* symbols.
+>
+> It will sometimes be convenient to have a fixed ordering of the variables to refer to. We call the order in which they are listed above *alphabetical order*." pg. 14
+
+where "the order listed above" is
+
+> "x, y, z, w, x', y', z' w', x'', ..." pg. 14.
+
+It is unfortunate, though not unexpected, that the phrase "first-order language" is used by Shoenfield and by most mathematical logicians.
+There is, e.g. through Carnap, a history of contemplating "higher-order logics" like those that Frege dealt with when he appeared to be quantifying with respect to the predicates (what were then called propositional functions) in his schema.
+Quine, more than anyone else, has made clear the methodological error in such higher-order logics, often emphasizing that they are set-theories in disguise.
+
+They need not be just set-theories in disguise.
+They may be any other theory in disguise which does the work presumably done by mistaking an n place predicate true of each list of n items for the name of some item which when predicated of some unspecified predicate (in the set theoretic case this is "membership") with respect to n other items is true in those cases which, presumably, do not generate a paradox (there is nothing stopping such a theory from embracing the paradox as an inconsistency from which all else is implied, but what of such a theory?)
+
+I am fine with 'first-order language' applying to languages with a purportedly infinite number of predicate or function symbols because such languages have already conceeded the fight for the infinite which launched so much that is grand in logic e.g. all the way back to Aristotle's continuum.
+
+I for one have not seen it all settled and, as Shoenfield has already conceeded when restricting his formal systems to finite rules, I shall continue to separate the languages of predicate logic from the first-order languages.
+Sometimes by predicate logic I mean the logic of truth-functions and quantification, but most of the time I mean predicate functor logic.
+More importantly, the logical languages are those whose lexicon is finite and whose grammatical constructions are finite place predicates.
+
+The grammatical generation of an endless category of variables is achieved with a single lexical variable, e.g. 'x', and the grammtical construction of accentuation which is a two place predicate subject to the obvious principles of distinction.
+
+Speaking of distinction, it can not be introduced into a first order language without becoming a seperate and complexifying concern.
+This is sadly the path that Shoenfield has picked.
+The predicate of identity is mentioned exceptionally among the predicates of the first order languages and, later, when axioms are given for the theories in which first order langauges play a part, there are separate ones in which the predicate of identity occurs (the ones Shoenfield uses correspond to those intorduced by Godel in his completeness proofs).
+
+This is very unfortunate because in a predicate logic indiscernibility is grammatical compound built up from lexicals and coextensive with any lexical which purports to independently be identity.
+For those wedded to second order languages, the definition of indiscernibility in a theory is the conjunction with respect to the lexicon of Liebniz's definition (taking the universal quantification into the "predicate variable" as ranging only over the finite lexicon and thus being equivalent to the appropriate conjucntion).
+Then it is shown that each compound predicate satisifies the appropriate instance of Liebniz's laws and, this being all of the grammatical compounds, you get that which is equivalent to Liebniz's definition with respect to all the compound predicates generated from the lexicon.
+
+This method can fail tragically when there are an endless list of lexical predicates for it can be supposed there are an endless list of one place predicates each of which is false of some item which the priors are true of.
+This is not far fetched because by way of a construction liek that of Cantor's, and what, I guess, we would now call a diagonlization argument (though that is not quite accurate of Quine's construction), Quine demonstrates that in a theory of which its predicates are items, there is a predicate which irreducibly supplements the theory (this is given towards the end of "Word and Object").
+
+I have now gone far afield against my advice at the beginning of this note.
+So, I will stop here to stop myself from going further afield.
+
+(Life is more than the residue of work.)
+
+
+## \#2026-0806-1328
+
+The note before the last one began by mentioning a theorem and proof from Schoenfield's "Mathematical Logic" that I was to report on reading.
+The theorem is as follows:
+
+> "Herbrand's Theorem. Let T be a theory with no nonlogical axioms, and let A be a closed formula in prenex form in T.
+> Then A is a theorem of T iff there is a quasi-tautology which is a disjunction of instances of the matrix of A_H" pg. 54
+
+I did not present it in that note becuase I digressed into Quine's chapter on Herbrand's method of proof in "Methods of Logic Fourth Edition".
+There I failed to report that I was reading out Quine's chapter to prepare myself for translating Schoenfield's methods into Quine's.
+Quine's methods are supperior in that they make distinctions through definitions which contribute to an understanding of the whole of the methods of logic.
+
+The same can not be said of Schoenfield's work, even from a generous reading of it.
+This is also true of Kleene's "Introduction to Metamathematics" and the projection of that work into his smaller book "Mathematical Logic".
+While "Mathematical Logic" is easier to read than "Introduction to Metamathematics" it is characteristic of text on mathematical logic that they claim a kind of bankrupcy with respect to cogency.
+As if the methods of logic are not precisely the result of arriving at an excruciating kind of clarity and exactness.
+
+Without having been exposed to Quine's "Methods of Logic Fourth Edition" I do not know if I would have made as much sense of the world as I have (or at least purport to, as it is my aim to demonstrate what I can here in this massive document).
+
+Another digression occurs to me, and again I am indebted to Mark Twain's work on his Autobiography for knowing to indulge it.
+
+Schoenfield's depiction of Herbrand's theorem and its proof are given in the fourth chapter "The Characterization Problem".
+It is given in the fourth section of that chapter.
+The prior section is titled "The Consistency Theorem" and it refers to
+
+> "Consistency Theorem (Hilbert-Ackermann). An open theory T is inconsistent iff there is a quasi-tautology which is a disjunction of negations of instances of nonlogical axioms of T." pg. 49
+
+I happen to have Hilbert and Ackerman's book "Principles of Mathematical Logic" and do not yet know if it is from this book that Schoenfield is referencing "Hilbert-Ackerman".
+Let me look up if there is some other obvious paper from them titled something like "Consistency of Predicate Logic" or perhaps some other book on mathematical logic that they collaborated on that may be the source of Schoenfield's reference.
+I wish Schoenfield had written up a bibliography: there is only an index at the end of the book preceeded by an appendix on the word problem.
+
+A quick search shows that this text is likely the one that Schoenfield is referencing since it is the text which Ackermann helped to write from Hilbert's 1917-1922 lectures on mathematical logic and which were the first presentation of an axiomatic system for predicate logic in the formal sense which is still easily recognizable with respect to today's standards.
+Frege's Begriffsschrift is the earliest, but it is alost entirely unrecognizable to the eyes of a modern mathematical logician.
+
+Reading Hilbert and Ackerman, I can not tell if Schoenfield is referencing the proof of what is there called one of strict completeness, and which, to correspond with Schoenfield's interpretation, is merely a fragment of the proof of such strict completeness.
+It occurs from pages 95 to 99.
+If so, then Hilbert and Ackerman reference Godel as their governing expositor.
+
+I am presently convinced that this is the theorem and proof from Hilbert and Ackermann that Schoenfield calls the consistency theorem.
+My conviction comes from seeing that Schoenfield's definition of "a special sequence" and its subsequent use corresponds with the proof of one alternative in the proof of the strict completeness theorem from Hilbert and Ackermann on page 96.
+There, the result is given for a formlua that is in what Hilbert and Ackermann call "Skolem Normal Form" which is a special kind of prenex form where all existentials are out in front of all universals.
+I shall need their proof, or parts of it, somewhere else, but for now, nad not to get drawn into Hilbert and Ackermann's wonderful text again, I shall return to Schoenfield and my translation of his work into Quine's methods.
+
+My first response upon looking back on page 54 of Schoenfield is that I do not appreciate his mathematization of logical methods e.g. the insertion of identity and equality axioms in his logical axioms and the frequent use of names for each item in the class he callst he universe of discourse.
+Most importantly, I do not appreciate why the modern world is wedded to schematic function letters rather than just sticking with functional predicates.
+Even though one of the problems at the end of chapter four of Schoenfield prompts the reader to prove that a formula with function letters is equivalent to one without function letters under supplementation of the predicate letters in the theory, it does not make it clear how this radically simplifies the arguments of the chapter, leaving most of the results as little more than applications of logic methods to those with singular descriptions.
+
+This is something which may be a holdover from Frege and Russell transmitted through Church and Kleene where naming has a sacred value for maintaining reference to meanings.
+
+## \#2026-0806-1233
+
+Quine's predicate functors provide a completely new outlook on Aristotle's categories and Liebniz's Scientia Generalis, Ars Combinatoria, Calculus Rationcinator, and Characteristica Universalis.
+
+Aristotle's categories become the grammatical categories.
+It is easier to carry over Aristotle's outlook in a predicate functor logic because there is only one type of thing in its lexicon: predicates.
+When appropriately constructed, the predicate functor logic of an immanent theory of the world clearly and exactly determins the categorical distinctions made in Aristotle's sense i.e. vaguely, what can be spoken of meaningfully.
+
+Liebniz's Ars Combinatoria is both a recognition that settling the shape of the predicates in the lexicon of a predicate functor language with respect to the world and then including the appropriate recombic predicate functors in the logical language of which the lexical predicates participate is not yet an obvious affair.
+It is governed by the logical language and the rest of the world, and constrained by these complementary parts which together exhaust the whole (though it is not clear if they are strictly complementary or if there is some sort of penumbra cast by Quine's indeterminacy of reference).
+Thus Liebniz's Ars Combinatoria splits the world into the complementary methods of the Scientia Generalis and the Characteristica Universalis.
+The Calculus Rationcinator bridges the two as the contribution of the Characteristica Universalis to Scientia Generalis in effective action.
+
+
+## \#2026-0805-2125
+
+Now for a much needed note that has been a long time coming.
+This is an example of how a human reads a theorem and its proof.
+Specifically, a theorem and a proof in a book and not in a paper.
+Papers are free floating in ways that most books are not.
+They rely on an assembly of sources that often times report on work that was substantially done other than through the words presented in the final paper.
+Papers tend to speak only of the tip of the iceberg whereas books tend to give the whole iceberg, or substantially more than what is floating above the surface.
+
+These are my notes on the proof of Herbrand's Theorem from Schoenfield's "Mathematical Logic".
+They are taken to not only force myself to learn his terminology (which is also largely the terminology that is most familiar to mathematical logicians), but also to prepare myself for the full blown proof of the completeness of my proof procedure for Quine's predicate logic.
+
+First a word on Quine's "Methods of Logic Fourth Edition".
+Chapter 36 is titled "Herbrand's Method".
+It is first and foremost a demonstration of how one method of proof, Quine's main method, gives way to others, Herbrand's method in this chapter, Dreben's method in an early chapter on functional normal forms, and the more familiar deductive methods in a later chapter.
+
+Quine proves that Herbrand's method is sound in two ways.
+The first is directly by duality with respect to the main method.
+This duality only appears to work, as presented by Quine, for the soundness of Herbrand's method.
+That is because the soundness of the main method ("that it generates a truth functional inconsistency only when the premises are inconsistent" pg. 192) is assembled from methods of logic which are blessed with decision procedures.
+
+Specifically, Quine invokes the method of truth value analysis to decide truth functional validity and inconsistency (which is called by computer scientists "binary search tree on the lexicographic order of binary strings corresponding to a partial interpretation of sentence letters as truth values whose values at leaf nodes are the truth value of the truth functional schema analyzed and whose values at the non leaf nodes are the resolution under the truth value interpretation corresponding to that node's key), and what he calls the method of existential conditionals to decide monadic validity.
+
+Only validities resulting from these decision procedures are used in the proof of the soundness of the main method.
+It is a very short proof, but it is given, as is Schoenfield's of Herbrand's method or Kleene's proof of Hilbert-Bernay's completeness in "Introduction to Metamathematics", with respect to a concrete example rather than in full generality because the notational technology available remains unfit for presentation to humans.
+
+Most importantly, the briefness of the proof of the main method is not betrayed by its naturalness: the main method of proof is the same as that in Plato's dialogues with Socrates.
+
+The completeness of the main method "says of any combination of (one or more) quantificational schemata that *either* they come out jointly true under some interpretation in a nonempty universe *or* some truth-functionally inconsistent combination of unquantified schemata can be derived from them by the familiar operations: convert to prenex form, reletter bound variables that match free ones, and then apply UI and EI, using only new instantial variables in EI." pg. 205
+
+This is the first way in which it is stated, there are two alternatives which turn up as his proof progresses:
+1. "What is to be shown was that either the premises come out true under some interpretation in a nonempty universe or some finite set of unquantified instances is truth-functionally inconsistent." pg. 207
+2. "if each finite set of unquantified instances is truth-functionally consistent, then the premises are true under an interpretation in a nonempty universe-- and a universe, in fact, of positive integers." pg. 207
+
+The completeness proof of the main method is a two part procedure.
+The first part establishes a "rigid routine" for exectuing the main method i.e. it gives a strict program for generating instances of the premises, appropriately relettered and in prenex form, such that "each existential line gets instantiated once, and that each universal line gets instantiated with each free variable that ever turns up" pg. 205.
+Sometimes this program halts and sometimes it does not.
+In either case completeness is established by Quine's "Infinite Conjunction Theorem" which is just that if each conjunction of truth functional schema from a set are consistent then there is an interpretation that makes each in the set true i.e. we call such a set consistent.
+(Remember, a conjunction of schema is a construction of which only finitely many of the schema in a set are components of).
+
+Quine makes no note of what you get when the rigid procedure for the main method halts.
+He merely notes that when it halts it may with or without having produced a truth functional inconsistency.
+Those abreast to the modern jargon of formal methods would recognize that when the rigid routine halts without an inconsistency you have generated a finite model of the premises and the negated conclusion.
+I hesitate to mention how much money goes into ever more obscure hunts for such finite models in the formal verification of computer programs.
+
+He also makes no extension of the main method to the method of logic programming, even though it is astoundingly simple to see that the rigid routine for the main method when it produces one inconsistency may be allowed to go on and produce further inconsistencies each of which can be interpreted as the result of a database query.
+Again, I hesitate to mention money.
+
+It is not clear that Quine's proof of completeness for his main method does not give a dual argument for Herbrand's method.
+I must distinguish between Herbrand's method as it appears frmo the main method, and Herbrand's method as it appeared from Herbrand.
+Herbrand's version of his main method is introduced by Quine as the first example of an axiomatic method for quantificational theories: the axioms are all truth functional validities and the rules of inference are clausal universal generalization, clausal existential generalization, and deletion of duplicates. 
+
+The missing ingredient to dualizing Quine's proof of completeness for his main method to its dualization as Herbrand's method is that Quine gives nothing like the rigid routine of the main method.
+Such a routine would lead back, presumably, to the dual of the law of infinite conjunction.
+Presumably, the law of infinite alternation would trade "consistency" for its dual "invalidity" and say
+
+> An infinite class of truth-functional schemata is invalid if each of its finite subclasses is
+
+where invalidity of a class of truth-functional schemata is to say there is an interpretation which makes each schema in the class false.
+
+The proof would go through as follows, dualizing each of Quine's steps:
+
+- Assume some infinite class K of truth functional schemata and assume that each K-alternation (each finite alternation of members of K) is invalid.
+- Let 'p0', 'p1', etc. be the sentence letters of the schema.
+- Definition. A given assignment of truth values to one or more sentence letters will be called *innocuous* (so far as K is concerned) if it conflicts with no K-alternations, causes it to resolve to truth or to a validity.
+- Definition. t0 is falsity or truth according as assignment of falsity to 'p0' is innocuous or not.
+- Lemma 0. Assignment of t0 to 'p0' is innocuous.
+- Proof. If assignment of falsity to 'p0' conflicted with some K-alternation and assignment of truth to 'p0' conflicted with one too, then the alternation of the two alternations would be a valid K-alternation outright, contrary to our Hypothesis on K. So one or the other of falsity and truth must be an innocuous assignemt to 'p0'. Either way, t0 is then innocuous by its definition.
+
+Slowing down the proof of lemma 0:
+- to be in conflict with some K-alternation an interpretation must cause a K-alternation to resolve to truth or a validity outright.
+- The proof of the lemma proceeds by contradiction: it assumes the assignment of t0 to 'p0' is not innocuous.
+- All that we know about t0 is that either it is truth or it is falsity.
+- In either case, the assignment of truth or falsity to 'p0', which is by way of contradiction not innocuous, turns one or an other K-alternation into truth or a validity, and hence, in either case, the alternation of these K-alternatoins is a validity (one of its components being either truth or a validity itself) which contradicts the assumption that each K-alternation is invalid.
+- Therefore, the assignmetn of t0 to 'p0' is innocuos.
+
+Hark, there is no way for one and the same K-alternation to be in conflict with both interpretations of 'p0' without immediately contradicting the assumption that each K-alternation is invalid i.e. such a K-alternation would be an outright validity.
+The dual of this remark is missing in Quine's text.
+
+(I wanted to use 'hark' in a sentence, though I also contemplated 'Lo'.)
+
+Next is a definition and lemma 1:
+- Definition. t1 is falsity or truth according as assignment of t0 to 'p0' and falsity to 'p1' is innocuous or not.
+- Lemma 1. Assignment of t0 to 'p0' and t1 to 'p1' is innocuous.
+- Proof. If assignment of t0 to 'p0' and truth to 'p1' conflicted with some K-alternation and assignment of t0 to 'p0' and falisty to 'p1' conflicted with one also, then mere assignment of t0 to 'p0' would conflict with the alternation of the two alternations, contrary to Lemma 0. So either the assignment of t0 to 'p0' and truth to 'p1' or the assignment of t0 to 'p0' and falsity to 'p1' is innocuous. Either way, then, Lemma 1 holds, by virtue of the definition of t1.
+
+and so on.
+Taking any schema from K it has an alphabetically largest letter as subcomponent so that the corresponding lemma shows that the corresponding assignment of innocuous truth values is contradicted by the supposition that the assignment resolves the schema to truth, so, since it resolves to either truth or falsity under an assignment of truth values for each of its letters, it must resolve to falsity.
+Therefore K is invalid.
+
+Had I known how much fun I was going to have writing here on just Quine's work I would not have mentioned Schoenfield yet, but alas, here we are.
+
+It seems clear enough that a mechanical procedure can be given that is dual to that of Quine's for Herbrand's.
+It also seems clear that this mechanical procedure may be the only way that I firmly grasp how to carry the finitary proof of completeness of Herbrand's method from Schoenfield back to Quine's main method.
+
+
+## \#2026-0805-1839
+
+Got Ian Flemming's "Casino Royale" today.
+It is a 2023 edition which greets me unhappily with the following.
+
+> "This book was written at a time when terms and attitudes which might be considered offensive by modern readers were common place. A number of updates have been made in this edition, while keeping as close as possible to the original text and the period in which it is set."
+
+Such edits are worse than whatever was edited away.
+
+It is a very fast read.
+I sat down to read a bit and met the fifth chapter with surprise.
+It feels like an ellucidation more than a story.
+
+## \#2026-0805-1824
+
+Notes on the 10th lecture of "A History of Philosophy" by Arthur Holmes on Aristotle's Metphysics Part One
+
+<https://youtu.be/kLKHpSPoNKI?si=q8LUUaHI-eFQjWFN>
+
+Aristotle's causes are far more diverse than our mechanistic force-based definition.
+
+Aristotle's causes:
+1. Efficient Cause: has effects or efficacy
+2. Material Cause: the nature of the stuff being effected e.g. carving out of wood is different in consequence than sculpting out of stone
+3. Formal Cause: essential nature of the kind of thing being produced e.g. process of acorn into oak, the acorn has the natural potential inherent in its immanent formal cause of potential to produce the oak tree
+4. Final Cause: the telos or goal or end or purpose
+
+For example, wood or stone carver:
+1. the efficient cause is the carving or chisling
+2. the material cause is the wood or stone
+3. the formal cause is the essential thing which is involved, the form of whatever it is that it is going to be e.g. Rodin's "The Thinker" the form portrayed in the posture etc.
+4. the final cause gives why to adorn the Parthenon
+
+Holmes is speaking very quickly here, and I think it is because in the previous lecture he had planned on covering the causes but spoke longer on Plato and ended off schedule.
+If I did not have the power to pause and rewind, then I would not get all that he was saying.
+His verbal behavior is shaped in a way which tends to be the mark of rhetorical excellence, and I would guess that he has spoken large parts of these lectures to many audiences.
+He clusters the key terms right next to each other as emblems of the philosopher, or at least of modern talk about them.
+
+It occurs to me that the causes may be related as follows:
+1. efficient cause says how
+2. material cause says where and when
+3. formal cause says who and what
+4. final cause says why
+
+this is only a loose interpretation.
+
+Ultimately, the way of translating is through contingency analysis.
+
+The example of sexual reproduction:
+1. efficient cause is the father
+2. material cause is the mother's body
+3. formal cause essential nature of men having kids?
+4. final cause offspring like their father
+
+"The woman is just the material cause. We have come a long way, I would hope." Dr. Holmes
+
+Aristotle says early Presocrates only spoke of material causes: What is the basic stuff?
+Thayles said water, anaximenes air, heraclitus fire, empedocles earth air fire and water.
+Empedocles also talks about love and hate, moving beyond what Aristotle would call material clause.
+
+Heraclitus logos, Anaxagoras nous, etc. show that there is more.
+Aristotle makes it clear that each cause is part of each process as a full blown generalization.
+
+The final cause is what Aristotle sees as his distinct contribution.
+
+The final causes are what I would otherwise call the selecting consequences.
+
+Chapter 3 of metaphysics:
+"causes are spoken of in four senses:
+1. the substance or the essence (the formal cause)
+2. the matter or substratum (the material cause)
+3. the source of the change (the efficient cause)
+4. the purpose, the good, the end (the final cause)"
+
+(or thereabouts)
+
+Aristotle asks how particulars participate in forms (questioning Plato's doctrine).
+
+Switching from the metphysics to the physics: the same distinction between causes.
+"We must now consider why nature is to be ranked among causes that are final or purposeful."
+
+There is a natural teleology, purposes, end achieving nature, we must speak of necessity.
+
+"What is it that inclines physical things towards ends that are good, ordered, beautiful?"
+
+Innate endowment, natural potency, natural potential, which is actualized in all processes of chanage.
+
+"Nature never makes anything without a purpose."
+
+"God and nature create nothing that has not its use."
+
+Natural things are "end oriented".
+
+Art is a matter of discovery.
+The musician does not create music, he discovers the potential in the physics of sound.
+The sculpter does not invent designs or shapes, he uncovers the natural potency of the texture of the stone and actualizes them.
+
+Nothing occurs in nature uncaused i.e. randomly.
+But, due to complexity of cuases, there are accidentaly or incidental causes from which we get chance.
+For example, it is by chance that accidents occur.
+A chance event is not an uncause event, it is a complex of extraneous causes and are not the good at which the process originally aimed.
+
+Nature is always in process, in change, and time is the essence of nature.
+Time is the measure of motion.
+Time is how we measure the processes of change.
+Aristotle answers Zeno's paradoxes using time as a continuum.
+Zeno left time out of the motion and got contradictions.
+
+Aristotle's view of nature is called "Immanent Teleology".
+
+Occum, Luther, and Calvin worked to overturn Aristotle's control over the middle ages so that God could enter as an intervening operator on what would otherwise be natural processes.
+
+Intrinsic necessary causes vs. extraneous contingent causes.
+
+Aristotle's "cause" is "first principle" or "explanatory factors" as in "what are the first principles" is "what are the first causes".
+
+Aristotle was a "biological vitalist" in that life is essentially something different from material processes.
+
+Science to Aristotle: if you can formulate these principles, then you can deduce conclusions about particular cases.
+Formulate premises and deduce conclusions.
+Dominates until the 14th century.
+
+Moving onto Being and its Categories.
+
+Metaphysics is the science of being.
+What do we me when we say that something is?
+Different ways in which we speak and think of being and in which they actual are are *Categories*.
+
+Encyclopedic scientific interests:
+1. substances: what is the essence of the substance?
+2. affections of substances
+3. process towards substance
+4. destructions or privations or qualities of substance
+5. productive or generative of substance
+6. things that are relative to substance
+7. or negations of one or an other of these things in relation to substances.
+
+They are both categories of thought and categories of being.
+
+There are laws of thought that correspond to laws of being.
+The basic law of thought is the law of noncontradiction: a thing can not both be and not be at the same time and in the same respect.
+Aristotle's "most certain principle".
+
+Can a principle like this be demonstrated?
+No, because you have to assume the law of logic in order to prove the law of logic.
+A negative proof: "The starting point of such an argument is not that our opponent say that something either is or is not but that he say something that is significant. If he means nothing then he is not capable of reasoning. If one grants this then and so on..."
+Try to say something significant and you are stuck with the law of noncontradiction.
+
+
+## \#2026-0804-1559
+
+For better or worse, I am looking back over past notes, and reading [#2025-1103-1456](#2025-1103-1456) which gives a monolithic version of the interpreter for my machine.
+There I planed on introducing conditional execution into the interpreter.
+This was achieved, I think only provisionally in that note, by introducing compound gray words each letter of which is a microinstruction.
+
+Thankfully I didn't get lost in thought on this and simply got up and walked away.
+
+## \#2026-0804-1326
+
+Notes on the 9th lecture of "A History of Philosophy" by Arthur Holmes on Summing Up Plato and Aristotle's Metaphysics.
+
+In conclusion, Plato's metaphor of the divided line governs the rest of his philosophy.
+On the epistomological side there is knowledge above and opinion below, and on the objective side there are forms above and particulars below.
+From this follows his theories of ethics, soul, education, god, ethics, politics, etc.
+
+Plato's view of history as in The Republic is cyclical.
+It is contrasted with the modern notion of linear or cumulative change.
+
+The cycles extend to the soul i.e. the many bodies occupied by the same soul.
+Remember, you are your soul to Plato.
+
+The first linear view of history appears with St. Augustine in "The City of God".
+God was moving historty to its destiny.
+May explain the origins of historical progress e.g. as in the scientific revolution.
+
+Why cyclical?
+The divided line.
+There is no stability, no unchaning achievement, without full participation of forms.
+To participate in time is to be caught in change and decay.
+Hence the fixation on the disembodied afterlife was part of bringing the soul nearer to the forms, and the form of the good especially.
+
+The christian resurrection was something of an odditity: who wants a body back?
+The story of creation as a purposeful good created by a god was part of changing public opinion on the relative importance of the resurrected body.
+
+Cycle in goverment means again and again, recycling:
+1. Aristocracy, the spritied and honerable rule, they die, one of their offspring becomes a tyrrant
+2. Tyrrany, dictatorial rule 
+3. Democracy, demos, the people take over from the totalitarian, mob rule subject to demagogical rhetoric
+4. Oligarchy, ruled by few, there are some who are actually capable and back to 1.
+
+"Until philosophers are kings or kings are philosophers we shall never have peace or justice on this Earth", he means the lover of wisdom, the good, with dialectical understand sees what is good and does it.
+
+For Plato, god is the form of the good, i.e. the form of beauty.
+Aesthetically, beauty is the highest good, where beauty is unified ordered rational harmony.
+Truth to knowledge, beauty to aesthetic, and goodness to ethics are the same to each other as the good.
+The soul is related to the good by the virtue of love.
+"Love is a moving force. Love for the good makes you want to be like it."
+
+Our vernacular is saturated with the philosophy of Plato and Aristotle through the etymology of our words.
+The weight of this history makes it hard to change the course of vernacular.
+
+"I hope you go back to Plato in your thinking and reading.
+After all, you're not educated unless you've read The Repulbic."
+That last part is put in a cheeky tone not a condesending one.
+
+...
+
+Now, to Aristotle, the student of Plato.
+
+What is the difference between the appearence of good and the essence of good.
+The differene between appearence and reality follows in Plato's divided line argument.
+
+The good is our goal or purpose.
+The good is god.
+There are unchanging essences which in some way represent the ideal of the things.
+
+His primary criticism of Plato is that the forms are nonsense because particulars are said to participate in them and yet there is no evidence in any particular of this formal participation.
+Furthermore, there is evidence that mathematical things, which are in Plato's philosophy forms, are part of the essence/reality of the things we come to know.
+
+Aristotle does not write dialogues, he writes papers, or, at least, papers are what have survived from his work through his students.
+In general, Aristotle is far more analytic and systematic in his writings than Plato is.
+
+"Essence" or "esse" is "what it is" or "to be".
+He asks "What is the what-is-it of this?"
+"What is a substance? A being. What is an essence? What the being is."
+
+Aristotle's Metaphysics disagrees with Plato's divided line.
+He begins by defining the scope of metaphysics:
+1. There are two types of knowledge: practical and theoretical.
+2. The purpose of practical knowledge is action, production, and it has instrumental value, a means to some other end than itself.
+3. The purpose of theoretical knowledge is understanding the truth, and it has intrinsic value, it is called speculative knowledge ("theoreo" is a greak verb meaning "to see, look at, regard, examine visually" and "speculo" is the Latin equivalent from which we get "specticals").
+4. There are two kinds of practical knowledge: experiential knowledge and artistic knowledge or artefactual knowledge.
+5. Artefactual knowledge is knowing how to make artefacts. Efficient ways of getting things done, changing things, etc.
+6. Experiential knowledge includes memory of events, accumulation of experiences, a kind of knowing what is happen or what is around.
+7. Thus, artefactual is to experiential as how is to what.
+8. Theoretical knowledge is divided into the sciences and first wisdom or metaphysics.
+9. The sciences are the principles of specific things.
+10. First wisdom, first principles, or metaphysics is theoretical knowledge of intrinsic value as the science of sciences.
+
+Aristotle is making the distinction that I make as the difference between theoretical and experimental.
+Experimental practices include the methods of engineering which manufacture the technology.
+
+Metaphysics is the science of being, the first causes of all causes, processes of becoming for every kind of being (substance).
+
+"being qua being" means "being in the sense simply in being" rather than "being in the sense of being an animal, a chair, or a warm day."
+
+In 1800 we got "ontology" as "the study of being qua being", and the division of philosophy of "cosmology" apart from physics or astronomy, of "psychology" apart from specific sciences, and "theology" apart from a specific religion etc.
+
+The best way of making the distinction Aristotle made is between the methods of logic which are not about anything in particular and its applications in theories.
+
+Aristotle on Forms and Causes:
+1. Plato's theory of forms is transcendent and Aristotle's is immanent.
+2. How do particulars participate in universals of forms?
+3. Aristotle would say it is bunk.
+
+In Book II chapter II of the physics:
+Forms are transcendent, materials are immanent.
+Mathematical objects, forms to Plato, can not be seperated from material objects (physical objects) then forms can not be seperate from matter.
+Plato should have known physical things have mathematical order to them.
+
+Plato's form of the good is an ideal, only to be contemplated.
+It has no power itself over the particulars of the material world.
+Particulars have no form in then only matter.
+So, what inclines the particular towards orderedness, beauty, etc.?
+It's good.
+What gives material things the impetus towards the good if forms are transcedent and not immanent in matter?
+How do you explain change in the physical universe, naturally producing order, beauty, goodness, when there is no form in the material things and the transcdent forms have no power.
+To which Plato would say "that's what the world soul is for".
+Aristotle is open to "the good as god" but "a world power" sounds too much like story.
+If material objects have mathematical properties then there must be the form of mathematical objects in material objects, similarly for plants, animals, and natural processes spontaneously produce order and beauty there must be potency of form within the material things and processes.
+Why talk about transcendent forms at all?
+Why not all immanent?
+
+Particulars are composite of form and matter.
+Hylomorphism: material forms.
+
+If forms inhere in particulars, then particulars have inherent capacities or inherent potential or inherent end/telos in its very essence (remember, essence is what a thing is).
+The form makes a thing the kind of thing that it is, it defines its essence, defines what it is, then it has the potential to be that kind of thing.
+The potential to be actualized in the acorn is the oak tree.
+Every kind of thing has a potential that can be actualized.
+Sometimes "potency" is used to capture the sense of power e.g. "A acorn has the power to become an oak tree."
+
+The essence of a thing is such that it has capacity, potency, potential, to be realized, the end/talos is the good of that thing.
+"What's the good of those acorns if they don't grow into oaks?"
+
+The ethical question is "What is the human telos, capacity, essence by virtue of which we have a corrosponding potential, the actualization of which is like a flourishing."
+Qualitative achievement out of inherent potential.
+
+
+
+
+## \#2026-0804-0002
+
+Note to tomorrow self: collect sources for my "one true terminal".
+
+Start here:
+1. <https://matthias-research.github.io/pages/tenMinutePhysics/index.html>
+2. <https://iquilezles.org/>
+
+Try to actually explain the program if you can, but it seems likely that you will end up returning to the machine and its language so that you can more harmoniously integrate the ice (interpreter, compiler, executer) into the play (grab, move, show).
+
+One new design to implement is to make resolution a function of the scroll wheel in complex scenes.
+
+I have not yet implemented the sdf work on rendering text: there are opportunities to make it much more responsive.
+
+If you happen to get stuck in the weeds of, e.g., a javascript implementation (again), then try to go back to the entry here on the logic of rendering.
+
+Start here on the logic on rendering: [#2025-0923-1940](#2025-0923-1940)
+
+## \#2026-0803-2125
+
+First some notes on a closer reading of Schoenfield's "Mathematical Logic".
+
+Section 2.5 is on structures.
+Structures are classes generated from the items of the universe of discourse.
+The universe of discourse is the class of all things we are talking about with the formula of the formal 
+ "Let A be a structure for L. For each individual a of A, we choose a new constant, called the name of a." pg.18
+
+The structures of which Schoenfield speaks are the same for most mathematicians: they are sets of mathematical objects, objects which are often themselves sets, which we come to talk about with language.
+The language we use to talk about the mathematical items is a logical one in that it 
+
+...
+
+I am going to try something different here.
+Usually when I write about something I do not stop to say it in any better way than how it came out as it occurred to me.
+This is not the best way of writing publicly because members of the public are not sensitive to the nonverbal response that come along with my verbal responses.
+It is hard to tell from my limited contact with my behaving body through my peripheral nervous system whether a given nonverbal response is collateral to a verbal response or not.
+Some may be prior to the verbal response, others may be subsequent to it.
+Responses such as are described by the phrases "seeing of, to myself" or "feeling of, to myself" are descriptions of what I can only claim are collateral responses to the verbal responses that have left these marks upon the digital page.
+
+...
+
+I am using elipses to indicate that my verbal behavior goes weak between the prior and present paragraphs.
+These are only records of verbal responses and they do not accurately report the contingencies in which these forms of response play a part.
+It would be strange for a modern human to read a cumulative record of the consequence, response, and occasions which compose the verbal contingencies that occur as I write this here and now.
+
+The only reasy it would be strange is because most modern humans are obssesed with the human brain as the originator, intiator, or creator of the behavior that ultimately appears from the body with the brain.
+The mind is what the brain does and we can not inspect our brains as we can the overt consequences of our verbal behavior.
+Taking verbal behavior as a mere consequence of some verbal process in the brain is the error of cognitive psychologists and scientists.
+It is promoted because the computer is the metaphor of our time.
+Everything is a computer.
+Everything is a computation.
+Everything is a nail to a hammer.
+
+...
+
+Writing while sleepy is hard in that my entire verbal repertoire is weak.
+How do I know this?
+Because I have conveniently marked each pause in verbal behavior with the elipses.
+If there was a cumulative recorder that I could present here... well I can't present one here yet because that is something I am not prepared to do.
+But, if I had one that I could present here, you would see it flatline before the response which made the elipses.
+
+...
+
+People who write fiction are much better at dealing with these bursts of nonsense without being entirely turned off by the disorganization of it all.
+They tend to get that not all verbal responses are under the strict control of a repertoire of accurate reporting.
+We are not calculating our way through the contingencies of life.
+Sometimes we respond without self-control, or, specifically, without autoclitic behavior.
+There is no way to read of the kind of behavior from a record of the responses alone.
+That is all that these words, sentences, and paragraphs are: records of response forms.
+
+The forms of response which are occurring now are fingers tapping keys.
+These are called discrete responses as opposed to continuous ones because the consequence which selects and maintains the form of response appears only and solely with respect to the compact support of some material body.
+It is bounded by a neighborhood of finite radius.
+Crossing out from one neighborhood and into an other includes an intermediate ride through the nonempty exterior of both.
+Up to approximation, these are Euclidean neighborhoods and there are finitely many of them and they are disjoint, that is the intersection of any two is empty.
+
+What a strange way to say what was already said with the technical phrase "discrete response" familiar to any novice scientists of behavior.
+Yet, these technicalities are what people cherish when they talk about cognitive processes.
+Instead of saying a discrete response, they demand something like "a finite family of disjoint open neighborhoods in a topological vectors space that is locally Euclidean with three space like dimensions and one time like dimension".
+What a waste of breath.
+Or, of finger fidgiting.
+
+...
+
+Yeah, this is going to be a messy note.
+
+I had planned on copying down some hand written notes on Schoenfield's "Mathematical Logic".
+Earlier today I finally sat down and did more than respond to myself while reading his book.
+I actually wrote out some of the covert responses that occurred to me.
+They were almost all about the absurdity of Schoenfield's methods, and hence about those of most mathematical logicians.
+An example of an absurdity is Schoenfield allowing for a unique name to each item of the universe of the structure of a theory.
+
+I find it absurd to speak of the meaning of a theory.
+Or, directly, to speak of what the grammatical items of the theory mean.
+It was only upon reading Quine that I found someone else who not only noticed there was a problem, but had the sentences that seemed to cut through the mysticism of it all.
+Perhaps Bertrand Russell actually knew the propositions he kept talking about in some way that is beyond me.
+I accept that as much as I accept that there are those who speak of their contact with their god(s).
+I accept that as much as I accept that there are those who sepak of their contact with their minds, or the mental world, or some such Cartesian clarvoyance.
+
+I can feel a lull coming on.
+
+...
+
+Oh, here is some stuff I had already written but which somehow got shoved down here rather than left above.
+
+For Schoenfield, the mathematician is confronted by a universe of abstract things about which he speaks when talking with other mathematicians.
+Such things as points, lines, figures, sets, relations, funtions, groups, rings, fields, graphs, trees, automata, procedures, and so on.
+Somehow, these things are known to the mathematician, at least, the mathematician speaks of them as if they are known in some direct way through some abstract action of mind called reason.
+
+Since we can not reach into the mind of an other, we are left with what mathematicians say when they talk about their direct contact with these abstract entities.
+The phrases of mathematics appear to have some relation to the abstract entities, or so many mathematicians insist.
+All we have to go on in conversation is what the mathematician says about their contact with a (the?) mathematical world.
+Most mathematicians accept that when someone talks about triangles they are talking about some thing and not just saying "triangles".
+
+...
+
+It is hard for most people to accept that I have all the thoughts and feelings that they do, but that I do not think thoughts or feel feelings.
+I think of, as in "bring to myself", and feel of, as in "feelings of the keys of my keyboard" in the absense of the keys of my keyboard.
+That is, I can "type to myself" without this keyboard being present and without overtly moving a finger.
+It is like air guitar but without the air.
+
+Why this is so hard for people to deal with is hard for me to deal with.
+It is hard because our vernacular is not conditioned on the experimental analysis of behavior.
+It is largely the result of Plato and Aristotle... still.
+
+Such are the frightening things that keep me typing here even though I should be relaxing with a nice book or show.
+
+I wish more people where sensitive to their behavior and its consequences and notice how little there is to explain.
+All around me I see people talking about how surprised they are that machines have been made to mediate fragmentary and weak verbal contingencies set up from calculations on the forms of responses recorded on the internet.
+
+## \#2026-0802-1120
+
+Happily, I seem to have found a way to present these newer notes publicly alongside everything else.
+Privately, this document is a singular one.
+It is a pure text document written with the syntactic style of Gruber's markdown.
+The only difference between the document as displayed online and as it is displayed in plain text is that there are hyperlinks there which are not here.
+They add little to the text, or at least they should.
+A basic textual search is all that may ever be needed, but only to navigate the jungle of notes with their immanent imperfections.
+
+Having finally made these much needed updates, I can go back and read, in detail, what I wrote in these latest notes.
+I have worked more on my writing than I have on anything else over the past two or three months.
+Consequently, what I write tends to reach beyond what I can immediately recall, and I am only just exploring the benefits of this verbal blessing.
+In particular, the freedom with which I move between topics is born from Mark Twain's autobiography and his advice to Grant in writing his.
+This is not so much an autobiography as it is a cumulative record, but there are sufficient similarities that much is to be gained from treating the one as the other.
+
+It appears more important than ever to have a cumulative record of my verbal behavior because of the newly strengthed verbal and social machines that have all but taken over our digital worlds.
+What once was a back ally has been overshadowed as little more than the slums beneath an opulant highway on which the wealthy zip and zoom.
+Much like Bradbury, I can only imagine the green blurs they come to call grass.
+In my case, it is not grass, but math that has been most recently distored by the short sighted need for speed.
+All the way back in 1931 Bertrand Russell pointed up many of the problems which come from the addiction to optimization promoted by a naive outlook on science (in his wonderful book "The Scientific Outlook").
+That there is much today which reads well from his words is a sadness.
+It is almost a century later and not much has been done to avoid such cataclysmic outcomes as those so easily forseen and forestalled.
+Alas we are "living during interesting times".
+
+
+
 ## \#2026-0801-1112
 
 The introduction to Goldfarb's "Deductive Logic" begins by comending the earlier editions of Quine's "Methods of Logic" and condemning the later editions.
@@ -186,7 +1127,7 @@ From afar, that is prior to embarking on this verbal discovery expedition, there
 I can not be even remotely sure if my guess is right because there is a great deal of confusion in texts like Shoenfield's and EFT's over the boundary between logic and mathematics.
 The result is that Shoenfield and EFT make distinctions, as almost all mathematical logicians do, between syntactic methods and semantic methods which do not arise in Quine's work because, unlike them, he finds no firmer basis for speaking of such objects beyond what is provided by, e.g., the main method itself.
 
-Where I come in is in finding the harmony between Quine's definition of validity in terms of grammar and truth, which I generalize to validity in terms of grammar and denotation (true of) and his main method.
+Where I come in is in finding the harmony between Quine's definition of validity in terms of grammar and truth, which I generalize to validity in terms of grammar and denotation (true of), and his main method.
 More than that, I have narrowed down the home of this harmony in a pure predicate logic whose grammatical constructions are those of Quine's predicate functors (in Carnap's sense and not in the category theoretic sense).
 
 It is not clear to me that Quine's proof of completeness of the main method is directly translatable into the broken worlds of syntax and semantics.
@@ -680,7 +1621,7 @@ It is a practice which mixes von Neumman's "axiom schema" each instance of which
 
 A concrete example of the practice I have only hinted at is at the end of the present edition of my memo on logic:
 
-    "F is wellfounded" is short for each substitution for 'G' in "Each item is F if each item is x such that x is G if each item is y such that y is G if y is F to x."
+"F is wellfounded" is short for each substitution for 'G' in "Each item is F if each item is x such that x is G if each item is y such that y is G if y is F to x."
 
 I do not yet submit that I have articulated the practice with sufficient clarity and exacteness to give it the same status as that of Quine's predicate functors.
 Predicate functors are clearly grammatical constructions each of whose compounds and components are only and solely predicates.
