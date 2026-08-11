@@ -126,9 +126,9 @@ Journal your thinking and feeling.
     9. i-irreflexivities are inclusions of their component with i-nonidentities.
     10. i-totalreflexivities are inclusions of i-identities with their component
 
+Predicates are 
 ## HOW VALIDITY, CONSISTENCY, IMPLICATION, AND EQUIVALENCE WORK
 
-Predicates are 
 1. valid waow each substitution of lexicon for supplemented lexicon in them, i.e. suplemented lexical substitution (SLS), denotes everywhere,
 2. consistent waow their negation is nonvalid (some of their SLSs denote somewhere), 
 3. implied by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) is nonconsistent (each of their SLSs denotes where the same of the other does), and
@@ -147,9 +147,7 @@ Use a thermometer.
 
 ## HOW TO FIND A GOOD PSYCHOLOGIST
 
-1. **Never** settle for a bad one.
-2. Good ones are exceptional people who happen to be psychologists.
-3. They are cultural liasons.
+Good ones are exceptional people who happen to be psychologists.
 
 ## OTHERS
 
@@ -160,6 +158,666 @@ Use a thermometer.
 
 # NOTES
 
+## \#2026-0810-1737
+
+I saw the movie "Stand By Me" for the first time a few days ago.
+I knew it was based on a Stephen King story-- I did not know that its title was "The Body"-- but I did not know it was Rob Reiner film.
+
+## \#2026-0810-1704
+
+This continues the work done earlier on Shoenfield's proof of Herbrand's Method in the chapter on consistency from his book "Mathematical Logic".
+
+These are specifically notes on Nelson's lecture in Fall 2004 on the consistency theorems from Shoenfield's book: <https://web.math.princeton.edu/~nelson/503/cons.pdf>.
+
+As with many mathematical logicians, Nelson's skills were perfected through his work on Shoenfield's text.
+The text is a loci of control over many a modern practice in mathematical logic, even though there are now far more wide ranging results to be found in the fertile grounds of category theoretic works and their descendant consequences through type theory and vice versa.
+
+Nelson's immanent set theory relies heavily on the technical distinctions given by Shoenfield.
+His theory is the closest attempt I have seen to realizing Quine's proposal in his paper "Immanence and Truth".
+I submit that sets are not the way to do it and neither are categories.
+It is the appropriate arithmetic, as in Conway's Surreal numbers, that is where we are most likely to find effective action.
+
+I agree with Nelson's initial distinction "an axiom system in which one is required to understand the meaning of some of the axioms is not an axiomatization at all".
+This is better put as a distinction between the Euclidean method of axiomatization where an axiom is a self-evident truth and the modern form of axiomatization where the axiom is an item in a theory of syntax, such as a theory of concatenation or trees.
+
+I disagree with Nelson's claim that by distinguishing between syntax and sematics we have made some sort of leap that was inaccessible to those who did not make that distinction.
+It is something like the mathematical version of Descrate's division between material and mental things.
+Quine's solution is the one I follow: if you must speak of a classification in terms of the material and the mental, then let it be of the predicates i.e. material predicates and mental predicates.
+Sort out their implications as you must depending on the scientific theory that is a going concern.
+
+Nelson suggests that dividing formalism into the syntactic and the semantic allows for us to narrow reason down to computation.
+I can not support this analysis because I am familiar with the methods of logical programming where the practice of programming is shown to be a specialized practice of logic e.g. under the main method.
+
+I am inclined to agree with his judgement that "Teh major technical achievement of the formalist program is the Hilbert-Ackermann consistency theorem", but can not commit myself to this inclination because I do not yet fully grasp the theorem itself (hence why I am even reading this or going into it).
+It is relevant to me because I must see clearly how the main method can be adapted to a completeness proof for the corresponding method befitting predicate functor logic.
+
+Consistency theormes are distinct from completeness theorems, but are closely related.
+Godel's completeness theorems (Each model theoretic interpretation of a schema is true if and only if it is a theorem) does not give a method for demonstrating the theoremhood from having established the truth of every model.
+This, the consistency theorem does.
+But, also, this is what Quine's main method does.
+
+The main method can be described in Godel's way: every valid schema has a proof where a proof is an inconsistent conjunction of truth-functional instances of the schema.
+The main method then actually tells us how to find this inconsistent conjunction if it exists.
+
+I submit that the main method makes whatever it is the consistency theorems say relative to the completeness theorems much clearer than it has been made hitherto.
+
+It also seems to me that the main method clearly demonstrates the superexponentiality of the potential search.
+
+How the main method does this is by being aimed at inconsistency and by entirely avoiding axiomatizations as Nelson has championed in the introduction (and as all those following the formalist program, however strong or weak it is now taken).
+The main method is a clear indication, both in its exposition and proof, that the division into syntax and semantics weakens clarity and exactness in method and theory.
+This much should already be known from the decision procedures of truth functional logic, one place predicate logic, and those of fragments of full blown truth functional and quantificational logic.
+
+Thankfully, Nelson cuts to the chace, as he always does: "We shall pursue cut elimination as the basic result. A *cut* is an inference of B or C from A or B and not A or C".
+I am unable to render the sentence as he gave it, but thanks to Quine's schematic methods (which come through von Neumann's introduction of them) I can rewrite that sentence as follows.
+
+> 'B or C' cuts 'A or B' with 'not A, or C'.
+
+Now, 'cut' is clearly a three place predicate in a formal theory, and not some mysterious inference.
+The sentence letter 'A' is the cut schema.
+Gentzen demonstrated that cuts need not occur in proofs from his sequent formalism.).
+
+I submit that Nelson wrote up this paper for almost the same reason that I have been compelled to write this recent series of notes on the constistency theorems: they are so important that they must be understood in isolation from the overwhelming number of technical distinctions which Shoenfield makes and which are special to his presentation.
+
+I was going to continue taking notes on the relevant definitions that contribute to the statement of Herbrand's theorem, but, thankfully, Nelson has once again saved me the trouble (the other place where he has saved me a great deal of trouble is in his Radically Elementary Probability Theory about which I do plan on writing more later once I have the methods of logic sketched out to apply predicate abstracts in talk of nonstandard natural numbers).
+
+Rather than taking proofs as expressions, e.g. as the conjunction of each schema in a sequence, Nelson regards "a proof as an expression, the concatenation fo the formulas in the proof. (An expression in a first-order langauge can be a concatenation of formulas in only one way.)" pg. 3.
+This is essentially the method that Gentzen promotes when he introduced sequents, though it is a sorta generalization to any appropriate grammatical construction in the formal language.
+
+"As we establish cut elimination we also produce bounds on the expression lengths of proofs with cuts eliminated." pg.3
+
+Note, "a theory is open in case each of the nonlogical axioms is open".
+
+To each open theory Nelson introduces an omega theory whose language is the same as the open theory, but whose axioms are all the instances of the open axioms of the open theory, adn whose rulse are
+1. or-rule: infer 'B' from 'A' if every disjunct of 'A' is a disjunct of 'B'
+2. not-not-rule: infer 'not not A, or B' from 'A or B'
+3. not-or-rule: infer 'not A or B, or C' from 'not A, or C' and 'not B, or C'
+4. existential-rule: infer 'some item is (x such that A) or B' from '(x such that A)a or B'
+5. not-existential-rule: 
+
+to be completed
+
+## \#2026-0810-1528
+
+Surprised that upon receiving my copy of "Butlers & Household Managers" the acknowledgements mention Hubbard.
+There is nothing more to make of this now other than it is an interesting factoid.
+
+...
+
+Don't forget to write about the chemical saftey board (or whatever CSB stands for) and its relation to "AI Safety".
+The perspective makes it out to be the joke it is.
+
+...
+
+I shall soon come to write more on what makes Y Combinator work as a way of potentially designing an effective counter Y Combinator culture.
+Preliminary conclusions have already been made relative to the remote contact that I have to the oblique reports through Paul Graham and Jessica Livingston.
+I submit that they see themselves as butlers.
+Specifically, butlers to founders where investors are like their guests.
+This is only a result of vauge contemplation on wayward principles.
+
+...
+
+The best writing must be done with an eye to ease of translation.
+Even though this is frowned upon in the short term, and there is good reason for such frowns, it is an aid to clarity and exactness and effective action to do so.
+
+## \#2026-0810-1400
+
+Notes on the 13th lecture of “A History of Philosophy” by Arthur Holmes on Aristotle’s Epistemology and the Human Soul
+
+<https://youtu.be/AISyO6hR_fI?si=JHNErSQdZc6fFeMm>
+
+Posterior analytics is about our knowledge of first principles and the development of a science of first principles.
+First principles have to do with the essences, the forms, and, of course, other causes involved.
+
+From the first principles of science follows a chain of deductive inferences so that the logical structure of any body of theoretical knowledge is that of a deductive system.
+I.e. science is deductive, not emperical as we presently take it.
+From universal first principles you can infer principles about particulars.
+
+Deductions about particulars are demonstrative, they can be logically deduced, but the first principles are not demonstrated or deduced from other principles (because if they were then either there is an infinite regress or a circular dependence).
+Therefore, any chain of deductive inferences must go back to indemonstrable premises.
+
+...
+
+Holmes, very happily (!), makes the distinction, that so few are insensitve to today, between axioms and postulates.
+Axioms, in Euclid's and Aristotle's sense, are self-evidently true.
+For us, and since Hilbert's formalism of Euclid's geometry (it surprises many that Hilbert's was the first actually logical development of Euclidean geometry up to truth-functional and quantificational standards), axioms are items in a theory of formalism e.g. a theory of conatenation or, better, binary strings, or a theory of ordered pairs, or binary trees.
+
+I go on to dismiss postulates all together, making only the distinction between the antecedents and consequences of a conditional sentence and the premises and conclusions of a conditional argument.
+This is the wise course to take after having demonstrated, over this past century, that there are many equivalent sets of premises that each offer various tradeoffs with respect to a given deductive strategy and with respect to their contribution to emperical checkpoints.
+
+For example, independence is sought along Hilbert's lines so that no one premise is implied by the others, but it is often the case that when teaching the formalism of a theory (which MUST be distinguisehd firmly from teaching its logic!) it often helps to have redundant premises.
+Much like Russell and Whiteheads starting points in Principia Mathematica, it is only later on that we uncover an independent set of equivalent premises.
+
+Perhaps unsurprisingly, the prime implicants of an alternational normal form are one way of getting at the fewest effective premises for a given theory.
+A clause of a schema in alternational normal form is redundant and can be dropped if it implies the alternation of the rest of the the clauses.
+A literal of a clause of such a schema is redundant and can be dropped if the rest of its clause implies the whole schema itself.
+(Dropping all redundant literals is a way to check for validity because it reduces the entire such schema to an outright validity e.g. an alternation of complementary components.)
+
+Dropping all redundant literals leaves prime implicants as clauses none of can lose a literal.
+The consensus of clauses having complementary literals (a predication and its negation) is the conjunction of the other literals in each clause (without duplicates, of course).
+Including every consesus into the alternation of prime implicants and working out systematically the shortest equivalent (through various alternative sequences of dropping redundant clauses) yields a shortest logically independent set of premises as that of each prime implicant from a shortest alternational normal form (there need not be one shortest such schema, there can be many of equal length but of distinct clauses).
+
+...
+
+Coon's revealed to modern philosophers that they might want to look at history of science when they make evaluations of whether its methods are deductive or not.
+Hypotheses as emperical generalizations i.e. Hypothetico-deductive approach.
+
+Aristotle doesn't accept hypotheses as first principles because emperical generalizations are falsified by one counterexample and hence are uncertain.
+
+The problem with this outlook is revealed by Quine's naturalism.
+Falsification involves theory.
+There is no empirical falsification independent of theoretical proof.
+
+Posterior analytics is where he points up the problem with getting indemonstrable first principles.
+
+How can we know indemonstrable first principles?
+Plato does this easily: we already know the forms, we just uncover what we already know.
+
+Aristotle gives an induction procedure (not the kind of inductive reasoning of modern science).
+Sir Francis Bacon's Novum Organum repudiates Aristotle's induction and replaces it with our present experimental outlook.
+
+Aristotle Induction:
+1. Sensations: senses apprehend the form of a thing independently of its material i.e. the matter of a thing does not go into your eye (this is against the copy theory of material, but for the copy theory of, immanent, forms).
+Sensus communus is an additional sense which brings together the forms from the other senses into a overlapping whole (or so).
+English translation would be "common sense" which is not what Aristotel is talking about.
+2. Memory
+3. Organized experience, the result of classification by way of sensus communus.
+4. Intuitive Apprehension of the Universe (essence), apprehension of a "general rule" (not Aristotle's phrase!)
+
+These all support this "process" outlook.
+
+Experience is the product of sensations, and contrasted with empiricism which says experience is sensation.
+
+Aristotle's inductive method is the intuitive recognition of the abstracted form of classified experiences as organized sensations.
+
+"Syllogism assumes an audience that accepts its premises, induction shows us the universal implicite in the particular."
+
+"To know a thing's nature is to know the reason why it is. This is equally true in so far as they are said without qualification to be as opposed of being possed of some attribute in so far they are said to be possed of some attribute such as equal of two right angles."
+
+"It is strange if we possess them from birth for it means that we possess apprehensions mroe accurate than demonstration and fial to notice them."
+How can you know something if you don't know that you know it?
+
+"We must posses a capacity of some sort but not such as to rank higher in accuracy than developed states."
+We have a capacity/potential for knowing these natures/forms i.e. potential intellect.
+It is a passive potential i.e. passive intellect.
+
+What does it mean tos ay that a young child who hasn't learned a thing is a rational being? It has a potency that is not yet actualized.
+
+How does passive intellect get to be active/actualized intellect?
+
+"an obvious characterist of all animals, they posses a congenital discrimintive capacity of sense perception. But though sense perception is innate/natural in all animals, in some the sense perception persists and in others it doesn't. Animals in which it persists have either no knowledge at all outside the act of perceiving or no knowledge of objects of which no impression persists in which this persistaence does not come they have no knowledge. ON the other hand, animals in which it does come into being, they retain this sense impression, and when that persistence is frequently repeated a further distinction arises between those which out of persistent sense impression develop a power of systematizing."
+
+"Out of sense perception comes to be memory, out of frequently repeated memories of the same thing, experience, from experience again, taht is from the universal now stabalized in its entirety within its soul, the one beside the many is a single identity from this experience stablized in the soul origninate the skill of the craft. We conclude that these states of knowledge are neither innate nor developed from higher states of knowledge but from sense perception. It is like a route in battle stopped by first one man making a stand and then another until the original formation has been restored, teh soul is so constituted as to be capable of that process."
+
+...
+
+It goes without saying, that I shall be taking notes on the entirety of Aristotle's written works as well as Plato's.
+Though I have done some of this elsewhere, it was only in handwritten notes or in documents that are now long lost.
+
+The main reaosn to really go deep into Aristotle is that he is the person who I know of that has done the sort of encyclopedic rewriting around logical principles like that I must do around human behavior.
+Though Liebniz skethed out much of the same in an evolved form, I am not as familair with his works.
+They are only now being translated at <https://leibnizpapers.org/> by Lloyd Strickland <https://leibnizpapers.org/about.htm>.
+
+...
+
+A number of memories constitute a single experience.
+
+"All men by nature desire to know."
+
+"Experience is knowledge of individuals, art of universals."
+
+...
+
+Theories of Knowledge we have met:
+1. Empiricism: knowledge is nothing but accumulating sense observations and making generalizations and whatever can be derived from that.
+2. Rationalism: knowledge is innate, we are born with it, Plato.
+3. Rational Empiricism, or moderate empricism (as distinct from radical/extreme/complete) empirical in that its source is in sense perception but there is more to it than that: the mind contributes to knowledge, laws thought and categories of thought that correspond with laws of being and categories of being, brings a capacity to organize/structure/classify, through which gets at unchanging truth.
+4. Skepticism: you can not know.
+
+...
+
+Criticism of foundationalism: the quest for certainty is inconsistent with humans.
+Coherentism vs. foundationalism: knowledge as justified belief vs. certainty.
+
+...
+
+Moving onto Aristotle's Ethics and the Human Soul
+
+'Soul' and 'life' are the same term.
+Life is distinct from matter because it has certain functions that matter doesn't have.
+
+Hierarchy of Souls/Lifes:
+1. Vegetative: Nutrative and Reproductive
+2. Locomotive: life that moves
+3. Sensitive: capacity for sensation, appetites, appetitive
+4. Rational
+
+...
+
+Aristotle's "capacities" seem to evlove eventually into Quine's "dispositions".
+
+...
+
+Growth of a living being actulizes the potential of the soul.
+The rational soul has capacity for immortality.
+
+The good is defined on the basis of the nature of the soul because Aristotle's metphysic is teleological: everything is end oriented to final causes.
+
+Supreme good or Highest Good or Summum Bonum: by virtue of its teleology it must be intrinsically good and not instrumentally good by nature of the rational soul.
+It must be inclusive: it doesn't exclude any lesser goods, it embraces them all.
+Applicable to the human species: the species can *participate* in the good.
+
+What is happiness i.e. "Eudaimonia": the diamon's are the gods or spirits that inspired socrates on his mission.
+Best translation "Well Being".
+Is it "fulfillment"? They mean "actualizing the potential".
+This doesn't work because it is associated in modern times with "individualized fulfilment" i.e. "self actualization".
+
+Actualizing the rational capacity of the soul is the good.
+
+The good life is "a complete life lived in accordance with reason" and virtue.
+
+Complete life?
+A human is not a soul trapped in a body, it is a rational animal!
+
+
+## \#2026-0810-1348
+
+Among the videos to take notes on:
+1. Implementing Forth in Lisp by Brad Nelson June 27th 2026 <https://www.youtube.com/watch?v=N7iph0-66ik>
+2. Smoking Man, Principles of Magic, Penn and Teller <https://www.youtube.com/watch?v=oXGr76CfoCs>
+3. Cups and Balls, Rules of Magic, Penn and Teller <https://www.youtube.com/watch?v=MPhnyqw27Vo>
+4. Googly Eye'd Gardner, Christpher Walken, SNL 
+
+
+## \#2026-0810-1308
+
+My reading of fiction is a study of vernacular.
+It finally occurred to me that technical terms are too difficult to introduce to the public without padding their introduction with a swarm of vernacular comforts.
+
+To speak technically to a nontechnical audience is to remove them from the language of their household.
+Like a child whisked away from their parents by their first bus ride to school, it is traumatic no matter how much the results of it are celebrated.
+
+While this is a defect in prevailing cultural practices, it is the state of affairs.
+It must be dealt with or we are likely doomed to live only the vernacular life.
+
+Vernacular is not in itself defective.
+It is the absence of effective technologies of teaching technical terms that demonstrates the defect.
+When people learn technical things they are an accidental product of our times.
+This happens to be why we prize them when they do what no one expected or can explain.
+
+Now that we live in the age of midling averages thanks to the newly minted verbal machines, the world is made to think that there is no need for anything more than the vernacular.
+
+...
+
+leaving this incomplete because I was whisked away and lost the thought.
+
+## \#2026-0809-2137
+
+Notes on the 12th lecture of “A History of Philosophy” by Arthur Holmes on Aristotle's God
+
+Every kind of thing that is, process of change or becoming, has to be explaiend in terms of four causes: the material cause as the subject of change, the efficient cause that exerts the force, the formal cause the esential nature of what is going on, and the final cause as the purpose.
+
+This is true of earth, planets, stars, etc. i.e. the cosmos.
+The circular spatial motion must have the four fold causual motion.
+The material nature of the thing, basic elements, the ether, and the planets, these are the material causes.
+The efficient cause is the movement of the fixed stars that produce changes in the ether and maintains the rotation in the planets, that maintanes changes in the atmosphere of the earth, and the processes of the earth.
+Formal cause, the nature of the fixed stars, it is their nature to spin, an actualized potential.
+Beyond the perimeter of the universe there is an unmoved mover that does not move but moves things which are moved.
+It is unchanging and is the ultimate cause of all kinds of change by virtue of its influence on the fixed stars.
+
+The unmoved mover is pure actuality. (potentiality and actuality)
+Every change is the actualizing of some potential.
+"I'm potentially over here and now I am actualizing that potential."
+Every process of change is the actualization of some potential it has.
+Pure actuality means there is no unactualized potential.
+
+Processes of locomotion: linear, rectalinear, circular.
+Circular is an unchanging locomotion.
+The god of Aristotle is not a creator, it does not bring things into existence from nothing.
+It is not an efficient cause, it does not exercise power, force, doesn't push things around, force them to exist etc.
+
+The materials of the cosmos always existed so there was nothing to create or destroy.
+The cosmos is an everlasting gobstopper.
+
+Motion has to be produced and maintained, it is not inertial to us modern physics.
+
+God is final cause and not efficient cause.
+Things are moved by wonder and love at it.
+Thus, the stars have some sort of soul that can love this unmoved mover and wonder at it.
+
+The actuality of this final cause is that it thinks on its own thinking because if there was something that it perceived then it would be changed and hence no longer be an unmoved mover.
+
+Since there is no possibility of it being unactualized then it is perfectly good.
+Pure actuality is pure goodness.
+
+This is an example of what we now call "natural theology".
+A theology based on inferences from what we know about nature.
+
+Not all final causes involve consciousness.
+
+Henry Veatch "Aristotle is telling us that man is not the measure of all things, god is."
+
+...
+
+Looking at Aristotle's logic and epistemology.
+
+Brought together by students as "The Organon" i.e. "The Method". Works are:
+1. the categories
+2. interpretation
+3. prior analytics
+4. posterior analytics
+5. topics
+6. sophistical refutations
+
+The categories deal with the way terms function in our thinking.
+On interpretation deals with the logic of propositions, where a proposition is somethign which asserts or denies.
+Prior analytics deals with the syllogism, the composition of propositions e.g. major and minor premises lead to conclusions.
+Posterior analytics is on scientific reasoning as "how do we get to our first premises" i.e. how do we know our basic premises are true.
+Topics is about dialectic, before he discovered the syllogism, used in rhetoric.
+Sophistcal refutations is about logical fallacies.
+
+More on the categories:
+1. species, genera, and differentia (the essential properties which differentiate species, genera, etc.) as a means of classification.
+Knowing these is how we know the true first premises
+2. categories of thought (were earlier spoken of as categories of being in the lectures).
+Each signifies either substance, or quality, or relationship, or where, or when, or being in a poisition, or having, or doing, or being effective.
+You do not switch from one category to an other in a dialogue.
+3. two senses of substance: primar or secondary as particulars or forms.
+
+More on the posterior analytics: how can we know unchanging truths about classes of things for certain?
+How do you know a general truth about a species?
+You have to know its differntia, its essence, its form etc.?
+So, how can you know the forms?
+You want your premises to be about the forms, the essential nature of things.
+
+We can not know the forms by sensation: sense perception gives us particular and is relative.
+Innate knowledge: no, people do not know everything.
+So how can we know them... good time for the video to end.
+
+
+## \#2026-0809-1813
+
+I am unsatisfied with the progress that I have made over the past week or so.
+No great good seems to have come from my work.
+There have been mistakes.
+
+The biggest one is that the javascript code at the end of the note on the proof procedure for truth functional validity (which follows from the existence of an alternational normal form) does not implement the exact proof procedure specified.
+
+Rather than beginning with a prenexed schema and performing the proof procedure on its postfix (aka matrix), it constructs, from each connective, a compound already in prenex alternational normal form.
+
+For example, a sentence letter is taken as a schemata in prenex alternational normal form whose prefix is empty and whose postfix is the altneration of a single conjunction of a single predicate of zero places.
+Predications fair similarly in that their prefix is empty and they are the degenerate alternation of a degenerate conjunction of an n place predicate predicated of n variables.
+Each such variable is free in the resulting schema.
+
+The conjunction of two schemata in prenex alternational normal form is equivalent to one in prenex alternational normal form.
+It is equivalent to many since variants of any one are equivalent to each other.
+The prefixes of each component are pulled out after the second component's quantified variables are replace by the alphabetical continuation of the first's.
+The postfix of the one is distributed over the other such that inconsistent clauses are dropped in the process.
+Inconsistent clauses are identified as conjunctions containing a predication (sentences as zero place predicates are treated as zero place predications) and its negation.
+Duplicated predications in a clause are dropped during the check for outright inconsistencies.
+
+All of the predicate letters and variables are put into an adhoc order as they are placed, as strings, into a dictionary if they are not already part of the dictionary and their index in it is what is actually manipulated.
+
+Strictly, an n place predicate letter predicated of n variables is kept as a pair whose left part is the index of the predicate letter in the dictionary and whose right part is a list of the same for its variables.
+When the index of the predicate letter of a predication is negative it is interpreted as the negation of that predication in its surrounding clause.
+Variables which are free are positive, and those that are bound are not.
+To discover whether a bound variable is existentially or universally quantified, index the absolute value of the bound variable into the prefix and if the result is positive then it is existential, otherwise it is universal.
+
+It makes better sense to make bound variables nonnegative and free ones negative since then there is no intermediate operation of sign change between a bound variable and indexing into the prefix to discover its polarity.
+There are a lot of things that would make better sense, but that is for the next version.
+
+So far I have only really described how the conjunction of two schemata in prenex alternational normal form is constructed in the javascript program.
+Now I move on to negation, and then after that existential quantification, and then the rest are defined in their familiar way from there (this is to save space, but there are reasons to program them out individually to take advantage of skipping small steps).
+
+Negation is, at first, profoundly simple: negate each value of the prefix so that universals turn to existentials and vice versa.
+Then, take the dual of everything in the postfix (matrix) and simplify.
+In reality, this means taking every conjunctive clause of the schema and turning it into an alternation of one place conjunctions of each literal of the clause.
+All together this produces a large conjunction each component of which is an alternation of (degenerate conjunctions of) the negation of the corresponding literal from the corresponding conjunctive clause.
+Happily, this turns out to just be iteration of the familiar conjunctive construction already given (restricted to the postfix and no longer involving the prefix).
+As long as outright inconsistencies and duplicates within clauses are dropped, this rarely baloons nearly as large as it otherwise would if done naively.
+Since we already need to drop outright inconsistencies and duplicates anyway, this comes as a boon.
+
+Existential quantification appends a one to the prefix and replaces each occurrence of the index of the quantified varaible in the dictionary with the negated length of the prior prefix.
+
+Now, if the postfix comes out empty, you have uncovered an inconsistency.
+Validity is an empty postfix from negation.
+In otherwords, negating a schemata also checks its component for validity if it comes out with an empty postfix.
+
+Here again is the whole dirty procedure written in Javascript.
+
+```
+function A(...x){return x.every(Array.isArray);} // is Array
+function C(x,y){return D(x).concat(D(y));} // concat arrays
+function D(x){return A(x)?F(x,D):x;} // deep dup arrays
+function E(x,y){return A(x,y)?L(x)==L(y)&&x.every((e,i)=>E(e,y[i])):x===y;} // identically equal
+function F(x,f){return x.map(f);} // map
+function IJ(x,y,f){x.forEach(i=>y.forEach(j=>f(i,j)));} // 2d iterate
+function L(x){return x.length;}
+function M(x,y){return y.some(e=>E(x,e));} // member?
+function S(a){return `[${F(a,x=>!A(x)?x:S(x)).join('')}]`} 
+
+function wh(x,y,i=L(y)){while(i--)if(E(x,y[i]))return 1+i;return y.push(x);}
+let s=[];function sn(x){return wh(x,s);}
+function pr(p,...v){return [[],[[[sn(p),F(v,sn)]]]];}
+function n(e){return [-e[0],D(e[1])];}
+function d(i,j,w){return j.every(e=>!M(n(e),i)&&(M(e,i)||w.push(D(e))));}
+function nd(x,y,z=[],w){IJ(x,y,(i,j)=>d(i,j,w=D(i))&&!M(w.sort(),z)&&z.push(w));return z;}
+function m(x,f){return F(x[1],i=>F(i,([p,v])=>[p,F(v,f)]));}
+function and(x,y){return [C(x[0],y[0]),nd(x[1],m(y,e=>0<e?e:e-L(x[0])))];}
+function ot(x,y=[[]]){x.forEach(i=>y=nd(F(i,e=>[n(e)]),y));return y;}
+function not(x){return[F(x[0],e=>-e),ot(x[1])];}
+function exi(x,y){return [C(x[0],1),m(x,e=>e==y?-L(x[0]):e)];}
+```
+
+How I came to mistake this for the other proof procedure given in the previous note is not clear.
+An earlier version of this procedure was implemented in that way, but it is so long and cumbersome that I abandoned it early.
+
+[It just occurred to me that if the dogs didn't run away the neighbor's cat then the cat would eat the birds that come to my yard for seed.
+The reason this just occurred to me is that there are two doves that appear frozen in time.
+They did so after all the other birds flew away and all the chirping stopped.
+They only just started moving again when three or so other birds flew down within their view.
+Now a squirrel is making its approach.
+I know there is a hawk that lives near here, perhaps that is what set this little episode in motion.]
+
+Where to go from here?
+
+...
+
+An example of the application of my logical methods to arithmetic (they are only mine in that they are supposedly well known methods peculiarly applied) begins with two three place predicates: 'adds' and 'multiplies' as in 'Five adds two with three' and 'six multiplies two with three.'
+
+Then,
+1. 'one' is short for 'x such that x multiplies x with x'
+2. '(immediately) succeeds' is short for 'x with y such that some item is (z such that x adds y with z and z is one)'
+3. each item is (v, w, x, y, with z such that x adds y with z and z succeeds w, if and only if x succeeds v and v adds y with w)
+4. each item is (v, w, x, y, with z such that x multiplies y with z and z succeeds w, if and only if x adds y to v and v multiplies y with w)
+
+or, without finishing that list and leaving intermediate definitions behind:
+1. each item is (x with y such that y adds y with y, if and only if x adds x with y and y multiplies x with y)
+2. each item is (u, v, w, x, y, with z such that u multiplies u with u, only if x adds y with z and z adds u with w, if and only if x adds u with v and v adds y with w)
+3. each item is (u, v, w, x, y, with z such that u multiplies u with u, only if x multiplies y with z and z adds u with w, if and only if x adds y to v and v multiplies y with w) 
+4. each item is (v, w, x, y, with z such that v adds v with v, w multiplies w with w, x adds w with y, v is F, and y is F only if x is F, only if z is F)
+
+or, with 'A' for 'adds' and 'M' for 'multiplies':
+1. each item is (x with y such that yAyy if and only if, xAxy and yMxy)
+2. each item is (u, v, w, x, y, with z such that uMuu only if, xAyz and zAuw, if and only if xAuv and vAyw)
+3. each item is (u, v, w, x, y, with z such that uMuu only if, xMyz and zAuw, if and only if xAyv and vMyw)
+4. each item is (v, w, x, y, wih z such that vAvv, wMww, xAwy, vF, and yF only if xF, only if zF)
+
+or just
+1. yAyy if and only if, xAxy and yMxy
+2. uMuu only if, xAyz and zAuw if and only if, xAuv and vAyw
+3. uMuu only if, xMyz and zAuw if and only if, xAyv and vMyw
+4. vAvv, wMww, xAwy, vF, and yF only if xF, only if zF
+
+or just
+
+1. yAyy if and only if, xAxy and yMxy
+2. uMuu and zAuw only if, xAyz and tMyz if and only if, xAuv, vAyw, tAys, and sMyw
+3. vAvv, wMww, xAwy, vF, and yF only if xF, only if zF
+
+Now what?
+
+...
+
+I found a symmetric way of describing the operations of my machine which is simpler than before in one way and more complicated in another.
+
+There are now two kinds of drops: a left drop and a right drop.
+They do what you would expect in that the left drop drops the top of the left stack and the right drop drops the top of the right stack.
+
+Now, the novelty is that all other complex operations are shoved into this third one, THE op, which first puts a duplicate of the top of the right stack on the left one and vice versa, and then puts whatever else is ever needed by any other operation ontop of either stack in any order.
+
+So, if m new items are put on the left stack and n on the right stack then m left drops and n right drops leaves you with what you started with.
+If m+1 and n+1 new items are put similarly, as they must because of the initial provision on duplication, then m left drops and n right drops leaves you with the swapped duplicates atop their respective stacks.
+
+Now, how to get our good old operations of dup, drop, push, pop and swap?
+Drop is the easiest, you just let 'drop' be short for 'left drop'.
+Push and pop are also easy enough: a push is the op followed by m drops and n+2 right drops, and a pop is the op followed by m+2 drops and n right drops.
+Now, dup is the op, m+1 drops, n right drops, and a push.
+Finally, a swap is a pop, the op, m drops, n right drops, a pop, a drop, three pushes, and a drop.
+
+It is probably more comfortable when thinking about this to factor out the recombic operations from the others.
+Thus the three primitive recombic operations are then the left drop, the right drop, and the symmetric op which puts a duplicate of the top of the right stack on the left one and vice versa.
+Then it is easier to see that a classical drop is just the same as a left drop; a push is the (symmetric) op followed by a right drop; a pop is the op followed by drop; a dup is the op, a drop, and a push; and swap is a pop, the op, a pop, a drop, three pushes, and a drop.
+
+...
+
+Now, this simplifies the presentation of the recombic predicate functors as follows:
+1. ..xy(ldrop F)..z and ..x(rdrop F)y..z if and only if ..xF..z
+2. ..wx(op F)y..z if and only if ..wxyFxy..z
+3. ..x(not F)..y if and only if not ..xF..y
+4. ..x(and F G)..y if and only if ..xF..y and ..xG..y
+5.  ..x(some F)..y if and only if some item is (z such that ..xzF..y)
+
+
+## \#2026-0809-1345
+
+One of the main reasons that I started reading more fiction was to learn to write about what does not yet exist.
+The future is unknowable in that it has no effect on the present or the past.
+What we talk about as the future is a projection, often enough through science and logic, from what has happened on to the things that we theoretically calculate shall happen.
+What shall happen shall happen whether we calculate it or not, and there is no thing that it is that shall or shall not happen.
+This is confusing, but it is also vaguely nonsensical.
+
+Let me avoid these cosmic conundrums and begin here and now.
+The work to be done is minute.
+The complexity of our machines and of the programs that schedule the contingencies they mediate is a barrior to effective action.
+Logical simplicty begets practical actions.
+It makes it easier to see what can be taken advantage of just by speaking validly.
+
+Validity may seem other worldy until it is clearly defined as the contribution of two components: grammar and truth.
+It is truth that pins the language to the rest of the world, and it is truth that we chase when we speak grammatically in a logical language.
+Validity is truth from each substitution of a lexical for a perhaps extra lexical in a sentence of a logical language.
+
+But what does this really have to do with practical action?
+Practical action is shaped by the contingencies we are exposed to during our life time and those to which our species were exposed.
+Among those that we are exposed to during our life time, there are the social contingencies.
+The social environment, and the contingencies arranged within it, can undergo profound change during the lifetime of an individual, but can also have a history which stretches across generations.
+Each consequence arranged by these natural, operant, and social contingencies selects, and maintains, the behaviors that ultimately appear from the individual.
+Whether that behavior is subsequently reinforced after having been selected asks the question of practicality.
+
+In general, behavior which contributes to the survival of one or the other social environment can be seen as an ultimate value in that those who do not care for such survival are, presumably, already contributing to its extinction.
+Having not been taught to care for the survival of their culture, the prospects for their cultures survival would seem to have diminished.
+
+We start by simplifying our own lives and push out that simplicity from there.
+
+...
+
+I don't know if I believe any of this or if any of what I just wrote is true.
+It was something of an exercise.
+
+
+
+## \#2026-0809-1202
+
+Notes on the 11th lecture of “A History of Philosophy” by Arthur Holmes on Aristotle’s Metphysics Part Two
+
+Metaphysics is the science of all sciences i.e. the most general principles.
+He contrasts his theory of forms (Immanent Teleology) with Plato's and gives four classifications of causes: efficient, material, formal, and final.
+
+Metaphysics is the science of being (in general i.e. "being qua being") of which there are ten different categories e.g.
+Substances, qualities, places, relations, etc.
+There are laws of being.
+The categories and laws of being and also the laws and categories of thought (as far as we know).
+
+There are three laws of being/thought:
+1. Law of noncontradiction: a being can not be and not be in the same respect at the same time.
+2. Law of identity: a thing is identical with it self.
+3. Law of excluded middle: Something either is or is not.
+
+The contrary to white is nonwhite: black and green are contraries to white because they are both nonwhite.
+
+Three senses of 'substance':
+1. particulars, or parts of particulars, or contents of particulars e.g. "this marker, desk, and hand are substances"
+2. forms
+3. (bare) matter
+
+Particulars are also called "primary substances" and forms are also called "secondary substances".
+Particulars are becomings for Plato but they are beings for Aristotle.
+
+Forms combine in material as particulars.
+Paticulars are distinct entities.
+Forms are not, except for god.
+Forms are drawn out of the potential of matter.
+
+To some, Plato is to Aristotle as idealism is to realism.
+
+Forms give particulars its nature and potential e.g. the material infant grows and the form gives it the potential to be a human adult.
+
+The telos is deduced from the potential of the form.
+
+Essence is distinct from accident:
+"Things are said to be first in an accidental sense and second by their nature."
+
+Rationality is essential to the nature of a human being, and having blue eyes is not, it is accidental.
+
+...
+
+Moving onto book 12 on God.
+
+"There are three kinds of substance. One that is sensible of which one subdivision is eternal and another is perishable."
+
+Four kinds of change:
+1. what quality
+2. quantity
+3. place
+4. thisness, generation and destruction, becoming
+
+Two kinds of particulars: perishable and everlasting.
+
+Then a bunch of stuff about the Earth being at the center of the cosmos, the planets going round and round the Earth, stars spinning like tops, and the good way out there keeping them spinning without there being anything else to keep it doing what it is doing (because it is THE good after all).
+The ether is in there too, between everything that he doesn't explain otherwise.
+
+Over all it is a grand presentation when Holem's speaks of it, but it is a stretch for me to embrace it beyond folklore.
+Thankfully, that is the end of this lecture.
+
+
+## \#2026-0808-2016
+
+Self-aggrandizing social controllers ask "Why make what you can take?"
+
+## \#2026-0808-1741
+
+A friend whose opinion I respect, and whose opinion of me I am sensitive to, has asked me, on more than one occassion, to seriously examien why I avoid better understanding where he is coming from with respect to science and logic.
+
+I really don't know where to start because I do not quite grasp the problem to solve.
+Part of the problem to solve may be that when I write I do not write with the happiness and comfrot of the reader in mind.
+This is especially the case when I write about things that I do not think the reader is likely to enjoy hearing.
+Rather than avoid what it is that I have to say by making it feathery soft, I sharpen and harden it so that it sticks out like the leg of a table you stub your toe on.
+
+I show disrespect towards the reader when I do not take their feelings into account.
+I must say what I can how I can so that it makes the reader feel good while informing them of some uncomfortable truth.
+I am averse to this because I have no personal experinece with such love from writers or speakers.
+Sometimes I chalk this up to being different.
+That is, I do not ever quite feel like I am the audience that speakers are speaking to.
+Perhaps other people do not feel this way most of the time, but it is something that I feel almost all the time.
+
+Most of my hunts for good books are the result of having eventually found a writer who speaks to me in that peculiar way that mixes science and logic with clarity and exactness.
+I used to find some sort of satisfaction from reading Russell, but now I do not because even he is less than clear and exact about that which Skinner and Quine have found better ways of speaking.
+
+...
+
+Ok, this doesn't seem to be getting me anywhere.
+Perhaps it is just because I am writing to myself and not to myself as someone else.
+
+
 ## \#2026-0808-1519
 
 The consequences of science and logic are inconspicuous and remote to every day experience, but that does not mean that they are absent nor that they are weak.
@@ -168,7 +826,7 @@ The amount of time that I spend justifying the strengths of science and logic to
 
 ## \#2026-0808-1459
 
-It occurs to me that the word problem for recombic predicate functors (or permutation problems with two stacks) is the core of the undecidability of predicate logic.
+It occurs to me that the word problem for recombic predicate functors is the core of the undecidability of predicate logic.
 
 ## \#2026-0808-1450
 
@@ -279,7 +937,7 @@ function exi(x,y){return [C(x[0],1),m(x,e=>e==y?-L(x[0]):e)];}
 
 ## \#2026-0808-1308
 
-As much as I possible can I have opted to include as much of personal letters to others as I can publicly share without causing them harm or without their direct permission.
+I opt to include as much of personal letters to others as I can publicly share without causing them harm or without their direct permission.
 Since much of what I say to others is what I would say to anyone, and often do, in a public arena, there is little that must be left unsaid here, yet.
 
 I must say 'yet' because there is no reason for what I say to ever go unsaid. This is absurd to most people. It is "playing life on hard mode" for me.
@@ -1261,9 +1919,6 @@ If all clauses are crossed out then the compound may be taken as some canonical 
 Otherwise the remaining clauses are put in some sort of lexicographic order and appended to the block of quantifiers in an alternation.
 
 
-
-
-
 ## \#2026-0731-1626
 
 One of the benefits of dialogue, in Plato's sense, is that it produces intermediate products which the public can somewhat interpret.
@@ -1285,6 +1940,7 @@ The slightest bit of predigested data is suspect to the experimental scientist.
 The strong experimentalist is always in the 'show me' state.
 
 I shall surprise myself if anything I have written in these past two notes comes together coherently upon further reflection.
+
 
 ## \#2026-0731-1549
 
