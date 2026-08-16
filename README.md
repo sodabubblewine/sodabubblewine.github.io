@@ -126,9 +126,10 @@ Journal your thinking and feeling.
     9. i-irreflexivities are inclusions of their component with i-nonidentities.
     10. i-totalreflexivities are inclusions of i-identities with their component
 
-Predicates are 
+
 ## HOW VALIDITY, CONSISTENCY, IMPLICATION, AND EQUIVALENCE WORK
 
+Predicates are 
 1. valid waow each substitution of lexicon for supplemented lexicon in them, i.e. suplemented lexical substitution (SLS), denotes everywhere,
 2. consistent waow their negation is nonvalid (some of their SLSs denote somewhere), 
 3. implied by others waow the conjunction of their self (the conclusion) with the negation of the other (the premise) is nonconsistent (each of their SLSs denotes where the same of the other does), and
@@ -155,13 +156,692 @@ Good ones are exceptional people who happen to be psychologists.
 
 - A predicate is NOT a singular term which puports to designate its extension as the class (or relation) of each item (or list of items) which it denotes.
 
+# MEMOS
+
+## Logic (working draft 202608161553)
+
+Grammatical constructions of logical languages denote each of their compounds with its components. Compounds are also components. Lexicals are only so. Constructions of categoricals match. Only categoricals with matching like components match.
+
+Each interchange of each interchangee for each interchanger at each locator in each interchangeand matches its interchangeand and its locator is lexical; or matches its interchanger, its interchangee matches its interchangeand, and each component of its locator is lexical; or is categorical with its locator and its interchangeand, and each of its components matches the same at the like component of its locator in the like component of its interchangeand.
+
+Each interchange matches its interchangeand and its interchangee matches its interchanger at each locator of its interchangee in its interchangeand. Substitutions are interchanges at largest such locators. Lexsubs are substitutions of lexicals for perhaps extra lexicals.
+
+Lexsubs in validities/consistencies denote everywhere/somewhere, and in conclusions of implications they denote where the same in its premises do. Equivalence is mutual implication. Equichanges are interchanges for equivalents.
+
+Equichange keeps validity, consistency, implication, and equivalence. Equichanges in equivalents are equivalent since each lexsub is lexical or matches the categorical of the same in each component.
+
+Subsitution for lexicals keeps validity, implication, and equivalence since lexsubs of substitutions for lexicals are lexsubs– take the component substituted for as an extra lexical.
+
+When there are lexicals, validities are consistencies. Components are self equivalent; and imply themselves, validities, and what their conclusions do. Only validities are implied by and equivalent to validities. Equivalents are mutually equivalent.
+
+Other than where grammatical constructions denote, they misdenote. Lexsubs in invalidities/inconsistencies misdenote somewhere/everywhere, and in conclusions of nonimplications they misdenote where the same in their premises denote. Nonequivalents are mutually nonimplicative.
+
+Equichange keeps invalidity, inconsistency, nonimplication, and nonequivalence. Substitution for lexicals keeps inconsistency. When there are lexicals, inconsistencies are invalidities. Components are implied by inconsistencies. Only inconsistencies imply and are equivalent to inconsistencies.
+
+[More on nonimplication and nonequivalence is needed here!]
+
+Constructions are
+- negationalistic when they are
+    - valid if and only if their component is inconsistent;
+    - inconsistent if and only if their component is valid;
+    - consistent if and only if their component is invalid; and
+    - invalid if and only if their component is consistent.
+- alternationalistic when they are inconsistent if and only if each component is.
+- conjunctionalistic when they are valid if and only if each component is.
+- conditionalistic when they are valid if and only if their antecedent component implies their consequent component
+
+Compounds are
+- occasional bivalents when they denote or misdenote somewhere
+- eternal bivalents when they denote or misdenote everywhere
+- occasional contradictions when they denote and misdenote somewhere
+- eternal contradictions when they denote and misdenote everywhere
+
+
+Matching compounds of denotative functional constructions jointly denote or exclusively misdenote, where and only where (waow) each of their like components jointly denotes or exclusively misdenotes. For example,
+
+- Joint denials denote waow each of their components misdenotes, and misdenote waow some of its components denote.
+- Negations, self joint denials, denote waow their component misdenotes, and vice versa.
+- Alternations, negations of joint denials, denote waow one or more of their components do, and misdenotes waow each of their components does.
+- Converse conditionals, alternations of the negation of their consequent with their antecedent, denote waow their consequent misdenotes or their antecedent denotes, elsewhere they misdenote.
+- Complementary converse conditionals, negations of con. cond.s, denote waow their consequent does and their antecedent misdenotes, elsewhere they misdenote.
+- Complementary conditionals, com. con. cond.s with swapped components, denote waow their antecedent does and their consequent misdenotes, elsehwere they misdenote.
+- Conditionals, negations of com. cond.s, denote waow their antecedent misdenotes or their consequent denotes, elsewhere they misdenote.
+- Alternative denials, conditionals with negated consequents, denote waow one or more of their components misdenotes, elsewhere they misdenote.
+- Exclusive alternations, alternations of each conjunction of one of their components with the negations of the rest, denote waow one of their components does and the others misdenote, elsewhere they misdenote.
+- Mutual conditionals, negations of exclusive alternations, denote waow each or none of their components do, elsewhere they misdenote.
+- Cedents, conditionals of conjunctions with alternations, denote waow one or more of their antecedents misdenotes or one or more of their consequents denotes, elsewhere they misdenote.
+
+Denotative functional constructions denote eternal bivalent compounds with eternal bivalent components.
+
+Alternations of eternal bivalents with their negation are valid: they denote waow their eternal bivalent denotes or misdenotes, which is everywhere, and hence each of their lexsubs denotes everywhere.
+
+Conjunctions of eternal contradictions with their negations are inconsistent: they misdenote waow their eternal noncontradiction denotes and misdenotes, which is everywhere, and hence each of their lexsubs misdenotes everywhere.
+
+Resolution and Alternational analysis [#2026-0816-1239](#2026-0816-1239)
+
+
+Existential closures denote waow there is somewhere denoted by their component.
+
+Existential croppings denote part of waow their component does.
+
 
 # NOTES
+
+## \#2026-0816-1558
+Finally introducing the first memo to this document.
+It is a working draft.
+That is the only way I was able to get it out as a memo.
+
+My original plan had been only to present memos in their final form, but it became necessary to place their latest working draft in the memos because otherwise I would have trouble finding the draft material among all these other notes.
+
+I have yet to incorperate the grammatical constructions from the hints which give a breadth of basic predicate functors for the introduction of narrower kinds of validity like that in a recent note on validities of identity which follows the pattern of validities of denotative functionality, validities of closure, validities of cropping, validities of recombination, and so on.
+
+For now I shall add, in a very preliminary and tentative way, before denotative functional grammatical constructions are introduced, the negationalistic, alternationalistic, conjunctionalistic, conditionalistic, and mutally conditionalistic classificatoins in terms of validity and inconsistency.
+
+Negationalistic grammatical constructions are
+- valid if and only if their component is inconsistent;
+- inconsistent if and only if their component is valid;
+- consistent if and only if their component is invalid; and
+- invalid if and only if their component is consistent.
+
+Alternationalistic grammatical constructions are
+- inconsistent if and only if each component is.
+
+Conjunctionalistic grammatical constructions are
+- valid if and only if each component is.
+
+Conditionalistic grammatical constructions are
+- valid if and only if their antecedent component implies their consequent component.
+
+Mutually conditionalistic grammatical constructions are
+- valid if and only if their components are mutually equivalent.
+
+The terminology is atrocious, but I prefer it over nothing.
+It is not yet clear if these distinctions are even worth it.
+Tehy take advantage of Quine's definition of validity in terms of grammar and truth which does not mention any particular grammatical constructions.
+
+The definitions as given may need refinement.
+They permit demonstrations that, e.g., negation is negationalistic because it denotes waow its component misdenotes and vice versa.
+
+It occurs to me that I can define vacuous validity after validity by simply saying 
+
+...
+
+Without further ado, here is the memo on Logic (working draft 202608161553)
+
+Grammatical constructions of logical languages denote each of their compounds with its components. Compounds are also components. Lexicals are only so. Constructions of categoricals match. Only categoricals with matching like components match.
+
+Each interchange of each interchangee for each interchanger at each locator in each interchangeand matches its interchangeand and its locator is lexical; or matches its interchanger, its interchangee matches its interchangeand, and each component of its locator is lexical; or is categorical with its locator and its interchangeand, and each of its components matches the same at the like component of its locator in the like component of its interchangeand.
+
+Each interchange matches its interchangeand and its interchangee matches its interchanger at each locator of its interchangee in its interchangeand. Substitutions are interchanges at largest such locators. Lexsubs are substitutions of lexicals for perhaps extra lexicals.
+
+Lexsubs in validities/consistencies denote everywhere/somewhere, and in conclusions of implications they denote where the same in its premises do. Equivalence is mutual implication. Equichanges are interchanges for equivalents.
+
+Equichange keeps validity, consistency, implication, and equivalence. Equichanges in equivalents are equivalent since each lexsub is lexical or matches the categorical of the same in each component.
+
+Subsitution for lexicals keeps validity, implication, and equivalence since lexsubs of substitutions for lexicals are lexsubs– take the component substituted for as an extra lexical.
+
+When there are lexicals, validities are consistencies. Components are self equivalent; and imply themselves, validities, and what their conclusions do. Only validities are implied by and equivalent to validities. Equivalents are mutually equivalent.
+
+Other than where grammatical constructions denote, they misdenote. Lexsubs in invalidities/inconsistencies misdenote somewhere/everywhere, and in conclusions of nonimplications they misdenote where the same in their premises denote. Nonequivalents are mutually nonimplicative.
+
+Equichange keeps invalidity, inconsistency, nonimplication, and nonequivalence. Substitution for lexicals keeps inconsistency. When there are lexicals, inconsistencies are invalidities. Components are implied by inconsistencies. Only inconsistencies imply and are equivalent to inconsistencies.
+
+[More on nonimplication and nonequivalence is needed here!]
+
+Constructions are
+- negationalistic when they are
+    - valid if and only if their component is inconsistent;
+    - inconsistent if and only if their component is valid;
+    - consistent if and only if their component is invalid; and
+    - invalid if and only if their component is consistent.
+- alternationalistic when they are inconsistent if and only if each component is.
+- conjunctionalistic when they are valid if and only if each component is.
+- conditionalistic when they are valid if and only if their antecedent component implies their consequent component
+
+Compounds are
+- occasional bivalents when they denote or misdenote somewhere
+- eternal bivalents when they denote or misdenote everywhere
+- occasional contradictions when they denote and misdenote somewhere
+- eternal contradictions when they denote and misdenote everywhere
+
+
+Matching compounds of denotative functional constructions jointly denote or exclusively misdenote, where and only where (waow) each of their like components jointly denotes or exclusively misdenotes. For example,
+
+- Joint denials denote waow each of their components misdenotes, and misdenote waow some of its components denote.
+- Negations, self joint denials, denote waow their component misdenotes, and vice versa.
+- Alternations, negations of joint denials, denote waow one or more of their components do, and misdenotes waow each of their components does.
+- Converse conditionals, alternations of the negation of their consequent with their antecedent, denote waow their consequent misdenotes or their antecedent denotes, elsewhere they misdenote.
+- Complementary converse conditionals, negations of con. cond.s, denote waow their consequent does and their antecedent misdenotes, elsewhere they misdenote.
+- Complementary conditionals, com. con. cond.s with swapped components, denote waow their antecedent does and their consequent misdenotes, elsehwere they misdenote.
+- Conditionals, negations of com. cond.s, denote waow their antecedent misdenotes or their consequent denotes, elsewhere they misdenote.
+- Alternative denials, conditionals with negated consequents, denote waow one or more of their components misdenotes, elsewhere they misdenote.
+- Exclusive alternations, alternations of each conjunction of one of their components with the negations of the rest, denote waow one of their components does and the others misdenote, elsewhere they misdenote.
+- Mutual conditionals, negations of exclusive alternations, denote waow each or none of their components do, elsewhere they misdenote.
+- Cedents, conditionals of conjunctions with alternations, denote waow one or more of their antecedents misdenotes or one or more of their consequents denotes, elsewhere they misdenote.
+
+Denotative functional constructions denote eternal bivalent compounds with eternal bivalent components.
+
+Alternations of eternal bivalents with their negation are valid: they denote waow their eternal bivalent denotes or misdenotes, which is everywhere, and hence each of their lexsubs denotes everywhere.
+
+Conjunctions of eternal contradictions with their negations are inconsistent: they misdenote waow their eternal noncontradiction denotes and misdenotes, which is everywhere, and hence each of their lexsubs misdenotes everywhere.
+
+Resolution and Alternational analysis [#2026-0816-1239](#2026-0816-1239)
+
+
+Existential closures denote waow there is somewhere denoted by their component.
+
+Existential croppings denote part of waow their component does.
+
+## \#2026-0816-1239
+
+What has been called truth value analysis is better called truth functional analysis.
+It is the mistake of Frege to introduce what he called 'truth values'.
+Truth values obscure the role of validity and inconsistency in the methods of logic.
+They also undermine the serious contributions of Aristotle to logical methods e.g. the principle of noncontradiction.
+
+There is much to Aristotle that can be revived with fresh interpretations of his work through modern methods.
+An unexpected occurrence is that his analysis into subject and predicate is as strong as it ever was.
+This is even in the light of Frege's extension of arithemtic functions metaphorically to propositional functions.
+The propositional functions of Frege, Russell, and Whitehead are best taken as commensurrate with Aristotle's analysis into subject and predicate via the methods of the relative clause as enshrined in Quine's predicate abstraction and concretion.
+
+Predicate abstraction abstracts a relative clause from a sentence by prepending the mathematical pidgin "such that" clauses with the purported singular terms of the sentence now firmly identified as free variables which are then bound in the appropriate predicate abstract e.g. "Tom with Dick such that Tom loves Dick" abstracts 'Tom' and 'Dick' from the sentence 'Tom loves Dick' such that when predicate of Tom with Dick, e.g. "Tom with Dick is (Tom with Dick such that Tom loves Dick)", says of Tom and Dick what the sentence does but now only by predicating a predicate of Tom with Dick.
+The principle of variants makes this more vivid where, e.g., "Tom with Dick such that Tom loves Dick" is equivalent to "x with y such that x loves y" which, for most people, is more obviously a relative clause as a predicate abstract, equivalent to the two place predicate 'loves' outright, so that the predication "Tom with Dick is (x with y such that x loves y)" is equivalent to both 'Tom with Dick is loves' and 'Tom loves Dick'.
+
+All of this mathematically pidgin English is just a way of smoothing the paraphrase directly into a logical langauge.
+It is of the same kind as B. F. Skinner's programs of instruction which build newly effective verbal behavior from the verbal repertoire available to the organism.
+
+...
+
+The rules of resolution govern truth functional analysis, better 'denotative functional analysis'.
+Traditionally, they are given in terms of truth values or denotative values.
+This obscures the part that validities and inconsistencies paly in the methods of logic.
+It also introduces avoidable complexity early in any organiation of logical methods.
+
+The methods of truth tables further the confusion, and truth trees follow suit.
+The confusions born of the division of logical methods into the syntactic and the semantic continue the mistakes made with truth values and obscure the strengths of decision methods as primary and proof methods as secondary.
+That every method of proof is half of a method of decision, the other half being a method of disproof, remains remote to many mathematicians and logicians.
+This is gravely unfortunate.
+
+A first step in releasing the potential of the latent methods of logic is to give the principles of truth functional, or denotative functional, resolution in terms of validity and inconsistency rather than in terms of truth values, truth and falsity, or denotative values, denotational and misdenotational.
+For now I shall give the principles of resolution with respect to the classical grammatical constructions of negation, alternation, conjunction, and conditionalization.
+In a recent note I identified that grammatical constructions can be classified as negational, conjunctive, alternational, and conditionalizational, without mentioning the classical grammatical constructions specifically and then the classical constructions can be shown to belong to the appropriate classification.
+I submit that this aids in emphasizing the major consequences of extensionality earlier rather than later as some sort of secondary or abstract concern.
+
+The principles of resolutiona are a part of the method of truth/denotative functional analysis.
+The presentation I shall give disentangles the metaphorical extension of truth or denotativity to validity, and falsity or misdenotativity to inconsistency as follows:
+- Components are equivalent to their
+    - double negation
+    - self conjunction
+    - self alternation
+    - conjunction with validities
+    - alternation with inconsistencies
+    - conditionalization with valid antecedents
+- Negations are valid if and only if their component is inconsistent.
+- Negations are inconsistent if and only if their component is vald.
+- Double negations are valid, or inconsistent, if and only if their component is (that is the component under the *double* negation).
+- Conjunctions with some inconsistent component are inconsistent.
+- Conjunctions are valid if and only if each component of them is.
+- Alternations with some valid component are valid.
+- Alternations are inconsistent if and only if each component of them is.
+- Conditionals with valid consequent are valid.
+- Conditionals with inconsistent consequenet are equivalent to the negation of their antecedent.
+
+There are others which go further into detail or provide dodges of various problems cause by the vague difference between outright validities or inconsistencies and the others which are practically reached by truth functional analysis fascilitated by the principles of resolution.
+
+It is a helpful consequence of switching from truth functions of sentences to denotative functions of predicates that the old truth values are dropped for what matters relative to logical method: validity and its dual inconsistency.
+
+Predicates denote some whereabouts and misdenote some whereabouts.
+In either case, there may be no such whereabouts, i.e. no such occassions.
+Denotative functional analysis establishes each possible contribution of a lexical predicate to the validity or inconsistency of the compound in which they occur.
+It makes no good sense in the case of denotating predicates to presume an analysis of whether they denote or not on each of a potentially endless list of occasions because it is not at all obvious how this might ever be done to the satisfaction of logical method.
+That this can be placed as a burden upon validity itself, in Quine's way where each substitution of lexicals for perhaps extra lexicals in validites, or inconsistencies, denote, or misdenote, everywhere, is a boon.
+It is an explanation for the survival of logical methods.
+
+As a matter of economy, in a denotative functional analysis, the challenge is termination i.e. when does the denotative functional analysis stop?
+It stops when an outright validity or inconsistency appears from the operation of resolution.
+The budding logician is given the minimum of starting equipment with Aristotle's principle of noncontradiction in precisely the way in which he describes it.
+
+From the classical grammatical constructions of negation, conjunction, and alternation, the principle of noncontradiction lets us substitute at each occurrence of any nondenotative functional component of a grammatical compound with, on the left, its alternational validity (the alternation of itself with its negation) and, on the right, its conjunctional inconsistency (the conjunction of itself with its negation).
+Resoultion proceeds until an outright validity or inconsistency is reached, or until denotative function analysis begins again.
+
+Careless analysis leads further from uncovering an outright validity or inconsistency (no matter how many we may have accumulated from past analysis with Aristotle's manfest validities and inconsistencies from his principle of noncontradiction).
+
+As an aside, there is a strengthening of noncontradiction that may yield to a wider audience who tends to forsake such humdrum matters as "excluded middle".
+It can be said that no grammatically constructed component is both valid and inconsistent.
+But, every grammatically constructed component is both vacuously valid and vacuously inconsistent, where trivial validity is validity in a vacuous world (universal quantifications are vacuously valid and existentials are vacuously inconsistent).
+
+One way of avoiding a careless analysis is to enforce a method of substitution for outright validities or inconsistencies with respect to some other nondenotative functional component.
+Schematically, e.g., 'P and Q, only if P' becomes 'P and, P or not P; only if P' then 'P and, P and not P; only if P'.
+Thus reducing the method of denotative functional analysis to that of the denotative functional analysis of denotative function compounds of a single nondenotative functional subcompound.
+
+As another aside, I finally figured out how to appropriately depict the method I use when grouping, as I so often must, the horribly ineffecient infix notation of pidgin logic.
+It is already implicit in the punctuation of standard English, where the semicolon is stronger than the comma.
+The progression of stronger punctuation issues in by repeated appending so that, from weakest to strongest, they are:
+
+1. ,
+2. ;
+3. ;,
+4. ;;
+5. ;;,
+6. and so on.
+
+Where this becomes most important is in the generalization of connectives to their iterated kin, e.g. 'P, Q, and R' is short for 'P and Q and R' which is short for 'P Q R and and', i.e. with parenthesis 'P and (Q and R)' or with commas 'P, and Q and R'.
+
+There are endless diversions to these methods that are all eliminated by postfix notation which corresponds to the stack machine interpretation of predicate functor logic.
+
+Now, the reason people embark upon a truth functional analysis or a denotative functional analysis is to establish the validity or inconsistency of the compound undergoing the analysis.
+
+This is all sidestepped the moment it is revealed that alternational normalization is nonbranching and that a comopound is inconsistent if its alternational normalization is empty (alternatively we can give a method of alternational normalizatoin which holds onto each of its nondenotative functional subcompounds by presenting them in a canonical conjucntion of appropriate inconsistencies).
+The principles which permit a method of alternational normalization are broken into principles of
+- conditoinal and biconditoinal elimination
+- negational purification
+- distribution of conjunction over alternation
+- redundant elimination
+- inconsistent clausal elimination
+
+The generalization of biconditionalization is mutual conditionalization of which biconditionalization is the special case of two component mutual conditionalization.
+This distinction is important because iterated biconditionalization is not in general equivalent to the corresponding mutual conditionalization.
+But, mutual conditionalization is equivalent to the conjunction of the biconditionalizations of the first component with each of the rest since equivalents to mutual equivalents are equivalent and each compound is equivalent to itself.
+This is not a problem much covered in classical logic texts.
+
+The principles of conditional elimination are
+1. biconditionals are equivalent to the conjunction of the conditional of their antecedent with their consequent, with the conditional of their consequent with their antecedent
+2. conditionals are equivalent to the alternation of the negation of their antecedent with their consequent
+
+Thus by the appropriate interchange of equivalents, i.e. equichanges, a compound is equivalent to one without biconditionals and then one without conditionals all together.
+
+The principles of negational purification are one half of the principles of passage for negation:
+1. The negation of a conjunction is equivalent to the alternation of the negation of each of its components
+2. the negation of an alternation is equivalent to the conjunction of the negation of each of its components.
+3. the negation of a conditional is equivalent to the conjunction of the antecedent with the negation of the consequent
+4. the negation of a biconditoinal is equivalent to the biciondional with negated antecendent or the biconditional with negated consequent
+5. the negation of a negation is equivalent to its component
+6. the negation of an existential quantification is equivalent to the universal quantification of its component
+7. the negation of an universal quantification is equivalent to the existential quantification of its component.
+
+The result of negational purification is a compound whose only negated subcomponents are predications in a quantificational logic and predicates in a predicate functor logic (though in the predicate functor logic you have additional principles of passage for the recombic functors).
+For a truth/denotative functional analysis it is enough to leave any negations of a nontruth/nondenotative functional analysis untouched.
+This is a very very very very very (yes FIVE 'very's) important application of Quine's principle of paraphrasing inwards.
+Whenever logical methods are applied, one must not intrude upon interior elements unless otherwise forced to.
+It is best to encapsulate them as lexicals.
+
+It just occurred to me that the principle of inward paraphrasis is a specific case of the maxim of minimum mutilation.
+
+The principle of distribution of conjunction over alternation is just one half of the appropriate equivalence of distribution: 
+- Conjunction of a compound with an alternation is equivalent to the alternation of each conjunction of the compound with a component of the alternation. 
+
+Fixed point iteration of the one half of the principle of distribution of conjunction over alternation ends with an alternation of conjunctions of nontruth/nondenotative functional compounds or their negation.
+Each such conjunction is called a clause and each component of the clause is called a literal.
+An engineer might call a clause a bus and literals lines.
+An electrical engineer might call a clause a series of relays and the whole alternation parallel series of relays.
+Whether or not the relays are "normally open" (N/O) or "normal closed" (N/C) then corresponds to whether they are not or are negated.
+This is the import of Shannon's paper on the logic of switching circuits.
+
+The principle of redundant elimination can be seen as a combination of two steps or of one generalized step.
+The two steps are first alphabetization and then matching adjacent elimination.
+The one step is matching component elimination.
+
+Alphabetization takes advantage of the principles of associativity and commutativity of conjunction:
+- Conjunction of one compound with the conjunction of a second with a third is equivalent to the conjunction of the conjunction of the first with the second, with the third.
+- Conjunction of one compound with an other is equivalent to the conjunction of the other with the one.
+
+Alphabetization begins with an order on the lexicon and the grammatical constructoins which is inhereted by the grammatical compounds in the so called lexicographic order.
+Then a method of sorting in lexicographic order by operations of associativity and commutativity is given.
+There are many options, but the one which first presents itself is that you commute components of a conjunction of nontruth/nondenotational compounds whose first component is lexicographically after its second component.
+Associativity is used excruciatingly to isolate the left most pair of nondenotational subcompounds (in the prefix order of their grammatical analysis as a labeled binary tree each label of which is the grammatical patricle corresponding to the grammatical construction of which it is a compound) and proceeds from the left most pair onward until an application of commutativity occurs as prescribed after which everything begins again at the left most pair.
+This continues until the rightmost pair is reached and no application of commutative step occurs.
+
+Matching adjacent elimination combines the left to right associativity routine with the principle of self conjunctional elimination as half of the principle of self conjunction: components are equivalent to their self.
+So, conjunction of identical components are equichnaged for their component and the associative scan begins again from left to right as in the alphabetization case.
+
+Inconsistent clausal elimination takes advantage of the principle of equivalence to alternation with inconsistencies: compounds are equivalent to their alternations with inconsistencies.
+Then a conjunction one of whose components is a negation of the other is inconsistent.
+With an appropriate lexicographic ordering we can guarentee that a component is adjacent to its negation, if at all, and then easily check, again by associative scanning from left to right, pair by pair for patent inconsistency (instances of "P and not P") and if one is found then the entire clause is inconsistent and the whole alternation replaced by the alternation of all but that inconsistent clause.
+
+Finally, if each clause is checked and found to be inconsistent then we conclude that the initial compound, being equivalent to each intermediate compound generated by the combining each step in this multistep routine, is inconsistent because compounds equivalent to inconsistencies are inconsistencies.
+
+Compounds are valid if their negations are inconsistent.
+
+It occurs to me that I made a mistake when I said that there is no branching in the alternational method: there is one branch at the beginning where a compound and its negation are placed at the top and both undergo alternational analysis in paralell or one after the other (only if the first does not end in inconsistency).
+If the left analysis (the non negated side) ends without vanishing then the compound is consistent, and if the right analysis (the negated side) ends without vanishing then the compound is invalid.
+
+Thus, there is no more reason to mention truth tables or trees.
+
+The procedures outlined here can be augmented to provide profound speedup towards their inevitable termination.
+
+Interestingly, no use is made of the vague terms "outright validity" and "outright inconsistency".
+Only and solely the inconsistency corresponding to Aristotle's principle of noncontradiction occurs.
+In this way, we can see that his conviction as to its supremacy remains wellfounded.
+
+There is a technicality with respect to the conclusion of consistency or invalidity that is worth noting.
+It hinges on the the substitution of lexicals for perhaps extra lexicals, and emphasizes the "perhaps extra" part in an interesting way.
+
+For consistency there is a clause of the terminal alternation that has not vanished.
+For each component of that conjunctive clause, it or its negation appears, but not both otherwise the clause would have disappeared.
+If the unnegated component appears then we introduce a lexical which we take as equivalent to the alternation of it with its negation.
+If the negated component appears then we introduce a lexical which we take as equivalent to the conjunction of it with its negation.
+Substituting each lexical for corresponding supplemental lexical as it is or is not negated in the clause under consideration produces an outright nonvacuous validity which demonstrates, hence, consistency of the unsubstituted compound.
+
+The dual argument deals with invalidity.
+
+
+## \#2026-0815-2154
+
+As a result of a confusion between universal quantification and conjunction, and existential quantification and alternation, Wittgenstein introduced the term 'tautology' alongisde his truth tables. Furthering the confusion, truth functional validity has been called 'tautology'. Along with truth functional validity, truth functional implication has been called 'tautological consequentiality' or 'tautological implication' similarly for equivalence.
+
+Further confusion over the the purported supremacy of model theoretic or proof theoretic methods of establishing validity have introduced misguided distinctions between, e.g.,
+- axioms, premises, hypothesis, truths, antecedents, and validities
+- theorems, conclusions, consequents, validities
+- implications, rules, inferences, conclusions, conditionals, consequence, 
+- models, meanings, semantics, designations, denotations, structures, propositions, information, attributes, content, etc.
+- names and designators
+- theories and languages
+- proof and argument
+- terms, words, ideas, forms, etc.
+- functions, causes, contingencies, explanations, etc.
+
+These are just some of the many confusions that must be eliminated if we are to overcome the problems posed by modern methods which are, in surprising cases, far weaker than is supported by past work.
+
+I do not claim that there is a final way to distinguish each from the others, but only that they can all be put to an exact use which benefits all who use them otherwise or not at all.
+
+
+## \#2026-0815-2131
+
+Aristotle's categories become grammatical categories in Quine's predicate functor logic.
+
+What was once spoken of as a change in theory can be approached as a change in grammatical category e.g. between truth functional validity and monadic validity, or quantificational validity, or, from my recent analysis of Quine's schematic methods with respect to identity, identificational validity.
+
+...
+
+A denotative functional analysis is an outright validity, an outright inconsistency, or a tree whose children are denotative functional analyses of the reductions of the substitutions of a predicate in their parent for an outright validity then an outright inconsistency.
+
+The distinction betwen an outright validity and one which is not is required in this definition of a denotative functional analysis, otherwise the analysis of complex compounds begets an infinite regress, the leaves are themselves potential validities or inconsistencies of dubious origin.
+This happens to also be the way in which, I submit, most people become familiar with what is unhappily called 'truth values'.
+What are called truth values are a weak way of mentioning the obviousness of it all, a sort of head smacking obviousness.
+
+...
+
+since the completeness and incompleteness and undecidability theorems are about a century old, the practices of mathematicians and logicians have not yet come under their full control e.g. proof has been around much longer than decision and tends to steal the show even in the presence of a decision method.
+
+...
+
+The items of a theory are denoted by the one place predicate of the theroy. They exist in as much as some one place predicate denotes them. THus, predicates of existence of a theory correspond to its predicates of denotation i.e. 'exists-n' for 'x such that some item is y such that y denotes-n x'. DOes this correspond to 'x such that some item is y such that y is identical to x'? Go through denotation, truth, existence, and identity.
+
+
+...
+
+Predicate abstracts give Aristotle's analysis into subject and predicate new life: they are relative clauses and are predicates which can be constructed from any sentence by predicate abstraction to denote the complex of things mentioned in the sentences according as to what the sentence says of them.
+
+...
+
+Logical analysis is paraphrase into logical languages.
+
+
+## \#2026-0815-2120
+
+Bob Dotson's textbook "Make it Memorable" on journalism is coming on Monday.
+I am unfamiliar with the specific methods of journalism.
+
+<https://en.wikipedia.org/wiki/Bob_Dotson>
+
+
+## \#2026-0815-2103
+
+Lots of little things popping up to me as I do something else.
+
+It occurred to me that there may be a way to classify grammatical constructions purely in relation to the validity, inconsistency, invalidity, or consistency of their compounds and components.
+
+Negational grammatical constructions are valid if and only if their component is inconsistent, inconsistent iff their component is valid, invalid iff their component is consistent, and consistent iff their component is invalid; alternationals are inconsistent iff each of their components is; conjunctionals are valid iff each of their comopnents is; and conditionalistics are valid iff their first component implies their second.
+
+This occurred to me as a result of taking Quine's definition of validity in terms of grammar and truth as the starting point rather than any particular grammatical construction as is tradition.
+
+This also lets me discuss the key results on the traditional truth functional constructions of negation, alternation, conjunction, and conditionlization (and mutual conditionalization) without having to introduce them or any of their details.
+I submit that it shall embrace the nontraditional methods of logic by point directly to the strengths of one method over and above others.
+
+This is in the spirit of Lindenbaum's theorems.
+The difference is that no underlying set theory is present, it is merely a theory of grammar and denotation (of which truth is a degenerate case).
+
+This kind of note is written with the expectation that there is some obvoius flaw or missing template which I have not yet contemplated adn which will appear as obvious to someone else (of which I am to myself).
+Stuff like this tends to happen when you are sitting around a table at a cafe after a series of talks, at least this was my experience at, e.g., the joint math meetings and the offshoots that happen thereabouts.
+
+
+## \#2026-0815-1732
+
+What good is reading if it isn't intertwined with writing?
+A self satisfying silence is nothing more than ruin in progress.
+What a waste of upfront potential.
+
+To imagine that I have not yet written about my work with a poet friend.
+A new person in my small social environment.
+There is so much more to say that may never come, but at least I can look back and see how I have helped others say what they must.
+
+Most of the time, the only thing a poet, performer, or writer needs is a good audience.
+An audience of one can be the world to one who lives on their public acceptance, or at least its prospects.
+Who doesn't want to be known well?
+
+The cosmology of self can be all consuming.
+
+
+## \#2026-0815-1706
+
+Saw "Guys and Dolls" today.
+Reminded me that I played the lieutenant in a middle school production and played in the pit band of a production during high school.
+
+Book recommendations which appeared to me on my Twitter:
+
+- "The World of Yesterday" by Stefan Zweig
+- "Beware of Pity" by Stefan Zweig
+- "The Radetzky March" by Joseph Roth
+
+For some time I have made it a task to weaponize my library as much as I am able.
+The first step is to index it, to gather together the books as they are arranged by topics from my everyday use of them.
+There remains a wall of books that I have yet to set up, but which will come along soon.
+Another wall is already full of books that I have read, and which form, from the center outwards, the core and periphery of my outlook on the world.
+
+Triangulating with thinking from days past is perhaps my own sense of connection to the world.
+I do not feel in step with the world around me.
+In the past I may have said that I feel like an alien, but that is just a weak way of saying that the words of the small world immediately around me do not move me like those of the world at large.
+
+It is not clear to me why I struggle to write about my impressions from reading ficiton.
+There are so many things I am compelled to write which settle themselves mostly in the realm of logic.
+There is something poetic about the depiction of a proof by Quine's main method.
+Especially when it is cast in its functional normal form.
+But for a lucky selection of instances, there is only the potentially endless wave pool of not quite inconsistent instances.
+It certainly explains why proof tends to steal the show from decision.
+
+There is almost a similarity between prayer and proof, but there is nothing quite so firm in prayer like there is in proof.
+The main method makes the procedure of proof as inevitable as it can ever be.
+There is something like a spiritual relief in it, but nothing that reaches the heights of revelation.
+
+I do not myself have any religious convictions though I was raised in one which loosely held together what used to be farm land.
+The tradition of it all was far more important than the scripture.
+The organ pleased me, as it does so many of the mathematicians I once knew, but it never raised my spirits as much as it engaged my ear.
+
+Like the difference between a chance attraction and a true love, the mystery of it all remains lost on me.
+This has not stopped me from trying to understand, from taking an active interest in the role religion plays in the lives of others, and, hence, the role it plays in my own as a member of a largely spiritual species.
+
+Of those who are under spiritual contorl I distinguish between the supersticious and the contemplative.
+The supersticious collateral is perhaps too much for me to encourage, but the contemplative are not mindlessly enduring rituals for their own sake.
+
+There is so much more that I don't know than that I shall ever know, and the more I learn of logic the the less certain I am about anything else, that is anything else that comes to select so much of prevailing practice.
+Sure, I wish it was more science than supersticion.
+I submit that almost everyone accepts this in the end.
+
+There is no reservation in my outlook.
+Like Aristotle, I push out the rest of the world from that little part that I have any conspicuous self-control over.
+While it was the boundary beyond the stars for Aristotle, it is the parts beyond the horizon of my ignorance that I respect like a tiger in the wild.
+
+Though I have written mystically here, I would rather that than obscure my lack of commitment to much more than what the moment brings me.
+Even with all the logic in the world I do not see my behavior being under any kind of strict control, social or otherwise.
+At the same time, I do not see myself as a skeptic, a perpetual doubter who may never glimpse a scrap of knowledge.
+These are all natural things, ones which, upon being appropriately paraphrased, are more articulate and less certain than they seem.
+I find that all the more wonderful than sham certainty.
+
+It can be hard for others to accept the presumed contradiction between my logical practice and my self proclaimed lack of commitments.
+As an other to myself I feel reticent at times.
+Is this an admission of some sort of guilt?
+No support either way comes.
+
+What isn't a blunder under this estimation?
+Goodness knows.
+
+
+## \#2026-0815-1255
+
+I am very unhappy with the work that I have done over the past two days.
+Though there has been much less time to write here than in the days before, that does not excuse me from drawing on whatever behavior I have left to at least write something rather than nothing.
+
+The semi-significant saying from Dr. Larson is "A small fish is better than an empty dish."
+My family and friends hear me say this all the time because of how powerfully consequential it has been when what I am likely to do after having said it is different from what I was likely to do before having said it.
+
+For example, a friend was making a sale and found himself unable to budge on a price point that he had picked for his own satisfaction.
+I told him that "A small fish is better than an empty dish" and that he would be so much happier tomorrow having made the sale than having held to a pernicious price point.
+In matter of fact, he did feel bad, not the next day, but at the end of that very day.
+
+
+## \#2026-0812-1231
+
+Another letter to a friend.
+
+"I have a book of idioms, actually I have two. When I was younger I read through many of them, but I have forgotten them all, just like  the algorithms for the rubik's cube. "Toot your own horn" must sound strange. it is already a strange thing to say in English. I enjoy such strange things because they make it clear just how foolish it is to try and communicate with language. As if there is some idea in my head that I am now transmitting through my words, like a soul stone imbued with the spirits of my thoughts, and which you are to place your hand upon to absorb into your skull's inner gray matter, like the caramel center of a candy bar, but haunted.
+
+I've been trying to figure out a bit on the history of economic theories. I have a few books on macroeconomics and some on the history of capitalism, but none which really go over the history of theories themselves. This occurs to me because I was just made aware of Thorstein Veblen's social economic theories. He came up with the term "conspicuous consumption" as a way of "signalling" that you have social status. Buying things for more money just because you want people to see that you have more money. It is not a purely prescientific view, but Veblen insisted on keeping the individual's behavior seperate from the group's practices. This is a mistake in as much as individual behavior is all that can be referenced when explaining what we call group pracitces. There is no social entity above and beyond the sum of individual behavior.
+
+B. F. Skinner wrote on economic behavior and his main criticism of past theories was that they may very well make it easy to calculate certain values according to some group statistic, but until that stitistic is established as a result of individual behavior, there is no way of ultimately explaining the role of such calculations in  controlling the economic behavior of individuals. Pointing to some group above adn beyond the individual just makes it that much harder to see where the science has yet to be done.
+
+OH PERON! I remember you telling me about him, he is an example of a piece of history that I wish more Americans got to know.
+
+I would guess that the reason we are not taught much about it is that if more people know how it works then they will make it that much harder to extract deals. I haven't thought too much about it. The social part of my program is so far away, and yet it ckeeps confronting me at every turn. If only there was a way to speed up my work on logic. The only way would be if someone else had already done the hard work, but no one wants to simplify science and logic for the same reason they would prefer education only work well enough to make more workers who follow orders without thought."
+
+<https://en.wikipedia.org/wiki/Juan_Per%C3%B3n>
+
+
+## \#2026-0812-1218
+
+Some story about paper boys from a book a friend read led to me learning about Thornstein Veblen.
+It would be grand if I could find a series of lectures on the history of economic theories.
+The view I have now is so distorted even though I have more than a passing familiarity with economic history.
+
+<https://en.wikipedia.org/wiki/Thorstein_Veblen>
+
+
+## \#2026-0812-1218
+
+Nelson was unable to seperate logic from mathematical logic and this contributed to his redacted claim that the theory of arithmetic of Peano was inconsistent.
+
+The risks posed by the inconsistency of the theory of arithmetic of Peano is such that it is more important for us to have the computers of the world working on it rather than something like searching for signals from organisms across the universe.
+
+There are many more almost as important problems of that kind, and that they do not consume more of our energy is alarming.
+It is evidence of the broad lack of effective technologies of teaching logic.
+
+
+## \#2026-0811-1440
+
+Before leaping back to complete the note on Nelson's proof of Hilbert and Ackermann's consistency theorem, I wanted to explore the application of the main method to the completeness of identity theory.
+
+It seems to me that this is a prime example of what I am about to call "lexical methods".
+The methods are lexical in that there is a predicate letter which is reserved for substitution by a lexical.
+In the case of a theory of identity, the lexical predicate which we have in mind is the two place predicate of identity as in "This is identical to that."
+Sometimes we say 'equality' for 'identity'.
+These two terms are so overloaded by history that there is practicaly no escape from a difference in opinion over whether these are two names for the same thing, or different things, or that we have got the whole deal wrong.
+
+How does Quine approach identity theory in "Methods of Logic Fourth Edition"?
+Part four of the book is titled "Glimpses Beyond".
+It is impossible not to snicker at the similarities between it and "Bed, Bath, and Beyond", i.e. "truth fuctional logic, quantificational logic, and beyond".
+
+The first chapter of the fourth part, chapter 41, is on singular terms.
+After that is the chapter on identity.
+Identity follows singular terms because the cases where identity shows up as being of interest is when there are different names for the same thing as opposed to either just different names of different things.
+
+Aristotle declared, as many did before him, that every thing is identical to itself and nothing is identical to something else.
+Better to say it as Quine does: "Everything is identical to itself and with nothing else."
+Why?
+Because, the phrase "nothing is identical to something else" asks us to paraphrase 'something else' which goes rocky e.g. the predicate 'x with y such that x is other than y' is presumable paraphrased further as 'x with y such that not x is identical to y' so that 'nothing is identical to something else' comes out 'not each item is x such that some item is y such that y=x and not y=x' which is equivalent to 'some item is x such that each item is y such that not y=x or y=x' which, by the main method or otherwise, is an instance of the patent validity 'some each F or not F'.
+
+A more forceful way of saying what Quine has said is "Everything is identical to itself, otherwise it is not."
+Or, more oddly, 'Identity is true of everything with itself, otherwise it is false."
+This leaves the mystery in 'otherwise'.
+
+The mystery of identity is in its elmination in a language with only finitely many lexical predicates.
+Indiscernibility with respect to lexicon is coextensive with identity in a logical langauge with finitely many lexical predicates.
+
+Though talk of identity tends to enter into the vernacular of a new speaker through its uninterrupted proximity to names, which come out as singular terms in a quantificational logic (also known as 'function letters' of which 'constants' are a degenerate case), it is the crossreferntial work of variables as the logical import of pronominal crossreference.
+
+> "Statements of identity consisting of '=' flanked by singular terms are needed because two singular terms may name one thing. But the need of '=' flanked by variables arises from a different peculiarity of langauge; viz., from its use of multiple variables of quantification (or their pronominal analogues in ordinary language). Two variables are allowed to refer to the same object, and they are also allowed to refer to different objects; and thus the sign of identity comes to be neede when, as in the above four examples, there arises the question of sameness or difference of reference on the part of the variables." pg. 270
+
+Already I feel as if I am seeing to myself a mistake that Quine makes in the following paragraph that also helps to explain why he may have missed the overt application of his main method to a completeness proof of identity theories:
+
+> "The logic of identity is a branch not reducible to the logic of quantification. Its notation may be thought of as comprising that of the logic of quantification plus the one additional sign '='. Thus the schemata of the logic of identity are the same as the quantificational schemata except that they may contain, along with the clauses 'p', 'q', 'Fx', 'Gxy', etc, additional clauses of the form of identities: 'x=y', 'x=z', etc. Validity may be defined for schemata of the logic of identity precisely as it was defined for quantificational schema (Chapter 27)". pg.270-271
+
+I submit that there is nothing which distinguishes '=' from the predicate letters 'F', 'G', 'H', and so on.
+This Quine misses just as I missed it when I thought up calling these 'lexical methods'.
+
+A more awkward way of making my point is to say that we pick a predicate letter, e.g. 'E', and permit interpretations which only and solely interpret 'E' as the predicate of identity.
+This avoids the introduction of a secondary collection of special predicate letters.
+Technically, we can go backwards and define this restricted kind of secondary predicate letter by wrangling up the restrictions on subsequent interpretations, but this merely makes a selection from what we have already been dealing with, i.e. nothing new is required of the main method which otherwise would be revised to accomodate a predicate like '=' rather than the predicate letters familiar to it.
+
+Now, under my restriction we must reinterpret what Quine says of those schema which end up valid because of something purportedly special about the predicate of identity:
+
+> "there are further valid schemata whose validity depends specifically on teh meaning of identity; one such is: (I) 'Fx and x=y, only if Fy'. For, consider any choice of universe, any interpretation of 'F' therin, and any assignment of objects to the free variables 'x' and 'y'. If the object assigned to 'x' is the same as that assigned to 'y', and is an object of which 'F' is interpreted as true, then (I) comes out true through truth of its consequent 'Fy'; and in any other case (I) comes out true through falisity of its antecedent."
+
+Here we simply extend the part of the argument which says "and is an object of which 'F' is interpreted as true" by beginning with 'Fx and Gxy, only if Fy' and then 'If the objects assigned to 'x' with 'y' are true of the interpretation of 'G' as identity and 'x' is an object of which 'F' is interpreted as true, then ..."
+
+This naturally puts a restraint not on the schema, but on the interpretations.
+Validity so constrained is no longer worthy of the name 'validity'.
+This much even Quine must acknowledge as he does later down the same page:
+
+> "Any schemata obtained by putting identities 'x=x', 'x=y', etc. in place of say 'Gxx', 'Gxy', etc., in valid quantificational schemata are, it has been explained, valid schemata of the logic of identity. But such putting o identies for schematic clauses can, when thorough, yiled a sentence instead of a schema, e.g.: 'x=x only if some item is y such that x =y'. The concept of validity may be applied to such sentences along with the schemata, following the precedent of Chapter 28.
+>
+> This example is even quantificationally valid, in the sense of that chapter. Of those whose validity depends specifically on the meaning of identity, on the other hand, the simplest is: (II) 'x=x'." pg. 271.
+
+
+Here the hint for a good name is already at hand: 'quantificationlly valid'.
+It is just as good to say 'identificationally Valid' as an even narrower kind than 'truth functional validity', 'monadic validity' and 'quantificational validity'.
+
+This is all well and good, we have a new name for a new kind of validity, but what of it?
+It is merely another way of speaking of a restriction on interpretations.
+The main method is a seperate matter all together.
+
+My first response is to now take something like Russell's early outlook in "The Principles of Mathematics".
+Identificational conditionals are a grammatical category of schemata.
+Their antecedents are a conjunction which is best specified by a new predicate functor.
+A reminder for those unfamiliar with predicate functors: the negation of a schema, e.g. 'not Fx', is a compound in whcih the grammatical partical 'not' occurs, and a generalization occurrs so that '(not F)x' is take as short for 'not Fx' and '(not G)xy' is taken as short for 'not Gxy' and '(not H)xyz' for 'not Hxyz', and so on so that '(not F)', '(not G)', and '(not H)' are each taken as compound predicate schema which when predicated of a list of variables is equivalent to the negation of the predication of those variables with the component predicate letter, i.e. 'F', 'G', and 'H' in these examples.
+
+Better to just call them grammatical constructions, since Quine ends up using them to combine predicate letters with variables and sentence letters and predicate abstracts.
+
+The gramamtical construction which I now introduce to aid in the schematic description of the category of indentificational conditionals is as follows:
+
+- 'totally reflexive F' for 'each item is x such that Fxx'
+- 'F substitutive G' for 'each item is ..xyz such that G..xy and Fyz, only if G..xz'
+
+Then, each instance of 
+
+- totally reflexive F and F substitutive G, only if H
+- totally reflexive F, F substitutive G, F substitutive G', only if H
+- totally reflexive F, F substitutive G, F substitutive G', F substitutive G'', only if H
+- etc.
+
+is an identificational conditional.
+The identificational validities are then the valid identificational conditionals.
+But, each is an instance of the first case only since
+
+- totally reflexive F, F substitutive G, and F substitutive G', if and only if totally reflexive F and F substitutive (G or G')
+
+so it suffices to say the identificational conditionals are all instances of 'totally reflexive F and F substitutive G, only if H'.
+
+It remains to be seen if it is better to call the consequence of an identificational conditional out as an identificaiontal validity or the whole conditional.
+I submit that since it is the whole conditional which is valid then it is the whole conditional which is especially indentificationally valid.
+This fits well with the traditional phrases "truth functional validity", "monadic validity", and "quantificational validity" in mathematical logic where the role of implication is overemphasized by axiomatic methods and "logical validity", a very unhappy term, is taken as the validity of degenerate conditional with empty antecdent.
+
+That's all for now, more to come, as always (why I say this at the end of so many notes is mysterious, except, upon immediate reflection, it may just be a trace of my everlasting hope).
+
 
 ## \#2026-0810-1737
 
 I saw the movie "Stand By Me" for the first time a few days ago.
 I knew it was based on a Stephen King story-- I did not know that its title was "The Body"-- but I did not know it was Rob Reiner film.
+
 
 ## \#2026-0810-1704
 
@@ -236,6 +916,7 @@ To each open theory Nelson introduces an omega theory whose language is the same
 
 to be completed
 
+
 ## \#2026-0810-1528
 
 Surprised that upon receiving my copy of "Butlers & Household Managers" the acknowledgements mention Hubbard.
@@ -258,6 +939,7 @@ This is only a result of vauge contemplation on wayward principles.
 
 The best writing must be done with an eye to ease of translation.
 Even though this is frowned upon in the short term, and there is good reason for such frowns, it is an aid to clarity and exactness and effective action to do so.
+
 
 ## \#2026-0810-1400
 
@@ -724,7 +1406,6 @@ I don't know if I believe any of this or if any of what I just wrote is true.
 It was something of an exercise.
 
 
-
 ## \#2026-0809-1202
 
 Notes on the 11th lecture of “A History of Philosophy” by Arthur Holmes on Aristotle’s Metphysics Part Two
@@ -792,6 +1473,7 @@ Thankfully, that is the end of this lecture.
 ## \#2026-0808-2016
 
 Self-aggrandizing social controllers ask "Why make what you can take?"
+
 
 ## \#2026-0808-1741
 
